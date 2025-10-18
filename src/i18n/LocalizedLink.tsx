@@ -10,7 +10,7 @@ type Props = Omit<ComponentProps<typeof Link>, "href"> & {
 	children: ReactNode;
 };
 
-function LocalizedLink({ children, href, ...rest }: Props) {
+export function LocalizedLink({ children, href, ...rest }: Props) {
 	const locale = useLocale();
 
 	const normalized = href.startsWith("/") ? href : `/${href}`;
@@ -26,5 +26,3 @@ function LocalizedLink({ children, href, ...rest }: Props) {
 		</Link>
 	);
 }
-
-export default LocalizedLink;
