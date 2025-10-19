@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
@@ -5,6 +6,7 @@ import type { ReactNode } from "react";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
+import logoColor from "@/assets/logo-color.png";
 
 export const dynamic = "force-dynamic";
 
@@ -47,9 +49,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               href="/"
               className="flex items-center gap-2 font-semibold"
             >
-              <span className="rounded-2xl bg-primary/10 px-2 py-1">
-                Prospector
-              </span>
+              <Image src={logoColor} width={120} alt="Prozeso Logo" />
             </LocalizedLink>
           }
         />
