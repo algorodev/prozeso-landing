@@ -7,11 +7,11 @@ import CardHeader from "./CardHeader";
 import CardTitle from "./CardTitle";
 
 export {
-	Card,
-	CardAction,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
 };
