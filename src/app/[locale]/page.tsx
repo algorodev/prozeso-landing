@@ -21,11 +21,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `${base}/${locale}/`,
       languages: Object.fromEntries(locales.map((l) => [l, `${base}/${l}/`])),
     },
-    title: locale === "es" ? "Prospector" : "Prospector",
-    description:
-      locale === "es"
-        ? "Organice flujos de trabajo en minutos"
-        : "Orchestrate workflows in minutes",
   };
 }
 

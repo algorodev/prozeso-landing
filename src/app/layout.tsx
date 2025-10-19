@@ -12,6 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export async function generateMetadata() {
+  return {
+    title: "Prozeso",
+    description: "Automate your workflows with ease",
+  };
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
