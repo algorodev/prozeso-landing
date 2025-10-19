@@ -1,5 +1,11 @@
 import { locales } from '@/i18n/config'
 import { Metadata } from 'next'
+import Hero from '@/components/Home/Hero'
+import Benefits from '@/components/Home/Benefits'
+import StatsSection from '@/components/Home/StatsSection'
+import HowItWorks from '@/components/Home/HowItWorks'
+import Testimonials from '@/components/Home/Testimonials'
+import FinalCTA from '@/components/Home/FinalCTA'
 
 type Props = {
 	params: Promise<{ locale: string }>
@@ -22,6 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function Home() {
 	return (
-		<h1>Hola que tal</h1>
+		<div>
+			<Hero />
+			<Benefits />
+			<StatsSection />
+			<HowItWorks />
+			<Testimonials />
+			<FinalCTA />
+		</div>
 	)
 }
