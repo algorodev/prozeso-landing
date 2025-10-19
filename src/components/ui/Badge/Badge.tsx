@@ -5,21 +5,21 @@ import { cn } from "@/lib/utils";
 import { badgeVariants } from "./constants";
 
 const Badge = ({
-	className,
-	variant,
-	asChild = false,
-	...props
+  className,
+  variant,
+  asChild = false,
+  ...props
 }: ComponentProps<"span"> &
-	VariantProps<typeof badgeVariants> & { asChild?: boolean }) => {
-	const Comp = asChild ? Slot : "span";
+  VariantProps<typeof badgeVariants> & { asChild?: boolean }) => {
+  const Comp = asChild ? Slot : "span";
 
-	return (
-		<Comp
-			data-slot="badge"
-			className={cn(badgeVariants({ variant }), className)}
-			{...props}
-		/>
-	);
+  return (
+    <Comp
+      data-slot="badge"
+      className={cn(badgeVariants({ variant }), className)}
+      {...props}
+    />
+  );
 };
 
 export default Badge;

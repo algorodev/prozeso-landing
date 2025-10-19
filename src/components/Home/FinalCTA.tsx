@@ -35,12 +35,7 @@ const FinalCTA = () => {
           <Button size="lg" variant="accent" asChild>
             <LocalizedLink href="/start">Start free assessment</LocalizedLink>
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-white/90"
-            asChild
-          >
+          <Button size="lg" variant="outline" className="text-white/90" asChild>
             <LocalizedLink href="/demo">See live demo</LocalizedLink>
           </Button>
         </motion.div>
@@ -56,7 +51,10 @@ const FinalCTA = () => {
             "GDPR-ready, encrypted secrets",
             "Cancel anytime",
           ].map((item) => (
-            <li key={item} className="flex items-center justify-center gap-2 text-white/90">
+            <li
+              key={item}
+              className="flex items-center justify-center gap-2 text-white/90"
+            >
               <Check className="size-4" /> {item}
             </li>
           ))}

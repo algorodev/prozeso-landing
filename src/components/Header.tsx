@@ -1,7 +1,7 @@
 "use client";
 
-import { Route } from 'next'
-import Link from 'next/link'
+import type { Route } from "next";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import type { ReactNode } from "react";
@@ -34,7 +34,8 @@ type Props = {
 export const Header = ({ logo, nav = [], cta }: Props) => {
   const pathname = usePathname();
   const locale = useLocale();
-	const clientUrl = process.env.NEXT_PUBLIC_CLIENT_URL || 'http://localhost:3001';
+  const clientUrl =
+    process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
@@ -62,7 +63,9 @@ export const Header = ({ logo, nav = [], cta }: Props) => {
           <ThemeToggle />
           <div className="hidden sm:flex items-center gap-2">
             <Button variant="ghost">
-              <Link href={`${clientUrl}/auth/login` as Route} target='_blank'>Sign in</Link>
+              <Link href={`${clientUrl}/auth/login` as Route} target="_blank">
+                Sign in
+              </Link>
             </Button>
             {cta ? (
               <Button asChild>

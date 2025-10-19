@@ -38,10 +38,7 @@ const Hero = () => (
             className="mt-6 text-balance text-4xl font-bold tracking-tight sm:text-6xl"
           >
             Automate your business with
-            <span className="text-accent">
-              {" "}
-              confidence
-            </span>
+            <span className="text-accent"> confidence</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}

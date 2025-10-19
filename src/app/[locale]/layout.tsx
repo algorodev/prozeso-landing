@@ -1,12 +1,12 @@
-import Image from 'next/image'
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
+import logoColor from "@/assets/logo-color.png";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
-import logoColor from "@/assets/logo-color.png";
 
 export const dynamic = "force-dynamic";
 

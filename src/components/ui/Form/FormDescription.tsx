@@ -1,18 +1,18 @@
-import useFormField from "@/components/Ui/Form/useFormField";
-import { cn } from "@/lib/utils";
 import type { ComponentProps } from "react";
+import useFormField from "@/components/ui/Form/useFormField";
+import { cn } from "@/lib/utils";
 
 function FormDescription({ className, ...props }: ComponentProps<"p">) {
-	const { formDescriptionId } = useFormField();
+  const { formDescriptionId } = useFormField();
 
-	return (
-		<p
-			data-slot="form-description"
-			id={formDescriptionId}
-			className={cn("text-muted-foreground text-sm", className)}
-			{...props}
-		/>
-	);
+  return (
+    <p
+      data-slot="form-description"
+      id={formDescriptionId}
+      className={cn("text-muted-foreground text-sm", className)}
+      {...props}
+    />
+  );
 }
 
 export default FormDescription;
