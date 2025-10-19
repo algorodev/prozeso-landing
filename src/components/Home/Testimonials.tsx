@@ -80,7 +80,7 @@ const Testimonials = () => {
             >
               <Card className="h-full bg-card/60 backdrop-blur-sm shadow-sm ring-1 ring-border/60">
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-1 text-primary">
+                  <div className="flex items-center gap-1 text-accent">
                     {Array.from({ length: 5 }).map((_, idx) => (
                       <Star
                         key={idx}

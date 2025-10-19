@@ -38,7 +38,7 @@ const Hero = () => (
             className="mt-6 text-balance text-4xl font-bold tracking-tight sm:text-6xl"
           >
             Automate your business with
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-accent">
               {" "}
               confidence
             </span>

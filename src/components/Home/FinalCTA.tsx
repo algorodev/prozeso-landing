@@ -7,7 +7,7 @@ import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const FinalCTA = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-primary to-accent text-white">
+    <section className="relative overflow-hidden bg-primary text-white">
       <div className="absolute inset-0 bg-black/30 dark:bg-black/40" />
       <div className="relative mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-28">
         <motion.div
@@ -32,13 +32,13 @@ const FinalCTA = () => {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <Button size="lg" variant="inverse" asChild>
+          <Button size="lg" variant="accent" asChild>
             <LocalizedLink href="/start">Start free assessment</LocalizedLink>
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="text-primary-foreground"
+            className="text-white/90"
             asChild
           >
             <LocalizedLink href="/demo">See live demo</LocalizedLink>
@@ -56,14 +56,12 @@ const FinalCTA = () => {
             "GDPR-ready, encrypted secrets",
             "Cancel anytime",
           ].map((item) => (
-            <li key={item} className="flex items-center justify-center gap-2">
+            <li key={item} className="flex items-center justify-center gap-2 text-white/90">
               <Check className="size-4" /> {item}
             </li>
           ))}
         </motion.ul>
       </div>
-      <div className="pointer-events-none absolute -top-24 left-0 size-[24rem] rounded-full bg-primary/20 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-24 right-0 size-[26rem] rounded-full bg-accent/20 blur-3xl" />
     </section>
   );
 };

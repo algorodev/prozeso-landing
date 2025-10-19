@@ -120,8 +120,8 @@ const HowItWorks = () => {
           </div>
         </motion.div>
       </div>
-      <div className="pointer-events-none absolute -top-24 left-0 size-[22rem] rounded-full bg-primary/10 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-20 right-0 size-[26rem] rounded-full bg-accent/10 blur-3xl" />
+      <div className="pointer-events-none absolute -top-24 left-0 size-[22rem] rounded-full bg-primary/20 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-20 right-0 size-[26rem] rounded-full bg-accent/20 blur-3xl" />
     </section>
   );
 };
