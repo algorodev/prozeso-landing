@@ -2,19 +2,22 @@
 
 import type { AutomationDetail } from "@/app/[locale]/automations/[id]/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { useTranslations } from "next-intl";
 
 export default function ProblemSolution({
   detail,
 }: {
   detail: AutomationDetail;
 }) {
+  const t = useTranslations("automations.detail");
+
   return (
     <section className="relative">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle>Problem</CardTitle>
+              <CardTitle>{t("problemTitle")}</CardTitle>
             </CardHeader>
             <CardContent className="text-sm text-muted-foreground">
               {detail.problem}
@@ -23,7 +26,7 @@ export default function ProblemSolution({
 
           <Card>
             <CardHeader>
-              <CardTitle>Solution</CardTitle>
+              <CardTitle>{t("solutionTitle")}</CardTitle>
             </CardHeader>
             <CardContent className="text-sm text-muted-foreground">
               {detail.solution}

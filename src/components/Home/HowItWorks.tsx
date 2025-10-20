@@ -11,33 +11,36 @@ import {
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
+import { useTranslations } from "next-intl";
 
 const HowItWorks = () => {
+  const t = useTranslations("howItWorks");
+
   const steps = [
     {
       icon: Sparkles,
-      title: "1 · Discovery call",
-      body: "We map your goals, systems, and repetitive tasks. You’ll get a shortlist of high‑ROI automations.",
+      title: t("steps.discovery.title"),
+      body: t("steps.discovery.body"),
     },
     {
       icon: Settings2,
-      title: "2 · Workflow design",
-      body: "We design n8n flows with clear triggers, data validation, and failure handling — reviewed with you before build.",
+      title: t("steps.design.title"),
+      body: t("steps.design.body"),
     },
     {
       icon: PlugZap,
-      title: "3 · Integrations & build",
-      body: "We connect your tools (CRM, email, sheets, ads, billing) and implement secure secrets & RBAC.",
+      title: t("steps.build.title"),
+      body: t("steps.build.body"),
     },
     {
       icon: Activity,
-      title: "4 · Monitor & alert",
-      body: "Live dashboard tracks runs, latency, and success rate. Alerts keep your team ahead of issues.",
+      title: t("steps.monitor.title"),
+      body: t("steps.monitor.body"),
     },
     {
       icon: RefreshCw,
-      title: "5 · Iterate & optimize",
-      body: "We A/B steps, add telemetry, and tune schedules to keep performance strong as your needs evolve.",
+      title: t("steps.iterate.title"),
+      body: t("steps.iterate.body"),
     },
   ];
 
@@ -62,7 +65,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.45 }}
             className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            How it works
+            {t("title")}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -71,8 +74,7 @@ const HowItWorks = () => {
             transition={{ delay: 0.1, duration: 0.45 }}
             className="mt-3 text-muted-foreground"
           >
-            From discovery to dashboard, we partner with your team to deliver
-            reliable automations and visible impact.
+            {t("subtitle")}
           </motion.p>
         </div>
         <motion.ol
@@ -108,14 +110,14 @@ const HowItWorks = () => {
           className="mx-auto mt-12 flex max-w-3xl flex-col items-center gap-3 text-center"
         >
           <p className="text-sm text-muted-foreground">
-            Ready to spot your highest‑ROI automations?
+            {t("ctaPrompt")}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" variant="primary">
-              <LocalizedLink href="/start">Start free assessment</LocalizedLink>
+              <LocalizedLink href="/start">{t("ctaPrimary")}</LocalizedLink>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <LocalizedLink href="/demo">See live demo</LocalizedLink>
+              <LocalizedLink href="/demo">{t("ctaSecondary")}</LocalizedLink>
             </Button>
           </div>
         </motion.div>

@@ -4,20 +4,31 @@ import { ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
+import {useTranslations} from 'next-intl';
 
 type Props =
   | { mode: "video"; videoUrl: string }
   | { mode: "screens"; screenshots: string[] };
 
 export function DemoMedia(props: Props) {
+	const t = useTranslations('demo.media');
+
   return (
     <section className="py-10">
       <Card id="demo-media" className="border">
         <CardContent>
           {props.mode === "video" ? (
-            <VideoEmbed url={props.videoUrl} />
+	          <VideoEmbed url={props.videoUrl} title={t('videoTitle')} />
           ) : (
-            <ScreensCarousel images={props.screenshots} />
+	          <ScreensCarousel
+		          images={props.screenshots}
+		          i18n={{
+			          placeholder: t('screensPlaceholder'),
+			          prev: t('prev'),
+			          next: t('next'),
+			          altPrefix: t('screenshotAltPrefix')
+		          }}
+	          />
           )}
         </CardContent>
       </Card>
@@ -25,13 +36,13 @@ export function DemoMedia(props: Props) {
   );
 }
 
-function VideoEmbed({ url }: { url: string }) {
+function VideoEmbed({ url, title }: { url: string; title: string }) {
   return (
     <div className="relative w-full overflow-hidden rounded-xl aspect-video">
       <iframe
         className="size-full"
         src={url}
-        title="Product demo video"
+        title={title}
         frameBorder="0"
         allow="autoplay; encrypted-media; picture-in-picture"
         allowFullScreen
@@ -43,7 +54,7 @@ function VideoEmbed({ url }: { url: string }) {
   );
 }
 
-function ScreensCarousel({ images = [] }: { images: string[] }) {
+function ScreensCarousel({ images = [], i18n }: { images: string[]; i18n: { placeholder: string; prev: string; next: string; altPrefix: string } }) {
   const [idx, setIdx] = useState(0);
   const has = images.length > 0;
 
@@ -54,7 +65,7 @@ function ScreensCarousel({ images = [] }: { images: string[] }) {
     return (
       <div className="aspect-video grid place-items-center rounded-xl border bg-muted/20">
         <p className="text-sm text-muted-foreground">
-          Add screenshots to DemoMedia
+	        {i18n.placeholder}
         </p>
       </div>
     );
@@ -65,7 +76,7 @@ function ScreensCarousel({ images = [] }: { images: string[] }) {
       <div className="overflow-hidden rounded-xl border bg-background">
         <img
           src={images[idx]}
-          alt={`Screenshot ${idx + 1}`}
+          alt={`${i18n.altPrefix} ${idx + 1}`}
           className="block w-full h-auto select-none"
           draggable={false}
         />
@@ -77,7 +88,7 @@ function ScreensCarousel({ images = [] }: { images: string[] }) {
           size="icon"
           className="ms-2"
           onClick={prev}
-          aria-label="Previous"
+          aria-label={i18n.prev}
         >
           <ChevronLeft className="size-4" />
         </Button>
@@ -88,7 +99,7 @@ function ScreensCarousel({ images = [] }: { images: string[] }) {
           size="icon"
           className="me-2"
           onClick={next}
-          aria-label="Next"
+          aria-label={i18n.next}
         >
           <ChevronRight className="size-4" />
         </Button>

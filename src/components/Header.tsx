@@ -1,10 +1,11 @@
 "use client";
 
+import logoColor from '@/assets/logo-color.png'
 import type { Route } from "next";
+import Image from 'next/image'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
-import type { ReactNode } from "react";
+import { useLocale, useTranslations } from 'next-intl'
 import { DesktopNav } from "@/components/DesktopNav";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { MobileNav } from "@/components/MobileNav";
@@ -25,35 +26,33 @@ type NavItem = {
   children?: NavChild[];
 };
 
-type Props = {
-  logo?: ReactNode;
-  nav?: NavItem[];
-  cta?: { label: string; href: string };
-};
-
-export const Header = ({ logo, nav = [], cta }: Props) => {
+export const Header = () => {
+	const t = useTranslations("header");
   const pathname = usePathname();
   const locale = useLocale();
   const clientUrl =
     process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
+	const navItems: NavItem[] = [
+		{ label: t("nav.automations"), href: "/automations" },
+		{ label: t("nav.demo"), href: "/demo" },
+	]
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b">
       <div className="mx-auto flex h-16 max-w-screen-2xl items-center gap-3 px-3 sm:px-4">
         <div className="md:hidden">
-          <MobileNav nav={nav} cta={cta} />
+          <MobileNav nav={navItems} />
         </div>
         <div className="flex items-center">
-          {logo ?? (
-            <LocalizedLink href="/" className="font-semibold tracking-tight">
-              <span className="rounded-xl bg-foreground/10 px-2 py-1">
-                Brand
-              </span>
-            </LocalizedLink>
-          )}
+	        <LocalizedLink
+		        href="/"
+		        className="flex items-center gap-2 font-semibold"
+	        >
+		        <Image src={logoColor} width={120} alt={t("logoAlt")} />
+	        </LocalizedLink>
         </div>
         <nav className="hidden md:flex items-center gap-1 ml-2">
-          {nav.map((item) => (
+          {navItems.map((item) => (
             <DesktopNav key={item.label} item={item} activePath={pathname} />
           ))}
         </nav>
@@ -64,14 +63,12 @@ export const Header = ({ logo, nav = [], cta }: Props) => {
           <div className="hidden sm:flex items-center gap-2">
             <Button variant="ghost">
               <Link href={`${clientUrl}/auth/login` as Route} target="_blank">
-                Sign in
+	              { t("signIn") }
               </Link>
             </Button>
-            {cta ? (
               <Button asChild>
-                <LocalizedLink href={cta.href}>{cta.label}</LocalizedLink>
+                <LocalizedLink href="/start">{t('cta')}</LocalizedLink>
               </Button>
-            ) : null}
           </div>
         </div>
       </div>

@@ -3,32 +3,35 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Clock, TrendingUp, Workflow } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { useTranslations } from "next-intl";
 
 const StatsBlock = () => {
+  const t = useTranslations("stats");
+
   const stats = [
     {
       icon: Workflow,
       value: "120+",
-      label: "Active client automations",
-      desc: "Each workflow tailored and monitored for performance.",
+      label: t("items.automationCount.label"),
+      desc: t("items.automationCount.desc"),
     },
     {
       icon: TrendingUp,
       value: "3.2M+",
-      label: "Tasks executed monthly",
-      desc: "Reliably processed across all connected platforms.",
+      label: t("items.tasksExecuted.label"),
+      desc: t("items.tasksExecuted.desc"),
     },
     {
       icon: Clock,
       value: "12,000h",
-      label: "Hours saved per year",
-      desc: "Through reduced manual input and automated reporting.",
+      label: t("items.hoursSaved.label"),
+      desc: t("items.hoursSaved.desc"),
     },
     {
       icon: CheckCircle2,
       value: "99.97%",
-      label: "Execution success rate",
-      desc: "Proactive monitoring ensures uptime and reliability.",
+      label: t("items.successRate.label"),
+      desc: t("items.successRate.desc"),
     },
   ];
 
@@ -43,11 +46,10 @@ const StatsBlock = () => {
           className="mx-auto max-w-3xl text-center"
         >
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-balance">
-            Real results from real automation
+            {t("title")}
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Our clients transform operations by automating what used to take
-            hours into tasks that run while they sleep.
+            {t("subtitle")}
           </p>
         </motion.div>
         <motion.div

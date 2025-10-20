@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/DropdownMenu";
 import { Input } from "@/components/ui/Input";
+import { useTranslations } from "next-intl";
 
 const AutomationFilters = ({
   q,
@@ -34,17 +35,20 @@ const AutomationFilters = ({
   sort: SortKey;
   setSort: (s: SortKey) => void;
 }) => {
+  const t = useTranslations("automations");
+  const sortLabel = (s: SortKey) => t(`filters.sort.options.${s}` as any);
+  const catLabel = (c: string) => t(`filters.categories.${c}` as any);
+
   return (
     <>
       {/* Header + sort */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Automation catalog
+            {t("list.title")}
           </h1>
           <p className="mt-1 max-w-2xl text-muted-foreground">
-            Browse ready-to-use workflows. We tailor each automation to your
-            stack and set up monitoring & alerts.
+            {t("list.subtitle")}
           </p>
         </div>
 
@@ -52,16 +56,16 @@ const AutomationFilters = ({
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="gap-2">
               <Filter className="size-4" />
-              Sort: {sort}
+              {t("filters.sort.label")}: {sortLabel(sort)}
               <ChevronDown className="size-4" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Sort by</DropdownMenuLabel>
+            <DropdownMenuLabel>{t("filters.sort.sortBy")}</DropdownMenuLabel>
             <DropdownMenuSeparator />
             {SORTS.map((s) => (
               <DropdownMenuItem key={s} onClick={() => setSort(s)}>
-                {s}
+                {sortLabel(s)}
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
@@ -76,13 +80,13 @@ const AutomationFilters = ({
               className="cursor-pointer"
               onClick={() => toggleCat(c)}
             >
-              {c}
+              {catLabel(c)}
             </Badge>
           ))}
         </div>
         <div className="w-full sm:w-80">
           <Input
-            placeholder="Search automations, tools, or outcomes…"
+            placeholder={t("filters.searchPlaceholder")}
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />

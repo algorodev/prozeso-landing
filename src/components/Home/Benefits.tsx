@@ -10,39 +10,18 @@ import {
   Workflow,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { useTranslations } from "next-intl";
 
 const Benefits = () => {
+  const t = useTranslations("benefits");
+
   const items = [
-    {
-      icon: Clock,
-      title: "Save hours every week",
-      body: "Automate repetitive tasks like data sync, lead routing, and report exports. Your team focuses on work that moves the needle.",
-    },
-    {
-      icon: Workflow,
-      title: "Fewer errors, consistent results",
-      body: "Standardized n8n workflows reduce manual mistakes and create predictable, auditable processes across tools.",
-    },
-    {
-      icon: BarChart3,
-      title: "Full visibility on a live dashboard",
-      body: "Track runs, success rate, and throughput. Drill into logs and alerts so issues are spotted before customers notice.",
-    },
-    {
-      icon: PlugZap,
-      title: "Connect your stack in minutes",
-      body: "Hundreds of integrations across CRM, email, spreadsheets, ads, payments, and internal APIs—without brittle glue code.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Secure & GDPR-friendly by design",
-      body: "Scoped API keys, role-based access, encrypted secrets, and data residency options to keep compliance simple.",
-    },
-    {
-      icon: PiggyBank,
-      title: "Proven ROI for SMBs",
-      body: "Automations pay for themselves by reducing busywork, preventing churn, and unlocking always-on operations.",
-    },
+    { icon: Clock, title: t("items.saveTime.title"), body: t("items.saveTime.body") },
+    { icon: Workflow, title: t("items.fewerErrors.title"), body: t("items.fewerErrors.body") },
+    { icon: BarChart3, title: t("items.visibility.title"), body: t("items.visibility.body") },
+    { icon: PlugZap, title: t("items.connectStack.title"), body: t("items.connectStack.body") },
+    { icon: ShieldCheck, title: t("items.security.title"), body: t("items.security.body") },
+    { icon: PiggyBank, title: t("items.roi.title"), body: t("items.roi.body") },
   ];
 
   const container = {
@@ -66,7 +45,7 @@ const Benefits = () => {
             transition={{ duration: 0.45 }}
             className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            Let automations do the busywork
+            {t("title")}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -75,8 +54,7 @@ const Benefits = () => {
             transition={{ delay: 0.1, duration: 0.45 }}
             className="mt-3 text-muted-foreground"
           >
-            We build, monitor, and optimize your n8n workflows so your team
-            ships faster, makes fewer mistakes, and gets a live view of results.
+            {t("subtitle")}
           </motion.p>
         </div>
         <motion.div
@@ -111,10 +89,10 @@ const Benefits = () => {
           transition={{ delay: 0.1, duration: 0.45 }}
           className="mt-14 grid grid-cols-2 gap-4 rounded-2xl border bg-card/40 p-4 sm:grid-cols-4"
         >
-          <Stat kpi="50+" label="Connectors supported" />
-          <Stat kpi="99.9%" label="Workflow uptime" />
-          <Stat kpi="-60%" label="Manual ops time" />
-          <Stat kpi=">30k" label="Tasks automated / mo" />
+          <Stat kpi="50+" label={t("stats.connectors")} />
+          <Stat kpi="99.9%" label={t("stats.uptime")} />
+          <Stat kpi="-60%" label={t("stats.manualTime")} />
+          <Stat kpi=">30k" label={t("stats.tasksPerMonth")} />
         </motion.div>
       </div>
       <div className="pointer-events-none absolute -top-24 -right-24 size-[26rem] rounded-full bg-primary/20 blur-3xl" />

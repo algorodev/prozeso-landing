@@ -4,33 +4,33 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Card, CardContent } from "@/components/ui/Card";
+import { useTranslations } from "next-intl";
 
 const Testimonials = () => {
+  const t = useTranslations("testimonials");
+
   const items = [
     {
-      quote:
-        "We replaced three manual handoffs with a single n8n flow. Reports that took all Friday now arrive before 9am.",
-      name: "María López",
-      role: "Head of Operations",
-      company: "CleverMarket",
+      quote: t("items.item1.quote"),
+      name: t("items.item1.name"),
+      role: t("items.item1.role"),
+      company: t("items.item1.company"),
       avatar: "/images/avatars/maria.jpg",
       rating: 5,
     },
     {
-      quote:
-        "The dashboard gave us visibility we didn’t have. We spotted a leaking segment and recovered ~12% MRR in two weeks.",
-      name: "James Patel",
-      role: "Growth Lead",
-      company: "Finly",
+      quote: t("items.item2.quote"),
+      name: t("items.item2.name"),
+      role: t("items.item2.role"),
+      company: t("items.item2.company"),
       avatar: "/images/avatars/james.jpg",
       rating: 5,
     },
     {
-      quote:
-        "Security reviews were smooth: RBAC, encrypted secrets, and logs out‑of‑the‑box. Zero production incidents in 6 months.",
-      name: "Sofia Nguyen",
-      role: "CTO",
-      company: "Horizon Health",
+      quote: t("items.item3.quote"),
+      name: t("items.item3.name"),
+      role: t("items.item3.role"),
+      company: t("items.item3.company"),
       avatar: "/images/avatars/sofia.jpg",
       rating: 5,
     },
@@ -53,7 +53,7 @@ const Testimonials = () => {
             transition={{ duration: 0.45 }}
             className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
           >
-            What our customers say
+            {t("title")}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -62,14 +62,13 @@ const Testimonials = () => {
             transition={{ delay: 0.1, duration: 0.45 }}
             className="mt-3 text-muted-foreground"
           >
-            Proof that automation pays off — in hours saved, errors prevented,
-            and revenue protected.
+            {t("subtitle")}
           </motion.p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {items.map((t, i) => (
+          {items.map((tItem, i) => (
             <motion.article
-              key={t.name}
+              key={tItem.name}
               itemScope
               itemProp="itemListElement"
               itemType="https://schema.org/Review"
@@ -84,7 +83,7 @@ const Testimonials = () => {
                     {Array.from({ length: 5 }).map((_, idx) => (
                       <Star
                         key={idx}
-                        className={`size-4 ${idx < t.rating ? "fill-current" : "opacity-30"}`}
+                        className={`size-4 ${idx < tItem.rating ? "fill-current" : "opacity-30"}`}
                       />
                     ))}
                   </div>
@@ -92,13 +91,13 @@ const Testimonials = () => {
                     className="mt-3 text-base leading-relaxed"
                     itemProp="reviewBody"
                   >
-                    “{t.quote}”
+                    “{tItem.quote}”
                   </blockquote>
                   <div className="mt-5 flex items-center gap-3">
                     <Avatar className="size-9">
-                      <AvatarImage src={t.avatar} alt={t.name} />
+                      <AvatarImage src={tItem.avatar} alt={tItem.name} />
                       <AvatarFallback>
-                        {t.name
+                        {tItem.name
                           .split(" ")
                           .map((s) => s[0])
                           .slice(0, 2)
@@ -107,10 +106,10 @@ const Testimonials = () => {
                     </Avatar>
                     <div>
                       <div className="font-medium" itemProp="author">
-                        {t.name}
+                        {tItem.name}
                       </div>
                       <div className="text-xs text-muted-foreground">
-                        {t.role} · {t.company}
+                        {tItem.role} · {tItem.company}
                       </div>
                     </div>
                   </div>
@@ -137,7 +136,7 @@ const Testimonials = () => {
             <img
               key={src}
               src={src}
-              alt="Client logo"
+              alt={t("clientLogoAlt")}
               className="h-8 w-auto object-contain"
             />
           ))}

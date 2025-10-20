@@ -1,30 +1,35 @@
+"use client"
+
 import { MessageSquare, ShieldCheck, Sparkles } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-
-const HIGHLIGHTS = [
-  {
-    icon: Sparkles,
-    title: "Tailored flow",
-    desc: "The experience adapts to each client’s goals for faster clarity.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Built-in comms",
-    desc: "Seamless messaging after confirmation keeps everything in one place.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Payments & trust",
-    desc: "Secure payments and transparent timelines from day one.",
-  },
-];
+import { useTranslations } from 'next-intl'
 
 export function Highlights() {
+	const t = useTranslations('demo.highlights');
+
+	const items = [
+		{
+			icon: Sparkles,
+			title: t('tailoredFlow.title'),
+			desc: t('tailoredFlow.desc'),
+		},
+		{
+			icon: MessageSquare,
+			title: t('builtInComms.title'),
+			desc: t('builtInComms.desc'),
+		},
+		{
+			icon: ShieldCheck,
+			title: t('paymentsTrust.title'),
+			desc: t('paymentsTrust.desc'),
+		},
+	];
+
   return (
     <section className="py-10">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="grid gap-4 md:grid-cols-3">
-          {HIGHLIGHTS.map(({ icon: Icon, title, desc }) => (
+          {items.map(({ icon: Icon, title, desc }) => (
             <Card key={title} className="border">
               <CardHeader className="flex flex-row items-center gap-3">
                 <div className="grid size-10 place-items-center rounded-xl bg-accent/10 text-accent">

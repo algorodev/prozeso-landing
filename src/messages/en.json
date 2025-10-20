@@ -1,1 +1,275 @@
-{}
+{
+  "hero": {
+    "badge": "Orchestrate workflows in minutes",
+    "title": "Automate your business with <accent>confidence</accent>",
+    "subtitle": "Connect your tools, automate repetitive work, and visualize results in one place. Ship scalable workflows for small and medium companies without the busywork.",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "View Demo",
+    "trialBadges": {
+      "freeTrial": "Free trial",
+      "noCreditCard": "No credit card required",
+      "cancelAnytime": "Cancel anytime"
+    },
+    "imageAlt": "Automation dashboard preview"
+  },
+  "benefits": {
+    "title": "Let automations do the busywork",
+    "subtitle": "We build, monitor, and optimize your n8n workflows so your team ships faster, makes fewer mistakes, and gets a live view of results.",
+    "items": {
+      "saveTime": {
+        "title": "Save hours every week",
+        "body": "Automate repetitive tasks like data sync, lead routing, and report exports. Your team focuses on work that moves the needle."
+      },
+      "fewerErrors": {
+        "title": "Fewer errors, consistent results",
+        "body": "Standardized n8n workflows reduce manual mistakes and create predictable, auditable processes across tools."
+      },
+      "visibility": {
+        "title": "Full visibility on a live dashboard",
+        "body": "Track runs, success rate, and throughput. Drill into logs and alerts so issues are spotted before customers notice."
+      },
+      "connectStack": {
+        "title": "Connect your stack in minutes",
+        "body": "Hundreds of integrations across CRM, email, spreadsheets, ads, payments, and internal APIs—without brittle glue code."
+      },
+      "security": {
+        "title": "Secure & GDPR-friendly by design",
+        "body": "Scoped API keys, role-based access, encrypted secrets, and data residency options to keep compliance simple."
+      },
+      "roi": {
+        "title": "Proven ROI for SMBs",
+        "body": "Automations pay for themselves by reducing busywork, preventing churn, and unlocking always-on operations."
+      }
+    },
+    "stats": {
+      "connectors": "Connectors supported",
+      "uptime": "Workflow uptime",
+      "manualTime": "Manual ops time",
+      "tasksPerMonth": "Tasks automated / mo"
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "From discovery to dashboard, we partner with your team to deliver reliable automations and visible impact.",
+    "steps": {
+      "discovery": {
+        "title": "1 · Discovery call",
+        "body": "We map your goals, systems, and repetitive tasks. You’ll get a shortlist of high‑ROI automations."
+      },
+      "design": {
+        "title": "2 · Workflow design",
+        "body": "We design n8n flows with clear triggers, data validation, and failure handling — reviewed with you before build."
+      },
+      "build": {
+        "title": "3 · Integrations & build",
+        "body": "We connect your tools (CRM, email, sheets, ads, billing) and implement secure secrets & RBAC."
+      },
+      "monitor": {
+        "title": "4 · Monitor & alert",
+        "body": "Live dashboard tracks runs, latency, and success rate. Alerts keep your team ahead of issues."
+      },
+      "iterate": {
+        "title": "5 · Iterate & optimize",
+        "body": "We A/B steps, add telemetry, and tune schedules to keep performance strong as your needs evolve."
+      }
+    },
+    "ctaPrompt": "Ready to spot your highest‑ROI automations?",
+    "ctaPrimary": "Start free assessment",
+    "ctaSecondary": "See live demo"
+  },
+  "stats": {
+    "title": "Real results from real automation",
+    "subtitle": "Our clients transform operations by automating what used to take hours into tasks that run while they sleep.",
+    "items": {
+      "automationCount": {
+        "label": "Active client automations",
+        "desc": "Each workflow tailored and monitored for performance."
+      },
+      "tasksExecuted": {
+        "label": "Tasks executed monthly",
+        "desc": "Reliably processed across all connected platforms."
+      },
+      "hoursSaved": {
+        "label": "Hours saved per year",
+        "desc": "Through reduced manual input and automated reporting."
+      },
+      "successRate": {
+        "label": "Execution success rate",
+        "desc": "Proactive monitoring ensures uptime and reliability."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What our customers say",
+    "subtitle": "Proof that automation pays off — in hours saved, errors prevented, and revenue protected.",
+    "items": {
+      "item1": {
+        "quote": "We replaced three manual handoffs with a single n8n flow. Reports that took all Friday now arrive before 9am.",
+        "name": "María López",
+        "role": "Head of Operations",
+        "company": "CleverMarket"
+      },
+      "item2": {
+        "quote": "The dashboard gave us visibility we didn’t have. We spotted a leaking segment and recovered ~12% MRR in two weeks.",
+        "name": "James Patel",
+        "role": "Growth Lead",
+        "company": "Finly"
+      },
+      "item3": {
+        "quote": "Security reviews were smooth: RBAC, encrypted secrets, and logs out‑of‑the-box. Zero production incidents in 6 months.",
+        "name": "Sofia Nguyen",
+        "role": "CTO",
+        "company": "Horizon Health"
+      }
+    },
+    "clientLogoAlt": "Client logo"
+  },
+  "finalCta": {
+    "title": "Ready to automate the busywork?",
+    "subtitle": "Launch your first n8n workflow with us and get a live dashboard in days—not months.",
+    "ctaPrimary": "Start free assessment",
+    "ctaSecondary": "See live demo",
+    "bullets": {
+      "gdprEncrypted": "GDPR-ready, encrypted secrets"
+    }
+  },
+  "header": {
+    "nav": {
+      "automations": "Automations",
+      "demo": "Demo"
+    },
+    "cta": "Get started",
+    "logoAlt": "Prozeso Logo",
+    "signIn": "Sign in"
+  },
+  "automations": {
+    "list": {
+      "title": "Automation catalog",
+      "subtitle": "Browse ready-to-use workflows. We tailor each automation to your stack and set up monitoring & alerts."
+    },
+    "filters": {
+      "searchPlaceholder": "Search automations, tools, or outcomes…",
+      "sort": {
+        "label": "Sort",
+        "sortBy": "Sort by",
+        "options": {
+          "Popularity": "Popularity",
+          "ROI": "ROI",
+          "Newest": "Newest"
+        }
+      },
+      "categories": {
+        "CRM": "CRM",
+        "E-commerce": "E-commerce",
+        "Marketing": "Marketing",
+        "Ops": "Ops",
+        "Finance": "Finance",
+        "Support": "Support"
+      }
+    },
+    "grid": {
+      "empty": "No automations match your filters."
+    },
+    "detail": {
+      "problemTitle": "Problem",
+      "solutionTitle": "Solution"
+    }
+  },
+  "demo": {
+    "hero": {
+      "title": "See the platform in action",
+      "subtitle": "A quick walkthrough to understand the flow — from discovery to booking and follow-up.",
+      "cta": "Start your free assessment"
+    },
+    "faq": {
+      "title": "FAQs",
+      "items": {
+        "whatInDemo": {
+          "q": "What will I see in the demo?",
+          "a": "A short walkthrough of the core flow so you can understand how we work together end-to-end."
+        },
+        "howLong": {
+          "q": "How long is it?",
+          "a": "Usually under 3 minutes — quick and to the point."
+        },
+        "nextStep": {
+          "q": "What’s the next step after watching?",
+          "a": "Book a free assessment — we’ll tailor the plan to your needs and timeline."
+        }
+      }
+    },
+    "media": {
+      "videoTitle": "Product demo video",
+      "screensPlaceholder": "Add screenshots to DemoMedia",
+      "prev": "Previous",
+      "next": "Next",
+      "screenshotAltPrefix": "Screenshot"
+    },
+    "highlights": {
+      "tailoredFlow": {
+        "title": "Tailored flow",
+        "desc": "The experience adapts to each client’s goals for faster clarity."
+      },
+      "builtInComms": {
+        "title": "Built-in comms",
+        "desc": "Seamless messaging after confirmation keeps everything in one place."
+      },
+      "paymentsTrust": {
+        "title": "Payments & trust",
+        "desc": "Secure payments and transparent timelines from day one."
+      }
+    }
+  },
+  "start": {
+    "hero": {
+      "title": "Start your personalized journey",
+      "subtitle": "We’ll begin with a short call to understand your goals and create a plan that truly fits you."
+    },
+    "steps": {
+      "items": {
+        "intro": {
+          "title": "Quick introduction",
+          "desc": "Tell us what you’re looking for and what you want to achieve."
+        },
+        "call": {
+          "title": "Discovery call",
+          "desc": "We align on goals and sketch your personalized plan together."
+        },
+        "launch": {
+          "title": "Your journey begins",
+          "desc": "We set everything up and guide you step by step."
+        }
+      }
+    },
+    "assessment": {
+      "cardTitle": "Free Assessment",
+      "cardSubtitle": "Share a few details and we’ll reach out to book your quick discovery call.",
+      "field": {
+        "name": {
+          "label": "Your name",
+          "placeholder": "Alex Johnson",
+          "error": "Please enter your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "you@example.com",
+          "error": "Please enter a valid email"
+        },
+        "goals": {
+          "label": "What are you looking for?",
+          "placeholder": "Tell us briefly what you’d like to achieve..."
+        }
+      },
+      "submit": {
+        "idle": "Book your free assessment",
+        "loading": "Submitting…"
+      },
+      "disclaimer": "No payment or commitment required — this is a quick first step to design your plan.",
+      "success": {
+        "title": "Thanks! We’ve got your request.",
+        "body": "Our team will contact you shortly to schedule your free call."
+      },
+      "serverErrorDefault": "Something went wrong. Please try again."
+    }
+  }
+}

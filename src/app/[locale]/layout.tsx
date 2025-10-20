@@ -1,12 +1,10 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
-import logoColor from "@/assets/logo-color.png";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
-import { LocalizedLink } from "@/i18n/LocalizedLink";
+import { getTranslations } from "next-intl/server";
 
 export const dynamic = "force-dynamic";
 
@@ -29,6 +27,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!locales.includes(locale)) notFound();
 
   const messages = (await import(`@/messages/${locale}.json`)).default;
+  const t = await getTranslations({ locale, namespace: "header" });
 
   return (
     <ThemeProvider
@@ -38,21 +37,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       disableTransitionOnChange
     >
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <Header
-          nav={[
-            { label: "Automations", href: "/automations" },
-            { label: "Demo", href: "/demo" },
-          ]}
-          cta={{ label: "Get started", href: "/start" }}
-          logo={
-            <LocalizedLink
-              href="/"
-              className="flex items-center gap-2 font-semibold"
-            >
-              <Image src={logoColor} width={120} alt="Prozeso Logo" />
-            </LocalizedLink>
-          }
-        />
+        <Header />
         {children}
       </NextIntlClientProvider>
     </ThemeProvider>

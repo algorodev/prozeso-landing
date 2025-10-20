@@ -1,1 +1,275 @@
-{}
+{
+  "hero": {
+    "badge": "Orquesta flujos de trabajo en minutos",
+    "title": "Automatiza tu negocio con <accent>confianza</accent>",
+    "subtitle": "Conecta tus herramientas, automatiza el trabajo repetitivo y visualiza los resultados en un solo lugar. Diseña flujos escalables para pymes sin trabajo innecesario.",
+    "ctaPrimary": "Comenzar",
+    "ctaSecondary": "Ver demo",
+    "trialBadges": {
+      "freeTrial": "Prueba gratis",
+      "noCreditCard": "Sin tarjeta de crédito",
+      "cancelAnytime": "Cancela cuando quieras"
+    },
+    "imageAlt": "Vista previa del panel de automatización"
+  },
+  "benefits": {
+    "title": "Deja que las automatizaciones hagan el trabajo repetitivo",
+    "subtitle": "Construimos, monitorizamos y optimizamos tus flujos en n8n para que tu equipo entregue más rápido, cometa menos errores y tenga una vista en tiempo real de los resultados.",
+    "items": {
+      "saveTime": {
+        "title": "Ahorra horas cada semana",
+        "body": "Automatiza tareas repetitivas como la sincronización de datos, el enrutamiento de leads y la exportación de reportes. Tu equipo se enfoca en lo que de verdad mueve la aguja."
+      },
+      "fewerErrors": {
+        "title": "Menos errores, resultados consistentes",
+        "body": "Flujos estandarizados en n8n reducen los fallos manuales y crean procesos predecibles y auditables entre herramientas."
+      },
+      "visibility": {
+        "title": "Visibilidad total en un panel en vivo",
+        "body": "Haz seguimiento de ejecuciones, tasa de éxito y rendimiento. Profundiza en logs y alertas para detectar incidencias antes de que el cliente las note."
+      },
+      "connectStack": {
+        "title": "Conecta tu stack en minutos",
+        "body": "Cientos de integraciones con CRM, email, hojas de cálculo, anuncios, pagos y APIs internas, sin código frágil de pegamento."
+      },
+      "security": {
+        "title": "Seguro y compatible con GDPR por diseño",
+        "body": "Claves API con alcance, acceso basado en roles, secretos cifrados y opciones de residencia de datos para simplificar el cumplimiento."
+      },
+      "roi": {
+        "title": "ROI probado para pymes",
+        "body": "Las automatizaciones se pagan solas reduciendo trabajo innecesario, previniendo la fuga de clientes y habilitando operaciones siempre activas."
+      }
+    },
+    "stats": {
+      "connectors": "Conectores compatibles",
+      "uptime": "Disponibilidad del flujo",
+      "manualTime": "Tiempo de operación manual",
+      "tasksPerMonth": "Tareas automatizadas / mes"
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "De descubrimiento a panel, colaboramos con tu equipo para entregar automatizaciones confiables e impacto visible.",
+    "steps": {
+      "discovery": {
+        "title": "1 · Llamada de descubrimiento",
+        "body": "Mapeamos tus objetivos, sistemas y tareas repetitivas. Recibirás una lista corta de automatizaciones de alto ROI."
+      },
+      "design": {
+        "title": "2 · Diseño del flujo de trabajo",
+        "body": "Diseñamos flujos en n8n con disparadores claros, validación de datos y manejo de fallos — revisados contigo antes de construir."
+      },
+      "build": {
+        "title": "3 · Integraciones y construcción",
+        "body": "Conectamos tus herramientas (CRM, email, hojas, anuncios, facturación) e implementamos secretos seguros y RBAC."
+      },
+      "monitor": {
+        "title": "4 · Monitoreo y alertas",
+        "body": "Un panel en vivo rastrea ejecuciones, latencia y tasa de éxito. Las alertas mantienen a tu equipo por delante de los problemas."
+      },
+      "iterate": {
+        "title": "5 · Iterar y optimizar",
+        "body": "Hacemos A/B de pasos, añadimos telemetría y ajustamos horarios para mantener el rendimiento a medida que evolucionan tus necesidades."
+      }
+    },
+    "ctaPrompt": "¿Listo para detectar tus automatizaciones de mayor ROI?",
+    "ctaPrimary": "Comenzar evaluación gratis",
+    "ctaSecondary": "Ver demo en vivo"
+  },
+  "stats": {
+    "title": "Resultados reales de la automatización real",
+    "subtitle": "Nuestros clientes transforman operaciones al automatizar lo que antes llevaba horas en tareas que se ejecutan mientras duermen.",
+    "items": {
+      "automationCount": {
+        "label": "Automatizaciones activas de clientes",
+        "desc": "Cada flujo se adapta y se monitorea para su rendimiento."
+      },
+      "tasksExecuted": {
+        "label": "Tareas ejecutadas al mes",
+        "desc": "Procesadas de forma confiable en todas las plataformas conectadas."
+      },
+      "hoursSaved": {
+        "label": "Horas ahorradas por año",
+        "desc": "Gracias a menos trabajo manual y reportes automatizados."
+      },
+      "successRate": {
+        "label": "Tasa de éxito de ejecución",
+        "desc": "El monitoreo proactivo garantiza disponibilidad y confiabilidad."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Prueba de que la automatización se paga sola: horas ahorradas, errores evitados e ingresos protegidos.",
+    "items": {
+      "item1": {
+        "quote": "Reemplazamos tres traspasos manuales por un único flujo en n8n. Los reportes que tomaban todo el viernes ahora llegan antes de las 9 a. m.",
+        "name": "María López",
+        "role": "Directora de Operaciones",
+        "company": "CleverMarket"
+      },
+      "item2": {
+        "quote": "El panel nos dio una visibilidad que no teníamos. Detectamos un segmento con fuga y recuperamos ~12% de MRR en dos semanas.",
+        "name": "James Patel",
+        "role": "Líder de Crecimiento",
+        "company": "Finly"
+      },
+      "item3": {
+        "quote": "Las revisiones de seguridad fueron fluidas: RBAC, secretos cifrados y logs listos para usar. Cero incidentes en producción en 6 meses.",
+        "name": "Sofia Nguyen",
+        "role": "CTO",
+        "company": "Horizon Health"
+      }
+    },
+    "clientLogoAlt": "Logo de cliente"
+  },
+  "finalCta": {
+    "title": "¿Listo para automatizar el trabajo repetitivo?",
+    "subtitle": "Lanza tu primer flujo en n8n con nosotros y consigue un panel en vivo en días—no meses.",
+    "ctaPrimary": "Comenzar evaluación gratis",
+    "ctaSecondary": "Ver demo en vivo",
+    "bullets": {
+      "gdprEncrypted": "Listo para GDPR, secretos cifrados"
+    }
+  },
+  "header": {
+    "nav": {
+      "automations": "Automatizaciones",
+      "demo": "Demo"
+    },
+    "cta": "Empezar",
+    "logoAlt": "Logo de Prozeso",
+    "signIn": "Entrar"
+  },
+  "automations": {
+    "list": {
+      "title": "Catálogo de automatizaciones",
+      "subtitle": "Explora flujos listos para usar. Adaptamos cada automatización a tu stack y configuramos monitoreo y alertas."
+    },
+    "filters": {
+      "searchPlaceholder": "Buscar automatizaciones, herramientas o resultados…",
+      "sort": {
+        "label": "Ordenar",
+        "sortBy": "Ordenar por",
+        "options": {
+          "Popularity": "Popularidad",
+          "ROI": "ROI",
+          "Newest": "Más reciente"
+        }
+      },
+      "categories": {
+        "CRM": "CRM",
+        "E-commerce": "E-commerce",
+        "Marketing": "Marketing",
+        "Ops": "Operaciones",
+        "Finance": "Finanzas",
+        "Support": "Soporte"
+      }
+    },
+    "grid": {
+      "empty": "No hay automatizaciones que coincidan con tus filtros."
+    },
+    "detail": {
+      "problemTitle": "Problema",
+      "solutionTitle": "Solución"
+    }
+  },
+  "demo": {
+    "hero": {
+      "title": "Mira la plataforma en acción",
+      "subtitle": "Un recorrido rápido para entender el flujo — desde el descubrimiento hasta la reserva y el seguimiento.",
+      "cta": "Comienza tu evaluación gratis"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": {
+        "whatInDemo": {
+          "q": "¿Qué veré en la demo?",
+          "a": "Un breve recorrido por el flujo principal para que entiendas cómo trabajamos de principio a fin."
+        },
+        "howLong": {
+          "q": "¿Cuánto dura?",
+          "a": "Normalmente menos de 3 minutos — rápido y al grano."
+        },
+        "nextStep": {
+          "q": "¿Cuál es el siguiente paso después de verla?",
+          "a": "Reserva una evaluación gratuita — ajustaremos el plan a tus necesidades y tiempos."
+        }
+      }
+    },
+    "media": {
+      "videoTitle": "Video de la demo del producto",
+      "screensPlaceholder": "Añade capturas a DemoMedia",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "screenshotAltPrefix": "Captura"
+    },
+    "highlights": {
+      "tailoredFlow": {
+        "title": "Flujo a medida",
+        "desc": "La experiencia se adapta a los objetivos de cada cliente para aportar claridad rápidamente."
+      },
+      "builtInComms": {
+        "title": "Comunicaciones integradas",
+        "desc": "Mensajería fluida tras la confirmación para mantener todo en un mismo lugar."
+      },
+      "paymentsTrust": {
+        "title": "Pagos y confianza",
+        "desc": "Pagos seguros y cronogramas transparentes desde el primer día."
+      }
+    }
+  },
+  "start": {
+    "hero": {
+      "title": "Empieza tu camino personalizado",
+      "subtitle": "Comenzaremos con una llamada breve para entender tus objetivos y crear un plan a tu medida."
+    },
+    "steps": {
+      "items": {
+        "intro": {
+          "title": "Introducción rápida",
+          "desc": "Cuéntanos qué necesitas y qué quieres conseguir."
+        },
+        "call": {
+          "title": "Llamada de descubrimiento",
+          "desc": "Alineamos objetivos y esbozamos juntos tu plan personalizado."
+        },
+        "launch": {
+          "title": "Empieza tu camino",
+          "desc": "Lo dejamos todo listo y te guiamos paso a paso."
+        }
+      }
+    },
+    "assessment": {
+      "cardTitle": "Evaluación gratuita",
+      "cardSubtitle": "Comparte algunos detalles y nos pondremos en contacto para agendar una breve llamada de descubrimiento.",
+      "field": {
+        "name": {
+          "label": "Tu nombre",
+          "placeholder": "Alex Johnson",
+          "error": "Por favor, introduce tu nombre"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "tu@ejemplo.com",
+          "error": "Por favor, introduce un email válido"
+        },
+        "goals": {
+          "label": "¿Qué estás buscando?",
+          "placeholder": "Cuéntanos brevemente qué te gustaría conseguir..."
+        }
+      },
+      "submit": {
+        "idle": "Reserva tu evaluación gratuita",
+        "loading": "Enviando…"
+      },
+      "disclaimer": "Sin pago ni compromiso — es un primer paso rápido para diseñar tu plan.",
+      "success": {
+        "title": "¡Gracias! Hemos recibido tu solicitud.",
+        "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
+      },
+      "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
+    }
+  }
+}

@@ -6,36 +6,35 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/Accordion";
+import { useTranslations } from "next-intl";
 
 export function DemoFAQ() {
+	const t = useTranslations('demo.faq');
+
   return (
     <section className="py-10">
       <h2 id="pricing-faq" className="text-xl font-semibold">
-        FAQs
+	      {t('title')}
       </h2>
       <Accordion type="single" collapsible>
         <AccordionItem value="what-in-demo">
-          <AccordionTrigger>What will I see in the demo?</AccordionTrigger>
+	        <AccordionTrigger>{t('items.whatInDemo.q')}</AccordionTrigger>
           <AccordionContent>
-            A short walkthrough of the core flow so you can understand how we
-            work together end-to-end.
+	          {t('items.whatInDemo.a')}
           </AccordionContent>
         </AccordionItem>
-
         <AccordionItem value="how-long">
-          <AccordionTrigger>How long is it?</AccordionTrigger>
+	        <AccordionTrigger>{t('items.howLong.q')}</AccordionTrigger>
           <AccordionContent>
-            Usually under 3 minutes — quick and to the point.
+	          {t('items.howLong.a')}
           </AccordionContent>
         </AccordionItem>
-
         <AccordionItem value="next-step">
           <AccordionTrigger>
-            What’s the next step after watching?
+	          {t('items.nextStep.q')}
           </AccordionTrigger>
           <AccordionContent>
-            Book a free assessment — we’ll tailor the plan to your needs and
-            timeline.
+	          {t('items.nextStep.a')}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
