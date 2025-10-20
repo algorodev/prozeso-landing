@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2, Clock, TrendingUp, Workflow } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { useTranslations } from "next-intl";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 
 const StatsBlock = () => {
   const t = useTranslations("stats");
@@ -48,9 +48,7 @@ const StatsBlock = () => {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-balance">
             {t("title")}
           </h2>
-          <p className="mt-3 text-muted-foreground">
-            {t("subtitle")}
-          </p>
+          <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>
         </motion.div>
         <motion.div
           initial="hidden"

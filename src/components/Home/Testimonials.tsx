@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Card, CardContent } from "@/components/ui/Card";
-import { useTranslations } from "next-intl";
 
 const Testimonials = () => {
   const t = useTranslations("testimonials");

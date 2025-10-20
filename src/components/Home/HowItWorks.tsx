@@ -8,10 +8,10 @@ import {
   Settings2,
   Sparkles,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
-import { useTranslations } from "next-intl";
 
 const HowItWorks = () => {
   const t = useTranslations("howItWorks");
@@ -109,9 +109,7 @@ const HowItWorks = () => {
           transition={{ delay: 0.1, duration: 0.45 }}
           className="mx-auto mt-12 flex max-w-3xl flex-col items-center gap-3 text-center"
         >
-          <p className="text-sm text-muted-foreground">
-            {t("ctaPrompt")}
-          </p>
+          <p className="text-sm text-muted-foreground">{t("ctaPrompt")}</p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" variant="primary">
               <LocalizedLink href="/start">{t("ctaPrimary")}</LocalizedLink>

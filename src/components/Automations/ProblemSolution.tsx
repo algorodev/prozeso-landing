@@ -1,8 +1,8 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { AutomationDetail } from "@/app/[locale]/automations/[id]/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { useTranslations } from "next-intl";
 
 export default function ProblemSolution({
   detail,

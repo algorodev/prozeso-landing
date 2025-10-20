@@ -1,9 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { Automation } from "@/app/[locale]/automations/data";
 import { Card, CardContent } from "@/components/ui/Card";
 import AutomationCard from "./AutomationCard";
-import { useTranslations } from "next-intl";
 
 const AutomationGrid = ({ items }: { items: Automation[] }) => {
   const t = useTranslations("automations");

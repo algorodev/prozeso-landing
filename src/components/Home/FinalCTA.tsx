@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
-import { useTranslations } from "next-intl";
 
 const FinalCTA = () => {
   const t = useTranslations("finalCta");
@@ -30,9 +30,7 @@ const FinalCTA = () => {
           <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">
             {t("title")}
           </h2>
-          <p className="mt-3 text-white/90">
-            {t("subtitle")}
-          </p>
+          <p className="mt-3 text-white/90">{t("subtitle")}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 16 }}

@@ -1,34 +1,34 @@
 "use client";
 
 import { ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
-import {useTranslations} from 'next-intl';
 
 type Props =
   | { mode: "video"; videoUrl: string }
   | { mode: "screens"; screenshots: string[] };
 
 export function DemoMedia(props: Props) {
-	const t = useTranslations('demo.media');
+  const t = useTranslations("demo.media");
 
   return (
     <section className="py-10">
       <Card id="demo-media" className="border">
         <CardContent>
           {props.mode === "video" ? (
-	          <VideoEmbed url={props.videoUrl} title={t('videoTitle')} />
+            <VideoEmbed url={props.videoUrl} title={t("videoTitle")} />
           ) : (
-	          <ScreensCarousel
-		          images={props.screenshots}
-		          i18n={{
-			          placeholder: t('screensPlaceholder'),
-			          prev: t('prev'),
-			          next: t('next'),
-			          altPrefix: t('screenshotAltPrefix')
-		          }}
-	          />
+            <ScreensCarousel
+              images={props.screenshots}
+              i18n={{
+                placeholder: t("screensPlaceholder"),
+                prev: t("prev"),
+                next: t("next"),
+                altPrefix: t("screenshotAltPrefix"),
+              }}
+            />
           )}
         </CardContent>
       </Card>
@@ -54,7 +54,13 @@ function VideoEmbed({ url, title }: { url: string; title: string }) {
   );
 }
 
-function ScreensCarousel({ images = [], i18n }: { images: string[]; i18n: { placeholder: string; prev: string; next: string; altPrefix: string } }) {
+function ScreensCarousel({
+  images = [],
+  i18n,
+}: {
+  images: string[];
+  i18n: { placeholder: string; prev: string; next: string; altPrefix: string };
+}) {
   const [idx, setIdx] = useState(0);
   const has = images.length > 0;
 
@@ -64,9 +70,7 @@ function ScreensCarousel({ images = [], i18n }: { images: string[]; i18n: { plac
   if (!has) {
     return (
       <div className="aspect-video grid place-items-center rounded-xl border bg-muted/20">
-        <p className="text-sm text-muted-foreground">
-	        {i18n.placeholder}
-        </p>
+        <p className="text-sm text-muted-foreground">{i18n.placeholder}</p>
       </div>
     );
   }

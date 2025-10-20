@@ -1,29 +1,29 @@
-"use client"
+"use client";
 
 import { MessageSquare, ShieldCheck, Sparkles } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { useTranslations } from 'next-intl'
 
 export function Highlights() {
-	const t = useTranslations('demo.highlights');
+  const t = useTranslations("demo.highlights");
 
-	const items = [
-		{
-			icon: Sparkles,
-			title: t('tailoredFlow.title'),
-			desc: t('tailoredFlow.desc'),
-		},
-		{
-			icon: MessageSquare,
-			title: t('builtInComms.title'),
-			desc: t('builtInComms.desc'),
-		},
-		{
-			icon: ShieldCheck,
-			title: t('paymentsTrust.title'),
-			desc: t('paymentsTrust.desc'),
-		},
-	];
+  const items = [
+    {
+      icon: Sparkles,
+      title: t("tailoredFlow.title"),
+      desc: t("tailoredFlow.desc"),
+    },
+    {
+      icon: MessageSquare,
+      title: t("builtInComms.title"),
+      desc: t("builtInComms.desc"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("paymentsTrust.title"),
+      desc: t("paymentsTrust.desc"),
+    },
+  ];
 
   return (
     <section className="py-10">

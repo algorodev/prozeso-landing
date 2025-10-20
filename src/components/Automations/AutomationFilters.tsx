@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown, Filter } from "lucide-react";
+import { useTranslations } from "next-intl";
 import * as React from "react";
 import {
   ALL_CATEGORIES,
@@ -18,7 +19,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/DropdownMenu";
 import { Input } from "@/components/ui/Input";
-import { useTranslations } from "next-intl";
 
 const AutomationFilters = ({
   q,

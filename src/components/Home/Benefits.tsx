@@ -9,18 +9,38 @@ import {
   ShieldCheck,
   Workflow,
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { useTranslations } from "next-intl";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 
 const Benefits = () => {
   const t = useTranslations("benefits");
 
   const items = [
-    { icon: Clock, title: t("items.saveTime.title"), body: t("items.saveTime.body") },
-    { icon: Workflow, title: t("items.fewerErrors.title"), body: t("items.fewerErrors.body") },
-    { icon: BarChart3, title: t("items.visibility.title"), body: t("items.visibility.body") },
-    { icon: PlugZap, title: t("items.connectStack.title"), body: t("items.connectStack.body") },
-    { icon: ShieldCheck, title: t("items.security.title"), body: t("items.security.body") },
+    {
+      icon: Clock,
+      title: t("items.saveTime.title"),
+      body: t("items.saveTime.body"),
+    },
+    {
+      icon: Workflow,
+      title: t("items.fewerErrors.title"),
+      body: t("items.fewerErrors.body"),
+    },
+    {
+      icon: BarChart3,
+      title: t("items.visibility.title"),
+      body: t("items.visibility.body"),
+    },
+    {
+      icon: PlugZap,
+      title: t("items.connectStack.title"),
+      body: t("items.connectStack.body"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("items.security.title"),
+      body: t("items.security.body"),
+    },
     { icon: PiggyBank, title: t("items.roi.title"), body: t("items.roi.body") },
   ];
 

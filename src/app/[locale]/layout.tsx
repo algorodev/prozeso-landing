@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
-import { getTranslations } from "next-intl/server";
 
 export const dynamic = "force-dynamic";
 
