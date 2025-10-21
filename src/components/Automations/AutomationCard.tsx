@@ -50,10 +50,20 @@ const AutomationCard = ({ a }: { a: Automation }) => {
             </span>
           </div>
           <div className="flex items-stretch sm:items-center gap-2 w-full sm:w-auto">
-            <Button asChild size="sm" variant="outline" className="w-full sm:w-auto">
+            <Button
+              asChild
+              size="sm"
+              variant="outline"
+              className="w-full sm:w-auto"
+            >
               <LocalizedLink href={a.href}>View details</LocalizedLink>
             </Button>
-            <Button asChild size="sm" variant="primary" className="w-full sm:w-auto">
+            <Button
+              asChild
+              size="sm"
+              variant="primary"
+              className="w-full sm:w-auto"
+            >
               <LocalizedLink href={`/contact?automation=${a.id}`}>
                 Request setup
               </LocalizedLink>

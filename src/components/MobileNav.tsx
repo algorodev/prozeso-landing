@@ -1,8 +1,8 @@
 "use client";
 
+import { Close } from "@radix-ui/react-dialog";
 import { Menu, User } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Close } from "@radix-ui/react-dialog";
 import {
   Accordion,
   AccordionContent,
@@ -55,7 +55,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
           <div className="flex items-center gap-2 py-2">
             <Button className="flex-1" variant="secondary">
               <Close asChild>
-                <LocalizedLink href="/auth/login" className='flex items-center'>
+                <LocalizedLink href="/auth/login" className="flex items-center">
                   <User className="mr-2 size-4" /> Sign in
                 </LocalizedLink>
               </Close>
@@ -92,18 +92,18 @@ export const MobileNav = ({ nav = [] }: Props) => {
                       {item.children.map((child) => (
                         <li key={child.href}>
                           <Close asChild>
-                          <LocalizedLink
-                            href={child.href}
-                            className="block rounded-xl px-3 py-2 hover:bg-accent"
-                          >
-                            <div className="text-sm">{child.label}</div>
-                            {child.description ? (
-                              <div className="text-xs text-muted-foreground">
-                                {child.description}
-                              </div>
-                            ) : null}
-                          </LocalizedLink>
-                        </Close>
+                            <LocalizedLink
+                              href={child.href}
+                              className="block rounded-xl px-3 py-2 hover:bg-accent"
+                            >
+                              <div className="text-sm">{child.label}</div>
+                              {child.description ? (
+                                <div className="text-xs text-muted-foreground">
+                                  {child.description}
+                                </div>
+                              ) : null}
+                            </LocalizedLink>
+                          </Close>
                         </li>
                       ))}
                     </ul>

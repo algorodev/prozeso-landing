@@ -50,7 +50,12 @@ export default function DetailHero({
           </div>
         </div>
         <div className="flex items-start gap-3 w-full md:w-auto md:mt-0 mt-4">
-          <Button size="lg" variant="accent" asChild className="w-full md:w-auto">
+          <Button
+            size="lg"
+            variant="accent"
+            asChild
+            className="w-full md:w-auto"
+          >
             <LocalizedLink href={`/start?automation=${automation.id}`}>
               Request setup
             </LocalizedLink>
