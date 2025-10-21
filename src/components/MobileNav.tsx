@@ -38,6 +38,8 @@ type Props = {
 
 export const MobileNav = ({ nav = [] }: Props) => {
   const t = useTranslations("header");
+	const clientUrl =
+		process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
 
   return (
     <Sheet>
@@ -55,7 +57,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
           <div className="flex items-center gap-2 py-2">
             <Button className="flex-1" variant="secondary">
               <Close asChild>
-                <LocalizedLink href="/auth/login" className="flex items-center">
+                <LocalizedLink href={clientUrl} className="flex items-center">
                   <User className="mr-2 size-4" /> Sign in
                 </LocalizedLink>
               </Close>

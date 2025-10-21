@@ -62,7 +62,7 @@ export const Header = () => {
           <ThemeToggle />
           <div className="hidden sm:flex items-center gap-2">
             <Button variant="ghost">
-              <Link href={`${clientUrl}/auth/login` as Route} target="_blank">
+              <Link href={clientUrl as Route} target="_blank">
                 {t("signIn")}
               </Link>
             </Button>
