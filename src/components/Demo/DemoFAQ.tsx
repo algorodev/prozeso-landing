@@ -12,7 +12,7 @@ export function DemoFAQ() {
   const t = useTranslations("demo.faq");
 
   return (
-    <section className="py-10">
+    <section className="py-10 px-4">
       <h2 id="pricing-faq" className="text-xl font-semibold">
         {t("title")}
       </h2>

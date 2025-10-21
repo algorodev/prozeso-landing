@@ -2,6 +2,7 @@
 
 import { Menu, User } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Close } from "@radix-ui/react-dialog";
 import {
   Accordion,
   AccordionContent,
@@ -53,12 +54,16 @@ export const MobileNav = ({ nav = [] }: Props) => {
         <div className="px-4 pb-4">
           <div className="flex items-center gap-2 py-2">
             <Button className="flex-1" variant="secondary">
-              <LocalizedLink href="/auth/login">
-                <User className="mr-2 size-4" /> Sign in
-              </LocalizedLink>
+              <Close asChild>
+                <LocalizedLink href="/auth/login" className='flex items-center'>
+                  <User className="mr-2 size-4" /> Sign in
+                </LocalizedLink>
+              </Close>
             </Button>
             <Button asChild className="flex-1">
-              <LocalizedLink href="/start">{t("cta")}</LocalizedLink>
+              <Close asChild>
+                <LocalizedLink href="/start">{t("cta")}</LocalizedLink>
+              </Close>
             </Button>
           </div>
           <Separator className="my-3" />
@@ -71,12 +76,14 @@ export const MobileNav = ({ nav = [] }: Props) => {
                   </AccordionTrigger>
                 ) : (
                   <div className="px-1 py-2">
-                    <LocalizedLink
-                      href={item.href ?? "#"}
-                      className="block rounded-xl px-2 py-2 hover:bg-accent"
-                    >
-                      {item.label}
-                    </LocalizedLink>
+                    <Close asChild>
+                      <LocalizedLink
+                        href={item.href ?? "#"}
+                        className="block rounded-xl px-2 py-2 hover:bg-accent"
+                      >
+                        {item.label}
+                      </LocalizedLink>
+                    </Close>
                   </div>
                 )}
                 {item.children?.length ? (
@@ -84,6 +91,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
                     <ul className="mb-2 space-y-1">
                       {item.children.map((child) => (
                         <li key={child.href}>
+                          <Close asChild>
                           <LocalizedLink
                             href={child.href}
                             className="block rounded-xl px-3 py-2 hover:bg-accent"
@@ -95,6 +103,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
                               </div>
                             ) : null}
                           </LocalizedLink>
+                        </Close>
                         </li>
                       ))}
                     </ul>

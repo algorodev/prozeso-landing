@@ -17,7 +17,7 @@ const FinalCTA = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-primary text-white">
+    <section className="relative overflow-hidden gradient-cta text-white">
       <div className="absolute inset-0 bg-black/30 dark:bg-black/40" />
       <div className="relative mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-28">
         <motion.div

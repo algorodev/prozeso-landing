@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import logoColor from "@/assets/logo-color.png";
+import logoColor from "@/assets/logo-color.svg";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { MobileNav } from "@/components/MobileNav";

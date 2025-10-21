@@ -14,7 +14,7 @@ export function DemoMedia(props: Props) {
   const t = useTranslations("demo.media");
 
   return (
-    <section className="py-10">
+    <section className="py-10 px-4">
       <Card id="demo-media" className="border">
         <CardContent>
           {props.mode === "video" ? (

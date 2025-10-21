@@ -15,9 +15,9 @@ export default function DetailHero({
 }) {
   const Icon = automation.icon;
   return (
-    <section className="relative overflow-hidden bg-primary text-white">
+    <section className="relative overflow-hidden gradient-cta text-white">
       <div className="absolute inset-0 bg-black/30 dark:bg-black/40" />
-      <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-24 flex justify-between items-start">
+      <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-24 flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
         <div className="flex items-start gap-3">
           <div className="grid size-12 place-items-center rounded-2xl bg-white/20 text-white ring-1 ring-white/40">
             <Icon className="size-6" />
@@ -40,7 +40,7 @@ export default function DetailHero({
                 </Badge>
               ))}
             </div>
-            <ul className="mt-6 flex gap-4 text-sm text-white/90 sm:grid-cols-3">
+            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm text-white/90">
               {detail.hero.outcomes.map((o) => (
                 <li key={o} className="flex items-center gap-2">
                   <span className="size-1.5 rounded-full bg-white/90" /> {o}
@@ -49,8 +49,8 @@ export default function DetailHero({
             </ul>
           </div>
         </div>
-        <div className="flex items-start gap-3">
-          <Button size="lg" variant="accent" asChild>
+        <div className="flex items-start gap-3 w-full md:w-auto md:mt-0 mt-4">
+          <Button size="lg" variant="accent" asChild className="w-full md:w-auto">
             <LocalizedLink href={`/start?automation=${automation.id}`}>
               Request setup
             </LocalizedLink>

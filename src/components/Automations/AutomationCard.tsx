@@ -40,8 +40,8 @@ const AutomationCard = ({ a }: { a: Automation }) => {
             </span>
           ))}
         </div>
-        <div className="mt-4 flex items-center justify-between text-xs">
-          <div className="flex items-center gap-2">
+        <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-between gap-3 text-xs">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="rounded-md bg-[--secondary] px-2 py-0.5 text-[--secondary-foreground]">
               {a.estTimeSaved} saved
             </span>
@@ -49,11 +49,11 @@ const AutomationCard = ({ a }: { a: Automation }) => {
               ROI: {a.roi}
             </span>
           </div>
-          <div className="flex items-center gap-2">
-            <Button asChild size="sm" variant="outline">
+          <div className="flex items-stretch sm:items-center gap-2 w-full sm:w-auto">
+            <Button asChild size="sm" variant="outline" className="w-full sm:w-auto">
               <LocalizedLink href={a.href}>View details</LocalizedLink>
             </Button>
-            <Button asChild size="sm" variant="primary">
+            <Button asChild size="sm" variant="primary" className="w-full sm:w-auto">
               <LocalizedLink href={`/contact?automation=${a.id}`}>
                 Request setup
               </LocalizedLink>
