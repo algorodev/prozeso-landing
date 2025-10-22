@@ -13,15 +13,17 @@ export default function DemoPage() {
   return (
     <main className="min-h-dvh max-w-7xl mx-auto">
       <HeroDemo />
-      <DemoMedia
+      {/*<DemoMedia
         mode="video"
         videoUrl={
           process.env.NEXT_PUBLIC_DEMO_VIDEO_URL ||
           "https://www.youtube.com/embed/dQw4w9WgXcQ"
         }
-      />
+      />*/}
       <Highlights />
-      <DemoFAQ />
+	    <div className='py-10'>
+		    <h3 className='text-center text-xl font-semibold'>Demo in Progress ...</h3>
+	    </div>
     </main>
   );
 }

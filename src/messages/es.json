@@ -180,8 +180,8 @@
   },
   "demo": {
     "hero": {
-      "title": "Mira la plataforma en acción",
-      "subtitle": "Un recorrido rápido para entender el flujo — desde el descubrimiento hasta la reserva y el seguimiento.",
+      "title": "Veamos juntos cómo tu negocio podría funcionar mientras sigues atendiendo clientes",
+      "subtitle": "Prueba una demo en vivo para descubrir como Prozeso te va ayudar en el día a día.",
       "cta": "Comienza tu evaluación gratis"
     },
     "faq": {
@@ -211,15 +211,15 @@
     "highlights": {
       "tailoredFlow": {
         "title": "Flujo a medida",
-        "desc": "La experiencia se adapta a los objetivos de cada cliente para aportar claridad rápidamente."
+        "desc": "Te mostraremos en minutos cómo automatizar las tareas que hoy te quitan tiempo."
       },
       "builtInComms": {
         "title": "Comunicaciones integradas",
-        "desc": "Mensajería fluida tras la confirmación para mantener todo en un mismo lugar."
+        "desc": "Verás cómo tu negocio puede atender, agendar y responder sin depender de nadie."
       },
       "paymentsTrust": {
         "title": "Pagos y confianza",
-        "desc": "Pagos seguros y cronogramas transparentes desde el primer día."
+        "desc": "Saldrás con una visión clara de cómo ganar tiempo, profesionalidad y tranquilidad desde el primer día."
       }
     }
   },

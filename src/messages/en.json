@@ -181,8 +181,8 @@
   },
   "demo": {
     "hero": {
-      "title": "See the platform in action",
-      "subtitle": "A quick walkthrough to understand the flow — from discovery to booking and follow-up.",
+      "title": "Let’s see how your business could keep working while you keep serving customers",
+      "subtitle": "Try a live demo to discover how Prozeso will help you in day‑to‑day operations.",
       "cta": "Start your free assessment"
     },
     "faq": {
@@ -212,15 +212,15 @@
     "highlights": {
       "tailoredFlow": {
         "title": "Tailored flow",
-        "desc": "The experience adapts to each client’s goals for faster clarity."
+        "desc": "In minutes, we’ll show you how to automate the tasks that are stealing your time today."
       },
       "builtInComms": {
-        "title": "Built-in comms",
-        "desc": "Seamless messaging after confirmation keeps everything in one place."
+        "title": "Integrated communications",
+        "desc": "See how your business can attend, schedule, and reply without depending on anyone."
       },
       "paymentsTrust": {
         "title": "Payments & trust",
-        "desc": "Secure payments and transparent timelines from day one."
+        "desc": "Leave with a clear view of how to gain time, professionalism, and peace of mind from day one."
       }
     }
   },
