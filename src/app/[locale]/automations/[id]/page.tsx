@@ -1,10 +1,10 @@
 "use client";
 
-import FAQ from '@/components/Automations/FAQ'
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
 import { AUTOMATIONS } from "@/app/[locale]/automations/data";
 import DetailHero from "@/components/Automations/DetailHero";
+import FAQ from "@/components/Automations/FAQ";
 import Integrations from "@/components/Automations/Integrations";
 import Metrics from "@/components/Automations/Metrics";
 import PricingSection from "@/components/Automations/PricingSection";
@@ -40,7 +40,7 @@ export default function AutomationDetailPage() {
       <DetailHero automationId={automation.id} icon={automation.icon} />
       <ProblemSolution automationId={automation.id} />
       <Metrics automationId={automation.id} />
-	    <FAQ automationId={automation.id} />
+      <FAQ automationId={automation.id} />
       {/*<Steps detail={detail} />*/}
       {/*<Integrations detail={detail} />*/}
       {/*<PricingSection automationId={automation.id} />*/}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from 'next-intl'
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import AutomationFilters from "@/components/Automations/AutomationFilters";
 import AutomationGrid from "@/components/Automations/AutomationGrid";
@@ -8,14 +8,16 @@ import { AUTOMATIONS, type SortKey } from "./data";
 
 function toArrayOfStrings(value: unknown): string[] {
   if (Array.isArray(value)) return value as string[];
-  if (value && typeof value === "object") return Object.values(value as Record<string, string>);
+  if (value && typeof value === "object")
+    return Object.values(value as Record<string, string>);
   if (value == null) return [];
   return [String(value)];
 }
 
 function toKeysIfObject(value: unknown): string[] {
   if (Array.isArray(value)) return value as string[];
-  if (value && typeof value === "object") return Object.keys(value as Record<string, unknown>);
+  if (value && typeof value === "object")
+    return Object.keys(value as Record<string, unknown>);
   return [];
 }
 
@@ -42,10 +44,17 @@ export default function AutomationsPage() {
       const categoriesKeys = toKeysIfObject(categoriesRaw);
       const integrations = toArrayOfStrings(integrationsRaw);
 
-      const qText = (title + " " + description + " " + integrations.join(" ")).toLowerCase();
+      const qText = (
+        title +
+        " " +
+        description +
+        " " +
+        integrations.join(" ")
+      ).toLowerCase();
       const matchesQ = qText.includes(q.trim().toLowerCase());
       const matchesCat =
-        activeCats.length === 0 || activeCats.every((c) => categoriesKeys.includes(c));
+        activeCats.length === 0 ||
+        activeCats.every((c) => categoriesKeys.includes(c));
 
       return matchesQ && matchesCat;
     });

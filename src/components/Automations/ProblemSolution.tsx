@@ -1,12 +1,16 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Fragment } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { Fragment } from 'react'
 
-export default function ProblemSolution({ automationId }: { automationId: string; }) {
+export default function ProblemSolution({
+  automationId,
+}: {
+  automationId: string;
+}) {
   const t = useTranslations("automations.detail");
-	const tId = useTranslations(`automations.${automationId}`)
+  const tId = useTranslations(`automations.${automationId}`);
 
   return (
     <section className="relative">
@@ -17,12 +21,19 @@ export default function ProblemSolution({ automationId }: { automationId: string
               <CardTitle>{t("problemTitle")}</CardTitle>
             </CardHeader>
             <CardContent className="text-sm text-muted-foreground">
-              {tId('problem').split('\n').map((part, i) => (
-	              <Fragment key={i}>
-		              {i > 0 && <><br/><br/></>}
-		              {part}
-	              </Fragment>
-              ))}
+              {tId("problem")
+                .split("\n")
+                .map((part, i) => (
+                  <Fragment key={i}>
+                    {i > 0 && (
+                      <>
+                        <br />
+                        <br />
+                      </>
+                    )}
+                    {part}
+                  </Fragment>
+                ))}
             </CardContent>
           </Card>
           <Card>
@@ -30,27 +41,41 @@ export default function ProblemSolution({ automationId }: { automationId: string
               <CardTitle>{t("solutionTitle")}</CardTitle>
             </CardHeader>
             <CardContent className="text-sm text-muted-foreground">
-	            {tId('solution').split('\n').map((part, i) => (
-		            <Fragment key={i}>
-			            {i > 0 && <><br/><br/></>}
-			            {part}
-		            </Fragment>
-	            ))}
+              {tId("solution")
+                .split("\n")
+                .map((part, i) => (
+                  <Fragment key={i}>
+                    {i > 0 && (
+                      <>
+                        <br />
+                        <br />
+                      </>
+                    )}
+                    {part}
+                  </Fragment>
+                ))}
             </CardContent>
           </Card>
-	        <Card>
-		        <CardHeader>
-			        <CardTitle>{t("resultsTitle")}</CardTitle>
-		        </CardHeader>
-		        <CardContent className="text-sm text-muted-foreground">
-			        {tId('results').split('\n').map((part, i) => (
-				        <Fragment key={i}>
-					        {i > 0 && <><br/><br/></>}
-					        {part}
-				        </Fragment>
-			        ))}
-		        </CardContent>
-	        </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>{t("resultsTitle")}</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
+              {tId("results")
+                .split("\n")
+                .map((part, i) => (
+                  <Fragment key={i}>
+                    {i > 0 && (
+                      <>
+                        <br />
+                        <br />
+                      </>
+                    )}
+                    {part}
+                  </Fragment>
+                ))}
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

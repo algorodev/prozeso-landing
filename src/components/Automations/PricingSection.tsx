@@ -124,7 +124,7 @@ export default function PricingSection({
         <Separator className="my-10" />
         <ComparisonTable />
         <Separator className="my-10" />
-        <FAQ />
+        <FAQ automationId={automationId} />
       </div>
     </section>
   );

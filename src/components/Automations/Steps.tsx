@@ -1,15 +1,14 @@
 "use client";
 
-import type { AutomationDetail } from "@/app/[locale]/automations/[id]/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 
-export default function Steps({ detail }: { detail: AutomationDetail }) {
+export default function Steps({ detail }: { detail: any }) {
   return (
     <section className="relative">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8">
         <h2 className="text-xl font-semibold">How it works</h2>
         <ol className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {detail.steps.map((s, i) => (
+          {detail.steps.map((s: any, i: number) => (
             <li key={s.title}>
               <Card className="h-full">
                 <CardHeader>

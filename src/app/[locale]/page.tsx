@@ -1,4 +1,3 @@
-import { Separator } from '@/components/ui/Separator'
 import type { Metadata } from "next";
 import Benefits from "@/components/Home/Benefits";
 import FinalCTA from "@/components/Home/FinalCTA";
@@ -9,6 +8,7 @@ import Problem from "@/components/Home/Problem";
 import Solution from "@/components/Home/Solution";
 import StatsSection from "@/components/Home/StatsSection";
 import Testimonials from "@/components/Home/Testimonials";
+import { Separator } from "@/components/ui/Separator";
 import { locales } from "@/i18n/config";
 
 type Props = {
@@ -35,7 +35,7 @@ export default function Home() {
       <Problem />
       <Solution />
       <Impact />
-	    <Separator />
+      <Separator />
       <Benefits />
       {/*<StatsSection />*/}
       <HowItWorks />
