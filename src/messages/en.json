@@ -390,5 +390,9 @@
       },
       "serverErrorDefault": "Something went wrong. Please try again."
     }
+  },
+  "elevenlabs": {
+    "start": "Start conversation",
+    "end": "End conversation"
   }
 }

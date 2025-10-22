@@ -394,5 +394,9 @@
       },
       "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
     }
+  },
+  "elevenlabs": {
+    "start": "Empezar conversación",
+    "end": "Terminar conversación"
   }
 }
