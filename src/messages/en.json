@@ -222,28 +222,28 @@
   },
   "start": {
     "hero": {
-      "title": "Start your personalized journey",
-      "subtitle": "We’ll begin with a short call to understand your goals and create a plan that truly fits you."
+      "title": "Take the first step toward a business that never stops",
+      "subtitle": "We listen, understand your day to day, and design a system that works for you—even when you can’t."
     },
     "steps": {
       "items": {
         "intro": {
-          "title": "Quick introduction",
-          "desc": "Tell us what you’re looking for and what you want to achieve."
+          "title": "Tell us your story",
+          "desc": "Every business has its rhythm. We want to understand yours: how you work, what slows you down, and what you’d like to change."
         },
         "call": {
-          "title": "Discovery call",
-          "desc": "We align on goals and sketch your personalized plan together."
+          "title": "We design your system",
+          "desc": "We automate the tasks that steal your time—calls, appointments, messages—so your day revolves around what truly matters again."
         },
         "launch": {
-          "title": "Your journey begins",
-          "desc": "We set everything up and guide you step by step."
+          "title": "Start to breathe",
+          "desc": "While you keep serving your customers, the system takes care of the rest. No stress, no interruptions, no lost revenue."
         }
       }
     },
     "assessment": {
-      "cardTitle": "Free Assessment",
-      "cardSubtitle": "Share a few details and we’ll reach out to book your quick discovery call.",
+      "cardTitle": "Schedule your first session",
+      "cardSubtitle": "No commitment. Just a conversation to discover how your business can gain time, order, and peace of mind.",
       "field": {
         "name": {
           "label": "Your name",
@@ -264,7 +264,7 @@
         "idle": "Book your free assessment",
         "loading": "Submitting…"
       },
-      "disclaimer": "No payment or commitment required — this is a quick first step to design your plan.",
+      "disclaimer": "We work with real businesses that need time back to enjoy what they do—without stopping growth.",
       "success": {
         "title": "Thanks! We’ve got your request.",
         "body": "Our team will contact you shortly to schedule your free call."

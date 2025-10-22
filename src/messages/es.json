@@ -222,28 +222,28 @@
   },
   "start": {
     "hero": {
-      "title": "Empieza tu camino personalizado",
-      "subtitle": "Comenzaremos con una llamada breve para entender tus objetivos y crear un plan a tu medida."
+      "title": "Da el primer paso hacia un negocio que no se detiene",
+      "subtitle": "Te escuchamos, entendemos tu día a día y creamos un sistema que trabaja por ti, incluso cuando tú no puedes hacerlo."
     },
     "steps": {
       "items": {
         "intro": {
-          "title": "Introducción rápida",
-          "desc": "Cuéntanos qué necesitas y qué quieres conseguir."
+          "title": "Cuéntanos tu historia",
+          "desc": "Cada negocio tiene su ritmo. Queremos entender el tuyo: cómo trabajas, qué te frena y qué te gustaría cambiar."
         },
         "call": {
-          "title": "Llamada de descubrimiento",
-          "desc": "Alineamos objetivos y esbozamos juntos tu plan personalizado."
+          "title": "Diseñamos tu sistema",
+          "desc": "Automatizamos esas tareas que te hacen perder tiempo—llamadas, citas, mensajes—para que tu día vuelva a girar en torno a lo que realmente importa."
         },
         "launch": {
-          "title": "Empieza tu camino",
-          "desc": "Lo dejamos todo listo y te guiamos paso a paso."
+          "title": "Empieza a respirar",
+          "desc": "Mientras tú sigues atendiendo a tus clientes, el sistema se encarga del resto. Sin estrés, sin interrupciones, sin dejar de facturar."
         }
       }
     },
     "assessment": {
-      "cardTitle": "Evaluación gratuita",
-      "cardSubtitle": "Comparte algunos detalles y nos pondremos en contacto para agendar una breve llamada de descubrimiento.",
+      "cardTitle": "Agenda tu sesión inicial",
+      "cardSubtitle": "Sin compromiso. Solo una conversación para descubrir cómo tu negocio puede ganar tiempo, orden y tranquilidad.",
       "field": {
         "name": {
           "label": "Tu nombre",
@@ -264,7 +264,7 @@
         "idle": "Reserva tu evaluación gratuita",
         "loading": "Enviando…"
       },
-      "disclaimer": "Sin pago ni compromiso — es un primer paso rápido para diseñar tu plan.",
+      "disclaimer": "Trabajamos con negocios reales que necesitan tiempo para volver a disfrutar de lo que hacen, sin dejar de crecer.",
       "success": {
         "title": "¡Gracias! Hemos recibido tu solicitud.",
         "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
