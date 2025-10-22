@@ -11,6 +11,60 @@
     },
     "imageAlt": "Automation dashboard preview"
   },
+  "storyDeck": {
+    "title": "How Prozeso transforms the way your business works",
+    "subtitle": "From repetitive tasks to smart automations that save time, reduce costs, and help your company grow faster.",
+    "tabs": {
+      "problemTitle": "The Problem",
+      "solutionTitle": "The Solution",
+      "impactTitle": "The Impact"
+    },
+    "content": {
+      "problem": {
+        "lead": "Every minute you spend doing repetitive tasks is a minute you’re not spending growing your company",
+        "paragraphs": [
+          "Answering calls. Organizing appointments. Sending emails. Updating spreadsheets.",
+          "All those small tasks that keep you busy… are also the ones that keep you from moving forward.",
+          "Your time is worth more. And so is your business."
+        ]
+      },
+      "solution": {
+        "lead": "Turn manual processes into automated systems that run 24/7",
+        "intro": "Imagine this:",
+        "bullets": [
+          "Your customers get an immediate response without you picking up the phone.",
+          "Appointments schedule themselves while you sleep.",
+          "Leads are captured and qualified automatically without anyone touching a CRM.",
+          "Your reports update effortlessly."
+        ],
+        "outro": "We analyze how you work, automate what holds you back, and let Prozeso do the heavy lifting for you."
+      },
+      "impact": {
+        "lead": "The outcome isn’t just efficiency",
+        "paragraphs": [
+          "It’s getting back productive working hours, reducing operating costs and freeing the team to focus on what truly matters: serving better, selling more and growing without limits."
+        ],
+        "items": {
+          "reservations": {
+            "title": "More confirmed bookings",
+            "body": "Up to 40% more confirmed bookings thanks to instant responses."
+          },
+          "hours": {
+            "title": "Hours recovered",
+            "body": "More than 10 hours per employee recovered each week."
+          },
+          "support": {
+            "title": "24/7 service",
+            "body": "Round‑the‑clock service without hiring more staff."
+          },
+          "costs": {
+            "title": "Lower operating costs",
+            "body": "Operational costs reduced by up to 30%."
+          }
+        }
+      }
+    }
+  },
   "benefits": {
     "title": "Let automations do the repetitive work",
     "subtitle": "We build, monitor and optimize your n8n flows so your team ships faster, makes fewer mistakes and has a real-time view of results.",
@@ -335,91 +389,6 @@
         "body": "Our team will contact you shortly to schedule your free call."
       },
       "serverErrorDefault": "Something went wrong. Please try again."
-    }
-  },
-  "problem": {
-    "title": "The problem",
-    "lead": "Every minute you spend doing repetitive tasks is a minute you’re not spending growing your company.",
-    "paragraphs": [
-      "Answering calls. Organizing appointments. Sending emails. Updating spreadsheets.",
-      "All those small tasks that keep you busy… are also the ones that keep you from moving forward.",
-      "Your time is worth more. And so is your business."
-    ],
-    "subtitle": "Manual, fragile operations slow your team and hide what’s really happening.",
-    "items": {
-      "time": {
-        "title": "Too much manual work",
-        "body": "Repetitive tasks consume hours each week and delay what matters."
-      },
-      "fragile": {
-        "title": "Fragile glue between tools",
-        "body": "Spreadsheets, zaps and ad‑hoc scripts break silently and are hard to audit."
-      },
-      "errors": {
-        "title": "Errors and rework",
-        "body": "Data mismatches and skipped steps create incidents and costly rework."
-      },
-      "cost": {
-        "title": "Rising costs as you scale",
-        "body": "More volume implies more manual work: operations don’t scale with the business."
-      }
-    }
-  },
-  "solution": {
-    "title": "The solution",
-    "lead": "Turn manual processes into automated systems that run 24/7.",
-    "intro": "Imagine this:",
-    "bullets": [
-      "Your customers get an immediate response without you picking up the phone.",
-      "Appointments schedule themselves while you sleep.",
-      "Leads are captured and qualified automatically without anyone touching a CRM.",
-      "Your reports update effortlessly."
-    ],
-    "outro": "We analyze how you work, automate what holds you back, and let Prozeso do the heavy lifting for you.",
-    "items": {
-      "connect": {
-        "title": "Connect your tools",
-        "body": "Integrate CRM, email, sheets, ads, billing and internal APIs with n8n."
-      },
-      "standard": {
-        "title": "Standardize processes",
-        "body": "Clear triggers, validation, retries and alerts to keep flows predictable."
-      },
-      "secure": {
-        "title": "Secure by design",
-        "body": "Encrypted secrets, RBAC and audit logs in every flow."
-      },
-      "optimize": {
-        "title": "Monitor and improve",
-        "body": "Live dashboards and iteration to increase performance and reliability."
-      }
-    }
-  },
-  "impact": {
-    "title": "The impact",
-    "subtitle": "Visible results that compound over time.",
-    "lead": "The outcome isn’t just efficiency.",
-    "paragraphs": [
-      "It’s getting back productive working hours, reducing operating costs and freeing the team to focus on what truly matters: serving better, selling more and growing without limits."
-    ],
-    "tangibleTitle": "Tangible impact:",
-    "items": {
-      "reservations": {
-        "title": "More confirmed bookings",
-        "body": "Up to 40% more confirmed bookings thanks to instant responses."
-      },
-      "hours": {
-        "title": "Hours recovered",
-        "body": "More than 10 hours per employee recovered each week."
-      },
-      "support": {
-        "title": "24/7 service",
-        "body": "Round‑the‑clock service without hiring more staff."
-      },
-      "costs": {
-        "title": "Lower operating costs",
-        "body": "Operational costs reduced by up to 30%."
-      }
     }
   }
 }

@@ -11,6 +11,60 @@
     },
     "imageAlt": "Vista previa del panel de automatización"
   },
+  "storyDeck": {
+    "title": "Cómo Prozeso transforma la forma en que trabaja tu negocio",
+    "subtitle": "De tareas repetitivas a automatizaciones inteligentes que ahorran tiempo, reducen costes y hacen crecer tu empresa más rápido.",
+    "tabs": {
+      "problemTitle": "El Problema",
+      "solutionTitle": "La Solución",
+      "impactTitle": "El Impacto"
+    },
+    "content": {
+      "problem": {
+        "lead": "Cada minuto que pasas haciendo tareas repetitivas es un minuto que no dedicas a hacer crecer tu empresa",
+        "paragraphs": [
+          "Responder llamadas. Organizar citas. Mandar emails. Actualizar hojas de cálculo.",
+          "Todas esas pequeñas tareas que te mantienen ocupado… también son las que te impiden avanzar.",
+          "Tu tiempo vale más. Y tu negocio también."
+        ]
+      },
+      "solution": {
+        "lead": "Convierte procesos manuales en sistemas automáticos que funcionan 24/7",
+        "intro": "Imagina esto:",
+        "bullets": [
+          "Tus clientes reciben respuesta inmediata sin que tú levantes el teléfono.",
+          "Las citas se agendan solas mientras duermes.",
+          "Los clientes potenciales se guardan y califican automáticamente sin que nadie toque un CRM.",
+          "Tus reportes se actualizan sin esfuerzo."
+        ],
+        "outro": "Nosotros analizamos cómo trabajas, automatizamos lo que te frena y deja que Prozeso haga el trabajo pesado por ti."
+      },
+      "impact": {
+        "lead": "El resultado no es solo eficiencia",
+        "paragraphs": [
+          "Es recuperar horas de trabajo productivo, reducir costes operativos y liberar al equipo para centrarse en lo que realmente importa: atender mejor, vender más y crecer sin límites."
+        ],
+        "items": {
+          "reservations": {
+            "title": "Más reservas confirmadas",
+            "body": "Hasta un 40% más de reservas confirmadas gracias a respuestas instantáneas."
+          },
+          "hours": {
+            "title": "Horas recuperadas",
+            "body": "Más de 10 horas semanales recuperadas por empleado."
+          },
+          "support": {
+            "title": "Atención 24/7",
+            "body": "Una atención 24/7 sin contratar más personal."
+          },
+          "costs": {
+            "title": "Costes operativos más bajos",
+            "body": "Reducción de costes operativos de hasta 30%."
+          }
+        }
+      }
+    }
+  },
   "benefits": {
     "title": "Deja que las automatizaciones hagan el trabajo repetitivo",
     "subtitle": "Construimos, monitorizamos y optimizamos tus flujos en n8n para que tu equipo entregue más rápido, cometa menos errores y tenga una vista en tiempo real de los resultados.",
@@ -339,91 +393,6 @@
         "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
       },
       "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
-    }
-  },
-  "problem": {
-    "title": "El problema",
-    "lead": "Cada minuto que pasas haciendo tareas repetitivas es un minuto que no dedicas a hacer crecer tu empresa.",
-    "paragraphs": [
-      "Responder llamadas. Organizar citas. Mandar emails. Actualizar hojas de cálculo.",
-      "Todas esas pequeñas tareas que te mantienen ocupado… también son las que te impiden avanzar.",
-      "Tu tiempo vale más. Y tu negocio también."
-    ],
-    "subtitle": "Operaciones manuales y frágiles frenan a tu equipo y ocultan lo que realmente ocurre.",
-    "items": {
-      "time": {
-        "title": "Demasiado trabajo manual",
-        "body": "Las tareas repetitivas consumen horas cada semana y retrasan lo importante."
-      },
-      "fragile": {
-        "title": "Pegamento frágil entre herramientas",
-        "body": "Hojas de cálculo, zaps y scripts ad‑hoc se rompen en silencio y son difíciles de auditar."
-      },
-      "errors": {
-        "title": "Errores y retrabajo",
-        "body": "Desajustes de datos y pasos omitidos generan incidencias y retrabajo costoso."
-      },
-      "cost": {
-        "title": "Costes en aumento al escalar",
-        "body": "Más volumen implica más trabajo manual: la operación no escala con el negocio."
-      }
-    }
-  },
-  "solution": {
-    "title": "La solución",
-    "lead": "Convierte procesos manuales en sistemas automáticos que funcionan 24/7.",
-    "intro": "Imagina esto:",
-    "bullets": [
-      "Tus clientes reciben respuesta inmediata sin que tú levantes el teléfono.",
-      "Las citas se agendan solas mientras duermes.",
-      "Los clientes potenciales se guardan y califican automáticamente sin que nadie toque un CRM.",
-      "Tus reportes se actualizan sin esfuerzo."
-    ],
-    "outro": "Nosotros analizamos cómo trabajas, automatizamos lo que te frena y deja que Prozeso haga el trabajo pesado por ti.",
-    "items": {
-      "connect": {
-        "title": "Conecta tus herramientas",
-        "body": "Integra CRM, email, hojas, anuncios, facturación y APIs internas con n8n."
-      },
-      "standard": {
-        "title": "Estandariza procesos",
-        "body": "Disparadores claros, validación, reintentos y alertas para mantener flujos predecibles."
-      },
-      "secure": {
-        "title": "Seguro por diseño",
-        "body": "Secretos cifrados, RBAC y logs de auditoría en cada flujo."
-      },
-      "optimize": {
-        "title": "Monitorea y mejora",
-        "body": "Paneles en vivo e iteración para aumentar rendimiento y confiabilidad."
-      }
-    }
-  },
-  "impact": {
-    "title": "El impacto",
-    "subtitle": "Resultados visibles que se acumulan con el tiempo.",
-    "lead": "El resultado no es solo eficiencia.",
-    "paragraphs": [
-      "Es recuperar horas de trabajo productivo, reducir costes operativos y liberar al equipo para centrarse en lo que realmente importa: atender mejor, vender más y crecer sin límites."
-    ],
-    "tangibleTitle": "Impacto tangible:",
-    "items": {
-      "reservations": {
-        "title": "Más reservas confirmadas",
-        "body": "Hasta un 40% más de reservas confirmadas gracias a respuestas instantáneas."
-      },
-      "hours": {
-        "title": "Horas recuperadas",
-        "body": "Más de 10 horas semanales recuperadas por empleado."
-      },
-      "support": {
-        "title": "Atención 24/7",
-        "body": "Una atención 24/7 sin contratar más personal."
-      },
-      "costs": {
-        "title": "Costes operativos más bajos",
-        "body": "Reducción de costes operativos de hasta 30%."
-      }
     }
   }
 }

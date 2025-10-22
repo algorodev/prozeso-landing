@@ -138,4 +138,8 @@
   .gradient-cta {
     background: var(--gradient-cta);
   }
+
+  .min-h-dvh-minus-header {
+    min-height: calc(100dvh - 64px);
+  }
 }
