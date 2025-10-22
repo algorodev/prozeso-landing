@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { ElevenlabsDemo } from '@/components/Demo/ElevenlabsDemo'
 import type { Metadata } from "next";
+import { ElevenlabsDemo } from "@/components/Demo/ElevenlabsDemo";
 import { HeroDemo } from "@/components/Demo/HeroDemo";
 import { Highlights } from "@/components/Demo/Highlights";
 

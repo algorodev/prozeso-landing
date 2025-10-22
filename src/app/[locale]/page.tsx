@@ -1,10 +1,10 @@
-import StoryDeck from '@/components/Home/StoryDeck'
 import type { Metadata } from "next";
 import Benefits from "@/components/Home/Benefits";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import HowItWorks from "@/components/Home/HowItWorks";
 import StatsSection from "@/components/Home/StatsSection";
+import StoryDeck from "@/components/Home/StoryDeck";
 import Testimonials from "@/components/Home/Testimonials";
 import { locales } from "@/i18n/config";
 
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-	    <StoryDeck />
+      <StoryDeck />
       <Benefits />
       {/*<StatsSection />*/}
       <HowItWorks />
