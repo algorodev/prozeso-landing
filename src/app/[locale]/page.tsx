@@ -5,6 +5,9 @@ import Hero from "@/components/Home/Hero";
 import HowItWorks from "@/components/Home/HowItWorks";
 import StatsSection from "@/components/Home/StatsSection";
 import Testimonials from "@/components/Home/Testimonials";
+import Problem from "@/components/Home/Problem";
+import Solution from "@/components/Home/Solution";
+import Impact from "@/components/Home/Impact";
 import { locales } from "@/i18n/config";
 
 type Props = {
@@ -28,10 +31,13 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <Problem />
+      <Solution />
+      <Impact />
       <Benefits />
-      <StatsSection />
+      {/*<StatsSection />*/}
       <HowItWorks />
-      <Testimonials />
+      {/*<Testimonials />*/}
       <FinalCTA />
     </div>
   );

@@ -2,46 +2,45 @@
 
 import { motion } from "framer-motion";
 import {
-  Activity,
-  PlugZap,
-  RefreshCw,
-  Settings2,
-  Sparkles,
-} from "lucide-react";
+	Cog, Gauge, Handshake, Link2, ScanSearch, Workflow,
+} from 'lucide-react'
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const HowItWorks = () => {
   const t = useTranslations("howItWorks");
 
   const steps = [
     {
-      icon: Sparkles,
+      icon: ScanSearch,
       title: t("steps.discovery.title"),
       body: t("steps.discovery.body"),
     },
     {
-      icon: Settings2,
+      icon: Workflow,
       title: t("steps.design.title"),
       body: t("steps.design.body"),
     },
     {
-      icon: PlugZap,
+      icon: Link2,
       title: t("steps.build.title"),
       body: t("steps.build.body"),
     },
     {
-      icon: Activity,
+      icon: Cog,
       title: t("steps.monitor.title"),
       body: t("steps.monitor.body"),
     },
     {
-      icon: RefreshCw,
+      icon: Gauge,
       title: t("steps.iterate.title"),
       body: t("steps.iterate.body"),
     },
+	  {
+		  icon: Handshake,
+		  title: t("steps.scale.title"),
+		  body: t("steps.scale.body"),
+	  },
   ];
 
   const container = {
@@ -102,23 +101,6 @@ const HowItWorks = () => {
             </motion.li>
           ))}
         </motion.ol>
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ delay: 0.1, duration: 0.45 }}
-          className="mx-auto mt-12 flex max-w-3xl flex-col items-center gap-3 text-center"
-        >
-          <p className="text-sm text-muted-foreground">{t("ctaPrompt")}</p>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" variant="primary">
-              <LocalizedLink href="/start">{t("ctaPrimary")}</LocalizedLink>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <LocalizedLink href="/demo">{t("ctaSecondary")}</LocalizedLink>
-            </Button>
-          </div>
-        </motion.div>
       </div>
       <div className="pointer-events-none absolute -top-24 left-0 size-[22rem] rounded-full bg-primary/20 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-20 right-0 size-[26rem] rounded-full bg-accent/20 blur-3xl" />

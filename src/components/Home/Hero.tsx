@@ -26,15 +26,6 @@ const Hero = () => {
       <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="mx-auto max-w-2xl text-center lg:col-span-6 lg:text-left">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-background/60 px-3 py-1 text-xs text-muted-foreground shadow-sm backdrop-blur"
-            >
-              <Sparkles className="size-3.5 text-primary" />
-              <span>{t("badge")}</span>
-            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}

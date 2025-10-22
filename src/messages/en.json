@@ -1,10 +1,10 @@
 {
   "hero": {
     "badge": "Orchestrate workflows in minutes",
-    "title": "Automate your business with <accent>confidence</accent>",
-    "subtitle": "Connect your tools, automate repetitive work, and visualize results in one place. Ship scalable workflows for small and medium companies without the busywork.",
-    "ctaPrimary": "Get Started",
-    "ctaSecondary": "View Demo",
+    "title": "Make your <accent>business</accent> work for you",
+    "subtitle": "We automate the tasks that steal your time so you can sell more and grow faster.",
+    "ctaPrimary": "Request info",
+    "ctaSecondary": "Try free demo",
     "trialBadges": {
       "freeTrial": "Free trial",
       "noCreditCard": "No credit card required",
@@ -53,24 +53,28 @@
     "subtitle": "From discovery to dashboard, we partner with your team to deliver reliable automations and visible impact.",
     "steps": {
       "discovery": {
-        "title": "1 · Discovery call",
-        "body": "We map your goals, systems, and repetitive tasks. You’ll get a shortlist of high‑ROI automations."
+        "title": "1 · Discovery",
+        "body": "We identify the tasks that steal the most time."
       },
       "design": {
-        "title": "2 · Workflow design",
-        "body": "We design n8n flows with clear triggers, data validation, and failure handling — reviewed with you before build."
+        "title": "2 · Design",
+        "body": "We create automated flows tailored to your business."
       },
       "build": {
-        "title": "3 · Integrations & build",
-        "body": "We connect your tools (CRM, email, sheets, ads, billing) and implement secure secrets & RBAC."
+        "title": "3 · Integration",
+        "body": "We connect your tools so everything works without friction."
       },
       "monitor": {
-        "title": "4 · Monitor & alert",
-        "body": "Live dashboard tracks runs, latency, and success rate. Alerts keep your team ahead of issues."
+        "title": "4 · Automation",
+        "body": "Prozeso starts working for you, day and night."
       },
       "iterate": {
-        "title": "5 · Iterate & optimize",
-        "body": "We A/B steps, add telemetry, and tune schedules to keep performance strong as your needs evolve."
+        "title": "5 · Optimization",
+        "body": "We keep improving so each day you worry less and earn more."
+      },
+      "scale": {
+        "title": "6 · Ongoing partnership",
+        "body": "We don’t leave you on your own. We monitor your automations, spot improvements, and keep everything up to date."
       }
     },
     "ctaPrompt": "Ready to spot your highest‑ROI automations?",
@@ -125,10 +129,10 @@
     "clientLogoAlt": "Client logo"
   },
   "finalCta": {
-    "title": "Ready to automate the busywork?",
-    "subtitle": "Launch your first n8n workflow with us and get a live dashboard in days—not months.",
-    "ctaPrimary": "Start free assessment",
-    "ctaSecondary": "See live demo",
+    "title": "Let Prozeso work for you",
+    "subtitle": "Start automating your business today and win back the time you need to grow.",
+    "ctaPrimary": "Try free demo",
+    "ctaSecondary": "Talk to an expert",
     "bullets": {
       "gdprEncrypted": "GDPR-ready, encrypted secrets"
     }
@@ -270,6 +274,92 @@
         "body": "Our team will contact you shortly to schedule your free call."
       },
       "serverErrorDefault": "Something went wrong. Please try again."
+    }
+  },
+  "problem": {
+    "title": "The Problem",
+    "lead": "Every minute you spend on repetitive tasks is a minute you’re not spending growing your business.",
+    "paragraphs": [
+      "Answering calls. Scheduling appointments. Sending emails. Updating spreadsheets.",
+      "All those little tasks that keep you busy… are the same ones that keep you from moving forward.",
+      "Your time is worth more. And so is your business."
+    ],
+    "subtitle": "Manual, brittle operations slow your team and hide what's really happening.",
+    "items": {
+      "time": {
+        "title": "Too much manual work",
+        "body": "Repetitive tasks drain hours each week and delay the work that matters."
+      },
+      "fragile": {
+        "title": "Fragile glue between tools",
+        "body": "Spreadsheets, zaps, and ad‑hoc scripts break silently and are hard to audit."
+      },
+      "errors": {
+        "title": "Errors and rework",
+        "body": "Data mismatches and missed steps create customer issues and costly rework."
+      },
+      "cost": {
+        "title": "Rising costs as you scale",
+        "body": "More volume means more manual effort — operations don’t scale with the business."
+      }
+    }
+  },
+  "solution": {
+    "title": "The Solution",
+    "subtitle": "Reliable automations designed, monitored, and optimized for your stack.",
+    "lead": "Turn manual processes into automatic systems that work 24/7.",
+    "intro": "Imagine this:",
+    "bullets": [
+      "Your customers get an immediate response without you picking up the phone.",
+      "Appointments book themselves while you sleep.",
+      "Leads are captured and qualified automatically without anyone touching a CRM.",
+      "Your reports update effortlessly."
+    ],
+    "outro": "We analyze how you work, automate what’s holding you back, and let Prozeso do the heavy lifting for you.",
+    "items": {
+      "connect": {
+        "title": "Connect your tools",
+        "body": "Integrate CRM, email, sheets, ads, billing, and internal APIs with n8n."
+      },
+      "standard": {
+        "title": "Standardize processes",
+        "body": "Clear triggers, validation, retries, and alerts to keep flows predictable."
+      },
+      "secure": {
+        "title": "Secure by design",
+        "body": "Encrypted secrets, RBAC, and audit logs built into every workflow."
+      },
+      "optimize": {
+        "title": "Monitor and improve",
+        "body": "Live dashboards and iteration to increase throughput and reliability."
+      }
+    }
+  },
+  "impact": {
+    "title": "The Impact",
+    "subtitle": "Visible results that compound over time.",
+    "lead": "The result isn’t just efficiency.",
+    "paragraphs": [
+      "It’s getting back productive hours, reducing operating costs, and freeing your team to focus on what truly matters: serving better, selling more, and growing without limits."
+    ],
+    "tangibleTitle": "Tangible impact:",
+    "items": {
+      "reservations": {
+        "title": "More confirmed bookings",
+        "body": "Up to 40% more confirmed bookings thanks to instant replies."
+      },
+      "hours": {
+        "title": "Hours reclaimed",
+        "body": "More than 10 hours per week reclaimed per employee."
+      },
+      "support": {
+        "title": "24/7 support",
+        "body": "Always-on customer attention without hiring more staff."
+      },
+      "costs": {
+        "title": "Lower operating costs",
+        "body": "Operating cost reductions of up to 30%."
+      }
     }
   }
 }

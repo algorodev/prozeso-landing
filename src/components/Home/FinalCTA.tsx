@@ -40,10 +40,10 @@ const FinalCTA = () => {
           className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center gap-3 sm:flex-row"
         >
           <Button size="lg" variant="accent" asChild>
-            <LocalizedLink href="/start">{t("ctaPrimary")}</LocalizedLink>
+            <LocalizedLink href="/demo">{t("ctaPrimary")}</LocalizedLink>
           </Button>
           <Button size="lg" variant="outline" className="text-white/90" asChild>
-            <LocalizedLink href="/demo">{t("ctaSecondary")}</LocalizedLink>
+            <LocalizedLink href="/start">{t("ctaSecondary")}</LocalizedLink>
           </Button>
         </motion.div>
         <motion.ul

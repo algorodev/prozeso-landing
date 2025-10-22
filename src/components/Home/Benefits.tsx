@@ -102,7 +102,7 @@ const Benefits = () => {
             </motion.div>
           ))}
         </motion.div>
-        <motion.div
+        {/*<motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -113,7 +113,7 @@ const Benefits = () => {
           <Stat kpi="99.9%" label={t("stats.uptime")} />
           <Stat kpi="-60%" label={t("stats.manualTime")} />
           <Stat kpi=">30k" label={t("stats.tasksPerMonth")} />
-        </motion.div>
+        </motion.div>*/}
       </div>
       <div className="pointer-events-none absolute -top-24 -right-24 size-[26rem] rounded-full bg-primary/20 blur-3xl" />
       <div className="pointer-events-none absolute bottom-0 left-0 size-[20rem] rounded-full bg-accent/20 blur-3xl" />
