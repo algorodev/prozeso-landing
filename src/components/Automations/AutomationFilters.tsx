@@ -41,7 +41,6 @@ const AutomationFilters = ({
 
   return (
     <>
-      {/* Header + sort */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -51,7 +50,6 @@ const AutomationFilters = ({
             {t("list.subtitle")}
           </p>
         </div>
-
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="gap-2">

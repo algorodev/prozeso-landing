@@ -44,17 +44,17 @@ export default function ComparisonTable() {
               Feature availability across plans. Contact us for custom needs.
             </TableCaption>
             <TableHeader>
-              <TableRow className="bg-[--muted]">
-                <TableHead className="w-[40%] text-[--muted-foreground]">
+              <TableRow className="bg-muted">
+                <TableHead className="w-[40%] text-muted-foreground">
                   Features
                 </TableHead>
-                <TableHead className="w-[20%] text-[--muted-foreground]">
+                <TableHead className="w-[20%] text-muted-foreground">
                   Starter
                 </TableHead>
-                <TableHead className="w-[20%] text-[--muted-foreground]">
+                <TableHead className="w-[20%] text-muted-foreground">
                   Growth
                 </TableHead>
-                <TableHead className="w-[20%] text-[--muted-foreground]">
+                <TableHead className="w-[20%] text-muted-foreground">
                   Scale
                 </TableHead>
               </TableRow>
@@ -63,7 +63,7 @@ export default function ComparisonTable() {
               {ROWS.map((r, i) => (
                 <TableRow
                   key={r.label}
-                  className={i % 2 ? "bg-[--card]" : "bg-[--card]/80"}
+                  className={i % 2 ? "bg-card" : "bg-card/80"}
                 >
                   <TableCell className="font-medium">{r.label}</TableCell>
                   <TableCell>{renderCell(r.starter)}</TableCell>
@@ -81,7 +81,7 @@ export default function ComparisonTable() {
 
 function renderCell(v: Row["starter"]) {
   if (v === true)
-    return <Check className="size-4 text-[--primary]" aria-label="Included" />;
+    return <Check className="size-4 text-primary" aria-label="Included" />;
   if (v === false)
     return <Minus className="size-4 opacity-60" aria-label="Not included" />;
   return <span>{v}</span>;

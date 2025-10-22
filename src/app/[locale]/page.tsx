@@ -1,3 +1,4 @@
+import { Separator } from '@/components/ui/Separator'
 import type { Metadata } from "next";
 import Benefits from "@/components/Home/Benefits";
 import FinalCTA from "@/components/Home/FinalCTA";
@@ -34,6 +35,7 @@ export default function Home() {
       <Problem />
       <Solution />
       <Impact />
+	    <Separator />
       <Benefits />
       {/*<StatsSection />*/}
       <HowItWorks />

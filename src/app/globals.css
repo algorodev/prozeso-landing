@@ -76,6 +76,12 @@
   --sidebar-accent-foreground: var(--accent-foreground);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
+	--gradient-cta: linear-gradient(
+		                135deg,
+		                oklch(0.42 0.09 250) 0%,
+		                oklch(0.32 0.07 250) 50%,
+		                oklch(0.22 0.05 250) 100%
+	                );
 }
 
 .dark {
@@ -110,6 +116,12 @@
   --sidebar-accent-foreground: var(--accent-foreground);
   --sidebar-border: color-mix(in oklch, oklch(1 0 0) 12%, transparent);
   --sidebar-ring: var(--ring);
+	--gradient-cta: linear-gradient(
+		                120deg,
+		                oklch(0.68 0.08 250) 0%,
+		                oklch(0.42 0.09 250) 50%,
+		                oklch(0.32 0.07 250) 100%
+	                );
 }
 
 @layer base {
@@ -120,4 +132,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+	.gradient-cta {
+		background: var(--gradient-cta);
+	}
 }

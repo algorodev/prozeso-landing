@@ -105,12 +105,12 @@
         }
       },
       "categories": {
-        "CRM": "CRM",
-        "E-commerce": "E-commerce",
-        "Marketing": "Marketing",
-        "Ops": "Operaciones",
-        "Finance": "Finanzas",
-        "Support": "Soporte"
+        "crm": "CRM",
+        "e-commerce": "E-commerce",
+        "marketing": "Marketing",
+        "ops": "Operaciones",
+        "finance": "Finanzas",
+        "support": "Soporte"
       }
     },
     "grid": {
@@ -118,7 +118,154 @@
     },
     "detail": {
       "problemTitle": "Problema",
-      "solutionTitle": "Solución"
+      "solutionTitle": "Solución",
+      "resultsTitle": "Resultados"
+    },
+    "metrics": {
+      "timeSavedTitle": "Tiempo ahorrado",
+      "roiTitle": "ROI"
+    },
+    "actions": {
+      "details": "Ver detalles",
+      "setup": "Solicitar configuración"
+    },
+    "receptionist-in-a-box": {
+      "title": "Recepcionista: Tu agente que nunca duerme",
+      "tagline": "Tu asistente digital que nunca pierde una llamada ni un cliente.",
+      "description": "Mientras tú estás haciendo lo importante — atendiendo a tus clientes, dirigiendo tu negocio o simplemente descansando — Prozeso se encarga del resto.\nReceptionist-in-a-Box convierte cada llamada, mensaje o formulario en una cita confirmada automáticamente.\nSin esperas, sin papeleo y sin depender de nadie.\nAgenda, confirma y recuerda cada cita, todo de forma automática.",
+      "categories": {
+        "ops": "Operaciones",
+        "support": "Soporte"
+      },
+      "integrations": ["Email", "Calendar", "Twilio"],
+      "timeSavedShort": "10 h/semana ahorradas",
+      "timeSaved": "Hasta 10 horas al mes menos en llamadas, coordinación y mensajes de confirmación.\nCada cita confirmada es tiempo que vuelves a ganar para lo que de verdad importa: atender mejor, vender más o descansar más.",
+      "roiShort": "+180% citas confirmadas",
+      "roi": "Negocios que usan Receptionist-in-a-Box aumentan sus reservas entre un 25% y un 45% y reducen su tasa de ausencias hasta un 30%.\nCada mes, más clientes atendidos sin contratar a nadie nuevo.",
+      "outcomes": [
+        "Más reservas, menos esfuerzo: Los clientes pueden reservar incluso mientras duermes.",
+        "Confirmaciones instantáneas: Respuesta inmediata por SMS o email.",
+        "Agenda actualizada 24/7: Sin errores ni citas duplicadas.",
+        "Recordatorios automáticos: Reduce cancelaciones y olvidos.",
+        "Integración total: Compatible con Google Calendar, Cal.com y tu CRM."
+      ],
+      "problem": "Cada vez que alguien llama y no contestas, pierdes dinero.\nY cuando sí contestas, pierdes tiempo que podrías usar en algo más valioso.",
+      "solution": "Prozeso atiende por ti.\nResponde llamadas, agenda citas y confirma en segundos—sin intervención humana.\nTú sigues trabajando o disfrutando del día, mientras tu negocio no se detiene.",
+      "results": "Una agenda siempre llena.\nClientes felices.\nY tú, con más tiempo y menos estrés.",
+      "faqs": [
+        {
+          "question": "¿Necesito cambiar mi número de teléfono?",
+          "answer": "No. Podemos integrar tu número actual o redirigir llamadas fácilmente sin complicaciones."
+        },
+        {
+          "question": "¿Y si un cliente quiere cambiar o cancelar su cita?",
+          "answer": "El sistema envía enlaces automáticos para reprogramar o cancelar sin que tú tengas que intervenir."
+        },
+        {
+          "question": "¿Funciona fuera del horario laboral?",
+          "answer": "Sí. Receptionist-in-a-Box trabaja 24/7 para no perder oportunidades."
+        },
+        {
+          "question": "¿Se integra con mi calendario actual?",
+          "answer": "Totalmente. Usamos Cal.com o Google Calendar para mantener tu agenda siempre sincronizada."
+        },
+        {
+          "question": "¿Puedo personalizar los mensajes o el tono?",
+          "answer": "Sí, ajustamos la comunicación para que suene como tu negocio, no como un robot."
+        }
+      ]
+    },
+    "missed-call-auto-callback": {
+      "title": "Llamada Perdida → Respuesta Automática",
+      "tagline": "Convierte las llamadas perdidas en clientes ganados.",
+      "description": "Cada llamada que no contestas puede ser una cita, una venta o un cliente que no vuelve.\nCon Missed Call Recovery, cada vez que alguien llama y no puede hablar contigo, Prozeso responde por ti.\nEnvía un mensaje inmediato con un enlace para reservar una cita o deja programada una tarea para que puedas devolver la llamada más tarde.\nNo pierdes oportunidades. No pierdes tiempo.",
+      "categories": {
+        "ops": "Operaciones",
+        "support": "Soporte"
+      },
+      "integrations": ["Twilio"],
+      "timeSavedShort": "5h/semana ahorradas",
+      "timeSaved": "Hasta 5 horas semanales menos en devolver llamadas manualmente y hacer seguimiento a clientes.",
+      "roiShort": "+15–35% llamadas recuperadas",
+      "roi": "Recupera entre un 15% y un 35% de las llamadas perdidas y aumenta tus ingresos mensuales sin invertir en más personal.\nCada llamada recuperada es una nueva oportunidad de venta cerrada.",
+      "outcomes": [
+        "Recupera ingresos perdidos: Convierte llamadas sin responder en citas confirmadas.",
+        "Atención inmediata 24/7: Incluso cuando estás ocupado o cerrado, tus clientes reciben respuesta al instante.",
+        "Automatiza el seguimiento: Si el cliente no responde, el sistema crea una tarea automática para tu equipo.",
+        "Mejora tu imagen profesional: Tus clientes siempre se sienten atendidos, incluso cuando no estás disponible.",
+        "Compatible con Twilio, Aircall y CRMs populares."
+      ],
+      "problem": "Cada llamada que no contestas es una oportunidad que desaparece.\nY, en la mayoría de negocios, más del 30% de las llamadas entrantes no llegan a atenderse.",
+      "solution": "Prozeso se encarga de tus llamadas cuando tú no puedes.\nEn segundos, responde al cliente, le ofrece opciones y le permite reservar sin hablar con nadie.",
+      "results": "Clientes que antes se iban, ahora vuelven.\nUn flujo constante de citas recuperadas y más ingresos sin más trabajo.",
+      "faqs": [
+        {
+          "question": "¿Qué pasa si alguien llama fuera del horario laboral?",
+          "answer": "El sistema responde igual. Envía un SMS con un enlace para reservar en el siguiente horario disponible."
+        },
+        {
+          "question": "¿Y si el cliente no hace clic en el enlace?",
+          "answer": "Se crea automáticamente una tarea para que puedas llamarlo cuando tengas un hueco."
+        },
+        {
+          "question": "¿Puedo personalizar el mensaje de respuesta?",
+          "answer": "Sí. Puedes usar tu propio texto, tono y firma de marca."
+        },
+        {
+          "question": "¿Funciona con mi proveedor de llamadas actual?",
+          "answer": "Sí, es compatible con Twilio, Aircall y la mayoría de plataformas VoIP."
+        },
+        {
+          "question": "¿Qué pasa si tengo varios empleados o líneas?",
+          "answer": "El sistema puede asignar las llamadas a diferentes personas según reglas que definamos contigo."
+        }
+      ]
+    },
+    "appointment-reminders-smart-reschedule": {
+      "title": "Recordatorios de Cita + Reprogramación Inteligente",
+      "tagline": "Menos huecos vacíos. Más citas confirmadas.",
+      "description": "Los olvidos cuestan dinero.\nCada cita que no se presenta o se cancela a última hora deja una hora muerta en tu agenda que ya no vuelve.\nCon Appointment Reminders + Smart Reschedule, Prozeso recuerda cada cita a tus clientes y les permite reprogramar con un solo clic.\nSin llamadas. Sin pérdida de tiempo. Sin huecos vacíos.",
+      "categories": {
+        "ops": "Operaciones",
+        "support": "Soporte"
+      },
+      "integrations": ["Email", "Calendar", "Twilio"],
+      "timeSavedShort": "8h/mes ahorradas",
+      "timeSaved": "Hasta 8 horas al mes menos en llamadas de recordatorio, mensajes manuales y reorganización de agenda.",
+      "roiShort": "-20–40% no-shows y -10–20% cancelaciones",
+      "roi": "Reduce tus no-shows entre un 20% y un 40% y evita hasta un 10–20% de cancelaciones de última hora.\nMás citas efectivas, más facturación y menos estrés.",
+      "outcomes": [
+        "Recordatorios automáticos por SMS o email: Nunca más una cita olvidada.",
+        "Reprogramación en un clic: Tus clientes eligen nuevo horario sin contactarte.",
+        "Agenda actualizada al instante: Todo sincronizado con tu calendario y CRM.",
+        "Reducción de cancelaciones: Tu agenda se mantiene llena sin esfuerzo.",
+        "Mejor experiencia para tus clientes: Comunicación profesional y fluida."
+      ],
+      "problem": "Los no-shows y cancelaciones de última hora no solo vacían tu agenda:\nrompen tu ritmo, te hacen perder dinero y te obligan a improvisar.",
+      "solution": "Prozeso mantiene el contacto con tus clientes por ti.\nEnvía recordatorios automáticos y ofrece la posibilidad de reprogramar sin llamadas.\nTú sigues trabajando mientras tu agenda se reorganiza sola.",
+      "results": "Una agenda estable, clientes puntuales y un negocio que no se detiene por imprevistos.",
+      "faqs": [
+        {
+          "question": "¿Con cuánta antelación se envían los recordatorios?",
+          "answer": "Puedes definirlo tú: 24h, 48h o incluso el mismo día, según tus preferencias."
+        },
+        {
+          "question": "¿Y si un cliente quiere cambiar su cita?",
+          "answer": "Recibe un enlace directo con tus horarios disponibles. Solo hace clic y el sistema actualiza todo automáticamente."
+        },
+        {
+          "question": "¿Funciona con Google Calendar o Cal.com?",
+          "answer": "Sí, la sincronización es instantánea y bidireccional."
+        },
+        {
+          "question": "¿Puedo personalizar los mensajes?",
+          "answer": "Por supuesto. Puedes adaptar el tono, idioma y plantilla según tu marca."
+        },
+        {
+          "question": "¿Y si quiero desactivar los recordatorios automáticos?",
+          "answer": "Puedes hacerlo en cualquier momento, aunque la mayoría de negocios ve un gran retorno desde el primer mes."
+        }
+      ]
     }
   },
   "demo": {

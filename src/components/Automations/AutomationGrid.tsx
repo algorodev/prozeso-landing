@@ -7,6 +7,7 @@ import AutomationCard from "./AutomationCard";
 
 const AutomationGrid = ({ items }: { items: Automation[] }) => {
   const t = useTranslations("automations");
+
   return (
     <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((a) => (

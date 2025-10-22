@@ -1,22 +1,44 @@
 "use client";
 
-import type { AutomationDetail } from "@/app/[locale]/automations/[id]/data";
-import { Card, CardContent } from "@/components/ui/Card";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
+import { useTranslations } from 'next-intl'
+import { Fragment } from 'react'
 
-export default function Metrics({ detail }: { detail: AutomationDetail }) {
+export default function Metrics({ automationId }: { automationId: string }) {
+	const t = useTranslations('automations.metrics')
+	const tId = useTranslations(`automations.${automationId}`)
+
   return (
     <section className="relative">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8">
         <h2 className="text-xl font-semibold">Metrics</h2>
-        <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6">
-          {detail.metrics.map((m) => (
-            <Card key={m.label}>
-              <CardContent className="p-4 text-center">
-                <div className="text-lg font-semibold">{m.kpi}</div>
-                <div className="text-xs text-muted-foreground">{m.label}</div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+	        <Card>
+		        <CardHeader>
+			        <CardTitle>{t("timeSavedTitle")}</CardTitle>
+		        </CardHeader>
+		        <CardContent className="text-sm text-muted-foreground">
+			        {tId('timeSaved').split('\n').map((part, i) => (
+				        <Fragment key={i}>
+					        {i > 0 && <><br/><br/></>}
+					        {part}
+				        </Fragment>
+			        ))}
+		        </CardContent>
+	        </Card>
+	        <Card>
+		        <CardHeader>
+			        <CardTitle>{t("roiTitle")}</CardTitle>
+		        </CardHeader>
+		        <CardContent className="text-sm text-muted-foreground">
+			        {tId('roi').split('\n').map((part, i) => (
+				        <Fragment key={i}>
+					        {i > 0 && <><br/><br/></>}
+					        {part}
+				        </Fragment>
+			        ))}
+		        </CardContent>
+	        </Card>
         </div>
       </div>
     </section>

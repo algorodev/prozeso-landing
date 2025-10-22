@@ -1,5 +1,6 @@
 "use client";
 
+import FAQ from '@/components/Automations/FAQ'
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
 import { AUTOMATIONS } from "@/app/[locale]/automations/data";
@@ -10,7 +11,6 @@ import PricingSection from "@/components/Automations/PricingSection";
 import ProblemSolution from "@/components/Automations/ProblemSolution";
 import Steps from "@/components/Automations/Steps";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
-import { DETAILS } from "./data";
 
 export default function AutomationDetailPage() {
   const params = useParams<{ id: string }>();
@@ -35,16 +35,15 @@ export default function AutomationDetailPage() {
     );
   }
 
-  const detail = DETAILS[automation.id];
-
   return (
     <main className="overflow-x-clip">
-      <DetailHero automation={automation} detail={detail} />
-      <ProblemSolution detail={detail} />
-      <Steps detail={detail} />
-      <Metrics detail={detail} />
-      <Integrations detail={detail} />
-      <PricingSection automationId={automation.id} />
+      <DetailHero automationId={automation.id} icon={automation.icon} />
+      <ProblemSolution automationId={automation.id} />
+      <Metrics automationId={automation.id} />
+	    <FAQ automationId={automation.id} />
+      {/*<Steps detail={detail} />*/}
+      {/*<Integrations detail={detail} />*/}
+      {/*<PricingSection automationId={automation.id} />*/}
     </main>
   );
 }

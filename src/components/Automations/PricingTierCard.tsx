@@ -29,7 +29,7 @@ export default function PricingTierCard({
   const price = yearly ? tier.priceYearly : tier.priceMonthly;
 
   return (
-    <Card className={`h-full ${tier.popular ? "ring-1 ring-[--accent]" : ""}`}>
+    <Card className={`h-full ${tier.popular ? "ring-1 ring-accent" : ""}`}>
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-xl">{tier.name}</CardTitle>
@@ -53,7 +53,7 @@ export default function PricingTierCard({
         <ul className="space-y-2 text-sm">
           {tier.features.map((f) => (
             <li key={f} className="flex items-start gap-2">
-              <Check className="mt-0.5 size-4 text-[--primary]" />
+              <Check className="mt-0.5 size-4 text-primary" />
               <span>{f}</span>
             </li>
           ))}
