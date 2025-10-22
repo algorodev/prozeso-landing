@@ -53,10 +53,7 @@ const FinalCTA = () => {
           className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-2 text-sm text-muted-foreground sm:grid-cols-3"
         >
           {bullets.map((item) => (
-            <li
-              key={item}
-              className="flex items-center justify-center gap-2"
-            >
+            <li key={item} className="flex items-center justify-center gap-2">
               <Check className="size-4" /> {item}
             </li>
           ))}

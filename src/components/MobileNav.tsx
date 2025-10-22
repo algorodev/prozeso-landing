@@ -38,8 +38,8 @@ type Props = {
 
 export const MobileNav = ({ nav = [] }: Props) => {
   const t = useTranslations("header");
-	const clientUrl =
-		process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
+  const clientUrl =
+    process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
 
   return (
     <Sheet>

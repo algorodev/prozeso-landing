@@ -3,11 +3,11 @@ import Benefits from "@/components/Home/Benefits";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import HowItWorks from "@/components/Home/HowItWorks";
-import StatsSection from "@/components/Home/StatsSection";
-import Testimonials from "@/components/Home/Testimonials";
+import Impact from "@/components/Home/Impact";
 import Problem from "@/components/Home/Problem";
 import Solution from "@/components/Home/Solution";
-import Impact from "@/components/Home/Impact";
+import StatsSection from "@/components/Home/StatsSection";
+import Testimonials from "@/components/Home/Testimonials";
 import { locales } from "@/i18n/config";
 
 type Props = {

@@ -2,8 +2,13 @@
 
 import { motion } from "framer-motion";
 import {
-	Cog, Gauge, Handshake, Link2, ScanSearch, Workflow,
-} from 'lucide-react'
+  Cog,
+  Gauge,
+  Handshake,
+  Link2,
+  ScanSearch,
+  Workflow,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 
@@ -36,11 +41,11 @@ const HowItWorks = () => {
       title: t("steps.iterate.title"),
       body: t("steps.iterate.body"),
     },
-	  {
-		  icon: Handshake,
-		  title: t("steps.scale.title"),
-		  body: t("steps.scale.body"),
-	  },
+    {
+      icon: Handshake,
+      title: t("steps.scale.title"),
+      body: t("steps.scale.body"),
+    },
   ];
 
   const container = {

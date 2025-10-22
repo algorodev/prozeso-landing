@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import logoBlanco from "@/assets/logo-blanco.svg";
 import logoColor from "@/assets/logo-color.svg";
 import logoNegro from "@/assets/logo-negro.svg";
-import logoBlanco from "@/assets/logo-blanco.svg";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { MobileNav } from "@/components/MobileNav";
@@ -62,7 +62,11 @@ export const Header = () => {
             href="/"
             className="flex items-center gap-2 font-semibold"
           >
-            <Image src={isDark ? logoBlanco : logoNegro} width={120} alt={t("logoAlt")} />
+            <Image
+              src={isDark ? logoBlanco : logoNegro}
+              width={120}
+              alt={t("logoAlt")}
+            />
           </LocalizedLink>
         </div>
         <nav className="hidden md:flex items-center gap-1 ml-2">

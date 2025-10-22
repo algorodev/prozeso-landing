@@ -1,6 +1,6 @@
 "use client";
 
-import { NotebookPen, Wind, Workflow } from 'lucide-react'
+import { NotebookPen, Wind, Workflow } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 

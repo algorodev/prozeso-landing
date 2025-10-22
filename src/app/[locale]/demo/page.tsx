@@ -21,9 +21,11 @@ export default function DemoPage() {
         }
       />*/}
       <Highlights />
-	    <div className='py-10'>
-		    <h3 className='text-center text-xl font-semibold'>Demo in Progress ...</h3>
-	    </div>
+      <div className="py-10">
+        <h3 className="text-center text-xl font-semibold">
+          Demo in Progress ...
+        </h3>
+      </div>
     </main>
   );
 }
