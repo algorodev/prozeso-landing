@@ -89,7 +89,7 @@ const Benefits = () => {
               variants={child}
               className={`lg:col-span-2 ${idx === 3 ? "lg:col-start-2" : ""}`}
             >
-              <Card className="h-full transition-shadow hover:shadow-lg">
+              <Card className="h-full transition-shadow hover:shadow-lg dark:hover:shadow-white/10">
                 <CardHeader className="flex flex-row items-center gap-3">
                   <div className="grid size-10 place-items-center rounded-xl bg-primary/10 text-primary">
                     <Icon className="size-5" />

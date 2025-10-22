@@ -1,60 +1,49 @@
 {
   "hero": {
-    "badge": "Orchestrate workflows in minutes",
     "title": "Make your <accent>business</accent> work for you",
-    "subtitle": "We automate the tasks that steal your time so you can sell more and grow faster.",
-    "ctaPrimary": "Request info",
+    "subtitle": "We automate the tasks that waste your time so you can sell more and grow faster.",
+    "ctaPrimary": "Request information",
     "ctaSecondary": "Try free demo",
     "trialBadges": {
       "freeTrial": "Free trial",
-      "noCreditCard": "No credit card required",
+      "noCreditCard": "No credit card",
       "cancelAnytime": "Cancel anytime"
     },
     "imageAlt": "Automation dashboard preview"
   },
   "benefits": {
-    "title": "Let automations do the busywork",
-    "subtitle": "We build, monitor, and optimize your n8n workflows so your team ships faster, makes fewer mistakes, and gets a live view of results.",
+    "title": "Let automations do the repetitive work",
+    "subtitle": "We build, monitor and optimize your n8n flows so your team ships faster, makes fewer mistakes and has a real-time view of results.",
     "items": {
       "saveTime": {
-        "title": "Save hours every week",
-        "body": "Automate repetitive tasks like data sync, lead routing, and report exports. Your team focuses on work that moves the needle."
+        "title": "Save time",
+        "body": "Free yourself from repetitive tasks and focus on what truly moves your business."
       },
       "fewerErrors": {
-        "title": "Fewer errors, consistent results",
-        "body": "Standardized n8n workflows reduce manual mistakes and create predictable, auditable processes across tools."
+        "title": "Scale without hiring",
+        "body": "Automate processes without increasing your team."
       },
       "visibility": {
-        "title": "Full visibility on a live dashboard",
-        "body": "Track runs, success rate, and throughput. Drill into logs and alerts so issues are spotted before customers notice."
+        "title": "Serve 24/7",
+        "body": "Never lose a customer for replying late."
       },
       "connectStack": {
-        "title": "Connect your stack in minutes",
-        "body": "Hundreds of integrations across CRM, email, spreadsheets, ads, payments, and internal APIs—without brittle glue code."
+        "title": "Reduce errors",
+        "body": "Faster, more accurate processes without human dependencies."
       },
       "security": {
-        "title": "Secure & GDPR-friendly by design",
-        "body": "Scoped API keys, role-based access, encrypted secrets, and data residency options to keep compliance simple."
-      },
-      "roi": {
-        "title": "Proven ROI for SMBs",
-        "body": "Automations pay for themselves by reducing busywork, preventing churn, and unlocking always-on operations."
+        "title": "Focus on growth",
+        "body": "Spend your hours on strategy, sales and important decisions."
       }
-    },
-    "stats": {
-      "connectors": "Connectors supported",
-      "uptime": "Workflow uptime",
-      "manualTime": "Manual ops time",
-      "tasksPerMonth": "Tasks automated / mo"
     }
   },
   "howItWorks": {
     "title": "How it works",
-    "subtitle": "From discovery to dashboard, we partner with your team to deliver reliable automations and visible impact.",
+    "subtitle": "From discovery to dashboard, we collaborate with your team to deliver reliable automations and visible impact.",
     "steps": {
       "discovery": {
-        "title": "1 · Discovery",
-        "body": "We identify the tasks that steal the most time."
+        "title": "1 · Diagnosis",
+        "body": "We detect the tasks that take the most time from you."
       },
       "design": {
         "title": "2 · Design",
@@ -70,67 +59,20 @@
       },
       "iterate": {
         "title": "5 · Optimization",
-        "body": "We keep improving so each day you worry less and earn more."
+        "body": "We keep working so each day you worry less and earn more."
       },
       "scale": {
-        "title": "6 · Ongoing partnership",
-        "body": "We don’t leave you on your own. We monitor your automations, spot improvements, and keep everything up to date."
+        "title": "6. Ongoing support",
+        "body": "We don’t leave you alone. We monitor your automations, spot improvements and keep them up to date."
       }
     },
-    "ctaPrompt": "Ready to spot your highest‑ROI automations?",
+    "ctaPrompt": "Ready to identify your highest-ROI automations?",
     "ctaPrimary": "Start free assessment",
     "ctaSecondary": "See live demo"
   },
-  "stats": {
-    "title": "Real results from real automation",
-    "subtitle": "Our clients transform operations by automating what used to take hours into tasks that run while they sleep.",
-    "items": {
-      "automationCount": {
-        "label": "Active client automations",
-        "desc": "Each workflow tailored and monitored for performance."
-      },
-      "tasksExecuted": {
-        "label": "Tasks executed monthly",
-        "desc": "Reliably processed across all connected platforms."
-      },
-      "hoursSaved": {
-        "label": "Hours saved per year",
-        "desc": "Through reduced manual input and automated reporting."
-      },
-      "successRate": {
-        "label": "Execution success rate",
-        "desc": "Proactive monitoring ensures uptime and reliability."
-      }
-    }
-  },
-  "testimonials": {
-    "title": "What our customers say",
-    "subtitle": "Proof that automation pays off — in hours saved, errors prevented, and revenue protected.",
-    "items": {
-      "item1": {
-        "quote": "We replaced three manual handoffs with a single n8n flow. Reports that took all Friday now arrive before 9am.",
-        "name": "María López",
-        "role": "Head of Operations",
-        "company": "CleverMarket"
-      },
-      "item2": {
-        "quote": "The dashboard gave us visibility we didn’t have. We spotted a leaking segment and recovered ~12% MRR in two weeks.",
-        "name": "James Patel",
-        "role": "Growth Lead",
-        "company": "Finly"
-      },
-      "item3": {
-        "quote": "Security reviews were smooth: RBAC, encrypted secrets, and logs out‑of‑the-box. Zero production incidents in 6 months.",
-        "name": "Sofia Nguyen",
-        "role": "CTO",
-        "company": "Horizon Health"
-      }
-    },
-    "clientLogoAlt": "Client logo"
-  },
   "finalCta": {
     "title": "Let Prozeso work for you",
-    "subtitle": "Start automating your business today and win back the time you need to grow.",
+    "subtitle": "Start automating your business today and get back the time you need to grow.",
     "ctaPrimary": "Try free demo",
     "ctaSecondary": "Talk to an expert",
     "bullets": {
@@ -143,16 +85,16 @@
       "demo": "Demo"
     },
     "cta": "Get started",
-    "logoAlt": "Prozeso Logo",
+    "logoAlt": "Prozeso logo",
     "signIn": "Sign in"
   },
   "automations": {
     "list": {
       "title": "Automation catalog",
-      "subtitle": "Browse ready-to-use workflows. We tailor each automation to your stack and set up monitoring & alerts."
+      "subtitle": "Explore ready-to-use flows. We tailor each automation to your stack and set up monitoring and alerts."
     },
     "filters": {
-      "searchPlaceholder": "Search automations, tools, or outcomes…",
+      "searchPlaceholder": "Search automations, tools or outcomes…",
       "sort": {
         "label": "Sort",
         "sortBy": "Sort by",
@@ -166,7 +108,7 @@
         "CRM": "CRM",
         "E-commerce": "E-commerce",
         "Marketing": "Marketing",
-        "Ops": "Ops",
+        "Ops": "Operations",
         "Finance": "Finance",
         "Support": "Support"
       }
@@ -181,63 +123,39 @@
   },
   "demo": {
     "hero": {
-      "title": "Let’s see how your business could keep working while you keep serving customers",
-      "subtitle": "Try a live demo to discover how Prozeso will help you in day‑to‑day operations.",
+      "title": "Let’s see together how your business could keep running while you keep serving customers",
+      "subtitle": "Try a live demo to discover how Prozeso will help you day to day.",
       "cta": "Start your free assessment"
-    },
-    "faq": {
-      "title": "FAQs",
-      "items": {
-        "whatInDemo": {
-          "q": "What will I see in the demo?",
-          "a": "A short walkthrough of the core flow so you can understand how we work together end-to-end."
-        },
-        "howLong": {
-          "q": "How long is it?",
-          "a": "Usually under 3 minutes — quick and to the point."
-        },
-        "nextStep": {
-          "q": "What’s the next step after watching?",
-          "a": "Book a free assessment — we’ll tailor the plan to your needs and timeline."
-        }
-      }
-    },
-    "media": {
-      "videoTitle": "Product demo video",
-      "screensPlaceholder": "Add screenshots to DemoMedia",
-      "prev": "Previous",
-      "next": "Next",
-      "screenshotAltPrefix": "Screenshot"
     },
     "highlights": {
       "tailoredFlow": {
         "title": "Tailored flow",
-        "desc": "In minutes, we’ll show you how to automate the tasks that are stealing your time today."
+        "desc": "We’ll show you in minutes how to automate the tasks that currently steal your time."
       },
       "builtInComms": {
-        "title": "Integrated communications",
-        "desc": "See how your business can attend, schedule, and reply without depending on anyone."
+        "title": "Built-in communications",
+        "desc": "You’ll see how your business can attend, schedule and respond without depending on anyone."
       },
       "paymentsTrust": {
-        "title": "Payments & trust",
-        "desc": "Leave with a clear view of how to gain time, professionalism, and peace of mind from day one."
+        "title": "Payments and trust",
+        "desc": "You’ll leave with a clear view of how to gain time, professionalism and peace of mind from day one."
       }
     }
   },
   "start": {
     "hero": {
       "title": "Take the first step toward a business that never stops",
-      "subtitle": "We listen, understand your day to day, and design a system that works for you—even when you can’t."
+      "subtitle": "We listen, understand your day to day and create a system that works for you, even when you can’t."
     },
     "steps": {
       "items": {
         "intro": {
           "title": "Tell us your story",
-          "desc": "Every business has its rhythm. We want to understand yours: how you work, what slows you down, and what you’d like to change."
+          "desc": "Every business has its rhythm. We want to understand yours: how you work, what holds you back and what you’d like to change."
         },
         "call": {
           "title": "We design your system",
-          "desc": "We automate the tasks that steal your time—calls, appointments, messages—so your day revolves around what truly matters again."
+          "desc": "We automate the tasks that waste your time—calls, appointments, messages—so your day revolves around what truly matters again."
         },
         "launch": {
           "title": "Start to breathe",
@@ -247,7 +165,7 @@
     },
     "assessment": {
       "cardTitle": "Schedule your first session",
-      "cardSubtitle": "No commitment. Just a conversation to discover how your business can gain time, order, and peace of mind.",
+      "cardSubtitle": "No commitment. Just a conversation to discover how your business can gain time, order and peace of mind.",
       "field": {
         "name": {
           "label": "Your name",
@@ -261,104 +179,103 @@
         },
         "goals": {
           "label": "What are you looking for?",
-          "placeholder": "Tell us briefly what you’d like to achieve..."
+          "placeholder": "Briefly tell us what you’d like to achieve..."
         }
       },
       "submit": {
         "idle": "Book your free assessment",
-        "loading": "Submitting…"
+        "loading": "Sending…"
       },
-      "disclaimer": "We work with real businesses that need time back to enjoy what they do—without stopping growth.",
+      "disclaimer": "We work with real businesses that need time to enjoy what they do again, without stopping growth.",
       "success": {
-        "title": "Thanks! We’ve got your request.",
+        "title": "Thanks! We’ve received your request.",
         "body": "Our team will contact you shortly to schedule your free call."
       },
       "serverErrorDefault": "Something went wrong. Please try again."
     }
   },
   "problem": {
-    "title": "The Problem",
-    "lead": "Every minute you spend on repetitive tasks is a minute you’re not spending growing your business.",
+    "title": "The problem",
+    "lead": "Every minute you spend doing repetitive tasks is a minute you’re not spending growing your company.",
     "paragraphs": [
-      "Answering calls. Scheduling appointments. Sending emails. Updating spreadsheets.",
-      "All those little tasks that keep you busy… are the same ones that keep you from moving forward.",
+      "Answering calls. Organizing appointments. Sending emails. Updating spreadsheets.",
+      "All those small tasks that keep you busy… are also the ones that keep you from moving forward.",
       "Your time is worth more. And so is your business."
     ],
-    "subtitle": "Manual, brittle operations slow your team and hide what's really happening.",
+    "subtitle": "Manual, fragile operations slow your team and hide what’s really happening.",
     "items": {
       "time": {
         "title": "Too much manual work",
-        "body": "Repetitive tasks drain hours each week and delay the work that matters."
+        "body": "Repetitive tasks consume hours each week and delay what matters."
       },
       "fragile": {
         "title": "Fragile glue between tools",
-        "body": "Spreadsheets, zaps, and ad‑hoc scripts break silently and are hard to audit."
+        "body": "Spreadsheets, zaps and ad‑hoc scripts break silently and are hard to audit."
       },
       "errors": {
         "title": "Errors and rework",
-        "body": "Data mismatches and missed steps create customer issues and costly rework."
+        "body": "Data mismatches and skipped steps create incidents and costly rework."
       },
       "cost": {
         "title": "Rising costs as you scale",
-        "body": "More volume means more manual effort — operations don’t scale with the business."
+        "body": "More volume implies more manual work: operations don’t scale with the business."
       }
     }
   },
   "solution": {
-    "title": "The Solution",
-    "subtitle": "Reliable automations designed, monitored, and optimized for your stack.",
-    "lead": "Turn manual processes into automatic systems that work 24/7.",
+    "title": "The solution",
+    "lead": "Turn manual processes into automated systems that run 24/7.",
     "intro": "Imagine this:",
     "bullets": [
       "Your customers get an immediate response without you picking up the phone.",
-      "Appointments book themselves while you sleep.",
+      "Appointments schedule themselves while you sleep.",
       "Leads are captured and qualified automatically without anyone touching a CRM.",
       "Your reports update effortlessly."
     ],
-    "outro": "We analyze how you work, automate what’s holding you back, and let Prozeso do the heavy lifting for you.",
+    "outro": "We analyze how you work, automate what holds you back, and let Prozeso do the heavy lifting for you.",
     "items": {
       "connect": {
         "title": "Connect your tools",
-        "body": "Integrate CRM, email, sheets, ads, billing, and internal APIs with n8n."
+        "body": "Integrate CRM, email, sheets, ads, billing and internal APIs with n8n."
       },
       "standard": {
         "title": "Standardize processes",
-        "body": "Clear triggers, validation, retries, and alerts to keep flows predictable."
+        "body": "Clear triggers, validation, retries and alerts to keep flows predictable."
       },
       "secure": {
         "title": "Secure by design",
-        "body": "Encrypted secrets, RBAC, and audit logs built into every workflow."
+        "body": "Encrypted secrets, RBAC and audit logs in every flow."
       },
       "optimize": {
         "title": "Monitor and improve",
-        "body": "Live dashboards and iteration to increase throughput and reliability."
+        "body": "Live dashboards and iteration to increase performance and reliability."
       }
     }
   },
   "impact": {
-    "title": "The Impact",
+    "title": "The impact",
     "subtitle": "Visible results that compound over time.",
-    "lead": "The result isn’t just efficiency.",
+    "lead": "The outcome isn’t just efficiency.",
     "paragraphs": [
-      "It’s getting back productive hours, reducing operating costs, and freeing your team to focus on what truly matters: serving better, selling more, and growing without limits."
+      "It’s getting back productive working hours, reducing operating costs and freeing the team to focus on what truly matters: serving better, selling more and growing without limits."
     ],
     "tangibleTitle": "Tangible impact:",
     "items": {
       "reservations": {
         "title": "More confirmed bookings",
-        "body": "Up to 40% more confirmed bookings thanks to instant replies."
+        "body": "Up to 40% more confirmed bookings thanks to instant responses."
       },
       "hours": {
-        "title": "Hours reclaimed",
-        "body": "More than 10 hours per week reclaimed per employee."
+        "title": "Hours recovered",
+        "body": "More than 10 hours per employee recovered each week."
       },
       "support": {
-        "title": "24/7 support",
-        "body": "Always-on customer attention without hiring more staff."
+        "title": "24/7 service",
+        "body": "Round‑the‑clock service without hiring more staff."
       },
       "costs": {
         "title": "Lower operating costs",
-        "body": "Operating cost reductions of up to 30%."
+        "body": "Operational costs reduced by up to 30%."
       }
     }
   }

@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { type Locale, locales } from "@/i18n/config";
 
 export const dynamic = "force-dynamic";
@@ -39,6 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <NextIntlClientProvider locale={locale} messages={messages}>
         <Header />
         {children}
+        <Footer />
       </NextIntlClientProvider>
     </ThemeProvider>
   );

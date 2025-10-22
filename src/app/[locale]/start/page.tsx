@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { AssessmentForm } from "@/components/Start/AssessmentForm";
 import { Hero } from "@/components/Start/Hero";
 import { Steps } from "@/components/Start/Steps";
-import { Separator } from "@/components/ui/Separator";
 
 export const metadata: Metadata = {
   title: "Start • Free Assessment",
@@ -15,7 +14,6 @@ export default function StartPage() {
     <main className="mx-auto min-h-dvh max-w-7xl">
       <Hero />
       <Steps />
-      <Separator />
       <section id="assessment" className="py-10">
         <div className="container mx-auto px-4 max-w-3xl">
           <AssessmentForm />

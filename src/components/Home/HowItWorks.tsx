@@ -85,7 +85,7 @@ const HowItWorks = () => {
         >
           {steps.map(({ icon: Icon, title, body }) => (
             <motion.li key={title} variants={child}>
-              <Card className="h-full">
+              <Card className="h-full transition-shadow hover:shadow-lg dark:hover:shadow-white/10">
                 <CardHeader className="flex flex-row items-center gap-3">
                   <div className="grid size-10 place-items-center rounded-xl bg-accent/10 text-accent">
                     <Icon className="size-5" />

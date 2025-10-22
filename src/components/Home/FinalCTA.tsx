@@ -17,8 +17,7 @@ const FinalCTA = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden gradient-cta text-white">
-      <div className="absolute inset-0 bg-black/30 dark:bg-black/40" />
+    <section className="relative overflow-hidden">
       <div className="relative mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-28">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -30,7 +29,7 @@ const FinalCTA = () => {
           <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">
             {t("title")}
           </h2>
-          <p className="mt-3 text-white/90">{t("subtitle")}</p>
+          <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -42,7 +41,7 @@ const FinalCTA = () => {
           <Button size="lg" variant="accent" asChild>
             <LocalizedLink href="/demo">{t("ctaPrimary")}</LocalizedLink>
           </Button>
-          <Button size="lg" variant="outline" className="text-white/90" asChild>
+          <Button size="lg" variant="outline" asChild>
             <LocalizedLink href="/start">{t("ctaSecondary")}</LocalizedLink>
           </Button>
         </motion.div>
@@ -51,12 +50,12 @@ const FinalCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ delay: 0.15, duration: 0.45 }}
-          className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-2 text-sm text-white/90 sm:grid-cols-3"
+          className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-2 text-sm text-muted-foreground sm:grid-cols-3"
         >
           {bullets.map((item) => (
             <li
               key={item}
-              className="flex items-center justify-center gap-2 text-white/90"
+              className="flex items-center justify-center gap-2"
             >
               <Check className="size-4" /> {item}
             </li>

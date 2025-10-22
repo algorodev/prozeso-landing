@@ -32,7 +32,7 @@ const Problem = () => {
           transition={{ delay: 0.05, duration: 0.45 }}
           className="mx-auto mt-8 max-w-3xl"
         >
-          <Card className="relative overflow-hidden rounded-2xl border border-destructive/30 bg-destructive/5 shadow-sm">
+          <Card className="relative overflow-hidden rounded-2xl border border-destructive/30 bg-destructive/5 shadow-sm transition-shadow hover:shadow-lg hover:shadow-destructive/20">
             <div
               aria-hidden
               className="pointer-events-none absolute -top-16 -right-10 size-60 rounded-full bg-destructive/20 blur-3xl"

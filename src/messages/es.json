@@ -35,12 +35,6 @@
         "title": "Céntrate en crecer",
         "body": "Dedica tus horas a estrategia, ventas y decisiones importantes."
       }
-    },
-    "stats": {
-      "connectors": "Conectores compatibles",
-      "uptime": "Disponibilidad del flujo",
-      "manualTime": "Tiempo de operación manual",
-      "tasksPerMonth": "Tareas automatizadas / mes"
     }
   },
   "howItWorks": {
@@ -75,53 +69,6 @@
     "ctaPrompt": "¿Listo para detectar tus automatizaciones de mayor ROI?",
     "ctaPrimary": "Comenzar evaluación gratis",
     "ctaSecondary": "Ver demo en vivo"
-  },
-  "stats": {
-    "title": "Resultados reales de la automatización real",
-    "subtitle": "Nuestros clientes transforman operaciones al automatizar lo que antes llevaba horas en tareas que se ejecutan mientras duermen.",
-    "items": {
-      "automationCount": {
-        "label": "Automatizaciones activas de clientes",
-        "desc": "Cada flujo se adapta y se monitorea para su rendimiento."
-      },
-      "tasksExecuted": {
-        "label": "Tareas ejecutadas al mes",
-        "desc": "Procesadas de forma confiable en todas las plataformas conectadas."
-      },
-      "hoursSaved": {
-        "label": "Horas ahorradas por año",
-        "desc": "Gracias a menos trabajo manual y reportes automatizados."
-      },
-      "successRate": {
-        "label": "Tasa de éxito de ejecución",
-        "desc": "El monitoreo proactivo garantiza disponibilidad y confiabilidad."
-      }
-    }
-  },
-  "testimonials": {
-    "title": "Lo que dicen nuestros clientes",
-    "subtitle": "Prueba de que la automatización se paga sola: horas ahorradas, errores evitados e ingresos protegidos.",
-    "items": {
-      "item1": {
-        "quote": "Reemplazamos tres traspasos manuales por un único flujo en n8n. Los reportes que tomaban todo el viernes ahora llegan antes de las 9 a. m.",
-        "name": "María López",
-        "role": "Directora de Operaciones",
-        "company": "CleverMarket"
-      },
-      "item2": {
-        "quote": "El panel nos dio una visibilidad que no teníamos. Detectamos un segmento con fuga y recuperamos ~12% de MRR en dos semanas.",
-        "name": "James Patel",
-        "role": "Líder de Crecimiento",
-        "company": "Finly"
-      },
-      "item3": {
-        "quote": "Las revisiones de seguridad fueron fluidas: RBAC, secretos cifrados y logs listos para usar. Cero incidentes en producción en 6 meses.",
-        "name": "Sofia Nguyen",
-        "role": "CTO",
-        "company": "Horizon Health"
-      }
-    },
-    "clientLogoAlt": "Logo de cliente"
   },
   "finalCta": {
     "title": "Deja que Prozeso trabaje por ti",
@@ -179,30 +126,6 @@
       "title": "Veamos juntos cómo tu negocio podría funcionar mientras sigues atendiendo clientes",
       "subtitle": "Prueba una demo en vivo para descubrir como Prozeso te va ayudar en el día a día.",
       "cta": "Comienza tu evaluación gratis"
-    },
-    "faq": {
-      "title": "Preguntas frecuentes",
-      "items": {
-        "whatInDemo": {
-          "q": "¿Qué veré en la demo?",
-          "a": "Un breve recorrido por el flujo principal para que entiendas cómo trabajamos de principio a fin."
-        },
-        "howLong": {
-          "q": "¿Cuánto dura?",
-          "a": "Normalmente menos de 3 minutos — rápido y al grano."
-        },
-        "nextStep": {
-          "q": "¿Cuál es el siguiente paso después de verla?",
-          "a": "Reserva una evaluación gratuita — ajustaremos el plan a tus necesidades y tiempos."
-        }
-      }
-    },
-    "media": {
-      "videoTitle": "Video de la demo del producto",
-      "screensPlaceholder": "Añade capturas a DemoMedia",
-      "prev": "Anterior",
-      "next": "Siguiente",
-      "screenshotAltPrefix": "Captura"
     },
     "highlights": {
       "tailoredFlow": {

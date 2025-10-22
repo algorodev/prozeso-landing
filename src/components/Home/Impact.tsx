@@ -50,7 +50,7 @@ const Impact = () => {
           transition={{ delay: 0.05, duration: 0.45 }}
           className="mx-auto mt-8 max-w-3xl"
         >
-          <Card className="relative overflow-hidden rounded-2xl border border-accent/30 bg-accent/5 shadow-sm">
+          <Card className="relative overflow-hidden rounded-2xl border border-accent/30 bg-accent/5 shadow-sm transition-shadow hover:shadow-lg hover:shadow-accent/20">
             <div
               aria-hidden
               className="pointer-events-none absolute -top-16 -right-10 size-60 rounded-full bg-accent/20 blur-3xl"
@@ -76,16 +76,25 @@ const Impact = () => {
         >
           <p className="text-sm font-medium text-foreground/80">{tangibleTitle}</p>
         </motion.div>
-        <motion.div
+        <div className="relative isolate mt-6">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-accent/60 z-0 sm:block lg:hidden"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-px bg-accent/60 z-0 hidden lg:block"
+          />
+          <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          className="relative z-10 mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
         >
           {items.map(({ icon: Icon, title, body }) => (
             <motion.div key={title} variants={child}>
-              <Card className="h-full">
+              <Card className="h-full transition-shadow hover:shadow-lg dark:hover:shadow-white/10">
                 <CardHeader className="flex flex-row items-center gap-3">
                   <div className="grid size-10 place-items-center rounded-xl bg-accent/10 text-accent">
                     <Icon className="size-5" />
@@ -99,6 +108,7 @@ const Impact = () => {
             </motion.div>
           ))}
         </motion.div>
+      </div>
       </div>
       <div className="pointer-events-none absolute -bottom-20 right-0 size-[22rem] rounded-full bg-accent/20 blur-3xl" />
     </section>
