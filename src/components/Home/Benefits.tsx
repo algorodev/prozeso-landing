@@ -41,7 +41,6 @@ const Benefits = () => {
       title: t("items.security.title"),
       body: t("items.security.body"),
     },
-    { icon: PiggyBank, title: t("items.roi.title"), body: t("items.roi.body") },
   ];
 
   const container = {
@@ -82,10 +81,14 @@ const Benefits = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6"
         >
-          {items.map(({ icon: Icon, title, body }) => (
-            <motion.div key={title} variants={child}>
+          {items.map(({ icon: Icon, title, body }, idx) => (
+            <motion.div
+              key={title}
+              variants={child}
+              className={`lg:col-span-2 ${idx === 3 ? "lg:col-start-2" : ""}`}
+            >
               <Card className="h-full transition-shadow hover:shadow-lg">
                 <CardHeader className="flex flex-row items-center gap-3">
                   <div className="grid size-10 place-items-center rounded-xl bg-primary/10 text-primary">
@@ -115,8 +118,6 @@ const Benefits = () => {
           <Stat kpi=">30k" label={t("stats.tasksPerMonth")} />
         </motion.div>*/}
       </div>
-      <div className="pointer-events-none absolute -top-24 -right-24 size-[26rem] rounded-full bg-primary/20 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 left-0 size-[20rem] rounded-full bg-accent/20 blur-3xl" />
     </section>
   );
 };

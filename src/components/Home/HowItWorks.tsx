@@ -81,7 +81,7 @@ const HowItWorks = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="relative mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
+          className="relative mx-auto mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
         >
           {steps.map(({ icon: Icon, title, body }) => (
             <motion.li key={title} variants={child}>

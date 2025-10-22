@@ -16,28 +16,24 @@
     "subtitle": "Construimos, monitorizamos y optimizamos tus flujos en n8n para que tu equipo entregue más rápido, cometa menos errores y tenga una vista en tiempo real de los resultados.",
     "items": {
       "saveTime": {
-        "title": "Ahorra horas cada semana",
-        "body": "Automatiza tareas repetitivas como la sincronización de datos, el enrutamiento de leads y la exportación de reportes. Tu equipo se enfoca en lo que de verdad mueve la aguja."
+        "title": "Gana tiempo",
+        "body": "Libérate de tareas repetitivas y enfócate en lo que realmente mueve tu negocio."
       },
       "fewerErrors": {
-        "title": "Menos errores, resultados consistentes",
-        "body": "Flujos estandarizados en n8n reducen los fallos manuales y crean procesos predecibles y auditables entre herramientas."
+        "title": "Escala sin contratar",
+        "body": "Automatiza procesos sin aumentar tu equipo."
       },
       "visibility": {
-        "title": "Visibilidad total en un panel en vivo",
-        "body": "Haz seguimiento de ejecuciones, tasa de éxito y rendimiento. Profundiza en logs y alertas para detectar incidencias antes de que el cliente las note."
+        "title": "Atiende 24/7",
+        "body": "Nunca pierdas un cliente por no responder a tiempo."
       },
       "connectStack": {
-        "title": "Conecta tu stack en minutos",
-        "body": "Cientos de integraciones con CRM, email, hojas de cálculo, anuncios, pagos y APIs internas, sin código frágil de pegamento."
+        "title": "Reduce errores",
+        "body": "Procesos más rápidos, precisos y sin dependencias humanas."
       },
       "security": {
-        "title": "Seguro y compatible con GDPR por diseño",
-        "body": "Claves API con alcance, acceso basado en roles, secretos cifrados y opciones de residencia de datos para simplificar el cumplimiento."
-      },
-      "roi": {
-        "title": "ROI probado para pymes",
-        "body": "Las automatizaciones se pagan solas reduciendo trabajo innecesario, previniendo la fuga de clientes y habilitando operaciones siempre activas."
+        "title": "Céntrate en crecer",
+        "body": "Dedica tus horas a estrategia, ventas y decisiones importantes."
       }
     },
     "stats": {

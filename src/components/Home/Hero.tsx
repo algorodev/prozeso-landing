@@ -23,7 +23,7 @@ const Hero = () => {
         aria-hidden
         className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_bottom,theme(colors.border/20)_1px,transparent_1px),linear-gradient(to_right,theme(colors.border/20)_1px,transparent_1px)] [background-size:4rem_4rem] [mask-image:radial-gradient(50%_50%_at_50%_0%,black,transparent_70%)]"
       />
-      <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8">
+      <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8 sm:py-30">
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="mx-auto max-w-2xl text-center lg:col-span-6 lg:text-left">
             <motion.h1
@@ -50,7 +50,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-8 flex justify-center items-center gap-3 lg:justify-start"
+              className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-3 lg:justify-start"
             >
               <Button asChild size="lg">
                 <LocalizedLink href="/start">
