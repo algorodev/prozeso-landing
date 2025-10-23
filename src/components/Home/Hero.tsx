@@ -23,7 +23,7 @@ const Hero = () => {
         aria-hidden
         className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_bottom,theme(colors.border/20)_1px,transparent_1px),linear-gradient(to_right,theme(colors.border/20)_1px,transparent_1px)] [background-size:4rem_4rem] [mask-image:radial-gradient(50%_50%_at_50%_0%,black,transparent_70%)]"
       />
-      <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
+      <div className="relative mx-auto max-w-7xl py-20 px-6 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-12">
           <div className="mx-auto max-w-2xl text-center lg:col-span-6 lg:text-left">
             <motion.h1

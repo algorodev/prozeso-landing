@@ -21,6 +21,9 @@
       "suspicious": {
         "noUnknownAtRules": "off",
         "noArrayIndexKey": "warn"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
       }
     },
     "domains": {
