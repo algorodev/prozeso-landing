@@ -49,7 +49,7 @@ export const Header = () => {
 
   return (
     <header
-      className="sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b"
+      className="sticky top-0 z-[60] w-full backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b"
       data-dark={mounted ? String(!!isDark) : undefined}
       suppressHydrationWarning
     >

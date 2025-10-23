@@ -159,12 +159,13 @@
         }
       },
       "categories": {
-        "crm": "CRM",
-        "e-commerce": "E-commerce",
-        "marketing": "Marketing",
-        "ops": "Operaciones",
-        "finance": "Finanzas",
-        "support": "Soporte"
+        "bookings": "Reservas",
+        "communication": "Comunicación",
+        "automation": "Automatización",
+        "calls": "Llamadas",
+        "leadRecovery": "Recuperación de clientes",
+        "scheduling": "Programación",
+        "clientRetention": "Retención de clientes"
       }
     },
     "grid": {
@@ -188,8 +189,9 @@
       "tagline": "Tu asistente digital que nunca pierde una llamada ni un cliente.",
       "description": "Mientras tú estás haciendo lo importante — atendiendo a tus clientes, dirigiendo tu negocio o simplemente descansando — Prozeso se encarga del resto.\nReceptionist-in-a-Box convierte cada llamada, mensaje o formulario en una cita confirmada automáticamente.\nSin esperas, sin papeleo y sin depender de nadie.\nAgenda, confirma y recuerda cada cita, todo de forma automática.",
       "categories": {
-        "ops": "Operaciones",
-        "support": "Soporte"
+        "bookings": "Reservas",
+        "communication": "Comunicación",
+        "automation": "Automatización"
       },
       "integrations": ["Email", "Calendar", "Twilio"],
       "timeSavedShort": "10 h/semana ahorradas",
@@ -206,6 +208,7 @@
       "problem": "Cada vez que alguien llama y no contestas, pierdes dinero.\nY cuando sí contestas, pierdes tiempo que podrías usar en algo más valioso.",
       "solution": "Prozeso atiende por ti.\nResponde llamadas, agenda citas y confirma en segundos—sin intervención humana.\nTú sigues trabajando o disfrutando del día, mientras tu negocio no se detiene.",
       "results": "Una agenda siempre llena.\nClientes felices.\nY tú, con más tiempo y menos estrés.",
+      "resultSummary": "Impacto: ~8h/mes ahorradas, reducción 20–40% no-shows, y 10–20% cancelaciones.",
       "faqs": [
         {
           "question": "¿Necesito cambiar mi número de teléfono?",
@@ -234,8 +237,9 @@
       "tagline": "Convierte las llamadas perdidas en clientes ganados.",
       "description": "Cada llamada que no contestas puede ser una cita, una venta o un cliente que no vuelve.\nCon Missed Call Recovery, cada vez que alguien llama y no puede hablar contigo, Prozeso responde por ti.\nEnvía un mensaje inmediato con un enlace para reservar una cita o deja programada una tarea para que puedas devolver la llamada más tarde.\nNo pierdes oportunidades. No pierdes tiempo.",
       "categories": {
-        "ops": "Operaciones",
-        "support": "Soporte"
+        "calls": "Llamadas",
+        "leadRecovery": "Recuperación de clientes",
+        "automation": "Automatización"
       },
       "integrations": ["Twilio"],
       "timeSavedShort": "5h/semana ahorradas",
@@ -252,6 +256,7 @@
       "problem": "Cada llamada que no contestas es una oportunidad que desaparece.\nY, en la mayoría de negocios, más del 30% de las llamadas entrantes no llegan a atenderse.",
       "solution": "Prozeso se encarga de tus llamadas cuando tú no puedes.\nEn segundos, responde al cliente, le ofrece opciones y le permite reservar sin hablar con nadie.",
       "results": "Clientes que antes se iban, ahora vuelven.\nUn flujo constante de citas recuperadas y más ingresos sin más trabajo.",
+      "resultSummary": "Impacto: Gana 5 horas extra cada semana, recupera entre un 15 % y un 35 % de las llamadas perdidas y convierte las oportunidades perdidas en nuevas ventas.",
       "faqs": [
         {
           "question": "¿Qué pasa si alguien llama fuera del horario laboral?",
@@ -280,8 +285,9 @@
       "tagline": "Menos huecos vacíos. Más citas confirmadas.",
       "description": "Los olvidos cuestan dinero.\nCada cita que no se presenta o se cancela a última hora deja una hora muerta en tu agenda que ya no vuelve.\nCon Appointment Reminders + Smart Reschedule, Prozeso recuerda cada cita a tus clientes y les permite reprogramar con un solo clic.\nSin llamadas. Sin pérdida de tiempo. Sin huecos vacíos.",
       "categories": {
-        "ops": "Operaciones",
-        "support": "Soporte"
+        "scheduling": "Programación",
+        "clientRetention": "Retención de clientes",
+        "automation": "Automatización"
       },
       "integrations": ["Email", "Calendar", "Twilio"],
       "timeSavedShort": "8h/mes ahorradas",
@@ -298,6 +304,7 @@
       "problem": "Los no-shows y cancelaciones de última hora no solo vacían tu agenda:\nrompen tu ritmo, te hacen perder dinero y te obligan a improvisar.",
       "solution": "Prozeso mantiene el contacto con tus clientes por ti.\nEnvía recordatorios automáticos y ofrece la posibilidad de reprogramar sin llamadas.\nTú sigues trabajando mientras tu agenda se reorganiza sola.",
       "results": "Una agenda estable, clientes puntuales y un negocio que no se detiene por imprevistos.",
+      "resultSummary": "Impacto: Ahorra hasta 8 horas al mes, reduce los no-shows entre un 20 % y un 40 % y evita hasta un 10–20 % de cancelaciones de última hora—más citas efectivas, más ingresos y menos estrés.",
       "faqs": [
         {
           "question": "¿Con cuánta antelación se envían los recordatorios?",

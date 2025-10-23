@@ -159,8 +159,13 @@
         }
       },
       "categories": {
-        "ops": "Ops",
-        "support": "Support"
+        "bookings": "Bookings",
+        "communication": "Communication",
+        "automation": "Automation",
+        "calls": "Calls",
+        "leadRecovery": "Lead Recovery",
+        "scheduling": "Scheduling",
+        "clientRetention": "Client Retention"
       }
     },
     "grid": {
@@ -184,13 +189,14 @@
       "tagline": "Your digital assistant that never misses a call or a customer.",
       "description": "While you’re doing what matters — serving your customers, running your business or simply resting — Prozeso takes care of the rest.\nReceptionist-in-a-Box turns every call, message or form into a confirmed appointment automatically.\nNo waiting, no paperwork and no depending on anyone.\nSchedule, confirm and remind every appointment, all automatically.",
       "categories": {
-        "ops": "Ops",
-        "support": "Support"
+        "bookings": "Bookings",
+        "communication": "Communication",
+        "automation": "Automation"
       },
-      "integrations": ["Email", "Calendar", "Twilio"],
+      "integrations": ["Email", "Calendar", "Twilio", "CRM"],
       "timeSavedShort": "10 h/week saved",
       "timeSaved": "Up to 10 hours a month less on calls, coordination and confirmation messages.\nEvery confirmed appointment is time you get back for what truly matters: serve better, sell more or rest more.",
-      "roiShort": "+180% confirmed appointments",
+      "roiShort": "+180% appointments",
       "roi": "Businesses using Receptionist-in-a-Box increase their bookings between 25% and 45% and reduce their no-show rate by up to 30%.\nEvery month, more customers served without hiring anyone new.",
       "outcomes": [
         "More bookings, less effort: Customers can book even while you sleep.",
@@ -202,6 +208,7 @@
       "problem": "Every time someone calls and you can’t answer, you lose money.\nAnd when you do answer, you lose time you could use on something more valuable.",
       "solution": "Prozeso answers for you.\nIt picks up calls, schedules appointments and confirms in seconds—without human intervention.\nYou keep working or enjoying your day, while your business never stops.",
       "results": "An always-full schedule.\nHappy customers.\nAnd you, with more time and less stress.",
+      "resultSummary": "Impact: save ~8h/month, reduce no-shows 20–40%, and cancellations 10–20%.",
       "faqs": [
         {
           "question": "Do I need to change my phone number?",
@@ -230,10 +237,11 @@
       "tagline": "Turn missed calls into won customers.",
       "description": "Every call you don’t answer could be an appointment, a sale or a customer that won’t come back.\nWith Missed Call Recovery, whenever someone calls and can’t reach you, Prozeso replies for you.\nIt sends an immediate message with a link to book an appointment or schedules a task so you can call back later.\nNo missed opportunities. No wasted time.",
       "categories": {
-        "ops": "Ops",
-        "support": "Support"
+        "calls": "Calls",
+        "leadRecovery": "Lead Recovery",
+        "automation": "Automation"
       },
-      "integrations": ["Twilio"],
+      "integrations": ["Twilio", "Aircall", "CRM"],
       "timeSavedShort": "5 h/week saved",
       "timeSaved": "Up to 5 hours a week saved by avoiding manual callbacks and follow-ups.",
       "roiShort": "+15–35% calls recovered",
@@ -248,6 +256,7 @@
       "problem": "Every call you don’t answer is an opportunity that disappears.\nAnd, in most businesses, more than 30% of incoming calls go unattended.",
       "solution": "Prozeso handles your calls when you can’t.\nIn seconds, it responds to the customer, offers options and lets them book without talking to anyone.",
       "results": "Customers who used to leave now come back.\nA steady stream of recovered appointments and more revenue without more work.",
+      "resultSummary": "Impact: Gain 5 extra hours each week, recover 15–35% of missed calls, and turn lost opportunities into new sales.",
       "faqs": [
         {
           "question": "What happens if someone calls outside business hours?",
@@ -276,13 +285,14 @@
       "tagline": "Fewer empty slots. More confirmed appointments.",
       "description": "Forgetfulness costs money.\nEvery no-show or last-minute cancellation leaves a dead hour in your calendar that won’t come back.\nWith Appointment Reminders + Smart Reschedule, Prozeso reminds customers about every appointment and lets them reschedule with a single click.\nNo calls. No wasted time. No empty slots.",
       "categories": {
-        "ops": "Ops",
-        "support": "Support"
+        "scheduling": "Scheduling",
+        "clientRetention": "Client Retention",
+        "automation": "Automation"
       },
-      "integrations": ["Email", "Calendar", "Twilio"],
+      "integrations": ["Email", "Calendar", "Twilio", "CRM"],
       "timeSavedShort": "8 h/month saved",
       "timeSaved": "Up to 8 hours a month saved by avoiding manual reminder calls, messages and calendar reshuffling.",
-      "roiShort": "-20–40% no-shows and -10–20% cancellations",
+      "roiShort": "-20–40% no-shows",
       "roi": "Reduce your no-shows by 20% to 40% and avoid up to 10–20% of last-minute cancellations.\nMore effective appointments, more revenue and less stress.",
       "outcomes": [
         "Automatic SMS or email reminders: Never miss an appointment again.",
@@ -294,6 +304,7 @@
       "problem": "No-shows and last-minute cancellations don’t just empty your calendar: they break your rhythm, make you lose money and force you to improvise.",
       "solution": "Prozeso keeps in touch with your customers for you.\nIt sends automatic reminders and offers rescheduling without phone calls.\nYou keep working while your calendar reorganizes itself.",
       "results": "A stable calendar, on-time customers and a business that doesn’t stop due to surprises.",
+      "resultSummary": "Impact: Save up to 8 hours a month, cut no-shows by 20–40%, and reduce last-minute cancellations by 10–20%—more bookings, more revenue, less stress.",
       "faqs": [
         {
           "question": "How far in advance are reminders sent?",

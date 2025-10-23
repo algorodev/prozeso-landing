@@ -21,7 +21,15 @@ export const AUTOMATIONS: Automation[] = [
   },
 ];
 
-export const ALL_CATEGORIES = ["ops", "support"] as const;
+export const ALL_CATEGORIES = [
+	"bookings",
+	"communication",
+	"automation",
+	"calls",
+	"leadRecovery",
+	"scheduling",
+	"clientRetention",
+] as const;
 
 export const SORTS = ["Popularity", "ROI", "Newest"] as const;
 
