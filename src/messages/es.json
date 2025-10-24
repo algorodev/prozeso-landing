@@ -195,9 +195,13 @@
       },
       "integrations": ["Email", "Calendar", "Twilio"],
       "timeSavedShort": "10 h/semana ahorradas",
-      "timeSaved": "Hasta 10 horas al mes menos en llamadas, coordinación y mensajes de confirmación.\nCada cita confirmada es tiempo que vuelves a ganar para lo que de verdad importa: atender mejor, vender más o descansar más.",
       "roiShort": "+180% citas confirmadas",
-      "roi": "Negocios que usan Receptionist-in-a-Box aumentan sus reservas entre un 25% y un 45% y reducen su tasa de ausencias hasta un 30%.\nCada mes, más clientes atendidos sin contratar a nadie nuevo.",
+      "metrics": {
+        "timeSaved": "Tiempo ahorrado",
+        "bookings": "Reservas",
+        "noShows": "No presentado",
+        "confirmedBookings": "Reservas confirmadas"
+      },
       "outcomes": [
         "Más reservas, menos esfuerzo: Los clientes pueden reservar incluso mientras duermes.",
         "Confirmaciones instantáneas: Respuesta inmediata por SMS o email.",
@@ -246,6 +250,12 @@
       "timeSaved": "Hasta 5 horas semanales menos en devolver llamadas manualmente y hacer seguimiento a clientes.",
       "roiShort": "+15–35% llamadas recuperadas",
       "roi": "Recupera entre un 15% y un 35% de las llamadas perdidas y aumenta tus ingresos mensuales sin invertir en más personal.\nCada llamada recuperada es una nueva oportunidad de venta cerrada.",
+      "metrics": {
+        "timeSaved": "Tiempo ahorrado",
+        "callsRecovered": "Llamadas recuperadas",
+        "revenueLift": "Incremento de ingresos",
+        "efficiency": "Eficiencia"
+      },
       "outcomes": [
         "Recupera ingresos perdidos: Convierte llamadas sin responder en citas confirmadas.",
         "Atención inmediata 24/7: Incluso cuando estás ocupado o cerrado, tus clientes reciben respuesta al instante.",
@@ -294,6 +304,12 @@
       "timeSaved": "Hasta 8 horas al mes menos en llamadas de recordatorio, mensajes manuales y reorganización de agenda.",
       "roiShort": "-20–40% no-shows y -10–20% cancelaciones",
       "roi": "Reduce tus no-shows entre un 20% y un 40% y evita hasta un 10–20% de cancelaciones de última hora.\nMás citas efectivas, más facturación y menos estrés.",
+      "metrics": {
+        "timeSaved": "Tiempo ahorrado",
+        "bookings": "Reservas",
+        "noShows": "No presentado",
+        "cancellations": "Cancelaciones"
+      },
       "outcomes": [
         "Recordatorios automáticos por SMS o email: Nunca más una cita olvidada.",
         "Reprogramación en un clic: Tus clientes eligen nuevo horario sin contactarte.",

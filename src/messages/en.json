@@ -198,6 +198,12 @@
       "timeSaved": "Up to 10 hours a month less on calls, coordination and confirmation messages.\nEvery confirmed appointment is time you get back for what truly matters: serve better, sell more or rest more.",
       "roiShort": "+180% appointments",
       "roi": "Businesses using Receptionist-in-a-Box increase their bookings between 25% and 45% and reduce their no-show rate by up to 30%.\nEvery month, more customers served without hiring anyone new.",
+      "metrics": {
+        "timeSaved": "Time saved",
+        "bookings": "Bookings",
+        "noShows": "No-shows",
+        "confirmedBookings": "Confirmed bookings"
+      },
       "outcomes": [
         "More bookings, less effort: Customers can book even while you sleep.",
         "Instant confirmations: Immediate response via SMS or email.",
@@ -246,6 +252,12 @@
       "timeSaved": "Up to 5 hours a week saved by avoiding manual callbacks and follow-ups.",
       "roiShort": "+15–35% calls recovered",
       "roi": "Recover between 15% and 35% of missed calls and increase your monthly revenue without hiring more staff.\nEvery recovered call is a new closed-sale opportunity.",
+      "metrics": {
+        "timeSaved": "Time saved",
+        "callsRecovered": "Calls recovered",
+        "revenueLift": "Revenue lift",
+        "efficiency": "Efficiency"
+      },
       "outcomes": [
         "Recover lost revenue: Turn unanswered calls into confirmed appointments.",
         "Immediate 24/7 attention: Even when you’re busy or closed, customers get an instant response.",
@@ -291,9 +303,13 @@
       },
       "integrations": ["Email", "Calendar", "Twilio", "CRM"],
       "timeSavedShort": "8 h/month saved",
-      "timeSaved": "Up to 8 hours a month saved by avoiding manual reminder calls, messages and calendar reshuffling.",
       "roiShort": "-20–40% no-shows",
-      "roi": "Reduce your no-shows by 20% to 40% and avoid up to 10–20% of last-minute cancellations.\nMore effective appointments, more revenue and less stress.",
+      "metrics": {
+        "timeSaved": "Time saved",
+        "bookings": "Bookings",
+        "noShows": "No-shows",
+        "cancellations": "Cancellations"
+      },
       "outcomes": [
         "Automatic SMS or email reminders: Never miss an appointment again.",
         "One-click rescheduling: Customers pick a new time without contacting you.",

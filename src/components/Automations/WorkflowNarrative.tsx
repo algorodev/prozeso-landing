@@ -152,9 +152,9 @@ export default function WorkflowNarrative({ automationId }: { automationId: stri
 	];
 
 	return (
-		<section aria-labelledby="workflow-journey" className="relative mx-auto max-w-7xl px-4 py-16">
+		<section aria-labelledby="workflow-journey" className="relative mx-auto max-w-7xl px-6 py-16">
 			<div className="grid gap-12 md:grid-cols-[280px,1fr]">
-				<header className="md:sticky md:top-24 self-start bg-background z-[30]">
+				<header className="md:sticky md:top-16 self-start bg-background z-[30]">
 					<h2 id="workflow-journey" className="text-2xl font-semibold text-foreground">
 						How Prozeso fixes it—step by step
 					</h2>
