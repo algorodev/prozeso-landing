@@ -1,13 +1,13 @@
 "use client";
 
-import StatsMetric from '@/components/Automations/StatsMetric'
-import WorkflowNarrative from '@/components/Automations/WorkflowNarrative'
 import { useParams } from "next/navigation";
 import { useMemo } from "react";
 import { AUTOMATIONS } from "@/app/[locale]/automations/data";
 import DetailHero from "@/components/Automations/DetailHero";
 import FAQ from "@/components/Automations/FAQ";
 import PricingSection from "@/components/Automations/PricingSection";
+import StatsMetric from "@/components/Automations/StatsMetric";
+import WorkflowNarrative from "@/components/Automations/WorkflowNarrative";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 export default function AutomationDetailPage() {
@@ -36,8 +36,8 @@ export default function AutomationDetailPage() {
   return (
     <main className="overflow-x-clip">
       <DetailHero automationId={automation.id} icon={automation.icon} />
-	    <WorkflowNarrative automationId={automation.id} />
-	    <StatsMetric automationId={automation.id} />
+      <WorkflowNarrative automationId={automation.id} />
+      <StatsMetric automationId={automation.id} />
       <FAQ automationId={automation.id} />
       {/*<PricingSection automationId={automation.id} />*/}
     </main>
