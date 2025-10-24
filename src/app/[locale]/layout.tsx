@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
+import { AgentFloatButton } from "@/components/AgentFloatButton";
 
 export const dynamic = "force-dynamic";
 
@@ -41,6 +42,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Header />
         {children}
         <Footer />
+        <div className="fixed bottom-6 right-6 z-50">
+          <AgentFloatButton />
+        </div>
       </NextIntlClientProvider>
     </ThemeProvider>
   );

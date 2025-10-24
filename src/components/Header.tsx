@@ -44,7 +44,6 @@ export const Header = () => {
     process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
   const navItems: NavItem[] = [
     { label: t("nav.automations"), href: "/automations" },
-    { label: t("nav.demo"), href: "/demo" },
   ];
 
   return (

@@ -142,4 +142,37 @@
   .min-h-dvh-minus-header {
     min-height: calc(100dvh - 64px);
   }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+	    background-position: 0 0;
+    }
+    50% {
+	    background-position: 400% 0;
+    }
+  }
+
+  .spinning-shadow {
+    position: relative;
+  }
+  .spinning-shadow::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+	  left: -2px;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	  background-size: 400%;
+	  border-radius: 10px;
+	  width: calc(100% + 2px);
+	  height: calc(100% + 2px);
+    opacity: 0.6;
+    filter: blur(10px);
+    animation: glow-pulse 20s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spinning-shadow::before { animation-duration: 0.01ms; animation-iteration-count: 1; }
+  }
 }
