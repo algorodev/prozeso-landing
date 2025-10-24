@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
 import { useConversation } from "@elevenlabs/react";
-import { PhoneCall } from 'lucide-react'
+import { PhoneCall } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useState, useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/Button";
 
 export const AgentFloatButton = () => {
@@ -24,14 +24,13 @@ export const AgentFloatButton = () => {
     setConversationStarted(false);
   };
 
-  const label = useMemo(() => (conversationStarted ? t("end") : t("start")), [conversationStarted, t]);
+  const label = useMemo(
+    () => (conversationStarted ? t("end") : t("start")),
+    [conversationStarted, t],
+  );
 
   return (
-    <div
-      className="group relative spinning-shadow flex items-center gap-2 rounded-full bg-white/95 px-2 py-2 shadow-xl ring-1 ring-black/5 backdrop-blur supports-[backdrop-filter]:backdrop-blur-md"
-      role="complementary"
-      aria-label="Voice chat control"
-    >
+    <div className="group relative spinning-shadow flex items-center rounded-full bg-transparent px-1 py-1 ring-1 ring-black/5 backdrop-blur supports-[backdrop-filter]:backdrop-blur-md">
       <Button
         onClick={conversationStarted ? endConversation : startConversation}
         className={`rounded-full bg-black px-5 text-white hover:bg-neutral-900 focus-visible:ring-2 focus-visible:ring-black/40 active:scale-95 transition will-change-transform shadow-lg shadow-black/10 ${conversationStarted ? "ring-2 ring-emerald-400/50" : ""}`}

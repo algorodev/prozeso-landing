@@ -3,10 +3,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
+import { AgentFloatButton } from "@/components/AgentFloatButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
-import { AgentFloatButton } from "@/components/AgentFloatButton";
 
 export const dynamic = "force-dynamic";
 
