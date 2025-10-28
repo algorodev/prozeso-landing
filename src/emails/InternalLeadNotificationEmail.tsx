@@ -42,7 +42,7 @@ const chip: CSSProperties = {
 	padding: "6px 10px",
 	borderRadius: 999,
 	background: "#eef2ff",
-	color: "#1e3a8a",
+	color: "oklch(0.4 0.09 250)",
 	fontWeight: 600,
 	fontSize: 12,
 };
