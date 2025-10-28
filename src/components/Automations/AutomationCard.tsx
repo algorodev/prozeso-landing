@@ -98,7 +98,7 @@ const AutomationCard = ({ a }: { a: Automation }) => {
               variant="primary"
               className="w-full sm:w-auto"
             >
-              <LocalizedLink href={`/contact?automation=${a.id}`}>
+              <LocalizedLink href={`/start?automation=${a.id}`}>
                 {t("actions.setup")}
               </LocalizedLink>
             </Button>
