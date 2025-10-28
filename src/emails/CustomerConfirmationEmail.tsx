@@ -31,7 +31,7 @@ const chip: CSSProperties = {
 	padding: "6px 10px",
 	borderRadius: 999,
 	background: "#eef2ff",
-	color: "oklch(0.4 0.09 250)",
+	color: "#1B4A76FF",
 	fontWeight: 600,
 	fontSize: 12,
 };
@@ -98,7 +98,7 @@ export default function CustomerConfirmationEmail({ name, workflow, nextUrl = "h
 							href={nextUrl}
 							style={{
 								display: "inline-block",
-								backgroundColor: "oklch(0.4 0.09 250)",
+								backgroundColor: "#1B4A76FF",
 								color: "#ffffff",
 								padding: "12px 22px",
 								borderRadius: 10,
