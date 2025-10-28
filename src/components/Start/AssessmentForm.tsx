@@ -2,11 +2,11 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle2, Loader2 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { useSearchParams } from 'next/navigation'
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { submitAssessment } from "@/app/[locale]/start/actions";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import {
@@ -21,7 +21,11 @@ import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 
 export function AssessmentForm() {
+	const searchParams = useSearchParams();
+	const locale = useLocale();
   const t = useTranslations("start.assessment");
+
+	const automation = searchParams.get('automation');
 
   const Schema = z.object({
     name: z.string().min(2, t("field.name.error")),
@@ -44,18 +48,32 @@ export function AssessmentForm() {
     setServerError(null);
     setSuccess(false);
 
-    const fd = new FormData();
-    fd.append("name", values.name);
-    fd.append("email", values.email);
-    fd.append("goals", values.goals ?? "");
+    try {
+      const res = await fetch("/api/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          message: values.goals ?? "",
+          workflow: automation ?? undefined,
+          locale,
+        }),
+      });
 
-    const res = await submitAssessment(fd);
-    if (!res?.ok) {
-      setServerError(res?.error ?? t("serverErrorDefault"));
-      return;
+      const data = await res.json().catch(() => null);
+
+      if (!res.ok || !data?.ok) {
+        const apiError = (data as any)?.error;
+        setServerError(apiError || t("serverErrorDefault"));
+        return;
+      }
+
+      setSuccess(true);
+      form.reset();
+    } catch (err) {
+      setServerError(t("serverErrorDefault"));
     }
-    setSuccess(true);
-    form.reset();
   };
 
   return (
