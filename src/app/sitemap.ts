@@ -5,7 +5,7 @@ function normalizeBaseUrl(url: string) {
   return url.replace(/\/$/, "");
 }
 
-const rawBase = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const rawBase = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 const siteUrl = normalizeBaseUrl(rawBase);
 
 const paths = ["", "/automations", "/start"] as const;
