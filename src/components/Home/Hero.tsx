@@ -2,23 +2,23 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useTheme } from 'next-themes'
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import heroDashboardNegro from "@/assets/hero-dashboard-negro.png";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import heroDashboardBlanco from "@/assets/hero-dashboard-blanco.png";
+import heroDashboardNegro from "@/assets/hero-dashboard-negro.png";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
-import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const t = useTranslations("hero");
-	const { resolvedTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-	useEffect(() => setMounted(true), []);
+  useEffect(() => setMounted(true), []);
 
-	const isDark = mounted ? resolvedTheme === "dark" : undefined;
+  const isDark = mounted ? resolvedTheme === "dark" : undefined;
 
   return (
     <section className="relative isolate min-h-dvh-minus-header bg-secondary overflow-hidden flex items-center">
