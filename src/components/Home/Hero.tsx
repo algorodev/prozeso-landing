@@ -1,15 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { useTheme } from 'next-themes'
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import heroDashboard from "@/assets/hero-dashboard.png";
+import heroDashboardNegro from "@/assets/hero-dashboard-negro.png";
+import heroDashboardBlanco from "@/assets/hero-dashboard-blanco.png";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
+import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const t = useTranslations("hero");
+	const { resolvedTheme } = useTheme();
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => setMounted(true), []);
+
+	const isDark = mounted ? resolvedTheme === "dark" : undefined;
 
   return (
     <section className="relative isolate min-h-dvh-minus-header bg-secondary overflow-hidden flex items-center">
@@ -88,7 +97,7 @@ const Hero = () => {
               />
               <div className="rounded-xl ring-1 ring-border/60 overflow-hidden">
                 <Image
-                  src={heroDashboard}
+                  src={isDark ? heroDashboardNegro : heroDashboardBlanco}
                   alt={t("imageAlt")}
                   width={1200}
                   height={700}
