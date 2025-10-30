@@ -38,9 +38,6 @@ const FinalCTA = () => {
           transition={{ delay: 0.1, duration: 0.5 }}
           className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <Button size="lg" variant="accent" asChild>
-            <LocalizedLink href="/demo">{t("ctaPrimary")}</LocalizedLink>
-          </Button>
           <Button size="lg" variant="outline" asChild>
             <LocalizedLink href="/start">{t("ctaSecondary")}</LocalizedLink>
           </Button>

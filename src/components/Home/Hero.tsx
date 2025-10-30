@@ -67,9 +67,6 @@ const Hero = () => {
                   <ArrowRight className="ml-2 size-5" />
                 </LocalizedLink>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <LocalizedLink href="/demo">{t("ctaSecondary")}</LocalizedLink>
-              </Button>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
