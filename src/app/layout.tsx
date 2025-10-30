@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 const siteName = "Prozeso";
 const siteDescription = "Automate your workflows with ease";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const languageAlternates = Object.fromEntries(
   locales.map((l) => [l, `/${l}`]),
