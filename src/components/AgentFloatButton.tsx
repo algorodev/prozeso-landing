@@ -2,19 +2,22 @@
 
 import { useConversation } from "@elevenlabs/react";
 import { PhoneCall } from "lucide-react";
-import { useLocale, useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/Button";
 
 export const AgentFloatButton = () => {
   const t = useTranslations("elevenlabs");
   const conversation = useConversation();
-	const locale = useLocale();
+  const locale = useLocale();
   const [conversationStarted, setConversationStarted] = useState(false);
 
   const startConversation = async () => {
     await conversation.startSession({
-      agentId: locale === 'en' ? "agent_6001k8tzxv0redg84r1s9m3c0gqd" : "agent_7501k8bnshvgf6xvrx74z17s5042",
+      agentId:
+        locale === "en"
+          ? "agent_6001k8tzxv0redg84r1s9m3c0gqd"
+          : "agent_7501k8bnshvgf6xvrx74z17s5042",
       connectionType: "webrtc",
     });
     setConversationStarted(true);

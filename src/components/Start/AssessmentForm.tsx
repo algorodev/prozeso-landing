@@ -2,8 +2,8 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle2, Loader2 } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useSearchParams } from 'next/navigation'
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -21,11 +21,11 @@ import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 
 export function AssessmentForm() {
-	const searchParams = useSearchParams();
-	const locale = useLocale();
+  const searchParams = useSearchParams();
+  const locale = useLocale();
   const t = useTranslations("start.assessment");
 
-	const automation = searchParams.get('automation');
+  const automation = searchParams.get("automation");
 
   const Schema = z.object({
     name: z.string().min(2, t("field.name.error")),
