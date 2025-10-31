@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from 'next/script'
 import type { ReactNode } from "react";
 import { locales } from "@/i18n/config";
 import "./globals.css";
@@ -17,6 +18,8 @@ const geistMono = Geist_Mono({
 const siteName = "Prozeso";
 const siteDescription = "Automate your workflows with ease";
 const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
+const GA_ID = process.env.GA_MEASUREMENT_ID!;
 
 const languageAlternates = Object.fromEntries(
   locales.map((l) => [l, `/${l}`]),
@@ -106,6 +109,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+	      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+	      <Script id="ga4-init" strategy="afterInteractive">
+		      {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}', { send_page_view: true });
+          `}
+	      </Script>
         {children}
       </body>
     </html>
