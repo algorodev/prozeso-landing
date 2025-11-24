@@ -8,7 +8,15 @@ function normalizeBaseUrl(url: string) {
 const rawBase = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 const siteUrl = normalizeBaseUrl(rawBase);
 
-const paths = ["", "/automations", "/start"] as const;
+const paths = [
+  "",
+  "/automations",
+  "/start",
+  "/solutions",
+  "/legal/cookies",
+  "/legal/privacy",
+  "/legal/terms",
+] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
