@@ -135,12 +135,71 @@
   },
   "header": {
     "nav": {
+      "solutions": "Soluciones",
       "automations": "Automatizaciones",
       "demo": "Demo"
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
     "signIn": "Entrar"
+  },
+  "solutions": {
+    "hero": {
+      "title": "Soluciones para tu sector",
+      "subtitle": "Construimos automatizaciones ajustadas a cómo funciona tu negocio de verdad."
+    },
+    "cta": "Comenzar evaluación gratis",
+    "moreComing": {
+      "title": "Más sectores pronto...",
+      "desc": "Estamos expandiéndonos a nuevos sectores. Cuéntanos el tuyo y adaptamos las automatizaciones a tu negocio."
+    },
+    "verticals": {
+      "restaurants": {
+        "title": "Restaurantes",
+        "desc": "Convierte cada llamada, DM y visita web en una mesa ocupada—sin tener a alguien al teléfono todo el día.",
+        "highlights": [
+          "Menos reservas perdidas en horas punta",
+          "Menos tiempo gestionando reservas, más tiempo atendiendo a los clientes",
+          "Confirmaciones claras para que la gente realmente se presente"
+        ]
+      },
+      "beauty": {
+        "title": "Peluquería y Belleza",
+        "desc": "Mantén tu silla siempre ocupada con reservas, reprogramaciones y confirmaciones que funcionan en segundo plano.",
+        "highlights": [
+          "Los clientes reservan cuando les conviene, no solo cuando puedes responder",
+          "Menos huecos en la agenda y menos sorpresas de última hora",
+          "Menos gestión por WhatsApp y más tiempo con los clientes"
+        ]
+      },
+      "clinics": {
+        "title": "Clínicas y Salud",
+        "desc": "Facilita que los pacientes reserven, confirmen y recuerden sus visitas—con menos presión telefónica para tu equipo.",
+        "highlights": [
+          "Experiencia de reserva clara y sencilla para pacientes nuevos y existentes",
+          "Menos citas olvidadas y cancelaciones tardías",
+          "Más tiempo para la atención, menos tiempo en tareas administrativas repetitivas"
+        ]
+      },
+      "hotels": {
+        "title": "Hoteles",
+        "desc": "Convierte consultas en estancias con respuestas rápidas y un recorrido más fluido de «¿Tienen habitaciones?» a «Nos vemos pronto».",
+        "highlights": [
+          "Los huéspedes reciben respuestas rápidas sobre disponibilidad y detalles",
+          "Menos ida y vuelta para preguntas y cambios sencillos",
+          "Más reservas directas, menos oportunidades perdidas"
+        ]
+      },
+      "realEstate": {
+        "title": "Real Estate",
+        "desc": "Garantiza que cada comprador e inquilino sea contactado, cualificado y agendado — incluso cuando tus agentes estén en visitas.",
+        "highlights": [
+          "No más leads prometedores perdidos por llamadas no atendidas",
+          "Más fácil programar y reprogramar visitas a propiedades",
+          "Los agentes dedican más tiempo a cerrar operaciones, no a perseguir a la gente"
+        ]
+      }
+    }
   },
   "automations": {
     "list": {
@@ -391,6 +450,10 @@
       "cardTitle": "Agenda tu sesión inicial",
       "cardSubtitle": "Sin compromiso. Solo una conversación para descubrir cómo tu negocio puede ganar tiempo, orden y tranquilidad.",
       "field": {
+        "vertical": {
+          "label": "Sector del negocio",
+          "placeholder": "Selecciona tu sector (opcional)"
+        },
         "name": {
           "label": "Tu nombre",
           "placeholder": "Alex Johnson",

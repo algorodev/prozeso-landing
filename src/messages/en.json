@@ -135,12 +135,71 @@
   },
   "header": {
     "nav": {
+      "solutions": "Solutions",
       "automations": "Automations",
       "demo": "Demo"
     },
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
     "signIn": "Sign in"
+  },
+  "solutions": {
+    "hero": {
+      "title": "Solutions for your industry",
+      "subtitle": "We build automations tailored to how your business actually works."
+    },
+    "cta": "Start free assessment",
+    "moreComing": {
+      "title": "More industries coming...",
+      "desc": "We’re expanding into new sectors soon. Tell us about yours and we’ll tailor automations to fit."
+    },
+    "verticals": {
+      "restaurants": {
+        "title": "Restaurants",
+        "desc": "Turn every call, DM and website visit into a full table—without keeping someone on the phone all day.",
+        "highlights": [
+          "Fewer missed reservations at busy hours",
+          "Less time managing bookings, more time serving guests",
+          "Clear confirmations so people actually show up"
+        ]
+      },
+      "beauty": {
+        "title": "Hair & Beauty",
+        "desc": "Keep your chair booked out with smooth bookings, reschedules and confirmations that run in the background.",
+        "highlights": [
+          "Clients book when it suits them, not when you’re free to answer",
+          "Fewer gaps in the agenda and last-minute surprises",
+          "Less admin on WhatsApp and more time with clients"
+        ]
+      },
+      "clinics": {
+        "title": "Clinics & Health",
+        "desc": "Make it easy for patients to book, confirm and remember their visits—with less phone pressure on your team.",
+        "highlights": [
+          "Clear, simple booking experience for new and existing patients",
+          "Fewer forgotten appointments and late cancellations",
+          "More time for care, less time on repetitive admin"
+        ]
+      },
+      "hotels": {
+        "title": "Hotels",
+        "desc": "Turn enquiries into stays with fast answers and a smoother path from “Do you have rooms?” to “See you soon”.",
+        "highlights": [
+          "Guests get quick responses about availability and details",
+          "Less back-and-forth for simple questions and changes",
+          "More direct bookings, fewer opportunities lost"
+        ]
+      },
+      "realEstate": {
+        "title": "Real Estate",
+        "desc": "Make sure every buyer and tenant is contacted, qualified and scheduled—even when your agents are in viewings.",
+        "highlights": [
+          "No more promising leads lost to missed calls",
+          "Easier scheduling and rescheduling of property viewings",
+          "Agents spend more time closing deals, not chasing people"
+        ]
+      }
+    }
   },
   "automations": {
     "list": {
@@ -391,6 +450,10 @@
       "cardTitle": "Schedule your first session",
       "cardSubtitle": "No commitment. Just a conversation to discover how your business can gain time, order and peace of mind.",
       "field": {
+        "vertical": {
+          "label": "Business vertical",
+          "placeholder": "Select your industry (optional)"
+        },
         "name": {
           "label": "Your name",
           "placeholder": "Alex Johnson",

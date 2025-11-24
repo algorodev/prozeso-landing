@@ -43,6 +43,7 @@ export const Header = () => {
   const clientUrl =
     process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
   const navItems: NavItem[] = [
+    { label: t("nav.solutions"), href: "/solutions" },
     { label: t("nav.automations"), href: "/automations" },
   ];
 

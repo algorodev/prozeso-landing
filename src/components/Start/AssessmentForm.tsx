@@ -20,17 +20,33 @@ import {
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
 
+type VerticalKey = "restaurants" | "beauty" | "clinics" | "hotels" | "realEstate";
+
+const VERTICAL_KEYS: VerticalKey[] = [
+  "restaurants",
+  "beauty",
+  "clinics",
+  "hotels",
+  "realEstate",
+];
+
 export function AssessmentForm() {
   const searchParams = useSearchParams();
   const locale = useLocale();
   const t = useTranslations("start.assessment");
+  const tSolutions = useTranslations("solutions");
 
   const automation = searchParams.get("automation");
+  const verticalParam = searchParams.get("vertical");
+  const initialVertical = (VERTICAL_KEYS.includes((verticalParam as VerticalKey) ?? "" as VerticalKey)
+    ? (verticalParam as VerticalKey)
+    : "");
 
   const Schema = z.object({
     name: z.string().min(2, t("field.name.error")),
     email: z.string().email(t("field.email.error")),
     goals: z.string().max(2000).optional(),
+    vertical: z.enum(["", ...VERTICAL_KEYS] as ["", ...VerticalKey[]]).optional(),
   });
 
   type FormValues = z.infer<typeof Schema>;
@@ -40,7 +56,7 @@ export function AssessmentForm() {
 
   const form = useForm<FormValues>({
     resolver: zodResolver(Schema),
-    defaultValues: { name: "", email: "", goals: "" },
+    defaultValues: { name: "", email: "", goals: "", vertical: initialVertical },
     mode: "onTouched",
   });
 
@@ -58,6 +74,7 @@ export function AssessmentForm() {
           message: values.goals ?? "",
           workflow: automation ?? undefined,
           locale,
+          vertical: form.getValues("vertical") && form.getValues("vertical") !== "" ? form.getValues("vertical") : undefined,
         }),
       });
 
@@ -96,6 +113,30 @@ export function AssessmentForm() {
         ) : (
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4">
+              <FormField
+                control={form.control}
+                name="vertical"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{t("field.vertical.label")}</FormLabel>
+                    <FormControl>
+                      <select
+                        className="w-full appearance-none rounded-md border bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                        value={field.value ?? ""}
+                        onChange={(e) => field.onChange(e.target.value as VerticalKey | "")}
+                      >
+                        <option value="">{t("field.vertical.placeholder")}</option>
+                        {VERTICAL_KEYS.map((key) => (
+                          <option key={key} value={key}>
+                            {tSolutions(`verticals.${key}.title`)}
+                          </option>
+                        ))}
+                      </select>
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="name"

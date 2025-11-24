@@ -16,6 +16,7 @@ type Props = {
   email: string;
   message?: string;
   workflow?: string | null;
+  vertical?: string | null;
 };
 
 const card: CSSProperties = {
@@ -52,8 +53,16 @@ export default function InternalLeadNotificationEmail({
   email,
   message,
   workflow,
+  vertical,
 }: Props) {
   const dateStr = new Date().toLocaleString();
+  const verticalLabels: Record<string, string> = {
+    restaurants: "Restaurants",
+    beauty: "Hair & Beauty",
+    clinics: "Clinics & Health",
+    hotels: "Hotels",
+    realEstate: "Real Estate",
+  };
 
   return (
     <Html>
@@ -95,6 +104,15 @@ export default function InternalLeadNotificationEmail({
                 </Text>
               </>
             ) : null}
+
+              {vertical ? (
+                <>
+                  <Text style={label}>Vertical</Text>
+                  <Text style={{ margin: "6px 0 16px" }}>
+                    <span style={chip}>{verticalLabels[vertical] ?? vertical}</span>
+                  </Text>
+                </>
+              ) : null}
 
             {message ? (
               <>
