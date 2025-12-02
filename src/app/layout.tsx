@@ -1,18 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter_Tight, Sora } from "next/font/google";
 import Script from 'next/script'
 import type { ReactNode } from "react";
 import { locales } from "@/i18n/config";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const interTightFont = Inter_Tight({
   subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+  variable: "--font-inter-tight",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const soraFont = Sora({
   subsets: ["latin"],
+	weight: ["500", "600"],
+  variable: "--font-sora",
 });
 
 const siteName = "Prozeso";
@@ -107,7 +109,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter`}
       >
 	      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
 	      <Script id="ga4-init" strategy="afterInteractive">

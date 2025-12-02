@@ -6,8 +6,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--font-inter: var(--font-inter-tight);
+	--font-sora: var(--font-sora);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -44,6 +44,8 @@
 }
 
 :root {
+	--font-inter-tight: "Inter Tight", sans-serif;
+	--font-sora: "Sora", sans-serif;
   --radius: 0.625rem;
   --background: oklch(0.98 0.01 260);
   --foreground: oklch(0.18 0.03 265);
@@ -135,6 +137,50 @@
 }
 
 @layer utilities {
+	.hero-title {
+		@apply font-sora text-6xl font-semibold tracking-tight;
+	}
+
+	.page-title {
+		@apply font-sora text-4xl font-semibold;
+	}
+
+	.section-title {
+		@apply font-sora text-3xl font-semibold;
+	}
+
+	.card-title {
+		@apply font-inter text-xl font-semibold;
+	}
+
+	.body-text {
+		@apply font-inter text-base font-normal;
+	}
+
+	.body-strong-text {
+		@apply font-inter text-base font-medium;
+	}
+
+	.caption-text {
+		@apply font-inter text-sm font-normal;
+	}
+
+	.button-primary-text {
+		@apply font-inter text-sm font-semibold tracking-wide uppercase;
+	}
+
+	.button-secondary-text {
+		@apply font-inter text-sm font-medium;
+	}
+
+	.input-text {
+		@apply font-inter text-sm font-normal;
+	}
+
+	.stats-text {
+		@apply font-sora text-3xl font-semibold;
+	}
+
   .gradient-cta {
     background: var(--gradient-cta);
   }
