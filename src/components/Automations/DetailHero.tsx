@@ -36,10 +36,10 @@ export default function DetailHero({
             <Icon className="size-6" />
           </div>
           <div>
-            <h1 className="text-balance text-3xl font-bold tracking-tight sm:text-5xl">
+            <h1 className="text-balance page-title">
               {tId("title")}
             </h1>
-            <p className="my-6 max-w-2xl text-white/90">
+            <p className="my-6 max-w-2xl body-text text-white/90">
               {tId("description")
                 .split("\n")
                 .map((part, i) => (
@@ -55,7 +55,7 @@ export default function DetailHero({
                 ))}
             </p>
             <Separator />
-            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm text-white/90">
+            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 caption-text text-white/90">
               {outcomes.map((o: string) => (
                 <li key={o} className="flex items-center gap-2">
                   <span className="size-1.5 rounded-full bg-white/90 shrink-0" />{" "}

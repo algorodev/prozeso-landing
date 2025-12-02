@@ -35,10 +35,10 @@ export function Steps() {
                 <div className="grid size-10 place-items-center rounded-xl bg-accent/10 text-accent">
                   <Icon className="size-5" />
                 </div>
-                <CardTitle className="text-base sm:text-lg">{title}</CardTitle>
+                <CardTitle>{title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">{desc}</p>
+                <p className="body-text text-muted-foreground">{desc}</p>
               </CardContent>
             </Card>
           ))}

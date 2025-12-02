@@ -62,7 +62,7 @@ const Benefits = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.45 }}
-            className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
+            className="section-title text-balance"
           >
             {t("title")}
           </motion.h2>
@@ -71,7 +71,7 @@ const Benefits = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ delay: 0.1, duration: 0.45 }}
-            className="mt-3 text-muted-foreground"
+            className="mt-3 body-text text-muted-foreground"
           >
             {t("subtitle")}
           </motion.p>
@@ -98,7 +98,7 @@ const Benefits = () => {
                     {title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0 text-sm text-muted-foreground">
+                <CardContent className="pt-0 body-text text-muted-foreground">
                   {body}
                 </CardContent>
               </Card>
@@ -126,8 +126,8 @@ function Stat({ kpi, label }: { kpi: string; label: string }) {
   return (
     <div className="text-center">
       <div className="text-2xl font-semibold tracking-tight">{kpi}</div>
-      <div className="text-xs text-muted-foreground">{label}</div>
-    </div>
+      <div className="caption-text text-muted-foreground">{label}</div>
+      </div>
   );
 }
 

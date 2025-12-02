@@ -59,16 +59,16 @@ export const DesktopNav = ({ item, activePath }: Props) => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" className="min-w-64">
-        <DropdownMenuLabel className="text-xs text-muted-foreground">
+        <DropdownMenuLabel className="caption-text text-muted-foreground">
           {item.label}
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         {item.children.map((child) => (
           <DropdownMenuItem key={child.href} asChild>
             <LocalizedLink href={child.href} className="flex flex-col">
-              <span className="text-sm leading-tight">{child.label}</span>
+              <span className="body-text leading-tight">{child.label}</span>
               {child.description ? (
-                <span className="text-xs text-muted-foreground leading-tight">
+                <span className="caption-text text-muted-foreground leading-tight">
                   {child.description}
                 </span>
               ) : null}

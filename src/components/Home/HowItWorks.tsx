@@ -67,7 +67,7 @@ const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.45 }}
-            className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
+            className="section-title text-balance"
           >
             {t("title")}
           </motion.h2>
@@ -76,7 +76,7 @@ const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ delay: 0.1, duration: 0.45 }}
-            className="mt-3 text-muted-foreground"
+            className="mt-3 body-text text-muted-foreground"
           >
             {t("subtitle")}
           </motion.p>
@@ -159,10 +159,10 @@ const HowItWorks = () => {
                         <Icon className="h-5 w-5" aria-hidden="true" />
                       </span>
                       <div className="grow">
-                        <h3 className="mt-1 text-lg font-semibold text-foreground">
+                        <h3 className="mt-1 body-strong-text text-foreground text-lg">
                           {title}
                         </h3>
-                        <p className="mt-1 text-sm text-muted-foreground">
+                        <p className="mt-1 body-text text-muted-foreground">
                           {body}
                         </p>
                       </div>

@@ -16,7 +16,7 @@ export default function FAQ({ automationId }: { automationId: string }) {
   return (
     <section aria-labelledby="pricing-faq">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8">
-        <h2 id="pricing-faq" className="text-xl font-semibold">
+        <h2 id="pricing-faq" className="section-title">
           FAQs
         </h2>
         <Accordion type="single" collapsible className="mt-4">

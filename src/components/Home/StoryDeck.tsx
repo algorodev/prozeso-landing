@@ -70,7 +70,7 @@ export default function StoryDeck() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.45 }}
-          className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
+          className="section-title text-balance"
         >
           {t("title")}
         </motion.h2>
@@ -79,7 +79,7 @@ export default function StoryDeck() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ delay: 0.1, duration: 0.45 }}
-          className="mt-3 text-muted-foreground"
+          className="mt-3 body-text text-muted-foreground"
         >
           {t("subtitle")}
         </motion.p>
@@ -118,10 +118,10 @@ export default function StoryDeck() {
                 <motion.div key="problem" {...fadeUp}>
                   <Card className="rounded-2xl border-none shadow-sm bg-card">
                     <CardContent className="space-y-4 leading-relaxed">
-                      <p className="text-pretty text-xl font-semibold leading-7">
+                      <p className="text-pretty text-xl body-strong-text leading-7">
                         {t("content.problem.lead")}
                       </p>
-                      <div className="mt-5 space-y-3 text-base leading-7 text-muted-foreground">
+                      <div className="mt-5 space-y-3 text-base leading-7 text-muted-foreground body-text">
                         {problemParagraphs.map((p, i) => (
                           <motion.p
                             key={i}
@@ -145,11 +145,11 @@ export default function StoryDeck() {
                 <motion.div key="solution" {...fadeUp}>
                   <Card className="rounded-2xl border-none shadow-sm bg-card">
                     <CardContent className="space-y-5 leading-relaxed">
-                      <p className="text-pretty text-xl font-semibold leading-7">
+                      <p className="text-pretty text-xl body-strong-text leading-7">
                         {t("content.solution.lead")}
                       </p>
-                      <div className="mt-5 space-y-4 text-base leading-7 text-muted-foreground">
-                        <p className="font-medium">
+                      <div className="mt-5 space-y-4 text-base leading-7 text-muted-foreground body-text">
+                        <p className="body-strong-text">
                           {t("content.solution.intro")}
                         </p>
                         <motion.ul
@@ -162,14 +162,14 @@ export default function StoryDeck() {
                             <motion.li
                               key={i}
                               variants={listItem}
-                              className="rounded-xl border bg-background text-sm text-foreground p-4"
+                              className="rounded-xl border bg-background text-foreground p-4 body-text"
                             >
                               {b}
                             </motion.li>
                           ))}
                         </motion.ul>
                         <Separator />
-                        <p>{t("content.solution.outro")}</p>
+                        <p className="body-text">{t("content.solution.outro")}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -183,10 +183,10 @@ export default function StoryDeck() {
                 <motion.div key="impact" {...fadeUp}>
                   <Card className="rounded-2xl border-none shadow-sm bg-card">
                     <CardContent className="space-y-6 leading-relaxed">
-                      <p className="text-pretty text-xl font-semibold leading-7">
+                      <p className="text-pretty text-xl body-strong-text leading-7">
                         {t("content.impact.lead")}
                       </p>
-                      <div className="mt-5 space-y-3 text-base leading-7 text-muted-foreground">
+                      <div className="mt-5 space-y-3 text-base leading-7 text-muted-foreground body-text">
                         {impactParagraphs.map((p, i) => (
                           <motion.p
                             key={i}
@@ -210,10 +210,10 @@ export default function StoryDeck() {
                             className="relative rounded-2xl border p-4 bg-background"
                             variants={listItem}
                           >
-                            <div className="text-sm font-semibold text-foreground">
+                            <div className="body-strong-text text-foreground">
                               {t(s.title)}
                             </div>
-                            <p className="mt-1 text-sm">{t(s.desc)}</p>
+                            <p className="mt-1 body-text">{t(s.desc)}</p>
                           </motion.div>
                         ))}
                       </motion.div>

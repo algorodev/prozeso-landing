@@ -51,14 +51,14 @@ export const MobileNav = ({ nav = [] }: Props) => {
       </SheetTrigger>
       <SheetContent side="left" className="w-[84vw] p-0">
         <SheetHeader className="px-4 py-3">
-          <SheetTitle className="text-left">Menu</SheetTitle>
+          <SheetTitle className="text-left body-strong-text">Menu</SheetTitle>
         </SheetHeader>
         <div className="px-4 pb-4">
           <div className="flex items-center gap-2 py-2">
             <Button className="flex-1" variant="secondary">
               <Close asChild>
                 <LocalizedLink href={clientUrl} className="flex items-center">
-                  <User className="mr-2 size-4" /> Sign in
+                  <User className="mr-2 size-4" /> <span className="button-secondary-text">Sign in</span>
                 </LocalizedLink>
               </Close>
             </Button>
@@ -73,7 +73,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
             {nav.map((item) => (
               <AccordionItem key={item.label} value={item.label}>
                 {item.children?.length ? (
-                  <AccordionTrigger className="px-1 py-2 text-base">
+                  <AccordionTrigger className="px-1 py-2 body-strong-text">
                     {item.label}
                   </AccordionTrigger>
                 ) : (
@@ -81,7 +81,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
                     <Close asChild>
                       <LocalizedLink
                         href={item.href ?? "#"}
-                        className="block rounded-xl px-2 py-2 hover:bg-accent"
+                        className="block rounded-xl px-2 py-2 hover:bg-accent body-text"
                       >
                         {item.label}
                       </LocalizedLink>
@@ -98,9 +98,9 @@ export const MobileNav = ({ nav = [] }: Props) => {
                               href={child.href}
                               className="block rounded-xl px-3 py-2 hover:bg-accent"
                             >
-                              <div className="text-sm">{child.label}</div>
+                              <div className="body-text">{child.label}</div>
                               {child.description ? (
-                                <div className="text-xs text-muted-foreground">
+                                <div className="caption-text text-muted-foreground">
                                   {child.description}
                                 </div>
                               ) : null}

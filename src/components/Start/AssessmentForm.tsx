@@ -97,15 +97,15 @@ export function AssessmentForm() {
     <Card>
       <CardHeader className="pb-2">
         <CardTitle>{t("cardTitle")}</CardTitle>
-        <p className="text-sm text-muted-foreground">{t("cardSubtitle")}</p>
+        <p className="body-text text-muted-foreground">{t("cardSubtitle")}</p>
       </CardHeader>
       <CardContent className="pt-2">
         {success ? (
           <div className="flex items-start gap-3 rounded-md border p-4">
             <CheckCircle2 className="mt-0.5 size-5 shrink-0" />
             <div>
-              <p className="font-medium">{t("success.title")}</p>
-              <p className="text-sm text-muted-foreground">
+              <p className="body-strong-text">{t("success.title")}</p>
+              <p className="body-text text-muted-foreground">
                 {t("success.body")}
               </p>
             </div>
@@ -121,7 +121,7 @@ export function AssessmentForm() {
                     <FormLabel>{t("field.vertical.label")}</FormLabel>
                     <FormControl>
                       <select
-                        className="w-full appearance-none rounded-md border bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                        className="w-full appearance-none rounded-md border bg-background px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-ring input-text"
                         value={field.value ?? ""}
                         onChange={(e) => field.onChange(e.target.value as VerticalKey | "")}
                       >
@@ -188,7 +188,7 @@ export function AssessmentForm() {
                 )}
               />
               {serverError && (
-                <div className="rounded-md border border-destructive/30 bg-destructive/5 p-3 text-sm">
+                <div className="rounded-md border border-destructive/30 bg-destructive/5 p-3 body-text">
                   {serverError}
                 </div>
               )}
@@ -206,7 +206,7 @@ export function AssessmentForm() {
                   <>{t("submit.idle")}</>
                 )}
               </Button>
-              <p className="text-xs text-muted-foreground">{t("disclaimer")}</p>
+              <p className="caption-text text-muted-foreground">{t("disclaimer")}</p>
             </form>
           </Form>
         )}

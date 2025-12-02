@@ -51,7 +51,7 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.45 }}
-            className="text-balance text-3xl font-bold tracking-tight sm:text-4xl"
+            className="section-title text-balance"
           >
             {t("title")}
           </motion.h2>
@@ -60,7 +60,7 @@ const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ delay: 0.1, duration: 0.45 }}
-            className="mt-3 text-muted-foreground"
+            className="mt-3 body-text text-muted-foreground"
           >
             {t("subtitle")}
           </motion.p>
@@ -88,7 +88,7 @@ const Testimonials = () => {
                     ))}
                   </div>
                   <blockquote
-                    className="mt-3 text-base leading-relaxed"
+                    className="mt-3 body-text text-base leading-relaxed"
                     itemProp="reviewBody"
                   >
                     “{tItem.quote}”
@@ -105,10 +105,10 @@ const Testimonials = () => {
                       </AvatarFallback>
                     </Avatar>
                     <div>
-                      <div className="font-medium" itemProp="author">
+                      <div className="body-strong-text" itemProp="author">
                         {tItem.name}
                       </div>
-                      <div className="text-xs text-muted-foreground">
+                      <div className="caption-text text-muted-foreground">
                         {tItem.role} · {tItem.company}
                       </div>
                     </div>

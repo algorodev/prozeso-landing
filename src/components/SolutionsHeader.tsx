@@ -13,10 +13,10 @@ export function SolutionsHeader() {
       <div className="mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-20">
         <div className="max-w-3xl">
           <Badge variant="secondary" className="mb-4">{t("hero.title")}</Badge>
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h1 className="page-title text-balance">
             {t("hero.title")}
           </h1>
-          <p className="mt-3 text-muted-foreground text-base sm:text-lg">
+          <p className="mt-3 body-text text-muted-foreground sm:text-lg">
             {t("hero.subtitle")}
           </p>
           <div className="mt-6">

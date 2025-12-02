@@ -35,13 +35,13 @@ export function SolutionsGrid() {
                   <div className="rounded-xl border bg-card p-2 text-accent shadow-sm group-hover:shadow">
                     <Icon className="size-5" />
                   </div>
-                  <CardTitle className="leading-tight">{title}</CardTitle>
+                  <CardTitle className="card-title">{title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-1 flex-col space-y-4">
-                  <p className="text-sm text-muted-foreground">{desc}</p>
+                  <p className="body-text text-muted-foreground">{desc}</p>
                   <ul className="space-y-2">
                     {highlights?.map((h, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm">
+                      <li key={i} className="flex items-start gap-2 body-text">
                         <Check className="mt-0.5 size-4 text-accent" />
                         <span>{h}</span>
                       </li>
@@ -61,10 +61,10 @@ export function SolutionsGrid() {
               <div className="rounded-xl border bg-card p-2 text-accent shadow-sm group-hover:shadow">
                 <Sparkles className="size-5" />
               </div>
-              <CardTitle className="leading-tight">{t("moreComing.title")}</CardTitle>
+              <CardTitle className="card-title">{t("moreComing.title")}</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-1 flex-col space-y-4">
-              <p className="text-sm text-muted-foreground">{t("moreComing.desc")}</p>
+              <p className="body-text text-muted-foreground">{t("moreComing.desc")}</p>
               <div className="pt-1 mt-auto">
                 <Button asChild variant="secondary" size="sm">
                   <LocalizedLink href="/start">{t("cta")}</LocalizedLink>

@@ -39,7 +39,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.05, duration: 0.6 }}
-              className="mt-6 text-balance text-4xl font-bold tracking-tight sm:text-6xl"
+              className="mt-6 text-balance hero-title"
             >
               {t.rich("title", {
                 accent: (chunks) => (
@@ -51,7 +51,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.12, duration: 0.6 }}
-              className="mt-4 text-pretty text-base leading-7 text-muted-foreground sm:text-lg"
+              className="mt-4 text-pretty body-text leading-7 text-muted-foreground sm:text-lg"
             >
               {t("subtitle")}
             </motion.p>
@@ -72,7 +72,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.28, duration: 0.6 }}
-              className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground lg:justify-start"
+              className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 caption-text text-muted-foreground lg:justify-start"
             >
               <span>{t("trialBadges.freeTrial")}</span>
               <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />

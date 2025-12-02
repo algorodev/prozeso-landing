@@ -80,13 +80,10 @@ export default function PricingSection({
     <section aria-labelledby="pricing" className="relative">
       <div className="mx-auto max-w-7xl px-6 py-12 sm:px-8 sm:py-16">
         <div className="mb-6">
-          <h2
-            id="pricing"
-            className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl"
-          >
+          <h2 id="pricing" className="section-title text-balance">
             Pricing for this automation
           </h2>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="mt-2 body-text text-muted-foreground">
             Start small, scale as your usage grows. Switch plans any time.
           </p>
           <div className="mt-4 inline-flex items-center gap-2 rounded-xl bg-muted p-1 ring-1 ring-border">
@@ -117,7 +114,7 @@ export default function PricingSection({
             <PricingTierCard key={tier.id} tier={tier} yearly={yearly} />
           ))}
         </div>
-        <p className="mt-6 text-xs text-muted-foreground">
+        <p className="mt-6 caption-text text-muted-foreground">
           Prices in EUR. Taxes may apply.
         </p>
 

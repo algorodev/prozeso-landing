@@ -26,7 +26,7 @@ export default function StatsMetric({
   return (
     <section className="relative">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-8">
-        <h2 className="text-xl font-semibold">Metrics</h2>
+        <h2 className="section-title">Metrics</h2>
         <TooltipProvider>
           <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {stats.map((s, i) => (
@@ -69,7 +69,7 @@ function MetricCard({
           <div className="flex items-center justify-between">
             <Badge
               variant="secondary"
-              className="rounded-xl px-2.5 py-1 text-xs"
+              className="rounded-xl px-2.5 py-1 caption-text"
             >
               {t(stat.label)}
             </Badge>
@@ -128,10 +128,10 @@ function DirectionTag({ dir }: { dir?: Stat["direction"] }) {
 
 function MetricValue({ value, suffix }: { value: number; suffix?: string }) {
   return (
-    <div className="font-semibold tracking-tight">
-      <span className="text-4xl tabular-nums">{value}</span>
+    <div className="tracking-tight">
+      <span className="stats-text tabular-nums">{value}</span>
       {suffix ? (
-        <span className="ml-1 text-base text-muted-foreground">{suffix}</span>
+        <span className="ml-1 caption-text text-muted-foreground">{suffix}</span>
       ) : null}
     </div>
   );

@@ -32,25 +32,25 @@ export default function PricingTierCard({
     <Card className={`h-full ${tier.popular ? "ring-1 ring-accent" : ""}`}>
       <CardHeader>
         <div className="flex items-center justify-between">
-          <CardTitle className="text-xl">{tier.name}</CardTitle>
+          <CardTitle className="card-title">{tier.name}</CardTitle>
           {tier.badge && (
             <Badge variant="secondary" className="rounded-lg">
               {tier.badge}
             </Badge>
           )}
         </div>
-        <div className="mt-2 text-sm text-muted-foreground">
+        <div className="mt-2 body-text text-muted-foreground">
           {tier.description}
         </div>
         <div className="mt-4 flex items-baseline gap-1">
-          <div className="text-4xl font-bold">€{price}</div>
-          <div className="text-sm text-muted-foreground">
+          <div className="stats-text">€{price}</div>
+          <div className="caption-text text-muted-foreground">
             / {yearly ? "mo (billed yearly)" : "mo"}
           </div>
         </div>
       </CardHeader>
       <CardContent>
-        <ul className="space-y-2 text-sm">
+        <ul className="space-y-2 body-text">
           {tier.features.map((f) => (
             <li key={f} className="flex items-start gap-2">
               <Check className="mt-0.5 size-4 text-primary" />
@@ -61,9 +61,9 @@ export default function PricingTierCard({
             <li className="pt-2 text-muted-foreground">
               <div className="flex items-start gap-2">
                 <Minus className="mt-0.5 size-4" />
-                <span>Limitations:</span>
+                <span className="body-strong-text">Limitations:</span>
               </div>
-              <ul className="mt-1 ml-6 list-disc space-y-1">
+              <ul className="mt-1 ml-6 list-disc space-y-1 body-text">
                 {tier.limitations.map((l) => (
                   <li key={l}>{l}</li>
                 ))}

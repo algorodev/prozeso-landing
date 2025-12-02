@@ -45,10 +45,10 @@ const StatsBlock = () => {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-balance">
+          <h2 className="section-title text-balance">
             {t("title")}
           </h2>
-          <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>
+          <p className="mt-3 body-text text-muted-foreground">{t("subtitle")}</p>
         </motion.div>
         <motion.div
           initial="hidden"
@@ -73,11 +73,11 @@ const StatsBlock = () => {
                   <div className="grid size-10 place-items-center rounded-xl bg-primary/10 text-primary">
                     <Icon className="size-5" />
                   </div>
-                  <CardTitle className="text-2xl font-bold">{value}</CardTitle>
+                    <CardTitle className="stats-text">{value}</CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0 text-sm">
-                  <p className="font-medium">{label}</p>
-                  <p className="text-muted-foreground mt-1">{desc}</p>
+                <CardContent className="pt-0 body-text">
+                    <p className="body-strong-text">{label}</p>
+                    <p className="text-muted-foreground mt-1 body-text">{desc}</p>
                 </CardContent>
               </Card>
             </motion.div>

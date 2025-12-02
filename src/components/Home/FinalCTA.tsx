@@ -26,10 +26,10 @@ const FinalCTA = () => {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="section-title text-balance">
             {t("title")}
           </h2>
-          <p className="mt-3 text-muted-foreground">{t("subtitle")}</p>
+          <p className="mt-3 body-text text-muted-foreground">{t("subtitle")}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -47,7 +47,7 @@ const FinalCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ delay: 0.15, duration: 0.45 }}
-          className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-2 text-sm text-muted-foreground sm:grid-cols-3"
+          className="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-2 caption-text text-muted-foreground sm:grid-cols-3"
         >
           {bullets.map((item) => (
             <li key={item} className="flex items-center justify-center gap-2">

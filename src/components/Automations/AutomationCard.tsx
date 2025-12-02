@@ -44,10 +44,10 @@ const AutomationCard = ({ a }: { a: Automation }) => {
           <Icon className="size-5" />
         </div>
         <div className="min-w-0">
-          <CardTitle className="truncate text-base sm:text-lg">
+          <CardTitle className="card-title truncate">
             {tId("title")}
           </CardTitle>
-          <div className="mt-1 flex flex-wrap gap-1.5 text-xs text-muted-foreground">
+          <div className="mt-1 flex flex-wrap gap-1.5 caption-text text-muted-foreground">
             {categoryKeys.map((c: string) => (
               <span key={c} className="rounded bg-muted px-1.5 py-0.5">
                 {tId(`categories.${c}`)}
@@ -57,26 +57,26 @@ const AutomationCard = ({ a }: { a: Automation }) => {
         </div>
       </CardHeader>
       <CardContent className="pt-0 flex flex-col grow">
-        <p className="text-sm text-muted-foreground line-clamp-3">
+        <p className="body-text text-muted-foreground line-clamp-3">
           {tId("tagline")}
         </p>
         <div className="mt-3 mb-4 flex flex-wrap gap-1.5">
           {integrations.map((i: string) => (
             <span
               key={i}
-              className="rounded-md border px-2 py-0.5 text-xs text-muted-foreground"
+              className="rounded-md border px-2 py-0.5 caption-text text-muted-foreground"
             >
               {i}
             </span>
           ))}
         </div>
-        <div className="mt-auto flex flex-col items-start sm:items-center justify-start sm:justify-between gap-3 text-xs">
+        <div className="mt-auto flex flex-col items-start sm:items-center justify-start sm:justify-between gap-3">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="rounded-md bg-secondary px-2 py-0.5 flex items-center gap-1 text-secondary-foreground border border-border">
+            <span className="rounded-md bg-secondary px-2 py-0.5 flex items-center gap-1 text-secondary-foreground border border-border caption-text">
               <Clock className="size-4" />
               {tId("timeSavedShort")}
             </span>
-            <span className="rounded-md bg-accent/50 px-2 py-0.5 flex items-center gap-1 text-secondary-foreground border border-accent">
+            <span className="rounded-md bg-accent/50 px-2 py-0.5 flex items-center gap-1 text-secondary-foreground border border-accent caption-text">
               <TrendingUp className="size-4" />
               {tId("roiShort")}
             </span>

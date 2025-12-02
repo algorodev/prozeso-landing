@@ -39,22 +39,22 @@ export default function ComparisonTable() {
     <Card>
       <CardContent className="p-0">
         <div className="w-full overflow-x-auto">
-          <Table className="min-w-[720px]">
-            <TableCaption className="text-xs">
+          <Table className="min-w-[720px] body-text">
+            <TableCaption className="caption-text">
               Feature availability across plans. Contact us for custom needs.
             </TableCaption>
             <TableHeader>
               <TableRow className="bg-muted">
-                <TableHead className="w-[40%] text-muted-foreground">
+                <TableHead className="w-[40%] text-muted-foreground caption-text">
                   Features
                 </TableHead>
-                <TableHead className="w-[20%] text-muted-foreground">
+                <TableHead className="w-[20%] text-muted-foreground caption-text">
                   Starter
                 </TableHead>
-                <TableHead className="w-[20%] text-muted-foreground">
+                <TableHead className="w-[20%] text-muted-foreground caption-text">
                   Growth
                 </TableHead>
-                <TableHead className="w-[20%] text-muted-foreground">
+                <TableHead className="w-[20%] text-muted-foreground caption-text">
                   Scale
                 </TableHead>
               </TableRow>
@@ -65,10 +65,10 @@ export default function ComparisonTable() {
                   key={r.label}
                   className={i % 2 ? "bg-card" : "bg-card/80"}
                 >
-                  <TableCell className="font-medium">{r.label}</TableCell>
-                  <TableCell>{renderCell(r.starter)}</TableCell>
-                  <TableCell>{renderCell(r.growth)}</TableCell>
-                  <TableCell>{renderCell(r.scale)}</TableCell>
+                  <TableCell className="body-strong-text">{r.label}</TableCell>
+                  <TableCell className="body-text">{renderCell(r.starter)}</TableCell>
+                  <TableCell className="body-text">{renderCell(r.growth)}</TableCell>
+                  <TableCell className="body-text">{renderCell(r.scale)}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

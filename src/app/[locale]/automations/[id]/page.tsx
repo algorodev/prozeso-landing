@@ -19,13 +19,13 @@ export default function AutomationDetailPage() {
   if (!automation) {
     return (
       <div className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="text-2xl font-semibold">Automation not found</h1>
-        <p className="mt-2 text-muted-foreground">
+        <h1 className="page-title text-balance">Automation not found</h1>
+        <p className="mt-2 body-text text-muted-foreground">
           We couldn't find an automation with id "{id}".
         </p>
         <LocalizedLink
           href="/automations"
-          className="mt-6 inline-flex rounded-xl bg-accent px-4 py-2 text-sm text-accent-foreground"
+          className="mt-6 inline-flex rounded-xl bg-accent px-4 py-2 text-accent-foreground button-primary-text"
         >
           Back to catalog
         </LocalizedLink>

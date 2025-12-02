@@ -60,7 +60,7 @@ export const Header = () => {
         <div className="flex items-center">
           <LocalizedLink
             href="/"
-            className="flex items-center gap-2 font-semibold"
+            className="flex items-center gap-2"
           >
             <Image
               src={isDark ? logoBlanco : logoNegro}

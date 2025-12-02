@@ -169,7 +169,7 @@ export default function WorkflowNarrative({
         <header className="md:sticky md:top-16 self-start bg-background z-[30]">
           <h2
             id="workflow-journey"
-            className="text-2xl font-semibold text-foreground"
+            className="section-title text-foreground"
           >
             How Prozeso fixes it—step by step
           </h2>
@@ -197,8 +197,8 @@ export default function WorkflowNarrative({
                   <span
                     className={
                       active === b.id
-                        ? "font-medium text-foreground"
-                        : "text-muted-foreground"
+                        ? "body-strong-text text-foreground"
+                        : "body-text text-muted-foreground"
                     }
                   >
                     {title}
@@ -234,14 +234,14 @@ export default function WorkflowNarrative({
                       : "border-muted-foreground/20",
                   ].join(" ")}
                 />
-                <h3 className="text-xl font-semibold">
+                <h3 className="mt-1 body-strong-text text-foreground text-lg">
                   {b.id === "problem"
                     ? t("problemTitle")
                     : b.id === "solution"
                       ? t("solutionTitle")
                       : t("resultsTitle")}
                 </h3>
-                <div className="prose prose-neutral mt-4 max-w-none text-foreground/90">
+                <div className="prose prose-neutral mt-4 max-w-none text-foreground/90 body-text">
                   {(() => {
                     const raw = tId.raw(b.id) ?? undefined;
                     if (raw) {
@@ -256,7 +256,7 @@ export default function WorkflowNarrative({
                 </div>
                 {b.id === "results" && (
                   <div className="mt-8">
-                    <p className="text-sm text-muted-foreground flex items-center gap-3">
+                    <p className="caption-text text-muted-foreground flex items-center gap-3">
                       <CheckCircle2 className="size-5" aria-hidden />
                       {tId("resultSummary")}
                     </p>

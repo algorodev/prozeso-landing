@@ -9,7 +9,7 @@ const SheetDescription = ({
   return (
     <Description
       data-slot="sheet-description"
-      className={cn("text-muted-foreground text-sm", className)}
+      className={cn("text-muted-foreground caption-text", className)}
       {...props}
     />
   );

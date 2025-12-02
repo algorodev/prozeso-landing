@@ -15,7 +15,7 @@ const AutomationGrid = ({ items }: { items: Automation[] }) => {
       ))}
       {items.length === 0 && (
         <Card className="col-span-full">
-          <CardContent className="p-6 text-sm text-muted-foreground">
+          <CardContent className="p-6 body-text text-muted-foreground">
             {t("grid.empty")}
           </CardContent>
         </Card>

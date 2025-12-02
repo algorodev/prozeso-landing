@@ -65,7 +65,7 @@ export const AgentFloatButton = () => {
         size="md"
       >
         <PhoneCall className="size-5" />
-        <span className="text-[13px] font-semibold tracking-wide uppercase hidden md:block">
+        <span className="button-primary-text hidden md:block">
           {label}
         </span>
       </Button>
