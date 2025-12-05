@@ -13,12 +13,10 @@ const FinalCTA = () => {
 			  <p className="text-lg text-foreground/70 mb-12 leading-relaxed">
 				  Start your free assessment today. See exactly which automations will transform your business.
 			  </p>
-			  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-				  <Button size="lg">
-					  <Phone className="w-5 h-5" />
-					  Start Now
-				  </Button>
-			  </div>
+			  <Button size="lg">
+				  <Phone className="w-5 h-5" />
+				  Start Now
+			  </Button>
 		  </div>
 	  </section>
   );

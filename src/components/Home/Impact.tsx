@@ -10,7 +10,6 @@ const Impact = () => {
 				<p className="text-lg text-muted-foreground mb-16 max-w-xl font-normal">
 					We optimize every call and every interaction with natural voice AI.
 				</p>
-
 				<div className="grid md:grid-cols-3 gap-6">
 					{[
 						{
@@ -46,7 +45,7 @@ const Impact = () => {
 					].map((metric, idx) => (
 						<div
 							key={idx}
-							className={`bg-card rounded-3xl p-8 flex flex-col justify-between min-h-[400px] border border-border transition-all ${
+							className={`bg-card rounded-3xl p-8 flex flex-col justify-between min-h-[400px] border border-transparent transition-all ${
 								metric.color === "primary"
 									? "hover:border-primary/40"
 									: metric.color === "secondary"

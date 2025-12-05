@@ -5,10 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import logoBlanco from "@/assets/logo-blanco.svg";
-import logoNegro from "@/assets/logo-negro.svg";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { MobileNav } from "@/components/MobileNav";
@@ -32,12 +29,7 @@ export const Header = () => {
   const t = useTranslations("header");
   const pathname = usePathname();
   const locale = useLocale();
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
-
-  const isDark = mounted ? resolvedTheme === "dark" : undefined;
   const clientUrl =
     process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
   const navItems: NavItem[] = [
@@ -48,7 +40,6 @@ export const Header = () => {
   return (
     <header
       className="sticky top-0 z-[60] w-full backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b"
-      data-dark={mounted ? String(!!isDark) : undefined}
       suppressHydrationWarning
     >
       <div className="mx-auto flex h-16 max-w-screen-2xl items-center gap-3 px-3 sm:px-4">
@@ -61,7 +52,7 @@ export const Header = () => {
             className="flex items-center gap-2"
           >
             <Image
-              src={isDark ? logoBlanco : logoNegro}
+              src={logoBlanco}
               width={120}
               alt={t("logoAlt")}
             />

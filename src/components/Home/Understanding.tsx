@@ -12,11 +12,9 @@ const Understanding = () => {
 				<p className='text-lg text-muted-foreground mb-16 max-w-xl font-normal'>
 					How we transform data into real impact.
 				</p>
-
 				<div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
 					{[
 						{
-							color: 'bg-secondary',
 							icon: MessageSquare,
 							title: 'Turn conversations into real knowledge',
 							description:
@@ -25,7 +23,6 @@ const Understanding = () => {
 							tagColor: 'accent',
 						},
 						{
-							color: 'bg-secondary',
 							icon: TrendingUp,
 							title: 'Transform data into actionable decisions',
 							description:
@@ -34,7 +31,6 @@ const Understanding = () => {
 							tagColor: 'accent',
 						},
 						{
-							color: 'bg-secondary',
 							icon: Calendar,
 							title: 'Scale efficiency with conversational AI',
 							description: 'Automate calls, information, and bookings to free up time and increase sales 24/7.',
@@ -42,7 +38,6 @@ const Understanding = () => {
 							tagColor: 'accent',
 						},
 						{
-							color: 'bg-secondary',
 							icon: Shield,
 							title: 'GDPR compliant with enterprise security',
 							description:
@@ -55,9 +50,9 @@ const Understanding = () => {
 						return (
 							<div key={idx} className='group flex flex-col h-full'>
 								<div
-									className={`${feature.color} rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden`}
+									className={`transition-all duration-300 bg-card border border-transparent hover:border-accent rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden`}
 								>
-									<div className='w-20 h-20 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-125'>
+									<div className='w-20 h-20 rounded-2xl bg-accent/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-125'>
 										<Icon className='w-10 h-10 text-white' strokeWidth={1.5}/>
 									</div>
 								</div>
