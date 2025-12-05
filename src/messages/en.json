@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Make your <accent>business</accent> work for you",
-    "subtitle": "We automate the tasks that waste your time so you can sell more and grow faster.",
-    "ctaPrimary": "Request information",
+    "title": "Workflows that <primary>work</primary> while you <secondary>sleep</secondary>",
+    "subtitle": "We develop conversational AI that understands, automates, and scales every interaction in your business.",
+    "ctaPrimary": "Start now",
     "ctaSecondary": "Try free demo",
     "trialBadges": {
       "freeTrial": "Free trial",

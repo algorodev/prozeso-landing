@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "Haz que tu <accent>negocio</accent> trabaje por ti",
-    "subtitle": "Automatizamos las tareas que te hacen perder tiempo para que puedas vender más y crecer más rápido.",
-    "ctaPrimary": "Solicitar información",
+    "title": "Workflows que <primary>trabajan</primary> mientras tu <secondary>duermes</secondary>",
+    "subtitle": "Desarrollamos IA conversacional que entiende, automatiza, y escala cada interacción en tu negocio.",
+    "ctaPrimary": "Empezar ahora",
     "ctaSecondary": "Probar demo gratis",
     "trialBadges": {
       "freeTrial": "Prueba gratis",

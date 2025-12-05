@@ -6,27 +6,15 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-primary text-primary-foreground hover:bg-[color-mix(in_oklch,_var(--color-primary)_80%,_black)] button-primary-text",
+          "bg-accent text-accent-foreground hover:bg-[color-mix(in_oklch,_var(--color-accent)_92%,_white)] button-primary-text",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,_var(--color-secondary)_92%,_black)] button-secondary-text",
-        accent:
-          "bg-accent text-accent-foreground hover:bg-[color-mix(in_oklch,_var(--color-accent)_85%,_black)] button-primary-text",
-        subtle:
-          "bg-[color-mix(in_oklch,_var(--color-foreground)_6%,_transparent)] text-foreground hover:bg-[color-mix(in_oklch,_var(--color-foreground)_10%,_transparent)] button-secondary-text",
+          "bg-primary text-primary-foreground hover:bg-[color-mix(in_oklch,_var(--color-primary)_85%,_black)] button-primary-text",
+        destructive:
+          "bg-destructive text-[oklch(0.985_0.005_250)] hover:bg-[color-mix(in_oklch,_var(--color-destructive)_85%,_black)] button-primary-text",
         outline:
           "border border-border bg-transparent text-foreground hover:bg-[color-mix(in_oklch,_var(--color-foreground)_8%,_transparent)] button-secondary-text",
         ghost:
           "bg-transparent text-foreground hover:bg-[color-mix(in_oklch,_var(--color-foreground)_8%,_transparent)] button-secondary-text",
-        destructive:
-          "bg-destructive text-[oklch(0.985_0.005_250)] hover:bg-[color-mix(in_oklch,_var(--color-destructive)_85%,_black)] button-primary-text",
-        success:
-          "bg-[oklch(0.66_0.18_150)] text-[oklch(0.985_0.005_250)] hover:bg-[oklch(0.62_0.18_150)] button-primary-text",
-        warning:
-          "bg-[oklch(0.83_0.18_70)] text-[oklch(0.22_0.02_250)] hover:bg-[oklch(0.79_0.18_70)] button-primary-text",
-        info: "bg-[oklch(0.70_0.14_210)] text-[oklch(0.985_0.005_250)] hover:bg-[oklch(0.66_0.14_210)] button-primary-text",
-        link: "text-accent underline-offset-4 hover:underline bg-transparent button-secondary-text",
-        inverse:
-          "bg-white text-primary hover:bg-[color-mix(in_oklch,_white_90%,_black)] dark:bg-[oklch(0.97_0.01_250)] dark:text-primary button-primary-text",
       },
       size: {
         sm: "h-8 px-3",

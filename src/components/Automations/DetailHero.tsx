@@ -29,7 +29,7 @@ export default function DetailHero({
   const outcomes = toArrayOfStrings(tId.raw("outcomes"));
 
   return (
-    <section className="relative overflow-hidden gradient-cta text-white">
+    <section className="relative overflow-hidden text-white">
       <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-24 flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
         <div className="flex items-start gap-3">
           <div className="grid size-12 place-items-center rounded-2xl bg-white/20 text-white ring-1 ring-white/40 shrink-0">
@@ -68,7 +68,7 @@ export default function DetailHero({
         <div className="flex items-start gap-3 w-full md:w-auto md:mt-0 mt-4">
           <Button
             size="lg"
-            variant="accent"
+            variant="secondary"
             asChild
             className="w-full md:w-auto"
           >

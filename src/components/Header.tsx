@@ -8,12 +8,10 @@ import { useLocale, useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import logoBlanco from "@/assets/logo-blanco.svg";
-import logoColor from "@/assets/logo-color.svg";
 import logoNegro from "@/assets/logo-negro.svg";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { MobileNav } from "@/components/MobileNav";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/i18n/config";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
@@ -77,7 +75,6 @@ export const Header = () => {
         <div className="flex-1" />
         <div className="flex items-center gap-1">
           <LocaleSwitcher current={locale as Locale} />
-          <ThemeToggle />
           <div className="hidden sm:flex items-center gap-2">
             <Button variant="ghost">
               <Link href={clientUrl as Route} target="_blank">
