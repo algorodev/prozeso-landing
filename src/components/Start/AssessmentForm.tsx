@@ -1,7 +1,7 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
-import { CheckCircle2, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { useSearchParams } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
@@ -27,6 +27,7 @@ import {
 } from '@/components/ui/DropdownMenu'
 import { ChevronDown, Check } from 'lucide-react'
 import { AUTOMATIONS } from '@/app/[locale]/automations/data'
+import EmailSentDialog from '@/components/Start/EmailSentDialog'
 
 type VerticalKey = 'restaurants' | 'beauty' | 'clinics' | 'hotels' | 'realEstate';
 
@@ -97,8 +98,14 @@ export function AssessmentForm() {
 							? selected[0]
 							: (automation ?? undefined)
 					})(),
+					workflows: (form.getValues('automation') ?? []),
+					workflowTitles: (form.getValues('automation') ?? []).map((id) => tAutomations(`${id}.title`)),
 					locale,
 					vertical: form.getValues('vertical') && form.getValues('vertical') !== '' ? form.getValues('vertical') : undefined,
+					verticalTitle: (() => {
+						const v = form.getValues('vertical')
+						return v ? tSolutions(`verticals.${v}.title`) : undefined
+					})(),
 				}),
 			})
 
@@ -124,19 +131,8 @@ export function AssessmentForm() {
 				<p className='card-subtitle text-muted-foreground'>{t('cardSubtitle')}</p>
 			</CardHeader>
 			<CardContent className='pt-2'>
-				{success ? (
-					<div className='flex items-start gap-3 rounded-md border p-4'>
-						<CheckCircle2 className='mt-0.5 size-5 shrink-0'/>
-						<div>
-							<p className='body-strong-text'>{t('success.title')}</p>
-							<p className='body-text text-muted-foreground'>
-								{t('success.body')}
-							</p>
-						</div>
-					</div>
-				) : (
-					<Form {...form}>
-						<form onSubmit={form.handleSubmit(onSubmit)} className='grid gap-4'>
+				<Form {...form}>
+					<form onSubmit={form.handleSubmit(onSubmit)} className='grid gap-4'>
 							<div className='grid items-start gap-4 sm:grid-cols-2'>
 								<FormField
 									control={form.control}
@@ -295,38 +291,38 @@ export function AssessmentForm() {
 																		</DropdownMenuItem>
 																	)
 																})}
-															</DropdownMenuContent>
-														</DropdownMenu>
-													</div>
-												</FormControl>
-												<FormMessage/>
-											</FormItem>
-										)
-									}}
+														</DropdownMenuContent>
+													</DropdownMenu>
+												</div>
+											</FormControl>
+											<FormMessage/>
+										</FormItem>
+									)
+								}}
 								/>
 							</div>
 							<FormField
 								control={form.control}
 								name='goals'
-        render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>
-                                        {t('field.goals.label')}
-                                        <span aria-hidden className='text-destructive ml-1'>*</span>
-                                    </FormLabel>
-                                    <FormControl>
-                                        <Textarea
-                                            placeholder={t('field.goals.placeholder')}
-                                            rows={4}
-                                            required
-                                            aria-required='true'
-                                            {...field}
-                                        />
-                                    </FormControl>
-                                    <FormMessage/>
-                                </FormItem>
-                            )}
-                        />
+								render={({ field }) => (
+									<FormItem>
+										<FormLabel>
+											{t('field.goals.label')}
+											<span aria-hidden className='text-destructive ml-1'>*</span>
+										</FormLabel>
+										<FormControl>
+											<Textarea
+												placeholder={t('field.goals.placeholder')}
+												rows={4}
+												required
+												aria-required='true'
+												{...field}
+											/>
+										</FormControl>
+										<FormMessage/>
+									</FormItem>
+								)}
+							/>
 							{serverError && (
 								<div className='rounded-md border border-destructive/30 bg-destructive/5 p-3 body-text'>
 									{serverError}
@@ -350,8 +346,8 @@ export function AssessmentForm() {
 								</Button>
 							</div>
 						</form>
-					</Form>
-				)}
+				</Form>
+				<EmailSentDialog open={success} onOpenChange={setSuccess} />
 			</CardContent>
 		</Card>
 	)

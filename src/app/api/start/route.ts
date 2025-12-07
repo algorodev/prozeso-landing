@@ -6,7 +6,17 @@ import InternalLeadNotificationEmail from "@/emails/InternalLeadNotificationEmai
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const { name, email, message, workflow, locale, vertical } = await req.json();
+  const {
+    name,
+    email,
+    message,
+    workflow,
+    workflows,
+    workflowTitles,
+    locale,
+    vertical,
+    verticalTitle,
+  } = await req.json();
 
   await resend.emails.send({
     from: "Prozeso <admin@send.prozeso.com>",
@@ -17,7 +27,10 @@ export async function POST(req: Request) {
       email,
       message,
       workflow,
+      workflows,
+      workflowTitles,
       vertical,
+      verticalTitle,
     }),
   });
 
@@ -31,6 +44,9 @@ export async function POST(req: Request) {
     react: CustomerConfirmationEmail({
       name,
       workflow,
+      workflows,
+      workflowTitles,
+      verticalTitle,
       locale: (locale as "en" | "es") ?? "en",
       nextUrl: "https://prozeso.com",
     }),
