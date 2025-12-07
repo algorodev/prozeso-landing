@@ -38,7 +38,6 @@ export default function AutomationDetailPage() {
       <WorkflowNarrative automationId={automation.id} />
       <StatsMetric automationId={automation.id} />
       <FAQ automationId={automation.id} />
-      {/*<PricingSection automationId={automation.id} />*/}
     </main>
   );
 }
