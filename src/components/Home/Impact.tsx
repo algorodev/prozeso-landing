@@ -1,8 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const Impact = () => {
+	const t = useTranslations('home.impact')
+
 	return (
 		<section className='py-24 px-6'>
 			<div className='container mx-auto'>
@@ -13,9 +16,9 @@ const Impact = () => {
 					transition={{ duration: 0.6 }}
 					className='font-sora text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter mb-6 text-balance'
 				>
-					Conversations that
-					<br/>
-					generate <span className='text-accent'>real impact</span>
+					{t.rich('title', {
+						highlight: (chunks) => <span className='text-accent'>{chunks}</span>,
+					})}
 				</motion.h2>
 				<motion.p
 					initial={{ opacity: 0, y: 16 }}
@@ -24,7 +27,7 @@ const Impact = () => {
 					transition={{ delay: 0.05, duration: 0.6 }}
 					className='text-lg text-muted-foreground mb-16 max-w-xl font-normal'
 				>
-					We optimize every call and every interaction with natural voice AI.
+					{t('subtitle')}
 				</motion.p>
 				<motion.div
 					initial='hidden'
@@ -40,31 +43,19 @@ const Impact = () => {
 						{
 							number: '20',
 							suffix: '%',
-							title: 'Incremental billing',
-							description:
-								'Direct revenue recovery by answering calls and messages that used to go unanswered, without hiring more staff.',
-							quote:
-								'In a dealership network, the system recovers unattended customers generating additional billing increase.',
+							id: 'billing',
 							color: 'accent',
 						},
 						{
 							number: '10',
 							suffix: 'x',
-							title: 'Return on investment',
-							description:
-								'The project pays for itself in weeks thanks to operational savings, process automation, and recovered billing.',
-							quote:
-								'In a restaurant chain, the system cost is offset just with bookings managed outside business hours.',
+							id: 'roi',
 							color: 'secondary',
 						},
 						{
 							number: '72',
 							suffix: '%',
-							title: 'Resource savings',
-							description:
-								'Significant reduction in operational load thanks to complete automation of calls, messages, and bookings.',
-							quote:
-								'In a group of 15 salons, an AI agent handled over 5000 calls in a month, freeing up team time.',
+							id: 'resources',
 							color: 'primary',
 						},
 					].map((metric, idx) => (
@@ -84,17 +75,17 @@ const Impact = () => {
 						>
 							<div className='mb-auto'>
 								<div className='flex items-baseline'>
-                      <span
-	                      className={`text-8xl md:text-9xl font-extralight tracking-tighter ${
-		                      metric.color === 'primary'
-			                      ? 'text-primary/40'
-			                      : metric.color === 'secondary'
-				                      ? 'text-secondary/40'
-				                      : 'text-accent/40'
-	                      }`}
-                      >
-                        {metric.number}
-                      </span>
+									<span
+										className={`text-8xl md:text-9xl font-extralight tracking-tighter ${
+											metric.color === 'primary'
+												? 'text-primary/40'
+												: metric.color === 'secondary'
+													? 'text-secondary/40'
+													: 'text-accent/40'
+										}`}
+									>
+										{metric.number}
+									</span>
 									<span
 										className={`text-4xl md:text-5xl font-extralight ml-1 ${
 											metric.color === 'primary'
@@ -104,14 +95,15 @@ const Impact = () => {
 													: 'text-accent/40'
 										}`}
 									>
-                        {metric.suffix}
-                      </span>
+										{metric.suffix}
+									</span>
 								</div>
 							</div>
 
 							<div className='space-y-4'>
-								<h3 className='font-sora font-semibold text-xl'>{metric.title}</h3>
-								<p className='text-sm text-muted-foreground leading-relaxed font-normal'>{metric.description}</p>
+								<h3 className='font-sora font-semibold text-xl'>{t(`items.${metric.id}.title`)}</h3>
+								<p
+									className='text-sm text-muted-foreground leading-relaxed font-normal'>{t(`items.${metric.id}.desc`)}</p>
 
 								<div
 									className={`border-l-2 pl-4 mt-6 ${
@@ -122,7 +114,8 @@ const Impact = () => {
 												: 'border-accent/40'
 									}`}
 								>
-									<p className='text-xs text-muted-foreground italic leading-relaxed font-normal'>{metric.quote}</p>
+									<p
+										className='text-xs text-muted-foreground italic leading-relaxed font-normal'>{t(`items.${metric.id}.quote`)}</p>
 								</div>
 							</div>
 						</motion.div>

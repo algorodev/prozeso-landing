@@ -11,128 +11,6 @@
     },
     "imageAlt": "Automation dashboard preview"
   },
-  "storyDeck": {
-    "title": "How Prozeso transforms the way your business works",
-    "subtitle": "From repetitive tasks to smart automations that save time, reduce costs, and help your company grow faster.",
-    "tabs": {
-      "problemTitle": "The Problem",
-      "solutionTitle": "The Solution",
-      "impactTitle": "The Impact"
-    },
-    "content": {
-      "problem": {
-        "lead": "Every minute you spend doing repetitive tasks is a minute you’re not spending growing your company",
-        "paragraphs": [
-          "Answering calls. Organizing appointments. Sending emails. Updating spreadsheets.",
-          "All those small tasks that keep you busy… are also the ones that keep you from moving forward.",
-          "Your time is worth more. And so is your business."
-        ]
-      },
-      "solution": {
-        "lead": "Turn manual processes into automated systems that run 24/7",
-        "intro": "Imagine this:",
-        "bullets": [
-          "Your customers get an immediate response without you picking up the phone.",
-          "Appointments schedule themselves while you sleep.",
-          "Leads are captured and qualified automatically without anyone touching a CRM.",
-          "Your reports update effortlessly."
-        ],
-        "outro": "We analyze how you work, automate what holds you back, and let Prozeso do the heavy lifting for you."
-      },
-      "impact": {
-        "lead": "The outcome isn’t just efficiency",
-        "paragraphs": [
-          "It’s getting back productive working hours, reducing operating costs and freeing the team to focus on what truly matters: serving better, selling more and growing without limits."
-        ],
-        "items": {
-          "reservations": {
-            "title": "More confirmed bookings",
-            "body": "Up to 40% more confirmed bookings thanks to instant responses."
-          },
-          "hours": {
-            "title": "Hours recovered",
-            "body": "More than 10 hours per employee recovered each week."
-          },
-          "support": {
-            "title": "24/7 service",
-            "body": "Round‑the‑clock service without hiring more staff."
-          },
-          "costs": {
-            "title": "Lower operating costs",
-            "body": "Operational costs reduced by up to 30%."
-          }
-        }
-      }
-    }
-  },
-  "benefits": {
-    "title": "Let automations do the repetitive work",
-    "subtitle": "We automate daily tasks so you can save time, focus and results without hassle.",
-    "items": {
-      "saveTime": {
-        "title": "Save time",
-        "body": "Free yourself from repetitive tasks and focus on what truly moves your business."
-      },
-      "fewerErrors": {
-        "title": "Scale without hiring",
-        "body": "Automate processes without increasing your team."
-      },
-      "visibility": {
-        "title": "Serve 24/7",
-        "body": "Never lose a customer for replying late."
-      },
-      "connectStack": {
-        "title": "Reduce errors",
-        "body": "Faster, more accurate processes without human dependencies."
-      },
-      "security": {
-        "title": "Focus on growth",
-        "body": "Spend your hours on strategy, sales and important decisions."
-      }
-    }
-  },
-  "howItWorks": {
-    "title": "How it works",
-    "subtitle": "From discovery to dashboard, we collaborate with your team to deliver reliable automations and visible impact.",
-    "steps": {
-      "discovery": {
-        "title": "1 · Diagnosis",
-        "body": "We detect the tasks that take the most time from you."
-      },
-      "design": {
-        "title": "2 · Design",
-        "body": "We create automated flows tailored to your business."
-      },
-      "build": {
-        "title": "3 · Integration",
-        "body": "We connect your tools so everything works without friction."
-      },
-      "monitor": {
-        "title": "4 · Automation",
-        "body": "Prozeso starts working for you, day and night."
-      },
-      "iterate": {
-        "title": "5 · Optimization",
-        "body": "We keep working so each day you worry less and earn more."
-      },
-      "scale": {
-        "title": "6. Ongoing support",
-        "body": "We don’t leave you alone. We monitor your automations, spot improvements and keep them up to date."
-      }
-    },
-    "ctaPrompt": "Ready to identify your highest-ROI automations?",
-    "ctaPrimary": "Start free assessment",
-    "ctaSecondary": "See live demo"
-  },
-  "finalCta": {
-    "title": "Let Prozeso work for you",
-    "subtitle": "Start automating your business today and get back the time you need to grow.",
-    "ctaPrimary": "Try free demo",
-    "ctaSecondary": "Talk to an expert",
-    "bullets": {
-      "gdprEncrypted": "GDPR-ready, encrypted secrets"
-    }
-  },
   "header": {
     "nav": {
       "solutions": "Solutions",
@@ -142,6 +20,24 @@
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
     "signIn": "Sign in"
+  },
+  "footer": {
+    "tagline": "AI that listens, understands, and acts for your business.",
+    "sections": {
+      "product": "Product",
+      "company": "Company"
+    },
+    "links": {
+      "automations": "Automations",
+      "assessment": "Assessment",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy policy"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "rights": "© {year} Prozeso. All rights reserved."
   },
   "solutions": {
     "hero": {
@@ -481,8 +377,82 @@
       "serverErrorDefault": "Something went wrong. Please try again."
     }
   },
-  "elevenlabs": {
-    "start": "Start conversation",
-    "end": "End conversation"
+  "home": {
+    "industryDirectAccess": {
+      "title": "Built for your <highlight>industry</highlight>",
+      "subtitle": "Tailored solutions for service businesses."
+    },
+    "impact": {
+      "title": "Conversations that generate <highlight>real impact</highlight>",
+      "subtitle": "We optimize every call and every interaction with natural voice AI.",
+      "items": {
+        "billing": {
+          "title": "Incremental billing",
+          "desc": "Direct revenue recovery by answering calls and messages that used to go unanswered, without hiring more staff.",
+          "quote": "In a dealership network, the system recovers unattended customers generating additional billing increase."
+        },
+        "roi": {
+          "title": "Return on investment",
+          "desc": "The project pays for itself in weeks thanks to operational savings, process automation, and recovered billing.",
+          "quote": "In a restaurant chain, the system cost is offset just with bookings managed outside business hours."
+        },
+        "resources": {
+          "title": "Resource savings",
+          "desc": "Significant reduction in operational load thanks to complete automation of calls, messages, and bookings.",
+          "quote": "In a group of 15 salons, an AI agent handled over 5000 calls in a month, freeing up team time."
+        }
+      }
+    },
+    "coreAutomations": {
+      "title": "Core <highlight>automations</highlight>",
+      "subtitle": "AI-powered workflows that work while you sleep.",
+      "items": {
+        "receptionist": {
+          "title": "AI Receptionist",
+          "desc": "Answers calls 24/7, books appointments, handles FAQs in any language."
+        },
+        "reminders": {
+          "title": "Smart Reminders",
+          "desc": "SMS/WhatsApp reminders that auto-reschedule when customers need flexibility."
+        },
+        "callback": {
+          "title": "Missed Call Auto Callback",
+          "desc": "Never lose a call again. AI calls back automatically to book the appointment."
+        }
+      },
+      "learnMore": "Learn more",
+      "viewAll": "View all automations"
+    },
+    "finalCta": {
+      "title": "Ready to <highlight>automate</highlight>?",
+      "subtitle": "Start your free assessment today. See exactly which automations will transform your business.",
+      "cta": "Start now"
+    },
+    "understanding": {
+      "title": "From understanding to <highlight>intelligent automation</highlight>",
+      "subtitle": "How we transform data into real impact.",
+      "items": {
+        "conversations": {
+          "title": "Turn conversations into real knowledge",
+          "desc": "Analyze calls and messages to detect patterns. Understand what happens and where value is lost.",
+          "tag": "Analysis"
+        },
+        "decisions": {
+          "title": "Transform data into actionable decisions",
+          "desc": "Visualize key metrics and detect time, quality, and money leaks. Drive efficiency and profitability.",
+          "tag": "Reporting"
+        },
+        "automation": {
+          "title": "Scale efficiency with conversational AI",
+          "desc": "Automate calls, information, and bookings to free up time and increase sales 24/7.",
+          "tag": "Automation"
+        },
+        "security": {
+          "title": "GDPR compliant with enterprise security",
+          "desc": "End-to-end encrypted infrastructure to keep your business and your customers' data private.",
+          "tag": "Security"
+        }
+      }
+    }
   }
 }

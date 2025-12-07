@@ -2,7 +2,7 @@
 
 import HeroBackground from '@/components/Home/HeroBackground'
 import { motion } from 'framer-motion'
-import { ArrowRight, Phone } from 'lucide-react'
+import { Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/Button'
 import { LocalizedLink } from '@/i18n/LocalizedLink'

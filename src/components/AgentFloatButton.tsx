@@ -2,7 +2,7 @@
 
 import { useConversation } from '@elevenlabs/react'
 import { PhoneCall } from 'lucide-react'
-import { useLocale, useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { Button } from '@/components/ui/Button'
@@ -17,7 +17,6 @@ const NAV_MAP: Record<string, string> = {
 }
 
 export const AgentFloatButton = () => {
-	const t = useTranslations('elevenlabs')
 	const conversation = useConversation()
 	const locale = useLocale()
 	const router = useRouter()

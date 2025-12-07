@@ -3,8 +3,12 @@
 import { Button } from '@/components/ui/Button'
 import { LocalizedLink } from '@/i18n/LocalizedLink'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const IndustryDirectAccess = () => {
+	const t = useTranslations('home.industryDirectAccess')
+	const v = useTranslations('solutions.verticals')
+
 	return (
 		<section className='py-24 px-6 border-t border-border'>
 			<div className='container mx-auto'>
@@ -15,7 +19,9 @@ const IndustryDirectAccess = () => {
 					transition={{ duration: 0.6 }}
 					className='font-sora text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter mb-6 text-balance'
 				>
-					Built for your <span className='text-secondary'>industry</span>
+					{t.rich('title', {
+						highlight: (chunks) => <span className='text-secondary'>{chunks}</span>,
+					})}
 				</motion.h2>
 				<motion.p
 					initial={{ opacity: 0, y: 16 }}
@@ -24,9 +30,8 @@ const IndustryDirectAccess = () => {
 					transition={{ delay: 0.05, duration: 0.6 }}
 					className='text-lg text-muted-foreground mb-12 max-w-xl font-normal'
 				>
-					Tailored solutions for service businesses.
+					{t('subtitle')}
 				</motion.p>
-
 				<motion.div
 					initial='hidden'
 					whileInView='show'
@@ -35,11 +40,11 @@ const IndustryDirectAccess = () => {
 					className='flex flex-wrap gap-3'
 				>
 					{[
-						{ name: 'Hair & Beauty', href: '/verticals/hair-and-beauty' },
-						{ name: 'Restaurants', href: '/verticals/restaurants' },
-						{ name: 'Clinics & Health', href: '/verticals/clinics-and-health' },
-						{ name: 'Hotels', href: '/verticals/hotels' },
-						{ name: 'Real Estate', href: '/verticals/real-estate' },
+						{ id: 'beauty', href: '/verticals/hair-and-beauty' },
+						{ id: 'restaurants', href: '/verticals/restaurants' },
+						{ id: 'clinics', href: '/verticals/clinics-and-health' },
+						{ id: 'hotels', href: '/verticals/hotels' },
+						{ id: 'realEstate', href: '/verticals/real-estate' },
 					].map((vertical) => (
 						<motion.div
 							key={vertical.href}
@@ -47,7 +52,7 @@ const IndustryDirectAccess = () => {
 						>
 							<Button asChild variant='outline'>
 								<LocalizedLink href={vertical.href}>
-									{vertical.name}
+									{v(`${vertical.id}.title`)}
 								</LocalizedLink>
 							</Button>
 						</motion.div>

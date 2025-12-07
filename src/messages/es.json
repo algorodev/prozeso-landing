@@ -11,128 +11,6 @@
     },
     "imageAlt": "Vista previa del panel de automatización"
   },
-  "storyDeck": {
-    "title": "Cómo Prozeso transforma la forma en que trabaja tu negocio",
-    "subtitle": "De tareas repetitivas a automatizaciones inteligentes que ahorran tiempo, reducen costes y hacen crecer tu empresa más rápido.",
-    "tabs": {
-      "problemTitle": "El Problema",
-      "solutionTitle": "La Solución",
-      "impactTitle": "El Impacto"
-    },
-    "content": {
-      "problem": {
-        "lead": "Cada minuto que pasas haciendo tareas repetitivas es un minuto que no dedicas a hacer crecer tu empresa",
-        "paragraphs": [
-          "Responder llamadas. Organizar citas. Mandar emails. Actualizar hojas de cálculo.",
-          "Todas esas pequeñas tareas que te mantienen ocupado… también son las que te impiden avanzar.",
-          "Tu tiempo vale más. Y tu negocio también."
-        ]
-      },
-      "solution": {
-        "lead": "Convierte procesos manuales en sistemas automáticos que funcionan 24/7",
-        "intro": "Imagina esto:",
-        "bullets": [
-          "Tus clientes reciben respuesta inmediata sin que tú levantes el teléfono.",
-          "Las citas se agendan solas mientras duermes.",
-          "Los clientes potenciales se guardan y califican automáticamente sin que nadie toque un CRM.",
-          "Tus reportes se actualizan sin esfuerzo."
-        ],
-        "outro": "Nosotros analizamos cómo trabajas, automatizamos lo que te frena y deja que Prozeso haga el trabajo pesado por ti."
-      },
-      "impact": {
-        "lead": "El resultado no es solo eficiencia",
-        "paragraphs": [
-          "Es recuperar horas de trabajo productivo, reducir costes operativos y liberar al equipo para centrarse en lo que realmente importa: atender mejor, vender más y crecer sin límites."
-        ],
-        "items": {
-          "reservations": {
-            "title": "Más reservas confirmadas",
-            "body": "Hasta un 40% más de reservas confirmadas gracias a respuestas instantáneas."
-          },
-          "hours": {
-            "title": "Horas recuperadas",
-            "body": "Más de 10 horas semanales recuperadas por empleado."
-          },
-          "support": {
-            "title": "Atención 24/7",
-            "body": "Una atención 24/7 sin contratar más personal."
-          },
-          "costs": {
-            "title": "Costes operativos más bajos",
-            "body": "Reducción de costes operativos de hasta 30%."
-          }
-        }
-      }
-    }
-  },
-  "benefits": {
-    "title": "Deja que las automatizaciones hagan el trabajo repetitivo",
-    "subtitle": "Automatizamos las tareas diarias para que ganes tiempo, foco y resultados sin complicarte.",
-    "items": {
-      "saveTime": {
-        "title": "Gana tiempo",
-        "body": "Libérate de tareas repetitivas y enfócate en lo que realmente mueve tu negocio."
-      },
-      "fewerErrors": {
-        "title": "Escala sin contratar",
-        "body": "Automatiza procesos sin aumentar tu equipo."
-      },
-      "visibility": {
-        "title": "Atiende 24/7",
-        "body": "Nunca pierdas un cliente por no responder a tiempo."
-      },
-      "connectStack": {
-        "title": "Reduce errores",
-        "body": "Procesos más rápidos, precisos y sin dependencias humanas."
-      },
-      "security": {
-        "title": "Céntrate en crecer",
-        "body": "Dedica tus horas a estrategia, ventas y decisiones importantes."
-      }
-    }
-  },
-  "howItWorks": {
-    "title": "Cómo funciona",
-    "subtitle": "De descubrimiento a panel, colaboramos con tu equipo para entregar automatizaciones confiables e impacto visible.",
-    "steps": {
-      "discovery": {
-        "title": "1 · Diagnóstico",
-        "body": "Detectamos las tareas que más tiempo te quitan."
-      },
-      "design": {
-        "title": "2 · Diseño",
-        "body": "Creamos flujos automáticos adaptados a tu negocio."
-      },
-      "build": {
-        "title": "3 · Integración",
-        "body": "Conectamos tus herramientas para que todo funcione sin fricciones."
-      },
-      "monitor": {
-        "title": "4 · Automatización",
-        "body": "Prozeso empieza a trabajar por ti, día y noche."
-      },
-      "iterate": {
-        "title": "5 · Optimización",
-        "body": "Seguimos trabajando para que cada día te preocupes menos y ganes más."
-      },
-      "scale": {
-        "title": "6. Acompañamiento",
-        "body": "No te dejamos solo. Monitorizamos tus automatizaciones, detectamos mejoras y las mantenemos siempre al día."
-      }
-    },
-    "ctaPrompt": "¿Listo para detectar tus automatizaciones de mayor ROI?",
-    "ctaPrimary": "Comenzar evaluación gratis",
-    "ctaSecondary": "Ver demo en vivo"
-  },
-  "finalCta": {
-    "title": "Deja que Prozeso trabaje por ti",
-    "subtitle": "Empieza a automatizar tu negocio hoy y recupera el tiempo que necesitas para hacerlo crecer.",
-    "ctaPrimary": "Probar demo gratuita",
-    "ctaSecondary": "Hablar con un experto",
-    "bullets": {
-      "gdprEncrypted": "Listo para GDPR, secretos cifrados"
-    }
-  },
   "header": {
     "nav": {
       "solutions": "Soluciones",
@@ -142,6 +20,24 @@
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
     "signIn": "Entrar"
+  },
+  "footer": {
+    "tagline": "IA que escucha, entiende y actúa por tu negocio.",
+    "sections": {
+      "product": "Producto",
+      "company": "Empresa"
+    },
+    "links": {
+      "automations": "Automatizaciones",
+      "assessment": "Evaluación",
+      "terms": "Términos y Condiciones",
+      "privacy": "Política de privacidad"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "rights": "© {year} Prozeso. Todos los derechos reservados."
   },
   "solutions": {
     "hero": {
@@ -481,8 +377,82 @@
       "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
     }
   },
-  "elevenlabs": {
-    "start": "Empezar conversación",
-    "end": "Terminar conversación"
+  "home": {
+    "industryDirectAccess": {
+      "title": "Hecho para tu <highlight>sector</highlight>",
+      "subtitle": "Soluciones a medida para negocios de servicios."
+    },
+    "impact": {
+      "title": "Conversaciones que generan <highlight>impacto real</highlight>",
+      "subtitle": "Optimizamos cada llamada y cada interacción con IA de voz natural.",
+      "items": {
+        "billing": {
+          "title": "Facturación incremental",
+          "desc": "Recuperación directa de ingresos al atender llamadas y mensajes que antes quedaban sin respuesta, sin contratar más personal.",
+          "quote": "En una red de concesionarios, el sistema recupera clientes desatendidos generando un aumento adicional de facturación."
+        },
+        "roi": {
+          "title": "Retorno de la inversión",
+          "desc": "El proyecto se paga solo en semanas gracias a ahorros operativos, automatización de procesos y facturación recuperada.",
+          "quote": "En una cadena de restaurantes, el coste del sistema se compensa solo con las reservas gestionadas fuera del horario comercial."
+        },
+        "resources": {
+          "title": "Ahorro de recursos",
+          "desc": "Reducción significativa de la carga operativa gracias a la automatización completa de llamadas, mensajes y reservas.",
+          "quote": "En un grupo de 15 salones, un agente de IA atendió más de 5000 llamadas en un mes, liberando tiempo del equipo."
+        }
+      }
+    },
+    "coreAutomations": {
+      "title": "Automatizaciones <highlight>clave</highlight>",
+      "subtitle": "Flujos impulsados por IA que trabajan mientras duermes.",
+      "items": {
+        "receptionist": {
+          "title": "Recepcionista con IA",
+          "desc": "Responde llamadas 24/7, agenda citas y atiende preguntas frecuentes en cualquier idioma."
+        },
+        "reminders": {
+          "title": "Recordatorios inteligentes",
+          "desc": "Recordatorios por SMS/WhatsApp que reprograman automáticamente cuando el cliente necesita flexibilidad."
+        },
+        "callback": {
+          "title": "Devolución de llamada por llamadas perdidas",
+          "desc": "No pierdas otra llamada. La IA devuelve la llamada automáticamente para agendar la cita."
+        }
+      },
+      "learnMore": "Más información",
+      "viewAll": "Ver todas las automatizaciones"
+    },
+    "finalCta": {
+      "title": "¿Listo para <highlight>automatizar</highlight>?",
+      "subtitle": "Empieza tu evaluación gratuita hoy. Descubre exactamente qué automatizaciones transformarán tu negocio.",
+      "cta": "Empezar ahora"
+    },
+    "understanding": {
+      "title": "De entender a <highlight>automatización inteligente</highlight>",
+      "subtitle": "Cómo convertimos datos en impacto real.",
+      "items": {
+        "conversations": {
+          "title": "Convierte conversaciones en conocimiento real",
+          "desc": "Analiza llamadas y mensajes para detectar patrones. Entiende qué ocurre y dónde se pierde valor.",
+          "tag": "Análisis"
+        },
+        "decisions": {
+          "title": "Transforma datos en decisiones accionables",
+          "desc": "Visualiza métricas clave y detecta fugas de tiempo, calidad y dinero. Impulsa eficiencia y rentabilidad.",
+          "tag": "Reportes"
+        },
+        "automation": {
+          "title": "Escala la eficiencia con IA conversacional",
+          "desc": "Automatiza llamadas, información y reservas para liberar tiempo y aumentar ventas 24/7.",
+          "tag": "Automatización"
+        },
+        "security": {
+          "title": "Cumplimiento RGPD con seguridad empresarial",
+          "desc": "Infraestructura cifrada de extremo a extremo para mantener privada la información de tu negocio y de tus clientes.",
+          "tag": "Seguridad"
+        }
+      }
+    }
   }
 }
