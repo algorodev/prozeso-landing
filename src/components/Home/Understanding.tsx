@@ -1,18 +1,44 @@
+'use client'
+
 import { Calendar, MessageSquare, Shield, TrendingUp } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const Understanding = () => {
 	return (
 		<section className='py-24 px-6'>
 			<div className='container mx-auto'>
-				<h2 className='font-sora text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter mb-6 text-balance'>
+				<motion.h2
+					initial={{ opacity: 0, y: 24 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ amount: 0.2 }}
+					transition={{ duration: 0.6 }}
+					className='font-sora text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter mb-6 text-balance'
+				>
 					From understanding to
 					<br/>
 					<span className='text-primary'>intelligent automation</span>
-				</h2>
-				<p className='text-lg text-muted-foreground mb-16 max-w-xl font-normal'>
+				</motion.h2>
+				<motion.p
+					initial={{ opacity: 0, y: 16 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ amount: 0.2 }}
+					transition={{ delay: 0.05, duration: 0.6 }}
+					className='text-lg text-muted-foreground mb-16 max-w-xl font-normal'
+				>
 					How we transform data into real impact.
-				</p>
-				<div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+				</motion.p>
+				<motion.div
+					initial='hidden'
+					whileInView='show'
+					viewport={{ amount: 0.2 }}
+					variants={{
+						hidden: { opacity: 1 },
+						show: {
+							transition: { staggerChildren: 0.08 },
+						},
+					}}
+					className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'
+				>
 					{[
 						{
 							icon: MessageSquare,
@@ -48,27 +74,35 @@ const Understanding = () => {
 					].map((feature, idx) => {
 						const Icon = feature.icon
 						return (
-							<div key={idx} className='group flex flex-col h-full'>
+							<motion.div
+								key={idx}
+								variants={{
+									hidden: { opacity: 0, y: 20 },
+									show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+								}}
+								className='group flex flex-col h-full'
+							>
 								<div
 									className={`transition-all duration-300 bg-card border border-transparent hover:border-accent rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden`}
 								>
-									<div className='w-20 h-20 rounded-2xl bg-accent/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-125'>
+									<div
+										className='w-20 h-20 rounded-2xl bg-accent/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-125'>
 										<Icon className='w-10 h-10 text-white' strokeWidth={1.5}/>
 									</div>
 								</div>
- 							<h3 className='font-sora font-semibold text-lg mb-2 leading-snug'>{feature.title}</h3>
+								<h3 className='font-sora font-semibold text-lg mb-2 leading-snug'>{feature.title}</h3>
 								<p className='text-sm text-muted-foreground mb-4 leading-relaxed font-normal'>
 									{feature.description}
 								</p>
 								<span
 									className='inline-block w-fit mt-auto px-3 py-1 rounded-full text-xs font-medium border bg-accent/10 text-accent border-accent/20'
 								>
-									{feature.tag}
-								</span>
-							</div>
+                  {feature.tag}
+                </span>
+							</motion.div>
 						)
 					})}
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	)
