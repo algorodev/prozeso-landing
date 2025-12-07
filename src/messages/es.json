@@ -32,10 +32,6 @@
       "terms": "Términos y Condiciones",
       "privacy": "Política de privacidad"
     },
-    "social": {
-      "instagram": "Instagram",
-      "linkedin": "LinkedIn"
-    },
     "rights": "© {year} Prozeso. Todos los derechos reservados."
   },
   "solutions": {
@@ -86,7 +82,7 @@
         ]
       },
       "realEstate": {
-        "title": "Real Estate",
+        "title": "Inmobiliarias",
         "desc": "Garantiza que cada comprador e inquilino sea contactado, cualificado y agendado — incluso cuando tus agentes estén en visitas.",
         "highlights": [
           "No más leads prometedores perdidos por llamadas no atendidas",

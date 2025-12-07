@@ -5,7 +5,6 @@ import { useMemo } from "react";
 import { AUTOMATIONS } from "@/app/[locale]/automations/data";
 import DetailHero from "@/components/Automations/DetailHero";
 import FAQ from "@/components/Automations/FAQ";
-import PricingSection from "@/components/Automations/PricingSection";
 import StatsMetric from "@/components/Automations/StatsMetric";
 import WorkflowNarrative from "@/components/Automations/WorkflowNarrative";
 import { LocalizedLink } from "@/i18n/LocalizedLink";

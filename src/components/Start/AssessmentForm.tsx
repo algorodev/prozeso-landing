@@ -26,7 +26,7 @@ import {
 	DropdownMenuTrigger,
 } from '@/components/ui/DropdownMenu'
 import { ChevronDown, Check } from 'lucide-react'
-import { AUTOMATIONS } from '@/app/[locale]/automations/data'
+import { AUTOMATIONS } from '@/data/automations'
 import EmailSentDialog from '@/components/Start/EmailSentDialog'
 
 type VerticalKey = 'restaurants' | 'beauty' | 'clinics' | 'hotels' | 'realEstate';

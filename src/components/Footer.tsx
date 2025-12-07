@@ -2,6 +2,7 @@
 
 import logoBlanco from '@/assets/logo-blanco.svg'
 import { LocalizedLink } from '@/i18n/LocalizedLink'
+import { Instagram, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -71,10 +72,10 @@ const Footer = () => {
 					<div className='flex gap-6'>
 						<a href='https://instagram.com/prozeso.ai' className='hover:text-foreground transition-colors'
 						   target='_blank'>
-							{t('social.instagram')}
+							<Instagram className='w-5 h-5'/>
 						</a>
 						<a href='https://linkedin.com/prozeso' className='hover:text-foreground transition-colors' target='_blank'>
-							{t('social.linkedin')}
+							<Linkedin className='w-5 h-5'/>
 						</a>
 					</div>
 				</div>
