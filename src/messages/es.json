@@ -13,9 +13,8 @@
   },
   "header": {
     "nav": {
-      "solutions": "Soluciones",
-      "automations": "Automatizaciones",
-      "demo": "Demo"
+      "solutions": "Industrias",
+      "automations": "Automatizaciones"
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",

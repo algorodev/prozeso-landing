@@ -6,9 +6,9 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 const Footer = () => {
-	const year = new Date().getFullYear()
 	const t = useTranslations('footer')
 	const h = useTranslations('header')
+	const year = new Date().getFullYear()
 
 	return (
 		<footer className='py-16 px-6 border-t border-border'>
@@ -69,10 +69,11 @@ const Footer = () => {
 					className='mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground'>
 					<p>{t('rights', { year })}</p>
 					<div className='flex gap-6'>
-						<a href='https://instagram.com/prozeso.ai' className='hover:text-foreground transition-colors'>
+						<a href='https://instagram.com/prozeso.ai' className='hover:text-foreground transition-colors'
+						   target='_blank'>
 							{t('social.instagram')}
 						</a>
-						<a href='https://linkedin.com/prozeso' className='hover:text-foreground transition-colors'>
+						<a href='https://linkedin.com/prozeso' className='hover:text-foreground transition-colors' target='_blank'>
 							{t('social.linkedin')}
 						</a>
 					</div>

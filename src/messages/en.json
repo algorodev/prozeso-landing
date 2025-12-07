@@ -13,9 +13,8 @@
   },
   "header": {
     "nav": {
-      "solutions": "Solutions",
-      "automations": "Automations",
-      "demo": "Demo"
+      "solutions": "Industries",
+      "automations": "Automations"
     },
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
