@@ -322,7 +322,7 @@
   },
   "start": {
     "hero": {
-      "title": "Da el primer paso hacia un negocio que no se detiene",
+      "title": "Da el primer paso hacia un <primary>negocio</primary> que <secondary>no se detiene</secondary>",
       "subtitle": "Te escuchamos, entendemos tu día a día y creamos un sistema que trabaja por ti, incluso cuando tú no puedes hacerlo."
     },
     "steps": {
@@ -346,8 +346,12 @@
       "cardSubtitle": "Sin compromiso. Solo una conversación para descubrir cómo tu negocio puede ganar tiempo, orden y tranquilidad.",
       "field": {
         "vertical": {
-          "label": "Sector del negocio",
+          "label": "Industria del negocio",
           "placeholder": "Selecciona tu sector (opcional)"
+        },
+        "automation": {
+          "label": "Automatizaciones",
+          "placeholder": "Selecciona automatizaciones (múltiples, opcional)"
         },
         "name": {
           "label": "Tu nombre",
@@ -361,7 +365,8 @@
         },
         "goals": {
           "label": "¿Qué estás buscando?",
-          "placeholder": "Cuéntanos brevemente qué te gustaría conseguir..."
+          "placeholder": "Cuéntanos brevemente qué te gustaría conseguir...",
+          "error": "Por favor, cuéntanos tus objetivos"
         }
       },
       "submit": {

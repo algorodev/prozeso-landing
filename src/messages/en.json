@@ -299,30 +299,9 @@
       ]
     }
   },
-  "demo": {
-    "hero": {
-      "title": "Let’s see together how your business could keep running while you keep serving customers",
-      "subtitle": "Try a live demo to discover how Prozeso will help you day to day.",
-      "cta": "Start your free assessment"
-    },
-    "highlights": {
-      "tailoredFlow": {
-        "title": "Tailored flow",
-        "desc": "We’ll show you in minutes how to automate the tasks that currently steal your time."
-      },
-      "builtInComms": {
-        "title": "Built-in communications",
-        "desc": "You’ll see how your business can attend, schedule and respond without depending on anyone."
-      },
-      "paymentsTrust": {
-        "title": "Payments and trust",
-        "desc": "You’ll leave with a clear view of how to gain time, professionalism and peace of mind from day one."
-      }
-    }
-  },
   "start": {
     "hero": {
-      "title": "Take the first step toward a business that never stops",
+      "title": "Take the first step toward a <primary>business</primary> that <secondary>never stops</secondary>",
       "subtitle": "We listen, understand your day to day and create a system that works for you, even when you can’t."
     },
     "steps": {
@@ -346,8 +325,12 @@
       "cardSubtitle": "No commitment. Just a conversation to discover how your business can gain time, order and peace of mind.",
       "field": {
         "vertical": {
-          "label": "Business vertical",
+          "label": "Business industry",
           "placeholder": "Select your industry (optional)"
+        },
+        "automation": {
+          "label": "Automations",
+          "placeholder": "Select automations (multiple, optional)"
         },
         "name": {
           "label": "Your name",
@@ -361,7 +344,8 @@
         },
         "goals": {
           "label": "What are you looking for?",
-          "placeholder": "Briefly tell us what you’d like to achieve..."
+          "placeholder": "Briefly tell us what you’d like to achieve...",
+          "error": "Please tell us your goals"
         }
       },
       "submit": {

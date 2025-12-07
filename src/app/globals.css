@@ -111,7 +111,11 @@
 	}
 
 	.card-title {
-		@apply font-inter text-xl font-semibold;
+		@apply font-sora text-xl font-semibold;
+	}
+
+	.card-subtitle {
+		@apply font-inter text-base font-medium;
 	}
 
 	.body-text {

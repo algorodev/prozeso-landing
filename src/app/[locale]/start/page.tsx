@@ -63,7 +63,7 @@ export default function StartPage() {
       <Hero />
       <Steps />
       <section id="assessment" className="py-10">
-        <div className="container mx-auto px-4 max-w-3xl">
+        <div className="container mx-auto px-4 max-w-5xl">
           <AssessmentForm />
         </div>
       </section>
