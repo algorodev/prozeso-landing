@@ -7,24 +7,62 @@ import VerticalJourney from '@/components/Verticals/VerticalJourney'
 import VerticalFaqs from '@/components/Verticals/VerticalFaqs'
 import VerticalCTA from '@/components/Verticals/VerticalCTA'
 import { getTranslations } from 'next-intl/server'
+import type { Metadata } from 'next'
+import { VERTICALS } from '@/data/verticals'
 
 type Props = {
-	params: Promise<{id: string}>
+    params: Promise<{ id: string; locale?: string }>
+}
+
+const ALLOWED_VERTICAL_IDS = [
+    'clinics-and-health',
+    'hair-and-beauty',
+    'hotels',
+    'restaurants',
+    'real-estate',
+] as const
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { id, locale } = await params
+
+    const isAllowed = !!id && (ALLOWED_VERTICAL_IDS as readonly string[]).includes(id)
+    const vertical = isAllowed ? (VERTICALS as Record<string, any>)[id] : undefined
+
+    const baseTitle = vertical?.headline || vertical?.name || 'Verticals'
+    const title = `${baseTitle} | Prospector`
+    const description =
+        vertical?.description ||
+        vertical?.subheading ||
+        'Explore AI automations tailored for your industry.'
+
+    const path = `/verticals/${id ?? ''}`
+    const localizedPath = locale ? `/${locale}${path}` : path
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: localizedPath,
+        },
+        openGraph: {
+            title,
+            description,
+            url: localizedPath,
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+        },
+    }
 }
 
 export default async function VerticalPage({ params }: Props) {
     const { id } = await params
     const t = await getTranslations('verticals.page')
 
-	const ALLOWED_VERTICAL_IDS = [
-		'clinics-and-health',
-		'hair-and-beauty',
-		'hotels',
-		'restaurants',
-		'real-estate',
-	] as const
-
- if (!id || !ALLOWED_VERTICAL_IDS.includes(id as (typeof ALLOWED_VERTICAL_IDS)[number])) {
+ if (!id || !(ALLOWED_VERTICAL_IDS as readonly string[]).includes(id)) {
         return (
             <div className='mx-auto max-w-3xl px-6 py-16'>
                 <h1 className='page-title text-balance'>{t('notFound.title')}</h1>
@@ -41,15 +79,15 @@ export default async function VerticalPage({ params }: Props) {
         )
     }
 
-	return (
-		<main>
-			<VerticalHero />
-			<VerticalReality />
-			<VerticalImpact />
-			<VerticalAutomations />
-			<VerticalJourney />
-			<VerticalFaqs />
-			<VerticalCTA />
-		</main>
-	)
+    return (
+        <main>
+            <VerticalHero />
+            <VerticalReality />
+            <VerticalImpact />
+            <VerticalAutomations />
+            <VerticalJourney />
+            <VerticalFaqs />
+            <VerticalCTA />
+        </main>
+    )
 }

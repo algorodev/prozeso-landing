@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
+import { VERTICALS } from "@/data/verticals";
 
 function normalizeBaseUrl(url: string) {
   return url.replace(/\/$/, "");
@@ -11,6 +12,7 @@ const siteUrl = normalizeBaseUrl(rawBase);
 const paths = [
   "",
   "/automations",
+  "/verticals",
   "/start",
   "/solutions",
   "/legal/cookies",
@@ -35,6 +37,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: path === "" ? "weekly" : "monthly",
         priority: path === "" ? 1.0 : 0.6,
+        alternates: {
+          languages,
+        },
+      });
+    }
+  }
+
+  const verticalIds = Object.keys(VERTICALS ?? {});
+  for (const id of verticalIds) {
+    const path = `/verticals/${id}`;
+    const languages: Record<string, string> = Object.fromEntries(
+      locales.map((l) => [l, `${siteUrl}/${l}${path}`]),
+    );
+
+    for (const l of locales) {
+      const url = `${siteUrl}/${l}${path}`;
+      items.push({
+        url,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
         alternates: {
           languages,
         },

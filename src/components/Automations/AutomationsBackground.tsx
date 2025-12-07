@@ -193,7 +193,6 @@ export default function AutomationsBackground() {
 		window.addEventListener('scroll', onScrollOrResize, { passive: true })
 		window.addEventListener('resize', onScrollOrResize)
 
-		// Animate connectors subtly
 		const lines = Array.from(root.querySelectorAll<HTMLElement>('[data-connector]'))
 		lines.forEach((line, idx) => {
 			const delay = 800 * (idx % 3)

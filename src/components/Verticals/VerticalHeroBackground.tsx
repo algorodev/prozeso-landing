@@ -31,16 +31,11 @@ const clipPathFor = (type: ShapeType) => {
   }
 }
 
-// Keep the base palette for consistency, but we will also render some shapes as outlines
 const PALETTE = ['#2A68FF', '#14FFE3', '#8A7CFF', '#25D695'] as const
 
 export default function VerticalHeroBackground() {
   const containerRef = useRef<HTMLDivElement | null>(null)
 
-  // Make it visually distinct from the home background:
-  // - fewer but larger shapes
-  // - mix of filled and outline styles
-  // - stronger right bias remains to keep text readable
   const shapes = useMemo<ShapeConfig[]>(
     () => [
       { id: 'vs1', type: 'circle', size: 260, top: '6%', left: '64%', opacity: 0.32, blurClass: 'blur-3xl', depth: 1, style: 'outline' },
@@ -96,14 +91,12 @@ export default function VerticalHeroBackground() {
     els.forEach((el, idx) => {
       const depth = Number(el.dataset.depth || '2')
 
-      // Distinct motion profile: independent X/Y oscillations with different periods
       const ampX = depth === 1 ? 22 : depth === 2 ? 16 : 11
       const ampY = depth === 1 ? 14 : depth === 2 ? 11 : 8
       const dX = depth === 1 ? 16000 : depth === 2 ? 12000 : 9000
       const dY = depth === 1 ? 12000 : depth === 2 ? 9000 : 7000
       const dS = depth === 1 ? 8000 : depth === 2 ? 7000 : 6000
 
-      // Stagger to desynchronize phases
       const delay = (idx % 7) * 180
 
       animate(el, {
