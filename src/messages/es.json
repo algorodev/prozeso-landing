@@ -93,227 +93,133 @@
     }
   },
   "automations": {
-    "list": {
-      "title": "Catálogo de automatizaciones",
-      "subtitle": "Explora flujos listos para usar. Adaptamos cada automatización a tu stack y configuramos monitoreo y alertas."
-    },
-    "filters": {
-      "searchPlaceholder": "Buscar automatizaciones, herramientas o resultados…",
-      "sort": {
-        "label": "Ordenar",
-        "sortBy": "Ordenar por",
-        "options": {
-          "Popularity": "Popularidad",
-          "ROI": "ROI",
-          "Newest": "Más reciente"
-        }
+    "page": {
+      "hero": {
+        "title": "Biblioteca de <primary>Automatizaciones</primary>",
+        "subtitle": "Flujos con IA diseñados para negocios de servicios. Combina y adapta para crear tu stack perfecto de automatización."
       },
-      "categories": {
-        "bookings": "Reservas",
-        "communication": "Comunicación",
-        "automation": "Automatización",
-        "calls": "Llamadas",
-        "leadRecovery": "Recuperación de clientes",
-        "scheduling": "Programación",
-        "clientRetention": "Retención de clientes"
+      "filter": {
+        "categoryLabel": "Categoría",
+        "searchPlaceholder": "Buscar automatizaciones...",
+        "searchAria": "Buscar automatizaciones"
+      },
+      "cta": {
+        "title": "¿Necesitas <primary>orientación</primary>?",
+        "subtitle": "Nuestra evaluación con IA te recomendará las automatizaciones que más impacto generan en tu negocio.",
+        "button": "Comenzar evaluación gratis"
+      },
+      "card": {
+        "learnMore": "Ver más"
       }
     },
-    "grid": {
-      "empty": "No hay automatizaciones que coincidan con tus filtros."
+    "categories": {
+      "all": "Categoría",
+      "ai-agent": "Agente de IA",
+      "phone-msg": "Teléfono y Mensajería",
+      "lead-recovery": "Recuperación de leads",
+      "retention": "Retención",
+      "no-show-reduction": "Reducción de ausencias",
+      "pre-visit": "Pre‑visita",
+      "data-collection": "Recogida de datos",
+      "experience-personalization": "Personalización de la experiencia",
+      "no-show-management": "Gestión de ausencias",
+      "revenue-protection": "Protección de ingresos",
+      "revenue-optimization": "Optimización de ingresos",
+      "capacity-management": "Gestión de capacidad",
+      "conversion": "Conversión",
+      "lifecycle-management": "Gestión del ciclo de vida",
+      "reputation": "Reputación",
+      "reviews": "Reseñas",
+      "billing": "Facturación",
+      "payments": "Pagos",
+      "guest-experience": "Experiencia del huésped",
+      "concierge": "Conserjería",
+      "upsell": "Venta adicional",
+      "sales-enablement": "Habilitación de ventas",
+      "lead-qualification": "Cualificación de leads",
+      "events-groups": "Eventos y grupos",
+      "lead-management": "Gestión de leads",
+      "qualification": "Cualificación",
+      "routing": "Enrutamiento",
+      "feedback": "Feedback",
+      "post-viewing": "Post‑visita",
+      "operations": "Operaciones",
+      "onboarding": "Onboarding"
     },
-    "detail": {
-      "problemTitle": "Problema",
-      "solutionTitle": "Solución",
-      "resultsTitle": "Resultados"
-    },
-    "metrics": {
-      "timeSavedTitle": "Tiempo ahorrado",
-      "roiTitle": "ROI"
-    },
-    "actions": {
-      "details": "Ver detalles",
-      "setup": "Solicitar configuración"
-    },
-    "receptionist-in-a-box": {
-      "title": "Recepcionista: Tu agente que nunca duerme",
-      "tagline": "Tu asistente digital que nunca pierde una llamada ni un cliente.",
-      "description": "Mientras tú estás haciendo lo importante — atendiendo a tus clientes, dirigiendo tu negocio o simplemente descansando — Prozeso se encarga del resto.\nReceptionist-in-a-Box convierte cada llamada, mensaje o formulario en una cita confirmada automáticamente.\nSin esperas, sin papeleo y sin depender de nadie.\nAgenda, confirma y recuerda cada cita, todo de forma automática.",
-      "categories": {
-        "bookings": "Reservas",
-        "communication": "Comunicación",
-        "automation": "Automatización"
-      },
-      "integrations": ["Email", "Calendar", "Twilio"],
-      "timeSavedShort": "10 h/semana ahorradas",
-      "roiShort": "+180% citas confirmadas",
-      "metrics": {
-        "timeSaved": "Tiempo ahorrado",
-        "bookings": "Reservas",
-        "noShows": "No presentado",
-        "confirmedBookings": "Reservas confirmadas"
-      },
-      "outcomes": [
-        "Más reservas, menos esfuerzo: Los clientes pueden reservar incluso mientras duermes.",
-        "Confirmaciones instantáneas: Respuesta inmediata por SMS o email.",
-        "Agenda actualizada 24/7: Sin errores ni citas duplicadas.",
-        "Recordatorios automáticos: Reduce cancelaciones y olvidos.",
-        "Integración total: Compatible con Google Calendar, Cal.com y tu CRM."
-      ],
-      "problem": "Cada vez que alguien llama y no contestas, pierdes dinero.\nY cuando sí contestas, pierdes tiempo que podrías usar en algo más valioso.",
-      "solution": "Prozeso atiende por ti.\nResponde llamadas, agenda citas y confirma en segundos—sin intervención humana.\nTú sigues trabajando o disfrutando del día, mientras tu negocio no se detiene.",
-      "results": "Una agenda siempre llena.\nClientes felices.\nY tú, con más tiempo y menos estrés.",
-      "resultSummary": "Impacto: ~8h/mes ahorradas, reducción 20–40% no-shows, y 10–20% cancelaciones.",
-      "faqs": [
-        {
-          "question": "¿Necesito cambiar mi número de teléfono?",
-          "answer": "No. Podemos integrar tu número actual o redirigir llamadas fácilmente sin complicaciones."
-        },
-        {
-          "question": "¿Y si un cliente quiere cambiar o cancelar su cita?",
-          "answer": "El sistema envía enlaces automáticos para reprogramar o cancelar sin que tú tengas que intervenir."
-        },
-        {
-          "question": "¿Funciona fuera del horario laboral?",
-          "answer": "Sí. Receptionist-in-a-Box trabaja 24/7 para no perder oportunidades."
-        },
-        {
-          "question": "¿Se integra con mi calendario actual?",
-          "answer": "Totalmente. Usamos Cal.com o Google Calendar para mantener tu agenda siempre sincronizada."
-        },
-        {
-          "question": "¿Puedo personalizar los mensajes o el tono?",
-          "answer": "Sí, ajustamos la comunicación para que suene como tu negocio, no como un robot."
-        }
-      ]
+    "receptionist-ai": {
+      "title": "Recepcionista IA",
+      "description": "Una recepcionista con IA siempre activa que responde llamadas y mensajes, da información y gestiona reservas y citas (alta, cambios y cancelaciones).",
+      "metrics": ["+45% reservas recuperadas", "Cobertura 24/7", "60% más rápida la primera respuesta"]
     },
     "missed-call-auto-callback": {
-      "title": "Llamada Perdida → Respuesta Automática",
-      "tagline": "Convierte las llamadas perdidas en clientes ganados.",
-      "description": "Cada llamada que no contestas puede ser una cita, una venta o un cliente que no vuelve.\nCon Missed Call Recovery, cada vez que alguien llama y no puede hablar contigo, Prozeso responde por ti.\nEnvía un mensaje inmediato con un enlace para reservar una cita o deja programada una tarea para que puedas devolver la llamada más tarde.\nNo pierdes oportunidades. No pierdes tiempo.",
-      "categories": {
-        "calls": "Llamadas",
-        "leadRecovery": "Recuperación de clientes",
-        "automation": "Automatización"
-      },
-      "integrations": ["Twilio"],
-      "timeSavedShort": "5h/semana ahorradas",
-      "timeSaved": "Hasta 5 horas semanales menos en devolver llamadas manualmente y hacer seguimiento a clientes.",
-      "roiShort": "+15–35% llamadas recuperadas",
-      "roi": "Recupera entre un 15% y un 35% de las llamadas perdidas y aumenta tus ingresos mensuales sin invertir en más personal.\nCada llamada recuperada es una nueva oportunidad de venta cerrada.",
-      "metrics": {
-        "timeSaved": "Tiempo ahorrado",
-        "callsRecovered": "Llamadas recuperadas",
-        "revenueLift": "Incremento de ingresos",
-        "efficiency": "Eficiencia"
-      },
-      "outcomes": [
-        "Recupera ingresos perdidos: Convierte llamadas sin responder en citas confirmadas.",
-        "Atención inmediata 24/7: Incluso cuando estás ocupado o cerrado, tus clientes reciben respuesta al instante.",
-        "Automatiza el seguimiento: Si el cliente no responde, el sistema crea una tarea automática para tu equipo.",
-        "Mejora tu imagen profesional: Tus clientes siempre se sienten atendidos, incluso cuando no estás disponible.",
-        "Compatible con Twilio, Aircall y CRMs populares."
-      ],
-      "problem": "Cada llamada que no contestas es una oportunidad que desaparece.\nY, en la mayoría de negocios, más del 30% de las llamadas entrantes no llegan a atenderse.",
-      "solution": "Prozeso se encarga de tus llamadas cuando tú no puedes.\nEn segundos, responde al cliente, le ofrece opciones y le permite reservar sin hablar con nadie.",
-      "results": "Clientes que antes se iban, ahora vuelven.\nUn flujo constante de citas recuperadas y más ingresos sin más trabajo.",
-      "resultSummary": "Impacto: Gana 5 horas extra cada semana, recupera entre un 15 % y un 35 % de las llamadas perdidas y convierte las oportunidades perdidas en nuevas ventas.",
-      "faqs": [
-        {
-          "question": "¿Qué pasa si alguien llama fuera del horario laboral?",
-          "answer": "El sistema responde igual. Envía un SMS con un enlace para reservar en el siguiente horario disponible."
-        },
-        {
-          "question": "¿Y si el cliente no hace clic en el enlace?",
-          "answer": "Se crea automáticamente una tarea para que puedas llamarlo cuando tengas un hueco."
-        },
-        {
-          "question": "¿Puedo personalizar el mensaje de respuesta?",
-          "answer": "Sí. Puedes usar tu propio texto, tono y firma de marca."
-        },
-        {
-          "question": "¿Funciona con mi proveedor de llamadas actual?",
-          "answer": "Sí, es compatible con Twilio, Aircall y la mayoría de plataformas VoIP."
-        },
-        {
-          "question": "¿Qué pasa si tengo varios empleados o líneas?",
-          "answer": "El sistema puede asignar las llamadas a diferentes personas según reglas que definamos contigo."
-        }
-      ]
+      "title": "Devolución automática de llamadas perdidas",
+      "description": "Devuelve automáticamente la llamada o escribe a quienes no pudiste atender para recuperar reservas y leads en lugar de perderlos.",
+      "metrics": ["+30% recuperación de leads", "Devolución < 60s", "+18% conversión tras seguimiento"]
     },
-    "appointment-reminders-smart-reschedule": {
-      "title": "Recordatorios de Cita + Reprogramación Inteligente",
-      "tagline": "Menos huecos vacíos. Más citas confirmadas.",
-      "description": "Los olvidos cuestan dinero.\nCada cita que no se presenta o se cancela a última hora deja una hora muerta en tu agenda que ya no vuelve.\nCon Appointment Reminders + Smart Reschedule, Prozeso recuerda cada cita a tus clientes y les permite reprogramar con un solo clic.\nSin llamadas. Sin pérdida de tiempo. Sin huecos vacíos.",
-      "categories": {
-        "scheduling": "Programación",
-        "clientRetention": "Retención de clientes",
-        "automation": "Automatización"
-      },
-      "integrations": ["Email", "Calendar", "Twilio"],
-      "timeSavedShort": "8h/mes ahorradas",
-      "timeSaved": "Hasta 8 horas al mes menos en llamadas de recordatorio, mensajes manuales y reorganización de agenda.",
-      "roiShort": "-20–40% no-shows y -10–20% cancelaciones",
-      "roi": "Reduce tus no-shows entre un 20% y un 40% y evita hasta un 10–20% de cancelaciones de última hora.\nMás citas efectivas, más facturación y menos estrés.",
-      "metrics": {
-        "timeSaved": "Tiempo ahorrado",
-        "bookings": "Reservas",
-        "noShows": "No presentado",
-        "cancellations": "Cancelaciones"
-      },
-      "outcomes": [
-        "Recordatorios automáticos por SMS o email: Nunca más una cita olvidada.",
-        "Reprogramación en un clic: Tus clientes eligen nuevo horario sin contactarte.",
-        "Agenda actualizada al instante: Todo sincronizado con tu calendario y CRM.",
-        "Reducción de cancelaciones: Tu agenda se mantiene llena sin esfuerzo.",
-        "Mejor experiencia para tus clientes: Comunicación profesional y fluida."
-      ],
-      "problem": "Los no-shows y cancelaciones de última hora no solo vacían tu agenda:\nrompen tu ritmo, te hacen perder dinero y te obligan a improvisar.",
-      "solution": "Prozeso mantiene el contacto con tus clientes por ti.\nEnvía recordatorios automáticos y ofrece la posibilidad de reprogramar sin llamadas.\nTú sigues trabajando mientras tu agenda se reorganiza sola.",
-      "results": "Una agenda estable, clientes puntuales y un negocio que no se detiene por imprevistos.",
-      "resultSummary": "Impacto: Ahorra hasta 8 horas al mes, reduce los no-shows entre un 20 % y un 40 % y evita hasta un 10–20 % de cancelaciones de última hora—más citas efectivas, más ingresos y menos estrés.",
-      "faqs": [
-        {
-          "question": "¿Con cuánta antelación se envían los recordatorios?",
-          "answer": "Puedes definirlo tú: 24h, 48h o incluso el mismo día, según tus preferencias."
-        },
-        {
-          "question": "¿Y si un cliente quiere cambiar su cita?",
-          "answer": "Recibe un enlace directo con tus horarios disponibles. Solo hace clic y el sistema actualiza todo automáticamente."
-        },
-        {
-          "question": "¿Funciona con Google Calendar o Cal.com?",
-          "answer": "Sí, la sincronización es instantánea y bidireccional."
-        },
-        {
-          "question": "¿Puedo personalizar los mensajes?",
-          "answer": "Por supuesto. Puedes adaptar el tono, idioma y plantilla según tu marca."
-        },
-        {
-          "question": "¿Y si quiero desactivar los recordatorios automáticos?",
-          "answer": "Puedes hacerlo en cualquier momento, aunque la mayoría de negocios ve un gran retorno desde el primer mes."
-        }
-      ]
-    }
-  },
-  "demo": {
-    "hero": {
-      "title": "Veamos juntos cómo tu negocio podría funcionar mientras sigues atendiendo clientes",
-      "subtitle": "Prueba una demo en vivo para descubrir como Prozeso te va ayudar en el día a día.",
-      "cta": "Comienza tu evaluación gratis"
+    "appointment-reminder": {
+      "title": "Recordatorio de citas",
+      "description": "Recordatorios automáticos por SMS, WhatsApp, email o llamada antes de la cita, con confirmación y reprogramación/cancelación con un clic.",
+      "metrics": ["-32% ausencias", "95% tasa de entrega", "Reprogramación en 1 clic"]
     },
-    "highlights": {
-      "tailoredFlow": {
-        "title": "Flujo a medida",
-        "desc": "Te mostraremos en minutos cómo automatizar las tareas que hoy te quitan tiempo."
-      },
-      "builtInComms": {
-        "title": "Comunicaciones integradas",
-        "desc": "Verás cómo tu negocio puede atender, agendar y responder sin depender de nadie."
-      },
-      "paymentsTrust": {
-        "title": "Pagos y confianza",
-        "desc": "Saldrás con una visión clara de cómo ganar tiempo, profesionalidad y tranquilidad desde el primer día."
-      }
+    "smart-pre-check-in": {
+      "title": "Pre‑check‑in inteligente",
+      "description": "Flujo previo a la visita para recopilar datos, formularios y preferencias, y enviar instrucciones personalizadas antes de la llegada.",
+      "metrics": ["70% formularios completados antes de la visita", "-25% tiempo en recepción", "Instrucciones personalizadas"]
+    },
+    "no-show-recovery-fee-capture": {
+      "title": "Recuperación de ausencias y cobro de tasas",
+      "description": "Si un cliente no se presenta, hacemos seguimiento para reprogramar, cobrar una tasa o depósito cuando aplique y registrar el evento.",
+      "metrics": ["-18% fuga de ingresos", "40% reprograman tras el contacto", "Cobro de tasas automatizado"]
+    },
+    "smart-waitlist-cancellation-filler": {
+      "title": "Lista de espera y relleno por cancelaciones",
+      "description": "Aprovecha cancelaciones o huecos libres para contactar automáticamente a la lista de espera o clientes recientes y llenar esos espacios.",
+      "metrics": ["82% huecos rellenados", "+12% ingresos por asiento/hora", "Alcance inmediato a lista de espera"]
+    },
+    "abandoned-booking-follow-up": {
+      "title": "Seguimiento de reservas abandonadas",
+      "description": "Si alguien inicia pero no termina una reserva o solicitud, este flujo contacta para ayudarle a completarla.",
+      "metrics": ["+22% finalización de checkout", "< 5 min para el seguimiento", "Recordatorios multicanal"]
+    },
+    "reactivation-recalls": {
+      "title": "Reactivación y recalls",
+      "description": "Recupera clientes inactivos y programa recalls periódicos según tiempo desde la última visita o plan de tratamiento.",
+      "metrics": ["16% tasa de reactivación", "+9% LTV del cliente", "Calendarios de recall automáticos"]
+    },
+    "review-booster": {
+      "title": "Impulsor de reseñas",
+      "description": "Tras una experiencia positiva, pide una reseña y dirige a los clientes satisfechos a Google/portales mientras gestiona en privado el feedback negativo.",
+      "metrics": ["3x reseñas al mes", "+0.4 en valoración media", "Enrutado inteligente de reseñas"]
+    },
+    "billing-and-invoice": {
+      "title": "Facturación y cobros",
+      "description": "Automatiza el envío de enlaces de pago, la captura de depósitos y el envío de facturas, integrado con tu sistema de facturación.",
+      "metrics": ["2x pagos más rápidos", "-35% facturas vencidas", "Enlaces de pago seguros"]
+    },
+    "in-stay-concierge-upsell": {
+      "title": "Conserje en estancia y venta adicional",
+      "description": "Conserje virtual para huéspedes alojados: responde preguntas, gestiona solicitudes y propone ventas adicionales.",
+      "metrics": ["+14% ingresos auxiliares", "30% respuesta más rápida", "Conserje virtual 24/7"]
+    },
+    "group-event-inquiry-handler": {
+      "title": "Gestor de consultas para grupos y eventos",
+      "description": "Flujo especializado para consultas de grupos y eventos (bodas, conferencias, estancias corporativas), cualificándolas y estructurándolas para ventas.",
+      "metrics": ["2x RFPs cualificados", "-40% tiempo hasta la primera respuesta", "Briefs estructurados para ventas"]
+    },
+    "portal-lead-qualification-routing": {
+      "title": "Cualificación y enrutado de leads de portales",
+      "description": "Gestiona leads de portales inmobiliarios, los cualifica y los enruta al agente/propiedad adecuados, con visitas agendadas cuando sea posible.",
+      "metrics": ["50% SLA más rápido", "+17% visitas agendadas", "Enrutamiento automático a agentes"]
+    },
+    "viewing-follow-up-offer-collector": {
+      "title": "Seguimiento de visitas y recogida de ofertas",
+      "description": "Tras una visita a la propiedad, realiza seguimiento para recoger feedback, medir interés y recopilar ofertas o solicitudes.",
+      "metrics": ["28% más ofertas recopiladas", "< 24h para feedback", "Nutre el interés cálido"]
+    },
+    "tenant-onboarding-docs-collection": {
+      "title": "Onboarding de inquilinos y recogida de documentos",
+      "description": "Orquesta el camino de ‘inquilino aceptado’ a ‘instalado’: documentos, contrato, pagos e instrucciones para la entrega de llaves.",
+      "metrics": ["-50% tiempo administrativo", "95% documentos completados", "Enlaces de pago y firma electrónica"]
     }
   },
   "start": {

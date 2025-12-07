@@ -93,206 +93,133 @@
     }
   },
   "automations": {
-    "list": {
-      "title": "Automation catalog",
-      "subtitle": "Explore ready-to-use flows. We tailor each automation to your stack and set up monitoring and alerts."
-    },
-    "filters": {
-      "searchPlaceholder": "Search automations, tools or outcomes…",
-      "sort": {
-        "label": "Sort",
-        "sortBy": "Sort by",
-        "options": {
-          "Popularity": "Popularity",
-          "ROI": "ROI",
-          "Newest": "Newest"
-        }
+    "page": {
+      "hero": {
+        "title": "<primary>Automations</primary> Library",
+        "subtitle": "AI-powered workflows designed for service businesses. Mix and match to create your perfect automation stack."
       },
-      "categories": {
-        "bookings": "Bookings",
-        "communication": "Communication",
-        "automation": "Automation",
-        "calls": "Calls",
-        "leadRecovery": "Lead Recovery",
-        "scheduling": "Scheduling",
-        "clientRetention": "Client Retention"
+      "filter": {
+        "categoryLabel": "Category",
+        "searchPlaceholder": "Search automations...",
+        "searchAria": "Search automations"
+      },
+      "cta": {
+        "title": "Need <primary>guidance</primary>?",
+        "subtitle": "Our AI-powered assessment will recommend the automations that deliver the most impact for your business.",
+        "button": "Start free assessment"
+      },
+      "card": {
+        "learnMore": "Learn more"
       }
     },
-    "grid": {
-      "empty": "No automations match your filters."
+    "categories": {
+      "all": "Category",
+      "ai-agent": "AI Agent",
+      "phone-msg": "Phone & Messaging Automation",
+      "lead-recovery": "Lead Recovery",
+      "retention": "Retention",
+      "no-show-reduction": "No-Show Reduction",
+      "pre-visit": "Pre-Visit",
+      "data-collection": "Data Collection",
+      "experience-personalization": "Experience Personalization",
+      "no-show-management": "No-Show Management",
+      "revenue-protection": "Revenue Protection",
+      "revenue-optimization": "Revenue Optimization",
+      "capacity-management": "Capacity Management",
+      "conversion": "Conversion",
+      "lifecycle-management": "Lifecycle Management",
+      "reputation": "Reputation",
+      "reviews": "Reviews",
+      "billing": "Billing",
+      "payments": "Payments",
+      "guest-experience": "Guest Experience",
+      "concierge": "Concierge",
+      "upsell": "Upsell",
+      "sales-enablement": "Sales Enablement",
+      "lead-qualification": "Lead Qualification",
+      "events-groups": "Events & Groups",
+      "lead-management": "Lead Management",
+      "qualification": "Qualification",
+      "routing": "Routing",
+      "feedback": "Feedback",
+      "post-viewing": "Post-Viewing",
+      "operations": "Operations",
+      "onboarding": "Onboarding"
     },
-    "detail": {
-      "problemTitle": "Problem",
-      "solutionTitle": "Solution",
-      "resultsTitle": "Results"
-    },
-    "metrics": {
-      "timeSavedTitle": "Time saved",
-      "roiTitle": "ROI"
-    },
-    "actions": {
-      "details": "See details",
-      "setup": "Request setup"
-    },
-    "receptionist-in-a-box": {
-      "title": "Receptionist: Your agent that never sleeps",
-      "tagline": "Your digital assistant that never misses a call or a customer.",
-      "description": "While you’re doing what matters — serving your customers, running your business or simply resting — Prozeso takes care of the rest.\nReceptionist-in-a-Box turns every call, message or form into a confirmed appointment automatically.\nNo waiting, no paperwork and no depending on anyone.\nSchedule, confirm and remind every appointment, all automatically.",
-      "categories": {
-        "bookings": "Bookings",
-        "communication": "Communication",
-        "automation": "Automation"
-      },
-      "integrations": ["Email", "Calendar", "Twilio", "CRM"],
-      "timeSavedShort": "10 h/week saved",
-      "timeSaved": "Up to 10 hours a month less on calls, coordination and confirmation messages.\nEvery confirmed appointment is time you get back for what truly matters: serve better, sell more or rest more.",
-      "roiShort": "+180% appointments",
-      "roi": "Businesses using Receptionist-in-a-Box increase their bookings between 25% and 45% and reduce their no-show rate by up to 30%.\nEvery month, more customers served without hiring anyone new.",
-      "metrics": {
-        "timeSaved": "Time saved",
-        "bookings": "Bookings",
-        "noShows": "No-shows",
-        "confirmedBookings": "Confirmed bookings"
-      },
-      "outcomes": [
-        "More bookings, less effort: Customers can book even while you sleep.",
-        "Instant confirmations: Immediate response via SMS or email.",
-        "24/7 up-to-date calendar: No errors or double booking.",
-        "Automatic reminders: Reduce cancellations and no-shows.",
-        "Full integration: Compatible with Google Calendar, Cal.com and your CRM."
-      ],
-      "problem": "Every time someone calls and you can’t answer, you lose money.\nAnd when you do answer, you lose time you could use on something more valuable.",
-      "solution": "Prozeso answers for you.\nIt picks up calls, schedules appointments and confirms in seconds—without human intervention.\nYou keep working or enjoying your day, while your business never stops.",
-      "results": "An always-full schedule.\nHappy customers.\nAnd you, with more time and less stress.",
-      "resultSummary": "Impact: save ~8h/month, reduce no-shows 20–40%, and cancellations 10–20%.",
-      "faqs": [
-        {
-          "question": "Do I need to change my phone number?",
-          "answer": "No. We can integrate your current number or forward calls easily without complications."
-        },
-        {
-          "question": "What if a customer wants to reschedule or cancel?",
-          "answer": "The system sends automatic links to reschedule or cancel without you having to intervene."
-        },
-        {
-          "question": "Does it work outside business hours?",
-          "answer": "Yes. Receptionist-in-a-Box works 24/7 so you don’t miss opportunities."
-        },
-        {
-          "question": "Does it integrate with my current calendar?",
-          "answer": "Totally. We use Cal.com or Google Calendar to keep your calendar always in sync."
-        },
-        {
-          "question": "Can I customize the messages or tone?",
-          "answer": "Yes, we adjust the communication so it sounds like your business, not a robot."
-        }
-      ]
+    "receptionist-ai": {
+      "title": "Receptionist AI",
+      "description": "An always-on AI receptionist that answers calls and messages, gives information, and books, modifies or cancels reservations and appointments.",
+      "metrics": ["+45% bookings recovered", "24/7 coverage", "60% faster first response"]
     },
     "missed-call-auto-callback": {
-      "title": "Missed Call → Automatic Response",
-      "tagline": "Turn missed calls into won customers.",
-      "description": "Every call you don’t answer could be an appointment, a sale or a customer that won’t come back.\nWith Missed Call Recovery, whenever someone calls and can’t reach you, Prozeso replies for you.\nIt sends an immediate message with a link to book an appointment or schedules a task so you can call back later.\nNo missed opportunities. No wasted time.",
-      "categories": {
-        "calls": "Calls",
-        "leadRecovery": "Lead Recovery",
-        "automation": "Automation"
-      },
-      "integrations": ["Twilio", "Aircall", "CRM"],
-      "timeSavedShort": "5 h/week saved",
-      "timeSaved": "Up to 5 hours a week saved by avoiding manual callbacks and follow-ups.",
-      "roiShort": "+15–35% calls recovered",
-      "roi": "Recover between 15% and 35% of missed calls and increase your monthly revenue without hiring more staff.\nEvery recovered call is a new closed-sale opportunity.",
-      "metrics": {
-        "timeSaved": "Time saved",
-        "callsRecovered": "Calls recovered",
-        "revenueLift": "Revenue lift",
-        "efficiency": "Efficiency"
-      },
-      "outcomes": [
-        "Recover lost revenue: Turn unanswered calls into confirmed appointments.",
-        "Immediate 24/7 attention: Even when you’re busy or closed, customers get an instant response.",
-        "Automated follow-up: If the customer doesn’t respond, the system creates an automatic task for your team.",
-        "Improve your professional image: Customers always feel attended, even when you’re not available.",
-        "Compatible with Twilio, Aircall and popular CRMs."
-      ],
-      "problem": "Every call you don’t answer is an opportunity that disappears.\nAnd, in most businesses, more than 30% of incoming calls go unattended.",
-      "solution": "Prozeso handles your calls when you can’t.\nIn seconds, it responds to the customer, offers options and lets them book without talking to anyone.",
-      "results": "Customers who used to leave now come back.\nA steady stream of recovered appointments and more revenue without more work.",
-      "resultSummary": "Impact: Gain 5 extra hours each week, recover 15–35% of missed calls, and turn lost opportunities into new sales.",
-      "faqs": [
-        {
-          "question": "What happens if someone calls outside business hours?",
-          "answer": "The system still responds. It sends an SMS with a link to book at the next available time."
-        },
-        {
-          "question": "What if the customer doesn’t click the link?",
-          "answer": "A task is automatically created so you can call them when you have a moment."
-        },
-        {
-          "question": "Can I customize the response message?",
-          "answer": "Yes. You can use your own text, tone and brand signature."
-        },
-        {
-          "question": "Does it work with my current calling provider?",
-          "answer": "Yes, it’s compatible with Twilio, Aircall and most VoIP platforms."
-        },
-        {
-          "question": "What if I have multiple employees or lines?",
-          "answer": "The system can assign calls to different people based on rules we define with you."
-        }
-      ]
+      "title": "Missed Call Auto Callback",
+      "description": "Automatically calls back or messages missed callers so you recover bookings and leads instead of losing them.",
+      "metrics": ["+30% lead recovery", "Callback < 60s", "+18% conversion after follow-up"]
     },
-    "appointment-reminders-smart-reschedule": {
-      "title": "Appointment Reminders + Smart Reschedule",
-      "tagline": "Fewer empty slots. More confirmed appointments.",
-      "description": "Forgetfulness costs money.\nEvery no-show or last-minute cancellation leaves a dead hour in your calendar that won’t come back.\nWith Appointment Reminders + Smart Reschedule, Prozeso reminds customers about every appointment and lets them reschedule with a single click.\nNo calls. No wasted time. No empty slots.",
-      "categories": {
-        "scheduling": "Scheduling",
-        "clientRetention": "Client Retention",
-        "automation": "Automation"
-      },
-      "integrations": ["Email", "Calendar", "Twilio", "CRM"],
-      "timeSavedShort": "8 h/month saved",
-      "roiShort": "-20–40% no-shows",
-      "metrics": {
-        "timeSaved": "Time saved",
-        "bookings": "Bookings",
-        "noShows": "No-shows",
-        "cancellations": "Cancellations"
-      },
-      "outcomes": [
-        "Automatic SMS or email reminders: Never miss an appointment again.",
-        "One-click rescheduling: Customers pick a new time without contacting you.",
-        "Instantly updated calendar: Everything stays in sync with your calendar and CRM.",
-        "Fewer cancellations: Your schedule stays full without effort.",
-        "Better customer experience: Professional, smooth communication."
-      ],
-      "problem": "No-shows and last-minute cancellations don’t just empty your calendar: they break your rhythm, make you lose money and force you to improvise.",
-      "solution": "Prozeso keeps in touch with your customers for you.\nIt sends automatic reminders and offers rescheduling without phone calls.\nYou keep working while your calendar reorganizes itself.",
-      "results": "A stable calendar, on-time customers and a business that doesn’t stop due to surprises.",
-      "resultSummary": "Impact: Save up to 8 hours a month, cut no-shows by 20–40%, and reduce last-minute cancellations by 10–20%—more bookings, more revenue, less stress.",
-      "faqs": [
-        {
-          "question": "How far in advance are reminders sent?",
-          "answer": "You decide: 24h, 48h or even the same day, according to your preferences."
-        },
-        {
-          "question": "What if a customer wants to change their appointment?",
-          "answer": "They receive a direct link with your available times. They just click and the system updates everything automatically."
-        },
-        {
-          "question": "Does it work with Google Calendar or Cal.com?",
-          "answer": "Yes, syncing is instant and bidirectional."
-        },
-        {
-          "question": "Can I customize the messages?",
-          "answer": "Of course. You can adapt the tone, language and template to your brand."
-        },
-        {
-          "question": "What if I want to disable automatic reminders?",
-          "answer": "You can do it at any time, though most businesses see great ROI from the first month."
-        }
-      ]
+    "appointment-reminder": {
+      "title": "Appointment Reminder",
+      "description": "Automatic reminders via SMS, WhatsApp, email or calls before an appointment, with confirmation and one-click reschedule or cancel.",
+      "metrics": ["-32% no-shows", "95% delivery rate", "1-click reschedule"]
+    },
+    "smart-pre-check-in": {
+      "title": "Smart Pre-Check-In",
+      "description": "Pre-visit workflow to collect data, forms and preferences and send tailored instructions before the client arrives.",
+      "metrics": ["70% forms completed pre-visit", "-25% front-desk time", "Personalized instructions"]
+    },
+    "no-show-recovery-fee-capture": {
+      "title": "No-Show Recovery & Fee Capture",
+      "description": "When a client doesn’t show up, automatically follows up to reschedule, charge a fee or deposit when applicable, and log the event.",
+      "metrics": ["-18% revenue leakage", "40% rescheduled after outreach", "Automated fee collection"]
+    },
+    "smart-waitlist-cancellation-filler": {
+      "title": "Smart Waitlist & Cancellation Filler",
+      "description": "Uses cancellations or empty slots to automatically reach out to a waitlist or recent customers and fill those gaps.",
+      "metrics": ["82% empty slots refilled", "+12% revenue per seat/hour", "Instant outreach to waitlist"]
+    },
+    "abandoned-booking-follow-up": {
+      "title": "Abandoned Booking Follow-Up",
+      "description": "If someone starts but doesn’t finish a booking or request, this workflow reaches out to help them complete it.",
+      "metrics": ["+22% checkout completion", "< 5 min follow-up", "Multi-channel nudges"]
+    },
+    "reactivation-recalls": {
+      "title": "Reactivation & Recalls",
+      "description": "Brings back inactive customers and triggers periodic recalls based on time since last visit or treatment schedule.",
+      "metrics": ["16% reactivation rate", "+9% customer LTV", "Automated recall schedules"]
+    },
+    "review-booster": {
+      "title": "Review Booster",
+      "description": "After a positive experience, asks for a review and routes happy clients to Google/portals while handling negative feedback privately.",
+      "metrics": ["3x reviews per month", "+0.4 average rating", "Smart review routing"]
+    },
+    "billing-and-invoice": {
+      "title": "Billing & Invoice",
+      "description": "Automates sending payment links, capturing deposits, and delivering invoices, integrated with your billing system.",
+      "metrics": ["2x faster payments", "-35% overdue invoices", "Secure payment links"]
+    },
+    "in-stay-concierge-upsell": {
+      "title": "In-Stay Concierge & Upsell",
+      "description": "A virtual concierge for guests currently staying at the property: answers questions, handles requests and proposes upsells.",
+      "metrics": ["+14% ancillary revenue", "30% faster response time", "24/7 virtual concierge"]
+    },
+    "group-event-inquiry-handler": {
+      "title": "Group & Event Inquiry Handler",
+      "description": "Specialised workflow for handling group and event requests (weddings, conferences, corporate stays), qualifying and structuring them for sales.",
+      "metrics": ["2x qualified RFPs", "-40% time-to-first-response", "Structured briefs for sales"]
+    },
+    "portal-lead-qualification-routing": {
+      "title": "Portal Lead Qualification & Routing",
+      "description": "Handles leads from property portals, qualifies them and routes them to the right agent/property with booked viewings when possible.",
+      "metrics": ["50% faster SLA", "+17% viewings booked", "Automatic agent routing"]
+    },
+    "viewing-follow-up-offer-collector": {
+      "title": "Viewing Follow-Up & Offer Collector",
+      "description": "After a property viewing, follows up to gather feedback, check interest level, and collect offers or applications.",
+      "metrics": ["28% more offers collected", "< 24h feedback turnaround", "Nurtures warm interest"]
+    },
+    "tenant-onboarding-docs-collection": {
+      "title": "Tenant Onboarding & Docs Collection",
+      "description": "Orchestrates the journey from ‘accepted tenant’ to ‘moved in’: documents, contract, payments and key handover instructions.",
+      "metrics": ["-50% admin time", "95% document completion", "Payment links & e-sign ready"]
     }
   },
   "start": {
