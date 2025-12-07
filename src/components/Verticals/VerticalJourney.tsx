@@ -2,6 +2,7 @@
 
 import { useParams } from 'next/navigation'
 import { VERTICALS } from '@/data/verticals'
+import { useTranslations } from 'next-intl'
 
 export function VerticalJourney() {
   const params = useParams<{ id: string }>()
@@ -9,14 +10,27 @@ export function VerticalJourney() {
   const vertical = id ? VERTICALS[id as keyof typeof VERTICALS] : undefined
   const customer = vertical?.journey.customer ?? ''
   const steps = vertical?.journey.steps ?? []
+  const t = useTranslations()
 
   return (
     <section className='py-24 px-6'>
       <div className='container mx-auto'>
         <h2 className='font-heading text-3xl md:text-4xl font-semibold tracking-tight mb-4 text-left'>
-          Meet <span className='text-accent'>{customer}</span>
+          {t.rich('verticals.page.journey.title', {
+            customer: () => (
+              <span className='text-accent'>
+                {id && t.has(`verticals.${id}.journey.customer`)
+                  ? (t(`verticals.${id}.journey.customer`) as string)
+                  : customer}
+              </span>
+            ),
+          })}
         </h2>
-        <p className='text-left text-muted-foreground mb-16'>A day in the life with Prozeso:</p>
+        <p className='text-left text-muted-foreground mb-16'>
+          {t.has('verticals.page.journey.subtitle')
+            ? (t('verticals.page.journey.subtitle') as string)
+            : 'A day in the life with Prozeso:'}
+        </p>
         <div className='space-y-0'>
           {steps.map((step, idx) => (
             <div key={idx} className='flex gap-6'>
@@ -27,8 +41,16 @@ export function VerticalJourney() {
                 {idx < steps.length - 1 && <div className='w-px h-full bg-chart-2 min-h-[60px]' />}
               </div>
               <div className='pb-8'>
-                <h3 className='font-bold text-base mb-2'>{step.stage}</h3>
-                <p className='text-sm text-muted-foreground leading-relaxed'>{step.description}</p>
+                <h3 className='font-bold text-base mb-2'>
+                  {id && t.has(`verticals.${id}.journey.steps.${idx}.stage`)
+                    ? (t(`verticals.${id}.journey.steps.${idx}.stage`) as string)
+                    : step.stage}
+                </h3>
+                <p className='text-sm text-muted-foreground leading-relaxed'>
+                  {id && t.has(`verticals.${id}.journey.steps.${idx}.description`)
+                    ? (t(`verticals.${id}.journey.steps.${idx}.description`) as string)
+                    : step.description}
+                </p>
               </div>
             </div>
           ))}

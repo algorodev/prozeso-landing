@@ -149,77 +149,137 @@
     "receptionist-ai": {
       "title": "Recepcionista IA",
       "description": "Una recepcionista con IA siempre activa que responde llamadas y mensajes, da información y gestiona reservas y citas (alta, cambios y cancelaciones).",
-      "metrics": ["+45% reservas recuperadas", "Cobertura 24/7", "60% más rápida la primera respuesta"]
+      "metrics": [
+        "+45% reservas recuperadas",
+        "Cobertura 24/7",
+        "60% más rápida la primera respuesta"
+      ]
     },
     "missed-call-auto-callback": {
       "title": "Devolución automática de llamadas perdidas",
       "description": "Devuelve automáticamente la llamada o escribe a quienes no pudiste atender para recuperar reservas y leads en lugar de perderlos.",
-      "metrics": ["+30% recuperación de leads", "Devolución < 60s", "+18% conversión tras seguimiento"]
+      "metrics": [
+        "+30% recuperación de leads",
+        "Devolución < 60s",
+        "+18% conversión tras seguimiento"
+      ]
     },
     "appointment-reminder": {
       "title": "Recordatorio de citas",
       "description": "Recordatorios automáticos por SMS, WhatsApp, email o llamada antes de la cita, con confirmación y reprogramación/cancelación con un clic.",
-      "metrics": ["-32% ausencias", "95% tasa de entrega", "Reprogramación en 1 clic"]
+      "metrics": [
+        "-32% ausencias",
+        "95% tasa de entrega",
+        "Reprogramación en 1 clic"
+      ]
     },
     "smart-pre-check-in": {
       "title": "Pre‑check‑in inteligente",
       "description": "Flujo previo a la visita para recopilar datos, formularios y preferencias, y enviar instrucciones personalizadas antes de la llegada.",
-      "metrics": ["70% formularios completados antes de la visita", "-25% tiempo en recepción", "Instrucciones personalizadas"]
+      "metrics": [
+        "70% formularios completados antes de la visita",
+        "-25% tiempo en recepción",
+        "Instrucciones personalizadas"
+      ]
     },
     "no-show-recovery-fee-capture": {
       "title": "Recuperación de ausencias y cobro de tasas",
       "description": "Si un cliente no se presenta, hacemos seguimiento para reprogramar, cobrar una tasa o depósito cuando aplique y registrar el evento.",
-      "metrics": ["-18% fuga de ingresos", "40% reprograman tras el contacto", "Cobro de tasas automatizado"]
+      "metrics": [
+        "-18% fuga de ingresos",
+        "40% reprograman tras el contacto",
+        "Cobro de tasas automatizado"
+      ]
     },
     "smart-waitlist-cancellation-filler": {
       "title": "Lista de espera y relleno por cancelaciones",
       "description": "Aprovecha cancelaciones o huecos libres para contactar automáticamente a la lista de espera o clientes recientes y llenar esos espacios.",
-      "metrics": ["82% huecos rellenados", "+12% ingresos por asiento/hora", "Alcance inmediato a lista de espera"]
+      "metrics": [
+        "82% huecos rellenados",
+        "+12% ingresos por asiento/hora",
+        "Alcance inmediato a lista de espera"
+      ]
     },
     "abandoned-booking-follow-up": {
       "title": "Seguimiento de reservas abandonadas",
       "description": "Si alguien inicia pero no termina una reserva o solicitud, este flujo contacta para ayudarle a completarla.",
-      "metrics": ["+22% finalización de checkout", "< 5 min para el seguimiento", "Recordatorios multicanal"]
+      "metrics": [
+        "+22% finalización de checkout",
+        "< 5 min para el seguimiento",
+        "Recordatorios multicanal"
+      ]
     },
     "reactivation-recalls": {
       "title": "Reactivación y recalls",
       "description": "Recupera clientes inactivos y programa recalls periódicos según tiempo desde la última visita o plan de tratamiento.",
-      "metrics": ["16% tasa de reactivación", "+9% LTV del cliente", "Calendarios de recall automáticos"]
+      "metrics": [
+        "16% tasa de reactivación",
+        "+9% LTV del cliente",
+        "Calendarios de recall automáticos"
+      ]
     },
     "review-booster": {
       "title": "Impulsor de reseñas",
       "description": "Tras una experiencia positiva, pide una reseña y dirige a los clientes satisfechos a Google/portales mientras gestiona en privado el feedback negativo.",
-      "metrics": ["3x reseñas al mes", "+0.4 en valoración media", "Enrutado inteligente de reseñas"]
+      "metrics": [
+        "3x reseñas al mes",
+        "+0.4 en valoración media",
+        "Enrutado inteligente de reseñas"
+      ]
     },
     "billing-and-invoice": {
       "title": "Facturación y cobros",
       "description": "Automatiza el envío de enlaces de pago, la captura de depósitos y el envío de facturas, integrado con tu sistema de facturación.",
-      "metrics": ["2x pagos más rápidos", "-35% facturas vencidas", "Enlaces de pago seguros"]
+      "metrics": [
+        "2x pagos más rápidos",
+        "-35% facturas vencidas",
+        "Enlaces de pago seguros"
+      ]
     },
     "in-stay-concierge-upsell": {
       "title": "Conserje en estancia y venta adicional",
       "description": "Conserje virtual para huéspedes alojados: responde preguntas, gestiona solicitudes y propone ventas adicionales.",
-      "metrics": ["+14% ingresos auxiliares", "30% respuesta más rápida", "Conserje virtual 24/7"]
+      "metrics": [
+        "+14% ingresos auxiliares",
+        "30% respuesta más rápida",
+        "Conserje virtual 24/7"
+      ]
     },
     "group-event-inquiry-handler": {
       "title": "Gestor de consultas para grupos y eventos",
       "description": "Flujo especializado para consultas de grupos y eventos (bodas, conferencias, estancias corporativas), cualificándolas y estructurándolas para ventas.",
-      "metrics": ["2x RFPs cualificados", "-40% tiempo hasta la primera respuesta", "Briefs estructurados para ventas"]
+      "metrics": [
+        "2x RFPs cualificados",
+        "-40% tiempo hasta la primera respuesta",
+        "Briefs estructurados para ventas"
+      ]
     },
     "portal-lead-qualification-routing": {
       "title": "Cualificación y enrutado de leads de portales",
       "description": "Gestiona leads de portales inmobiliarios, los cualifica y los enruta al agente/propiedad adecuados, con visitas agendadas cuando sea posible.",
-      "metrics": ["50% SLA más rápido", "+17% visitas agendadas", "Enrutamiento automático a agentes"]
+      "metrics": [
+        "50% SLA más rápido",
+        "+17% visitas agendadas",
+        "Enrutamiento automático a agentes"
+      ]
     },
     "viewing-follow-up-offer-collector": {
       "title": "Seguimiento de visitas y recogida de ofertas",
       "description": "Tras una visita a la propiedad, realiza seguimiento para recoger feedback, medir interés y recopilar ofertas o solicitudes.",
-      "metrics": ["28% más ofertas recopiladas", "< 24h para feedback", "Nutre el interés cálido"]
+      "metrics": [
+        "28% más ofertas recopiladas",
+        "< 24h para feedback",
+        "Nutre el interés cálido"
+      ]
     },
     "tenant-onboarding-docs-collection": {
       "title": "Onboarding de inquilinos y recogida de documentos",
       "description": "Orquesta el camino de ‘inquilino aceptado’ a ‘instalado’: documentos, contrato, pagos e instrucciones para la entrega de llaves.",
-      "metrics": ["-50% tiempo administrativo", "95% documentos completados", "Enlaces de pago y firma electrónica"]
+      "metrics": [
+        "-50% tiempo administrativo",
+        "95% documentos completados",
+        "Enlaces de pago y firma electrónica"
+      ]
     }
   },
   "start": {
@@ -359,6 +419,616 @@
           "tag": "Seguridad"
         }
       }
+    }
+  },
+  "verticals": {
+    "page": {
+      "hero": {
+        "button": "Comenzar evaluación"
+      },
+      "automations": {
+        "title": "Automatizaciones para <name></name>",
+        "subtitle": "Los flujos que más impacto generan."
+      },
+      "journey": {
+        "title": "Conoce a <customer></customer>",
+        "subtitle": "Un día en la vida con Prozeso:"
+      },
+      "faqs": {
+        "title": "Preguntas <secondary>frecuentes</secondary>"
+      },
+      "impact": {
+        "title": "Impacto para <name></name>",
+        "subtitle": "Resultados reales de negocios como el tuyo."
+      },
+      "reality": {
+        "leftTitle": "Tu realidad <muted>actual</muted>",
+        "rightTitle": "Con <brand>Prozeso</brand>"
+      },
+      "cta": {
+        "title": "¿Listo para <primary>transformar</primary> tu negocio de <secondary></secondary>?",
+        "subtitle": "Empieza con una evaluación gratuita adaptada a tu sector.",
+        "button": "Comienza tu evaluación gratuita"
+      },
+      "notFound": {
+        "title": "Vertical no encontrada",
+        "subtitle": "No pudimos encontrar una vertical con id \"{id}\".",
+        "back": "Volver a verticales"
+      }
+    },
+    "clinics-and-health": {
+      "name": "Clínicas y Salud",
+      "headline": "Automatizaciones para Clínicas y Centros de Salud",
+      "subheading": "Reduce ausencias, gestiona el ingreso del paciente y coordina la atención con excelencia.",
+      "problems": [
+        {
+          "title": "Llamadas de cita perdidas",
+          "items": [
+            "Los pacientes llaman pero no logran contactar en horario de atención",
+            "Casos urgentes quedan sin respuesta o se derivan a otro lugar",
+            "Sin historial de llamadas = frustración repetida del paciente"
+          ]
+        },
+        {
+          "title": "Altas tasas de no‑show",
+          "items": [
+            "25–40% de no‑show es habitual en salud",
+            "Tiempo clínico y capacidad del personal desperdiciados",
+            "Impacta en facturación y continuidad asistencial"
+          ]
+        },
+        {
+          "title": "Complejidad de cumplimiento",
+          "items": [
+            "La verificación manual del seguro consume tiempo del equipo",
+            "Falta de documentación genera problemas de compliance",
+            "Preguntas repetitivas de pacientes consumen recursos"
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "title": "Recepcionista IA 24/7 con cumplimiento HIPAA",
+          "description": "Tu recepcionista IA atiende llamadas de pacientes con seguridad, verifica seguros y agenda citas manteniendo estricta privacidad."
+        },
+        {
+          "title": "Ingreso previo a la cita automatizado",
+          "description": "Recoge historial médico, seguro y encuestas pre‑visita antes de que el paciente llegue. Reduce el check‑in de 15 a 2 minutos."
+        },
+        {
+          "title": "Prevención inteligente del no‑show",
+          "description": "Recordatorios multicanal con confirmación reducen no‑shows en 35%. La reprogramación automática rellena huecos al instante."
+        }
+      ],
+      "journey": {
+        "customer": "Dr. López",
+        "steps": [
+          {
+            "stage": "3 PM - Llama un paciente",
+            "description": "Paciente nuevo llama para agendar. La IA responde, verifica el seguro en tiempo real y recoge el historial médico."
+          },
+          {
+            "stage": "3:10 PM - Ingreso completo",
+            "description": "Cita agendada para la próxima semana. El paciente recibe un enlace seguro para completar formularios en casa."
+          },
+          {
+            "stage": "Día anterior - Recordatorio",
+            "description": "La IA envía recordatorio. El paciente preconfirma y completa una breve encuesta de salud de forma digital."
+          },
+          {
+            "stage": "Día de la cita - Sin espera",
+            "description": "El paciente llega. Check-in en 90 segundos (ingreso ya hecho). El Dr. López tiene todo el contexto antes de entrar."
+          },
+          {
+            "stage": "Después de la visita - Seguimiento",
+            "description": "La IA envía resumen de la visita, instrucciones de medicación y enlace para la próxima cita."
+          },
+          {
+            "stage": "Una semana después - Feedback",
+            "description": "La IA recoge encuesta de satisfacción. Sube el NPS y aumentan las referencias."
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "stat": "35",
+          "suffix": "%",
+          "description": "Reducción de ausencias (no-show)",
+          "quote": "Recordatorios automáticos con confirmación redujeron drásticamente las citas perdidas."
+        },
+        {
+          "stat": "90",
+          "suffix": " mins",
+          "description": "Tiempo administrativo ahorrado al día",
+          "quote": "El equipo, liberado del teléfono, se centra en la atención al paciente."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Cumple con HIPAA y es seguro?",
+          "answer": "Sí. Todos los datos están cifrados end‑to‑end. Usamos hosting compatible con HIPAA, registros de auditoría y controles de acceso. Los datos de tu clínica nunca salen de servidores seguros."
+        },
+        {
+          "question": "¿Se integra con nuestro EHR?",
+          "answer": "Sí. Integramos con Epic, Cerner, NextGen, SimplePractice y las principales plataformas EHR. La sincronización en tiempo real mantiene todo actualizado."
+        },
+        {
+          "question": "¿Cómo gestiona llamadas urgentes?",
+          "answer": "La IA deriva de inmediato a la guardia según reglas y palabras clave de urgencia que defines."
+        },
+        {
+          "question": "¿Pueden los pacientes reprogramar por texto o voz?",
+          "answer": "Claro. Pueden escribir \"reprogramar\" y la IA ofrece horarios disponibles. Por voz también funciona."
+        },
+        {
+          "question": "¿Soporta varios idiomas?",
+          "answer": "Sí. Más de 100 idiomas con autodetección o preferencia del paciente. Clave para comunidades diversas."
+        }
+      ]
+    },
+    "hair-and-beauty": {
+      "name": "Peluquería y Belleza",
+      "headline": "Automatizaciones para Peluquería y Belleza",
+      "subheading": "Atiende llamadas, reprograma ausencias, recupera reservas perdidas y mantén las sillas llenas 24/7",
+      "problems": [
+        {
+          "title": "El teléfono no para de sonar",
+          "items": [
+            "Llamadas perdidas en horas punta con estilistas ocupadas",
+            "Clientes cuelgan sin hablar con nadie",
+            "Sin sistema para capturar esos leads: se van a la competencia"
+          ]
+        },
+        {
+          "title": "Los no‑show hunden tus ingresos",
+          "items": [
+            "15–25% de reservas no se presentan",
+            "Huecos vacíos desperdician tiempo y dinero",
+            "Las estilistas quedan paradas mientras se pierde facturación"
+          ]
+        },
+        {
+          "title": "Seguimientos manuales interminables",
+          "items": [
+            "WhatsApp, SMS y emails desperdigados",
+            "Sin recordatorios → los clientes olvidan su cita",
+            "Cancelaciones tardías demasiado cerca del servicio"
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "title": "Recepcionista IA 24/7 que atiende cada llamada",
+          "description": "Recoge llamadas perdidas, responde FAQs y agenda en el idioma del cliente. Se sienten bien atendidos. No pierdes más leads."
+        },
+        {
+          "title": "Recordatorios inteligentes que reducen no‑show",
+          "description": "Envíos por SMS/WhatsApp 24 horas antes. Si llegarán tarde, la IA reprograma automáticamente. Silla llena, cliente contento."
+        },
+        {
+          "title": "Recuperación instantánea de llamadas perdidas",
+          "description": "La IA devuelve las llamadas que no atendiste. Resultado: 45% de esas llamadas acaban en reservas confirmadas."
+        }
+      ],
+      "journey": {
+        "customer": "María",
+        "steps": [
+          {
+            "stage": "9:00 AM - Entra una llamada",
+            "description": "En hora punta todas las estilistas están ocupadas. La recepcionista IA responde, saluda por nombre y comprueba disponibilidad."
+          },
+          {
+            "stage": "9:05 AM - Reserva confirmada",
+            "description": "La IA ofrece 3 horarios. El cliente reserva para mañana a las 14:00. Confirmación por SMS al instante."
+          },
+          {
+            "stage": "Mañana 13:00 - Recordatorio enviado",
+            "description": "SMS: \"Tu cita es mañana a las 14:00. Responde SÍ para confirmar o llama para reprogramar.\""
+          },
+          {
+            "stage": "Mañana 13:30 - Llega tarde",
+            "description": "El cliente escribe. La IA ofrece reprogramar a las 14:20. El cliente confirma. Se avisa a la estilista."
+          },
+          {
+            "stage": "Mañana 14:20 - Llega el cliente",
+            "description": "Se realiza el servicio. La estilista vende un tratamiento adicional. Se reserva la próxima visita."
+          },
+          {
+            "stage": "Mañana 15:30 - Seguimiento",
+            "description": "La IA solicita reseña. El cliente deja 5 estrellas y menciona a la estilista."
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "stat": "45",
+          "suffix": "%",
+          "description": "Reservas recuperadas de llamadas perdidas",
+          "quote": "En una cadena de 15 salones, la IA gestionó más de 5000 llamadas en un mes, liberando al equipo."
+        },
+        {
+          "stat": "32",
+          "suffix": "%",
+          "description": "Caída del no-show en 30 días",
+          "quote": "Los clientes confirman por WhatsApp. Las llegadas tarde se reprograman automáticamente."
+        },
+        {
+          "stat": "18",
+          "suffix": "%",
+          "description": "Incremento medio de ingresos por visita",
+          "quote": "La IA sugiere tratamientos complementarios y agenda seguimientos antes de que el cliente se vaya."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿La IA habla catalán o valenciano?",
+          "answer": "¡Sí! Soporta 100+ idiomas incluyendo catalán, valenciano, español, inglés y más. El cliente elige o autodetectamos."
+        },
+        {
+          "question": "¿Funciona con mi software de reservas?",
+          "answer": "Integramos con los principales sistemas: Acuity, Mindbody, Simplybook y más. Si no está, hacemos integración a medida."
+        },
+        {
+          "question": "¿Cómo es el precio para salones?",
+          "answer": "Precio transparente: cuota fija mensual + coste por llamada. Sin letra pequeña. La mayoría paga €150–300/mes según volumen."
+        },
+        {
+          "question": "¿Puedo personalizar lo que dice la IA?",
+          "answer": "Por supuesto. Controlas saludo, preguntas, ofertas y tono. Entrenamos la IA con tu lógica de negocio y políticas."
+        },
+        {
+          "question": "¿Y si hay una petición compleja?",
+          "answer": "Transfiere a humano sin fricción. Tú decides cuándo y cómo. La IA comparte el contexto completo de la conversación."
+        }
+      ]
+    },
+    "hotels": {
+      "name": "Hoteles",
+      "headline": "Automatizaciones para Hoteles",
+      "subheading": "Atención al huésped 24/7, gestión de reservas y upsell, todo automatizado.",
+      "problems": [
+        {
+          "title": "Llamadas de reserva perdidas",
+          "items": [
+            "Llamadas en horas pico de check‑in",
+            "Si no contactan, llaman a la competencia",
+            "Llamadas nocturnas quedan sin atender"
+          ]
+        },
+        {
+          "title": "Alta tasa de no‑show",
+          "items": [
+            "Los no‑show desperdician habitaciones e ingresos",
+            "Cancelaciones tardías difíciles de revender",
+            "Sobreventa genera huéspedes insatisfechos"
+          ]
+        },
+        {
+          "title": "Brechas en el servicio",
+          "items": [
+            "FAQs respondidas manualmente",
+            "Peticiones de room service y concierge se acumulan",
+            "Sin seguimiento = oportunidades de upsell perdidas"
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "title": "Concierge IA 24/7",
+          "description": "Gestiona peticiones de habitación, reservas de restaurantes, recomendaciones y upsells. Servicio premium en cada contacto."
+        },
+        {
+          "title": "Gestión de reservas",
+          "description": "Recordatorios inteligentes reducen no‑show. La IA ofrece late check‑in o cambio de fecha automáticamente."
+        },
+        {
+          "title": "Upselling inteligente",
+          "description": "Recomienda upgrades, experiencias y servicios según perfil e historial del huésped."
+        }
+      ],
+      "journey": {
+        "customer": "Emma",
+        "steps": [
+          {
+            "stage": "10 AM - Llamada de reserva",
+            "description": "Emma llama para reservar una suite. La IA contesta, ofrece tipos de habitación y upgrades. Reserva 3 noches."
+          },
+          {
+            "stage": "Día anterior - Recordatorio",
+            "description": "La IA envía recordatorio de check-in con info de parking, recomendaciones y opción de early check-in."
+          },
+          {
+            "stage": "Llegada - Check-in sin fricciones",
+            "description": "Emma llega. Check-in móvil ya hecho por conversación con la IA. Llave lista. La IA sugiere spa."
+          },
+          {
+            "stage": "Durante la estancia - Concierge",
+            "description": "Emma pide por chat una reserva de restaurante. La IA la realiza al instante y gestiona el transporte."
+          },
+          {
+            "stage": "Check-out - Oferta de upgrade",
+            "description": "La IA ofrece 20% de descuento si reserva regreso este mes. Emma confirma para el próximo mes."
+          },
+          {
+            "stage": "Post-estancia - Fidelización",
+            "description": "La IA envía encuesta y recoge reseña 5 estrellas. Emma obtiene puntos y acceso anticipado a ofertas."
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "stat": "35",
+          "suffix": "%",
+          "description": "Reservas por ofertas de upsell",
+          "quote": "La IA recomienda upgrades según historial y preferencias del huésped."
+        },
+        {
+          "stat": "28",
+          "suffix": "%",
+          "description": "Reducción de no-show",
+          "quote": "Recordatorios inteligentes y reprogramación flexible mantienen las habitaciones ocupadas."
+        },
+        {
+          "stat": "40",
+          "suffix": "%",
+          "description": "Aumento de satisfacción del huésped",
+          "quote": "Un concierge 24/7 hace que cada huésped se sienta VIP."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿La IA gestiona peticiones complejas de concierge?",
+          "answer": "Sí. Integra con OpenTable, TheFork y similares. Reserva restaurantes, entradas, y organiza transporte."
+        },
+        {
+          "question": "¿Funciona con nuestro PMS?",
+          "answer": "Integramos con Opera, Marriott Bonvoy, IDeaS y otros. La sincronización en tiempo real evita sobreventas."
+        },
+        {
+          "question": "¿Cuántos idiomas maneja?",
+          "answer": "Más de 100. Los huéspedes eligen o autodetectamos. Ideal para hoteles internacionales."
+        },
+        {
+          "question": "¿Puede hacer upsell según historial?",
+          "answer": "Claro. Aprende preferencias a lo largo de estancias. Si siempre reservan spa, lo ofrece proactivamente."
+        },
+        {
+          "question": "¿Y emergencias fuera de horario?",
+          "answer": "Escala de inmediato a personal de guardia. En no emergencias, registra y avisa al inicio de turno."
+        }
+      ]
+    },
+    "restaurants": {
+      "name": "Restaurantes",
+      "headline": "Automatizaciones para Restaurantes",
+      "subheading": "No pierdas ninguna reserva. Mesas llenas 24/7 y sin caos manual.",
+      "problems": [
+        {
+          "title": "Llamadas de reserva perdidas",
+          "items": [
+            "El teléfono suena en servicio y no se puede atender",
+            "Los buzones no se responden: el cliente reserva en otro lugar",
+            "Horas punta de cena = pico de llamadas = reservas perdidas"
+          ]
+        },
+        {
+          "title": "No‑shows vacían mesas",
+          "items": [
+            "No‑shows del 20–30% arruinan la rentabilidad",
+            "Mesas reservadas que nunca se ocupan",
+            "Preparación desperdiciada y equipo parado"
+          ]
+        },
+        {
+          "title": "Caos en las reservas",
+          "items": [
+            "Varios sistemas = dobles reservas y huecos",
+            "Errores por entrada manual y mala comunicación",
+            "Clientes descontentos rechazados pese a mesas libres"
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "title": "Anfitrión IA 24/7 que atiende cada llamada",
+          "description": "Ofrece mesas disponibles y reserva directo en tu sistema. Sin llamadas perdidas. Sin entrada manual."
+        },
+        {
+          "title": "Recordatorios reducen no‑shows un 30%",
+          "description": "Recordatorios por SMS/WhatsApp 24 y 2 horas antes. Confirmación o reprogramación. Mesas llenas en cada servicio."
+        },
+        {
+          "title": "Prevención de sobre‑reservas",
+          "description": "Disponibilidad en tiempo real evita dobles reservas. La IA sugiere horarios alternativos con inteligencia."
+        }
+      ],
+      "journey": {
+        "customer": "Carlos",
+        "steps": [
+          {
+            "stage": "18:30 - Llamada entrante",
+            "description": "Cliente llama para el viernes a las 20:00. La línea está ocupada: la IA contesta de inmediato."
+          },
+          {
+            "stage": "18:32 - Reserva confirmada",
+            "description": "La IA confirma grupo (6 personas), preferencia (ventana) y cumpleaños. SMS de confirmación enviado."
+          },
+          {
+            "stage": "Viernes 19:00 - Recordatorio enviado",
+            "description": "WhatsApp: \"Tu mesa para 6 a las 20:00 está lista. Especial: ¡Tarta de cumpleaños!\""
+          },
+          {
+            "stage": "Viernes 19:55 - Confirmación",
+            "description": "La IA envía recordatorio final. El cliente confirma. Cocina recibe aviso 5 minutos antes para el postre especial."
+          },
+          {
+            "stage": "Viernes 20:00 - Llegada",
+            "description": "Mesa preparada. El equipo sabe que es cumpleaños. Trato especial = cliente fiel."
+          },
+          {
+            "stage": "Después de cenar - Seguimiento",
+            "description": "La IA pide reseña y envía 15% de descuento para la próxima visita. El cliente vuelve a reservar."
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "stat": "40",
+          "suffix": "%",
+          "description": "Reservas recuperadas de llamadas perdidas",
+          "quote": "Durante el servicio, la IA gestionó 200+ llamadas que habrían ido al buzón."
+        },
+        {
+          "stat": "30",
+          "suffix": "%",
+          "description": "Reducción de no-show",
+          "quote": "Recordatorios y cobro de depósito eliminaron la mayoría de cancelaciones de última hora."
+        },
+        {
+          "stat": "22",
+          "suffix": "%",
+          "description": "Mejora en rotación de mesas",
+          "quote": "Disponibilidad en tiempo real y asientos optimizados llenaron más mesas cada noche."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Puede la IA hacer upsell de vino o asientos premium?",
+          "answer": "Sí. Entrenamos con tu carta, estrategia de upsell y precios. Sugiere mesas según tamaño del grupo y hora."
+        },
+        {
+          "question": "¿Se integra con OpenTable o Resy?",
+          "answer": "Sí. Sincronizamos con OpenTable, Resy, Toast y otras plataformas. Todo fluye a un calendario unificado."
+        },
+        {
+          "question": "¿Idiomas específicos del restaurante?",
+          "answer": "Más de 100 idiomas soportados, incluidos dialectos. Autodetección o elección del cliente."
+        },
+        {
+          "question": "¿Gestiona alergias o peticiones especiales?",
+          "answer": "Sí. Pregunta por alergias, las registra de forma segura y avisa a cocina. Cliente seguro y atendido."
+        },
+        {
+          "question": "¿Cómo manejan las horas pico?",
+          "answer": "Atiende llamadas concurrentes ilimitadas. En picos, hace cola y devuelve llamadas con prioridad."
+        }
+      ]
+    },
+    "real-estate": {
+      "name": "Inmobiliarias",
+      "headline": "Automatizaciones para Inmobiliarias",
+      "subheading": "No pierdas leads. Automatiza consultas, visitas y seguimiento en todo tu porfolio.",
+      "problems": [
+        {
+          "title": "Llamadas perdidas = operaciones perdidas",
+          "items": [
+            "Los leads llaman cuando estás en otra visita",
+            "Cuando devuelves la llamada ya contactaron a 3 competidores",
+            "Los buzones se acumulan: leads críticos enterrados"
+          ]
+        },
+        {
+          "title": "Gestión manual de consultas",
+          "items": [
+            "Emails, SMS y llamadas repartidas por dispositivos",
+            "Sin sistema unificado de seguimiento = leads que se escapan",
+            "Olvidar detalles de inmuebles hace perder tiempo en cada llamada"
+          ]
+        },
+        {
+          "title": "Caos al coordinar visitas",
+          "items": [
+            "Idas y vueltas para cuadrar horarios",
+            "No‑shows que te hacen perder horas",
+            "Sincronización manual con calendarios = errores"
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "title": "IA atiende leads entrantes 24/7",
+          "description": "Responde cada llamada, cualifica, contesta preguntas y agenda visitas directamente en tu calendario."
+        },
+        {
+          "title": "Coordinación de visitas automatizada",
+          "description": "Los compradores reservan al instante por web o voz. La IA confirma y envía indicaciones automáticamente."
+        },
+        {
+          "title": "Seguimiento automatizado",
+          "description": "Tras la visita, envía fichas, info de financiación y recordatorios. Ningún trato se cae por el camino."
+        }
+      ],
+      "journey": {
+        "customer": "Juan",
+        "steps": [
+          {
+            "stage": "11 AM - Llama un lead",
+            "description": "Juan está en una visita. La IA atiende a un nuevo comprador, cualifica presupuesto y necesidades y propone 3 inmuebles."
+          },
+          {
+            "stage": "11:05 AM - Visita agendada",
+            "description": "El lead elige 2 inmuebles. La IA agenda visitas seguidas y envía invitaciones con indicaciones."
+          },
+          {
+            "stage": "Después de la visita - Seguimiento",
+            "description": "La IA envía fichas, calculadora hipotecaria y recoge el interés por inmueble."
+          },
+          {
+            "stage": "Día siguiente - Nutrición",
+            "description": "La IA hace seguimiento, ofrece inmuebles similares y precalifica financiación."
+          },
+          {
+            "stage": "Oferta",
+            "description": "La IA coordina documentos y plazos y deriva dudas complejas a Juan al momento."
+          },
+          {
+            "stage": "Cierre - Onboarding",
+            "description": "El comprador recibe checklist de mudanza y guía para dar de alta suministros automáticamente."
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "stat": "50",
+          "suffix": "%",
+          "description": "SLA más rápido en leads de portales",
+          "quote": "Los leads se atienden al instante con cualificación y propuestas de visita."
+        },
+        {
+          "stat": "17",
+          "suffix": "%",
+          "description": "Aumento de visitas agendadas",
+          "quote": "El ruteo y la agenda automática mantienen los calendarios llenos sin idas y vueltas."
+        },
+        {
+          "stat": "2x",
+          "suffix": "",
+          "description": "RFPs cualificados para grupos/eventos",
+          "quote": "La toma de requisitos estructurada genera briefs accionables para ventas."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿La IA responde preguntas detalladas del inmueble?",
+          "answer": "Sí. Cargamos m2, gastos, historial fiscal, etc. Responde con precisión y agenda visitas."
+        },
+        {
+          "question": "¿Se integra con MLS y CRM?",
+          "answer": "Integramos con Zillow, Trulia, Redfin y CRMs como Salesforce o Follow Up Boss. Los listings quedan sincronizados."
+        },
+        {
+          "question": "¿Coordina visitas entre agentes?",
+          "answer": "Gestiona solicitudes de todos los agentes, evita dobles reservas y sincroniza calendarios en tiempo real."
+        },
+        {
+          "question": "¿Gestiona firmas de documentos?",
+          "answer": "Sí. Recoge documentos, los envía para firma electrónica y los almacena de forma segura. Ideal para onboarding de inquilinos."
+        },
+        {
+          "question": "¿Y con compradores internacionales?",
+          "answer": "Más de 100 idiomas soportados. Autodetección o elección. Facilita cierres con clientes internacionales."
+        }
+      ]
     }
   }
 }

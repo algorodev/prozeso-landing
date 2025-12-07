@@ -7,14 +7,22 @@ import type { ComponentType } from 'react'
 import { useParams } from 'next/navigation'
 import { VERTICALS } from '@/data/verticals'
 import VerticalHeroBackground from '@/components/Verticals/VerticalHeroBackground'
+import { useTranslations } from 'next-intl'
 
 export function VerticalHero() {
   const params = useParams<{ id: string }>()
   const id = Array.isArray(params?.id) ? params.id[0] : params?.id
   const vertical = id ? VERTICALS[id as keyof typeof VERTICALS] : undefined
   const Icon = (vertical?.icon as unknown as ComponentType<{ className?: string }>) || Building2
-  const headline = vertical?.headline ?? ''
-  const subheading = vertical?.subheading ?? ''
+  const t = useTranslations()
+  const headlineKey = id ? `verticals.${id}.headline` : undefined
+  const subheadingKey = id ? `verticals.${id}.subheading` : undefined
+  const headline = headlineKey && t.has(headlineKey)
+    ? (t(headlineKey) as string)
+    : (vertical?.headline ?? '')
+  const subheading = subheadingKey && t.has(subheadingKey)
+    ? (t(subheadingKey) as string)
+    : (vertical?.subheading ?? '')
   const slug = vertical?.slug ?? ''
 
   return (
@@ -44,7 +52,7 @@ export function VerticalHero() {
                 asChild
               >
                 <LocalizedLink href={`/start?vertical=${slug}`}>
-                  Start assessment
+                  {t.has('verticals.page.hero.button') ? (t('verticals.page.hero.button') as string) : 'Start assessment'}
                   <ArrowRight className='w-5 h-5' />
                 </LocalizedLink>
               </Button>
