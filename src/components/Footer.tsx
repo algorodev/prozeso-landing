@@ -1,14 +1,12 @@
 'use client'
 
-import logoBlanco from '@/assets/logo-blanco.svg'
+import Logo from '@/components/Logo'
 import { LocalizedLink } from '@/i18n/LocalizedLink'
 import { Instagram, Linkedin } from 'lucide-react'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 const Footer = () => {
 	const t = useTranslations('footer')
-	const h = useTranslations('header')
 	const year = new Date().getFullYear()
 
 	return (
@@ -17,11 +15,7 @@ const Footer = () => {
 				<div className='flex flex-col md:flex-row justify-between items-start gap-12'>
 					<div className='space-y-4'>
 						<LocalizedLink href='/' className='flex items-center gap-2 font-bold text-lg tracking-tight'>
-							<Image
-								src={logoBlanco}
-								width={120}
-								alt={h('logoAlt')}
-							/>
+							<Logo />
 						</LocalizedLink>
 						<p className='text-sm text-muted-foreground max-w-xs'>
 							{t('tagline')}
@@ -74,7 +68,7 @@ const Footer = () => {
 						   target='_blank'>
 							<Instagram className='w-5 h-5'/>
 						</a>
-						<a href='https://linkedin.com/prozeso' className='hover:text-foreground transition-colors' target='_blank'>
+						<a href='https://www.linkedin.com/company/prozeso' className='hover:text-foreground transition-colors' target='_blank'>
 							<Linkedin className='w-5 h-5'/>
 						</a>
 					</div>

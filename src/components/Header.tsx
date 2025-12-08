@@ -1,11 +1,10 @@
 'use client'
 
+import Logo from '@/components/Logo'
 import type { Route } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
-import logoBlanco from '@/assets/logo-blanco.svg'
 import { DesktopNav } from '@/components/DesktopNav'
 import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 import { MobileNav } from '@/components/MobileNav'
@@ -66,11 +65,7 @@ export const Header = () => {
 						href='/'
 						className='flex items-center gap-2'
 					>
-						<Image
-							src={logoBlanco}
-							width={120}
-							alt={t('logoAlt')}
-						/>
+						<Logo />
 					</LocalizedLink>
 				</div>
 				<nav className='hidden md:flex items-center gap-1 ml-2'>
