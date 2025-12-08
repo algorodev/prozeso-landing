@@ -8,6 +8,8 @@ import { AutomationPoweredBy } from '@/components/Automations/Detail/AutomationP
 import { AutomationBestFor } from '@/components/Automations/Detail/AutomationBestFor'
 import { AutomationCTA } from '@/components/Automations/Detail/AutomationCTA'
 import { LocalizedLink } from '@/i18n/LocalizedLink'
+import type { Metadata } from 'next'
+import { AUTOMATIONS_DETAILS } from '@/data/automations'
 
 type Props = {
 	params: Promise<{ id: string; }>
@@ -30,6 +32,38 @@ const ALLOWED_AUTOMATION_IDS = [
 	'viewing-follow-up-offer-collector',
 	'tenant-onboarding-docs-collection'
 ]
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+	const { id } = await params
+	const automation = AUTOMATIONS_DETAILS.find((a) => a.slug === id)
+
+	if (!automation) {
+		return {
+			title: 'Automation not found',
+			description: `We couldn't find an automation with id "${id}".`,
+		}
+	}
+
+	const baseTitle = automation.name || automation.headline || 'Automation'
+	const title = `${baseTitle} · Prozeso Automations`
+	const description = automation.description || automation.subheading || automation.problem || ''
+
+	return {
+		title,
+		description,
+		openGraph: {
+			title,
+			description,
+			type: 'article',
+			url: `/automations/${id}`,
+		},
+		twitter: {
+			card: 'summary_large_image',
+			title,
+			description,
+		},
+	}
+}
 
 export default async function AutomationDetailPage({ params }: Props) {
 	const { id } = await params

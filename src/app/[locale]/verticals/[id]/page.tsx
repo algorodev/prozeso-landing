@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const vertical = isAllowed ? (VERTICALS as Record<string, any>)[id] : undefined
 
     const baseTitle = vertical?.headline || vertical?.name || 'Verticals'
-    const title = `${baseTitle} | Prospector`
+    const title = `${baseTitle} | Prozeso`
     const description =
         vertical?.description ||
         vertical?.subheading ||

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 import { VERTICALS } from "@/data/verticals";
+import { AUTOMATIONS_DETAILS } from "@/data/automations";
 
 function normalizeBaseUrl(url: string) {
   return url.replace(/\/$/, "");
@@ -47,6 +48,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const verticalIds = Object.keys(VERTICALS ?? {});
   for (const id of verticalIds) {
     const path = `/verticals/${id}`;
+    const languages: Record<string, string> = Object.fromEntries(
+      locales.map((l) => [l, `${siteUrl}/${l}${path}`]),
+    );
+
+    for (const l of locales) {
+      const url = `${siteUrl}/${l}${path}`;
+      items.push({
+        url,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: {
+          languages,
+        },
+      });
+    }
+  }
+
+  for (const { slug } of AUTOMATIONS_DETAILS) {
+    const path = `/automations/${slug}`;
     const languages: Record<string, string> = Object.fromEntries(
       locales.map((l) => [l, `${siteUrl}/${l}${path}`]),
     );
