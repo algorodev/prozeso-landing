@@ -75,13 +75,13 @@ export default function AutomationCard({ automation }: { automation: AutomationI
 					{localizedVerticals.slice(0, 2).map((vertical) => (
 						<span
 							key={vertical}
-							className='text-xs px-2.5 py-1 rounded-full bg-lavender/10 text-lavender border border-lavender/20'
+							className='text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20'
 						>
               {vertical}
             </span>
 					))}
 					{localizedVerticals.length > 2 && (
-						<span className='text-xs px-2.5 py-1 rounded-full bg-cyan/10 text-cyan border border-cyan/20'>
+						<span className='text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20'>
               +{localizedVerticals.length - 2}
             </span>
 					)}

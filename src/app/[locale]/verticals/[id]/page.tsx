@@ -70,7 +70,7 @@ export default async function VerticalPage({ params }: Props) {
                     {t('notFound.subtitle', { id })}
                 </p>
                 <LocalizedLink
-                    href='/verticals'
+                    href='/'
                     className='mt-6 inline-flex rounded-xl bg-accent px-4 py-2 text-accent-foreground button-primary-text'
                 >
                     {t('notFound.back')}

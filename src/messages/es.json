@@ -453,12 +453,12 @@
       "notFound": {
         "title": "Vertical no encontrada",
         "subtitle": "No pudimos encontrar una vertical con id \"{id}\".",
-        "back": "Volver a verticales"
+        "back": "Volver a inicio"
       }
     },
     "clinics-and-health": {
       "name": "Clínicas y Salud",
-      "headline": "Automatizaciones para Clínicas y Centros de Salud",
+      "headline": "<primary>Automatizaciones</primary> para <secondary>Clínicas y Centros de Salud</secondary>",
       "subheading": "Reduce ausencias, gestiona el ingreso del paciente y coordina la atención con excelencia.",
       "problems": [
         {
@@ -568,7 +568,7 @@
     },
     "hair-and-beauty": {
       "name": "Peluquería y Belleza",
-      "headline": "Automatizaciones para Peluquería y Belleza",
+      "headline": "<primary>Automatizaciones</primary> para <secondary>Peluquería y Belleza</secondary>",
       "subheading": "Atiende llamadas, reprograma ausencias, recupera reservas perdidas y mantén las sillas llenas 24/7",
       "problems": [
         {
@@ -684,7 +684,7 @@
     },
     "hotels": {
       "name": "Hoteles",
-      "headline": "Automatizaciones para Hoteles",
+      "headline": "<primary>Automatizaciones</primary> para <secondary>Hoteles</secondary>",
       "subheading": "Atención al huésped 24/7, gestión de reservas y upsell, todo automatizado.",
       "problems": [
         {
@@ -800,7 +800,7 @@
     },
     "restaurants": {
       "name": "Restaurantes",
-      "headline": "Automatizaciones para Restaurantes",
+      "headline": "<primary>Automatizaciones</primary> para <secondary>Restaurantes</secondary>",
       "subheading": "No pierdas ninguna reserva. Mesas llenas 24/7 y sin caos manual.",
       "problems": [
         {
@@ -916,7 +916,7 @@
     },
     "real-estate": {
       "name": "Inmobiliarias",
-      "headline": "Automatizaciones para Inmobiliarias",
+      "headline": "<primary>Automatizaciones</primary> para <secondary>Inmobiliarias</secondary>",
       "subheading": "No pierdas leads. Automatiza consultas, visitas y seguimiento en todo tu porfolio.",
       "problems": [
         {

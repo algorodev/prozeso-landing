@@ -17,9 +17,6 @@ export function VerticalHero() {
   const t = useTranslations()
   const headlineKey = id ? `verticals.${id}.headline` : undefined
   const subheadingKey = id ? `verticals.${id}.subheading` : undefined
-  const headline = headlineKey && t.has(headlineKey)
-    ? (t(headlineKey) as string)
-    : (vertical?.headline ?? '')
   const subheading = subheadingKey && t.has(subheadingKey)
     ? (t(subheadingKey) as string)
     : (vertical?.subheading ?? '')
@@ -33,15 +30,12 @@ export function VerticalHero() {
           <div className='text-left'>
             <Icon className='w-16 h-16 mb-8 text-foreground' />
             <h1 className='font-heading text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight leading-[0.95] text-balance mb-8'>
-              {headline.split(' ').map((word, idx) => {
-                const lower = word.toLowerCase()
-                if (lower.includes('automat')) {
-                  return (
-                    <span key={idx} className='text-primary'> {word}</span>
-                  )
-                }
-                return <span key={idx}> {word}</span>
-              })}
+              {headlineKey && t.has(headlineKey)
+                ? (t.rich(headlineKey, {
+                  primary: (chunks) => <span className='text-primary'>{chunks}</span>,
+                  secondary: (chunks) => <span className='text-secondary'>{chunks}</span>,
+                }))
+                : (vertical?.headline ?? '')}
             </h1>
             <p className='text-lg md:text-xl text-muted-foreground max-w-2xl lg:max-w-none mb-12 leading-relaxed'>
               {subheading}

@@ -453,12 +453,12 @@
       "notFound": {
         "title": "Vertical not found",
         "subtitle": "We couldn't find a vertical with id \"{id}\".",
-        "back": "Back to verticals"
+        "back": "Back home"
       }
     },
     "clinics-and-health": {
       "name": "Clinics & Health",
-      "headline": "Automations for Clinics & Health Practices",
+      "headline": "<primary>Automations</primary> for <secondary>Clinics & Health Practices</secondary>",
       "subheading": "Reduce no-shows, handle patient intake, and deliver exceptional care coordination.",
       "problems": [
         {
@@ -568,7 +568,7 @@
     },
     "hair-and-beauty": {
       "name": "Hair & Beauty",
-      "headline": "Automations for Hair & Beauty",
+      "headline": "<primary>Automations</primary> for <secondary>Hair & Beauty</secondary>",
       "subheading": "Handle calls, reschedule no-shows, recover missed bookings, and keep your chairs full 24/7",
       "problems": [
         {
@@ -684,7 +684,7 @@
     },
     "hotels": {
       "name": "Hotels",
-      "headline": "Automations for Hotels",
+      "headline": "<primary>Automations</primary> for <secondary>Hotels</secondary>",
       "subheading": "24/7 guest support, reservation management, and upsell opportunities—all automated.",
       "problems": [
         {
@@ -800,7 +800,7 @@
     },
     "restaurants": {
       "name": "Restaurants",
-      "headline": "Automations for Restaurants",
+      "headline": "<primary>Automations</primary> for <secondary>Restaurants</secondary>",
       "subheading": "Never miss a reservation. Fill your tables 24/7 and eliminate manual booking chaos.",
       "problems": [
         {
@@ -916,7 +916,7 @@
     },
     "real-estate": {
       "name": "Real Estate",
-      "headline": "Automations for Real Estate",
+      "headline": "<primary>Automations</primary> for <secondary>Real Estate</secondary>",
       "subheading": "Never miss a lead. Automate property inquiries, showings, and follow-up across your portfolio.",
       "problems": [
         {
