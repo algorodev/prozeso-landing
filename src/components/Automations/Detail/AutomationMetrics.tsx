@@ -1,10 +1,12 @@
 'use client'
 
 import { useAutomationFromParams } from './useAutomationFromParams'
+import { useTranslations } from 'next-intl'
 
 export function AutomationMetrics() {
-  const { automation } = useAutomationFromParams()
+  const { automation, id } = useAutomationFromParams()
   if (!automation || !automation.metrics?.length) return null
+  const t = useTranslations(`automations.details.${id}`)
 
   return (
     <section className='py-24 px-6'>
@@ -25,7 +27,7 @@ export function AutomationMetrics() {
                     </span>
                   )}
                 </div>
-                <p className='text-sm text-muted-foreground'>{metric.description}</p>
+                <p className='text-sm text-muted-foreground'>{t(`metrics.${idx}.description`, { default: metric.description })}</p>
               </div>
             )
           })}

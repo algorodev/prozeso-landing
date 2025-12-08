@@ -280,6 +280,1320 @@
         "95% document completion",
         "Payment links & e-sign ready"
       ]
+    },
+    "details": {
+      "common": {
+        "talkToUs": "Talk to us",
+        "readyToGetStarted": "Ready to get <primary>started</primary>?",
+        "whatYouGet": "What you <primary>get</primary>",
+        "theProblem": "The Problem",
+        "theSolution": "The Solution",
+        "coreFeatures": "Core features",
+        "realWorldExamples": "Real-world <accent>examples</accent>",
+        "poweredBy": "Powered by",
+        "bestFor": "Best <primary>for</primary>"
+      },
+      "receptionist-ai": {
+        "name": "Receptionist AI",
+        "description": "Your 24/7 AI-powered answering service",
+        "headline": "Never Miss Another Call",
+        "subheading": "Your AI Receptionist answers every call, books appointments, answers FAQs, and qualifies leads—24/7, in any language.",
+        "problem": "Your phone rings but you're helping customers. Voicemail piles up. Calls go to competitors. You lose 40-50% of inbound leads simply because nobody picked up.",
+        "solution": "Your AI receptionist picks up every call instantly. It greets by name, understands the customer's need, answers FAQs, and books appointments directly into your calendar.",
+        "outcomes": {
+          "0": "Capture 100% of inbound calls, 24/7",
+          "1": "Book appointments directly—no manual follow-up needed",
+          "2": "Answer FAQs in 100+ languages",
+          "3": "Qualify leads before they reach your team",
+          "4": "Track every conversation for compliance & improvement"
+        },
+        "tools": {
+          "0": "ElevenLabs",
+          "1": "Twilio",
+          "2": "Calendar APIs",
+          "3": "CRM Integration"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Hair Salon Scenario",
+            "scenario": "Customer calls a busy salon at 3 PM. All stylists are with clients. Instead of voicemail, the AI receptionist answers: \"Hi Sarah! Welcome to Bella's Salon. How can I help you today?\"",
+            "result": "Customer books appointment for Saturday. AI confirms and sends SMS reminder. Revenue captured that would have been lost."
+          },
+          "1": {
+            "title": "Restaurant Scenario",
+            "scenario": "Party of 6 calls during dinner service. Host is busy. AI picks up, checks availability, offers tables, and books the reservation.",
+            "result": "Table filled. Customer satisfaction high. Restaurant never stops answering phones."
+          },
+          "2": {
+            "title": "Real Estate Scenario",
+            "scenario": "Hot lead calls when agent is showing property. Normally goes to voicemail. Instead, AI qualifies them, answers property questions, and books showing.",
+            "result": "Deal moves forward immediately. No delay. No lost lead. +50% faster conversion."
+          },
+          "3": {
+            "title": "Clinic Scenario",
+            "scenario": "Patient calls to ask about availability for a same‑week appointment and insurance coverage. AI answers FAQs and books a slot.",
+            "result": "Patient scheduled instantly, fewer front‑desk interruptions."
+          },
+          "4": {
+            "title": "Hotel Scenario",
+            "scenario": "Guest calls after hours to ask about late check‑in and parking. AI provides details and adds the reservation note.",
+            "result": "Guest reassured, staff sleeps, expectations set."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Bookings from captured calls"
+          },
+          "1": {
+            "description": "Always available, never tired"
+          },
+          "2": {
+            "description": "Languages supported"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Natural Conversation",
+            "description": "Sounds like a real person. Understands context, asks follow-ups, never feels robotic."
+          },
+          "1": {
+            "title": "Multi-Language Support",
+            "description": "Detect or customer-selected language. Catalan, Valencian, Spanish, English, Arabic, Mandarin—all supported."
+          },
+          "2": {
+            "title": "Direct Calendar Integration",
+            "description": "Checks real-time availability and books directly. Syncs with Google Calendar, Outlook, or your booking software."
+          },
+          "3": {
+            "title": "Smart Qualification",
+            "description": "Asks the right questions to qualify leads. Transfers hot prospects to your team immediately."
+          },
+          "4": {
+            "title": "FAQ Knowledge Base",
+            "description": "Answers common questions about hours, pricing, services, policies without human intervention."
+          },
+          "5": {
+            "title": "After-Hours Handling",
+            "description": "Can take emergency calls, store messages, or route to on-call staff based on urgency."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Will customers know they're talking to an AI?",
+            "answer": "The experience is seamless. Customers don't need to know—they're helped, booked, and happy. Transparency is optional."
+          },
+          "1": {
+            "question": "What if the customer wants a human?",
+            "answer": "Instant warm transfer. The AI shares the full conversation context with your team. Human never starts from zero."
+          },
+          "2": {
+            "question": "How does it learn about my business?",
+            "answer": "We train the AI with your specific business info: hours, services, pricing, policies, team names, common FAQs. Setup takes 30 minutes."
+          },
+          "3": {
+            "question": "Does it work with my existing phone system?",
+            "answer": "Yes. We integrate with Twilio, VoIP, traditional phone lines—any setup. Calls route through the AI then to you."
+          },
+          "4": {
+            "question": "What about GDPR and HIPAA compliance?",
+            "answer": "Full compliance. All calls encrypted, stored securely, accessible only to authorized staff. Regular audits ensure standards."
+          },
+          "5": {
+            "question": "Can I customize what the AI says?",
+            "answer": "Complete control. You write scripts, define responses, set tone. We train the AI to sound like your business."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Receptionist AI can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "missed-call-auto-callback": {
+        "name": "Missed Call Auto Callback",
+        "description": "Automatically recover missed calls with instant callbacks and smart messaging.",
+        "headline": "Turn Missed Calls Into Bookings",
+        "subheading": "When you miss a call, the workflow calls back or messages immediately, helps the customer, and books if relevant.",
+        "problem": "Missed calls are missed revenue. Most callers never leave a voicemail and won’t call again.",
+        "solution": "Trigger an instant callback or SMS/WhatsApp message, identify intent, answer questions, and complete the booking.",
+        "outcomes": {
+          "0": "+30% lead recovery",
+          "1": "Under 60s automatic follow-up",
+          "2": "Reduce manual callbacks",
+          "3": "Protect reputation with fast responses"
+        },
+        "tools": {
+          "0": "Twilio",
+          "1": "WhatsApp Business API",
+          "2": "Calendar APIs",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Clinic Missed Call",
+            "scenario": "Clinic misses a call during lunch. System texts within 20s, offers to book. Patient confirms a slot.",
+            "result": "+1 booking recovered, no staff effort."
+          },
+          "1": {
+            "title": "Salon Callback",
+            "scenario": "Hair salon misses a call during color service; auto‑text offers to rebook with preferred stylist.",
+            "result": "Appointment saved within 2 minutes."
+          },
+          "2": {
+            "title": "Restaurant Callback",
+            "scenario": "Dinner rush missed call; system calls back and books a table for 4 at 21:30.",
+            "result": "Covers a cancellation and keeps the table filled."
+          },
+          "3": {
+            "title": "Hotel Inquiry Recovery",
+            "scenario": "Front desk misses international call; WhatsApp auto‑reply answers and secures a two‑night stay.",
+            "result": "Direct booking captured without OTA fees."
+          },
+          "4": {
+            "title": "Real Estate Lead Recovery",
+            "scenario": "Agent misses a new buyer call; workflow texts, qualifies budget/timing, and books a viewing.",
+            "result": "Hot lead retained and scheduled."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Lead recovery uplift"
+          },
+          "1": {
+            "description": "Typical follow-up time"
+          },
+          "2": {
+            "description": "Conversion boost post follow-up"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Instant Trigger",
+            "description": "Detects missed calls and reacts immediately."
+          },
+          "1": {
+            "title": "Smart Channel",
+            "description": "Decides whether to call or message based on context and preferences."
+          },
+          "2": {
+            "title": "Auto-Booking",
+            "description": "Books, reschedules, or cancels directly in your calendar."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Can it avoid duplicate callbacks?",
+            "answer": "Yes, it deduplicates and rate-limits per caller."
+          },
+          "1": {
+            "question": "What if voicemail exists?",
+            "answer": "It can parse voicemails and respond accordingly."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Missed Call Auto Callback can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "appointment-reminder": {
+        "name": "Appointment Reminder",
+        "description": "Automated multi-channel reminders with confirmations and easy rescheduling.",
+        "headline": "Slash No‑Shows",
+        "subheading": "Send timely reminders via SMS, WhatsApp, email, or voice with 1‑tap confirm/reschedule.",
+        "problem": "No‑shows waste time and revenue. Manual reminders are error‑prone and inconsistent.",
+        "solution": "Automate reminders with smart timing, confirmations, and frictionless rescheduling across channels.",
+        "outcomes": {
+          "0": "Reduce no‑shows by 30%+",
+          "1": "Improve schedule utilization",
+          "2": "Fewer manual calls and texts"
+        },
+        "tools": {
+          "0": "Twilio",
+          "1": "WhatsApp Business API",
+          "2": "Email (Sendgrid)"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Salon Reminder",
+            "scenario": "SMS 24h and 3h before appointment with 1‑tap confirm.",
+            "result": "32% fewer no‑shows."
+          },
+          "1": {
+            "title": "Restaurant Reminder",
+            "scenario": "WhatsApp reminder 6h before dinner with modify/cancel link.",
+            "result": "Fewer empty tables, smoother turns."
+          },
+          "2": {
+            "title": "Clinic Reminder",
+            "scenario": "SMS 48h + 24h with pre‑visit instructions.",
+            "result": "Lower no‑shows and prepared patients."
+          },
+          "3": {
+            "title": "Hotel Spa Reminder",
+            "scenario": "In‑stay spa booking reminder 2h prior with add‑to‑calendar.",
+            "result": "Higher utilization of spa therapists."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "No‑show reduction"
+          },
+          "1": {
+            "description": "Delivery rate"
+          },
+          "2": {
+            "description": "Ease of rescheduling"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Smart Timing",
+            "description": "Sends at the best time based on appointment type and client behavior."
+          },
+          "1": {
+            "title": "Multi‑Channel",
+            "description": "SMS, WhatsApp, email, or voice—whatever works best for your client."
+          },
+          "2": {
+            "title": "1‑Tap Actions",
+            "description": "Confirm or reschedule in one tap—no friction."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Can it write in my brand voice?",
+            "answer": "Yes, templates are fully customizable and can match your tone."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Appointment Reminder can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "smart-pre-check-in": {
+        "name": "Smart Pre‑Check‑In",
+        "description": "Collect forms, preferences, and consents pre‑visit and share tailored instructions.",
+        "headline": "Arrive Prepared",
+        "subheading": "Reduce front‑desk time and improve experience with pre‑visit workflows.",
+        "problem": "Paper forms and last‑minute data collection slow everything down.",
+        "solution": "Send secure links to complete forms, upload IDs, and set preferences ahead of time.",
+        "outcomes": {
+          "0": "70%+ forms completed pre‑visit",
+          "1": "Shorter check‑in lines",
+          "2": "Higher CSAT from smoother arrivals"
+        },
+        "tools": {
+          "0": "Typeform",
+          "1": "DocuSign",
+          "2": "Secure Upload",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Clinic Intake",
+            "scenario": "Medical intake and consent collected 24h prior.",
+            "result": "-25% front‑desk time."
+          },
+          "1": {
+            "title": "Salon Pre‑Consult",
+            "scenario": "Form captures hair history and inspiration photos before visit.",
+            "result": "Stylist arrives prepared; better outcomes."
+          },
+          "2": {
+            "title": "Restaurant Pre‑Order",
+            "scenario": "Group pre‑selects menu and dietary notes day before.",
+            "result": "Service speeds up; fewer errors."
+          },
+          "3": {
+            "title": "Hotel Pre‑Arrival",
+            "scenario": "Guest uploads ID, selects arrival time, and room preferences.",
+            "result": "Faster check‑in; personalized welcome."
+          },
+          "4": {
+            "title": "Buyer Pre‑Viewing",
+            "scenario": "Collects proof‑of‑funds and preferences before tours.",
+            "result": "Agents tailor the route; higher fit."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Forms completed"
+          },
+          "1": {
+            "description": "Front‑desk time reduced"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Conditional Logic",
+            "description": "Show the right questions per service/guest."
+          },
+          "1": {
+            "title": "Secure Storage",
+            "description": "Encrypted at rest and in transit."
+          },
+          "2": {
+            "title": "Instruction Builder",
+            "description": "Auto‑generate what to bring/wear/expect."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "HIPAA/GDPR?",
+            "answer": "Compliant processing with audit trails and access controls."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Smart Pre‑Check‑In can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "no-show-recovery-fee-capture": {
+        "name": "No‑Show Recovery & Fee Capture",
+        "description": "Recover revenue from no‑shows with smart follow‑ups, rescheduling, and policy‑based fees.",
+        "headline": "Protect Your Schedule",
+        "subheading": "Automated outreach after no‑shows to rebook or collect fees when applicable.",
+        "problem": "Empty slots cost money and create unfairness for punctual clients.",
+        "solution": "Detect no‑shows, trigger empathetic follow‑ups, offer new times, and apply fees/deposits per policy.",
+        "outcomes": {
+          "0": "40% reschedule rate",
+          "1": "Reduced revenue leakage",
+          "2": "Consistent policy enforcement"
+        },
+        "tools": {
+          "0": "Calendar Webhooks",
+          "1": "Payments",
+          "2": "Email/SMS"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Spa Policy",
+            "scenario": "No‑show triggers fee and rebooking options.",
+            "result": "-18% revenue leakage."
+          },
+          "1": {
+            "title": "Restaurant Policy",
+            "scenario": "No‑show dinner triggers deposit charge per policy and rebook link.",
+            "result": "Seats refilled; policy applied fairly."
+          },
+          "2": {
+            "title": "Clinic Policy",
+            "scenario": "Missed appointment asks reason, offers reschedule, applies fee when applicable.",
+            "result": "Fewer repeats; recovered revenue."
+          },
+          "3": {
+            "title": "Hotel Amenity No‑Show",
+            "scenario": "Spa/golf no‑show applies fee and offers new time.",
+            "result": "Amenity revenue protected."
+          },
+          "4": {
+            "title": "Property Viewing No‑Show",
+            "scenario": "Buyer misses viewing; assistant offers alternate slots and reconfirms seriousness.",
+            "result": "Keeps pipeline moving."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Revenue leakage reduced"
+          },
+          "1": {
+            "description": "Clients rebooked"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Policy Engine",
+            "description": "Percent/flat fees with grace rules."
+          },
+          "1": {
+            "title": "Empathetic Copy",
+            "description": "Tone controls and reason capture."
+          },
+          "2": {
+            "title": "Secure Links",
+            "description": "PCI‑compliant payment capture."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Chargebacks?",
+            "answer": "Evidence logs and policy acknowledgement reduce disputes."
+          }
+        },
+        "cta": {
+          "subtitle": "See how No‑Show Recovery & Fee Capture can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "smart-waitlist-cancellation-filler": {
+        "name": "Smart Waitlist & Cancellation Filler",
+        "description": "Automatically fill last‑minute cancellations by reaching out to waitlists and recent customers.",
+        "headline": "Keep Your Calendar Full",
+        "subheading": "Detect empty slots and match them with people most likely to accept.",
+        "problem": "Gaps appear due to cancellations but staff is busy to refill them.",
+        "solution": "AI ranks the waitlist, sends offers, confirms bookings and updates the calendar in real‑time.",
+        "outcomes": {
+          "0": "82% empty slots refilled",
+          "1": "+12% revenue per seat/hour",
+          "2": "Delight customers with earlier dates"
+        },
+        "tools": {
+          "0": "Calendar APIs",
+          "1": "SMS/WhatsApp",
+          "2": "Scoring Engine"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Dentist Gaps",
+            "scenario": "Morning cancellation triggers offers to top 10 waitlist.",
+            "result": "Chair time protected."
+          },
+          "1": {
+            "title": "Salon Cancellation",
+            "scenario": "Stylist cancellation fills with VIP list first.",
+            "result": "Day stays fully booked."
+          },
+          "2": {
+            "title": "Restaurant Table Fill",
+            "scenario": "Late cancellation sends offers to diners within 2km.",
+            "result": "Table re‑sold in minutes."
+          },
+          "3": {
+            "title": "Hotel Spa Slot",
+            "scenario": "Vacated massage spot offered to in‑house guests via WhatsApp.",
+            "result": "Occupancy of spa hours up."
+          },
+          "4": {
+            "title": "Open House Slot",
+            "scenario": "Viewing slot opens; auto‑offers to interested buyers.",
+            "result": "Schedule remains tight and efficient."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Empty slots filled"
+          },
+          "1": {
+            "description": "Revenue per hour uplift"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Priority Scoring",
+            "description": "Recent inquiries and VIPs first."
+          },
+          "1": {
+            "title": "Instant Confirm",
+            "description": "1‑tap accept with deposit if needed."
+          },
+          "2": {
+            "title": "Fairness Controls",
+            "description": "Throttle offers to avoid spam."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "How is priority set?",
+            "answer": "You can configure rules by recency, value, or membership."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Smart Waitlist & Cancellation Filler can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "abandoned-booking-follow-up": {
+        "name": "Abandoned Booking Follow‑Up",
+        "description": "Recover started‑but‑unfinished bookings with timely nudges and assistance.",
+        "headline": "Finish What They Started",
+        "subheading": "Detect drop‑offs and help customers complete in a click or via a quick chat.",
+        "problem": "People get distracted or confused during booking and never return.",
+        "solution": "Reach them within minutes with a tailored link or an assistant that completes the flow for them.",
+        "outcomes": {
+          "0": "+22% completion",
+          "1": "Higher conversion without discounts",
+          "2": "Better UX insights from reasons captured"
+        },
+        "tools": {
+          "0": "Email",
+          "1": "SMS",
+          "2": "WhatsApp",
+          "3": "Session Tracking"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Table Booking",
+            "scenario": "Cart abandoned at payment; WhatsApp link completes in 2 taps.",
+            "result": "+1 table booked."
+          },
+          "1": {
+            "title": "Salon Abandon",
+            "scenario": "Haircut booking dropped at date step; SMS deep‑link resumes.",
+            "result": "Friction removed; booking completed."
+          },
+          "2": {
+            "title": "Clinic Abandon",
+            "scenario": "Patient drops at insurance entry; assistant clarifies accepted plans.",
+            "result": "Patient completes booking confidently."
+          },
+          "3": {
+            "title": "Hotel Abandon",
+            "scenario": "Guest leaves checkout; email with saved quote and perks brings them back.",
+            "result": "Direct booking recovered."
+          },
+          "4": {
+            "title": "Viewing Abandon",
+            "scenario": "Buyer stops at time selection; assistant proposes 3 options.",
+            "result": "Viewing scheduled within the hour."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Checkout completion uplift"
+          },
+          "1": {
+            "description": "Typical follow‑up window"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Intent Detection",
+            "description": "Understands where they dropped and why."
+          },
+          "1": {
+            "title": "One‑Click Resume",
+            "description": "Deep links to the exact step."
+          },
+          "2": {
+            "title": "Assistant Option",
+            "description": "Chat or voice help to finish."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Privacy?",
+            "answer": "GDPR‑compliant with explicit consent and opt‑out controls."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Abandoned Booking Follow‑Up can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "reactivation-recalls": {
+        "name": "Reactivation & Recalls",
+        "description": "Bring back inactive customers and schedule periodic recalls automatically.",
+        "headline": "Win Back Lapsed Customers",
+        "subheading": "Target by last visit and service cadence with personalized outreach.",
+        "problem": "Dormant customers are expensive to acquire again but often return with the right nudge.",
+        "solution": "Automate recall schedules and personalized reactivation campaigns via preferred channels.",
+        "outcomes": {
+          "0": "16% reactivation rate",
+          "1": "+9% LTV",
+          "2": "Steady base utilization"
+        },
+        "tools": {
+          "0": "CRM Segments",
+          "1": "Email",
+          "2": "SMS",
+          "3": "WhatsApp"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Hygiene Recall",
+            "scenario": "6‑month dental recall triggered automatically.",
+            "result": "Calendar filled in advance."
+          },
+          "1": {
+            "title": "Salon Reactivation",
+            "scenario": "Clients who haven’t visited in 12 weeks get a personalized style refresh offer.",
+            "result": "Dormant clients return."
+          },
+          "2": {
+            "title": "Restaurant Reactivation",
+            "scenario": "Guests from last season receive a chef’s tasting invite.",
+            "result": "Off‑peak nights fill up."
+          },
+          "3": {
+            "title": "Hotel Reactivation",
+            "scenario": "Past guests get a mid‑week upgrade offer.",
+            "result": "Shoulder nights improved."
+          },
+          "4": {
+            "title": "Buyer Reactivation",
+            "scenario": "Prospects without activity receive new matching listings.",
+            "result": "Inquiries restart."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Reactivation rate"
+          },
+          "1": {
+            "description": "Customer lifetime value uplift"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Auto Scheduling",
+            "description": "Cadences per service and customer type."
+          },
+          "1": {
+            "title": "Personalization",
+            "description": "Copy and offers tailored to history."
+          },
+          "2": {
+            "title": "Channel Mix",
+            "description": "Email/SMS/WhatsApp based on user preference."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Can we exclude customers?",
+            "answer": "Yes, filter by tags, spend, visit history, or consent."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Reactivation & Recalls can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "review-booster": {
+        "name": "Review Booster",
+        "description": "Increase reviews by asking at the right moment and routing happy clients to public sites.",
+        "headline": "Grow Your Reputation",
+        "subheading": "Encourage promoters, handle detractors privately, and monitor impact.",
+        "problem": "Happy customers rarely leave reviews without a prompt; unhappy ones always do.",
+        "solution": "Trigger review asks post‑visit, filter by sentiment/NPS, and guide to Google or portals.",
+        "outcomes": {
+          "0": "3x monthly reviews",
+          "1": "+0.4 star average",
+          "2": "Private handling for negatives"
+        },
+        "tools": {
+          "0": "NPS",
+          "1": "Google Reviews Link",
+          "2": "Email/SMS"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Post‑Dinner Ask",
+            "scenario": "CSAT > 4 triggers Google prompt.",
+            "result": "Reviews triple in 60 days."
+          },
+          "1": {
+            "title": "Salon Review Ask",
+            "scenario": "Satisfied client receives a review link 2h after visit.",
+            "result": "+0.4★ average within 8 weeks."
+          },
+          "2": {
+            "title": "Clinic Review Ask",
+            "scenario": "Positive NPS triggers healthcare‑appropriate portal link.",
+            "result": "More credible public feedback."
+          },
+          "3": {
+            "title": "Hotel Review Ask",
+            "scenario": "Checkout survey routes happy guests to Google/TripAdvisor.",
+            "result": "Ranking improves and visibility grows."
+          },
+          "4": {
+            "title": "Viewing Feedback",
+            "scenario": "After viewing, buyer rates experience privately; happy buyers get a public review prompt for the agency.",
+            "result": "Higher agency reputation."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Reviews per month"
+          },
+          "1": {
+            "description": "Average rating uplift"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Sentiment Filter",
+            "description": "Asks only when experience is positive."
+          },
+          "1": {
+            "title": "Portal Routing",
+            "description": "Send to Google/TripAdvisor/industry portals."
+          },
+          "2": {
+            "title": "Response Templates",
+            "description": "Handle negatives privately with empathy."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Against platform rules?",
+            "answer": "We never gate; we ask and route ethically."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Review Booster can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "billing-and-invoice": {
+        "name": "Billing & Invoice",
+        "description": "Automate payment links, deposits, and invoice delivery integrated with your billing.",
+        "headline": "Get Paid Faster",
+        "subheading": "Reduce overdue invoices and friction with secure links and reminders.",
+        "problem": "Chasing payments wastes time and hurts cash flow.",
+        "solution": "Send branded payment links, auto‑reconcile, and schedule polite reminders.",
+        "outcomes": {
+          "0": "2x faster payments",
+          "1": "-35% overdue",
+          "2": "Less manual reconciliation"
+        },
+        "tools": {
+          "0": "Stripe",
+          "1": "GoCardless",
+          "2": "Xero/QuickBooks"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hair & Beauty"
+          },
+          "1": {
+            "name": "Restaurants"
+          },
+          "2": {
+            "name": "Clinics & Health"
+          },
+          "3": {
+            "name": "Hotels"
+          },
+          "4": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Deposit Capture",
+            "scenario": "Collect deposit at booking via link.",
+            "result": "No‑show risk reduced."
+          },
+          "1": {
+            "title": "Salon Invoice",
+            "scenario": "Color correction requires deposit link sent at booking.",
+            "result": "Commitment secured; cancellations drop."
+          },
+          "2": {
+            "title": "Restaurant Group Bill",
+            "scenario": "Pre‑event invoice with partial payments for a group menu.",
+            "result": "Cash flow improved before service."
+          },
+          "3": {
+            "title": "Clinic Co‑Pay",
+            "scenario": "Automated co‑pay link sent morning of appointment.",
+            "result": "Faster check‑out; less AR aging."
+          },
+          "4": {
+            "title": "Hotel Pre‑Auth",
+            "scenario": "Pre‑arrival payment link collects deposit and T&Cs.",
+            "result": "Fewer disputes; smoother check‑in."
+          },
+          "5": {
+            "title": "Reservation Deposit (Real Estate)",
+            "scenario": "Holding deposit link for rental application.",
+            "result": "Serious applicants prioritized."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Payment speed"
+          },
+          "1": {
+            "description": "Overdue reduction"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Auto Reconcile",
+            "description": "Syncs with accounting systems."
+          },
+          "1": {
+            "title": "Partial Payments",
+            "description": "Deposits and installment options."
+          },
+          "2": {
+            "title": "Reminders",
+            "description": "Smart cadence until paid."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Fees?",
+            "answer": "Pass‑through or absorb; fully configurable."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Billing & Invoice can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "in-stay-concierge-upsell": {
+        "name": "In‑Stay Concierge & Upsell",
+        "description": "Virtual concierge for staying guests: requests, Q&A, and personalized upsells.",
+        "headline": "Delight Every Guest",
+        "subheading": "Answer instantly and grow ancillary revenue with timely offers.",
+        "problem": "Front desk is overloaded, and guests wait for simple requests.",
+        "solution": "24/7 assistant handles requests, books services, and proposes relevant add‑ons.",
+        "outcomes": {
+          "0": "+14% ancillary revenue",
+          "1": "30% faster response",
+          "2": "Better review scores"
+        },
+        "tools": {
+          "0": "WhatsApp",
+          "1": "PMS Integration",
+          "2": "Booking Engine",
+          "3": "ElevenLabs"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hotels"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Late Check‑out",
+            "scenario": "Guest asks at 1am; assistant confirms with fee.",
+            "result": "Revenue per stay up."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Ancillary revenue"
+          },
+          "1": {
+            "description": "Faster responses"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Service Routing",
+            "description": "Sends tasks to housekeeping/maintenance."
+          },
+          "1": {
+            "title": "Menu of Upsells",
+            "description": "Spa, dining, room upgrades at the right time."
+          },
+          "2": {
+            "title": "Multi‑language",
+            "description": "Serve international guests naturally."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "PMS support?",
+            "answer": "We integrate with major PMS vendors and via iCal."
+          }
+        },
+        "cta": {
+          "subtitle": "See how In‑Stay Concierge & Upsell can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "group-event-inquiry-handler": {
+        "name": "Group & Event Inquiry Handler",
+        "description": "Qualify and structure group/event requests and hand them to sales with everything needed.",
+        "headline": "From Inquiry To Qualified RFP",
+        "subheading": "Capture requirements, budget, and dates, then route to the right rep fast.",
+        "problem": "Large inquiries get stuck in inboxes and lose momentum.",
+        "solution": "Guided Q&A collects all details, checks availability, and books a discovery call or site tour.",
+        "outcomes": {
+          "0": "2x qualified RFPs",
+          "1": "-40% time‑to‑first‑response",
+          "2": "Handoff with zero back‑and‑forth"
+        },
+        "tools": {
+          "0": "Web Forms",
+          "1": "Email",
+          "2": "Calendar",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Restaurants"
+          },
+          "1": {
+            "name": "Hotels"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Wedding Inquiry",
+            "scenario": "Collects guest count, spend, date; schedules tasting.",
+            "result": "Sales works only qualified leads."
+          },
+          "1": {
+            "title": "Restaurant Group Booking",
+            "scenario": "Corporate dinner inquiry captured via form; assistant confirms menu options and books a site visit.",
+            "result": "Sales receives a complete, qualified brief."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Qualified RFPs"
+          },
+          "1": {
+            "description": "Faster first response"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Availability Check",
+            "description": "Blocks pencil holds when approved."
+          },
+          "1": {
+            "title": "Proposal Kit",
+            "description": "Auto‑drafts a first proposal template."
+          },
+          "2": {
+            "title": "Routing",
+            "description": "Assigns to the right sales owner."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Custom fields?",
+            "answer": "Add venue‑specific requirements and attachments."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Group & Event Inquiry Handler can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "portal-lead-qualification-routing": {
+        "name": "Portal Lead Qualification & Routing",
+        "description": "Qualify property portal leads, answer FAQs, and auto‑book viewings, routing to the best agent.",
+        "headline": "Turn Portal Leads Into Viewings",
+        "subheading": "Fast qualification and smart routing improve SLA and conversion.",
+        "problem": "Agents are busy; slow replies cause leads to go cold or to competitors.",
+        "solution": "Instant outreach verifies budget, timing, and needs; books viewings or nurtures until ready.",
+        "outcomes": {
+          "0": "50% faster SLA",
+          "1": "+17% viewings booked",
+          "2": "Right agent every time"
+        },
+        "tools": {
+          "0": "Email",
+          "1": "SMS",
+          "2": "WhatsApp",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Portal Ping",
+            "scenario": "Lead comes from Idealista; assistant qualifies and books Saturday 11:00.",
+            "result": "Agent meets hot, informed buyer."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Faster SLA"
+          },
+          "1": {
+            "description": "More viewings booked"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Qualification Tree",
+            "description": "Budget, area, financing, timeframe."
+          },
+          "1": {
+            "title": "Agent Matching",
+            "description": "Routes by territory and workload."
+          },
+          "2": {
+            "title": "Auto‑Scheduling",
+            "description": "Books the first available slot that works for all."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Multiple listings?",
+            "answer": "It can bundle options and suggest similar properties."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Portal Lead Qualification & Routing can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "viewing-follow-up-offer-collector": {
+        "name": "Viewing Follow‑Up & Offer Collector",
+        "description": "After viewings, gather feedback, score interest, and collect offers or next steps.",
+        "headline": "Capture Momentum After The Viewing",
+        "subheading": "Structured follow‑ups keep warm buyers engaged and visible in the pipeline.",
+        "problem": "Manual follow‑ups are inconsistent and forgettable.",
+        "solution": "Send intelligent follow‑ups with tailored questions and easy offer submission.",
+        "outcomes": {
+          "0": "28% more offers",
+          "1": "<24h feedback turnaround",
+          "2": "Clear interest scoring"
+        },
+        "tools": {
+          "0": "Email",
+          "1": "SMS",
+          "2": "Offer Forms",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Buyer Interest",
+            "scenario": "Asks 5 key questions and invites an offer.",
+            "result": "Pipeline clarity up."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "More offers"
+          },
+          "1": {
+            "description": "Feedback turnaround"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Scorecards",
+            "description": "Rates seriousness and fit automatically."
+          },
+          "1": {
+            "title": "Offer Intake",
+            "description": "Structured forms with proof of funds uploads."
+          },
+          "2": {
+            "title": "Agent Alerts",
+            "description": "Hot interest pinged immediately."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Multiple viewers?",
+            "answer": "Sends personalized follow‑ups to each attendee."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Viewing Follow‑Up & Offer Collector can transform your business. Free assessment, no credit card required."
+        }
+      },
+      "tenant-onboarding-docs-collection": {
+        "name": "Tenant Onboarding & Docs Collection",
+        "description": "From accepted tenant to moved‑in: documents, contracts, payments, and handover.",
+        "headline": "Frictionless Move‑Ins",
+        "subheading": "Automate onboarding steps so nothing is missed and everyone is informed.",
+        "problem": "Manual onboarding causes delays, repeated emails, and lost documents.",
+        "solution": "A guided journey collects IDs, signatures, payments, and schedules key handover.",
+        "outcomes": {
+          "0": "-50% admin time",
+          "1": "95% document completion",
+          "2": "Happier tenants and landlords"
+        },
+        "tools": {
+          "0": "DocuSign",
+          "1": "Payments",
+          "2": "File Upload",
+          "3": "Calendar"
+        },
+        "verticals": {
+          "0": {
+            "name": "Real Estate"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Lease Package",
+            "scenario": "Automates contract, deposit, utilities setup.",
+            "result": "Keys handed over on time."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Admin time saved"
+          },
+          "1": {
+            "description": "Docs completion"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Checklist",
+            "description": "Visual progress for tenant and manager."
+          },
+          "1": {
+            "title": "E‑Sign",
+            "description": "Legally binding signatures and storage."
+          },
+          "2": {
+            "title": "Payment Links",
+            "description": "Collect deposits and first rent."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "Country differences?",
+            "answer": "Templates adapt to local requirements."
+          }
+        },
+        "cta": {
+          "subtitle": "See how Tenant Onboarding & Docs Collection can transform your business. Free assessment, no credit card required."
+        }
+      }
     }
   },
   "start": {

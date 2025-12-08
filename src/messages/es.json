@@ -280,6 +280,1320 @@
         "95% documentos completados",
         "Enlaces de pago y firma electrónica"
       ]
+    },
+    "details": {
+      "common": {
+        "talkToUs": "Habla con nosotros",
+        "readyToGetStarted": "¿Listo para <primary>empezar</primary>?",
+        "whatYouGet": "Lo que <primary>obtienes</primary>",
+        "theProblem": "El problema",
+        "theSolution": "La solución",
+        "coreFeatures": "Funciones clave",
+        "realWorldExamples": "Ejemplos del <accent>mundo real</accent>",
+        "poweredBy": "Impulsado por",
+        "bestFor": "Ideal <primary>para</primary>"
+      },
+      "receptionist-ai": {
+        "name": "Recepcionista IA",
+        "description": "Tu servicio de atención 24/7 con IA",
+        "headline": "No vuelvas a perder una llamada",
+        "subheading": "Tu Recepcionista con IA atiende cada llamada, reserva citas, responde preguntas frecuentes y cualifica leads — 24/7 y en cualquier idioma.",
+        "problem": "El teléfono suena mientras atiendes a clientes. Se acumulan los buzones de voz. Las llamadas acaban en la competencia. Pierdes 40–50% de los leads entrantes simplemente porque nadie atendió.",
+        "solution": "Tu recepcionista con IA atiende cada llamada al instante. Saluda por su nombre, entiende la necesidad, responde FAQs y reserva citas directamente en tu calendario.",
+        "outcomes": {
+          "0": "Captura el 100% de las llamadas entrantes, 24/7",
+          "1": "Reserva citas directamente — sin seguimiento manual",
+          "2": "Responde FAQs en 100+ idiomas",
+          "3": "Cualifica leads antes de que lleguen a tu equipo",
+          "4": "Registra cada conversación para cumplimiento y mejora"
+        },
+        "tools": {
+          "0": "ElevenLabs",
+          "1": "Twilio",
+          "2": "APIs de calendario",
+          "3": "Integración CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Escenario en Peluquería",
+            "scenario": "Cliente llama a un salón a las 15:00. Todo el equipo está ocupado. En vez de buzón, la IA responde: \"¡Hola, Sara! Bienvenida a Bella's Salon. ¿En qué puedo ayudarte hoy?\"",
+            "result": "La clienta reserva para el sábado. La IA confirma y envía recordatorio por SMS. Ingreso recuperado que se habría perdido."
+          },
+          "1": {
+            "title": "Escenario en Restaurante",
+            "scenario": "Grupo de 6 llama en pleno servicio de cena. La IA atiende, comprueba disponibilidad, ofrece mesas y reserva.",
+            "result": "Mesa ocupada. Alta satisfacción. El restaurante nunca deja de atender llamadas."
+          },
+          "2": {
+            "title": "Escenario Inmobiliario",
+            "scenario": "Un lead caliente llama mientras el agente enseña una propiedad. En lugar de ir al buzón, la IA cualifica, responde dudas y agenda la visita.",
+            "result": "La operación avanza de inmediato. Sin demoras. Sin lead perdido. +50% más rápido."
+          },
+          "3": {
+            "title": "Escenario en Clínica",
+            "scenario": "Paciente llama para una cita esa misma semana y sobre cobertura del seguro. La IA responde FAQs y reserva un hueco.",
+            "result": "Paciente agendado al instante, menos interrupciones en recepción."
+          },
+          "4": {
+            "title": "Escenario en Hotel",
+            "scenario": "Huésped llama fuera de horario preguntando por late check‑in y parking. La IA da detalles y añade la nota a la reserva.",
+            "result": "Huésped tranquilo, el equipo descansa, expectativas alineadas."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Reservas de llamadas capturadas"
+          },
+          "1": {
+            "description": "Siempre disponible, nunca se cansa"
+          },
+          "2": {
+            "description": "Idiomas soportados"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Conversación natural",
+            "description": "Suena como una persona real. Entiende el contexto, hace repreguntas y no se siente robótica."
+          },
+          "1": {
+            "title": "Soporte multilingüe",
+            "description": "Detecta o usa el idioma elegido por el cliente. Catalán, valenciano, español, inglés, árabe, mandarín…"
+          },
+          "2": {
+            "title": "Integración directa con calendario",
+            "description": "Consulta disponibilidad en tiempo real y reserva directamente. Compatible con Google, Outlook o tu software."
+          },
+          "3": {
+            "title": "Cualificación inteligente",
+            "description": "Hace las preguntas adecuadas para cualificar. Transfiere al momento los prospectos calientes."
+          },
+          "4": {
+            "title": "Base de conocimientos de FAQs",
+            "description": "Responde preguntas sobre horarios, precios, servicios y políticas sin intervención humana."
+          },
+          "5": {
+            "title": "Gestión fuera de horario",
+            "description": "Puede atender emergencias, guardar mensajes o escalar al personal de guardia según urgencia."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Los clientes sabrán que hablan con una IA?",
+            "answer": "La experiencia es fluida. No hace falta que lo sepan: quedan atendidos, reservados y contentos. La transparencia es opcional."
+          },
+          "1": {
+            "question": "¿Y si el cliente quiere hablar con una persona?",
+            "answer": "Transferencia cálida al instante. La IA comparte todo el contexto con tu equipo. La persona no empieza desde cero."
+          },
+          "2": {
+            "question": "¿Cómo aprende sobre mi negocio?",
+            "answer": "Entrenamos la IA con tu información: horarios, servicios, precios, políticas, equipo, FAQs. La configuración tarda 30 minutos."
+          },
+          "3": {
+            "question": "¿Funciona con mi sistema de telefonía actual?",
+            "answer": "Sí. Integramos con Twilio, VoIP y líneas tradicionales. Las llamadas pasan por la IA y luego hacia ti."
+          },
+          "4": {
+            "question": "¿Qué hay del cumplimiento GDPR o HIPAA?",
+            "answer": "Cumplimiento total. Llamadas cifradas, almacenamiento seguro y acceso solo autorizado. Auditorías periódicas."
+          },
+          "5": {
+            "question": "¿Puedo personalizar lo que dice la IA?",
+            "answer": "Control total. Escribes guiones, defines respuestas y el tono. Entrenamos la IA para sonar como tu negocio."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo la Recepcionista IA puede transformar tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "missed-call-auto-callback": {
+        "name": "Devolución automática de llamadas perdidas",
+        "description": "Recupera llamadas perdidas con devoluciones instantáneas y mensajería inteligente.",
+        "headline": "Convierte llamadas perdidas en reservas",
+        "subheading": "Cuando pierdes una llamada, el flujo devuelve la llamada o envía un mensaje al instante, ayuda al cliente y reserva si procede.",
+        "problem": "Las llamadas perdidas son ingresos perdidos. La mayoría no deja buzón y no vuelve a llamar.",
+        "solution": "Lanza una devolución al instante o un SMS/WhatsApp, identifica la intención, responde dudas y completa la reserva.",
+        "outcomes": {
+          "0": "+30% recuperación de leads",
+          "1": "Seguimiento automático en menos de 60s",
+          "2": "Menos devoluciones manuales",
+          "3": "Protege tu reputación con respuestas rápidas"
+        },
+        "tools": {
+          "0": "Twilio",
+          "1": "API de WhatsApp Business",
+          "2": "APIs de calendario",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Llamada perdida en clínica",
+            "scenario": "Clínica pierde una llamada a mediodía. El sistema envía un texto en 20s y ofrece reservar. El paciente confirma un hueco.",
+            "result": "+1 reserva recuperada, sin esfuerzo del personal."
+          },
+          "1": {
+            "title": "Devolución en salón",
+            "scenario": "Peluquería pierde una llamada durante un color; SMS automático ofrece reprogramar con su estilista.",
+            "result": "Cita salvada en 2 minutos."
+          },
+          "2": {
+            "title": "Devolución en restaurante",
+            "scenario": "Llamada perdida en hora de cena; el sistema devuelve la llamada y reserva para 4 a las 21:30.",
+            "result": "Cubre una cancelación y mantiene la mesa ocupada."
+          },
+          "3": {
+            "title": "Recuperación en hotel",
+            "scenario": "Recepción pierde una llamada internacional; respuesta automática en WhatsApp asegura dos noches.",
+            "result": "Reserva directa sin comisiones OTA."
+          },
+          "4": {
+            "title": "Lead inmobiliario recuperado",
+            "scenario": "Agente pierde la llamada de un comprador; el flujo escribe, cualifica presupuesto/plazos y agenda visita.",
+            "result": "Lead caliente retenido y programado."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Incremento de recuperación de leads"
+          },
+          "1": {
+            "description": "Tiempo típico de seguimiento"
+          },
+          "2": {
+            "description": "Mejora de conversión tras el seguimiento"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Disparo instantáneo",
+            "description": "Detecta llamadas perdidas y reacciona al instante."
+          },
+          "1": {
+            "title": "Canal inteligente",
+            "description": "Decide si llamar o escribir según el contexto y preferencias."
+          },
+          "2": {
+            "title": "Auto‑reserva",
+            "description": "Reserva, reprograma o cancela directamente en tu calendario."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Evita devoluciones duplicadas?",
+            "answer": "Sí, desduplica y limita por llamante."
+          },
+          "1": {
+            "question": "¿Y si hay buzón de voz?",
+            "answer": "Puede interpretar el buzón y responder en consecuencia."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo la Devolución automática de llamadas perdidas transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "appointment-reminder": {
+        "name": "Recordatorio de citas",
+        "description": "Recordatorios multicanal con confirmación y reprogramación sencilla.",
+        "headline": "Reduce los no‑shows",
+        "subheading": "Envía recordatorios a tiempo por SMS, WhatsApp, email o voz con confirmación/reprogramación en 1 toque.",
+        "problem": "Los no‑shows cuestan tiempo e ingresos. Los recordatorios manuales son inconsistentes y propensos a errores.",
+        "solution": "Automatiza recordatorios con timing inteligente, confirmación y reprogramación sin fricción en todos los canales.",
+        "outcomes": {
+          "0": "Reduce no‑shows en 30%+",
+          "1": "Mejor uso de la agenda",
+          "2": "Menos llamadas y mensajes manuales"
+        },
+        "tools": {
+          "0": "Twilio",
+          "1": "API de WhatsApp Business",
+          "2": "Email (Sendgrid)"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Recordatorio en salón",
+            "scenario": "SMS 24h y 3h antes de la cita con confirmación en 1 toque.",
+            "result": "32% menos no‑shows."
+          },
+          "1": {
+            "title": "Recordatorio en restaurante",
+            "scenario": "WhatsApp 6h antes de la cena con enlace para modificar/cancelar.",
+            "result": "Menos mesas vacías, turnos más fluidos."
+          },
+          "2": {
+            "title": "Recordatorio en clínica",
+            "scenario": "SMS 48h + 24h con instrucciones previas a la visita.",
+            "result": "Menos no‑shows y pacientes más preparados."
+          },
+          "3": {
+            "title": "Recordatorio de spa en hotel",
+            "scenario": "Recordatorio de reserva de spa 2h antes con añadir al calendario.",
+            "result": "Mayor ocupación de terapeutas de spa."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Reducción de no‑shows"
+          },
+          "1": {
+            "description": "Tasa de entrega"
+          },
+          "2": {
+            "description": "Facilidad de reprogramación"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Timing inteligente",
+            "description": "Envía en el mejor momento según el tipo de cita y el comportamiento."
+          },
+          "1": {
+            "title": "Multicanal",
+            "description": "SMS, WhatsApp, email o voz — lo que mejor funcione para tu cliente."
+          },
+          "2": {
+            "title": "Acciones en 1 toque",
+            "description": "Confirmar o reprogramar en un toque — sin fricción."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Puede escribir con mi tono de marca?",
+            "answer": "Sí, las plantillas son totalmente personalizables y pueden reflejar tu tono."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo el Recordatorio de citas transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "smart-pre-check-in": {
+        "name": "Pre‑check‑in inteligente",
+        "description": "Recoge formularios, preferencias y consentimientos antes de la visita y envía instrucciones personalizadas.",
+        "headline": "Llega preparado",
+        "subheading": "Reduce tiempo en recepción y mejora la experiencia con flujos previos a la visita.",
+        "problem": "Los formularios en papel y la recogida de datos a última hora frenan todo.",
+        "solution": "Envía enlaces seguros para completar formularios, subir documentos y definir preferencias con antelación.",
+        "outcomes": {
+          "0": "70%+ de formularios completados antes de la visita",
+          "1": "Filas de check‑in más cortas",
+          "2": "Mayor satisfacción por llegadas fluidas"
+        },
+        "tools": {
+          "0": "Typeform",
+          "1": "DocuSign",
+          "2": "Subida segura",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Admisión en clínica",
+            "scenario": "Admisión médica y consentimientos 24h antes.",
+            "result": "-25% de tiempo en recepción."
+          },
+          "1": {
+            "title": "Pre‑consulta en salón",
+            "scenario": "Formulario recoge historial y fotos de inspiración.",
+            "result": "El estilista llega preparado; mejores resultados."
+          },
+          "2": {
+            "title": "Pre‑pedido en restaurante",
+            "scenario": "Grupo pre‑selecciona menú y restricciones.",
+            "result": "Servicio más ágil y con menos errores."
+          },
+          "3": {
+            "title": "Pre‑llegada en hotel",
+            "scenario": "Huésped sube su ID, elige hora de llegada y preferencias.",
+            "result": "Check‑in más rápido y bienvenida personalizada."
+          },
+          "4": {
+            "title": "Pre‑visita comprador",
+            "scenario": "Recoge prueba de fondos y preferencias antes de visitas.",
+            "result": "La ruta se adapta; mejor encaje."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Formularios completados"
+          },
+          "1": {
+            "description": "Tiempo de recepción reducido"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Lógica condicional",
+            "description": "Muestra las preguntas adecuadas por servicio/huésped."
+          },
+          "1": {
+            "title": "Almacenamiento seguro",
+            "description": "Cifrado en reposo y en tránsito."
+          },
+          "2": {
+            "title": "Generador de instrucciones",
+            "description": "Indica qué llevar/vestir/esperar automáticamente."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿HIPAA/GDPR?",
+            "answer": "Tratamiento conforme con trazabilidad y controles de acceso."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo el Pre‑check‑in inteligente transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "no-show-recovery-fee-capture": {
+        "name": "Recuperación de no‑shows y cobro de tasas",
+        "description": "Recupera ingresos tras no‑shows con seguimientos, reprogramación y cargos según política.",
+        "headline": "Protege tu agenda",
+        "subheading": "Contacto automático tras un no‑show para reprogramar o cobrar cuando aplique.",
+        "problem": "Los huecos vacíos cuestan dinero y son injustos para quien llega a tiempo.",
+        "solution": "Detecta no‑shows, envía seguimientos empáticos, ofrece nuevas horas y aplica tasas/depósitos según política.",
+        "outcomes": {
+          "0": "40% reprograma",
+          "1": "Menos fuga de ingresos",
+          "2": "Políticas aplicadas con consistencia"
+        },
+        "tools": {
+          "0": "Webhooks de calendario",
+          "1": "Pagos",
+          "2": "Email/SMS"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Política de spa",
+            "scenario": "El no‑show activa cobro y opciones de reprogramación.",
+            "result": "-18% fuga de ingresos."
+          },
+          "1": {
+            "title": "Política en restaurante",
+            "scenario": "Cena no presentada activa el depósito por política y enlace para reprogramar.",
+            "result": "Mesas rellenadas; aplicación justa."
+          },
+          "2": {
+            "title": "Política en clínica",
+            "scenario": "Cita perdida pregunta motivo, ofrece reprogramar y aplica tasa cuando corresponda.",
+            "result": "Menos repeticiones; ingresos recuperados."
+          },
+          "3": {
+            "title": "Amenidad de hotel",
+            "scenario": "No‑show en spa/golf cobra tasa y ofrece nuevo horario.",
+            "result": "Ingresos de amenidades protegidos."
+          },
+          "4": {
+            "title": "Visita inmobiliaria",
+            "scenario": "Comprador falta; asistente propone alternativas y reconfirma interés.",
+            "result": "El embudo sigue avanzando."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Fuga de ingresos reducida"
+          },
+          "1": {
+            "description": "Clientes reprogramados"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Motor de políticas",
+            "description": "Tasas porcentuales/fijas con reglas de cortesía."
+          },
+          "1": {
+            "title": "Copys empáticos",
+            "description": "Control de tono y captura de motivo."
+          },
+          "2": {
+            "title": "Enlaces seguros",
+            "description": "Cobro compatible con PCI."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Reclamaciones?",
+            "answer": "Evidencia y aceptación de políticas reducen disputas."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Recuperación de no‑shows y cobro de tasas transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "smart-waitlist-cancellation-filler": {
+        "name": "Lista de espera inteligente y relleno de cancelaciones",
+        "description": "Rellena cancelaciones de última hora contactando a la lista de espera y a clientes recientes.",
+        "headline": "Mantén llena tu agenda",
+        "subheading": "Detecta huecos y los casa con quien más probabilidad tiene de aceptarlos.",
+        "problem": "Aparecen huecos por cancelaciones y el equipo no tiene tiempo de rellenarlos.",
+        "solution": "La IA prioriza la lista, envía ofertas, confirma y actualiza el calendario en tiempo real.",
+        "outcomes": {
+          "0": "82% de huecos rellenados",
+          "1": "+12% ingresos por asiento/hora",
+          "2": "Clientes encantados con fechas antes"
+        },
+        "tools": {
+          "0": "APIs de calendario",
+          "1": "SMS/WhatsApp",
+          "2": "Motor de scoring"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Huecos en dentista",
+            "scenario": "Cancelación por la mañana activa ofertas al top‑10 de la lista.",
+            "result": "Tiempo de sillón protegido."
+          },
+          "1": {
+            "title": "Cancelación en salón",
+            "scenario": "Baja de un estilista se rellena con VIPs primero.",
+            "result": "El día sigue completo."
+          },
+          "2": {
+            "title": "Mesa en restaurante",
+            "scenario": "Cancelación tardía envía ofertas a comensales a 2 km.",
+            "result": "Mesa revendida en minutos."
+          },
+          "3": {
+            "title": "Hueco de spa en hotel",
+            "scenario": "Masaje liberado ofrecido a huéspedes por WhatsApp.",
+            "result": "Sube la ocupación de horas de spa."
+          },
+          "4": {
+            "title": "Turno de open house",
+            "scenario": "Se abre franja de visita; ofertas automáticas a interesados.",
+            "result": "Agenda eficiente y apretada."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Huecos rellenados"
+          },
+          "1": {
+            "description": "Incremento de ingresos/hora"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Scoring por prioridad",
+            "description": "Consultas recientes y VIP primero."
+          },
+          "1": {
+            "title": "Confirmación instantánea",
+            "description": "Aceptar en 1 toque con depósito si hace falta."
+          },
+          "2": {
+            "title": "Controles de equidad",
+            "description": "Limitación para evitar spam."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Cómo se prioriza?",
+            "answer": "Configura reglas por recencia, valor o membresía."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo la Lista de espera inteligente rellena tus cancelaciones. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "abandoned-booking-follow-up": {
+        "name": "Seguimiento de reservas abandonadas",
+        "description": "Recupera reservas iniciadas pero no finalizadas con recordatorios y ayuda a tiempo.",
+        "headline": "Que terminen lo que empezaron",
+        "subheading": "Detecta abandonos y ayuda a terminar en un clic o con una breve conversación.",
+        "problem": "La gente se distrae o se lía y no vuelve a completar la reserva.",
+        "solution": "Contacta en minutos con un enlace a la etapa exacta o con un asistente que lo complete por ellos.",
+        "outcomes": {
+          "0": "+22% de finalización",
+          "1": "Mayor conversión sin descuentos",
+          "2": "Mejoras de UX gracias a motivos capturados"
+        },
+        "tools": {
+          "0": "Email",
+          "1": "SMS",
+          "2": "WhatsApp",
+          "3": "Seguimiento de sesión"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Reserva de mesa",
+            "scenario": "Carrito abandonado en pago; enlace por WhatsApp completa en 2 toques.",
+            "result": "+1 mesa reservada."
+          },
+          "1": {
+            "title": "Abandono en salón",
+            "scenario": "Corte abandonado en selección de fecha; SMS con deep‑link retoma.",
+            "result": "Se elimina fricción; reserva completada."
+          },
+          "2": {
+            "title": "Abandono en clínica",
+            "scenario": "Paciente se detiene en seguro; asistente aclara coberturas.",
+            "result": "Paciente completa con confianza."
+          },
+          "3": {
+            "title": "Abandono en hotel",
+            "scenario": "Huésped deja el checkout; email con presupuesto guardado y perks lo recupera.",
+            "result": "Reserva directa recuperada."
+          },
+          "4": {
+            "title": "Abandono de visita",
+            "scenario": "Comprador se detiene al elegir hora; asistente propone 3 opciones.",
+            "result": "Visita agendada en menos de una hora."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Incremento de finalización"
+          },
+          "1": {
+            "description": "Ventana típica de seguimiento"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Detección de intención",
+            "description": "Entiende dónde y por qué abandonó."
+          },
+          "1": {
+            "title": "Reanudar en 1 clic",
+            "description": "Deep‑links a la etapa exacta."
+          },
+          "2": {
+            "title": "Opción asistente",
+            "description": "Ayuda por chat o voz para finalizar."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Privacidad?",
+            "answer": "Cumplimiento GDPR con consentimiento explícito y opt‑out."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo el Seguimiento de reservas abandonadas transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "reactivation-recalls": {
+        "name": "Reactivación y recalls",
+        "description": "Recupera clientes inactivos y programa recalls automáticos.",
+        "headline": "Recupera clientes perdidos",
+        "subheading": "Segmenta por última visita y cadencia del servicio con mensajes personalizados.",
+        "problem": "Reactivar inactivos es caro, pero vuelven con el empujón adecuado.",
+        "solution": "Automatiza calendarios de recall y campañas personalizadas por el canal preferido.",
+        "outcomes": {
+          "0": "16% de reactivación",
+          "1": "+9% de LTV",
+          "2": "Base estable y ocupación sostenida"
+        },
+        "tools": {
+          "0": "Segmentos del CRM",
+          "1": "Email",
+          "2": "SMS",
+          "3": "WhatsApp"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Recall de higiene",
+            "scenario": "Recall dental a 6 meses activado automáticamente.",
+            "result": "Agenda llena con antelación."
+          },
+          "1": {
+            "title": "Reactivación en salón",
+            "scenario": "Quien no viene hace 12 semanas recibe oferta de actualización de estilo.",
+            "result": "Vuelven clientes inactivos."
+          },
+          "2": {
+            "title": "Reactivación en restaurante",
+            "scenario": "Clientes de la última temporada reciben invitación del chef.",
+            "result": "Se llenan noches valle."
+          },
+          "3": {
+            "title": "Reactivación en hotel",
+            "scenario": "Ex‑huéspedes reciben oferta de upgrade entre semana.",
+            "result": "Mejoran noches shoulder."
+          },
+          "4": {
+            "title": "Reactivación de compradores",
+            "scenario": "Prospectos sin actividad reciben nuevas propiedades afines.",
+            "result": "Se reactivan consultas."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Tasa de reactivación"
+          },
+          "1": {
+            "description": "Incremento de valor de vida"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Auto‑planificación",
+            "description": "Cadencias por servicio y tipo de cliente."
+          },
+          "1": {
+            "title": "Personalización",
+            "description": "Texto y ofertas ajustadas al historial."
+          },
+          "2": {
+            "title": "Mix de canales",
+            "description": "Email/SMS/WhatsApp según preferencia."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Podemos excluir clientes?",
+            "answer": "Sí, filtra por etiquetas, gasto, historial o consentimiento."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Reactivación y recalls transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "review-booster": {
+        "name": "Impulsor de reseñas",
+        "description": "Aumenta reseñas solicitando en el momento justo y dirigiendo a clientes satisfechos a portales públicos.",
+        "headline": "Haz crecer tu reputación",
+        "subheading": "Anima a promotores, gestiona detractores en privado y monitoriza el impacto.",
+        "problem": "Los satisfechos rara vez dejan reseña sin un recordatorio; los insatisfechos siempre lo hacen.",
+        "solution": "Pide reseña tras la visita, filtra por sentimiento/NPS y guía a Google o portales.",
+        "outcomes": {
+          "0": "3x reseñas al mes",
+          "1": "+0,4 de media",
+          "2": "Gestión privada de negativas"
+        },
+        "tools": {
+          "0": "NPS",
+          "1": "Enlace a Google",
+          "2": "Email/SMS"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Tras la cena",
+            "scenario": "CSAT > 4 dispara aviso para Google.",
+            "result": "Las reseñas se triplican en 60 días."
+          },
+          "1": {
+            "title": "Salón",
+            "scenario": "Cliente satisfecho recibe enlace 2h después.",
+            "result": "+0,4★ de media en 8 semanas."
+          },
+          "2": {
+            "title": "Clínica",
+            "scenario": "NPS positivo dirige a portal sanitario adecuado.",
+            "result": "Feedback público más creíble."
+          },
+          "3": {
+            "title": "Hotel",
+            "scenario": "Encuesta al checkout dirige a Google/TripAdvisor.",
+            "result": "Mejor ranking y visibilidad."
+          },
+          "4": {
+            "title": "Visita",
+            "scenario": "Tras la visita, comprador puntúa en privado; satisfechos reciben petición pública para la agencia.",
+            "result": "Mejora reputación de la agencia."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Reseñas por mes"
+          },
+          "1": {
+            "description": "Mejora de valoración media"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Filtro por sentimiento",
+            "description": "Solo pide cuando la experiencia es positiva."
+          },
+          "1": {
+            "title": "Enrutado a portales",
+            "description": "Envía a Google/TripAdvisor/portales del sector."
+          },
+          "2": {
+            "title": "Plantillas de respuesta",
+            "description": "Gestiona negativas en privado con empatía."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Contra las normas?",
+            "answer": "Nunca bloqueamos: pedimos y redirigimos de forma ética."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo el Impulsor de reseñas transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "billing-and-invoice": {
+        "name": "Facturación y cobros",
+        "description": "Automatiza enlaces de pago, depósitos y envío de facturas, integrado con tu facturación.",
+        "headline": "Cobra más rápido",
+        "subheading": "Reduce morosidad y fricción con enlaces seguros y recordatorios.",
+        "problem": "Perseguir pagos consume tiempo y daña la caja.",
+        "solution": "Envía enlaces de pago con tu marca, concilia automáticamente y programa recordatorios amables.",
+        "outcomes": {
+          "0": "2x pagos más rápidos",
+          "1": "-35% morosidad",
+          "2": "Menos conciliación manual"
+        },
+        "tools": {
+          "0": "Stripe",
+          "1": "GoCardless",
+          "2": "Xero/QuickBooks"
+        },
+        "verticals": {
+          "0": {
+            "name": "Peluquería y Belleza"
+          },
+          "1": {
+            "name": "Restaurantes"
+          },
+          "2": {
+            "name": "Clínicas y Salud"
+          },
+          "3": {
+            "name": "Hoteles"
+          },
+          "4": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Depósito",
+            "scenario": "Cobra el depósito al reservar mediante enlace.",
+            "result": "Menos riesgo de no‑show."
+          },
+          "1": {
+            "title": "Factura de salón",
+            "scenario": "Corrección de color requiere depósito al reservar.",
+            "result": "Más compromiso; menos cancelaciones."
+          },
+          "2": {
+            "title": "Grupo en restaurante",
+            "scenario": "Factura previa al evento con pagos parciales.",
+            "result": "Mejor caja antes del servicio."
+          },
+          "3": {
+            "title": "Copago en clínica",
+            "scenario": "Enlace de copago automático la mañana de la cita.",
+            "result": "Salida más rápida; menos cuentas por cobrar."
+          },
+          "4": {
+            "title": "Pre‑autorización hotel",
+            "scenario": "Enlace previo a llegada cobra depósito y T&C.",
+            "result": "Menos disputas; check‑in fluido."
+          },
+          "5": {
+            "title": "Depósito de reserva (Inmobiliaria)",
+            "scenario": "Depósito para solicitud de alquiler.",
+            "result": "Se priorizan candidatos serios."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Velocidad de cobro"
+          },
+          "1": {
+            "description": "Reducción de morosidad"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Conciliación automática",
+            "description": "Sincroniza con contabilidad."
+          },
+          "1": {
+            "title": "Pagos parciales",
+            "description": "Depósitos y cuotas."
+          },
+          "2": {
+            "title": "Recordatorios",
+            "description": "Cadencia inteligente hasta el pago."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Comisiones?",
+            "answer": "Trasladadas o absorbidas; configurable."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Facturación y cobros transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "in-stay-concierge-upsell": {
+        "name": "Conserje en estancia y upsell",
+        "description": "Conserje virtual para huéspedes en estancia: pedidos, dudas y upsells personalizados.",
+        "headline": "Sorprende a cada huésped",
+        "subheading": "Responde al instante y aumenta ingresos auxiliares con ofertas oportunas.",
+        "problem": "Recepción saturada y esperas para peticiones sencillas.",
+        "solution": "Asistente 24/7 gestiona solicitudes, reserva servicios y propone complementos relevantes.",
+        "outcomes": {
+          "0": "+14% ingresos auxiliares",
+          "1": "30% respuestas más rápidas",
+          "2": "Mejores reseñas"
+        },
+        "tools": {
+          "0": "WhatsApp",
+          "1": "Integración PMS",
+          "2": "Motor de reservas",
+          "3": "ElevenLabs"
+        },
+        "verticals": {
+          "0": {
+            "name": "Hoteles"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Late check‑out",
+            "scenario": "Huésped lo pide a la 1am; asistente confirma con tasa.",
+            "result": "Más ingreso por estancia."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Ingresos auxiliares"
+          },
+          "1": {
+            "description": "Respuestas más rápidas"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Enrutado de servicios",
+            "description": "Envía tareas a housekeeping/mantenimiento."
+          },
+          "1": {
+            "title": "Catálogo de upsells",
+            "description": "Spa, restaurantes, upgrades en el momento ideal."
+          },
+          "2": {
+            "title": "Multidioma",
+            "description": "Atiende naturalmente a huéspedes internacionales."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Compatibilidad PMS?",
+            "answer": "Integramos con los principales PMS y vía iCal."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Conserje en estancia y upsell transforma tu hotel. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "group-event-inquiry-handler": {
+        "name": "Gestor de solicitudes de grupos y eventos",
+        "description": "Cualifica y estructura solicitudes de grupo/evento y entrégalas a ventas con todo lo necesario.",
+        "headline": "De la consulta al RFP cualificado",
+        "subheading": "Recoge requisitos, presupuesto y fechas, y enruta rápido al comercial adecuado.",
+        "problem": "Consultas grandes se quedan en la bandeja y pierden ritmo.",
+        "solution": "Q&A guiado recoge detalles, comprueba disponibilidad y agenda llamada o visita.",
+        "outcomes": {
+          "0": "2x RFPs cualificados",
+          "1": "-40% tiempo a primera respuesta",
+          "2": "Entrega sin ida y vuelta"
+        },
+        "tools": {
+          "0": "Formularios web",
+          "1": "Email",
+          "2": "Calendario",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Restaurantes"
+          },
+          "1": {
+            "name": "Hoteles"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Boda",
+            "scenario": "Recoge asistentes, gasto y fecha; agenda cata.",
+            "result": "Ventas trabaja solo leads cualificados."
+          },
+          "1": {
+            "title": "Grupo corporativo",
+            "scenario": "Solicitud por formulario; asistente confirma opciones y reserva visita al sitio.",
+            "result": "Ventas recibe un briefing completo y cualificado."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "RFPs cualificados"
+          },
+          "1": {
+            "description": "Primera respuesta más rápida"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Chequeo de disponibilidad",
+            "description": "Bloquea tentativas cuando proceda."
+          },
+          "1": {
+            "title": "Kit de propuesta",
+            "description": "Redacta automáticamente un primer borrador."
+          },
+          "2": {
+            "title": "Enrutado",
+            "description": "Asigna al comercial correcto."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Campos a medida?",
+            "answer": "Añade requisitos y adjuntos específicos del lugar."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo el Gestor de solicitudes de grupos y eventos transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "portal-lead-qualification-routing": {
+        "name": "Cualificación y enrutado de leads de portales",
+        "description": "Cualifica leads de portales inmobiliarios, responde FAQs y agenda visitas, asignando al mejor agente.",
+        "headline": "Convierte leads de portales en visitas",
+        "subheading": "Cualificación rápida y enrutado inteligente mejoran SLA y conversión.",
+        "problem": "Agentes ocupados responden tarde; los leads se enfrían o se van a la competencia.",
+        "solution": "Contacto instantáneo verifica presupuesto, timing y necesidades; agenda visitas o nutre hasta que estén listos.",
+        "outcomes": {
+          "0": "50% SLA más rápido",
+          "1": "+17% visitas agendadas",
+          "2": "El agente adecuado siempre"
+        },
+        "tools": {
+          "0": "Email",
+          "1": "SMS",
+          "2": "WhatsApp",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Ping del portal",
+            "scenario": "Lead llega de Idealista; asistente cualifica y reserva sábado 11:00.",
+            "result": "El agente atiende a un comprador informado y caliente."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "SLA más rápido"
+          },
+          "1": {
+            "description": "Más visitas agendadas"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Árbol de cualificación",
+            "description": "Presupuesto, zona, financiación, plazo."
+          },
+          "1": {
+            "title": "Asignación de agente",
+            "description": "Enruta por territorio y carga."
+          },
+          "2": {
+            "title": "Auto‑agenda",
+            "description": "Reserva el primer hueco que encaja para todos."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Varias propiedades?",
+            "answer": "Agrupa opciones y sugiere similares."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Cualificación y enrutado de leads de portales transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "viewing-follow-up-offer-collector": {
+        "name": "Seguimiento tras visita y captación de ofertas",
+        "description": "Tras las visitas, recoge feedback, puntúa interés y capta ofertas o próximos pasos.",
+        "headline": "Aprovecha el momento tras la visita",
+        "subheading": "Seguimientos estructurados mantienen a compradores calientes comprometidos y visibles.",
+        "problem": "Los seguimientos manuales son irregulares y fáciles de olvidar.",
+        "solution": "Envía seguimientos inteligentes con preguntas adecuadas y oferta sencilla.",
+        "outcomes": {
+          "0": "28% más ofertas",
+          "1": "<24h para recibir feedback",
+          "2": "Puntuación de interés clara"
+        },
+        "tools": {
+          "0": "Email",
+          "1": "SMS",
+          "2": "Formularios de oferta",
+          "3": "CRM"
+        },
+        "verticals": {
+          "0": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Interés del comprador",
+            "scenario": "Pregunta 5 claves e invita a ofertar.",
+            "result": "Más claridad en el embudo."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Más ofertas"
+          },
+          "1": {
+            "description": "Tiempo de feedback"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Scorecards",
+            "description": "Puntúa seriedad y encaje automáticamente."
+          },
+          "1": {
+            "title": "Captura de oferta",
+            "description": "Formularios con subida de prueba de fondos."
+          },
+          "2": {
+            "title": "Alertas al agente",
+            "description": "Interés caliente notificado al instante."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Varios asistentes?",
+            "answer": "Seguimientos personalizados a cada participante."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Seguimiento tras visita y captación de ofertas transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      },
+      "tenant-onboarding-docs-collection": {
+        "name": "Onboarding de inquilino y recogida de documentos",
+        "description": "Del inquilino aceptado a la mudanza: documentos, contratos, pagos y entrega de llaves.",
+        "headline": "Entradas sin fricción",
+        "subheading": "Automatiza pasos de onboarding para que nada falte y todos estén informados.",
+        "problem": "El onboarding manual causa demoras, emails repetidos y pérdida de documentos.",
+        "solution": "Un recorrido guiado recoge IDs, firmas, pagos y agenda la entrega de llaves.",
+        "outcomes": {
+          "0": "-50% tiempo administrativo",
+          "1": "95% de documentos completados",
+          "2": "Inquilinos y propietarios más felices"
+        },
+        "tools": {
+          "0": "DocuSign",
+          "1": "Pagos",
+          "2": "Subida de ficheros",
+          "3": "Calendario"
+        },
+        "verticals": {
+          "0": {
+            "name": "Inmobiliarias"
+          }
+        },
+        "examples": {
+          "0": {
+            "title": "Paquete de arrendamiento",
+            "scenario": "Automatiza contrato, depósito y alta de suministros.",
+            "result": "Entrega de llaves a tiempo."
+          }
+        },
+        "metrics": {
+          "0": {
+            "description": "Tiempo administrativo ahorrado"
+          },
+          "1": {
+            "description": "Documentación completada"
+          }
+        },
+        "features": {
+          "0": {
+            "title": "Checklist",
+            "description": "Progreso visible para inquilino y gestor."
+          },
+          "1": {
+            "title": "Firma electrónica",
+            "description": "Firmas legales y almacenamiento."
+          },
+          "2": {
+            "title": "Enlaces de pago",
+            "description": "Cobra depósitos y primera renta."
+          }
+        },
+        "faqs": {
+          "0": {
+            "question": "¿Diferencias por país?",
+            "answer": "Plantillas que se adaptan a requisitos locales."
+          }
+        },
+        "cta": {
+          "subtitle": "Descubre cómo Onboarding de inquilino y documentos transforma tu negocio. Evaluación gratis, sin tarjeta."
+        }
+      }
     }
   },
   "start": {
