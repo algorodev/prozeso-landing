@@ -1,19 +1,19 @@
 import type { Metadata, Viewport } from "next";
 import { Inter_Tight, Sora } from "next/font/google";
-import Script from 'next/script'
+import Script from "next/script";
 import type { ReactNode } from "react";
 import { locales } from "@/i18n/config";
 import "./globals.css";
 
 const interTightFont = Inter_Tight({
   subsets: ["latin"],
-	weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-inter-tight",
 });
 
 const soraFont = Sora({
   subsets: ["latin"],
-	weight: ["500", "600"],
+  weight: ["500", "600"],
   variable: "--font-sora",
 });
 
@@ -111,15 +111,18 @@ export default function RootLayout({
       <body
         className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter`}
       >
-	      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-	      <Script id="ga4-init" strategy="afterInteractive">
-		      {`
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_ID}', { send_page_view: true });
           `}
-	      </Script>
+        </Script>
         {children}
       </body>
     </html>

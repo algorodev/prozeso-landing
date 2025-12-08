@@ -167,11 +167,7 @@
     "appointment-reminder": {
       "title": "Appointment Reminder",
       "description": "Automatic reminders via SMS, WhatsApp, email or calls before an appointment, with confirmation and one-click reschedule or cancel.",
-      "metrics": [
-        "-32% no-shows",
-        "95% delivery rate",
-        "1-click reschedule"
-      ]
+      "metrics": ["-32% no-shows", "95% delivery rate", "1-click reschedule"]
     },
     "smart-pre-check-in": {
       "title": "Smart Pre-Check-In",

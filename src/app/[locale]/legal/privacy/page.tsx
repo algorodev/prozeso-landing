@@ -32,7 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords,
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(locales.map((l) => [l, `${base}/${l}/legal/privacy`])),
+      languages: Object.fromEntries(
+        locales.map((l) => [l, `${base}/${l}/legal/privacy`]),
+      ),
     },
     openGraph: {
       type: "article",

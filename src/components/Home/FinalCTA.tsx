@@ -1,53 +1,55 @@
-'use client'
+"use client";
 
-import { Button } from '@/components/ui/Button'
-import { Phone } from 'lucide-react'
-import { motion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
-import { LocalizedLink } from '@/i18n/LocalizedLink'
+import { motion } from "framer-motion";
+import { Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/Button";
+import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const FinalCTA = () => {
-	const t = useTranslations('home.finalCta')
+  const t = useTranslations("home.finalCta");
 
-	return (
-		<section className='relative py-32 px-6 border-t border-border overflow-hidden bg-background text-foreground'>
-			<div className='container mx-auto text-center max-w-2xl relative z-10'>
-				<motion.h2
-					initial={{ opacity: 0, y: 24 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ amount: 0.2 }}
-					transition={{ duration: 0.6 }}
-					className='font-sora text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-balance'
-				>
-					{t.rich('title', {
-						highlight: (chunks) => <span className='text-primary'>{chunks}</span>,
-					})}
-				</motion.h2>
-				<motion.p
-					initial={{ opacity: 0, y: 16 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ amount: 0.2 }}
-					transition={{ delay: 0.05, duration: 0.6 }}
-					className='text-lg text-foreground/70 mb-12 leading-relaxed'
-				>
-					{t('subtitle')}
-				</motion.p>
-				<motion.div
-					initial={{ opacity: 0, y: 16 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ amount: 0.2 }}
-					transition={{ delay: 0.1, duration: 0.5 }}
-				>
-					<Button asChild size='lg'>
-						<LocalizedLink href='/start'>
-							<Phone className='w-5 h-5'/>
-							{t('cta')}
-						</LocalizedLink>
-					</Button>
-				</motion.div>
-			</div>
-		</section>
-	)
-}
+  return (
+    <section className="relative py-32 px-6 border-t border-border overflow-hidden bg-background text-foreground">
+      <div className="container mx-auto text-center max-w-2xl relative z-10">
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+          className="font-sora text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-balance"
+        >
+          {t.rich("title", {
+            highlight: (chunks) => (
+              <span className="text-primary">{chunks}</span>
+            ),
+          })}
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ delay: 0.05, duration: 0.6 }}
+          className="text-lg text-foreground/70 mb-12 leading-relaxed"
+        >
+          {t("subtitle")}
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+        >
+          <Button asChild size="lg">
+            <LocalizedLink href="/start">
+              <Phone className="w-5 h-5" />
+              {t("cta")}
+            </LocalizedLink>
+          </Button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
-export default FinalCTA
+export default FinalCTA;

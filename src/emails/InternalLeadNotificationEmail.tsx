@@ -93,20 +93,24 @@ export default function InternalLeadNotificationEmail({
             </Heading>
             <Text style={{ ...label, marginTop: 16 }}>Submitted</Text>
             <Text style={value}>{dateStr}</Text>
-            <Hr style={{ borderColor: emailColors.border, margin: "8px 0 18px" }} />
+            <Hr
+              style={{ borderColor: emailColors.border, margin: "8px 0 18px" }}
+            />
             <Text style={label}>Name</Text>
             <Text style={value}>{name}</Text>
             <Text style={label}>Email</Text>
             <Text style={value}>{email}</Text>
-            {(workflowTitles && workflowTitles.length > 0) ? (
+            {workflowTitles && workflowTitles.length > 0 ? (
               <>
                 <Text style={label}>Workflows of interest</Text>
                 <Text style={{ margin: "6px 0 16px" }}>
                   {(workflowTitles || []).map((title, idx) => (
                     <>
-	                    <span key={idx} style={{ ...chip, marginRight: 6 }}>{title}</span>
-	                    <br/>
-	                    <br/>
+                      <span key={idx} style={{ ...chip, marginRight: 6 }}>
+                        {title}
+                      </span>
+                      <br />
+                      <br />
                     </>
                   ))}
                 </Text>
@@ -119,11 +123,15 @@ export default function InternalLeadNotificationEmail({
                 </Text>
               </>
             ) : null}
-            {(verticalTitle || vertical) ? (
+            {verticalTitle || vertical ? (
               <>
                 <Text style={label}>Industry</Text>
                 <Text style={{ margin: "6px 0 16px" }}>
-                  <span style={chip}>{verticalTitle || verticalLabels[vertical as string] || vertical}</span>
+                  <span style={chip}>
+                    {verticalTitle ||
+                      verticalLabels[vertical as string] ||
+                      vertical}
+                  </span>
                 </Text>
               </>
             ) : null}

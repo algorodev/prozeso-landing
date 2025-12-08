@@ -94,35 +94,83 @@ export default function CustomerConfirmationEmail({
           <Section style={card}>
             <Heading
               as="h2"
-              style={{ margin: 0, fontSize: emailTypography.titleSize, lineHeight: emailTypography.titleLineHeight, color: emailColors.text, fontWeight: 700 }}
+              style={{
+                margin: 0,
+                fontSize: emailTypography.titleSize,
+                lineHeight: emailTypography.titleLineHeight,
+                color: emailColors.text,
+                fontWeight: 700,
+              }}
             >
               {t.title}
             </Heading>
-            <Text style={{ color: emailColors.text, fontSize: emailTypography.bodySize, lineHeight: emailTypography.bodyLineHeight, marginTop: 12 }}>
+            <Text
+              style={{
+                color: emailColors.text,
+                fontSize: emailTypography.bodySize,
+                lineHeight: emailTypography.bodyLineHeight,
+                marginTop: 12,
+              }}
+            >
               {t.intro}
             </Text>
             {workflowTitles && workflowTitles.length > 0 ? (
-              <Text style={{ marginTop: 8, color: emailColors.subtleText, fontSize: 14 }}>
-                <strong style={{ color: emailColors.text }}>{t.workflows}:</strong>{" "}
+              <Text
+                style={{
+                  marginTop: 8,
+                  color: emailColors.subtleText,
+                  fontSize: 14,
+                }}
+              >
+                <strong style={{ color: emailColors.text }}>
+                  {t.workflows}:
+                </strong>{" "}
                 {(workflowTitles || []).map((title, idx) => (
                   <>
-	                  <span key={idx} style={{ ...chip, marginRight: 6 }}>{title}</span>
-	                  <br/>
-	                  <br/>
+                    <span key={idx} style={{ ...chip, marginRight: 6 }}>
+                      {title}
+                    </span>
+                    <br />
+                    <br />
                   </>
                 ))}
               </Text>
             ) : workflow ? (
-              <Text style={{ marginTop: 8, color: emailColors.subtleText, fontSize: 14 }}>
-                <strong style={{ color: emailColors.text }}>{t.workflow}:</strong> <span style={chip}>{workflow}</span>
+              <Text
+                style={{
+                  marginTop: 8,
+                  color: emailColors.subtleText,
+                  fontSize: 14,
+                }}
+              >
+                <strong style={{ color: emailColors.text }}>
+                  {t.workflow}:
+                </strong>{" "}
+                <span style={chip}>{workflow}</span>
               </Text>
             ) : null}
             {verticalTitle ? (
-              <Text style={{ marginTop: 8, color: emailColors.subtleText, fontSize: 14 }}>
-                <strong style={{ color: emailColors.text }}>{t.industry}:</strong> <span style={chip}>{verticalTitle}</span>
+              <Text
+                style={{
+                  marginTop: 8,
+                  color: emailColors.subtleText,
+                  fontSize: 14,
+                }}
+              >
+                <strong style={{ color: emailColors.text }}>
+                  {t.industry}:
+                </strong>{" "}
+                <span style={chip}>{verticalTitle}</span>
               </Text>
             ) : null}
-            <Text style={{ color: emailColors.text, fontSize: emailTypography.bodySize, lineHeight: emailTypography.bodyLineHeight, marginTop: 12 }}>
+            <Text
+              style={{
+                color: emailColors.text,
+                fontSize: emailTypography.bodySize,
+                lineHeight: emailTypography.bodyLineHeight,
+                marginTop: 12,
+              }}
+            >
               {t.body}
             </Text>
             <Button

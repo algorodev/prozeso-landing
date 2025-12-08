@@ -11,7 +11,9 @@ export function Hero() {
         <h1 className="hero-title text-balance">
           {t.rich("title", {
             primary: (chunks) => <span className="text-primary">{chunks}</span>,
-            secondary: (chunks) => <span className="text-secondary">{chunks}</span>,
+            secondary: (chunks) => (
+              <span className="text-secondary">{chunks}</span>
+            ),
           })}
         </h1>
         <p className="mt-4 hero-subtitle text-balance text-muted-foreground sm:text-lg">

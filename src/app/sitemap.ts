@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
-import { locales } from "@/i18n/config";
-import { VERTICALS } from "@/data/verticals";
 import { AUTOMATIONS_DETAILS } from "@/data/automations";
+import { VERTICALS } from "@/data/verticals";
+import { locales } from "@/i18n/config";
 
 function normalizeBaseUrl(url: string) {
   return url.replace(/\/$/, "");
