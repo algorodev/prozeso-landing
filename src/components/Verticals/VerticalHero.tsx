@@ -28,7 +28,7 @@ export function VerticalHero() {
   return (
     <section className="relative isolate min-h-[80vh] flex items-center justify-center px-6 pt-16 overflow-hidden">
       <VerticalHeroBackground />
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <Icon className="w-16 h-16 mb-8 text-foreground" />
