@@ -95,7 +95,7 @@
 
 @layer utilities {
   .hero-title {
-    @apply font-sora text-7xl lg:text-8xl font-semibold tracking-tight;
+    @apply font-sora text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tighter text-balance wrap-break-word;
   }
 
   .hero-subtitle {
@@ -103,15 +103,15 @@
   }
 
   .page-title {
-    @apply font-sora text-4xl font-semibold;
+    @apply font-sora text-4xl font-semibold tracking-tight text-balance wrap-break-word;
   }
 
   .section-title {
-    @apply font-sora text-3xl font-semibold;
+    @apply font-sora text-3xl font-semibold tracking-tight text-balance wrap-break-word;
   }
 
   .card-title {
-    @apply font-sora text-xl font-semibold;
+    @apply font-sora text-xl font-semibold tracking-tight text-balance wrap-break-word;
   }
 
   .card-subtitle {
@@ -135,7 +135,7 @@
   }
 
   .button-secondary-text {
-    @apply font-inter text-sm font-medium;
+    @apply font-inter text-sm font-semibold tracking-wide uppercase;
   }
 
   .input-text {

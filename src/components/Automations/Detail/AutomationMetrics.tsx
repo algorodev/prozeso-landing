@@ -22,13 +22,13 @@ export function AutomationMetrics() {
               >
                 <div className="flex items-baseline justify-center mb-4">
                   <span
-                    className={`text-7xl md:text-8xl font-extralight tracking-tighter ${colors[idx % colors.length]}`}
+                    className={`text-5xl sm:text-6xl md:text-7xl font-extralight tracking-tighter ${colors[idx % colors.length]}`}
                   >
                     {metric.stat}
                   </span>
                   {metric.suffix && (
                     <span
-                      className={`text-3xl md:text-4xl font-extralight ml-1 ${colors[idx % colors.length]}`}
+                      className={`text-2xl sm:text-3xl md:text-4xl font-extralight ml-1 ${colors[idx % colors.length]}`}
                     >
                       {metric.suffix}
                     </span>

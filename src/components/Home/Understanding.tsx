@@ -79,7 +79,7 @@ const Understanding = () => {
                     <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />
                   </div>
                 </div>
-                <h3 className="font-sora font-semibold text-lg mb-2 leading-snug">
+                <h3 className="font-sora font-semibold text-lg tracking-tight mb-2 leading-snug">
                   {t(`items.${feature.id}.title`)}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed font-normal">

@@ -67,7 +67,7 @@ const CoreAutomations = () => {
             >
               <LocalizedLink href={automation.href}>
                 <div className="group h-full p-6 rounded-2xl border border-border hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all cursor-pointer">
-                  <h3 className="font-sora text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="font-sora text-lg font-semibold tracking-tight mb-3 group-hover:text-primary transition-colors">
                     {t(`items.${automation.id}.title`)}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6 font-normal">

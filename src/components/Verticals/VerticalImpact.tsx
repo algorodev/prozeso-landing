@@ -45,7 +45,7 @@ export function VerticalImpact() {
                 <div className="mb-auto">
                   <div className="flex items-baseline">
                     <span
-                      className={`text-7xl md:text-8xl font-extralight tracking-tighter ${textColors[idx % textColors.length]}`}
+                      className={`text-5xl sm:text-6xl md:text-7xl font-extralight tracking-tighter ${textColors[idx % textColors.length]}`}
                     >
                       {id && t.has(`verticals.${id}.metrics.${idx}.stat`)
                         ? (t(`verticals.${id}.metrics.${idx}.stat`) as string)
@@ -54,7 +54,7 @@ export function VerticalImpact() {
                     {(metric as any).suffix !== undefined &&
                       (metric as any).suffix !== null && (
                         <span
-                          className={`text-3xl md:text-4xl font-extralight ml-1 ${textColors[idx % textColors.length]}`}
+                          className={`text-2xl sm:text-3xl md:text-4xl font-extralight ml-1 ${textColors[idx % textColors.length]}`}
                         >
                           {id && t.has(`verticals.${id}.metrics.${idx}.suffix`)
                             ? (t(

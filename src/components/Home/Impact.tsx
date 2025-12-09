@@ -78,7 +78,7 @@ const Impact = () => {
               <div className="mb-auto">
                 <div className="flex items-baseline">
                   <span
-                    className={`text-8xl md:text-9xl font-extralight tracking-tighter ${
+                    className={`text-6xl sm:text-8xl md:text-9xl font-extralight tracking-tighter ${
                       metric.color === "primary"
                         ? "text-primary/40"
                         : metric.color === "secondary"
@@ -89,7 +89,7 @@ const Impact = () => {
                     {metric.number}
                   </span>
                   <span
-                    className={`text-4xl md:text-5xl font-extralight ml-1 ${
+                    className={`text-3xl sm:text-4xl md:text-5xl font-extralight ml-1 ${
                       metric.color === "primary"
                         ? "text-primary/40"
                         : metric.color === "secondary"
@@ -103,7 +103,7 @@ const Impact = () => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="font-sora font-semibold text-xl">
+                <h3 className="font-sora font-semibold text-xl tracking-tight">
                   {t(`items.${metric.id}.title`)}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed font-normal">
