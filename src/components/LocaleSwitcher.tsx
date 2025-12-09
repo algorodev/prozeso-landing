@@ -44,14 +44,17 @@ export function LocaleSwitcher({ current, className }: Props) {
           <Button
             type="button"
             variant="ghost"
-            className={cn("gap-2", className)}
+            className={cn("gap-2 min-w-0", className)}
           >
             <Globe className="size-4" aria-hidden />
-            <span className="font-medium">{current.toUpperCase()}</span>
+            <span className="font-medium truncate">{current.toUpperCase()}</span>
             <ChevronDown className="ml-1 size-4 opacity-70" />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="min-w-36">
+        <DropdownMenuContent
+          align="end"
+          className="w-[--radix-dropdown-menu-trigger-width] min-w-0 sm:min-w-36"
+        >
           {locales.map((l) => (
             <DropdownMenuItem
               key={l}

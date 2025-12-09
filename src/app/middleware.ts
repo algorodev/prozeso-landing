@@ -3,7 +3,7 @@ import { defaultLocale, locales } from "@/i18n/config";
 
 function getLocale(req: Request) {
   const header = req.headers.get("accept-language") || "";
-  const preferred = header.split(",")[0]?.split("-")[0]; // e.g. 'en'
+  const preferred = header.split(",")[0]?.split("-")[0];
   return locales.includes(preferred as any)
     ? (preferred as any)
     : defaultLocale;

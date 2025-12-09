@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Building2, Phone } from "lucide-react";
+import { ArrowRight, Building2 } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { ComponentType } from "react";
@@ -48,7 +48,7 @@ export function VerticalHero() {
               {subheading}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-start">
-              <Button size="lg" asChild>
+              <Button asChild size="lg">
                 <LocalizedLink href={`/start?vertical=${slug}`}>
                   {t.has("verticals.page.hero.button")
                     ? (t("verticals.page.hero.button") as string)

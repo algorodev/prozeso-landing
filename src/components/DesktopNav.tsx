@@ -52,13 +52,16 @@ export const DesktopNav = ({ item, activePath }: Props) => {
       <DropdownMenuTrigger asChild>
         <Button
           variant={isActive ? "secondary" : "ghost"}
-          className="rounded-xl"
+          className="rounded-xl min-w-0"
         >
           {item.label}
           <ChevronDown className="ml-1 size-4 opacity-70" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="start" className="min-w-52">
+      <DropdownMenuContent
+        align="start"
+        className="w-[--radix-dropdown-menu-trigger-width] min-w-0 sm:min-w-52"
+      >
         {item.children.map((child) => (
           <DropdownMenuItem key={child.href} asChild>
             <LocalizedLink href={child.href}>

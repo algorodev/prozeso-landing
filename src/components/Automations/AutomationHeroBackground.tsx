@@ -210,7 +210,6 @@ export default function AutomationHeroBackground() {
       });
     });
 
-    // Pointer parallax (subtle) for waves and shapes wrappers
     const geoWraps = Array.from(
       root.querySelectorAll<HTMLElement>("[data-geo-wrap]"),
     );
@@ -222,10 +221,9 @@ export default function AutomationHeroBackground() {
 
     const applyParallax = () => {
       raf = 0;
-      // translate based on depth; deeper (3) moves more for a stronger near effect
       geoWraps.forEach((el) => {
         const depth = Number(el.dataset.depth || "2") as 1 | 2 | 3;
-        const base = 6; // px base
+        const base = 6;
         const factor = depth === 1 ? 1 : depth === 2 ? 1.6 : 2.2;
         const tx = mx * base * factor;
         const ty = my * base * factor;
@@ -237,7 +235,6 @@ export default function AutomationHeroBackground() {
         });
       });
       if (waveWrap) {
-        // Smaller movement for the whole wave cluster
         const tx = mx * 8;
         const ty = my * 5;
         animate(waveWrap, {
@@ -253,7 +250,6 @@ export default function AutomationHeroBackground() {
       const rect = root.getBoundingClientRect();
       const x = (e.clientX - (rect.left + rect.width / 2)) / rect.width;
       const y = (e.clientY - (rect.top + rect.height / 2)) / rect.height;
-      // clamp and invert y for nicer feel
       mx = Math.max(-1, Math.min(1, x));
       my = Math.max(-1, Math.min(1, -y));
       if (!raf) raf = requestAnimationFrame(applyParallax);
@@ -280,10 +276,7 @@ export default function AutomationHeroBackground() {
       ref={containerRef}
       className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
     >
-      {/* soft vignette backdrop */}
       <div className="absolute inset-0 opacity-[0.07] [background:radial-gradient(1100px_600px_at_70%_35%,theme(colors.primary/0.35),transparent_70%)]" />
-
-      {/* decorative waves cluster on the right side */}
       <div
         ref={waveWrapRef}
         data-wave-wrap
@@ -331,8 +324,6 @@ export default function AutomationHeroBackground() {
           </g>
         </svg>
       </div>
-
-      {/* floating geometric shapes on the right half */}
       {shapes.map((s, i) => {
         const color = PALETTE[i % PALETTE.length];
         return (

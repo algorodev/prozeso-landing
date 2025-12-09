@@ -29,8 +29,8 @@ export default function AutomationsFilter({
   const current = CATEGORIES.find((c) => c.id === category) ?? CATEGORIES[0];
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col md:flex-row gap-3 items-center md:justify-end">
-        <div className="w-full md:w-auto">
+      <div className="flex flex-col md:flex-row gap-3 items-center md:justify-end min-w-0">
+        <div className="w-full md:w-auto min-w-0">
           <span className="sr-only" id="category-label">
             {t("categoryLabel")}
           </span>
@@ -38,15 +38,17 @@ export default function AutomationsFilter({
             <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
-                className="border border-border rounded-md w-full md:w-auto"
+                className="border border-border rounded-md w-full md:w-auto min-w-0 justify-between"
               >
-                {tc.has(current.id) ? tc(current.id) : current?.label}
-                <ChevronDown className="ml-1 size-4 opacity-70" />
+                <span className="truncate">
+                  {tc.has(current.id) ? tc(current.id) : current?.label}
+                </span>
+                <ChevronDown className="ml-1 size-4 opacity-70 shrink-0" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="start"
-              className="min-w-[--radix-dropdown-menu-trigger-width]"
+              className="w-[--radix-dropdown-menu-trigger-width] min-w-0 sm:min-w-56"
             >
               <DropdownMenuRadioGroup
                 value={category}

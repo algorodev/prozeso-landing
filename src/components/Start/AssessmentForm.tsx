@@ -148,7 +148,7 @@ export function AssessmentForm() {
       <CardContent className="pt-2">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4">
-            <div className="grid items-start gap-4 sm:grid-cols-2">
+            <div className="grid items-start gap-4 sm:grid-cols-2 min-w-0">
               <FormField
                 control={form.control}
                 name="name"
@@ -197,7 +197,7 @@ export function AssessmentForm() {
                 )}
               />
             </div>
-            <div className="grid items-start gap-4 sm:grid-cols-2">
+            <div className="grid items-start gap-4 sm:grid-cols-2 min-w-0">
               <FormField
                 control={form.control}
                 name="vertical"
@@ -205,27 +205,27 @@ export function AssessmentForm() {
                   <FormItem>
                     <FormLabel>{t("field.vertical.label")}</FormLabel>
                     <FormControl>
-                      <div>
+                      <div className="min-w-0">
                         <DropdownMenu>
                           <DropdownMenuTrigger asChild>
                             <Button
                               type="button"
                               variant="outline"
-                              className="w-full bg-input/30 rounded-md justify-between font-normal"
+                              className="w-full min-w-0 bg-input/30 rounded-md justify-between font-normal overflow-hidden"
                               aria-label={t("field.vertical.label")}
                             >
-                              <span className="truncate">
+                              <span className="truncate flex-1 min-w-0 text-left">
                                 {field.value
                                   ? tSolutions(`verticals.${field.value}.title`)
                                   : t("field.vertical.placeholder")}
                               </span>
                               <ChevronDown
-                                className="ml-2 size-4 opacity-70"
+                                className="ml-2 size-4 opacity-70 shrink-0"
                                 aria-hidden
                               />
                             </Button>
                           </DropdownMenuTrigger>
-                          <DropdownMenuContent className="w-[--radix-dropdown-menu-trigger-width] min-w-56">
+                          <DropdownMenuContent className="w-[--radix-dropdown-menu-trigger-width] min-w-0 sm:min-w-56">
                             <DropdownMenuItem
                               onClick={() => field.onChange("")}
                               aria-selected={
@@ -285,25 +285,25 @@ export function AssessmentForm() {
                     <FormItem>
                       <FormLabel>{t("field.automation.label")}</FormLabel>
                       <FormControl>
-                        <div>
+                        <div className="min-w-0">
                           <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                               <Button
                                 type="button"
                                 variant="outline"
-                                className="w-full bg-input/30 rounded-md justify-between font-normal"
+                                className="w-full min-w-0 bg-input/30 rounded-md justify-between font-normal overflow-hidden"
                                 aria-label={t("field.automation.label")}
                               >
-                                <span className="truncate">
+                                <span className="truncate flex-1 min-w-0 text-left">
                                   {triggerLabel()}
                                 </span>
                                 <ChevronDown
-                                  className="ml-2 size-4 opacity-70"
+                                  className="ml-2 size-4 opacity-70 shrink-0"
                                   aria-hidden
                                 />
                               </Button>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-[--radix-dropdown-menu-trigger-width] min-w-56">
+                            <DropdownMenuContent className="w-[--radix-dropdown-menu-trigger-width] min-w-0 sm:min-w-56">
                               <DropdownMenuItem
                                 onClick={clear}
                                 aria-selected={
