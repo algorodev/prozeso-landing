@@ -6,15 +6,50 @@ import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { AUTOMATIONS_DETAILS } from "@/data/automations";
+import { VERTICALS } from "@/data/verticals";
 
-const NAV_MAP: Record<string, string> = {
-  home: "/",
-  verticals: "/solutions",
-  assessment: "/start",
-  receptionist_ai: "/automations/receptionist-in-a-box",
-  appointment_reminder: "/automations/appointment-reminders-smart-reschedule",
-  missed_call_auto_callback: "/automations/missed-call-auto-callback",
+const normalizeKey = (value: string) =>
+  value
+    .toLowerCase()
+    .trim()
+    .replace(/[_\s]+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
+
+const buildNavMap = (): Record<string, string> => {
+  const map: Record<string, string> = {
+    home: "/",
+    assessment: "/start",
+    automations: "/automations",
+  };
+
+  try {
+    for (const a of AUTOMATIONS_DETAILS as any[]) {
+      const slug: string | undefined = a?.slug;
+      if (!slug) continue;
+      const key = normalizeKey(slug);
+      map[key] = `/automations/${slug}`;
+      if (a?.name) {
+        map[normalizeKey(a.name)] = `/automations/${slug}`;
+      }
+    }
+  } catch {}
+
+  try {
+    const entries = Object.entries(VERTICALS as Record<string, any>);
+    for (const [slug, v] of entries) {
+      const key = normalizeKey(slug);
+      map[key] = `/verticals/${slug}`;
+      if (v?.name) {
+        map[normalizeKey(v.name)] = `/verticals/${slug}`;
+      }
+    }
+  } catch {}
+
+  return map;
 };
+
+const NAV_MAP: Record<string, string> = buildNavMap();
 
 export const AgentFloatButton = () => {
   const conversation = useConversation();
@@ -31,7 +66,8 @@ export const AgentFloatButton = () => {
       connectionType: "webrtc",
       clientTools: {
         navigateTo: async ({ target }) => {
-          const path = NAV_MAP[target] || "/";
+          const key = normalizeKey(String(target || ""));
+          const path = NAV_MAP[key] || "/";
           if (!path) {
             console.warn("[Agent navigateTo] Unknown target:", target);
             return;
