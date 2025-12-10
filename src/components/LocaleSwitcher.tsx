@@ -47,7 +47,9 @@ export function LocaleSwitcher({ current, className }: Props) {
             className={cn("gap-2 min-w-0", className)}
           >
             <Globe className="size-4" aria-hidden />
-            <span className="font-medium truncate">{current.toUpperCase()}</span>
+            <span className="font-medium truncate">
+              {current.toUpperCase()}
+            </span>
             <ChevronDown className="ml-1 size-4 opacity-70" />
           </Button>
         </DropdownMenuTrigger>
