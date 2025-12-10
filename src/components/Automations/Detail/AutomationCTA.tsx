@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, NotebookPen, Phone } from 'lucide-react'
+import { ArrowRight, NotebookPen, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
@@ -26,15 +26,19 @@ export function AutomationCTA() {
             default: `See how ${automation.name} can transform your business. Free assessment, no credit card required.`,
           })}
         </p>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3">
           <Button asChild size="lg">
             <LocalizedLink href="/start">
               <NotebookPen className="mr-1 size-5" />
               {tCommonCta("startAssessment")}
             </LocalizedLink>
           </Button>
-          <Button asChild size="lg" variant='outline'>
-            <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+          <Button asChild size="lg" variant="outline">
+            <a
+              href="https://calendly.com/prozeso360/30min"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Phone className="mr-1 size-5" />
               {tCommonCta("bookCall")}
             </a>

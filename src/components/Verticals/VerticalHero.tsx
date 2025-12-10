@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Building2, NotebookPen, Phone } from 'lucide-react'
+import { ArrowRight, Building2, NotebookPen, Phone } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { ComponentType } from "react";
@@ -48,15 +48,19 @@ export function VerticalHero() {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl lg:max-w-none mb-12 leading-relaxed">
               {subheading}
             </p>
-            <div className='flex flex-col md:flex-row gap-3'>
+            <div className="flex flex-col md:flex-row gap-3">
               <Button asChild size="lg">
                 <LocalizedLink href={`/start?vertical=${slug}`}>
                   <NotebookPen className="mr-1 size-5" />
                   {tc("startAssessment")}
                 </LocalizedLink>
               </Button>
-              <Button asChild size="lg" variant='outline'>
-                <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+              <Button asChild size="lg" variant="outline">
+                <a
+                  href="https://calendly.com/prozeso360/30min"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Phone className="mr-1 size-5" />
                   {tc("bookCall")}
                 </a>

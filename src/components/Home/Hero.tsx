@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { NotebookPen, Phone } from 'lucide-react'
+import { NotebookPen, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import HeroBackground from "@/components/Home/HeroBackground";
 import { Button } from "@/components/ui/Button";
@@ -55,8 +55,12 @@ const Hero = () => {
                   {tc("startAssessment")}
                 </LocalizedLink>
               </Button>
-              <Button asChild size="lg" variant='outline'>
-                <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+              <Button asChild size="lg" variant="outline">
+                <a
+                  href="https://calendly.com/prozeso360/30min"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Phone className="mr-1 size-5" />
                   {tc("bookCall")}
                 </a>
