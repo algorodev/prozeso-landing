@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone } from "lucide-react";
+import { NotebookPen, Phone } from 'lucide-react'
 import { useTranslations } from "next-intl";
 import HeroBackground from "@/components/Home/HeroBackground";
 import { Button } from "@/components/ui/Button";
@@ -9,6 +9,7 @@ import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const Hero = () => {
   const t = useTranslations("hero");
+  const tc = useTranslations("common.cta");
 
   return (
     <section className="relative isolate min-h-dvh-minus-header overflow-hidden flex items-center">
@@ -46,13 +47,19 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: 0.2 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-6 flex justify-center items-center gap-3 lg:justify-start"
+              className="mt-6 flex flex-col md:flex-row justify-center items-center gap-3 lg:justify-start"
             >
               <Button asChild size="lg">
                 <LocalizedLink href="/start">
-                  <Phone className="mr-1 size-5" />
-                  {t("ctaPrimary")}
+                  <NotebookPen className="mr-1 size-5" />
+                  {tc("startAssessment")}
                 </LocalizedLink>
+              </Button>
+              <Button asChild size="lg" variant='outline'>
+                <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+                  <Phone className="mr-1 size-5" />
+                  {tc("bookCall")}
+                </a>
               </Button>
             </motion.div>
             <motion.div

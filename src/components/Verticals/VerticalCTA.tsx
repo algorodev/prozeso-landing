@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, NotebookPen, Phone } from 'lucide-react'
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
@@ -12,6 +12,7 @@ export function VerticalCTA() {
   const id = Array.isArray(params?.id) ? params.id[0] : params?.id;
   const vertical = id ? VERTICALS[id as keyof typeof VERTICALS] : undefined;
   const t = useTranslations();
+  const tc = useTranslations("common.cta");
   const name = (() => {
     if (!id) return vertical?.name ?? "";
     const key = `verticals.${id}.name`;
@@ -32,14 +33,18 @@ export function VerticalCTA() {
             ? (t("verticals.page.cta.subtitle") as string)
             : "Start with a free assessment tailored to your industry."}
         </p>
-        <div className="flex justify-center">
+        <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
           <Button asChild size="lg">
             <LocalizedLink href={`/start?vertical=${vertical?.slug}`}>
-              <Phone className="w-5 h-5" />
-              {t.has("verticals.page.cta.button")
-                ? (t("verticals.page.cta.button") as string)
-                : "Start your free assessment"}
+              <NotebookPen className="mr-1 size-5" />
+              {tc("startAssessment")}
             </LocalizedLink>
+          </Button>
+          <Button asChild size="lg" variant='outline'>
+            <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+              <Phone className="mr-1 size-5" />
+              {tc("bookCall")}
+            </a>
           </Button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Building2 } from "lucide-react";
+import { ArrowRight, Building2, NotebookPen, Phone } from 'lucide-react'
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { ComponentType } from "react";
@@ -17,6 +17,7 @@ export function VerticalHero() {
     (vertical?.icon as unknown as ComponentType<{ className?: string }>) ||
     Building2;
   const t = useTranslations();
+  const tc = useTranslations("common.cta");
   const headlineKey = id ? `verticals.${id}.headline` : undefined;
   const subheadingKey = id ? `verticals.${id}.subheading` : undefined;
   const subheading =
@@ -47,14 +48,18 @@ export function VerticalHero() {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl lg:max-w-none mb-12 leading-relaxed">
               {subheading}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-start">
+            <div className='flex flex-col md:flex-row gap-3'>
               <Button asChild size="lg">
                 <LocalizedLink href={`/start?vertical=${slug}`}>
-                  {t.has("verticals.page.hero.button")
-                    ? (t("verticals.page.hero.button") as string)
-                    : "Start assessment"}
-                  <ArrowRight className="w-5 h-5" />
+                  <NotebookPen className="mr-1 size-5" />
+                  {tc("startAssessment")}
                 </LocalizedLink>
+              </Button>
+              <Button asChild size="lg" variant='outline'>
+                <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+                  <Phone className="mr-1 size-5" />
+                  {tc("bookCall")}
+                </a>
               </Button>
             </div>
           </div>

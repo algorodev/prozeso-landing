@@ -1,4 +1,10 @@
 {
+  "common": {
+    "cta": {
+      "startAssessment": "Start free assessment",
+      "bookCall": "Book a Call"
+    }
+  },
   "hero": {
     "title": "Workflows that <primary>work</primary> while you <secondary>sleep</secondary>",
     "subtitle": "We develop conversational AI that understands, automates, and scales every interaction in your business.",

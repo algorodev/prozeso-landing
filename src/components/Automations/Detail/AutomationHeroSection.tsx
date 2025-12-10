@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, NotebookPen, Phone } from 'lucide-react'
 import { useTranslations } from "next-intl";
 import AutomationHeroBackground from "@/components/Automations/AutomationHeroBackground";
 import { Button } from "@/components/ui/Button";
@@ -12,6 +12,7 @@ export function AutomationHeroSection() {
   if (!automation) return null;
   const t = useTranslations(`automations.details.${id}`);
   const tc = useTranslations("automations.details.common");
+  const tCommonCta = useTranslations("common.cta");
 
   return (
     <section className="relative isolate min-h-[80vh] flex items-center justify-center px-6 pt-16 overflow-hidden">
@@ -36,12 +37,18 @@ export function AutomationHeroSection() {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed">
             {t("subheading", { default: automation.subheading })}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className='flex flex-col md:flex-row gap-3'>
             <Button asChild size="lg">
               <LocalizedLink href="/start">
-                <Phone className="w-5 h-5" />
-                {tc("talkToUs", { default: "Talk to us" })}
+                <NotebookPen className="mr-1 size-5" />
+                {tCommonCta("startAssessment")}
               </LocalizedLink>
+            </Button>
+            <Button asChild size="lg" variant='outline'>
+              <a href="https://calendly.com/prozeso360/30min" target="_blank" rel="noreferrer">
+                <Phone className="mr-1 size-5" />
+                {tCommonCta("bookCall")}
+              </a>
             </Button>
           </div>
         </div>

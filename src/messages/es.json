@@ -1,4 +1,10 @@
 {
+  "common": {
+    "cta": {
+      "startAssessment": "Comenzar evaluación gratis",
+      "bookCall": "Reservar una llamada"
+    }
+  },
   "hero": {
     "title": "Workflows que <primary>trabajan</primary> mientras tu <secondary>duermes</secondary>",
     "subtitle": "Desarrollamos IA conversacional que entiende, automatiza, y escala cada interacción en tu negocio.",
