@@ -6,8 +6,8 @@
     }
   },
   "hero": {
-    "title": "Workflows that <primary>work</primary> while you <secondary>sleep</secondary>",
-    "subtitle": "We develop conversational AI that understands, automates, and scales every interaction in your business.",
+    "title": "Make your <primary>business</primary> work for <secondary>you</secondary>",
+    "subtitle": "At Prozeso, we build AI-powered automations that handle calls and scale every interaction in your business.",
     "ctaPrimary": "Start now",
     "ctaSecondary": "Try free demo",
     "trialBadges": {
