@@ -3,6 +3,11 @@
     "cta": {
       "startAssessment": "Start free assessment",
       "bookCall": "Book a Call"
+    },
+    "agentButton": {
+      "text": "Talk to an agent",
+      "calling": "Calling...",
+      "label": "Start AI call"
     }
   },
   "hero": {

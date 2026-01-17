@@ -6,7 +6,7 @@ import { HangUpButton } from "@/components/HangUpButton";
 import { VoiceReactiveOverlay } from "@/components/VoiceReactiveOverlay";
 
 export const CallManager = () => {
-  const { isCallActive, setIsCallActive } = useCall();
+  const { isCallActive, setIsCallActive, callStartTime } = useCall();
 
   const handleHangUp = () => {
     setIsCallActive(false);
@@ -16,13 +16,15 @@ export const CallManager = () => {
 
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-50">
-        <AgentFloatButton />
-      </div>
+      {!isCallActive && (
+        <div className="fixed bottom-6 right-6 z-50">
+          <AgentFloatButton />
+        </div>
+      )}
       {isCallActive && (
         <>
           <VoiceReactiveOverlay isActive={isCallActive} onHangUp={handleHangUp} />
-          <HangUpButton onHangUp={handleHangUp} />
+          <HangUpButton onHangUp={handleHangUp} callStartTime={callStartTime} />
         </>
       )}
     </>

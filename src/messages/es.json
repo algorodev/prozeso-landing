@@ -3,6 +3,11 @@
     "cta": {
       "startAssessment": "Comenzar evaluación gratis",
       "bookCall": "Reservar una llamada"
+    },
+    "agentButton": {
+      "text": "Hablar con un agente",
+      "calling": "Llamando...",
+      "label": "Iniciar llamada con IA"
     }
   },
   "hero": {
