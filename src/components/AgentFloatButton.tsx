@@ -4,7 +4,7 @@ import { useConversation } from "@elevenlabs/react";
 import { PhoneCall } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { AUTOMATIONS_DETAILS } from "@/data/automations";
 import { VERTICALS } from "@/data/verticals";
 import { useCall } from "@/components/CallContext";
@@ -89,12 +89,14 @@ export const AgentFloatButton = () => {
           },
         },
       });
+      
       setConversationStarted(true);
       setIsCallActive(true);
       setIsCalling(false);
     } catch (error) {
       console.error("Error starting conversation:", error);
       setIsCalling(false);
+      setIsCallActive(false);
     }
   };
 
@@ -112,7 +114,7 @@ export const AgentFloatButton = () => {
   const t = useTranslations("common.agentButton");
 
   if (conversationStarted) {
-    return null;
+    return <div style={{ display: "none" }} />;
   }
 
   return (
