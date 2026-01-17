@@ -4,10 +4,11 @@ import { useConversation } from "@elevenlabs/react";
 import { PhoneCall } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { AUTOMATIONS_DETAILS } from "@/data/automations";
 import { VERTICALS } from "@/data/verticals";
+import { useCall } from "@/components/CallContext";
 
 const normalizeKey = (value: string) =>
   value
@@ -56,6 +57,13 @@ export const AgentFloatButton = () => {
   const locale = useLocale();
   const router = useRouter();
   const [conversationStarted, setConversationStarted] = useState(false);
+  const { setIsCallActive } = useCall();
+
+  const endConversation = useCallback(async () => {
+    await conversation.endSession();
+    setConversationStarted(false);
+    setIsCallActive(false);
+  }, [conversation, setIsCallActive]);
 
   const startConversation = async () => {
     await conversation.startSession({
@@ -80,19 +88,31 @@ export const AgentFloatButton = () => {
       },
     });
     setConversationStarted(true);
+    setIsCallActive(true);
   };
 
-  const endConversation = async () => {
-    await conversation.endSession();
-    setConversationStarted(false);
-  };
+  useEffect(() => {
+    const handleHangUp = () => {
+      if (conversationStarted) {
+        endConversation();
+      }
+    };
+
+    window.addEventListener("hangup-call", handleHangUp);
+    return () => window.removeEventListener("hangup-call", handleHangUp);
+  }, [conversationStarted, endConversation]);
+
+  if (conversationStarted) {
+    return null;
+  }
 
   return (
     <Button
-      onClick={conversationStarted ? endConversation : startConversation}
+      onClick={startConversation}
       variant="primary"
-      className={`rounded-full w-12 h-12 ${conversationStarted ? "ring-2 ring-emerald-400/50" : ""}`}
+      className="rounded-full w-12 h-12"
       size="md"
+      aria-label="Start AI call"
     >
       <PhoneCall className="size-5" />
     </Button>

@@ -3,7 +3,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
-import { AgentFloatButton } from "@/components/AgentFloatButton";
+import { CallManager } from "@/components/CallManager";
+import { CallProvider } from "@/components/CallContext";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
@@ -39,12 +40,12 @@ export default async function LocaleLayout({ children, params }: Props) {
       disableTransitionOnChange
     >
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <Header />
-        {children}
-        <Footer />
-        <div className="fixed bottom-6 right-6 z-50">
-          <AgentFloatButton />
-        </div>
+        <CallProvider>
+          <Header />
+          {children}
+          <Footer />
+          <CallManager />
+        </CallProvider>
       </NextIntlClientProvider>
     </ThemeProvider>
   );
