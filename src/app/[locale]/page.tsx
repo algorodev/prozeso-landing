@@ -101,8 +101,8 @@ export default function Home() {
       <Hero />
       <Understanding />
       <Impact />
-      <IndustryDirectAccess />
-      <CoreAutomations />
+      {/* <IndustryDirectAccess />
+      <CoreAutomations /> */}
       <FinalCTA />
     </div>
   );

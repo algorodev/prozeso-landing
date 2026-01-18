@@ -26,32 +26,14 @@ type NavItem = {
 
 export const Header = () => {
   const t = useTranslations("header");
-  const v = useTranslations("solutions.verticals");
   const pathname = usePathname();
   const locale = useLocale();
 
   const clientUrl =
     process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
-  const verticals: {
-    id: "beauty" | "restaurants" | "clinics" | "hotels" | "realEstate";
-    href: string;
-  }[] = [
-    { id: "beauty", href: "/verticals/hair-and-beauty" },
-    { id: "restaurants", href: "/verticals/restaurants" },
-    { id: "clinics", href: "/verticals/clinics-and-health" },
-    { id: "hotels", href: "/verticals/hotels" },
-    { id: "realEstate", href: "/verticals/real-estate" },
-  ];
 
   const navItems: NavItem[] = [
-    { label: t("nav.automations"), href: "/automations" },
-    {
-      label: t("nav.solutions"),
-      children: verticals.map((vert) => ({
-        label: v(`${vert.id}.title`),
-        href: vert.href,
-      })),
-    },
+    { label: t("nav.useCases"), href: "/use-cases" },
   ];
 
   return (

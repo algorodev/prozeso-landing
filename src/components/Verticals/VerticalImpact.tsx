@@ -40,7 +40,7 @@ export function VerticalImpact() {
             return (
               <div
                 key={idx}
-                className={`bg-card rounded-3xl p-8 flex flex-col justify-between min-h-[350px] border-l-4 ${colors[idx % colors.length]}`}
+                className={`rounded-3xl p-8 flex flex-col justify-between min-h-[350px] border-l-4 ${colors[idx % colors.length]}`}
               >
                 <div className="mb-auto">
                   <div className="flex items-baseline">

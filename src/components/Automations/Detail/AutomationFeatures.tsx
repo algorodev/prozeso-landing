@@ -10,7 +10,7 @@ export function AutomationFeatures() {
   const tc = useTranslations("automations.details.common");
 
   return (
-    <section className="py-24 px-6 bg-card">
+    <section className="py-24 px-6">
       <div className="container mx-auto">
         <h2 className="font-heading text-3xl md:text-4xl font-semibold tracking-tight mb-12">
           {tc("coreFeatures", { default: "Core features" })}

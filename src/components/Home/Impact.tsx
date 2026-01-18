@@ -67,7 +67,7 @@ const Impact = () => {
                 hidden: { opacity: 0, y: 24 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className={`bg-card rounded-3xl p-8 flex flex-col justify-between min-h-[400px] border border-transparent transition-all ${
+              className={`rounded-3xl p-8 flex flex-col justify-between min-h-[400px] border border-transparent transition-all ${
                 metric.color === "primary"
                   ? "hover:border-primary/40"
                   : metric.color === "secondary"

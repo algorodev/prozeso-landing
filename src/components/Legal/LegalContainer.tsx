@@ -28,7 +28,7 @@ export default function LegalContainer({
       </header>
 
       {toc && toc.length > 0 ? (
-        <aside className="mb-8 rounded-lg border bg-card p-4 text-card-foreground">
+        <aside className="mb-8 rounded-lg border p-4 text-card-foreground">
           <p className="mb-2 caption-text font-medium uppercase tracking-wide text-muted-foreground">
             On this page
           </p>

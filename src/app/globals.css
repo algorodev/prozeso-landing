@@ -50,6 +50,7 @@
   --brand-cyan: #22ffe8;
   --brand-lavender: #a394ff;
   --brand-mint: #30e6a5;
+  --brand-orange: #ff9500;
   --background: var(--brand-black);
   --foreground: #e6e6e6;
   --card: oklch(0.21 0.03 260);
@@ -72,7 +73,7 @@
   --chart-2: var(--brand-mint);
   --chart-3: var(--brand-lavender);
   --chart-4: var(--brand-cyan);
-  --chart-5: #ffffff;
+  --chart-5: var(--brand-orange);
   --sidebar: oklch(0.18 0.03 260);
   --sidebar-foreground: var(--foreground);
   --sidebar-primary: var(--brand-blue);

@@ -23,7 +23,7 @@ export function AutomationExamples() {
           {automation.examples.map((ex: any, idx: number) => (
             <div
               key={idx}
-              className="rounded-3xl border border-border bg-card p-6 flex flex-col gap-3"
+              className="rounded-3xl border border-border p-6 flex flex-col gap-3"
             >
               <h3 className="font-semibold text-lg">
                 {t(`examples.${idx}.title`, { default: ex.title })}

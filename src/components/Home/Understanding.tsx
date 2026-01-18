@@ -73,7 +73,7 @@ const Understanding = () => {
                 className="group flex flex-col h-full"
               >
                 <div
-                  className={`transition-all duration-300 bg-card border border-transparent hover:border-accent rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden`}
+                  className={`transition-all duration-300 border border-transparent hover:border-accent rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden`}
                 >
                   <div className="w-20 h-20 rounded-2xl bg-accent/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-125">
                     <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />

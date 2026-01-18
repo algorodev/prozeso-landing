@@ -24,8 +24,7 @@
   },
   "header": {
     "nav": {
-      "solutions": "Industrias",
-      "automations": "Automatizaciones"
+      "useCases": "Casos de Uso"
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
@@ -1666,6 +1665,217 @@
         "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
       },
       "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
+    }
+  },
+  "useCases": {
+    "hero": {
+      "title": "Descubre cómo la <primary>automatización</primary> puede transformar tu <secondary>negocio</secondary>",
+      "subtitle": "Cuéntanos sobre tu situación actual y nuestra AI identificará los pain points específicos de tu empresa y te mostrará casos de uso personalizados."
+    },
+    "form": {
+      "title": "Genera tu Reporte Personalizado",
+      "subtitle": "Completa el formulario a continuación y nuestra IA analizará tus puntos críticos y generará un reporte personalizado sobre cómo podemos ayudar a tu negocio.",
+      "field": {
+        "companySize": {
+          "label": "Tamaño de la empresa",
+          "placeholder": "Selecciona el tamaño de la empresa",
+          "error": "Por favor, selecciona el tamaño de tu empresa",
+          "options": {
+            "1-10": "1-10 empleados",
+            "11-50": "11-50 empleados",
+            "51-200": "51-200 empleados",
+            "201-500": "201-500 empleados",
+            "500+": "500+ empleados"
+          }
+        },
+        "industry": {
+          "label": "Industria",
+          "placeholder": "Selecciona tu industria",
+          "error": "Por favor, selecciona tu industria",
+          "options": {
+            "retail": "Retail",
+            "education": "Educación",
+            "professionalServices": "Servicios Profesionales",
+            "ecommerce": "E-commerce",
+            "manufacturing": "Manufactura",
+            "technology": "Tecnología",
+            "finance": "Finanzas",
+            "legal": "Legal",
+            "construction": "Construcción",
+            "transportation": "Transporte y Logística",
+            "fitness": "Fitness y Bienestar",
+            "entertainment": "Entretenimiento",
+            "nonProfit": "Sin Fines de Lucro",
+            "other": "Otro"
+          }
+        },
+        "painPoints": {
+          "label": "Cuéntanos sobre tus puntos críticos",
+          "placeholder": "Describe los desafíos que enfrenta tu negocio. Por ejemplo: 'Perdemos muchas llamadas en horas pico', 'Las ausencias están afectando nuestros ingresos', 'Nuestro equipo pasa demasiado tiempo en tareas manuales'...",
+          "error": "Por favor, describe al menos algunos puntos críticos (mínimo 10 caracteres)"
+        }
+      },
+      "submit": {
+        "idle": "Generar Reporte",
+        "generating": "Generando reporte..."
+      },
+      "serverError": "Algo salió mal. Inténtalo de nuevo.",
+      "report": {
+        "title": "Tu Reporte Personalizado",
+        "generateAnother": "Generar Otro Reporte",
+        "download": "Descargar Reporte"
+      }
+    },
+    "showcase": {
+      "title": "Casos de Uso por Área de Negocio",
+      "subtitle": "Descubre cómo la automatización puede transformar diferentes áreas de tu negocio con soluciones específicas.",
+      "areas": {
+        "operations": "Operaciones",
+        "sales": "Ventas",
+        "hr": "Recursos Humanos",
+        "finance": "Finanzas",
+        "customerService": "Atención al Cliente"
+      }
+    },
+    "workflowAutomation": {
+      "title": "Automatización de Workflows",
+      "description": "Conecta automáticamente tus herramientas para eliminar tareas repetitivas y optimizar procesos",
+      "benefit": "Transforma el trabajo manual en flujos automatizados",
+      "metric1": "85% reducción en tareas manuales",
+      "metric2": "40 hrs/semana ahorradas por equipo"
+    },
+    "inventoryManagement": {
+      "title": "Gestión de Inventario",
+      "description": "Seguimiento de stock en tiempo real y pedidos automáticos para prevenir desabastecimientos y exceso de inventario",
+      "benefit": "Siempre con los niveles de inventario correctos",
+      "metric1": "60% reducción en desabastecimientos",
+      "metric2": "35% disminución en costos de almacenamiento"
+    },
+    "shippingLogistics": {
+      "title": "Envíos y Logística",
+      "description": "Seguimiento automatizado, notificaciones y actualizaciones de entrega mantienen a los clientes informados automáticamente",
+      "benefit": "Comunicación proactiva con clientes",
+      "metric1": "70% menos consultas de clientes",
+      "metric2": "50% confirmación de entrega más rápida"
+    },
+    "processOptimization": {
+      "title": "Optimización de Procesos",
+      "description": "Análisis impulsado por IA identifica cuellos de botella y sugiere mejoras de procesos en tiempo real",
+      "benefit": "Mejora operativa continua",
+      "metric1": "45% aumento en rendimiento",
+      "metric2": "30% reducción en tiempo de proceso"
+    },
+    "leadQualification": {
+      "title": "Calificación y Seguimiento de Leads",
+      "description": "Califica, puntúa y nutre leads automáticamente con secuencias de seguimiento personalizadas",
+      "benefit": "Nunca pierdas una oportunidad de venta",
+      "metric1": "3x aumento en leads calificados",
+      "metric2": "60% tiempo de respuesta más rápido"
+    },
+    "salesForecasting": {
+      "title": "Predicción de Ventas",
+      "description": "La IA predice tendencias de ventas y recomienda acciones para cerrar más tratos más rápido",
+      "benefit": "Decisiones de ventas basadas en datos",
+      "metric1": "25% aumento en tasa de cierre",
+      "metric2": "40% mejora en precisión del pronóstico"
+    },
+    "proposalGeneration": {
+      "title": "Generación de Propuestas",
+      "description": "Genera cotizaciones y propuestas personalizadas automáticamente basadas en datos y requisitos del cliente",
+      "benefit": "Propuestas profesionales en minutos",
+      "metric1": "75% reducción en tiempo de propuesta",
+      "metric2": "90% aumento en calidad de propuesta"
+    },
+    "customerRetention": {
+      "title": "Retención de Clientes",
+      "description": "Nutrición post-venta automatizada y detección de abandono para mantener y hacer crecer relaciones con clientes",
+      "benefit": "Maximiza el valor de vida del cliente",
+      "metric1": "42% reducción en tasa de abandono",
+      "metric2": "35% aumento en ingresos por ventas adicionales"
+    },
+    "intelligentRecruitment": {
+      "title": "Reclutamiento Inteligente",
+      "description": "Screening automatizado de candidatos, matching y programación de entrevistas para encontrar el mejor talento más rápido",
+      "benefit": "Contrata talento de primer nivel eficientemente",
+      "metric1": "50% tiempo de contratación más rápido",
+      "metric2": "65% mejora en ajuste del candidato"
+    },
+    "automatedOnboarding": {
+      "title": "Onboarding Automatizado",
+      "description": "Proceso de incorporación digital optimizado con flujos automatizados, recolección de documentos y capacitación",
+      "benefit": "Haz que los nuevos empleados sean productivos más rápido",
+      "metric1": "80% reducción en tiempo de onboarding",
+      "metric2": "92% puntuación de satisfacción de nuevos empleados"
+    },
+    "leaveAttendanceManagement": {
+      "title": "Gestión de Ausencias y Asistencia",
+      "description": "Seguimiento automatizado de vacaciones, días de enfermedad y asistencia con aplicación de políticas y notificaciones",
+      "benefit": "Gestión precisa y conforme de ausencias",
+      "metric1": "85% reducción en errores administrativos",
+      "metric2": "50% aprobaciones de ausencias más rápidas"
+    },
+    "performanceReviews": {
+      "title": "Evaluaciones de Desempeño",
+      "description": "Seguimiento continuo del desempeño con recolección automatizada de feedback y programación de revisiones",
+      "benefit": "Gestión del desempeño basada en datos",
+      "metric1": "55% aumento en engagement de empleados",
+      "metric2": "40% ciclos de feedback más frecuentes"
+    },
+    "automatedInvoicing": {
+      "title": "Facturación Automatizada",
+      "description": "Genera y envía facturas automáticamente, rastrea pagos y envía recordatorios sin intervención manual",
+      "benefit": "Cobra más rápido con menos esfuerzo",
+      "metric1": "95% reducción en facturas tardías",
+      "metric2": "15 días cobro más rápido"
+    },
+    "expenseManagement": {
+      "title": "Gestión de Gastos",
+      "description": "Seguimiento automatizado de gastos, flujos de aprobación y análisis de presupuesto para controlar costos inteligentemente",
+      "benefit": "Visibilidad completa del gasto",
+      "metric1": "32% reducción en gastos innecesarios",
+      "metric2": "70% aprobaciones de gastos más rápidas"
+    },
+    "bankReconciliation": {
+      "title": "Reconciliación Bancaria",
+      "description": "Conciliación automática de transacciones y reconciliación con tu sistema contable en tiempo real",
+      "benefit": "Libros precisos con mínimo esfuerzo",
+      "metric1": "90% reducción en tiempo de reconciliación",
+      "metric2": "99.8% precisión de coincidencia"
+    },
+    "financialReporting": {
+      "title": "Reportes Financieros",
+      "description": "Dashboards en tiempo real y reportes financieros automatizados con insights accionables y alertas",
+      "benefit": "Toma decisiones informadas más rápido",
+      "metric1": "Tiempo real vs. reportes mensuales",
+      "metric2": "75% reducción en tiempo de reportes"
+    },
+    "aiPoweredChatbot": {
+      "title": "Chatbot con IA",
+      "description": "Chatbot inteligente 24/7 que resuelve problemas comunes instantáneamente en múltiples canales",
+      "benefit": "Soporte instantáneo a escala",
+      "metric1": "82% resolución sin intervención humana",
+      "metric2": "Menos de 30 segundos respuesta promedio"
+    },
+    "smartTicketRouting": {
+      "title": "Enrutamiento Inteligente de Tickets",
+      "description": "Priorización y enrutamiento inteligente de tickets asegura que los problemas lleguen al agente correcto inmediatamente",
+      "benefit": "Resolución más rápida para clientes",
+      "metric1": "65% reducción en tiempo de respuesta",
+      "metric2": "40% mejora en resolución en primer contacto"
+    },
+    "sentimentAnalysis": {
+      "title": "Análisis de Sentimiento",
+      "description": "Detecta proactivamente problemas de satisfacción del cliente y activa intervenciones antes de que los problemas escalen",
+      "benefit": "Previene el abandono de clientes",
+      "metric1": "48% aumento en puntuación NPS",
+      "metric2": "60% reducción en escalaciones"
+    },
+    "knowledgeBaseIntegration": {
+      "title": "Integración de Base de Conocimiento",
+      "description": "Respuestas automatizadas usando tu base de conocimiento aseguran entrega consistente y precisa de información",
+      "benefit": "Soporte consistente y útil",
+      "metric1": "75% reducción en escalaciones",
+      "metric2": "85% tasa de autoservicio del cliente"
     }
   },
   "home": {

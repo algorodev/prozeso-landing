@@ -24,8 +24,7 @@
   },
   "header": {
     "nav": {
-      "solutions": "Industries",
-      "automations": "Automations"
+      "useCases": "Use Cases"
     },
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
@@ -1662,6 +1661,217 @@
         "body": "Our team will contact you shortly to schedule your free call."
       },
       "serverErrorDefault": "Something went wrong. Please try again."
+    }
+  },
+  "useCases": {
+    "hero": {
+      "title": "Discover how <primary>workflow</primary> automation can transform your <secondary>business</secondary>",
+      "subtitle": "Tell us about your current situation and our AI will identify the specific pain points of your company and show you personalized use cases."
+    },
+    "form": {
+      "title": "Generate Your Custom Report",
+      "subtitle": "Fill out the form below and our AI will analyze your pain points and generate a personalized report on how we can help your business.",
+      "field": {
+        "companySize": {
+          "label": "Company size",
+          "placeholder": "Select company size",
+          "error": "Please select your company size",
+          "options": {
+            "1-10": "1-10 employees",
+            "11-50": "11-50 employees",
+            "51-200": "51-200 employees",
+            "201-500": "201-500 employees",
+            "500+": "500+ employees"
+          }
+        },
+        "industry": {
+          "label": "Industry",
+          "placeholder": "Select your industry",
+          "error": "Please select your industry",
+          "options": {
+            "retail": "Retail",
+            "education": "Education",
+            "professionalServices": "Professional Services",
+            "ecommerce": "E-commerce",
+            "manufacturing": "Manufacturing",
+            "technology": "Technology",
+            "finance": "Finance",
+            "legal": "Legal",
+            "construction": "Construction",
+            "transportation": "Transportation & Logistics",
+            "fitness": "Fitness & Wellness",
+            "entertainment": "Entertainment",
+            "nonProfit": "Non-Profit",
+            "other": "Other"
+          }
+        },
+        "painPoints": {
+          "label": "Tell us about your pain points",
+          "placeholder": "Describe the challenges your business is facing. For example: 'We miss many calls during peak hours', 'No-shows are affecting our revenue', 'Our team spends too much time on manual tasks'...",
+          "error": "Please describe at least some pain points (minimum 10 characters)"
+        }
+      },
+      "submit": {
+        "idle": "Generate Report",
+        "generating": "Generating report..."
+      },
+      "serverError": "Something went wrong. Please try again.",
+      "report": {
+        "title": "Your Personalized Report",
+        "generateAnother": "Generate Another Report",
+        "download": "Download Report"
+      }
+    },
+    "showcase": {
+      "title": "Use Cases by Business Area",
+      "subtitle": "Discover how automation can transform different areas of your business with targeted solutions.",
+      "areas": {
+        "operations": "Operations",
+        "sales": "Sales",
+        "hr": "Human Resources",
+        "finance": "Finance",
+        "customerService": "Customer Service"
+      }
+    },
+    "workflowAutomation": {
+      "title": "Workflow Automation",
+      "description": "Automatically connect your tools to eliminate repetitive tasks and streamline processes",
+      "benefit": "Transform manual work into automated workflows",
+      "metric1": "85% reduction in manual tasks",
+      "metric2": "40 hrs/week saved per team"
+    },
+    "inventoryManagement": {
+      "title": "Inventory Management",
+      "description": "Real-time stock tracking and automated reordering to prevent stockouts and overstocking",
+      "benefit": "Always have the right inventory levels",
+      "metric1": "60% reduction in stockouts",
+      "metric2": "35% decrease in carrying costs"
+    },
+    "shippingLogistics": {
+      "title": "Shipping & Logistics",
+      "description": "Automated tracking, notifications, and delivery updates keep customers informed automatically",
+      "benefit": "Proactive customer communication",
+      "metric1": "70% fewer customer inquiries",
+      "metric2": "50% faster delivery confirmation"
+    },
+    "processOptimization": {
+      "title": "Process Optimization",
+      "description": "AI-powered analysis identifies bottlenecks and suggests process improvements in real-time",
+      "benefit": "Continuous operational improvement",
+      "metric1": "45% increase in throughput",
+      "metric2": "30% reduction in process time"
+    },
+    "leadQualification": {
+      "title": "Lead Qualification & Follow-up",
+      "description": "Automatically score, qualify, and nurture leads with personalized follow-up sequences",
+      "benefit": "Never miss a sales opportunity",
+      "metric1": "3x increase in qualified leads",
+      "metric2": "60% faster response time"
+    },
+    "salesForecasting": {
+      "title": "Sales Forecasting",
+      "description": "AI predicts sales trends and recommends actions to close more deals faster",
+      "benefit": "Data-driven sales decisions",
+      "metric1": "25% increase in win rate",
+      "metric2": "40% improvement in forecast accuracy"
+    },
+    "proposalGeneration": {
+      "title": "Proposal Generation",
+      "description": "Generate personalized quotes and proposals automatically based on customer data and requirements",
+      "benefit": "Professional proposals in minutes",
+      "metric1": "75% reduction in proposal time",
+      "metric2": "90% increase in proposal quality"
+    },
+    "customerRetention": {
+      "title": "Customer Retention",
+      "description": "Automated post-sale nurturing and churn detection to maintain and grow customer relationships",
+      "benefit": "Maximize customer lifetime value",
+      "metric1": "42% reduction in churn rate",
+      "metric2": "35% increase in upsell revenue"
+    },
+    "intelligentRecruitment": {
+      "title": "Intelligent Recruitment",
+      "description": "Automated candidate screening, matching, and interview scheduling to find the best talent faster",
+      "benefit": "Hire top talent efficiently",
+      "metric1": "50% faster time-to-hire",
+      "metric2": "65% improvement in candidate fit"
+    },
+    "automatedOnboarding": {
+      "title": "Automated Onboarding",
+      "description": "Streamlined digital onboarding process with automated workflows, document collection, and training",
+      "benefit": "Get new hires productive faster",
+      "metric1": "80% reduction in onboarding time",
+      "metric2": "92% new hire satisfaction score"
+    },
+    "leaveAttendanceManagement": {
+      "title": "Leave & Attendance Management",
+      "description": "Automated tracking of vacations, sick days, and attendance with policy enforcement and notifications",
+      "benefit": "Accurate and compliant leave management",
+      "metric1": "85% reduction in admin errors",
+      "metric2": "50% faster leave approvals"
+    },
+    "performanceReviews": {
+      "title": "Performance Reviews",
+      "description": "Continuous performance tracking with automated feedback collection and review scheduling",
+      "benefit": "Data-driven performance management",
+      "metric1": "55% increase in employee engagement",
+      "metric2": "40% more frequent feedback cycles"
+    },
+    "automatedInvoicing": {
+      "title": "Automated Invoicing",
+      "description": "Generate and send invoices automatically, track payments, and send reminders without manual intervention",
+      "benefit": "Get paid faster with less effort",
+      "metric1": "95% reduction in late invoices",
+      "metric2": "15 days faster payment collection"
+    },
+    "expenseManagement": {
+      "title": "Expense Management",
+      "description": "Automated expense tracking, approval workflows, and budget analysis to control costs intelligently",
+      "benefit": "Complete visibility into spending",
+      "metric1": "32% reduction in unnecessary expenses",
+      "metric2": "70% faster expense approvals"
+    },
+    "bankReconciliation": {
+      "title": "Bank Reconciliation",
+      "description": "Automated matching of transactions and reconciliation with your accounting system in real-time",
+      "benefit": "Accurate books with minimal effort",
+      "metric1": "90% reduction in reconciliation time",
+      "metric2": "99.8% matching accuracy"
+    },
+    "financialReporting": {
+      "title": "Financial Reporting",
+      "description": "Real-time dashboards and automated financial reports with actionable insights and alerts",
+      "benefit": "Make informed decisions faster",
+      "metric1": "Real-time vs. monthly reports",
+      "metric2": "75% reduction in reporting time"
+    },
+    "aiPoweredChatbot": {
+      "title": "AI-Powered Chatbot",
+      "description": "24/7 intelligent chatbot that resolves common issues instantly across multiple channels",
+      "benefit": "Instant support at scale",
+      "metric1": "82% resolution without human intervention",
+      "metric2": "Under 30 seconds average response"
+    },
+    "smartTicketRouting": {
+      "title": "Smart Ticket Routing",
+      "description": "Intelligent ticket prioritization and routing ensures issues reach the right agent immediately",
+      "benefit": "Faster resolution for customers",
+      "metric1": "65% reduction in response time",
+      "metric2": "40% improvement in first-contact resolution"
+    },
+    "sentimentAnalysis": {
+      "title": "Sentiment Analysis",
+      "description": "Proactively detect customer satisfaction issues and trigger interventions before problems escalate",
+      "benefit": "Prevent customer churn",
+      "metric1": "48% increase in NPS score",
+      "metric2": "60% reduction in escalations"
+    },
+    "knowledgeBaseIntegration": {
+      "title": "Knowledge Base Integration",
+      "description": "Automated responses using your knowledge base ensure consistent, accurate information delivery",
+      "benefit": "Consistent, helpful support",
+      "metric1": "75% reduction in escalations",
+      "metric2": "85% customer self-service rate"
     }
   },
   "home": {
