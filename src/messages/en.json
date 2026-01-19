@@ -1715,11 +1715,103 @@
         "idle": "Generate Report",
         "generating": "Generating report..."
       },
-      "serverError": "Something went wrong. Please try again.",
-      "report": {
-        "title": "Your Personalized Report",
-        "generateAnother": "Generate Another Report",
-        "download": "Download Report"
+      "progress": {
+        "title": "Generating Your Report",
+        "description": "Our AI is analyzing your business and creating a personalized automation report...",
+        "analyzing": {
+          "title": "Analyzing Your Business",
+          "description": "Identifying pain points and automation opportunities"
+        },
+        "generating": {
+          "title": "Generating Report",
+          "description": "Creating your personalized recommendations and roadmap"
+        },
+        "completed": {
+          "title": "Report Ready!",
+          "description": "Your personalized report has been generated successfully"
+        },
+        "error": {
+          "title": "Generation Failed",
+          "description": "We encountered an issue while generating your report",
+          "message": "Please try again. If the problem persists, contact our support team."
+        }
+      },
+      "serverError": "Something went wrong. Please try again."
+    },
+    "report": {
+      "title": "Your Personalized Report",
+      "subtitle": "Generated for {industry} companies with {companySize} employees on {date}",
+      "loading": "Loading your report...",
+      "generateAnother": "Generate Another Report",
+      "download": "Download Report",
+      "sections": {
+        "executiveSummary": {
+          "title": "Executive Summary",
+          "mainChallenges": "Main Challenges",
+          "keyOpportunities": "Key Opportunities"
+        },
+        "businessContext": {
+          "title": "Business Context",
+          "industry": "Industry",
+          "companySize": "Company Size"
+        },
+        "painPointsAnalysis": {
+          "title": "Pain Points Analysis",
+          "priority": "Priority",
+          "impactAssessment": "Impact Assessment",
+          "revenue": "Revenue",
+          "cost": "Cost",
+          "customerSatisfaction": "Customer Satisfaction",
+          "productivity": "Productivity",
+          "affectedAreas": "Affected Areas",
+          "priorityInsights": "Priority Insights",
+          "impactLevels": {
+            "high": "High",
+            "medium": "Medium",
+            "low": "Low"
+          }
+        },
+        "automationRecommendations": {
+          "title": "Automation Recommendations",
+          "addresses": "Addresses",
+          "expectedBenefits": "Expected Benefits",
+          "timeSaved": "Time Saved",
+          "revenueIncrease": "Revenue Increase",
+          "costReduction": "Cost Reduction",
+          "customerSatisfaction": "Customer Satisfaction",
+          "productivity": "Productivity",
+          "implementationDetails": "Implementation Details",
+          "complexity": "Complexity",
+          "timeline": "Timeline",
+          "prerequisites": "Prerequisites",
+          "expectedMetrics": "Expected Metrics",
+          "examples": "Examples",
+          "overallImpact": "Overall Impact",
+          "complexityLevels": {
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High"
+          }
+        },
+        "expectedImpact": {
+          "title": "Expected Impact",
+          "impactProjections": "Impact Projections",
+          "threeMonths": "3 Months",
+          "sixMonths": "6 Months",
+          "twelveMonths": "12 Months",
+          "roiAnalysis": "ROI Analysis"
+        },
+        "implementationRoadmap": {
+          "title": "Implementation Roadmap",
+          "recommendations": "Recommendations",
+          "expectedOutcomes": "Expected Outcomes",
+          "totalTimeline": "Total Timeline"
+        },
+        "nextSteps": {
+          "title": "Next Steps",
+          "immediateActions": "Immediate Actions",
+          "gettingStarted": "Getting Started"
+        }
       }
     },
     "showcase": {

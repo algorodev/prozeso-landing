@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { Check, ChevronDown, Loader2 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -24,7 +25,11 @@ import {
   FormMessage,
 } from "@/components/ui/Form";
 import { Textarea } from "@/components/ui/Textarea";
+import { UseCaseReportProgress } from "./UseCaseReportProgress";
 import UseCasesBackground from "./UseCasesBackground";
+import { runUseCasePipelineAction } from "@/lib/actions/use-case-pipeline";
+import type { UseCasePipelineStatus } from "@/lib/agents/pipeline";
+import { Route } from "next";
 
 type CompanySizeKey =
   | "1-10"
@@ -84,7 +89,6 @@ const INDUSTRY_KEYS: IndustryKey[] = [
   "other",
 ];
 
-// Industries that have existing vertical pages (use tSolutions for translation)
 const EXISTING_VERTICALS: IndustryKey[] = [
   "restaurants",
   "beauty",
@@ -95,6 +99,7 @@ const EXISTING_VERTICALS: IndustryKey[] = [
 
 export function UseCasesForm() {
   const locale = useLocale();
+  const router = useRouter();
   const t = useTranslations("useCases.form");
   const tSolutions = useTranslations("solutions.verticals");
 
@@ -112,6 +117,8 @@ export function UseCasesForm() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [reportGenerated, setReportGenerated] = useState(false);
   const [generatedReport, setGeneratedReport] = useState<string | null>(null);
+  const [progressDialogOpen, setProgressDialogOpen] = useState(false);
+  const [pipelineStatus, setPipelineStatus] = useState<UseCasePipelineStatus>("idle");
 
   const form = useForm<FormValues>({
     resolver: zodResolver(Schema),
@@ -128,40 +135,82 @@ export function UseCasesForm() {
     setIsGenerating(true);
     setReportGenerated(false);
     setGeneratedReport(null);
+    setProgressDialogOpen(true);
+    setPipelineStatus("analyzing");
 
     try {
-      const res = await fetch("/api/use-cases/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          companySize: values.companySize,
-          industry: values.industry,
-          painPoints: values.painPoints,
-          locale,
-        }),
+      const analyzingTimeout = setTimeout(() => {
+        setPipelineStatus("generating");
+      }, 1500);
+
+      const result = await runUseCasePipelineAction({
+        companySize: values.companySize,
+        industry: values.industry,
+        painPoints: values.painPoints,
+        locale: locale as "en" | "es",
       });
 
-      const data = await res.json().catch(() => null);
+      clearTimeout(analyzingTimeout);
 
-      if (!res.ok || !data?.ok) {
-        const apiError = (data as any)?.error;
-        setServerError(apiError || t("serverError"));
+      if (!result.success || !result.data) {
+        setPipelineStatus("error");
+        setServerError(result.error || t("serverError"));
         setIsGenerating(false);
         return;
       }
 
-      setGeneratedReport(data.report || "");
-      setReportGenerated(true);
-      setIsGenerating(false);
+      setPipelineStatus("completed");
+      
+      if (result.data.report) {
+        try {
+          sessionStorage.setItem("useCaseReport", JSON.stringify(result.data.report));
+          setIsGenerating(false);
+          
+          setTimeout(() => {
+            setProgressDialogOpen(false);
+            setPipelineStatus("idle");
+            router.push(`/${locale}/use-cases/report` as Route);
+          }, 1500);
+        } catch (err) {
+          console.error("Failed to store report:", err);
+          const reportString = JSON.stringify(result.data.report, null, 2);
+          setGeneratedReport(reportString);
+          setReportGenerated(true);
+          setIsGenerating(false);
+          setTimeout(() => {
+            setProgressDialogOpen(false);
+            setPipelineStatus("idle");
+          }, 1500);
+        }
+      } else {
+        setIsGenerating(false);
+        setTimeout(() => {
+          setProgressDialogOpen(false);
+          setPipelineStatus("idle");
+        }, 1500);
+      }
     } catch (err) {
+      setPipelineStatus("error");
       setServerError(t("serverError"));
       setIsGenerating(false);
     }
   };
 
   return (
-    <div className="relative w-full py-8 sm:py-12">
-      <UseCasesBackground />
+    <>
+      <UseCaseReportProgress
+        open={progressDialogOpen}
+        status={pipelineStatus}
+        onOpenChange={(open) => {
+          setProgressDialogOpen(open);
+          if (!open && pipelineStatus !== "completed") {
+            setIsGenerating(false);
+            setPipelineStatus("idle");
+          }
+        }}
+      />
+      <div className="relative w-full py-8 sm:py-12">
+        <UseCasesBackground />
       <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -466,6 +515,7 @@ export function UseCasesForm() {
           </Card>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

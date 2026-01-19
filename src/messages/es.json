@@ -1719,11 +1719,103 @@
         "idle": "Generar Reporte",
         "generating": "Generando reporte..."
       },
-      "serverError": "Algo salió mal. Inténtalo de nuevo.",
-      "report": {
-        "title": "Tu Reporte Personalizado",
-        "generateAnother": "Generar Otro Reporte",
-        "download": "Descargar Reporte"
+      "progress": {
+        "title": "Generando tu Reporte",
+        "description": "Nuestra IA está analizando tu negocio y creando un reporte personalizado de automatización...",
+        "analyzing": {
+          "title": "Analizando tu Negocio",
+          "description": "Identificando pain points y oportunidades de automatización"
+        },
+        "generating": {
+          "title": "Generando Reporte",
+          "description": "Creando tus recomendaciones personalizadas y roadmap"
+        },
+        "completed": {
+          "title": "¡Reporte Listo!",
+          "description": "Tu reporte personalizado ha sido generado exitosamente"
+        },
+        "error": {
+          "title": "Error en la Generación",
+          "description": "Encontramos un problema al generar tu reporte",
+          "message": "Por favor, intenta de nuevo. Si el problema persiste, contacta a nuestro equipo de soporte."
+        }
+      },
+      "serverError": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "report": {
+      "title": "Tu Reporte Personalizado",
+      "subtitle": "Generado para empresas de {industry} con {companySize} empleados el {date}",
+      "loading": "Cargando tu reporte...",
+      "generateAnother": "Generar Otro Reporte",
+      "download": "Descargar Reporte",
+      "sections": {
+        "executiveSummary": {
+          "title": "Resumen Ejecutivo",
+          "mainChallenges": "Principales Desafíos",
+          "keyOpportunities": "Oportunidades Clave"
+        },
+        "businessContext": {
+          "title": "Contexto del Negocio",
+          "industry": "Industria",
+          "companySize": "Tamaño de la Empresa"
+        },
+        "painPointsAnalysis": {
+          "title": "Análisis de Puntos Críticos",
+          "priority": "Prioridad",
+          "impactAssessment": "Evaluación de Impacto",
+          "revenue": "Ingresos",
+          "cost": "Costos",
+          "customerSatisfaction": "Satisfacción del Cliente",
+          "productivity": "Productividad",
+          "affectedAreas": "Áreas Afectadas",
+          "priorityInsights": "Insights de Prioridad",
+          "impactLevels": {
+            "high": "Alto",
+            "medium": "Medio",
+            "low": "Bajo"
+          }
+        },
+        "automationRecommendations": {
+          "title": "Recomendaciones de Automatización",
+          "addresses": "Aborda",
+          "expectedBenefits": "Beneficios Esperados",
+          "timeSaved": "Tiempo Ahorrado",
+          "revenueIncrease": "Aumento de Ingresos",
+          "costReduction": "Reducción de Costos",
+          "customerSatisfaction": "Satisfacción del Cliente",
+          "productivity": "Productividad",
+          "implementationDetails": "Detalles de Implementación",
+          "complexity": "Complejidad",
+          "timeline": "Cronograma",
+          "prerequisites": "Prerrequisitos",
+          "expectedMetrics": "Métricas Esperadas",
+          "examples": "Ejemplos",
+          "overallImpact": "Impacto General",
+          "complexityLevels": {
+            "low": "Baja",
+            "medium": "Media",
+            "high": "Alta"
+          }
+        },
+        "expectedImpact": {
+          "title": "Impacto Esperado",
+          "impactProjections": "Proyecciones de Impacto",
+          "threeMonths": "3 Meses",
+          "sixMonths": "6 Meses",
+          "twelveMonths": "12 Meses",
+          "roiAnalysis": "Análisis de ROI"
+        },
+        "implementationRoadmap": {
+          "title": "Hoja de Ruta de Implementación",
+          "recommendations": "Recomendaciones",
+          "expectedOutcomes": "Resultados Esperados",
+          "totalTimeline": "Cronograma Total"
+        },
+        "nextSteps": {
+          "title": "Próximos Pasos",
+          "immediateActions": "Acciones Inmediatas",
+          "gettingStarted": "Comenzar"
+        }
       }
     },
     "showcase": {
