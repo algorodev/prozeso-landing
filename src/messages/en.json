@@ -1744,6 +1744,26 @@
       "loading": "Loading your report...",
       "generateAnother": "Generate Another Report",
       "download": "Download Report",
+      "compact": {
+        "impact": "Impact",
+        "problem": "Problem",
+        "solution": "Solution",
+        "revenue": "Revenue",
+        "cost": "Cost",
+        "customer": "Customer",
+        "productivity": "Productivity",
+        "affectedAreas": "Affected Areas",
+        "timeSaved": "Time Saved",
+        "revenueIncrease": "Revenue Increase",
+        "costReduction": "Cost Reduction",
+        "customerSatisfaction": "Customer Satisfaction",
+        "expectedMetrics": "Expected Metrics",
+        "impactLevels": {
+          "high": "High",
+          "medium": "Medium",
+          "low": "Low"
+        }
+      },
       "sections": {
         "executiveSummary": {
           "title": "Executive Summary",
@@ -1810,7 +1830,24 @@
         "nextSteps": {
           "title": "Next Steps",
           "immediateActions": "Immediate Actions",
-          "gettingStarted": "Getting Started"
+          "gettingStarted": "Getting Started",
+          "step1": {
+            "title": "Schedule a Consultation",
+            "description": "Book a free consultation call with our automation experts to discuss your specific needs."
+          },
+          "step2": {
+            "title": "Get a Custom Plan",
+            "description": "Receive a tailored automation roadmap designed specifically for your business."
+          },
+          "step3": {
+            "title": "Start Implementation",
+            "description": "Begin your automation journey with our guided implementation process."
+          },
+          "cta": {
+            "title": "Ready to Transform Your Business?",
+            "description": "Let's discuss how automation can help you achieve your goals.",
+            "button": "Get Started"
+          }
         }
       }
     },

@@ -46,11 +46,11 @@ const reportSchema = z.object({
       .describe("2-3 paragraph overview of the business situation"),
     mainChallenges: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Main challenges identified (at least 2)"),
     keyOpportunities: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Key opportunities for improvement (at least 2)"),
   }),
   businessContext: z.object({
@@ -58,11 +58,11 @@ const reportSchema = z.object({
     companySize: z.string(),
     industryInsights: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Industry-specific insights"),
     sizeConsiderations: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Considerations based on company size"),
   }),
   painPointsAnalysis: z.object({
@@ -92,11 +92,11 @@ const reportSchema = z.object({
           affectedAreas: z.array(z.string()).describe("Areas affected by this pain point"),
         }),
       )
-      .min(3)
+      .min(1)
       .describe("Detailed pain points (at least 3)"),
     priorityInsights: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Insights about priorities"),
   }),
   automationRecommendations: z.object({
@@ -137,7 +137,7 @@ const reportSchema = z.object({
           examples: z.array(z.string()).optional(),
         }),
       )
-      .min(3)
+      .min(1)
       .describe("Automation recommendations (at least 3)"),
     overallImpact: z.string().describe("Summary of overall impact"),
   }),
@@ -159,7 +159,7 @@ const reportSchema = z.object({
           description: z.string(),
         }),
       )
-      .length(3)
+      .min(1)
       .describe("Projections for 3months, 6months, and 12months"),
     roi: z.object({
       description: z.string().describe("ROI overview"),
@@ -170,7 +170,7 @@ const reportSchema = z.object({
             value: z.string(),
           }),
         )
-        .min(2)
+        .min(1)
         .describe("Key ROI metrics (at least 2)"),
     }),
   }),
@@ -198,14 +198,14 @@ const reportSchema = z.object({
             .describe("Expected outcomes for this phase"),
         }),
       )
-      .length(3)
+      .min(1)
       .describe("Three implementation phases"),
     totalTimeline: z.string().describe("e.g., '12 months'"),
   }),
   nextSteps: z.object({
     immediateActions: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Immediate actions (at least 2)"),
     consultationOffer: z.object({
       title: z.string().describe("Free consultation title"),
@@ -214,7 +214,7 @@ const reportSchema = z.object({
     }),
     gettingStarted: z
       .array(z.string())
-      .min(2)
+      .min(1)
       .describe("Getting started steps (at least 2)"),
   }),
 });

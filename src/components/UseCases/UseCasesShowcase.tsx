@@ -145,10 +145,10 @@ export default function UseCasesShowcase() {
             >
               <Button
                 onClick={() => setSelectedArea(area.id)}
-                variant={isSelected ? "primary" : "outline"}
+                variant={"outline"}
                 className={`rounded-lg px-4 py-2 h-auto flex items-center gap-2 ${
                   isSelected
-                    ? "bg-primary text-primary-foreground border-primary"
+                    ? "text-primary-foreground border-primary"
                     : "bg-background text-muted-foreground border-border hover:bg-muted"
                 }`}
               >

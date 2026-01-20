@@ -1748,6 +1748,26 @@
       "loading": "Cargando tu reporte...",
       "generateAnother": "Generar Otro Reporte",
       "download": "Descargar Reporte",
+      "compact": {
+        "impact": "Impacto",
+        "problem": "Problema",
+        "solution": "Solución",
+        "revenue": "Ingresos",
+        "cost": "Costo",
+        "customer": "Cliente",
+        "productivity": "Productividad",
+        "affectedAreas": "Áreas Afectadas",
+        "timeSaved": "Tiempo Ahorrado",
+        "revenueIncrease": "Aumento de Ingresos",
+        "costReduction": "Reducción de Costos",
+        "customerSatisfaction": "Satisfacción del Cliente",
+        "expectedMetrics": "Métricas Esperadas",
+        "impactLevels": {
+          "high": "Alto",
+          "medium": "Medio",
+          "low": "Bajo"
+        }
+      },
       "sections": {
         "executiveSummary": {
           "title": "Resumen Ejecutivo",
@@ -1814,7 +1834,24 @@
         "nextSteps": {
           "title": "Próximos Pasos",
           "immediateActions": "Acciones Inmediatas",
-          "gettingStarted": "Comenzar"
+          "gettingStarted": "Comenzar",
+          "step1": {
+            "title": "Programa una Consulta",
+            "description": "Reserva una llamada de consulta gratuita con nuestros expertos en automatización para discutir tus necesidades específicas."
+          },
+          "step2": {
+            "title": "Obtén un Plan Personalizado",
+            "description": "Recibe una hoja de ruta de automatización diseñada específicamente para tu negocio."
+          },
+          "step3": {
+            "title": "Comienza la Implementación",
+            "description": "Inicia tu viaje de automatización con nuestro proceso de implementación guiado."
+          },
+          "cta": {
+            "title": "¿Listo para Transformar tu Negocio?",
+            "description": "Hablemos sobre cómo la automatización puede ayudarte a alcanzar tus objetivos.",
+            "button": "Comenzar"
+          }
         }
       }
     },

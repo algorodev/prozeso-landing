@@ -164,6 +164,17 @@ export function UseCasesForm() {
       if (result.data.report) {
         try {
           sessionStorage.setItem("useCaseReport", JSON.stringify(result.data.report));
+          
+          fetch("https://prozeso.app.n8n.cloud/webhook/report-notification", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(result.data.report),
+          }).catch((error) => {
+            console.error("Failed to send report to webhook:", error);
+          });
+          
           setIsGenerating(false);
           
           setTimeout(() => {
