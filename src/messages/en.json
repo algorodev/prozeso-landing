@@ -1992,6 +1992,9 @@
         }
       }
     },
+    "partnerships": {
+      "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
+    },
     "coreAutomations": {
       "title": "Core <highlight>automations</highlight>",
       "subtitle": "AI-powered workflows that work while you sleep.",

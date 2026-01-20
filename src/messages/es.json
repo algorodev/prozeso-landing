@@ -1996,6 +1996,9 @@
         }
       }
     },
+    "partnerships": {
+      "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
+    },
     "coreAutomations": {
       "title": "Automatizaciones <highlight>clave</highlight>",
       "subtitle": "Flujos impulsados por IA que trabajan mientras duermes.",
