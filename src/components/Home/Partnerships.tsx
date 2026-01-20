@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ElevenLabs } from "@/components/icons/ElevenLabs";
 import { Slack } from "@/components/icons/Slack";
+import { Twilio } from "@/components/icons/Twilio";
 
 const Partnerships = () => {
   const t = useTranslations("home.partnerships");
@@ -12,11 +13,19 @@ const Partnerships = () => {
       id: "elevenlabs",
       name: "ElevenLabs",
       icon: ElevenLabs,
+      url: "https://elevenlabs.io",
     },
     {
       id: "slack",
       name: "Slack",
       icon: Slack,
+      url: "https://slack.com",
+    },
+    {
+      id: "twilio",
+      name: "Twilio",
+      icon: Twilio,
+      url: "https://www.twilio.com",
     },
   ];
 
@@ -68,17 +77,27 @@ const Partnerships = () => {
                 }}
                 className="group flex items-center justify-center"
               >
-                <div className="transition-all duration-300 opacity-60 hover:opacity-100 grayscale hover:grayscale-0 flex items-center justify-center">
+                <a
+                  href={partner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 opacity-60 hover:opacity-100 grayscale hover:grayscale-0 flex items-center justify-center"
+                  aria-label={`Visit ${partner.name} website`}
+                >
                   {partner.id === "elevenlabs" ? (
-                    <div className="h-5 md:h-7 [&>svg]:h-full [&>svg]:w-auto">
+                    <div className="h-7 [&>svg]:h-full [&>svg]:w-auto">
+                      <Icon />
+                    </div>
+                  ) : partner.id === "twilio" ? (
+                    <div className="h-12 [&>svg]:h-full [&>svg]:w-auto">
                       <Icon />
                     </div>
                   ) : (
-                    <div className="h-10 w-12 mr-30 [&>svg]:h-full [&>svg]:w-auto">
+                    <div className="h-12 [&>svg]:h-full [&>svg]:w-auto">
                       <Icon />
                     </div>
                   )}
-                </div>
+                </a>
               </motion.div>
             );
           })}
