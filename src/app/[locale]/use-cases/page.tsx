@@ -3,6 +3,7 @@ import FinalCTA from "@/components/Home/FinalCTA";
 import { UseCasesHero } from "@/components/UseCases/UseCasesHero";
 import { UseCasesForm } from "@/components/UseCases/UseCasesForm";
 import UseCasesShowcase from "@/components/UseCases/UseCasesShowcase";
+import { Separator } from "@/components/ui/Separator";
 import { locales } from "@/i18n/config";
 
 type Props = {
@@ -64,14 +65,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function UseCasesPage() {
   return (
-    <main className="mx-auto min-h-dvh max-w-7xl">
-      <section className="container mx-auto py-12 sm:py-16 lg:py-20">
-        <UseCasesHero />
-        <UseCasesForm />
-        <div className="mt-20">
-          <UseCasesShowcase />
+    <main className="">
+      <section className="relative isolate min-h-dvh-minus-header overflow-hidden flex items-center">
+        <div className="relative w-full container mx-auto py-12 sm:py-16 lg:py-20">
+          <UseCasesHero />
+          <UseCasesForm />
         </div>
       </section>
+      <Separator className="my-20" />
+      <div className="mb-20">
+        <UseCasesShowcase />
+      </div>
       <FinalCTA />
     </main>
   );

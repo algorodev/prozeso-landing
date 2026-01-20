@@ -26,7 +26,6 @@ import {
 } from "@/components/ui/Form";
 import { Textarea } from "@/components/ui/Textarea";
 import { UseCaseReportProgress } from "./UseCaseReportProgress";
-import UseCasesBackground from "./UseCasesBackground";
 import { runUseCasePipelineAction } from "@/lib/actions/use-case-pipeline";
 import type { UseCasePipelineStatus } from "@/lib/agents/pipeline";
 import { Route } from "next";
@@ -221,7 +220,6 @@ export function UseCasesForm() {
         }}
       />
       <div className="relative w-full py-8 sm:py-12">
-        <UseCasesBackground />
       <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
