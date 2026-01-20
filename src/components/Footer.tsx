@@ -27,29 +27,6 @@ const Footer = () => {
           <div className="flex gap-16">
             <div>
               <h4 className="font-medium text-sm mb-4">
-                {t("sections.product")}
-              </h4>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <LocalizedLink
-                    href="/automations"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t("links.automations")}
-                  </LocalizedLink>
-                </li>
-                <li>
-                  <LocalizedLink
-                    href="/start"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t("links.assessment")}
-                  </LocalizedLink>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-medium text-sm mb-4">
                 {t("sections.company")}
               </h4>
               <ul className="space-y-3 text-sm">
