@@ -5,8 +5,6 @@ import { PhoneCall } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState } from "react"
-import { AUTOMATIONS_DETAILS } from "@/data/automations";
-import { VERTICALS } from "@/data/verticals";
 import { useCall } from "@/components/CallContext";
 
 const normalizeKey = (value: string) =>
@@ -16,40 +14,12 @@ const normalizeKey = (value: string) =>
     .replace(/[_\s]+/g, "-")
     .replace(/[^a-z0-9-]/g, "");
 
-const buildNavMap = (): Record<string, string> => {
-  const map: Record<string, string> = {
-    home: "/",
-    assessment: "/start",
-    automations: "/automations",
-  };
-
-  try {
-    for (const a of AUTOMATIONS_DETAILS as any[]) {
-      const slug: string | undefined = a?.slug;
-      if (!slug) continue;
-      const key = normalizeKey(slug);
-      map[key] = `/automations/${slug}`;
-      if (a?.name) {
-        map[normalizeKey(a.name)] = `/automations/${slug}`;
-      }
-    }
-  } catch {}
-
-  try {
-    const entries = Object.entries(VERTICALS as Record<string, any>);
-    for (const [slug, v] of entries) {
-      const key = normalizeKey(slug);
-      map[key] = `/verticals/${slug}`;
-      if (v?.name) {
-        map[normalizeKey(v.name)] = `/verticals/${slug}`;
-      }
-    }
-  } catch {}
-
-  return map;
+const NAV_MAP: Record<string, string> = {
+  home: "/",
+  assessment: "/start",
+  automations: "/automations",
+  useCases: "/use-cases",
 };
-
-const NAV_MAP: Record<string, string> = buildNavMap();
 
 export const AgentFloatButton = () => {
   const conversation = useConversation();
