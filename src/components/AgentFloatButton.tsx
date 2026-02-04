@@ -2,24 +2,11 @@
 
 import { useConversation } from "@elevenlabs/react";
 import { PhoneCall } from "lucide-react";
+import { Route } from 'next'
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { useCall } from "@/components/CallContext";
-
-const normalizeKey = (value: string) =>
-  value
-    .toLowerCase()
-    .trim()
-    .replace(/[_\s]+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
-
-const NAV_MAP: Record<string, string> = {
-  home: "/",
-  assessment: "/start",
-  automations: "/automations",
-  useCases: "/use-cases",
-};
 
 export const AgentFloatButton = () => {
   const conversation = useConversation();
@@ -39,24 +26,51 @@ export const AgentFloatButton = () => {
     setIsCalling(true);
     try {
       await conversation.startSession({
-        agentId:
-          locale === "en"
-            ? "agent_6001k8tzxv0redg84r1s9m3c0gqd"
-            : "agent_7501k8bnshvgf6xvrx74z17s5042",
+        agentId: "agent_3601kgm49jhgf9w83qvbxjkq5xjq",
         connectionType: "webrtc",
+        overrides: {
+          agent: {
+            firstMessage: locale === 'es'
+              ? 'Hola, soy MarIA, la asistente virtual de Prozeso, ¿En que puedo ayudarte?'
+              : 'Hi, I am MarIA, the virtual agent of Prozeso, how can I help you?'
+          }
+        },
+        dynamicVariables: {
+          language: locale,
+        },
         clientTools: {
-          navigateTo: async ({ target }) => {
-            const key = normalizeKey(String(target || ""));
-            const path = NAV_MAP[key] || "/";
-            if (!path) {
-              console.warn("[Agent navigateTo] Unknown target:", target);
-              return;
+          landingNavigateTo: async ({ url }: { url: string }) => {
+            try {
+              const allowedDomains = [
+                'prozeso.com',
+                'calendly.com',
+                'app.prozeso.com'
+              ]
+
+              const urlObj = new URL(url);
+              const isAllowed = allowedDomains.some(domain =>
+                urlObj.hostname === domain || urlObj.hostname.endsWith(domain)
+              );
+
+              if (!isAllowed) {
+                console.warn(`[landingNavigateTo] Blocked non-allowed domain: ${url}`);
+                return
+              }
+
+              if (urlObj.hostname.includes("calendly.com") || urlObj.hostname.includes("app.prozeso.com")) {
+                window.open(url, "_blank", "noopener noreferrer");
+                return
+              }
+
+              if (urlObj.hostname.includes("prozeso.com")) {
+                const path = urlObj.pathname
+                router.push(path as Route)
+                return
+              }
+            } catch (error) {
+              console.error(`[landingNavigateTo] Error parsing URL: ${url}`, error);
             }
-            router.push(`/${locale}${path}`);
-          },
-          finishCall: async () => {
-            await endConversation();
-          },
+          }
         },
       });
       
