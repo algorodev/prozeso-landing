@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowRight, Calendar, Phone, Rocket } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Card, CardContent } from "@/components/ui/Card";
+import { CALENDAR_URL } from "@/components/ui/BookCallButton";
 import { Button } from "@/components/ui/Button";
-import { CheckCircle2, ArrowRight, Calendar, Rocket, Phone } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/Card";
 
 export function StaticNextSteps() {
   const t = useTranslations("useCases.report.sections.nextSteps");
@@ -81,7 +82,7 @@ export function StaticNextSteps() {
                 className="w-full md:w-auto"
               >
                 <a
-                  href="https://calendly.com/prozeso360/30min"
+                  href={CALENDAR_URL}
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -1,8 +1,9 @@
 "use client";
 
-import { ArrowRight, NotebookPen, Phone } from "lucide-react";
+import { NotebookPen } from "lucide-react";
 import { useTranslations } from "next-intl";
 import AutomationHeroBackground from "@/components/Automations/AutomationHeroBackground";
+import { BookCallButton } from "@/components/ui/BookCallButton";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 import { useAutomationFromParams } from "./useAutomationFromParams";
@@ -44,16 +45,7 @@ export function AutomationHeroSection() {
                 {tCommonCta("startAssessment")}
               </LocalizedLink>
             </Button>
-            <Button asChild size="lg" variant="outline">
-              <a
-                href="https://calendly.com/prozeso360/30min"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Phone className="mr-1 size-5" />
-                {tCommonCta("bookCall")}
-              </a>
-            </Button>
+            <BookCallButton />
           </div>
         </div>
       </div>

@@ -1,9 +1,10 @@
 "use client";
 
-import { ArrowRight, Building2, NotebookPen, Phone } from "lucide-react";
+import { Building2, NotebookPen } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import type { ComponentType } from "react";
+import { BookCallButton } from "@/components/ui/BookCallButton";
 import { Button } from "@/components/ui/Button";
 import VerticalHeroBackground from "@/components/Verticals/VerticalHeroBackground";
 import { VERTICALS } from "@/data/verticals";
@@ -55,16 +56,7 @@ export function VerticalHero() {
                   {tc("startAssessment")}
                 </LocalizedLink>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <a
-                  href="https://calendly.com/prozeso360/30min"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Phone className="mr-1 size-5" />
-                  {tc("bookCall")}
-                </a>
-              </Button>
+              <BookCallButton />
             </div>
           </div>
         </div>

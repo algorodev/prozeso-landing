@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { NotebookPen, Phone } from "lucide-react";
+import { NotebookPen } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { BookCallButton } from "@/components/ui/BookCallButton";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
@@ -48,16 +49,7 @@ const FinalCTA = () => {
               {tc("startAssessment")}
             </LocalizedLink>
           </Button>
-          <Button asChild size="lg" variant="outline">
-            <a
-              href="https://calendly.com/prozeso360/30min"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Phone className="mr-1 size-5" />
-              {tc("bookCall")}
-            </a>
-          </Button>
+          <BookCallButton />
         </motion.div>
       </div>
     </section>
