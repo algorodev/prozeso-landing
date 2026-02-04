@@ -1,7 +1,11 @@
-
 export type ImpactLevel = "high" | "medium" | "low";
 
-export type PainPointCategory = "operational" | "customerService" | "revenue" | "resources" | "scalability";
+export type PainPointCategory =
+  | "operational"
+  | "customerService"
+  | "revenue"
+  | "resources"
+  | "scalability";
 
 export interface UseCaseAnalysisResult {
   painPoints: {
@@ -28,7 +32,12 @@ export interface PainPoint {
   id: string;
   title: string;
   description: string;
-  category: "operational" | "customerService" | "revenue" | "resources" | "scalability";
+  category:
+    | "operational"
+    | "customerService"
+    | "revenue"
+    | "resources"
+    | "scalability";
   impact: {
     revenue: ImpactLevel;
     cost: ImpactLevel;
@@ -43,7 +52,7 @@ export interface AutomationRecommendation {
   id: string;
   name: string;
   description: string;
-  category: 
+  category:
     | "aiReceptionist"
     | "appointmentReminders"
     | "missedCallRecovery"

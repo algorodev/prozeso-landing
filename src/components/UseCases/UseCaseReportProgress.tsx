@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, Loader2, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import {
@@ -142,9 +142,7 @@ export function UseCaseReportProgress({
 
           {isError && (
             <div className="rounded-md border border-destructive/30 bg-destructive/5 p-4">
-              <p className="text-sm text-destructive">
-                {t("error.message")}
-              </p>
+              <p className="text-sm text-destructive">{t("error.message")}</p>
             </div>
           )}
         </div>

@@ -1,7 +1,7 @@
 "use server";
 
-import { runUseCasePipeline } from "@/lib/agents/pipeline";
 import type { UseCasePipelineState } from "@/lib/agents/pipeline";
+import { runUseCasePipeline } from "@/lib/agents/pipeline";
 
 export interface RunUseCasePipelineParams {
   companySize: string;
@@ -38,7 +38,8 @@ export async function runUseCasePipelineAction(
   if (!companySize || !industry || !painPoints) {
     return {
       success: false,
-      error: "Missing required fields: companySize, industry, and painPoints are required",
+      error:
+        "Missing required fields: companySize, industry, and painPoints are required",
     };
   }
 
@@ -87,7 +88,8 @@ export async function runUseCasePipelineAction(
     if (state.status === "error") {
       return {
         success: false,
-        error: state.error || "An unknown error occurred during pipeline execution",
+        error:
+          state.error || "An unknown error occurred during pipeline execution",
       };
     }
 

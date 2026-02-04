@@ -2,7 +2,11 @@ import { generateText, Output } from "ai";
 import { z } from "zod";
 import { getGoogleModel } from "@/lib/config/google-ai";
 import { USE_CASE_ANALYZER_PROMPT } from "@/lib/prompts";
-import type { UseCaseAnalysisResult, ImpactLevel, PainPointCategory } from "@/types/UseCaseReport";
+import type {
+  ImpactLevel,
+  PainPointCategory,
+  UseCaseAnalysisResult,
+} from "@/types/UseCaseReport";
 
 const impactLevelSchema = z.enum(["high", "medium", "low"]);
 
@@ -18,8 +22,12 @@ const analysisSchema = z.object({
   painPoints: z
     .array(
       z.object({
-        identified: z.string().describe("Description of the identified pain point"),
-        category: painPointCategorySchema.describe("Category of the pain point"),
+        identified: z
+          .string()
+          .describe("Description of the identified pain point"),
+        category: painPointCategorySchema.describe(
+          "Category of the pain point",
+        ),
         rootCauses: z
           .array(z.string())
           .describe("Array of root causes for this pain point"),
@@ -30,7 +38,9 @@ const analysisSchema = z.object({
             customerSatisfaction: impactLevelSchema.describe(
               "Customer satisfaction impact level",
             ),
-            productivity: impactLevelSchema.describe("Productivity impact level"),
+            productivity: impactLevelSchema.describe(
+              "Productivity impact level",
+            ),
           })
           .describe("Impact assessment of the pain point"),
         priority: z
@@ -82,7 +92,12 @@ export async function analyzeUseCase(
       output: Output.object({
         schema: analysisSchema,
       }),
-      prompt: USE_CASE_ANALYZER_PROMPT(companySize, industry, painPoints, locale),
+      prompt: USE_CASE_ANALYZER_PROMPT(
+        companySize,
+        industry,
+        painPoints,
+        locale,
+      ),
     });
 
     console.log("✅ [USE CASE ANALYZER] Analysis completed:", {

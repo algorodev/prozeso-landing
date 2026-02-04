@@ -16,9 +16,7 @@ export function UseCasesHero() {
         className="hero-title mb-3 sm:mb-4"
       >
         {t.rich("title", {
-          primary: (chunks) => (
-            <span className="text-primary">{chunks}</span>
-          ),
+          primary: (chunks) => <span className="text-primary">{chunks}</span>,
           secondary: (chunks) => (
             <span className="text-secondary">{chunks}</span>
           ),

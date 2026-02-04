@@ -1,12 +1,12 @@
 export const USE_CASE_ANALYZER_PROMPT = (
-    companySize: string,
-    industry: string,
-    painPoints: string,
-    locale: "en" | "es" = "en",
+  companySize: string,
+  industry: string,
+  painPoints: string,
+  locale: "en" | "es" = "en",
 ) => {
-    const isSpanish = locale === "es";
-    
-    return `You are a business automation analyst specializing in workflow automation and AI-powered solutions for service businesses.
+  const isSpanish = locale === "es";
+
+  return `You are a business automation analyst specializing in workflow automation and AI-powered solutions for service businesses.
 
 Your task is to analyze the following business information and provide a detailed analysis:
 
@@ -81,14 +81,14 @@ Be specific, actionable, and focus on automation solutions that Prozeso (an AI a
 };
 
 export const REPORT_GENERATOR_PROMPT = (
-    analysis: string,
-    companySize: string,
-    industry: string,
-    locale: "en" | "es" = "en",
+  analysis: string,
+  companySize: string,
+  industry: string,
+  locale: "en" | "es" = "en",
 ) => {
-    const isSpanish = locale === "es";
-    
-    return `You are a professional business consultant creating a personalized automation report for a client.
+  const isSpanish = locale === "es";
+
+  return `You are a professional business consultant creating a personalized automation report for a client.
 
 **Client Information:**
 - Company Size: ${companySize}

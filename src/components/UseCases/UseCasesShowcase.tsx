@@ -1,13 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cog, Target, Users, DollarSign, Headphones } from "lucide-react";
+import { Cog, DollarSign, Headphones, Target, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
 
-type BusinessArea = "operations" | "sales" | "hr" | "finance" | "customerService";
+type BusinessArea =
+  | "operations"
+  | "sales"
+  | "hr"
+  | "finance"
+  | "customerService";
 
 type UseCase = {
   id: string;
@@ -182,7 +187,7 @@ export default function UseCasesShowcase() {
             5: "#ff9500", // brand-orange
           };
           const chartColorValue = chartColorsMap[chartNum] || chartColorsMap[1];
-          
+
           return (
             <motion.div
               key={useCase.id}

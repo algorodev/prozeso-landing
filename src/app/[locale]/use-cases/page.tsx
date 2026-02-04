@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import FinalCTA from "@/components/Home/FinalCTA";
-import { UseCasesHero } from "@/components/UseCases/UseCasesHero";
 import { UseCasesForm } from "@/components/UseCases/UseCasesForm";
+import { UseCasesHero } from "@/components/UseCases/UseCasesHero";
 import UseCasesShowcase from "@/components/UseCases/UseCasesShowcase";
 import { Separator } from "@/components/ui/Separator";
 import { locales } from "@/i18n/config";

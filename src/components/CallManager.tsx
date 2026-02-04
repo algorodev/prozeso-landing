@@ -16,12 +16,18 @@ export const CallManager = () => {
 
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-50" style={{ display: isCallActive ? "none" : "block" }}>
+      <div
+        className="fixed bottom-6 right-6 z-50"
+        style={{ display: isCallActive ? "none" : "block" }}
+      >
         <AgentFloatButton />
       </div>
       {isCallActive && (
         <>
-          <VoiceReactiveOverlay isActive={isCallActive} onHangUp={handleHangUp} />
+          <VoiceReactiveOverlay
+            isActive={isCallActive}
+            onHangUp={handleHangUp}
+          />
           <HangUpButton onHangUp={handleHangUp} callStartTime={callStartTime} />
         </>
       )}

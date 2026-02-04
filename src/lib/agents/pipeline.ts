@@ -1,9 +1,9 @@
-import { analyzeUseCase } from "./use-case-analyzer";
-import { generateReport } from "./report-generator";
 import type {
   UseCaseAnalysisResult,
   UseCaseReport,
 } from "@/types/UseCaseReport";
+import { generateReport } from "./report-generator";
+import { analyzeUseCase } from "./use-case-analyzer";
 
 export type UseCasePipelineStatus =
   | "idle"
@@ -58,12 +58,15 @@ export async function runUseCasePipeline(
       painPoints,
       locale,
     );
-    console.log("✅ [USE CASE PIPELINE] Step 1 completed - Analysis received:", {
-      painPointsCount: analysis.painPoints.length,
-      insightsCount: analysis.keyInsights.length,
-      focusAreasCount: analysis.recommendedFocusAreas.length,
-      summaryLength: analysis.summary.length,
-    });
+    console.log(
+      "✅ [USE CASE PIPELINE] Step 1 completed - Analysis received:",
+      {
+        painPointsCount: analysis.painPoints.length,
+        insightsCount: analysis.keyInsights.length,
+        focusAreasCount: analysis.recommendedFocusAreas.length,
+        summaryLength: analysis.summary.length,
+      },
+    );
 
     state.analysis = analysis;
     state.updatedAt = new Date();
@@ -83,7 +86,8 @@ export async function runUseCasePipeline(
     console.log("✅ [USE CASE PIPELINE] Step 2 completed - Report received:", {
       hasExecutiveSummary: !!report.executiveSummary,
       painPointsCount: report.painPointsAnalysis.painPoints.length,
-      recommendationsCount: report.automationRecommendations.recommendations.length,
+      recommendationsCount:
+        report.automationRecommendations.recommendations.length,
       phasesCount: report.implementationRoadmap.phases.length,
       hasROI: !!report.expectedImpact.roi,
     });

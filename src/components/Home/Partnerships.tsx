@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ElevenLabs } from "@/components/icons/ElevenLabs";
-import { Slack } from "@/components/icons/Slack";
-import { Twilio } from "@/components/icons/Twilio";
 import { Google } from "@/components/icons/Google";
 import { Microsoft } from "@/components/icons/Microsoft";
 import { N8N } from "@/components/icons/N8N";
+import { Slack } from "@/components/icons/Slack";
+import { Twilio } from "@/components/icons/Twilio";
 
 const Partnerships = () => {
   const t = useTranslations("home.partnerships");
@@ -65,9 +65,7 @@ const Partnerships = () => {
               primary: (chunks) => (
                 <span className="text-primary">{chunks}</span>
               ),
-              accent: (chunks) => (
-                <span className="text-accent">{chunks}</span>
-              ),
+              accent: (chunks) => <span className="text-accent">{chunks}</span>,
             })}
           </p>
         </motion.div>

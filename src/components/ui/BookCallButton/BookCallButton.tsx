@@ -4,7 +4,7 @@ import type { VariantProps } from "class-variance-authority";
 import { Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
-import { buttonVariants } from "@/components/ui/Button/constants";
+import type { buttonVariants } from "@/components/ui/Button/constants";
 import { CALENDAR_URL } from "./constants";
 
 type BookCallButtonProps = VariantProps<typeof buttonVariants> & {

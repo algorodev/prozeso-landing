@@ -71,8 +71,9 @@ export const VoiceReactiveOverlay = ({
 
         streamRef.current = stream;
 
-        const audioContext = new (window.AudioContext ||
-          (window as any).webkitAudioContext)();
+        const audioContext = new (
+          window.AudioContext || (window as any).webkitAudioContext
+        )();
         audioContextRef.current = audioContext;
 
         const analyser = audioContext.createAnalyser();
@@ -104,7 +105,7 @@ export const VoiceReactiveOverlay = ({
             const rms = Math.sqrt(sum / dataArray.length);
 
             const normalized = Math.min(1, rms * 3);
-            const intensity = Math.pow(normalized, 0.6);
+            const intensity = normalized ** 0.6;
 
             const baseGlow = 0.15;
             const finalIntensity = baseGlow + intensity * 0.85;
@@ -147,7 +148,10 @@ export const VoiceReactiveOverlay = ({
   useEffect(() => {
     if (overlayRef.current) {
       const intensity = reducedMotion ? 0.3 : voiceIntensity;
-      overlayRef.current.style.setProperty("--voice-intensity", String(intensity));
+      overlayRef.current.style.setProperty(
+        "--voice-intensity",
+        String(intensity),
+      );
     }
   }, [voiceIntensity, reducedMotion]);
 
@@ -157,9 +161,11 @@ export const VoiceReactiveOverlay = ({
     <div
       ref={overlayRef}
       className="voice-reactive-overlay"
-      style={{
-        "--voice-intensity": "0",
-      } as React.CSSProperties & { "--voice-intensity": string }}
+      style={
+        {
+          "--voice-intensity": "0",
+        } as React.CSSProperties & { "--voice-intensity": string }
+      }
     />
   );
 };

@@ -9,7 +9,10 @@ interface HangUpButtonProps {
   callStartTime: number | null;
 }
 
-export const HangUpButton = ({ onHangUp, callStartTime }: HangUpButtonProps) => {
+export const HangUpButton = ({
+  onHangUp,
+  callStartTime,
+}: HangUpButtonProps) => {
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
 
   useEffect(() => {

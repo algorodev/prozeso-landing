@@ -2,10 +2,10 @@
 
 import { useConversation } from "@elevenlabs/react";
 import { PhoneCall } from "lucide-react";
-import { Route } from 'next'
+import type { Route } from "next";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react";
 import { useCall } from "@/components/CallContext";
 
 export const AgentFloatButton = () => {
@@ -30,10 +30,11 @@ export const AgentFloatButton = () => {
         connectionType: "webrtc",
         overrides: {
           agent: {
-            firstMessage: locale === 'es'
-              ? 'Hola, soy MarIA, la asistente virtual de Prozeso, ¿En que puedo ayudarte?'
-              : 'Hi, I am MarIA, the virtual agent of Prozeso, how can I help you?'
-          }
+            firstMessage:
+              locale === "es"
+                ? "Hola, soy MarIA, la asistente virtual de Prozeso, ¿En que puedo ayudarte?"
+                : "Hi, I am MarIA, the virtual agent of Prozeso, how can I help you?",
+          },
         },
         dynamicVariables: {
           language: locale,
@@ -42,38 +43,48 @@ export const AgentFloatButton = () => {
           landingNavigateTo: async ({ url }: { url: string }) => {
             try {
               const allowedDomains = [
-                'prozeso.com',
-                'calendly.com',
-                'app.prozeso.com'
-              ]
+                "prozeso.com",
+                "calendly.com",
+                "app.prozeso.com",
+              ];
 
               const urlObj = new URL(url);
-              const isAllowed = allowedDomains.some(domain =>
-                urlObj.hostname === domain || urlObj.hostname.endsWith(domain)
+              const isAllowed = allowedDomains.some(
+                (domain) =>
+                  urlObj.hostname === domain ||
+                  urlObj.hostname.endsWith(domain),
               );
 
               if (!isAllowed) {
-                console.warn(`[landingNavigateTo] Blocked non-allowed domain: ${url}`);
-                return
+                console.warn(
+                  `[landingNavigateTo] Blocked non-allowed domain: ${url}`,
+                );
+                return;
               }
 
-              if (urlObj.hostname.includes("calendly.com") || urlObj.hostname.includes("app.prozeso.com")) {
+              if (
+                urlObj.hostname.includes("calendly.com") ||
+                urlObj.hostname.includes("app.prozeso.com")
+              ) {
                 window.open(url, "_blank", "noopener noreferrer");
-                return
+                return;
               }
 
               if (urlObj.hostname.includes("prozeso.com")) {
-                const path = urlObj.pathname
-                router.push(path as Route)
-                return
+                const path = urlObj.pathname;
+                router.push(path as Route);
+                return;
               }
             } catch (error) {
-              console.error(`[landingNavigateTo] Error parsing URL: ${url}`, error);
+              console.error(
+                `[landingNavigateTo] Error parsing URL: ${url}`,
+                error,
+              );
             }
-          }
+          },
         },
       });
-      
+
       setConversationStarted(true);
       setIsCallActive(true);
       setIsCalling(false);

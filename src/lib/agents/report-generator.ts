@@ -3,9 +3,9 @@ import { z } from "zod";
 import { getGoogleModel } from "@/lib/config/google-ai";
 import { REPORT_GENERATOR_PROMPT } from "@/lib/prompts";
 import type {
+  Priority,
   UseCaseAnalysisResult,
   UseCaseReport,
-  Priority,
 } from "@/types/UseCaseReport";
 
 const impactLevelSchema = z.enum(["high", "medium", "low"]);
@@ -89,7 +89,9 @@ const reportSchema = z.object({
             .max(10)
             .pipe(z.custom<Priority>())
             .describe("Priority from 1-10"),
-          affectedAreas: z.array(z.string()).describe("Areas affected by this pain point"),
+          affectedAreas: z
+            .array(z.string())
+            .describe("Areas affected by this pain point"),
         }),
       )
       .min(1)
@@ -245,7 +247,12 @@ export async function generateReport(
       output: Output.object({
         schema: reportSchema,
       }),
-      prompt: REPORT_GENERATOR_PROMPT(analysisJson, companySize, industry, locale),
+      prompt: REPORT_GENERATOR_PROMPT(
+        analysisJson,
+        companySize,
+        industry,
+        locale,
+      ),
     });
 
     // Ensure generatedAt is set to current ISO date
@@ -262,7 +269,8 @@ export async function generateReport(
 
     console.log("✅ [REPORT GENERATOR] Report generated successfully:", {
       painPointsCount: report.painPointsAnalysis.painPoints.length,
-      recommendationsCount: report.automationRecommendations.recommendations.length,
+      recommendationsCount:
+        report.automationRecommendations.recommendations.length,
       phasesCount: report.implementationRoadmap.phases.length,
     });
 

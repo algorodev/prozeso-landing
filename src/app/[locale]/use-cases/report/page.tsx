@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useRouter, useParams } from "next/navigation";
-import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import type { UseCaseReport } from "@/types/UseCaseReport";
+import type { Route } from "next";
+import { useParams, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { CompactReport } from "@/components/UseCases/Report/CompactReport";
 import { StaticNextSteps } from "@/components/UseCases/Report/StaticNextSteps";
-import type { Route } from "next";
+import type { UseCaseReport } from "@/types/UseCaseReport";
 
 export default function UseCaseReportPage() {
   const router = useRouter();
@@ -59,14 +59,16 @@ export default function UseCaseReportPage() {
           transition={{ duration: 0.6 }}
           className="mb-8 sm:mb-12 text-center"
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">{t("title")}</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">
+            {t("title")}
+          </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             {t("subtitle", {
               industry: report.metadata.industry,
               companySize: report.metadata.companySize,
               date: new Date(report.metadata.generatedAt).toLocaleDateString(
                 locale,
-                { year: "numeric", month: "long", day: "numeric" }
+                { year: "numeric", month: "long", day: "numeric" },
               ),
             })}
           </p>

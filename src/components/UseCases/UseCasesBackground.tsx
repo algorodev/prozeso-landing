@@ -181,7 +181,10 @@ export default function UseCasesBackground() {
               top: s.top,
               left: s.left,
               width: s.size,
-              height: s.type === "pill" ? Math.max(60, Math.floor(s.size * 0.4)) : s.size,
+              height:
+                s.type === "pill"
+                  ? Math.max(60, Math.floor(s.size * 0.4))
+                  : s.size,
               opacity: s.opacity,
               transform: s.rotation ? `rotate(${s.rotation}deg)` : undefined,
               borderRadius:

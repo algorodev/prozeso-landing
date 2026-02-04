@@ -9,22 +9,31 @@ import { Card, CardContent } from "@/components/ui/Card";
 
 export function StaticNextSteps() {
   const t = useTranslations("useCases.report.sections.nextSteps");
-  
+
   const nextSteps = [
     {
       icon: Phone,
       title: t("step1.title", { default: "Schedule a Consultation" }),
-      description: t("step1.description", { default: "Book a free consultation call with our automation experts to discuss your specific needs." }),
+      description: t("step1.description", {
+        default:
+          "Book a free consultation call with our automation experts to discuss your specific needs.",
+      }),
     },
     {
       icon: Rocket,
       title: t("step2.title", { default: "Get a Custom Plan" }),
-      description: t("step2.description", { default: "Receive a tailored automation roadmap designed specifically for your business." }),
+      description: t("step2.description", {
+        default:
+          "Receive a tailored automation roadmap designed specifically for your business.",
+      }),
     },
     {
       icon: Calendar,
       title: t("step3.title", { default: "Start Implementation" }),
-      description: t("step3.description", { default: "Begin your automation journey with our guided implementation process." }),
+      description: t("step3.description", {
+        default:
+          "Begin your automation journey with our guided implementation process.",
+      }),
     },
   ];
 
@@ -60,7 +69,9 @@ export function StaticNextSteps() {
                     <Icon className="size-6 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {step.description}
+                  </p>
                 </motion.div>
               );
             })}
@@ -70,22 +81,19 @@ export function StaticNextSteps() {
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">
-                  {t("cta.title", { default: "Ready to Transform Your Business?" })}
+                  {t("cta.title", {
+                    default: "Ready to Transform Your Business?",
+                  })}
                 </h3>
                 <p className="text-muted-foreground">
-                  {t("cta.description", { default: "Let's discuss how automation can help you achieve your goals." })}
+                  {t("cta.description", {
+                    default:
+                      "Let's discuss how automation can help you achieve your goals.",
+                  })}
                 </p>
               </div>
-              <Button
-                asChild
-                size="lg"
-                className="w-full md:w-auto"
-              >
-                <a
-                  href={CALENDAR_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+              <Button asChild size="lg" className="w-full md:w-auto">
+                <a href={CALENDAR_URL} target="_blank" rel="noreferrer">
                   {t("cta.button", { default: "Get Started" })}
                   <ArrowRight className="ml-2 size-4" />
                 </a>
