@@ -1,145 +1,136 @@
-# Prospector Landing — Onboarding & Environments
+# Prozeso Landing
 
-A production‑ready landing site built with Next.js 16 (App Router), React 19, Tailwind CSS v4, and i18n via `next-intl`. This guide explains how to run the project locally and how production is set up on Vercel.
+Marketing site for [Prozeso](https://prozeso.com) — an AI-powered workflow automation platform for service businesses (restaurants, clinics, beauty salons, hotels, real estate).
 
-## Tech stack
-- Next.js 16 (App Router, Turbopack)
-- React 19
-- Tailwind CSS v4
-- next-intl (routing under `[locale]`)
-- next-themes (dark/system theme)
-- Biome (format + lint)
-- Resend (transactional email)
-- GA4 (analytics)
+Built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**.
 
-## Project structure
-Key paths only (not exhaustive):
-- `src/app/[locale]/layout.tsx` — per-locale root layout with providers (theme, i18n)
-- `src/app/[locale]/page.tsx` — main localized page
-- `src/app/layout.tsx` — app root shell
-- `src/app/robots.ts`, `src/app/sitemap.ts` — SEO helpers
-- `public/` — static assets (e.g., `og-image.png`)
-- `next.config.ts`, `tsconfig.json` — config files
-- `biome.json` — linter/formatter rules
+## Features
+
+- **AI Use-Case Analyzer** — Users describe their business pain points and receive a personalized automation report powered by Google Gemini
+- **Voice AI Agent** — Floating conversational assistant via ElevenLabs with multilingual support
+- **Industry Solutions** — Tailored automation showcases for 5 verticals (restaurants, clinics, beauty, hotels, real estate)
+- **Internationalization** — Full Spanish/English support with localized routing
+- **Assessment Wizard** — Multi-step form with email notifications via Resend
+- **SEO** — Dynamic sitemap, robots.txt, Open Graph metadata
+
+## Tech Stack
+
+| Category | Technology |
+|----------|-----------|
+| Framework | Next.js 16 (App Router, Turbopack) |
+| Language | TypeScript 5.9 |
+| Styling | Tailwind CSS v4, Framer Motion, Anime.js |
+| UI | Radix UI, shadcn/ui pattern, CVA |
+| Forms | react-hook-form + Zod |
+| AI | Vercel AI SDK, Google Generative AI, ElevenLabs |
+| Email | Resend + React Email |
+| i18n | next-intl |
+| Linting | Biome |
 
 ## Prerequisites
-- Node.js 20+ (recommended LTS)
-- pnpm, npm, bun, or yarn (examples use `pnpm`)
-- A Resend account (if you plan to test email sending)
-- A GA4 property (optional for local)
 
-## Environment variables
-Create a `.env` file in the project root (already present in this repo for local). Example values:
+- Node.js 20+
+- pnpm (recommended)
 
-```
-# Public URLs used by the app (local)
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
-NEXT_PUBLIC_CLIENT_URL=http://localhost:3001
+## Getting Started
 
-# Email (Resend)
-RESEND_API_KEY=your_resend_api_key
+1. **Install dependencies**
 
-# Google Analytics (GA4)
-GA_MEASUREMENT_ID=G-XXXXXXXXXX
-```
-
-Notes:
-- Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser—do not put secrets there.
-- Keep `.env` out of version control if it contains secrets.
-
-## Local development
-1) Install dependencies
-```
+```bash
 pnpm install
 ```
 
-2) Run the dev server
+2. **Set up environment variables**
+
+Create a `.env` file in the project root:
+
+```env
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_CLIENT_URL=http://localhost:3001
+RESEND_API_KEY=re_your_key
+GA_MEASUREMENT_ID=G-XXXXXXXXXX
+GOOGLE_API_KEY=your_google_api_key
 ```
+
+> `NEXT_PUBLIC_*` variables are exposed to the browser. Keep API keys server-only.
+
+3. **Run the dev server**
+
+```bash
 pnpm dev
 ```
 
-3) Open the site
-- App: http://localhost:3000
+Open [http://localhost:3000](http://localhost:3000).
 
-4) Lint and format
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start dev server (Turbopack) |
+| `pnpm build` | Production build |
+| `pnpm start` | Serve production build |
+| `pnpm lint` | Run Biome lint |
+| `pnpm format` | Run Biome format (auto-fix) |
+
+## Project Structure
+
 ```
-pnpm lint
-pnpm format
+src/
+├── app/                     # Next.js App Router
+│   ├── [locale]/            # Localized routes (es, en)
+│   │   ├── start/           # Assessment wizard
+│   │   ├── use-cases/       # AI use-case analyzer + report
+│   │   ├── automations/     # Automation showcase
+│   │   ├── verticals/       # Industry-specific pages
+│   │   └── legal/           # Privacy, terms, cookies
+│   └── api/                 # API routes
+├── components/              # React components
+│   ├── Home/                # Home page sections
+│   ├── Start/               # Assessment wizard
+│   ├── UseCases/            # Use-case analysis + reports
+│   ├── Automations/         # Automation showcase
+│   ├── Verticals/           # Industry-specific
+│   ├── Legal/               # Legal pages
+│   ├── ui/                  # Reusable primitives
+│   └── icons/               # Custom SVG icons
+├── lib/                     # Business logic
+│   ├── agents/              # AI pipeline (analyzer + report)
+│   ├── actions/             # Server actions
+│   ├── config/              # AI provider config
+│   └── prompts/             # System prompts
+├── i18n/                    # i18n configuration
+├── messages/                # Translation files (en.json, es.json)
+├── types/                   # TypeScript definitions
+├── data/                    # Static data (automations, verticals)
+└── emails/                  # React Email templates
 ```
 
-5) Production build locally (optional)
-```
-pnpm build
-pnpm start
-```
+## Internationalization
 
-## Internationalization (i18n)
-- Localized routes live under `src/app/[locale]`.
-- Supported locales are defined in `@/i18n/config` and loaded in `[locale]/layout.tsx`.
-- Translations are loaded from `@/messages/<locale>.json`.
-- To add a new language: add the locale to the config, create a matching messages JSON file, and ensure `generateStaticParams` includes it.
+- Supported locales: **Spanish** (default), **English**
+- Routes are under `src/app/[locale]/`
+- Translations live in `src/messages/{locale}.json`
+- Use `useTranslations()` from `next-intl` for all display text
+- To add a locale: update `src/i18n/config.ts`, create the messages file, and add to `generateStaticParams`
 
-## Theming
-- Dark/System themes are handled by `next-themes` in `src/app/[locale]/layout.tsx`.
+## Deployment
 
-## Emails (Resend)
-- Ensure `RESEND_API_KEY` is set (local `.env` and Vercel project settings for prod).
-- When deploying to Vercel, add the same key to Environment Variables (see below).
+The app is deployed on **Vercel**.
 
-## Analytics (GA4)
-- `GA_MEASUREMENT_ID` should be set in local `.env` (optional) and in Vercel for production.
+- Pushes to `main` trigger production deploys
+- PRs get automatic preview URLs
+- Set the same environment variables in Vercel project settings
 
----
+### Required Vercel Environment Variables
 
-# Environments
-
-## Local
-- URL: http://localhost:3000
-- Required env: `NEXT_PUBLIC_BASE_URL`, (optional) `NEXT_PUBLIC_CLIENT_URL`, `RESEND_API_KEY`, `GA_MEASUREMENT_ID`.
-- Start with `pnpm dev`.
-
-## Production (Vercel)
-The app is designed to be deployed on Vercel.
-
-1) Create/Link project
-- Push the repository to GitHub.
-- Import it in Vercel and select the `landing` project root.
-
-2) Build configuration
-- Framework: Next.js
-- Build command: `pnpm build` (Vercel auto-detects; this project uses Turbopack)
-- Output: `.vercel/output` (handled by Next.js)
-
-3) Environment Variables (Vercel → Settings → Environment Variables)
-Set the following for Production (and Preview, if needed):
-- `NEXT_PUBLIC_BASE_URL` → your production URL (`https://prozeso.com`)
-- `NEXT_PUBLIC_CLIENT_URL` → external client app origin if used (optional)
-- `RESEND_API_KEY` → your Resend secret key
-- `GA_MEASUREMENT_ID` → your GA4 ID
-
-4) Domains
-- Add your custom domain in Vercel → Project → Domains.
-- Configure DNS as instructed by Vercel; wait for propagation.
-
-5) Previews
-- Every PR to the default branch gets a Preview URL with the same env configuration (if set for the Preview environment in Vercel).
-
-## Deploy workflow
-- Commit to the default branch → Vercel builds and deploys Production.
-- Open PR → Vercel builds and deploys a Preview.
-
-## Troubleshooting
-- Build fails on Vercel: verify all required env vars are present for the environment (Preview vs Production).
-- 404 for localized routes: ensure the locale is listed in `@/i18n/config` and messages file exists.
-- Styling issues: ensure Tailwind CSS v4 is installed and `postcss.config.mjs` is present.
-- Emails not sending: check `RESEND_API_KEY` and any domain verification steps required by Resend.
-
-## Useful scripts
-- `pnpm dev` — start development server (Turbopack)
-- `pnpm build` — production build
-- `pnpm start` — run built app locally
-- `pnpm lint` — biome lint
-- `pnpm format` — biome format write
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_BASE_URL` | Production URL (`https://prozeso.com`) |
+| `NEXT_PUBLIC_CLIENT_URL` | Client app URL (optional) |
+| `RESEND_API_KEY` | Resend email API key |
+| `GA_MEASUREMENT_ID` | Google Analytics 4 ID |
+| `GOOGLE_API_KEY` | Google Generative AI key |
 
 ## License
+
 Private project. All rights reserved.
