@@ -81,7 +81,7 @@ const Partnerships = () => {
           }}
           className="w-full mx-auto flex items-center justify-center gap-6 md:gap-8 lg:gap-10 flex-wrap"
         >
-          {partners.map((partner, idx) => {
+          {partners.map((partner, _idx) => {
             const Icon = partner.icon;
             return (
               <motion.div

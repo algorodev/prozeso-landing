@@ -198,7 +198,7 @@ export function UseCasesForm() {
           setPipelineStatus("idle");
         }, 1500);
       }
-    } catch (err) {
+    } catch (_err) {
       setPipelineStatus("error");
       setServerError(t("serverError"));
       setIsGenerating(false);
@@ -511,7 +511,7 @@ export function UseCasesForm() {
                                 {t("submit.generating")}
                               </>
                             ) : (
-                              <>{t("submit.idle")}</>
+                              t("submit.idle")
                             )}
                           </Button>
                         </motion.div>

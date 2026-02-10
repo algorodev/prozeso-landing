@@ -2,11 +2,7 @@ import { generateText, Output } from "ai";
 import { z } from "zod";
 import { getGoogleModel } from "@/lib/config/google-ai";
 import { USE_CASE_ANALYZER_PROMPT } from "@/lib/prompts";
-import type {
-  ImpactLevel,
-  PainPointCategory,
-  UseCaseAnalysisResult,
-} from "@/types/UseCaseReport";
+import type { UseCaseAnalysisResult } from "@/types/UseCaseReport";
 
 const impactLevelSchema = z.enum(["high", "medium", "low"]);
 

@@ -12,7 +12,7 @@ export function AutomationHeroSection() {
   const { automation, id } = useAutomationFromParams();
   if (!automation) return null;
   const t = useTranslations(`automations.details.${id}`);
-  const tc = useTranslations("automations.details.common");
+  const _tc = useTranslations("automations.details.common");
   const tCommonCta = useTranslations("common.cta");
 
   return (

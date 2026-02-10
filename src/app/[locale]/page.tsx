@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import CoreAutomations from "@/components/Home/CoreAutomations";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
-import IndustryDirectAccess from "@/components/Home/IndustryDirectAccess";
 import Partnerships from "@/components/Home/Partnerships";
 import Understanding from "@/components/Home/Understanding";
 import { locales } from "@/i18n/config";

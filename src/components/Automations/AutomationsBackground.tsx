@@ -1,7 +1,7 @@
 "use client";
 
 import { animate } from "animejs";
-import React, { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 type ShapeType = "circle" | "square" | "diamond" | "hex" | "triangle" | "pill";
 
@@ -346,10 +346,10 @@ export default function AutomationsBackground() {
                 type !== "circle" && type !== "pill"
                   ? clipPathFor(type)
                   : undefined,
-              background: `linear-gradient(135deg, ${PALETTE[(parseInt(id.slice(1)) + 0) % PALETTE.length]}33, ${PALETTE[(parseInt(id.slice(1)) + 1) % PALETTE.length]}55)`,
+              background: `linear-gradient(135deg, ${PALETTE[(parseInt(id.slice(1), 10) + 0) % PALETTE.length]}33, ${PALETTE[(parseInt(id.slice(1), 10) + 1) % PALETTE.length]}55)`,
               boxShadow: "0 0 40px rgba(34, 211, 238, 0.15)",
               backdropFilter: "blur(1px)",
-              color: PALETTE[(parseInt(id.slice(1)) + 0) % PALETTE.length],
+              color: PALETTE[(parseInt(id.slice(1), 10) + 0) % PALETTE.length],
             }}
           >
             <div className={`${blurClass} absolute inset-0`} />

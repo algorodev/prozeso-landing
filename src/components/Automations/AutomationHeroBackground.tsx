@@ -1,7 +1,7 @@
 "use client";
 
 import { animate } from "animejs";
-import React, { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 type ShapeType = "circle" | "square" | "diamond" | "hex" | "triangle";
 
@@ -353,7 +353,7 @@ export default function AutomationHeroBackground() {
                     : `linear-gradient(135deg, ${color}66, ${color}22)`,
               }}
             >
-              <div className={s.blurClass + " h-full w-full"} />
+              <div className={`${s.blurClass} h-full w-full`} />
             </div>
           </div>
         );

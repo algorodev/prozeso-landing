@@ -132,7 +132,7 @@ export function AssessmentForm() {
 
       setSuccess(true);
       form.reset();
-    } catch (err) {
+    } catch (_err) {
       setServerError(t("serverErrorDefault"));
     }
   };
@@ -388,7 +388,7 @@ export function AssessmentForm() {
                     {t("submit.loading")}
                   </>
                 ) : (
-                  <>{t("submit.idle")}</>
+                  t("submit.idle")
                 )}
               </Button>
             </div>

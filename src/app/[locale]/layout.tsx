@@ -30,7 +30,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!locales.includes(locale)) notFound();
 
   const messages = (await import(`@/messages/${locale}.json`)).default;
-  const t = await getTranslations({ locale, namespace: "header" });
+  const _t = await getTranslations({ locale, namespace: "header" });
 
   return (
     <ThemeProvider

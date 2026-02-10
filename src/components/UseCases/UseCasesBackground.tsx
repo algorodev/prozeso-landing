@@ -170,7 +170,7 @@ export default function UseCasesBackground() {
       className="absolute inset-0 overflow-hidden pointer-events-none"
     >
       {shapes.map((s) => {
-        const color = PALETTE[parseInt(s.id.slice(2)) % PALETTE.length];
+        const color = PALETTE[parseInt(s.id.slice(2), 10) % PALETTE.length];
         return (
           <div
             key={s.id}

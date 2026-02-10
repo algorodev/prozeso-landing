@@ -47,8 +47,8 @@ export function UseCaseReportProgress({
   ];
 
   const currentStepIndex = steps.findIndex((step) => step.id === status);
-  const isAnalyzing = status === "analyzing";
-  const isGenerating = status === "generating";
+  const _isAnalyzing = status === "analyzing";
+  const _isGenerating = status === "generating";
   const isCompleted = status === "completed";
   const isError = status === "error";
 
