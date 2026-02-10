@@ -9,6 +9,7 @@
     "lint": "biome check .",
     "format": "biome format --write",
     "test": "vitest run",
+    "test:cov": "vitest run --coverage",
     "prepare": "husky"
   },
   "dependencies": {
@@ -50,6 +51,7 @@
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "^5.1.4",
+    "@vitest/coverage-v8": "^4.0.18",
     "husky": "9.1.7",
     "jsdom": "^28.0.0",
     "tailwindcss": "4.1.17",
