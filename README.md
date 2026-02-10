@@ -25,7 +25,10 @@ Built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**
 | AI | Vercel AI SDK, Google Generative AI, ElevenLabs |
 | Email | Resend + React Email |
 | i18n | next-intl |
+| Testing | Vitest, React Testing Library, @vitest/coverage-v8 |
 | Linting | Biome |
+| CI | GitHub Actions |
+| Git hooks | Husky |
 
 ## Prerequisites
 
@@ -71,6 +74,8 @@ Open [http://localhost:3000](http://localhost:3000).
 | `pnpm start` | Serve production build |
 | `pnpm lint` | Run Biome lint |
 | `pnpm format` | Run Biome format (auto-fix) |
+| `pnpm test` | Run all tests (Vitest) |
+| `pnpm test:cov` | Run tests with coverage report |
 
 ## Project Structure
 
@@ -102,7 +107,8 @@ src/
 ├── messages/                # Translation files (en.json, es.json)
 ├── types/                   # TypeScript definitions
 ├── data/                    # Static data (automations, verticals)
-└── emails/                  # React Email templates
+├── emails/                  # React Email templates
+└── __tests__/               # Unit tests (Vitest)
 ```
 
 ## Internationalization
@@ -112,6 +118,12 @@ src/
 - Translations live in `src/messages/{locale}.json`
 - Use `useTranslations()` from `next-intl` for all display text
 - To add a locale: update `src/i18n/config.ts`, create the messages file, and add to `generateStaticParams`
+
+## CI/CD
+
+- **GitHub Actions** runs lint, format, test, and build on every push to `main` and on PRs
+- **Husky pre-commit hook** runs the same pipeline locally before each commit
+- All checks must pass before code can be merged
 
 ## Deployment
 

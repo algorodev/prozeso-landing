@@ -14,7 +14,10 @@ Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an A
 - **AI**: Vercel AI SDK + Google Generative AI (Gemini 2.0 Flash), ElevenLabs voice agent
 - **Email**: Resend + React Email
 - **i18n**: next-intl (locales: `es` default, `en`)
+- **Testing**: Vitest, React Testing Library, @vitest/coverage-v8
 - **Linting/Formatting**: Biome
+- **CI**: GitHub Actions (lint, format, test, build)
+- **Git hooks**: Husky pre-commit (lint, format, test, build)
 - **Package manager**: pnpm
 
 ## Common commands
@@ -25,6 +28,8 @@ pnpm build        # Production build
 pnpm start        # Serve production build
 pnpm lint         # Biome lint check
 pnpm format       # Biome format (auto-fix)
+pnpm test         # Run all tests (Vitest)
+pnpm test:cov     # Run tests with coverage report
 ```
 
 ## Project structure
@@ -59,6 +64,7 @@ src/
 ├── types/                   # TypeScript type definitions
 ├── data/                    # Static data (automations, verticals)
 ├── emails/                  # React Email templates
+├── __tests__/               # Unit tests (Vitest)
 └── assets/                  # Static images
 ```
 
@@ -71,6 +77,15 @@ src/
 - **Server actions**: AI pipeline runs server-side in `src/lib/actions/`
 - **Styling**: Use Tailwind utility classes. Brand colors are defined as CSS variables in `globals.css` (lavender, blue, cyan, mint, orange). Dark theme is the default (forced)
 - **Fonts**: Inter Tight (body) and Sora (headings), loaded via `next/font`
+
+## Testing
+
+- **Framework**: Vitest with jsdom environment
+- **Setup**: `src/__tests__/setup.ts` loads `@testing-library/jest-dom/vitest`
+- **Convention**: All test files in `src/__tests__/` with `.test.ts` or `.test.tsx` extension
+- **Mocking**: Use `vi.hoisted()` for mock variables referenced inside `vi.mock()` factories (they are hoisted above `const` declarations)
+- **Coverage**: Run `pnpm test:cov` for v8 coverage reports
+- Pre-commit hook runs `pnpm lint && pnpm format && pnpm test && pnpm build` automatically
 
 ## Code style
 
@@ -100,8 +115,9 @@ GOOGLE_API_KEY              # Google Generative AI
 - **Form validation**: Zod schemas with react-hook-form via `@hookform/resolvers`
 - **Dynamic routes**: `automations/[id]` and `verticals/[id]` use static data from `src/data/`
 
-## Deployment
+## CI/CD
 
-- Hosted on **Vercel**
+- **GitHub Actions**: Runs lint, format, test, and build on pushes to `main` and PRs (`.github/workflows/ci.yml`)
+- **Husky pre-commit**: Same pipeline runs locally before each commit
+- **Vercel**: Hosted on Vercel; pushes to `main` trigger production deploys, PRs get preview URLs
 - Production domain: `prozeso.com`
-- Pushes to `main` trigger production deploys; PRs get preview URLs
