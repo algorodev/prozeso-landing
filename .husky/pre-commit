@@ -1,1 +1,1 @@
-pnpm lint && pnpm format && pnpm build
+pnpm lint && pnpm format && pnpm test && pnpm build
