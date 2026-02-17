@@ -58,6 +58,7 @@ const Footer = () => {
               className="hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener"
+              aria-label={t("social.instagram")}
             >
               <Instagram className="w-5 h-5" />
             </a>
@@ -66,6 +67,7 @@ const Footer = () => {
               className="hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener"
+              aria-label={t("social.linkedin")}
             >
               <Linkedin className="w-5 h-5" />
             </a>

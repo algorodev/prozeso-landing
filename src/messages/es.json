@@ -42,7 +42,11 @@
       "terms": "Términos y Condiciones",
       "privacy": "Política de privacidad"
     },
-    "rights": "© {year} Prozeso. Todos los derechos reservados."
+    "rights": "© {year} Prozeso. Todos los derechos reservados.",
+    "social": {
+      "instagram": "Síguenos en Instagram",
+      "linkedin": "Síguenos en LinkedIn"
+    }
   },
   "solutions": {
     "hero": {
