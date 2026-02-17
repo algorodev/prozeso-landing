@@ -237,7 +237,7 @@ export default function UseCasesShowcase() {
                     </div>
                   </div>
                   <p
-                    className="text-sm font-medium underline"
+                    className="text-sm font-medium"
                     style={{
                       color: chartColorValue,
                     }}
