@@ -49,11 +49,11 @@ export const MobileNav = ({ nav = [] }: Props) => {
         </SheetHeader>
         <div className="px-4 pb-4">
           <div className="flex items-center gap-2 py-2">
-            <Button className="flex-1" variant="secondary">
+            <Button className="flex-1" variant="secondary" asChild>
               <Close asChild>
                 <LocalizedLink href={clientUrl} className="flex items-center">
                   <User className="mr-2 size-4" />{" "}
-                  <span className="button-secondary-text">Sign in</span>
+                  <span className="button-secondary-text">{t("signIn")}</span>
                 </LocalizedLink>
               </Close>
             </Button>
