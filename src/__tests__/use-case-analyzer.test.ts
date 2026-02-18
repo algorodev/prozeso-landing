@@ -48,7 +48,7 @@ describe("analyzeUseCase", () => {
 
   it("calls generateText with the correct model", async () => {
     await analyzeUseCase("10-50", "restaurants", "slow service", "en");
-    expect(mockGetGoogleModel).toHaveBeenCalledWith("gemini-2.0-flash-exp");
+    expect(mockGetGoogleModel).toHaveBeenCalledWith("gemini-2.5-flash");
     expect(mockGenerateText).toHaveBeenCalledTimes(1);
   });
 

@@ -243,7 +243,7 @@ export async function generateReport(
 
     console.log("🤖 [REPORT GENERATOR] Calling AI model...");
     const { output } = await generateText({
-      model: getGoogleModel("gemini-2.0-flash-exp"),
+      model: getGoogleModel("gemini-2.5-flash"),
       output: Output.object({
         schema: reportSchema,
       }),

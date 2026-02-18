@@ -84,7 +84,7 @@ export async function analyzeUseCase(
   try {
     console.log("🤖 [USE CASE ANALYZER] Calling AI model...");
     const { output } = await generateText({
-      model: getGoogleModel("gemini-2.0-flash-exp"),
+      model: getGoogleModel("gemini-2.5-flash"),
       output: Output.object({
         schema: analysisSchema,
       }),

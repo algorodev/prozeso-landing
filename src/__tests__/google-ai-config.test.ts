@@ -37,12 +37,12 @@ describe("google-ai config", () => {
 
   it("getGoogleModel calls provider with modelId", async () => {
     process.env.GOOGLE_API_KEY = "test-key-123";
-    const mockModel = { id: "gemini-2.0-flash-exp" };
+    const mockModel = { id: "gemini-2.5-flash" };
     const mockProvider = vi.fn().mockReturnValue(mockModel);
     mockCreateGoogleGenerativeAI.mockReturnValue(mockProvider);
     const { getGoogleModel } = await import("@/lib/config/google-ai");
-    const result = getGoogleModel("gemini-2.0-flash-exp");
-    expect(mockProvider).toHaveBeenCalledWith("gemini-2.0-flash-exp");
+    const result = getGoogleModel("gemini-2.5-flash");
+    expect(mockProvider).toHaveBeenCalledWith("gemini-2.5-flash");
     expect(result).toBe(mockModel);
   });
 });
