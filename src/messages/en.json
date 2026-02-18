@@ -28,7 +28,8 @@
     },
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "mobileMenuDescription": "Main navigation menu"
   },
   "footer": {
     "tagline": "AI that listens, understands, and acts for your business.",

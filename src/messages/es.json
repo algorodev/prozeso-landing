@@ -28,7 +28,8 @@
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
-    "signIn": "Entrar"
+    "signIn": "Entrar",
+    "mobileMenuDescription": "Menú de navegación principal"
   },
   "footer": {
     "tagline": "IA que escucha, entiende y actúa por tu negocio.",
