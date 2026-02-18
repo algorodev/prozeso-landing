@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/Separator";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -46,6 +47,9 @@ export const MobileNav = ({ nav = [] }: Props) => {
       <SheetContent side="left" className="w-[84vw] p-0">
         <SheetHeader className="px-4 py-3">
           <SheetTitle className="text-left body-strong-text">Menu</SheetTitle>
+          <SheetDescription className="sr-only">
+            {t("mobileMenuDescription")}
+          </SheetDescription>
         </SheetHeader>
         <div className="px-4 pb-4">
           <div className="flex items-center gap-2 py-2">
