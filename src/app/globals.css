@@ -102,7 +102,7 @@
 
 @layer utilities {
   .hero-title {
-    @apply font-sora text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tighter text-balance wrap-break-word;
+    @apply font-sora text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tighter text-balance wrap-break-word;
   }
 
   .hero-subtitle {

@@ -48,15 +48,15 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: 0.2 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-6 flex flex-col md:flex-row justify-center items-center gap-3 lg:justify-start"
+              className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3 lg:justify-start"
             >
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="w-full sm:w-auto">
                 <LocalizedLink href="/start">
                   <NotebookPen className="mr-1 size-5" />
                   {tc("startAssessment")}
                 </LocalizedLink>
               </Button>
-              <BookCallButton />
+              <BookCallButton className="w-full sm:w-auto" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
