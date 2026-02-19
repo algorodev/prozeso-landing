@@ -52,18 +52,18 @@ export const MobileNav = ({ nav = [] }: Props) => {
           </SheetDescription>
         </SheetHeader>
         <div className="px-4 pb-4">
-          <div className="flex items-center gap-2 py-2">
-            <Button className="flex-1" variant="secondary" asChild>
+          <div className="flex flex-col gap-2 py-2">
+            <Button asChild className="w-full">
+              <Close asChild>
+                <LocalizedLink href="/start">{t("cta")}</LocalizedLink>
+              </Close>
+            </Button>
+            <Button className="w-full" variant="secondary" asChild>
               <Close asChild>
                 <LocalizedLink href={clientUrl} className="flex items-center">
                   <User className="mr-2 size-4" />{" "}
                   <span className="button-secondary-text">{t("signIn")}</span>
                 </LocalizedLink>
-              </Close>
-            </Button>
-            <Button asChild className="flex-1">
-              <Close asChild>
-                <LocalizedLink href="/start">{t("cta")}</LocalizedLink>
               </Close>
             </Button>
           </div>
