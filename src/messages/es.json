@@ -38,10 +38,13 @@
       "company": "Empresa"
     },
     "links": {
+      "useCases": "Casos de Uso",
       "automations": "Automatizaciones",
-      "assessment": "Evaluación",
+      "assessment": "Comenzar",
       "terms": "Términos y Condiciones",
-      "privacy": "Política de privacidad"
+      "privacy": "Política de Privacidad",
+      "cookies": "Política de Cookies",
+      "contact": "Contacto"
     },
     "rights": "© {year} Prozeso. Todos los derechos reservados.",
     "social": {
