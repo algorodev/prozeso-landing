@@ -12,19 +12,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/legal/cookies`;
 
-  const title = "Cookies Policy";
+  const title = locale === "es" ? "Política de cookies" : "Cookies Policy";
   const description =
-    "Understand how Prozeso uses cookies and similar technologies, what data they collect, and how you can manage your preferences.";
-  const keywords = [
-    "cookies policy",
-    "cookie preferences",
-    "tracking technologies",
-    "analytics cookies",
-    "essential cookies",
-    "GDPR",
-    "ePrivacy",
-    "consent management",
-  ];
+    locale === "es"
+      ? "Conoce cómo Prozeso utiliza cookies y tecnologías similares, qué datos recopilan y cómo puedes gestionar tus preferencias."
+      : "Understand how Prozeso uses cookies and similar technologies, what data they collect, and how you can manage your preferences.";
+  const keywords =
+    locale === "es"
+      ? [
+          "política de cookies",
+          "preferencias de cookies",
+          "tecnologías de rastreo",
+          "cookies analíticas",
+          "cookies esenciales",
+          "RGPD",
+          "ePrivacy",
+          "gestión del consentimiento",
+        ]
+      : [
+          "cookies policy",
+          "cookie preferences",
+          "tracking technologies",
+          "analytics cookies",
+          "essential cookies",
+          "GDPR",
+          "ePrivacy",
+          "consent management",
+        ];
 
   return {
     title,
@@ -46,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Prozeso Cookies Policy",
+          alt: title,
         },
       ],
     },

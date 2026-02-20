@@ -110,6 +110,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       title,
       description,
+      locale: locale === "es" ? "es_ES" : "en_US",
       images: [
         {
           url: "/og-image.png",

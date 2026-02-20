@@ -16,19 +16,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/use-cases`;
 
-  const title = "Use Cases • AI-Powered Solutions for Your Business";
+  const title =
+    locale === "es"
+      ? "Casos de uso — Soluciones con IA para tu negocio"
+      : "Use Cases — AI-Powered Solutions for Your Business";
   const description =
-    "Discover how our AI-powered automations can help transform your business. Generate a personalized report on how we can help you automate and scale your operations.";
+    locale === "es"
+      ? "Descubre cómo nuestras automatizaciones con IA pueden transformar tu negocio. Genera un informe personalizado sobre cómo automatizar y escalar tus operaciones."
+      : "Discover how our AI-powered automations can help transform your business. Generate a personalized report on how we can help you automate and scale your operations.";
 
-  const keywords = [
-    "use cases",
-    "business automation",
-    "AI solutions",
-    "automation examples",
-    "business transformation",
-    "workflow automation",
-    "service business automation",
-  ];
+  const keywords =
+    locale === "es"
+      ? [
+          "casos de uso",
+          "automatización empresarial",
+          "soluciones con IA",
+          "ejemplos de automatización",
+          "transformación digital",
+          "automatización de flujos",
+          "automatización para servicios",
+        ]
+      : [
+          "use cases",
+          "business automation",
+          "AI solutions",
+          "automation examples",
+          "business transformation",
+          "workflow automation",
+          "service business automation",
+        ];
 
   return {
     title,
@@ -50,7 +66,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Discover AI-powered use cases for your business with Prozeso",
+          alt: title,
         },
       ],
     },
