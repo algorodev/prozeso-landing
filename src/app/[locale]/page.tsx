@@ -128,9 +128,41 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function JsonLd() {
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://prozeso.com";
+
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Prozeso",
+    url: base,
+    logo: `${base}/og-image.png`,
+    sameAs: [
+      "https://instagram.com/prozeso.ai",
+      "https://www.linkedin.com/company/prozeso",
+    ],
+    description:
+      "AI-powered workflow automation platform for service businesses.",
+  };
+
+  const webSite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Prozeso",
+    url: base,
+  };
+
+  return (
+    <script type="application/ld+json">
+      {JSON.stringify([organization, webSite])}
+    </script>
+  );
+}
+
 export default function Home() {
   return (
     <div>
+      <JsonLd />
       <Hero />
       <Understanding />
       <Impact />
