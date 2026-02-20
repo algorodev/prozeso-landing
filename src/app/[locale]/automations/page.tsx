@@ -15,8 +15,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${base}/${locale}/automations`;
 
   const count = AUTOMATIONS.length;
-  const title = "Automations • AI-Powered Workflows Library";
-  const description = `Browse ${count}+ ready-made automations for service businesses — from receptionist AI and reminders to reviews, billing, and sales enablement. Mix and match to build your perfect automation stack.`;
+  const title =
+    locale === "es"
+      ? "Automatizaciones — Biblioteca de flujos con IA"
+      : "Automations — AI-Powered Workflows Library";
+  const description =
+    locale === "es"
+      ? `Explora ${count}+ automatizaciones listas para negocios de servicios — desde recepcionistas con IA y recordatorios hasta reseñas, facturación y ventas. Combínalas para crear tu stack ideal.`
+      : `Browse ${count}+ ready-made automations for service businesses — from receptionist AI and reminders to reviews, billing, and sales enablement. Mix and match to build your perfect automation stack.`;
 
   const keywords = Array.from(
     new Set(
@@ -56,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Explore AI-powered automation workflows with Prozeso",
+          alt: title,
         },
       ],
     },

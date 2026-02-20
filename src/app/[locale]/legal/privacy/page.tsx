@@ -12,19 +12,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/legal/privacy`;
 
-  const title = "Privacy Policy";
+  const title = locale === "es" ? "Política de privacidad" : "Privacy Policy";
   const description =
-    "Learn how Prozeso collects, uses, stores, and shares your personal data, and review your rights and choices.";
-  const keywords = [
-    "privacy policy",
-    "data protection",
-    "personal data",
-    "data processing",
-    "GDPR compliance",
-    "user rights",
-    "data retention",
-    "security",
-  ];
+    locale === "es"
+      ? "Conoce cómo Prozeso recopila, usa, almacena y comparte tus datos personales, y revisa tus derechos y opciones."
+      : "Learn how Prozeso collects, uses, stores, and shares your personal data, and review your rights and choices.";
+  const keywords =
+    locale === "es"
+      ? [
+          "política de privacidad",
+          "protección de datos",
+          "datos personales",
+          "tratamiento de datos",
+          "cumplimiento RGPD",
+          "derechos del usuario",
+          "retención de datos",
+          "seguridad",
+        ]
+      : [
+          "privacy policy",
+          "data protection",
+          "personal data",
+          "data processing",
+          "GDPR compliance",
+          "user rights",
+          "data retention",
+          "security",
+        ];
 
   return {
     title,
@@ -46,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Prozeso Privacy Policy",
+          alt: title,
         },
       ],
     },
