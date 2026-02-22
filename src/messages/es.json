@@ -28,7 +28,8 @@
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
-    "signIn": "Entrar"
+    "signIn": "Entrar",
+    "mobileMenuDescription": "Menú de navegación principal"
   },
   "footer": {
     "tagline": "IA que escucha, entiende y actúa por tu negocio.",
@@ -37,12 +38,19 @@
       "company": "Empresa"
     },
     "links": {
+      "useCases": "Casos de Uso",
       "automations": "Automatizaciones",
-      "assessment": "Evaluación",
+      "assessment": "Comenzar",
       "terms": "Términos y Condiciones",
-      "privacy": "Política de privacidad"
+      "privacy": "Política de Privacidad",
+      "cookies": "Política de Cookies",
+      "contact": "Contacto"
     },
-    "rights": "© {year} Prozeso. Todos los derechos reservados."
+    "rights": "© {year} Prozeso. Todos los derechos reservados.",
+    "social": {
+      "instagram": "Síguenos en Instagram",
+      "linkedin": "Síguenos en LinkedIn"
+    }
   },
   "solutions": {
     "hero": {

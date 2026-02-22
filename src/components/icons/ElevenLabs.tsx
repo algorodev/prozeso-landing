@@ -4,7 +4,9 @@ export const ElevenLabs = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className="w-full h-full"
+    aria-labelledby="logo-elevenlabs"
   >
+    <title id="logo-elevenlabs">ElevenLabs</title>
     <path
       d="M248.261 22.1901H230.466L251.968 88.5124H271.123L292.625 22.1901H274.83L261.365 72.1488L248.261 22.1901Z"
       fill="#FAFAFA"

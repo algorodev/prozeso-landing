@@ -12,19 +12,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/legal/terms`;
 
-  const title = "Terms & Conditions";
+  const title =
+    locale === "es" ? "Términos y condiciones" : "Terms & Conditions";
   const description =
-    "Read the Terms and Conditions for using Prozeso services, including acceptable use, limitations of liability, and governing law.";
-  const keywords = [
-    "terms",
-    "terms and conditions",
-    "service terms",
-    "acceptable use",
-    "limitations of liability",
-    "user obligations",
-    "governing law",
-    "agreement",
-  ];
+    locale === "es"
+      ? "Lee los Términos y Condiciones de uso de los servicios de Prozeso, incluyendo uso aceptable, limitaciones de responsabilidad y ley aplicable."
+      : "Read the Terms and Conditions for using Prozeso services, including acceptable use, limitations of liability, and governing law.";
+  const keywords =
+    locale === "es"
+      ? [
+          "términos",
+          "términos y condiciones",
+          "condiciones del servicio",
+          "uso aceptable",
+          "limitaciones de responsabilidad",
+          "obligaciones del usuario",
+          "ley aplicable",
+          "acuerdo",
+        ]
+      : [
+          "terms",
+          "terms and conditions",
+          "service terms",
+          "acceptable use",
+          "limitations of liability",
+          "user obligations",
+          "governing law",
+          "agreement",
+        ];
 
   return {
     title,
@@ -46,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Prozeso Terms & Conditions",
+          alt: title,
         },
       ],
     },

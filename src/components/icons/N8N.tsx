@@ -3,7 +3,9 @@ export const N8N = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 442.74 120"
     className="w-full h-full"
+    aria-labelledby="logo-n8n"
   >
+    <title id="logo-n8n">n8n</title>
     <path
       fillRule="evenodd"
       fill="currentColor"

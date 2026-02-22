@@ -47,7 +47,7 @@ export const Header = () => {
         </div>
         <div className="flex items-center">
           <LocalizedLink href="/" className="flex items-center gap-2">
-            <Logo />
+            <Logo priority />
           </LocalizedLink>
         </div>
         <nav className="hidden md:flex items-center gap-1 ml-2">
@@ -59,7 +59,7 @@ export const Header = () => {
         <div className="flex items-center gap-1">
           <LocaleSwitcher current={locale as Locale} />
           <div className="hidden sm:flex items-center gap-2">
-            <Button variant="ghost">
+            <Button variant="ghost" asChild>
               <Link href={clientUrl as Route} target="_blank">
                 {t("signIn")}
               </Link>

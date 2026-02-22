@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Cog, DollarSign, Headphones, Target, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { type KeyboardEvent, useCallback, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
 
@@ -98,6 +98,34 @@ export default function UseCasesShowcase() {
   const currentUseCases = USE_CASES[selectedArea];
   const selectedAreaConfig = BUSINESS_AREAS.find((a) => a.id === selectedArea);
 
+  const handleTabKeyDown = useCallback(
+    (e: KeyboardEvent<HTMLButtonElement>) => {
+      const currentIndex = BUSINESS_AREAS.findIndex(
+        (a) => a.id === selectedArea,
+      );
+      let nextIndex = -1;
+
+      if (e.key === "ArrowRight") {
+        nextIndex = (currentIndex + 1) % BUSINESS_AREAS.length;
+      } else if (e.key === "ArrowLeft") {
+        nextIndex =
+          (currentIndex - 1 + BUSINESS_AREAS.length) % BUSINESS_AREAS.length;
+      } else if (e.key === "Home") {
+        nextIndex = 0;
+      } else if (e.key === "End") {
+        nextIndex = BUSINESS_AREAS.length - 1;
+      }
+
+      if (nextIndex >= 0) {
+        e.preventDefault();
+        const nextArea = BUSINESS_AREAS[nextIndex];
+        setSelectedArea(nextArea.id);
+        document.getElementById(`tab-${nextArea.id}`)?.focus();
+      }
+    },
+    [selectedArea],
+  );
+
   return (
     <div className="w-full max-w-5xl mx-auto">
       <motion.div
@@ -134,6 +162,8 @@ export default function UseCasesShowcase() {
           hidden: { opacity: 1 },
           show: { transition: { staggerChildren: 0.05 } },
         }}
+        role="tablist"
+        aria-label={tShowcase("title")}
         className="flex flex-wrap justify-center gap-3 mb-12"
       >
         {BUSINESS_AREAS.map((area) => {
@@ -143,13 +173,20 @@ export default function UseCasesShowcase() {
           return (
             <motion.div
               key={area.id}
+              role="presentation"
               variants={{
                 hidden: { opacity: 0, y: 16 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
               }}
             >
               <Button
+                id={`tab-${area.id}`}
+                role="tab"
+                aria-selected={isSelected}
+                aria-controls={`panel-${area.id}`}
+                tabIndex={isSelected ? 0 : -1}
                 onClick={() => setSelectedArea(area.id)}
+                onKeyDown={handleTabKeyDown}
                 variant={"outline"}
                 className={`rounded-lg px-4 py-2 h-auto flex items-center gap-2 ${
                   isSelected
@@ -168,6 +205,9 @@ export default function UseCasesShowcase() {
       </motion.div>
       <motion.div
         key={selectedArea}
+        id={`panel-${selectedArea}`}
+        role="tabpanel"
+        aria-labelledby={`tab-${selectedArea}`}
         initial="hidden"
         animate="show"
         variants={{
@@ -237,7 +277,7 @@ export default function UseCasesShowcase() {
                     </div>
                   </div>
                   <p
-                    className="text-sm font-medium underline"
+                    className="text-sm font-medium"
                     style={{
                       color: chartColorValue,
                     }}

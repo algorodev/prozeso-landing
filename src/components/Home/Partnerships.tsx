@@ -72,14 +72,14 @@ const Partnerships = () => {
         <motion.div
           initial="hidden"
           whileInView="show"
-          viewport={{ amount: 0.2 }}
+          viewport={{ amount: 0.1 }}
           variants={{
             hidden: { opacity: 1 },
             show: {
               transition: { staggerChildren: 0.15 },
             },
           }}
-          className="w-full mx-auto flex items-center justify-center gap-6 md:gap-8 lg:gap-10 flex-wrap"
+          className="w-full mx-auto flex items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 flex-wrap"
         >
           {partners.map((partner, _idx) => {
             const Icon = partner.icon;
@@ -104,27 +104,27 @@ const Partnerships = () => {
                   aria-label={`Visit ${partner.name} website`}
                 >
                   {partner.id === "elevenlabs" ? (
-                    <div className="h-6 [&>svg]:h-6 [&>svg]:w-auto">
+                    <div className="h-4 sm:h-6 [&>svg]:h-4 sm:[&>svg]:h-6 [&>svg]:w-auto">
                       <Icon />
                     </div>
                   ) : partner.id === "google" ? (
-                    <div className="h-10 w-auto max-w-[140px] [&>svg]:h-10 [&>svg]:w-auto">
+                    <div className="h-7 sm:h-10 w-auto max-w-[100px] sm:max-w-[140px] [&>svg]:h-7 sm:[&>svg]:h-10 [&>svg]:w-auto">
                       <Icon />
                     </div>
                   ) : partner.id === "microsoft" ? (
-                    <div className="h-32 w-32 [&>svg]:h-32 [&>svg]:w-32">
+                    <div className="h-16 w-16 sm:h-32 sm:w-32 [&>svg]:h-16 [&>svg]:w-16 sm:[&>svg]:h-32 sm:[&>svg]:w-32">
                       <Icon />
                     </div>
                   ) : partner.id === "n8n" ? (
-                    <div className="h-8 w-auto max-w-[100px] [&>svg]:h-8 [&>svg]:w-auto">
+                    <div className="h-5 sm:h-8 w-auto max-w-[70px] sm:max-w-[100px] [&>svg]:h-5 sm:[&>svg]:h-8 [&>svg]:w-auto">
                       <Icon />
                     </div>
                   ) : partner.id === "twilio" ? (
-                    <div className="h-8 w-auto max-w-[120px] [&>svg]:h-8 [&>svg]:w-auto">
+                    <div className="h-5 sm:h-8 w-auto max-w-[80px] sm:max-w-[120px] [&>svg]:h-5 sm:[&>svg]:h-8 [&>svg]:w-auto">
                       <Icon />
                     </div>
                   ) : (
-                    <div className="ml-3 h-7 w-auto max-w-[120px] [&>svg]:h-7 [&>svg]:w-auto">
+                    <div className="h-5 sm:h-7 w-auto max-w-[80px] sm:max-w-[120px] [&>svg]:h-5 sm:[&>svg]:h-7 [&>svg]:w-auto">
                       <Icon />
                     </div>
                   )}

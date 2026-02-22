@@ -14,17 +14,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/start`;
 
-  const title = "Start • Free Assessment";
+  const title =
+    locale === "es"
+      ? "Empieza — Evaluación gratuita"
+      : "Start — Free Assessment";
   const description =
-    "Kick off your automation journey with a quick discovery call. We’ll assess your needs and tailor a perfect plan for your team.";
-  const keywords = [
-    "free assessment",
-    "automation assessment",
-    "workflow audit",
-    "sales automation",
-    "marketing automation",
-    "process optimization",
-  ];
+    locale === "es"
+      ? "Comienza tu camino hacia la automatización con una llamada de descubrimiento. Evaluaremos tus necesidades y diseñaremos un plan perfecto para tu equipo."
+      : "Kick off your automation journey with a quick discovery call. We'll assess your needs and tailor a perfect plan for your team.";
+  const keywords =
+    locale === "es"
+      ? [
+          "evaluación gratuita",
+          "evaluación de automatización",
+          "auditoría de flujos",
+          "automatización de ventas",
+          "automatización de marketing",
+          "optimización de procesos",
+        ]
+      : [
+          "free assessment",
+          "automation assessment",
+          "workflow audit",
+          "sales automation",
+          "marketing automation",
+          "process optimization",
+        ];
 
   return {
     title,
@@ -46,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Start your free automation assessment with Prozeso",
+          alt: title,
         },
       ],
     },

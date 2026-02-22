@@ -85,18 +85,85 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...(locale === "es" ? keywordsEs : keywordsEn),
   ];
 
+  const title =
+    locale === "es"
+      ? "Prozeso — Automatización de flujos de trabajo con IA para negocios de servicios"
+      : "Prozeso — AI-Powered Workflow Automation for Service Businesses";
+
+  const description =
+    locale === "es"
+      ? "Prozeso ayuda a negocios de servicios a automatizar sus operaciones con IA — recepcionistas virtuales, recordatorios inteligentes, facturación y reseñas."
+      : "Prozeso helps service businesses automate operations with AI — voice receptionists, smart reminders, billing, and reviews. Start your free assessment today.";
+
+  const url = `${base}/${locale}/`;
+
   return {
+    title,
+    description,
     alternates: {
-      canonical: `${base}/${locale}/`,
+      canonical: url,
       languages: Object.fromEntries(locales.map((l) => [l, `${base}/${l}/`])),
     },
     keywords: pageKeywords,
+    openGraph: {
+      type: "website",
+      url,
+      title,
+      description,
+      locale: locale === "es" ? "es_ES" : "en_US",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-image.png"],
+    },
   };
+}
+
+function JsonLd() {
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "https://prozeso.com";
+
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Prozeso",
+    url: base,
+    logo: `${base}/og-image.png`,
+    sameAs: [
+      "https://instagram.com/prozeso.ai",
+      "https://www.linkedin.com/company/prozeso",
+    ],
+    description:
+      "AI-powered workflow automation platform for service businesses.",
+  };
+
+  const webSite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Prozeso",
+    url: base,
+  };
+
+  return (
+    <script type="application/ld+json">
+      {JSON.stringify([organization, webSite])}
+    </script>
+  );
 }
 
 export default function Home() {
   return (
     <div>
+      <JsonLd />
       <Hero />
       <Understanding />
       <Impact />

@@ -27,6 +27,37 @@ const Footer = () => {
           <div className="flex gap-16">
             <div>
               <h4 className="font-medium text-sm mb-4">
+                {t("sections.product")}
+              </h4>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <LocalizedLink
+                    href="/use-cases"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.useCases")}
+                  </LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink
+                    href="/automations"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.automations")}
+                  </LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink
+                    href="/start"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.assessment")}
+                  </LocalizedLink>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium text-sm mb-4">
                 {t("sections.company")}
               </h4>
               <ul className="space-y-3 text-sm">
@@ -46,6 +77,22 @@ const Footer = () => {
                     {t("links.privacy")}
                   </LocalizedLink>
                 </li>
+                <li>
+                  <LocalizedLink
+                    href="/legal/cookies"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.cookies")}
+                  </LocalizedLink>
+                </li>
+                <li>
+                  <a
+                    href="mailto:hello@prozeso.com"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.contact")}
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -58,6 +105,7 @@ const Footer = () => {
               className="hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener"
+              aria-label={t("social.instagram")}
             >
               <Instagram className="w-5 h-5" />
             </a>
@@ -66,6 +114,7 @@ const Footer = () => {
               className="hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener"
+              aria-label={t("social.linkedin")}
             >
               <Linkedin className="w-5 h-5" />
             </a>
