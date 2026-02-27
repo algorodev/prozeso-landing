@@ -1,7 +1,5 @@
 "use client";
 
-import type { Route } from "next";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { DesktopNav } from "@/components/DesktopNav";
@@ -28,9 +26,6 @@ export const Header = () => {
   const t = useTranslations("header");
   const pathname = usePathname();
   const locale = useLocale();
-
-  const clientUrl =
-    process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
 
   const navItems: NavItem[] = [
     { label: t("nav.useCases"), href: "/use-cases" },
@@ -59,11 +54,6 @@ export const Header = () => {
         <div className="flex items-center gap-1">
           <LocaleSwitcher current={locale as Locale} />
           <div className="hidden sm:flex items-center gap-2">
-            <Button variant="ghost" asChild>
-              <Link href={clientUrl as Route} target="_blank">
-                {t("signIn")}
-              </Link>
-            </Button>
             <Button asChild>
               <LocalizedLink href="/start">{t("cta")}</LocalizedLink>
             </Button>

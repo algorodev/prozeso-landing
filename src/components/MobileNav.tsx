@@ -1,7 +1,7 @@
 "use client";
 
 import { Close } from "@radix-ui/react-dialog";
-import { Menu, User } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Separator } from "@/components/ui/Separator";
@@ -33,9 +33,6 @@ type Props = {
 
 export const MobileNav = ({ nav = [] }: Props) => {
   const t = useTranslations("header");
-  const clientUrl =
-    process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost:3001";
-
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -56,14 +53,6 @@ export const MobileNav = ({ nav = [] }: Props) => {
             <Button asChild className="w-full">
               <Close asChild>
                 <LocalizedLink href="/start">{t("cta")}</LocalizedLink>
-              </Close>
-            </Button>
-            <Button className="w-full" variant="secondary" asChild>
-              <Close asChild>
-                <LocalizedLink href={clientUrl} className="flex items-center">
-                  <User className="mr-2 size-4" />{" "}
-                  <span className="button-secondary-text">{t("signIn")}</span>
-                </LocalizedLink>
               </Close>
             </Button>
           </div>
