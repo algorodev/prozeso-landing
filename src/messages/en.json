@@ -2042,6 +2042,229 @@
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
     },
+    "automationSuite": {
+      "title": "<highlight>Every area</highlight> of your business, automated",
+      "subtitle": "No friction. No manual intervention. Measurable results.",
+      "close": "Close",
+      "areas": {
+        "bookings": {
+          "name": "Bookings",
+          "tagline": "Fill your schedule. Effortlessly.",
+          "heroMetric": "↑ 40%",
+          "heroMetricLabel": "bookings captured",
+          "automations": {
+            "0": {
+              "name": "Receptionist AI",
+              "problem": "You lose 30-40% of bookings outside business hours",
+              "solution": "24/7 AI agent that handles bookings via voice and WhatsApp, understands natural language, and logs appointments in your calendar without human intervention.",
+              "benefits": "24/7 availability · Response in seconds · Multilingual · Integrates with your calendar and CRM",
+              "impact": "↑ 40% bookings captured"
+            },
+            "1": {
+              "name": "Appointment Reminder",
+              "problem": "No-shows cost you 15-20% of revenue",
+              "solution": "Automatic multi-channel reminders at 48h, 24h, and 1h. Clients confirm, cancel, or reschedule with one click.",
+              "benefits": "Automatic waitlist management · Frees up reception staff",
+              "impact": "↓ 80% no-shows"
+            },
+            "2": {
+              "name": "Review Booster",
+              "problem": "Only 5% of satisfied clients leave a review; 60% of unsatisfied ones do",
+              "solution": "After each service, an automatic message is sent. Satisfied clients → Google / Trustpilot. Unsatisfied → internal feedback channel.",
+              "benefits": "Early dissatisfaction detection · Improved local SEO",
+              "impact": "× 5 positive reviews"
+            },
+            "3": {
+              "name": "Smart Reschedule",
+              "problem": "Every cancellation is idle time with no revenue",
+              "solution": "When a cancellation is detected, the system offers the slot to waitlisted clients in real time. If no one takes it, it fills the gap with internal tasks.",
+              "benefits": "No manual intervention · Compatible with any calendar",
+              "impact": "↑ 70% slots recovered"
+            }
+          }
+        },
+        "sales": {
+          "name": "Sales",
+          "tagline": "More pipeline. Less manual work.",
+          "heroMetric": "× 10",
+          "heroMetricLabel": "prospecting volume",
+          "automations": {
+            "0": {
+              "name": "Outreach AI",
+              "problem": "Manual prospecting eats 40% of sales time",
+              "solution": "Identifies leads matching your ideal customer profile, generates AI-personalized messages, and launches multi-channel sequences. Every reply automatically updates your CRM.",
+              "benefits": "Personalization at scale · Continuous A/B testing",
+              "impact": "× 10 prospecting volume"
+            },
+            "1": {
+              "name": "Lead Scoring",
+              "problem": "Reps waste time on cold leads",
+              "solution": "Real-time scoring engine that rates each lead based on behavior (pages visited, emails opened, downloads). Automatically alerts reps when a lead crosses the threshold.",
+              "benefits": "Objective prioritization · Shorter sales cycle",
+              "impact": "↑ 35% lead conversion"
+            },
+            "2": {
+              "name": "Follow-up Bot",
+              "problem": "80% of sales require 5+ follow-ups; most reps give up after 1-2",
+              "solution": "Detects silent leads in your CRM and launches personalized reactivation sequences via email, WhatsApp, or LinkedIn, tailored to each conversation's context.",
+              "benefits": "No lead falls through the cracks · Contextual messages · Auto-disengagement after N unanswered attempts",
+              "impact": "↑ 25% lead recovery"
+            },
+            "3": {
+              "name": "Auto Proposal",
+              "problem": "A proposal takes 2-4h per client",
+              "solution": "One click from your CRM generates a personalized PDF proposal with client data, their challenges, and the tailored solution. Auto-sent with open tracking.",
+              "benefits": "Visual consistency · Auto follow-up if unopened after 48h",
+              "impact": "↓ 90% proposal time"
+            }
+          }
+        },
+        "finance": {
+          "name": "Finance",
+          "tagline": "The money you earned, collected on time.",
+          "heroMetric": "↓ 40%",
+          "heroMetricLabel": "late invoices",
+          "automations": {
+            "0": {
+              "name": "Auto Invoicing",
+              "problem": "Manual invoicing delays collection and introduces errors",
+              "solution": "When a service or milestone is completed, the system generates the invoice, sends it to the client, logs it in accounting, and updates collection status in real time.",
+              "benefits": "Instant invoicing · Zero errors · Syncs with your accounting software",
+              "impact": "↓ 10 days in collection cycle"
+            },
+            "1": {
+              "name": "Collections & Reminders",
+              "problem": "30% of invoices are paid late due to oversight",
+              "solution": "Automatic escalating reminders: friendly at 3 days, formal at 7, urgent at 15. If no response, escalates to the finance manager.",
+              "benefits": "No awkward conversations · Real-time pending invoices dashboard",
+              "impact": "↓ 40% late invoices"
+            },
+            "2": {
+              "name": "Bank Reconciliation",
+              "problem": "Manual reconciliation takes days each month",
+              "solution": "Real-time connection between banking and accounting. Matches every transaction against invoices, identifies discrepancies, and alerts on unrecognized movements.",
+              "benefits": "Books always up to date · Real-time reconciliation",
+              "impact": "↓ 70% month-end close time"
+            },
+            "3": {
+              "name": "Budget Alerts",
+              "problem": "Departments exceed budget without knowing",
+              "solution": "Real-time spend monitoring. Automatic alerts at 70%, 85%, and 100% of budget to the manager and CFO, with breakdowns and end-of-month projections.",
+              "benefits": "Full spend visibility · React before exceeding limits · Culture of financial accountability",
+              "impact": "↑ 95% months within budget"
+            }
+          }
+        },
+        "marketing": {
+          "name": "Marketing",
+          "tagline": "More content, more campaigns, same team.",
+          "heroMetric": "× 10",
+          "heroMetricLabel": "content volume",
+          "automations": {
+            "0": {
+              "name": "Content Factory AI",
+              "problem": "Content creation takes 15-25h/week",
+              "solution": "From a topic or keyword, generates SEO articles, adapts them to LinkedIn / Instagram / Twitter, creates the newsletter, and schedules publication at peak engagement times.",
+              "benefits": "Consistent brand voice · Automatic SEO · Editorial calendar runs itself",
+              "impact": "× 10 content volume"
+            },
+            "1": {
+              "name": "Email Marketing Automation",
+              "problem": "Generic emails get 15-20% open rate",
+              "solution": "Dynamic segmentation and AI-powered personalization. Each subscriber gets content tailored to their behavior. Sequences triggered by visits, downloads, cart abandonment, anniversaries.",
+              "benefits": "35-40% open rates · 24/7 nurturing · Continuous A/B testing",
+              "impact": "↑ 120% email revenue"
+            },
+            "2": {
+              "name": "Social Listening & Response",
+              "problem": "53% of clients expect a response on social in < 1h",
+              "solution": "Continuous monitoring of mentions and messages. AI classifies by sentiment and priority, answers common queries, and escalates to the community manager only what needs human attention.",
+              "benefits": "Response in minutes · Early crisis detection · Real-time sentiment dashboard",
+              "impact": "↓ 85% management time"
+            },
+            "3": {
+              "name": "Campaign ROI Tracker",
+              "problem": "Measuring real ROI requires cross-platform data",
+              "solution": "Centralized dashboard aggregating Google Ads, Meta, LinkedIn, email, and organic. Calculates cost per lead, CPA, and ROAS per channel in real time. Alerts if a campaign falls below profitability threshold.",
+              "benefits": "360 view in one place · Automatic alerts · Weekly report with zero effort",
+              "impact": "↑ 30% budget efficiency"
+            }
+          }
+        },
+        "customerSuccess": {
+          "name": "Customer Success",
+          "tagline": "Clients who stay. And buy more.",
+          "heroMetric": "↓ 50%",
+          "heroMetricLabel": "early churn",
+          "automations": {
+            "0": {
+              "name": "Client Onboarding Flow",
+              "problem": "60% of churn happens in the first 90 days",
+              "solution": "Automatic flow from sign-up: personalized welcome, guided setup, training at key milestones, automatic check-ins, and CSM assignment at the right moment.",
+              "benefits": "Accelerated time-to-value · Consistent experience",
+              "impact": "↓ 50% early churn"
+            },
+            "1": {
+              "name": "Churn Prediction & Rescue",
+              "problem": "By the time a client tells you they're leaving, it's too late",
+              "solution": "Predictive model that detects drops in usage, reduced interactions, and unresolved tickets. When the risk threshold is exceeded, it triggers a personalized rescue protocol automatically.",
+              "benefits": "Detection 30-60 days before churn · CSM intervenes only when needed",
+              "impact": "↓ 40% annual churn rate"
+            },
+            "2": {
+              "name": "Auto Upsell & Cross-sell",
+              "problem": "70% of expansion revenue is lost by not identifying the right moment",
+              "solution": "Monitors usage milestones. When a client hits plan limits or accumulates success with a service, it automatically launches the most relevant expansion offer for their profile.",
+              "benefits": "Opportunities triggered automatically · Offer at peak receptivity · Revenue with no extra sales cost",
+              "impact": "↑ 30% Net Revenue Retention"
+            },
+            "3": {
+              "name": "NPS & Feedback Loop",
+              "problem": "Annual surveys always arrive too late",
+              "solution": "Continuous NPS measurement after onboarding, each support interaction, renewals, and usage milestones. Negative responses → CSM alert. Positive → automatic testimonial or referral request.",
+              "benefits": "Real-time pulse · Loop closed in 24h · Automatic testimonial generation",
+              "impact": "↑ 25 NPS points in 6 months"
+            }
+          }
+        },
+        "operations": {
+          "name": "Operations",
+          "tagline": "Operations without bottlenecks.",
+          "heroMetric": "↑ 98%",
+          "heroMetricLabel": "SLA compliance",
+          "automations": {
+            "0": {
+              "name": "Vendor Management",
+              "problem": "Manual management leads to pricing and term inconsistencies",
+              "solution": "Automates the full cycle: requests quotes, compares offers, generates approved purchase orders by threshold, and tracks deliveries and invoices.",
+              "benefits": "Negotiated terms always applied · Full traceability",
+              "impact": "↓ 50% procurement cycle"
+            },
+            "1": {
+              "name": "Delivery Tracking",
+              "problem": "30% of incidents are detected after the client complains",
+              "solution": "Centralized real-time tracking across all carriers. Detects delays and lost shipments, proactively notifies the client, and triggers the incident protocol before they ask.",
+              "benefits": "360 shipment visibility · Proactive communication · Automatic carrier KPIs",
+              "impact": "↓ 60% logistics complaints"
+            },
+            "2": {
+              "name": "Preventive Maintenance",
+              "problem": "Unexpected breakdowns cost 5-10× more than prevention",
+              "solution": "Automatically schedules preventive reviews based on usage, operating hours, or calendar. Generates work orders, assigns technicians, and alerts when an asset nears end of life.",
+              "benefits": "Complete history per asset · Warranty compliance",
+              "impact": "↓ 70% unexpected failures"
+            },
+            "3": {
+              "name": "SLA & Auto Escalation",
+              "problem": "SLA breaches are detected when the damage is already done",
+              "solution": "Monitors every ticket or task with a time commitment in real time. If it approaches the deadline unresolved, triggers escalating reminders and automatically escalates to the next level with full context.",
+              "benefits": "Escalation without relying on human initiative · Penalties managed automatically",
+              "impact": "↑ 98% SLA compliance"
+            }
+          }
+        }
+      }
+    },
     "coreAutomations": {
       "title": "Core <highlight>automations</highlight>",
       "subtitle": "AI-powered workflows that work while you sleep.",
