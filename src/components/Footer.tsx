@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer className="py-16 px-6 border-t border-border">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1280px]">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="space-y-4">
             <LocalizedLink

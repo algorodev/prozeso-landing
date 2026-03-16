@@ -116,7 +116,7 @@ export const AgentFloatButton = () => {
     <button
       onClick={startConversation}
       disabled={isCalling}
-      className="flex items-center gap-2.5 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full border border-border shadow-lg hover:bg-white/90 transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+      className="flex items-center bg-[#004D45]/20 backdrop-blur-sm p-1.5 rounded-full border border-(--brand-cyan)/40 shadow-lg hover:bg-[#004D45]/30 transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
       aria-label={t("label")}
     >
       <div className="rounded-full w-9 h-9 bg-accent text-accent-foreground flex items-center justify-center flex-shrink-0">
@@ -126,7 +126,7 @@ export const AgentFloatButton = () => {
           <PhoneCall className="size-4" />
         )}
       </div>
-      <span className="text-sm font-medium text-black whitespace-nowrap">
+      <span className="text-sm font-semibold text-foreground whitespace-nowrap px-3">
         {isCalling ? t("calling") : t("text")}
       </span>
     </button>

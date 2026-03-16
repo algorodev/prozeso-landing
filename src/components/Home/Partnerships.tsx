@@ -52,7 +52,7 @@ const Partnerships = () => {
 
   return (
     <section className="pt-16 pb-10 px-6 bg-muted/30">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1280px]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
