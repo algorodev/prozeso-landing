@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import AutomationSuite from "@/components/Home/AutomationSuite";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
@@ -166,10 +167,9 @@ export default function Home() {
       <JsonLd />
       <Hero />
       <Understanding />
+      <AutomationSuite />
       <Impact />
       <Partnerships />
-      {/* <IndustryDirectAccess />
-      <CoreAutomations /> */}
       <FinalCTA />
     </div>
   );
