@@ -8,7 +8,7 @@ const Impact = () => {
 
   return (
     <section className="py-24 px-6">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1280px]">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}

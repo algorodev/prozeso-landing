@@ -357,8 +357,8 @@ export default function HeroBackground() {
       })}
       <div
         className="
-          absolute inset-0 opacity-[0.05] dark:opacity-[0.06]
-          [background-image:radial-gradient(rgba(255,255,255,0.35)_1px,transparent_1px)]
+          absolute inset-0 opacity-[0.12] dark:opacity-[0.14]
+          [background-image:radial-gradient(rgba(255,255,255,0.5)_1px,transparent_1px)]
           [background-size:18px_18px]
           pointer-events-none
         "
