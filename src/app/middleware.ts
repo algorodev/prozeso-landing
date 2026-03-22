@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { defaultLocale, locales } from "@/i18n/config";
+import { defaultLocale, type Locale, locales } from "@/i18n/config";
 
 function getLocale(req: Request) {
   const header = req.headers.get("accept-language") || "";
   const preferred = header.split(",")[0]?.split("-")[0];
-  return locales.includes(preferred as any)
-    ? (preferred as any)
+  return locales.includes(preferred as Locale)
+    ? (preferred as Locale)
     : defaultLocale;
 }
 

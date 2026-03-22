@@ -5,13 +5,13 @@ import { useAutomationFromParams } from "./useAutomationFromParams";
 
 export function AutomationPoweredBy() {
   const { automation, id } = useAutomationFromParams();
-  if (!automation || !automation.tools?.length) return null;
   const t = useTranslations(`automations.details.${id}`);
   const tc = useTranslations("automations.details.common");
+  if (!automation || !automation.tools?.length) return null;
 
   return (
     <section className="py-16 px-6 border-t border-border">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1280px]">
         <div className="flex flex-wrap items-center gap-3">
           <span className="text-sm text-muted-foreground mr-2">
             {tc("poweredBy", { default: "Powered by" })}

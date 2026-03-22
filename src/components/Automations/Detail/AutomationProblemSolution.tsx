@@ -5,13 +5,13 @@ import { useAutomationFromParams } from "./useAutomationFromParams";
 
 export function AutomationProblemSolution() {
   const { automation, id } = useAutomationFromParams();
-  if (!automation) return null;
   const t = useTranslations(`automations.details.${id}`);
   const tc = useTranslations("automations.details.common");
+  if (!automation) return null;
 
   return (
     <section className="py-24 px-6 border-t border-border">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1280px]">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <p className="text-sm font-medium text-muted-foreground mb-4 uppercase tracking-wide">

@@ -114,6 +114,7 @@ export const AgentFloatButton = () => {
 
   return (
     <button
+      type="button"
       onClick={startConversation}
       disabled={isCalling}
       className="flex items-center bg-[#004D45]/20 backdrop-blur-sm p-1.5 rounded-full border border-(--brand-cyan)/40 shadow-lg hover:bg-[#004D45]/30 transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
