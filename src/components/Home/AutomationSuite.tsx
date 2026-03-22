@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 
 import bookingsIcon from "@/assets/areas-icons/bookings-icon.svg";
 import financesIcon from "@/assets/areas-icons/finances-icon.svg";
@@ -10,13 +10,6 @@ import marketingIcon from "@/assets/areas-icons/marketing-icon.svg";
 import operationsIcon from "@/assets/areas-icons/operations-icon.svg";
 import salesIcon from "@/assets/areas-icons/sales-icon.svg";
 import serviceIcon from "@/assets/areas-icons/service-icon.svg";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/Dialog";
 
 const AREAS = [
   {
@@ -101,9 +94,6 @@ const AREAS = [
 
 const AutomationSuite = () => {
   const t = useTranslations("home.automationSuite");
-  const [selectedArea, setSelectedArea] = useState<string | null>(null);
-
-  const selected = AREAS.find((a) => a.id === selectedArea);
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -177,10 +167,8 @@ const AutomationSuite = () => {
                       background: `radial-gradient(circle 150px at var(--mouse-x, -9999px) var(--mouse-y, -9999px), ${area.colorVar}, transparent)`,
                     }}
                   />
-                  <button
-                    type="button"
-                    onClick={() => setSelectedArea(area.id)}
-                    className={`relative z-10 w-full text-left cursor-pointer rounded-[15px] bg-background p-6 transition-all hover:shadow-lg ${c.shadow} ${hasGlow ? "overflow-hidden" : ""}`}
+                  <div
+                    className={`relative z-10 w-full text-left rounded-[15px] bg-background p-6 transition-all hover:shadow-lg ${c.shadow} ${hasGlow ? "overflow-hidden" : ""}`}
                   >
                     {isFirst && (
                       <>
@@ -318,80 +306,12 @@ const AutomationSuite = () => {
                         {t(`areas.${area.id}.heroMetricLabel`)}
                       </span>
                     </div>
-                  </button>
+                  </div>
                 </div>
               </motion.div>
             );
           })}
         </motion.div>
-
-        <Dialog
-          open={selectedArea !== null}
-          onOpenChange={(open) => {
-            if (!open) setSelectedArea(null);
-          }}
-        >
-          {selected &&
-            (() => {
-              const c = selected.colorClasses;
-              return (
-                <DialogContent className="sm:max-w-4xl">
-                  <DialogHeader>
-                    <div className="flex items-center gap-3">
-                      <span
-                        className="inline-block w-6 h-6 shrink-0"
-                        style={{
-                          maskImage: `url(${typeof selected.icon === "string" ? selected.icon : selected.icon.src})`,
-                          maskSize: "contain",
-                          maskRepeat: "no-repeat",
-                          maskPosition: "center",
-                          WebkitMaskImage: `url(${typeof selected.icon === "string" ? selected.icon : selected.icon.src})`,
-                          WebkitMaskSize: "contain",
-                          WebkitMaskRepeat: "no-repeat",
-                          WebkitMaskPosition: "center",
-                          background: `linear-gradient(to top right, color-mix(in srgb, ${selected.colorVar} 80%, transparent), color-mix(in srgb, ${selected.colorVar} 30%, transparent))`,
-                        }}
-                      />
-                      <DialogTitle className="font-sora text-2xl font-semibold tracking-tight">
-                        {t(`areas.${selected.id}.name`)}
-                      </DialogTitle>
-                    </div>
-                    <DialogDescription>
-                      {t(`areas.${selected.id}.tagline`)}
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {[0, 1, 2, 3].map((i) => (
-                      <div
-                        key={i}
-                        className="p-4 rounded-xl border border-border bg-background/50"
-                      >
-                        <div className="flex items-start justify-between gap-3 mb-2">
-                          <h4 className="font-sora font-semibold text-base">
-                            {t(`areas.${selected.id}.automations.${i}.name`)}
-                          </h4>
-                          <span
-                            className={`shrink-0 px-2.5 py-0.5 rounded-full text-xs font-medium ${c.bg} ${c.text} border ${c.borderSubtle}`}
-                          >
-                            {t(`areas.${selected.id}.automations.${i}.impact`)}
-                          </span>
-                        </div>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {t(`areas.${selected.id}.automations.${i}.problem`)}
-                        </p>
-                        <p className="text-sm mt-2 leading-relaxed">
-                          {t(`areas.${selected.id}.automations.${i}.solution`)}
-                        </p>
-                        <p className="text-xs text-muted-foreground mt-2">
-                          {t(`areas.${selected.id}.automations.${i}.benefits`)}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </DialogContent>
-              );
-            })()}
-        </Dialog>
       </div>
     </section>
   );

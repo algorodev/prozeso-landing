@@ -1,5 +1,5 @@
 import Image from "next/image";
-import prozesoLogoWhite from "@/assets/logo-prozeso-white-02.svg";
+import prozesoLogoWhite from "@/assets/logo-prozeso.svg";
 
 type LogoProps = {
   priority?: boolean;
