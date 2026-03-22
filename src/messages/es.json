@@ -2048,6 +2048,16 @@
       "title": "<highlight>Cada área</highlight> de tu negocio, automatizada",
       "subtitle": "Sin fricciones. Sin intervención manual. Con resultados medibles.",
       "close": "Cerrar",
+      "problemLabel": "Problema",
+      "solutionLabel": "Solución",
+      "benefitsLabel": "Beneficios clave",
+      "impactLabel": "Impacto esperado",
+      "automationCount": "{count} automatizaciones",
+      "automationPickCta": "Elige las que mejor se adapten a tus necesidades",
+      "viewAll": "Ver todas las automatizaciones",
+      "mobileFilter": "Filtrar",
+      "mobileFilterTitle": "Filtrar automatizaciones",
+      "searchPlaceholder": "Buscar automatización...",
       "areas": {
         "bookings": {
           "name": "Reservas",
@@ -2057,211 +2067,355 @@
           "automations": {
             "0": {
               "name": "Recepcionista IA",
-              "problem": "Pierdes el 30-40% de reservas fuera de horario",
-              "solution": "Agente IA 24/7 que gestiona reservas por voz y WhatsApp, entiende lenguaje natural y registra la cita en el calendario sin intervención humana.",
-              "benefits": "Disponibilidad 24/7 · Respuesta en segundos · Multilingüe · Integración con tu calendario y CRM",
-              "impact": "↑ 40% reservas capturadas"
+              "subtitle": "Voice & WhatsApp",
+              "problem": "Las empresas pierden entre un 30% y un 40% de las solicitudes de reserva fuera del horario laboral.",
+              "solution": "Un agente de inteligencia artificial disponible 24/7 gestiona reservas por voz (llamada telefónica) y por WhatsApp. Entiende lenguaje natural, confirma los detalles y registra directamente en el calendario del negocio, sin intervención humana.",
+              "benefits": "Disponibilidad 24/7 · Incorpora fines de semana y festivos · Respuesta en segundos · Multilingüe · Integración con Google Calendar, Calendly y CRM",
+              "impact": "↑ 40% en reservas capturadas fuera de horario"
             },
             "1": {
               "name": "Recordatorio de Citas",
-              "problem": "Los no-shows cuestan un 15-20% de ingresos",
-              "solution": "Recordatorios multicanal automáticos a 48h, 24h y 1h. El cliente confirma, cancela o reprograma con un clic.",
-              "benefits": "Gestión automática de lista de espera · Libera al equipo de recepción",
-              "impact": "↓ 80% ausencias"
+              "subtitle": "SMS / Email / WhatsApp",
+              "problem": "Las ausencias no justificadas (no-shows) representan una pérdida media del 15-20% de los ingresos en negocios con modelo de citas o reservas.",
+              "solution": "Un sistema de recordatorios multicanal que contacta al cliente 48 horas antes, 24 horas antes y 1 hora antes de la cita. El cliente confirma, cancela o reprograma con un solo clic, sin necesidad de llamar.",
+              "benefits": "Gestión automática de lista de espera · Reducción de hasta el 80% en ausencias no justificadas · Sin intervención manual del equipo de recepción",
+              "impact": "↓ 80% en ausencias no justificadas"
             },
             "2": {
               "name": "Impulsor de Reseñas",
-              "problem": "Solo el 5% de satisfechos deja reseña; el 60% de insatisfechos, sí",
-              "solution": "Tras cada servicio, mensaje automático al cliente. Satisfechos → Google / Trustpilot. Insatisfechos → canal interno de feedback.",
-              "benefits": "Detección temprana de insatisfacción · Mejora SEO local",
-              "impact": "× 5 reseñas positivas"
+              "subtitle": "Reputación Online",
+              "problem": "Solo el 5% de los clientes satisfechos deja una reseña espontáneamente, mientras que el 60% de los insatisfechos sí lo hace.",
+              "solution": "Tras cada cita o servicio, el sistema envía automáticamente un mensaje personalizado al cliente. Si la valoración es positiva, lo redirige a Google o Trustpilot. Si es negativa, lo canaliza a un canal interno de feedback para actuar antes de que se publique.",
+              "benefits": "Multiplicación ×5 de reseñas positivas en Google · Detección temprana de insatisfacción · Mejora del posicionamiento SEO local · Impulso de recomendaciones orgánicas",
+              "impact": "× 5 reseñas positivas en Google en 90 días"
             },
             "3": {
               "name": "Reprogramación Inteligente",
-              "problem": "Cada cancelación es tiempo muerto sin ingresos",
-              "solution": "Al detectar una cancelación, el sistema ofrece el hueco a clientes en lista de espera en tiempo real. Si nadie lo ocupa, lo rellena con tareas internas.",
-              "benefits": "Sin intervención manual · Compatible con cualquier calendario",
-              "impact": "↑ 70% huecos recuperados"
+              "subtitle": "Calendario Inteligente",
+              "problem": "Cada cancelación supone un hueco de tiempo muerto que no genera ingresos. Rellenarlos a mano es lento y depende de la disponibilidad del equipo.",
+              "solution": "Cuando se detecta una cancelación, el sistema notifica automáticamente a los clientes en lista de espera en tiempo real. Si nadie lo ocupa, lo rellena con tareas internas priorizadas.",
+              "benefits": "Recuperación del 70-80% de los huecos cancelados · Experiencia prioritaria para clientes en lista de espera · Sin intervención manual · Integración con cualquier sistema de calendario",
+              "impact": "↑ 75% de recuperación de huecos cancelados"
             }
           }
         },
         "sales": {
           "name": "Ventas",
-          "tagline": "Más pipeline. Menos trabajo manual.",
+          "tagline": "Automatizaciones que potencian el equipo comercial, desde la prospección hasta el cierre, eliminando tareas repetitivas y acelerando el ciclo de venta.",
           "heroMetric": "× 10",
           "heroMetricLabel": "volumen de prospección",
           "automations": {
             "0": {
               "name": "Prospección IA",
-              "problem": "La prospección manual consume el 40% del tiempo comercial",
-              "solution": "Identifica leads según tu perfil de cliente ideal, genera mensajes personalizados con IA y lanza secuencias multicanal. Cada respuesta activa el CRM automáticamente.",
-              "benefits": "Personalización a escala · A/B testing continuo",
-              "impact": "× 10 volumen de prospección"
+              "subtitle": "Prospección",
+              "problem": "La prospección manual en LinkedIn, email y teléfono consume el 40% del tiempo comercial con resultados inconsistentes.",
+              "solution": "Sistema de prospección automática que identifica leads según tu perfil de cliente ideal, genera mensajes personalizados con IA y lanza secuencias multicanal. Cada respuesta activa el CRM automáticamente.",
+              "benefits": "Capacidad de contactar 10x más prospectos en el mismo tiempo · Personalización a escala sin sacrificar calidad del mensaje · A/B testing automático en secuencias y mensajes",
+              "impact": "× 10 volumen de prospección sin aumentar equipo"
             },
             "1": {
               "name": "Puntuación de Leads",
-              "problem": "Los comerciales pierden tiempo con leads fríos",
-              "solution": "Motor de scoring que puntúa cada lead en tiempo real según su comportamiento (páginas visitadas, emails abiertos, descargas). Alerta automática al comercial cuando supera el umbral.",
-              "benefits": "Priorización objetiva · Ciclo de venta más corto",
-              "impact": "↑ 35% conversión de leads"
+              "subtitle": "CRM",
+              "problem": "Los comerciales pierden tiempo con leads fríos mientras los leads calientes no reciben atención inmediata, reduciendo la tasa de conversión.",
+              "solution": "Motor de puntuación automática que analiza el comportamiento del lead (páginas visitadas, emails abiertos, descargas) y lo puntúa en tiempo real. Alerta automática al comercial cuando un lead supera el umbral de cierre para que contacte en el momento de mayor receptividad.",
+              "benefits": "El equipo comercial trabaja solo con leads listos para comprar · Priorización completamente objetiva del pipeline · Reducción del ciclo de venta al actuar en los momentos clave",
+              "impact": "↑ 35% tasa de conversión de leads a cierre"
             },
             "2": {
               "name": "Bot de Seguimiento",
-              "problem": "El 80% de ventas requiere 5+ seguimientos; la mayoría abandona tras 1-2",
-              "solution": "Detecta leads silenciosos en el CRM y lanza secuencias de reactivación personalizadas por email, WhatsApp o LinkedIn, adaptadas al contexto de cada conversación.",
-              "benefits": "Ningún lead se pierde · Mensajes contextuales · Desenganche automático tras N intentos",
-              "impact": "↑ 25% recuperación de leads"
+              "subtitle": "Seguimiento",
+              "problem": "El 80% de las ventas requieren entre 5 y 12 seguimientos. La mayoría de los comerciales abandonan tras 1-2 intentos.",
+              "solution": "Sistema de seguimiento inteligente que detecta leads silenciosos en el CRM y lanza secuencias de reactivación personalizadas por email, WhatsApp o LinkedIn, adaptándose al contexto de la conversación anterior de cada lead.",
+              "benefits": "Ningún lead se pierde por falta de seguimiento · Mensajes contextuales que retoman la conversación · Desenganche automático tras N intentos sin respuesta",
+              "impact": "↑ 25% recuperación de leads inactivos"
             },
             "3": {
               "name": "Propuesta Automática",
-              "problem": "Una propuesta tarda 2-4h por cliente",
-              "solution": "Con un clic desde el CRM, genera una propuesta en PDF personalizada con los datos del cliente, sus retos y la solución adaptada. Envío automático con tracking de apertura.",
-              "benefits": "Consistencia visual · Seguimiento automático si no se abre en 48h",
-              "impact": "↓ 90% tiempo en propuestas"
+              "subtitle": "Cierre",
+              "problem": "La elaboración comercial personalizada puede llevar entre 2 y 4 horas por cliente, retrasando el cierre y la percepción de agilidad.",
+              "solution": "Con un clic desde el CRM, el sistema extrae los datos del cliente, el servicio de interés, y el contexto de la conversación para generar una propuesta en PDF profesional, personalizada con el contexto del negocio del cliente.",
+              "benefits": "Reducción del tiempo de propuesta de horas a minutos · Consistencia visual y de mensaje en todas las propuestas · Envío automático con tracking de apertura y lectura",
+              "impact": "↓ 90% tiempo de elaboración de propuestas"
             }
           }
         },
         "finance": {
           "name": "Finanzas",
-          "tagline": "El dinero que ya ganaste, cobrado a tiempo.",
+          "tagline": "Automatizaciones que eliminan la carga administrativa financiera, garantizan el cobro puntual y ofrecen visibilidad total sobre la salud económica de la empresa.",
           "heroMetric": "↓ 40%",
           "heroMetricLabel": "facturas con retraso",
           "automations": {
             "0": {
               "name": "Facturación Automática",
-              "problem": "La facturación manual retrasa el cobro y genera errores",
-              "solution": "Al completarse un servicio o hito, el sistema genera la factura, la envía al cliente, la registra en contabilidad y actualiza el estado del cobro en tiempo real.",
-              "benefits": "Facturación instantánea · Cero errores · Sincronización con tu software contable",
-              "impact": "↓ 10 días en ciclo de cobro"
+              "subtitle": "Contabilidad",
+              "problem": "La facturación manual es lenta, propensa a errores y genera retrasos en el cobro con impacto directo en el cash flow.",
+              "solution": "Al completarse un servicio, aprobarse un hito de proyecto o confirmarse una entrega, el sistema genera la factura, la envía al cliente, la registra en contabilidad y actualiza el estado del cobro en tiempo real.",
+              "benefits": "Facturación instantánea sin intervención humana · Sincronización automática con tu software contable (Holded, QuickBooks, Xero, etc.) · Eliminación total de errores manuales en datos fiscales",
+              "impact": "↓ 10 días en el ciclo medio de cobro"
             },
             "1": {
               "name": "Cobros & Recordatorios",
-              "problem": "El 30% de facturas se pagan tarde por olvido",
-              "solution": "Recordatorios escalonados automáticos: amigable a 3 días, formal a 7, urgente a 15. Si no hay respuesta, escala al responsable financiero.",
-              "benefits": "Sin conversaciones incómodas · Dashboard de facturas pendientes en tiempo real",
-              "impact": "↓ 40% facturas con retraso"
+              "subtitle": "Cash Flow",
+              "problem": "El 30% de las facturas se pagan tarde por simple olvido del cliente. Perseguir cobros manualmente es incómodo y consume horas del equipo financiero.",
+              "solution": "Secuencia escalonada de recordatorios automáticos que se adapta al estado de cada factura: amigable, formal y urgente. Si no hay respuesta, escala al responsable financiero con todo el contexto.",
+              "benefits": "Eliminación del DSO (Days Sales Outstanding) en un 40% · Sin conversaciones incómodas con clientes · Dashboard de facturas pendientes en tiempo real con previsión de tesorería",
+              "impact": "↓ 40% en facturas pagadas con retraso"
             },
             "2": {
               "name": "Conciliación Bancaria",
-              "problem": "La conciliación manual lleva días al mes",
-              "solution": "Conexión en tiempo real entre banca y contabilidad. Cruza cada movimiento con facturas, identifica discrepancias y alerta ante movimientos no reconocidos.",
-              "benefits": "Libros siempre actualizados · Conciliación en tiempo real",
-              "impact": "↓ 70% tiempo de cierre contable"
+              "subtitle": "Control Financiero",
+              "problem": "La conciliación bancaria manual puede llevar días al mes y es una de las tareas con mayor riesgo de error en el ciclo contable.",
+              "solution": "Conexión en tiempo real entre tu cuenta bancaria y tu software contable. El sistema cruza automáticamente cada movimiento con facturas emitidas y recibidas, identifica discrepancias y alerta ante movimientos no reconocidos.",
+              "benefits": "Conciliación en tiempo real, no a final de mes · Detección automática de discrepancias y movimientos sospechosos · Libros contables siempre actualizados sin intervención manual",
+              "impact": "↓ 70% tiempo de cierre contable mensual"
             },
             "3": {
               "name": "Alertas de Presupuesto",
-              "problem": "Los departamentos superan presupuesto sin saberlo",
-              "solution": "Monitorización del gasto en tiempo real. Alertas automáticas al 70%, 85% y 100% del presupuesto al responsable y al CFO, con desglose y proyección de fin de mes.",
-              "benefits": "Visibilidad total del gasto · Reacción antes de superar límites · Cultura de responsabilidad financiera",
-              "impact": "↑ 95% meses dentro del presupuesto"
+              "subtitle": "Presupuesto",
+              "problem": "Los departamentos superan sus presupuestos sin saberlo hasta el cierre mensual, cuando ya no hay margen de reacción.",
+              "solution": "Sistema de monitorización del gasto en tiempo real que alerta al 70%, 85% y 100% de su presupuesto al responsable del departamento y al CFO, con desglose detallado y proyección de fin de mes.",
+              "benefits": "Visibilidad total del gasto en tiempo real · Capacidad de reacción antes de superar el presupuesto · Cultura de responsabilidad financiera en toda la organización",
+              "impact": "↑ 95% de meses dentro del presupuesto planificado"
             }
           }
         },
         "marketing": {
           "name": "Marketing",
-          "tagline": "Más contenido, más campañas, mismo equipo.",
+          "tagline": "Automatizaciones que multiplican el alcance y el impacto del equipo de marketing sin aumentar los recursos, desde la creación de contenido hasta la gestión de campañas multicanal.",
           "heroMetric": "× 10",
           "heroMetricLabel": "volumen de contenido",
           "automations": {
             "0": {
               "name": "Fábrica de Contenido IA",
-              "problem": "El contenido consume 15-25h semanales del equipo",
-              "solution": "A partir de un tema o keyword, genera artículos SEO, los adapta a LinkedIn / Instagram / Twitter, crea la newsletter y programa publicación en los horarios de mayor engagement.",
-              "benefits": "Consistencia de voz · SEO automático · Calendario editorial ejecutado solo",
-              "impact": "× 10 volumen de contenido"
+              "subtitle": "Contenido",
+              "problem": "Crear contenido de calidad para blog, redes sociales y newsletters consume entre 15 y 25 horas semanales del equipo de marketing.",
+              "solution": "Pipeline automatizado que, a partir de un tema o keyword, genera artículos SEO, los adapta a LinkedIn, Instagram y Twitter, crea el asunto y cuerpo de la newsletter y programa la publicación en los horarios de mayor engagement.",
+              "benefits": "Producción de contenido 10x sin aumentar el equipo · Consistencia de voz y tono en todos los canales · Optimización SEO automática en cada pieza de contenido",
+              "impact": "× 10 volumen de contenido publicado"
             },
             "1": {
               "name": "Email Marketing Automático",
-              "problem": "Los emails genéricos tienen 15-20% de apertura",
-              "solution": "Segmentación dinámica y personalización por IA. Cada suscriptor recibe contenido adaptado a su comportamiento. Secuencias activadas por visitas, descargas, abandono de carrito, aniversarios.",
-              "benefits": "Apertura del 35-40% · Nurturing 24/7 · A/B testing continuo",
-              "impact": "↑ 120% ingresos por email"
+              "subtitle": "Email",
+              "problem": "Las campañas de email genéricas tienen tasas de apertura del 15-20%. La personalización manual a escala es imposible.",
+              "solution": "Sistema de email marketing con segmentación dinámica y personalización por IA. Cada suscriptor recibe contenido adaptado a su comportamiento. Secuencias automatizadas activadas por acciones del usuario.",
+              "benefits": "Aumento de la tasa de apertura del 15% al 35-40% · Nurturing automático 24/7 sin intervención · A/B testing continuo en asuntos, contenido y horarios",
+              "impact": "↑ 120% en ingresos atribuidos a email"
             },
             "2": {
               "name": "Escucha Social y Respuesta",
-              "problem": "El 53% de clientes espera respuesta en redes en < 1h",
-              "solution": "Monitorización continua de menciones y mensajes. La IA clasifica por sentimiento y prioridad, responde consultas frecuentes y escala al community manager solo lo que requiere atención humana.",
-              "benefits": "Respuesta en minutos · Detección temprana de crisis · Dashboard de sentimiento en tiempo real",
-              "impact": "↓ 85% tiempo de gestión"
+              "subtitle": "Comunidad",
+              "problem": "El 53% de los clientes espera respuesta en redes sociales en menos de 1 hora. Monitorizar y responder manualmente es insostenible a escala.",
+              "solution": "Monitorización automática continua de menciones, comentarios y mensajes directos en todas las redes. La IA clasifica por sentimiento y prioridad, responde preguntas frecuentes automáticamente y escala al social & community manager solo lo que requiere atención humana.",
+              "benefits": "Tiempo de respuesta reducido de horas a minutos · Detección temprana de crisis de reputación · Dashboard de sentimiento en tiempo real",
+              "impact": "↓ 85% tiempo de gestión de comunidad"
             },
             "3": {
               "name": "Medidor de ROI de Campañas",
-              "problem": "Medir ROI real requiere cruzar datos de múltiples plataformas",
-              "solution": "Dashboard centralizado que agrega Google Ads, Meta, LinkedIn, email y orgánico. Calcula coste por lead, CPA y ROAS por canal en tiempo real. Alerta si una campaña cae por debajo del umbral de rentabilidad.",
-              "benefits": "Visión 360 en un solo lugar · Alertas automáticas · Reporte semanal sin intervención",
-              "impact": "↑ 30% eficiencia del presupuesto"
+              "subtitle": "Analytics",
+              "problem": "Medir el ROI real de cada campaña requiere cruzar datos de múltiples plataformas manualmente. La mayoría de equipos no sabe qué campañas son rentables.",
+              "solution": "Dashboard centralizado que agrega automáticamente datos de Google Ads, Meta, LinkedIn, email y orgánico en tiempo real. Calcula coste por lead, CPA y ROAS por canal. Genera alertas cuando una campaña cae por debajo del umbral de rentabilidad.",
+              "benefits": "Visión 360 del rendimiento de marketing en un solo lugar · Alertas automáticas ante caídas de rendimiento · Reportes semanales generados y enviados sin intervención",
+              "impact": "↑ 30% eficiencia del presupuesto de marketing"
             }
           }
         },
         "customerSuccess": {
-          "name": "Éxito del Cliente",
-          "tagline": "Clientes que se quedan. Y que compran más.",
+          "name": "Servicio al Cliente",
+          "tagline": "Automatizaciones que maximizan la retención, el valor del cliente a lo largo del tiempo y la satisfacción, convirtiendo a los clientes en embajadores de la marca.",
           "heroMetric": "↓ 50%",
           "heroMetricLabel": "churn temprano",
           "automations": {
             "0": {
-              "name": "Flujo de Onboarding",
-              "problem": "El 60% del churn ocurre en los primeros 90 días",
-              "solution": "Flujo automático desde la contratación: bienvenida personalizada, configuración asistida, formación en hitos clave, check-ins automáticos y asignación de CSM en el momento adecuado.",
-              "benefits": "Time-to-value acelerado · Experiencia consistente",
-              "impact": "↓ 50% churn temprano"
+              "name": "Flujo de Onboarding de Cliente",
+              "subtitle": "Activación",
+              "problem": "Un onboarding deficiente es la principal causa de churn en los primeros 90 días. El 60% de los clientes que abandonan lo hacen porque no llegaron a utilizar el producto o servicio correctamente.",
+              "solution": "Flujo de onboarding automatizado que guía al nuevo cliente paso a paso desde la contratación: bienvenida personalizada, configuración asistida, formación en hitos clave, check-ins automáticos y asignación de un Customer Success Manager en el momento adecuado.",
+              "benefits": "Reducción del churn en los primeros 90 días en un 50% · Time-to-value acelerado para cada nuevo cliente · Experiencia de onboarding consistente y escalable",
+              "impact": "↓ 50% churn en los primeros 90 días"
             },
             "1": {
               "name": "Predicción y Rescate de Bajas",
-              "problem": "Cuando el cliente avisa de que se va, ya es tarde",
-              "solution": "Modelo predictivo que detecta caídas en uso, reducción de interacciones y tickets sin resolver. Al superar el umbral de riesgo, activa un protocolo de rescate personalizado automáticamente.",
-              "benefits": "Detección 30-60 días antes del churn · CSM interviene solo cuando es necesario",
+              "subtitle": "Retención",
+              "problem": "Cuando el cliente comunica que se va, ya es demasiado tarde para retenerlo. Las señales de abandono existen semanas antes, pero pasan desapercibidas.",
+              "solution": "Modelo predictivo que analiza señales de alerta temprana: caída en el uso del producto, reducción de interacciones, tickets sin resolver y cambios en el patrón de login. Al superar el umbral de riesgo, activa automáticamente un protocolo de rescate personalizado.",
+              "benefits": "Detección de clientes en riesgo 30-60 días antes del churn · Protocolos del CRM como alerta al equipo de retención",
               "impact": "↓ 40% tasa de churn anual"
             },
             "2": {
               "name": "Upsell & Cross-sell Automático",
-              "problem": "El 70% del revenue de expansión se pierde por no identificar el momento",
-              "solution": "Monitoriza hitos de uso. Cuando un cliente alcanza límites de plan o acumula éxito con un servicio, lanza automáticamente la oferta de expansión más relevante para su perfil.",
-              "benefits": "Oportunidades activadas automáticamente · Oferta en el momento de mayor receptividad · Revenue sin coste adicional de ventas",
-              "impact": "↑ 30% Net Revenue Retention"
+              "subtitle": "Expansión",
+              "problem": "El 70% del revenue de expansión se pierde porque no se identifica el momento adecuado para ofrecer un plan superior o servicio adicional al cliente.",
+              "solution": "Sistema que monitoriza el comportamiento y los hitos de uso de cada cliente. Cuando alcanza límites de plan, acumula éxito con un servicio o lleva X meses sin ampliar, lanza automáticamente la oferta de expansión más relevante para su perfil.",
+              "benefits": "Oportunidades de expansión identificadas y activadas automáticamente · Oferta personalizada en el momento de mayor receptividad",
+              "impact": "↑ 30% Net Revenue Retention (NRR)"
             },
             "3": {
               "name": "NPS y Ciclo de Feedback",
-              "problem": "Las encuestas anuales llegan siempre demasiado tarde",
-              "solution": "Medición continua del NPS tras el onboarding, cada interacción de soporte, renovación e hitos de uso. Respuestas negativas → alerta al CSM. Positivas → solicitud automática de testimonial o referido.",
-              "benefits": "Pulso en tiempo real · Cierre del loop en 24h · Generación automática de testimoniales",
+              "subtitle": "Satisfacción",
+              "problem": "Las encuestas de satisfacción se hacen una vez al año, cuando los problemas ya se han enquistado. No hay visibilidad real sobre cómo se sienten los clientes ni capacidad de respuesta a tiempo.",
+              "solution": "Medición continua del NPS y satisfacción del cliente en puntos clave del ciclo: tras el onboarding, cada interacción de soporte, renovaciones e hitos de uso. Las respuestas negativas activan una alerta inmediata al CSM. Las positivas solicitan automáticamente un testimonial o referido.",
+              "benefits": "Pulso de satisfacción en tiempo real, no anual · Cierre del loop con cada cliente insatisfecho en 24 horas · Generación automática de testimoniales de clientes promotores · Correlación entre NPS y métricas de retención",
               "impact": "↑ 25 puntos de NPS en 6 meses"
             }
           }
         },
         "operations": {
           "name": "Operaciones",
-          "tagline": "Operaciones sin cuellos de botella.",
+          "tagline": "Automatizaciones que optimizan la cadena operativa, la gestión de proveedores y la logística, reduciendo costes y eliminando cuellos de botella en los procesos del día a día.",
           "heroMetric": "↑ 98%",
           "heroMetricLabel": "cumplimiento de SLA",
           "automations": {
             "0": {
               "name": "Gestión de Proveedores",
-              "problem": "La gestión manual genera inconsistencias en condiciones y precios",
-              "solution": "Automatiza el ciclo completo: solicita cotizaciones, compara ofertas, genera órdenes de compra aprobadas según umbrales y hace seguimiento de entregas y facturas.",
-              "benefits": "Condiciones negociadas aplicadas siempre · Trazabilidad total",
-              "impact": "↓ 50% ciclo de compra"
+              "subtitle": "Compras",
+              "problem": "La gestión manual de proveedores (solicitudes de oferta, comparación, pedidos, seguimiento) genera inconsistencias en condiciones y precios.",
+              "solution": "Flujo automatizado que automatiza el ciclo completo de compras: solicita cotizaciones a proveedores aprobados, compara ofertas automáticamente, genera órdenes de compra con aprobaciones según umbrales definidos y hace seguimiento de entregas y facturas.",
+              "benefits": "Reducción del ciclo de compra en un 50% · Condiciones negociadas aplicadas siempre de forma consistente · Trazabilidad total de cada pedido desde la solicitud hasta la entrega",
+              "impact": "↓ 50% ciclo de compra a proveedor"
             },
             "1": {
               "name": "Seguimiento de Entregas",
-              "problem": "El 30% de incidencias se detectan cuando el cliente ya se ha quejado",
-              "solution": "Tracking centralizado en tiempo real de todos los transportistas. Detecta retrasos y envíos perdidos, notifica al cliente proactivamente y activa el protocolo de incidencia antes de que pregunte.",
-              "benefits": "Visibilidad 360 de envíos · Comunicación proactiva · KPIs por transportista automáticos",
-              "impact": "↓ 60% reclamaciones logísticas"
+              "subtitle": "Logística",
+              "problem": "El 30% de las incidencias logísticas se detectan cuando el cliente ya se ha quejado. La falta de visibilidad proactiva genera reclamaciones, devoluciones y pérdida de confianza.",
+              "solution": "Sistema de tracking centralizado que agrega en tiempo real el estado de todos los envíos de todos los transportistas en un único dashboard. Detecta retrasos y envíos perdidos, notifica al cliente de forma proactiva y activa el protocolo de incidencia antes de que pregunte.",
+              "benefits": "Visibilidad 360 de todos los envíos en un único dashboard · Comunicación proactiva al cliente ante cualquier incidencia · KPIs automáticos por transportista para negociaciones futuras",
+              "impact": "↓ 60% reclamaciones por incidencias logísticas"
             },
             "2": {
               "name": "Mantenimiento Preventivo",
-              "problem": "Las averías imprevistas cuestan 5-10× más que la prevención",
-              "solution": "Programa automáticamente revisiones preventivas según uso, horas de operación o calendario. Genera órdenes de trabajo, asigna técnicos y alerta cuando un activo se acerca al fin de su vida útil.",
-              "benefits": "Historial completo por activo · Cumplimiento de garantías",
-              "impact": "↓ 70% averías imprevistas"
+              "subtitle": "Activos",
+              "problem": "Las averías imprevistas de maquinaria o equipamiento cuestan entre 5 y 10 veces más que el mantenimiento preventivo.",
+              "solution": "Sistema de gestión de mantenimiento que programa automáticamente revisiones preventivas según uso, horas de operación o calendario. Genera órdenes de trabajo, asigna al técnico disponible, registra el historial y alerta cuando un activo se acerca al fin de su vida útil.",
+              "benefits": "Reducción de averías imprevistas en un 70% · Cumplimiento automático de garantías y normativas · Historial completo por activo accesible en un clic",
+              "impact": "↓ 70% averías imprevistas en activos críticos"
             },
             "3": {
-              "name": "SLA & Escalado Automático",
-              "problem": "Los incumplimientos de SLA se detectan cuando el daño ya está hecho",
-              "solution": "Monitoriza en tiempo real cada ticket o tarea con compromiso de tiempo. Si se acerca al límite sin resolverse, activa recordatorios escalonados y escala automáticamente al nivel superior con todo el contexto.",
-              "benefits": "Escalado sin depender de iniciativa humana · Penalizaciones gestionadas automáticamente",
+              "name": "SLA y Escalado Automático",
+              "subtitle": "Calidad de Servicio",
+              "problem": "Los incumplimientos de SLA pasan desapercibidos hasta que el cliente reclama, cuando el daño reputacional y económico ya es causado.",
+              "solution": "Sistema de monitorización de SLAs en tiempo real que controla cada ticket o tarea con compromiso de tiempo definido. Cuando una solicitud se acerca al límite sin resolverse, activa recordatorios escalonados y escala automáticamente al nivel superior con todo el contexto.",
+              "benefits": "Cumplimiento de SLA superior al 98% · Escalado automático sin depender de iniciativa humana · Trazabilidad total del estado de cada compromiso activo",
               "impact": "↑ 98% cumplimiento de SLA"
+            }
+          }
+        },
+        "management": {
+          "name": "Management",
+          "tagline": "Automatizaciones que digitalizan y optimizan los procesos internos de gestión de equipos, operaciones y toma de decisiones basada en datos.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {
+            "0": {
+              "name": "Fichaje Geolocalizado",
+              "subtitle": "RR.HH. / Compliance",
+              "problem": "El control de presencia manual es susceptible de errores y fraude. Las inspecciones de trabajo exigen registros horarios digitales fiables desde 2019.",
+              "solution": "Un sistema de fichaje automático con validación GPS en tiempo real. El empleado ficha desde su móvil y el sistema verifica ubicación y hora al instante. Genera alertas ante ausencias o anomalías.",
+              "benefits": "Cumplimiento legal 100% de la normativa de registro horario · Detección de fraude en asistencia e irregularidades · Informes automáticos por empleado, sede y periodo · Integración directa con nómina y gestión de turnos",
+              "impact": "100% cumplimiento normativo + 0 fraude de presencia"
+            },
+            "1": {
+              "name": "Asignador de Tareas",
+              "subtitle": "Productividad",
+              "problem": "La asignación manual de tareas consume tiempo de gestión y a menudo no tiene en cuenta la carga real de cada empleado.",
+              "solution": "Un dispatcher inteligente que distribuye tareas al equipo según disponibilidad real, competencias, prioridad y carga de trabajo actual. Detecta cuellos de botella, redistribuye automáticamente y notifica a cada empleado asignado.",
+              "benefits": "Reducción del 60% del tiempo dedicado a la asignación manual · Equilibrio de cargas entre el equipo · Priorización automática y reasignación en caso de bloqueo",
+              "impact": "↓ 60% tiempo de coordinación operativa"
+            },
+            "2": {
+              "name": "Informe Automático",
+              "subtitle": "Inteligencia de Negocio",
+              "problem": "Preparar informes de KPIs semanales o mensuales consume entre 2 y 8 horas por informe, según la complejidad del negocio.",
+              "solution": "Un generador automático que reúne datos de todas tus fuentes conectadas (CRM, ERP, Google Analytics, hojas de cálculo, etc.), los cruza y genera un documento final listo para envío automáticamente a los destinatarios configurados.",
+              "benefits": "Informes entregados sin intervención humana · Datos siempre actualizados y consistentes · Formatos personalizables por departamento o directivo",
+              "impact": "↓ 8 horas ahorradas por informe / semana"
+            },
+            "3": {
+              "name": "Flujo de Onboarding",
+              "subtitle": "RR.HH.",
+              "problem": "El proceso de incorporación manual de nuevas empleados es inconsistente, lento y genera una experiencia negativa que impacta en la retención y productividad inicial.",
+              "solution": "Flujo de onboarding completamente automatizado que, desde el momento en que se registra la nueva incorporación, envía documentación, asigna equipos, programa formaciones y genera credenciales de acceso.",
+              "benefits": "Reducción del tiempo de onboarding de semanas a días · Experiencia consistente para todos los nuevos empleados · Seguimiento automático de la progresión durante los primeros 90 días",
+              "impact": "↓ 75% tiempo administrativo de incorporación"
+            }
+          }
+        },
+        "hr": {
+          "name": "RR.HH. y Recruitment",
+          "tagline": "Automatizaciones que aceleran la captación de talento, mejoran la experiencia del candidato y liberan al equipo de RR.HH. de las tareas administrativas repetitivas.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {
+            "0": {
+              "name": "Criba Curricular con IA",
+              "subtitle": "Selección",
+              "problem": "Un proceso de selección activo genera entre 50 y 200 CVs. Cribarlos manualmente consume entre 2 y 4 horas por posición y está sujeto a sesgos.",
+              "solution": "Sistema de criba automática que analiza cada CV, lo compara con el perfil de la posición y genera un ranking de candidatos ordenado por relevancia. Filtra por experiencia, habilidades, formación y compatibilidad cultural.",
+              "benefits": "Ahorro de entre 2 y 4 horas de criba por posición · Evaluación objetiva y libre de sesgos inconscientes · Ranking de los mejores 10 candidatos en menos de 24 horas · Filtro de duplicados y perfiles ya vistos en procesos anteriores",
+              "impact": "↓ 60% tiempo de criba por posición"
+            },
+            "1": {
+              "name": "Candidate Nurturing",
+              "subtitle": "Experiencia del Candidato",
+              "problem": "El 60% de los candidatos abandonan un proceso de selección por falta de comunicación. La marca empleadora se deteriora con cada candidato ignorado.",
+              "solution": "Flujo automatizado que mantiene informado al candidato en cada etapa del proceso: confirmación de recepción, avance entre fases, feedback tras entrevistas y comunicación personalizada de resultado final.",
+              "benefits": "Tasa de abandono del proceso reducida en un 50% · Marca empleadora reforzada con cada proceso · Feedback automático personalizado a cada candidato",
+              "impact": "↓ 50% tasa de finalización del proceso"
+            },
+            "2": {
+              "name": "Entrevista Pre-screening IA",
+              "subtitle": "Evaluación",
+              "problem": "Las entrevistas telefónicas de criba consumen entre 15 y 30 minutos por candidato. Con 50 candidatos por posición, son más de 15 horas de trabajo del equipo.",
+              "solution": "Agente conversacional de IA que realiza la entrevista de pre-screening por voz o chat, valida la disponibilidad, expectativas salariales, motivación y competencias básicas. Genera un informe estructurado por candidato.",
+              "benefits": "Eliminación total de las entrevistas de criba manuales · Informes estandarizados y comparables entre candidatos",
+              "impact": "↓ 90% tiempo dedicado a pre-screening"
+            },
+            "3": {
+              "name": "Offboarding Automatizado",
+              "subtitle": "Gestión de Salidas",
+              "problem": "Las salidas de empleados gestionadas de forma reactiva generan riesgos de seguridad, pérdida de conocimiento y problemas legales.",
+              "solution": "Protocolo de offboarding que se activa automáticamente al registrar la baja de un empleado: revocación de accesos, recuperación de equipos, entrevista de salida automatizada, transferencia de conocimiento y checklist de cumplimiento legal.",
+              "benefits": "Cero accesos activos de ex empleados a las 24 horas · Proceso legal y documentalmente respaldado · Captura sistemática de conocimiento antes de la salida · Reducción del riesgo de seguridad post-salida",
+              "impact": "100% compliance en procesos de salida"
+            }
+          }
+        },
+        "stock": {
+          "name": "Stock",
+          "tagline": "Automatizaciones que garantizan la disponibilidad óptima de producto, eliminan el stock muerto y convierten la gestión de inventario en un proceso predictivo y sin fricciones.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {
+            "0": {
+              "name": "Reposición Automática",
+              "subtitle": "Inventario",
+              "problem": "Las roturas de stock cuestan de media un 4-8% de las ventas anuales. Detectarlas manualmente suele llegar tarde.",
+              "solution": "El sistema monitoriza el nivel de cada producto en tiempo real. Cuando un artículo cae por debajo del umbral definido, genera automáticamente una orden de reposición al proveedor con las cantidades óptimas.",
+              "benefits": "Cero roturas de stock por falta de seguimiento · Pedidos de compra generados automáticamente con las cantidades correctas",
+              "impact": "↓ 90% en roturas de stock evitables"
+            },
+            "1": {
+              "name": "Alertas de Stock y Anomalías",
+              "subtitle": "Control de Inventario",
+              "problem": "Las discrepancias entre el stock físico y el registrado pasan desapercibidas hasta una auditoría o una reclamación de cliente, cuando el daño ya está hecho.",
+              "solution": "Sistema de alertas en tiempo real que detecta automáticamente anomalías en el inventario: diferencias entre stock físico y digital, movimientos inusuales, mermas por encima del umbral normal y caducidades próximas. Notifica al responsable con el contexto completo para actuar de inmediato.",
+              "benefits": "Detección de discrepancias en horas, no en meses · Reducción de pérdidas por robo o errores administrativos · Datos preparados para auditorías y cierres de inventario",
+              "impact": ""
+            },
+            "2": {
+              "name": "Liquidación de Stock Muerto",
+              "subtitle": "Optimización de Margen",
+              "problem": "El producto parado más de 90 días inmoviliza capital y ocupa espacio. La mayoría de las empresas lo detectan tarde y acaban vendiendo a pérdida o directamente desechando.",
+              "solution": "Identificación semanal que identifica productos con baja rotación según antigüedad y tendencia. Antes de que pierdan todo su valor, alerta al equipo comercial para ofrecer descuentos progresivos, bundles o campañas de liquidación.",
+              "benefits": "Identificación proactiva de stock con riesgo de obsolescencia · Recuperación parcial del valor antes de pérdida total",
+              "impact": "↑ 35% recuperación de valor en stock parado"
+            },
+            "3": {
+              "name": "Previsión de Demanda con IA",
+              "subtitle": "Planificación",
+              "problem": "Las previsiones basadas en intuición o en el histórico simple generan sobrestock en unos productos y roturas en otros, penalizando el margen y la satisfacción del cliente.",
+              "solution": "Motor predictivo que analiza el histórico de ventas, la estacionalidad, tendencias de mercado, campañas de marketing planificadas y factores externos para generar automáticamente un plan de compras optimizado.",
+              "benefits": "Menor cuota y menos producto inmovilizado · Plan continuo del modelo con cada ciclo de ventas",
+              "impact": "↓ 30% capital inmovilizado en inventario"
             }
           }
         }
