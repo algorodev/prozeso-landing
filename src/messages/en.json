@@ -2054,6 +2054,8 @@
       "mobileFilter": "Filter",
       "mobileFilterTitle": "Filter automations",
       "searchPlaceholder": "Search automation...",
+      "startAssessment": "Start assessment",
+      "learnMore": "Learn more",
       "areas": {
         "bookings": {
           "name": "Bookings",
