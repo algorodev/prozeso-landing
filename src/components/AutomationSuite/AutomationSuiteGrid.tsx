@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Filter, Search } from "lucide-react";
+import { Filter, Search } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
 import { AREAS } from "@/components/Home/BubbleDiagram/constants";
@@ -13,7 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/Sheet";
-import { LocalizedLink } from "@/i18n/LocalizedLink";
+import AutomationDetailDialog from "./AutomationDetailDialog";
 import AutomationSuiteSidebar from "./AutomationSuiteSidebar";
 import { COLOR_GROUPS } from "./constants";
 
@@ -23,7 +23,17 @@ const AUTOMATION_SLUGS: Record<string, string> = {
   "bookings:1": "appointment-reminder",
   "bookings:2": "review-booster",
   "bookings:3": "smart-waitlist-cancellation-filler",
+  "sales:0": "missed-call-auto-callback",
+  "sales:1": "portal-lead-qualification-routing",
+  "sales:2": "abandoned-booking-follow-up",
+  "sales:3": "group-event-inquiry-handler",
   "finance:0": "billing-and-invoice",
+  "finance:1": "no-show-recovery-fee-capture",
+  "management:0": "smart-pre-check-in",
+  "management:3": "tenant-onboarding-docs-collection",
+  "customerSuccess:1": "reactivation-recalls",
+  "customerSuccess:2": "in-stay-concierge-upsell",
+  "customerSuccess:3": "viewing-follow-up-offer-collector",
 };
 
 const GLOW_POSITIONS = [
@@ -40,6 +50,10 @@ export default function AutomationSuiteGrid() {
   const [activeFilter, setActiveFilter] = useState<ActiveFilter>(null);
   const [query, setQuery] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [selectedAutomation, setSelectedAutomation] = useState<{
+    areaId: string;
+    index: number;
+  } | null>(null);
 
   const handleMobileFilter = (filter: ActiveFilter) => {
     setActiveFilter(filter);
@@ -201,10 +215,16 @@ export default function AutomationSuiteGrid() {
                     const color = group.color;
                     const glowPos =
                       GLOW_POSITIONS[cardIdx % GLOW_POSITIONS.length];
-                    const slug = AUTOMATION_SLUGS[`${areaId}:${index}`];
 
-                    const cardContent = (
-                      <>
+                    return (
+                      <button
+                        key={`${areaId}-${index}`}
+                        type="button"
+                        onMouseMove={handleMouseMove}
+                        onClick={() => setSelectedAutomation({ areaId, index })}
+                        className="group relative rounded-2xl p-px overflow-hidden text-left cursor-pointer"
+                        style={{ background: "var(--color-border)" }}
+                      >
                         {/* Cursor spotlight */}
                         <div
                           className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"
@@ -215,14 +235,11 @@ export default function AutomationSuiteGrid() {
 
                         {/* Inner card */}
                         <div className="relative z-10 w-full rounded-[15px] bg-background p-5 overflow-hidden space-y-3">
-                          {/* Glow blob — only on linked cards, visible on hover */}
-                          {slug && (
-                            <span
-                              className={`pointer-events-none absolute ${glowPos} h-64 w-64 rounded-full blur-[100px] opacity-0 transition-opacity duration-500 group-hover:opacity-20`}
-                              style={{ background: color }}
-                              aria-hidden="true"
-                            />
-                          )}
+                          <span
+                            className={`pointer-events-none absolute ${glowPos} h-64 w-64 rounded-full blur-[100px] opacity-0 transition-opacity duration-500 group-hover:opacity-20`}
+                            style={{ background: color }}
+                            aria-hidden="true"
+                          />
 
                           {/* Number + Name */}
                           <div className="relative flex items-start gap-3">
@@ -288,45 +305,8 @@ export default function AutomationSuiteGrid() {
                                 })()}
                               </div>
                             )}
-
-                          {/* Learn more link */}
-                          {slug && (
-                            <div
-                              className="relative flex items-center justify-end gap-1 pt-2 text-sm font-medium text-foreground transition-colors"
-                              style={{
-                                ["--link-hover-color" as string]: color,
-                              }}
-                            >
-                              <span className="group-hover:[color:var(--link-hover-color)]">
-                                Saber más
-                              </span>
-                              <ArrowRight className="h-3.5 w-3.5 transition-all group-hover:translate-x-1 group-hover:[color:var(--link-hover-color)]" />
-                            </div>
-                          )}
                         </div>
-                      </>
-                    );
-
-                    return slug ? (
-                      <LocalizedLink
-                        key={`${areaId}-${index}`}
-                        href={`/automations/${slug}`}
-                        onMouseMove={handleMouseMove}
-                        className="group relative rounded-2xl p-px overflow-hidden"
-                        style={{ background: "var(--color-border)" }}
-                      >
-                        {cardContent}
-                      </LocalizedLink>
-                    ) : (
-                      /* biome-ignore lint/a11y/noStaticElementInteractions: mouse tracking for visual effect only */
-                      <div
-                        key={`${areaId}-${index}`}
-                        onMouseMove={handleMouseMove}
-                        className="group relative rounded-2xl p-px overflow-hidden"
-                        style={{ background: "var(--color-border)" }}
-                      >
-                        {cardContent}
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
@@ -335,6 +315,12 @@ export default function AutomationSuiteGrid() {
           })}
         </div>
       </div>
+
+      <AutomationDetailDialog
+        selectedAutomation={selectedAutomation}
+        onClose={() => setSelectedAutomation(null)}
+        slugMap={AUTOMATION_SLUGS}
+      />
     </section>
   );
 }

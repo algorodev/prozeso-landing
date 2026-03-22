@@ -2060,6 +2060,8 @@
       "mobileFilter": "Filtrar",
       "mobileFilterTitle": "Filtrar automatizaciones",
       "searchPlaceholder": "Buscar automatización...",
+      "startAssessment": "Comenzar evaluación",
+      "learnMore": "Saber más",
       "areas": {
         "bookings": {
           "name": "Reservas",
