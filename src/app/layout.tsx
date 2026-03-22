@@ -21,7 +21,7 @@ const siteName = "Prozeso";
 const siteDescription = "Automate your workflows with ease";
 const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-const GA_ID = process.env.GA_MEASUREMENT_ID!;
+const GA_ID = process.env.GA_MEASUREMENT_ID ?? "";
 
 const languageAlternates = Object.fromEntries(
   locales.map((l) => [l, `/${l}`]),

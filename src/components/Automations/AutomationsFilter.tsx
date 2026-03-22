@@ -63,9 +63,10 @@ export default function AutomationsFilter({
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <label className="w-full md:max-w-md">
+        <label htmlFor="automations-search" className="w-full md:max-w-md">
           <span className="sr-only">{t("searchAria")}</span>
           <Input
+            id="automations-search"
             type="text"
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}

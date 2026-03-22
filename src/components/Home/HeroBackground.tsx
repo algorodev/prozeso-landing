@@ -203,8 +203,10 @@ export default function HeroBackground() {
     };
 
     const applyEnter = (el: HTMLElement) => {
-      if ((el as any)._bgHoverApplied) return;
-      (el as any)._bgHoverApplied = true;
+      if ((el as HTMLElement & { _bgHoverApplied?: boolean })._bgHoverApplied)
+        return;
+      (el as HTMLElement & { _bgHoverApplied?: boolean })._bgHoverApplied =
+        true;
       el.style.zIndex = "5";
       if (!el.dataset.opacity) {
         el.dataset.opacity = getComputedStyle(el).opacity || "1";
@@ -217,8 +219,10 @@ export default function HeroBackground() {
     };
 
     const applyLeave = (el: HTMLElement) => {
-      if (!(el as any)._bgHoverApplied) return;
-      (el as any)._bgHoverApplied = false;
+      if (!(el as HTMLElement & { _bgHoverApplied?: boolean })._bgHoverApplied)
+        return;
+      (el as HTMLElement & { _bgHoverApplied?: boolean })._bgHoverApplied =
+        false;
       el.style.zIndex = "";
       el.style.boxShadow = "";
       if (el.dataset.opacity) {
@@ -269,9 +273,9 @@ export default function HeroBackground() {
 
     return () => {
       if (rafId != null) cancelAnimationFrame(rafId);
-      window.removeEventListener("mousemove", onMove as any);
-      window.removeEventListener("scroll", onScrollOrResize as any);
-      window.removeEventListener("resize", onScrollOrResize as any);
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("scroll", onScrollOrResize);
+      window.removeEventListener("resize", onScrollOrResize);
       hovered.forEach(applyLeave);
     };
   }, []);

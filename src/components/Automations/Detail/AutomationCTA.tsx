@@ -9,10 +9,10 @@ import { useAutomationFromParams } from "./useAutomationFromParams";
 
 export function AutomationCTA() {
   const { automation, id } = useAutomationFromParams();
-  if (!automation) return null;
   const t = useTranslations(`automations.details.${id}`);
   const tc = useTranslations("automations.details.common");
   const tCommonCta = useTranslations("common.cta");
+  if (!automation) return null;
 
   return (
     <section className="relative py-32 px-6 border-t border-border overflow-hidden bg-background text-foreground">

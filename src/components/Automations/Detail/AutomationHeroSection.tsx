@@ -10,10 +10,10 @@ import { useAutomationFromParams } from "./useAutomationFromParams";
 
 export function AutomationHeroSection() {
   const { automation, id } = useAutomationFromParams();
-  if (!automation) return null;
   const t = useTranslations(`automations.details.${id}`);
   const _tc = useTranslations("automations.details.common");
   const tCommonCta = useTranslations("common.cta");
+  if (!automation) return null;
 
   return (
     <section className="relative isolate min-h-[80vh] flex items-center justify-center px-6 pt-16 overflow-hidden">

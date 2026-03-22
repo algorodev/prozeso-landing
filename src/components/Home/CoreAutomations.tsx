@@ -57,9 +57,9 @@ const CoreAutomations = () => {
               id: "callback",
               href: "/automations/missed-call-auto-callback",
             },
-          ].map((automation, idx) => (
+          ].map((automation) => (
             <motion.div
-              key={idx}
+              key={automation.id}
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },

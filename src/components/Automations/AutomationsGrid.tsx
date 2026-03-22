@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AUTOMATIONS } from "@/data/automations";
-import AutomationCard from "./AutomationCard";
+import AutomationCard, { type AutomationItem } from "./AutomationCard";
 import AutomationsFilter from "./AutomationsFilter";
 
 export default function AutomationsGrid() {
@@ -12,7 +12,10 @@ export default function AutomationsGrid() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return AUTOMATIONS.filter((a) => {
-      const cats: unknown = (a as any).categories ?? (a as any).category ?? [];
+      const cats: unknown =
+        (a as Record<string, unknown>).categories ??
+        (a as Record<string, unknown>).category ??
+        [];
       const inCategory = Array.isArray(cats)
         ? cats.includes(category)
         : typeof cats === "string"
@@ -46,7 +49,7 @@ export default function AutomationsGrid() {
             {filtered.map((automation) => (
               <AutomationCard
                 key={automation.id}
-                automation={automation as any}
+                automation={automation as AutomationItem}
               />
             ))}
           </div>
