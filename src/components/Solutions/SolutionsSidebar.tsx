@@ -19,7 +19,6 @@ export default function SolutionsSidebar({
 
   return (
     <nav className="space-y-3">
-      {/* Clear filter */}
       {activeFilter !== null && (
         <button
           type="button"
@@ -45,7 +44,6 @@ export default function SolutionsSidebar({
                 : "transparent",
             }}
           >
-            {/* Group title — clickable */}
             <button
               type="button"
               onClick={() =>
@@ -72,7 +70,6 @@ export default function SolutionsSidebar({
               </span>
             </button>
 
-            {/* Filter buttons */}
             <div className="flex flex-wrap gap-1">
               {group.areaIds.map((areaId) => {
                 const isActive =

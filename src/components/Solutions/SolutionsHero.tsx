@@ -7,13 +7,11 @@ export default function SolutionsHero() {
 
   return (
     <section className="relative isolate overflow-hidden py-12 sm:py-16">
-      {/* Lavender — unmasked glow (bottom-left) */}
       <span
         className="pointer-events-none absolute bottom-0 left-0 translate-y-1/2 h-48 w-48 rounded-full blur-[100px] opacity-30"
         style={{ background: "var(--brand-lavender)" }}
         aria-hidden="true"
       />
-      {/* Lavender — masked by square (top-left) */}
       <div
         className="pointer-events-none absolute top-0 left-0 h-[80px] w-[80px] sm:h-[120px] sm:w-[120px] overflow-hidden"
         aria-hidden="true"
@@ -24,13 +22,11 @@ export default function SolutionsHero() {
         />
       </div>
 
-      {/* Blue — unmasked glow (top-right) */}
       <span
         className="pointer-events-none absolute right-0 top-0 translate-x-1/2 -translate-y-1/4 h-64 w-64 rounded-full blur-[100px] opacity-22"
         style={{ background: "var(--brand-blue)" }}
         aria-hidden="true"
       />
-      {/* Blue — masked by triangle (bottom-right) */}
       <div
         className="pointer-events-none absolute bottom-0 -right-4 sm:right-[80px] h-[100px] w-[100px] sm:h-[160px] sm:w-[160px] rotate-12"
         style={{ clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)" }}
@@ -42,7 +38,6 @@ export default function SolutionsHero() {
         />
       </div>
 
-      {/* ——— Content ——— */}
       <div className="container mx-auto px-6 sm:px-8 relative z-10">
         <div className="mx-auto text-center max-w-3xl">
           <h1 className="font-sora text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-4 text-balance">

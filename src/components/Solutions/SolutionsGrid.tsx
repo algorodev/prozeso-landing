@@ -89,7 +89,6 @@ export default function SolutionsGrid() {
       className="mx-auto px-6 pb-16 pt-8 lg:py-16 scroll-mt-10"
     >
       <div className="lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] lg:gap-10">
-        {/* Sidebar — desktop only */}
         <aside className="hidden lg:block">
           <div className="sticky top-24 space-y-6">
             <div className="relative">
@@ -109,9 +108,7 @@ export default function SolutionsGrid() {
           </div>
         </aside>
 
-        {/* Main content */}
         <div className="space-y-20">
-          {/* Mobile filter button */}
           <div className="lg:hidden sticky top-20 z-50 flex items-center gap-3 mb-4 py-3 pointer-events-none">
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
@@ -153,7 +150,6 @@ export default function SolutionsGrid() {
             const activeArea =
               activeFilter?.groupId === group.id ? activeFilter.areaId : null;
 
-            // Collect all automations for this group across its areas
             const queryLower = query.toLowerCase().trim();
             const items: {
               areaId: string;
@@ -194,7 +190,6 @@ export default function SolutionsGrid() {
 
             return (
               <div key={group.id}>
-                {/* Group header */}
                 <div className="flex items-center gap-3 mb-6">
                   <div className="flex items-center gap-3">
                     <div
@@ -215,7 +210,6 @@ export default function SolutionsGrid() {
                     {t("automationCount", { count: items.length })}
                   </span>
                 </div>
-                {/* Badge — mobile only */}
                 <span
                   className="sm:hidden w-fit rounded-full px-3 py-1 text-xs font-semibold whitespace-nowrap mb-4 block"
                   style={{
@@ -226,7 +220,6 @@ export default function SolutionsGrid() {
                   {t("automationCount", { count: items.length })}
                 </span>
 
-                {/* Cards grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-start gap-4">
                   {items.map(({ areaId, index, startIndex }, cardIdx) => {
                     const color = group.color;
@@ -242,7 +235,6 @@ export default function SolutionsGrid() {
                         className="group relative rounded-2xl p-px overflow-hidden text-left cursor-pointer"
                         style={{ background: "var(--color-border)" }}
                       >
-                        {/* Cursor spotlight */}
                         <div
                           className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"
                           style={{
@@ -250,7 +242,6 @@ export default function SolutionsGrid() {
                           }}
                         />
 
-                        {/* Inner card */}
                         <div className="relative z-10 w-full rounded-[15px] bg-background p-5 overflow-hidden space-y-3">
                           <span
                             className={`pointer-events-none absolute ${glowPos} h-64 w-64 rounded-full blur-[100px] opacity-0 transition-opacity duration-500 group-hover:opacity-20`}
@@ -258,7 +249,6 @@ export default function SolutionsGrid() {
                             aria-hidden="true"
                           />
 
-                          {/* Number + Name */}
                           <div className="relative flex items-start gap-3">
                             <span
                               className="text-3xl font-sora font-bold leading-none opacity-20"
@@ -282,7 +272,6 @@ export default function SolutionsGrid() {
                             </div>
                           </div>
 
-                          {/* Impact chip */}
                           {t.has(
                             `areas.${areaId}.automations.${index}.impact`,
                           ) &&

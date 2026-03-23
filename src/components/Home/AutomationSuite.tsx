@@ -172,14 +172,12 @@ const AutomationSuite = () => {
                   >
                     {isFirst && (
                       <>
-                        {/* Unmasked glow — bottom-right corner */}
                         <span
                           className="pointer-events-none absolute -bottom-32 -right-24 h-64 w-64 rounded-full blur-[100px] opacity-20"
                           style={{ background: "var(--brand-lavender)" }}
                           aria-hidden="true"
                         />
 
-                        {/* Center glow masked by square */}
                         <div
                           className="pointer-events-none absolute overflow-hidden"
                           style={{
@@ -204,14 +202,12 @@ const AutomationSuite = () => {
 
                     {isSecond && (
                       <>
-                        {/* Unmasked glow — top-left corner */}
                         <span
                           className="pointer-events-none absolute -top-32 -left-24 h-64 w-64 rounded-full blur-[100px] opacity-20"
                           style={{ background: area.colorVar }}
                           aria-hidden="true"
                         />
 
-                        {/* Center glow masked by triangle */}
                         <div
                           className="pointer-events-none absolute"
                           style={{
@@ -238,14 +234,12 @@ const AutomationSuite = () => {
 
                     {isThird && (
                       <>
-                        {/* Unmasked glow — bottom-left corner */}
                         <span
                           className="pointer-events-none absolute -bottom-32 -left-24 h-64 w-64 rounded-full blur-[100px] opacity-15"
                           style={{ background: area.colorVar }}
                           aria-hidden="true"
                         />
 
-                        {/* Glow masked by circle — top-right */}
                         <div
                           className="pointer-events-none absolute"
                           style={{

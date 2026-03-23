@@ -23,7 +23,6 @@ export type AreaNode = {
 };
 
 export const AREAS: AreaNode[] = [
-  // Primary — spread horizontally, sides at mid-height
   {
     id: "bookings",
     label: "Bookings",
@@ -84,7 +83,6 @@ export const AREAS: AreaNode[] = [
     primary: true,
     startIndex: 25,
   },
-  // Secondary — positioned outside the primary cluster
   {
     id: "management",
     label: "Management",
@@ -120,23 +118,19 @@ export const AREAS: AreaNode[] = [
 export const PRIMARIES = AREAS.filter((a) => a.primary);
 export const SECONDARIES = AREAS.filter((a) => !a.primary);
 
-/* ─── Connections — arranged so no lines cross ─── */
 export const CONNECTIONS: [string, string][] = [
-  // Primary chain
   ["sales", "marketing"],
   ["sales", "customerSuccess"],
   ["finance", "operations"],
   ["bookings", "customerSuccess"],
   ["operations", "customerSuccess"],
   ["operations", "stock"],
-  // Secondary → nearest primaries
   ["management", "hr"],
   ["management", "customerSuccess"],
   ["hr", "operations"],
   ["stock", "finance"],
 ];
 
-/* ─── Dashed connections (white, no gradient) ─── */
 export const DASHED_CONNECTIONS: [string, string][] = [
   ["bookings", "sales"],
   ["hr", "marketing"],
