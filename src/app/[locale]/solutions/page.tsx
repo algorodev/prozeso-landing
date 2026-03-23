@@ -1,11 +1,11 @@
-import AutomationSuiteGrid from "@/components/AutomationSuite/AutomationSuiteGrid";
-import AutomationsHero from "@/components/Automations/AutomationsHero";
+import SolutionsGrid from "@/components/Solutions/SolutionsGrid";
+import SolutionsHero from "@/components/Solutions/SolutionsHero";
 
 export default function AutomationsSuitePage() {
   return (
     <main>
-      <AutomationsHero />
-      <AutomationSuiteGrid />
+      <SolutionsHero />
+      <SolutionsGrid />
     </main>
   );
 }

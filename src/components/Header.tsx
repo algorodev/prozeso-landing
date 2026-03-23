@@ -28,6 +28,7 @@ export const Header = () => {
   const locale = useLocale();
 
   const navItems: NavItem[] = [
+    { label: t("nav.solutions"), href: "/solutions" },
     { label: t("nav.useCases"), href: "/use-cases" },
   ];
 

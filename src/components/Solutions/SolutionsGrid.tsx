@@ -1,8 +1,9 @@
 "use client";
 
 import { Filter, Search } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { AREAS } from "@/components/Home/BubbleDiagram/constants";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
@@ -13,28 +14,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/Sheet";
-import AutomationDetailDialog from "./AutomationDetailDialog";
-import AutomationSuiteSidebar from "./AutomationSuiteSidebar";
 import { COLOR_GROUPS } from "./constants";
-
-/** Maps "areaId:index" to the automation slug that has a detail page */
-const AUTOMATION_SLUGS: Record<string, string> = {
-  "bookings:0": "receptionist-ai",
-  "bookings:1": "appointment-reminder",
-  "bookings:2": "review-booster",
-  "bookings:3": "smart-waitlist-cancellation-filler",
-  "sales:0": "missed-call-auto-callback",
-  "sales:1": "portal-lead-qualification-routing",
-  "sales:2": "abandoned-booking-follow-up",
-  "sales:3": "group-event-inquiry-handler",
-  "finance:0": "billing-and-invoice",
-  "finance:1": "no-show-recovery-fee-capture",
-  "management:0": "smart-pre-check-in",
-  "management:3": "tenant-onboarding-docs-collection",
-  "customerSuccess:1": "reactivation-recalls",
-  "customerSuccess:2": "in-stay-concierge-upsell",
-  "customerSuccess:3": "viewing-follow-up-offer-collector",
-};
+import SolutionDetailDialog from "./SolutionDetailDialog";
+import SolutionsSidebar from "./SolutionsSidebar";
 
 const GLOW_POSITIONS = [
   "-bottom-32 -right-24",
@@ -45,9 +27,34 @@ const GLOW_POSITIONS = [
 
 export type ActiveFilter = { groupId: string; areaId: string | null } | null;
 
-export default function AutomationSuiteGrid() {
+function getInitialFilter(
+  group: string | null,
+  area: string | null,
+): ActiveFilter {
+  if (!group) return null;
+  const valid = COLOR_GROUPS.some((g) => g.id === group);
+  if (!valid) return null;
+  return { groupId: group, areaId: area };
+}
+
+export default function SolutionsGrid() {
   const t = useTranslations("home.automationSuite");
-  const [activeFilter, setActiveFilter] = useState<ActiveFilter>(null);
+  const searchParams = useSearchParams();
+  const [activeFilter, setActiveFilter] = useState<ActiveFilter>(() =>
+    getInitialFilter(searchParams.get("group"), searchParams.get("area")),
+  );
+
+  useEffect(() => {
+    const filter = getInitialFilter(
+      searchParams.get("group"),
+      searchParams.get("area"),
+    );
+    setActiveFilter(filter);
+    if (!filter) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [searchParams]);
+
   const [query, setQuery] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [selectedAutomation, setSelectedAutomation] = useState<{
@@ -55,8 +62,15 @@ export default function AutomationSuiteGrid() {
     index: number;
   } | null>(null);
 
-  const handleMobileFilter = (filter: ActiveFilter) => {
+  const handleFilterChange = (filter: ActiveFilter) => {
     setActiveFilter(filter);
+    if (filter) {
+      document.getElementById("grid")?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleMobileFilter = (filter: ActiveFilter) => {
+    handleFilterChange(filter);
     setMobileOpen(false);
   };
 
@@ -70,7 +84,10 @@ export default function AutomationSuiteGrid() {
   }, []);
 
   return (
-    <section className="mx-auto px-6 pb-16 pt-8 lg:py-16">
+    <section
+      id="grid"
+      className="mx-auto px-6 pb-16 pt-8 lg:py-16 scroll-mt-10"
+    >
       <div className="lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] lg:gap-10">
         {/* Sidebar — desktop only */}
         <aside className="hidden lg:block">
@@ -85,9 +102,9 @@ export default function AutomationSuiteGrid() {
                 className="h-9 pl-9"
               />
             </div>
-            <AutomationSuiteSidebar
+            <SolutionsSidebar
               activeFilter={activeFilter}
-              onFilterChange={setActiveFilter}
+              onFilterChange={handleFilterChange}
             />
           </div>
         </aside>
@@ -122,7 +139,7 @@ export default function AutomationSuiteGrid() {
                       className="h-9 pl-9"
                     />
                   </div>
-                  <AutomationSuiteSidebar
+                  <SolutionsSidebar
                     activeFilter={activeFilter}
                     onFilterChange={handleMobileFilter}
                   />
@@ -316,10 +333,9 @@ export default function AutomationSuiteGrid() {
         </div>
       </div>
 
-      <AutomationDetailDialog
+      <SolutionDetailDialog
         selectedAutomation={selectedAutomation}
         onClose={() => setSelectedAutomation(null)}
-        slugMap={AUTOMATION_SLUGS}
       />
     </section>
   );

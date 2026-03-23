@@ -24,6 +24,7 @@
   },
   "header": {
     "nav": {
+      "solutions": "Soluciones",
       "useCases": "Casos de Uso"
     },
     "cta": "Empezar",
@@ -39,7 +40,7 @@
     },
     "links": {
       "useCases": "Casos de Uso",
-      "automations": "Automatizaciones",
+      "solutions": "Soluciones",
       "assessment": "Comenzar",
       "terms": "Términos y Condiciones",
       "privacy": "Política de Privacidad",
@@ -54,8 +55,8 @@
   },
   "solutions": {
     "hero": {
-      "title": "Soluciones para tu sector",
-      "subtitle": "Construimos automatizaciones ajustadas a cómo funciona tu negocio de verdad."
+      "title": "Nuestras <primary>Soluciones</primary>",
+      "subtitle": "Flujos de trabajo impulsados por IA, diseñados para negocios de servicios. Combínalos para crear tu stack de automatización perfecto."
     },
     "cta": "Comenzar evaluación gratis",
     "moreComing": {

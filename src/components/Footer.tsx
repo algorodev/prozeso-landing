@@ -32,18 +32,18 @@ const Footer = () => {
               <ul className="space-y-3 text-sm">
                 <li>
                   <LocalizedLink
-                    href="/use-cases"
+                    href="/solutions"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {t("links.useCases")}
+                    {t("links.solutions")}
                   </LocalizedLink>
                 </li>
                 <li>
                   <LocalizedLink
-                    href="/automations"
+                    href="/use-cases"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {t("links.automations")}
+                    {t("links.useCases")}
                   </LocalizedLink>
                 </li>
                 <li>

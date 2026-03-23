@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown, ArrowRight, ArrowUp } from "lucide-react";
+import { ArrowDown, ArrowUp } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AREAS } from "@/components/Home/BubbleDiagram/constants";
 import { Button } from "@/components/ui/Button";
@@ -15,13 +15,11 @@ import { LocalizedLink } from "@/i18n/LocalizedLink";
 type AutomationDetailDialogProps = {
   selectedAutomation: { areaId: string; index: number } | null;
   onClose: () => void;
-  slugMap: Record<string, string>;
 };
 
 const AutomationDetailDialog = ({
   selectedAutomation,
   onClose,
-  slugMap,
 }: AutomationDetailDialogProps) => {
   const t = useTranslations("home.automationSuite");
 
@@ -32,7 +30,6 @@ const AutomationDetailDialog = ({
   if (!area) return null;
 
   const color = area.color;
-  const slug = slugMap[`${areaId}:${index}`];
   const prefix = `areas.${areaId}.automations.${index}`;
 
   return (
@@ -174,19 +171,6 @@ const AutomationDetailDialog = ({
           <Button asChild size="sm" className="text-xs px-4 py-2 rounded-md">
             <LocalizedLink href="/start">{t("startAssessment")}</LocalizedLink>
           </Button>
-          {slug && (
-            <Button
-              asChild
-              variant="outline"
-              size="sm"
-              className="text-xs px-4 py-2 rounded-md"
-            >
-              <LocalizedLink href={`/automations/${slug}`}>
-                {t("learnMore")}
-                <ArrowRight className="ml-1 h-3.5 w-3.5" />
-              </LocalizedLink>
-            </Button>
-          )}
         </div>
       </DialogContent>
     </Dialog>

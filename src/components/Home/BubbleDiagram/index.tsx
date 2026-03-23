@@ -2,13 +2,11 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { useSearchParams } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
-import AreaDetailDialog from "./AreaDetailDialog";
-import AreaDetailDialogLegacy from "./AreaDetailDialogLegacy";
 import {
   CONNECTIONS,
   DASHED_CONNECTIONS,
@@ -17,14 +15,13 @@ import {
   PRIMARIES,
   SECONDARIES,
 } from "./constants";
+import { AREA_TO_GROUP } from "./utils";
 
 const BubbleDiagram = () => {
   const t = useTranslations("home.automationSuite");
-  const searchParams = useSearchParams();
-  const useLegacy = searchParams.get("dialog") === "legacy";
+  const router = useRouter();
+  const locale = useLocale();
   const [hovered, setHovered] = useState<string | null>(null);
-  const [selectedArea, setSelectedArea] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState("0");
 
   const ALL_CONNECTIONS = [...CONNECTIONS, ...DASHED_CONNECTIONS];
 
@@ -172,7 +169,12 @@ const BubbleDiagram = () => {
                 }}
                 onMouseEnter={() => setHovered(dot.id)}
                 onMouseLeave={() => setHovered(null)}
-                onClick={() => setSelectedArea(dot.id)}
+                onClick={() => {
+                  const group = AREA_TO_GROUP[dot.id];
+                  router.push(
+                    `/${locale}/solutions?group=${group}&area=${dot.id}#grid`,
+                  );
+                }}
               >
                 <div className="relative flex flex-col items-center cursor-pointer">
                   {/* Dot glow */}
@@ -255,7 +257,12 @@ const BubbleDiagram = () => {
                 }}
                 onMouseEnter={() => setHovered(bubble.id)}
                 onMouseLeave={() => setHovered(null)}
-                onClick={() => setSelectedArea(bubble.id)}
+                onClick={() => {
+                  const group = AREA_TO_GROUP[bubble.id];
+                  router.push(
+                    `/${locale}/solutions?group=${group}&area=${bubble.id}#grid`,
+                  );
+                }}
               >
                 <div className="group relative flex flex-col items-center gap-2 cursor-pointer">
                   {/* Glow background */}
@@ -317,20 +324,6 @@ const BubbleDiagram = () => {
           </Button>
         </div>
       </div>
-
-      {useLegacy ? (
-        <AreaDetailDialogLegacy
-          selectedArea={selectedArea}
-          onClose={() => setSelectedArea(null)}
-          activeTab={activeTab}
-          onTabChange={setActiveTab}
-        />
-      ) : (
-        <AreaDetailDialog
-          selectedArea={selectedArea}
-          onClose={() => setSelectedArea(null)}
-        />
-      )}
     </section>
   );
 };
