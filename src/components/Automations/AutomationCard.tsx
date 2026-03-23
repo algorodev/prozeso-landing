@@ -28,9 +28,11 @@ export default function AutomationCard({
   const description = tItem.has("description")
     ? tItem("description")
     : automation.description;
-  const metrics: string[] = (tItem.has("metrics")
-    ? (tItem.raw("metrics") as unknown)
-    : automation.metrics) as string[] | undefined as any;
+  const metrics: string[] | undefined = (
+    tItem.has("metrics")
+      ? (tItem.raw("metrics") as string[])
+      : automation.metrics
+  ) as string[] | undefined;
 
   const verticalKeyMap: Record<string, string> = {
     Restaurants: "restaurants",
@@ -64,7 +66,7 @@ export default function AutomationCard({
         <p className="card-subtitle text-muted-foreground mb-4 leading-relaxed line-clamp-2">
           {description}
         </p>
-        {metrics && (metrics as any).length > 0 && (
+        {metrics && metrics.length > 0 && (
           <div className="mb-4 flex flex-col gap-2">
             {(metrics as string[]).slice(0, 3).map((m) => (
               <span

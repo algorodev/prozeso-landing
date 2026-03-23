@@ -28,6 +28,7 @@ export const Header = () => {
   const locale = useLocale();
 
   const navItems: NavItem[] = [
+    { label: t("nav.solutions"), href: "/solutions" },
     { label: t("nav.useCases"), href: "/use-cases" },
     { label: t("nav.about"), href: "/about" },
   ];
@@ -37,7 +38,7 @@ export const Header = () => {
       className="sticky top-0 z-[60] w-full backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b"
       suppressHydrationWarning
     >
-      <div className="mx-auto flex h-16 max-w-screen-2xl items-center gap-3 px-3 sm:px-4">
+      <div className="mx-auto flex h-16 max-w-[1280px] items-center gap-3 px-3 sm:px-4">
         <div className="md:hidden">
           <MobileNav nav={navItems} />
         </div>
