@@ -40,7 +40,6 @@ const AutomationDetailDialog = ({
       }}
     >
       <DialogContent className="sm:max-w-2xl gap-6" closeButtonOutside>
-        {/* Header */}
         <DialogHeader>
           <div className="flex items-start gap-3">
             <area.icon
@@ -69,7 +68,6 @@ const AutomationDetailDialog = ({
           </div>
         </DialogHeader>
 
-        {/* Problem & Solution */}
         {(t.has(`${prefix}.problem`) || t.has(`${prefix}.solution`)) && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {t.has(`${prefix}.problem`) && (
@@ -95,7 +93,6 @@ const AutomationDetailDialog = ({
           </div>
         )}
 
-        {/* Benefits */}
         {t.has(`${prefix}.benefits`) && (
           <div className="space-y-3">
             <span
@@ -122,7 +119,6 @@ const AutomationDetailDialog = ({
           </div>
         )}
 
-        {/* Impact metric */}
         {t.has(`${prefix}.impact`) && t(`${prefix}.impact`) && (
           <div
             className="space-y-3 rounded-lg px-4 py-3"
@@ -166,7 +162,6 @@ const AutomationDetailDialog = ({
           </div>
         )}
 
-        {/* CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <Button asChild size="sm" className="text-xs px-4 py-2 rounded-md">
             <LocalizedLink href="/start">{t("startAssessment")}</LocalizedLink>

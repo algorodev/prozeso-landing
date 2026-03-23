@@ -36,7 +36,6 @@ const BubbleDiagram = () => {
   return (
     <section className="relative w-full py-16 md:py-24 px-6 overflow-hidden">
       <div className="container mx-auto max-w-[1280px]">
-        {/* Section header */}
         <div className="mb-10 lg:mb-16">
           <motion.h2
             className="font-sora text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter mb-6 text-balance"
@@ -62,7 +61,6 @@ const BubbleDiagram = () => {
           </motion.p>
         </div>
 
-        {/* Diagram container — horizontal */}
         <motion.div
           className="relative mx-auto aspect-[1] sm:aspect-[20/7] max-w-[1280px]"
           initial={{ opacity: 0 }}
@@ -70,7 +68,6 @@ const BubbleDiagram = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {/* SVG connections layer */}
           <svg
             className="absolute inset-0 w-full h-full pointer-events-none"
             viewBox="0 0 100 100"
@@ -118,7 +115,6 @@ const BubbleDiagram = () => {
               );
             })}
 
-            {/* Dashed connections */}
             {DASHED_CONNECTIONS.map(([a, b]) => {
               const from = getPos(a);
               const to = getPos(b);
@@ -147,7 +143,6 @@ const BubbleDiagram = () => {
             })}
           </svg>
 
-          {/* Secondary dots (3) */}
           {SECONDARIES.map((dot, i) => {
             const isDotHovered = hovered === dot.id;
             const isConnected =
@@ -177,7 +172,6 @@ const BubbleDiagram = () => {
                 }}
               >
                 <div className="relative flex flex-col items-center cursor-pointer">
-                  {/* Dot glow */}
                   <div
                     className="absolute -inset-2 rounded-full blur-lg transition-opacity duration-300"
                     style={{
@@ -185,7 +179,6 @@ const BubbleDiagram = () => {
                       opacity: isDotHovered ? 0.12 : 0.04,
                     }}
                   />
-                  {/* Dot circle with icon */}
                   <div
                     className="relative flex h-10 w-10 items-center justify-center rounded-full border backdrop-blur-md transition-all duration-300 sm:h-12 sm:w-12 md:h-14 md:w-14"
                     style={{
@@ -207,7 +200,6 @@ const BubbleDiagram = () => {
                       strokeWidth={1.5}
                     />
                   </div>
-                  {/* Tooltip label — only on hover */}
                   <AnimatePresence>
                     {isDotHovered && (
                       <motion.span
@@ -227,7 +219,6 @@ const BubbleDiagram = () => {
             );
           })}
 
-          {/* Primary bubbles (6) */}
           {PRIMARIES.map((bubble, i) => {
             const isHovered = hovered === bubble.id;
             const isConnected =
@@ -265,7 +256,6 @@ const BubbleDiagram = () => {
                 }}
               >
                 <div className="group relative flex flex-col items-center gap-2 cursor-pointer">
-                  {/* Glow background */}
                   <div
                     className="absolute -inset-3 rounded-full blur-xl transition-opacity duration-300"
                     style={{
@@ -274,7 +264,6 @@ const BubbleDiagram = () => {
                     }}
                   />
 
-                  {/* Bubble circle */}
                   <div
                     className="relative flex h-14 w-14 items-center justify-center rounded-full border backdrop-blur-md transition-all duration-300 sm:h-18 sm:w-18 md:h-22 md:w-22"
                     style={{
@@ -297,7 +286,6 @@ const BubbleDiagram = () => {
                     />
                   </div>
 
-                  {/* Label */}
                   <span
                     className="text-xs font-medium transition-colors duration-300 sm:text-sm whitespace-nowrap"
                     style={{
@@ -314,7 +302,6 @@ const BubbleDiagram = () => {
           })}
         </motion.div>
 
-        {/* View all button */}
         <div className="mt-10 flex justify-center">
           <Button asChild variant="outline" size="lg">
             <LocalizedLink href="/solutions">
