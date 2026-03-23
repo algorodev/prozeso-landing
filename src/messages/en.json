@@ -24,7 +24,8 @@
   },
   "header": {
     "nav": {
-      "useCases": "Use Cases"
+      "useCases": "Use Cases",
+      "about": "About Us"
     },
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
@@ -41,6 +42,7 @@
       "useCases": "Use Cases",
       "automations": "Automations",
       "assessment": "Get Started",
+      "about": "About Us",
       "terms": "Terms & Conditions",
       "privacy": "Privacy Policy",
       "cookies": "Cookie Policy",
@@ -2700,6 +2702,42 @@
           "answer": "All 100+ languages supported. AI auto-detects or buyers choose. Helps close international deals seamlessly."
         }
       ]
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "About Us — Prozeso",
+      "description": "Meet the team behind Prozeso. Born at Google Dublin, we're building AI-powered workflow automation for service businesses."
+    },
+    "hero": {
+      "title": "The story behind <highlight>Prozeso</highlight>",
+      "subtitle": "We met at Google's offices in Dublin with a shared vision: making AI-powered automation accessible to every service business. On October 7, 2025, Prozeso was born.",
+      "originTitle": "Where it all began",
+      "originText": "It started with a conversation at Google's Dublin offices. Three professionals from different backgrounds — marketing, engineering, and sales — realized that service businesses were being left behind in the automation revolution. While large corporations had access to sophisticated tools, small and medium businesses were still stuck with manual processes. That day, we decided to change that. On October 7, 2025, we officially launched Prozeso with a clear mission: bring intelligent automation to the businesses that need it most."
+    },
+    "team": {
+      "title": "The team",
+      "subtitle": "Three co-founders, one mission: empowering service businesses with AI.",
+      "ceo": {
+        "name": "Cristian Guzman",
+        "role": "CEO",
+        "description": "Leads the vision and growth strategy, connecting Prozeso with the businesses that need it most."
+      },
+      "cto": {
+        "name": "Alvaro Garcia",
+        "role": "CTO",
+        "description": "Architects the technology behind Prozeso, turning complex AI into simple, powerful tools."
+      },
+      "sales": {
+        "name": "Carles Vineta",
+        "role": "Sales Strategist",
+        "description": "Designs the go-to-market strategy, ensuring Prozeso reaches the right customers at the right time."
+      },
+      "linkedin": "View LinkedIn profile"
+    },
+    "cta": {
+      "title": "Ready to automate your business?",
+      "subtitle": "Start your free assessment and discover how Prozeso can transform your operations."
     }
   }
 }

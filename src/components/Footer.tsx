@@ -63,6 +63,14 @@ const Footer = () => {
               <ul className="space-y-3 text-sm">
                 <li>
                   <LocalizedLink
+                    href="/about"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.about")}
+                  </LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink
                     href="/legal/terms"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >

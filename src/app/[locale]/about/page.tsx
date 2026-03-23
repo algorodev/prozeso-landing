@@ -1,0 +1,52 @@
+import type { Metadata } from "next";
+import Hero from "@/components/About/Hero";
+import Team from "@/components/About/Team";
+import FinalCTA from "@/components/Home/FinalCTA";
+import { locales } from "@/i18n/config";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const url = `${base}/${locale}/about`;
+
+  const title =
+    locale === "es" ? "Sobre Nosotros — Prozeso" : "About Us — Prozeso";
+
+  const description =
+    locale === "es"
+      ? "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin y construimos automatización de flujos de trabajo con IA para negocios de servicios."
+      : "Meet the team behind Prozeso. Born at Google Dublin, we're building AI-powered workflow automation for service businesses.";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        locales.map((l) => [l, `${base}/${l}/about`]),
+      ),
+    },
+    openGraph: {
+      type: "website",
+      url,
+      title,
+      description,
+      locale: locale === "es" ? "es_ES" : "en_US",
+    },
+  };
+}
+
+export default function AboutPage() {
+  return (
+    <div>
+      <Hero />
+      <Team />
+      <FinalCTA />
+    </div>
+  );
+}

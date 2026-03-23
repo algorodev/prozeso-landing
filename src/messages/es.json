@@ -24,7 +24,8 @@
   },
   "header": {
     "nav": {
-      "useCases": "Casos de Uso"
+      "useCases": "Casos de Uso",
+      "about": "Sobre Nosotros"
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
@@ -41,6 +42,7 @@
       "useCases": "Casos de Uso",
       "automations": "Automatizaciones",
       "assessment": "Comenzar",
+      "about": "Sobre Nosotros",
       "terms": "Términos y Condiciones",
       "privacy": "Política de Privacidad",
       "cookies": "Política de Cookies",
@@ -2704,6 +2706,42 @@
           "answer": "Más de 100 idiomas soportados. Autodetección o elección. Facilita cierres con clientes internacionales."
         }
       ]
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Sobre Nosotros — Prozeso",
+      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin y construimos automatización de flujos de trabajo con IA para negocios de servicios."
+    },
+    "hero": {
+      "title": "La historia detrás de <highlight>Prozeso</highlight>",
+      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión compartida: hacer que la automatización con IA sea accesible para cada negocio de servicios. El 7 de octubre de 2025, nació Prozeso.",
+      "originTitle": "Donde todo empezó",
+      "originText": "Todo comenzó con una conversación en las oficinas de Google en Dublin. Tres profesionales de distintos campos — marketing, ingeniería y ventas — se dieron cuenta de que los negocios de servicios se estaban quedando atrás en la revolución de la automatización. Mientras las grandes corporaciones tenían acceso a herramientas sofisticadas, las pequeñas y medianas empresas seguían atrapadas en procesos manuales. Ese día decidimos cambiarlo. El 7 de octubre de 2025, lanzamos oficialmente Prozeso con una misión clara: llevar la automatización inteligente a los negocios que más la necesitan."
+    },
+    "team": {
+      "title": "El equipo",
+      "subtitle": "Tres cofundadores, una misión: empoderar a los negocios de servicios con IA.",
+      "ceo": {
+        "name": "Cristian Guzman",
+        "role": "CEO",
+        "description": "Lidera la visión y la estrategia de crecimiento, conectando Prozeso con los negocios que más lo necesitan."
+      },
+      "cto": {
+        "name": "Alvaro Garcia",
+        "role": "CTO",
+        "description": "Diseña la tecnología detrás de Prozeso, convirtiendo IA compleja en herramientas simples y poderosas."
+      },
+      "sales": {
+        "name": "Carles Vineta",
+        "role": "Sales Strategist",
+        "description": "Diseña la estrategia comercial, asegurando que Prozeso llegue a los clientes adecuados en el momento justo."
+      },
+      "linkedin": "Ver perfil de LinkedIn"
+    },
+    "cta": {
+      "title": "¿Listo para automatizar tu negocio?",
+      "subtitle": "Comienza tu evaluación gratuita y descubre cómo Prozeso puede transformar tus operaciones."
     }
   }
 }
