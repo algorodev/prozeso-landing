@@ -24,6 +24,7 @@
   },
   "header": {
     "nav": {
+      "solutions": "Solutions",
       "useCases": "Use Cases",
       "about": "About Us"
     },
@@ -40,7 +41,7 @@
     },
     "links": {
       "useCases": "Use Cases",
-      "automations": "Automations",
+      "solutions": "Solutions",
       "assessment": "Get Started",
       "about": "About Us",
       "terms": "Terms & Conditions",
@@ -56,13 +57,13 @@
   },
   "solutions": {
     "hero": {
-      "title": "Solutions for your industry",
-      "subtitle": "We build automations tailored to how your business actually works."
+      "title": "Our <primary>Solutions</primary>",
+      "subtitle": "AI-powered workflows designed for service businesses. Mix and match to create your perfect automation stack."
     },
     "cta": "Start free assessment",
     "moreComing": {
       "title": "More industries coming...",
-      "desc": "We’re expanding into new sectors soon. Tell us about yours and we’ll tailor automations to fit."
+      "desc": "We're expanding into new sectors soon. Tell us about yours and we'll tailor automations to fit."
     },
     "verticals": {
       "restaurants": {
@@ -78,7 +79,7 @@
         "title": "Hair & Beauty",
         "desc": "Keep your chair booked out with smooth bookings, reschedules and confirmations that run in the background.",
         "highlights": [
-          "Clients book when it suits them, not when you’re free to answer",
+          "Clients book when it suits them, not when you're free to answer",
           "Fewer gaps in the agenda and last-minute surprises",
           "Less admin on WhatsApp and more time with clients"
         ]
@@ -94,7 +95,7 @@
       },
       "hotels": {
         "title": "Hotels",
-        "desc": "Turn enquiries into stays with fast answers and a smoother path from “Do you have rooms?” to “See you soon”.",
+        "desc": "Turn enquiries into stays with fast answers and a smoother path from \"Do you have rooms?\" to \"See you soon\".",
         "highlights": [
           "Guests get quick responses about availability and details",
           "Less back-and-forth for simple questions and changes",

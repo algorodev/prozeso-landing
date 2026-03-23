@@ -3,18 +3,18 @@
 import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AREAS } from "@/components/Home/BubbleDiagram/constants";
-import type { ActiveFilter } from "./AutomationSuiteGrid";
 import { COLOR_GROUPS } from "./constants";
+import type { ActiveFilter } from "./SolutionsGrid";
 
-type AutomationSuiteSidebarProps = {
+type SolutionsSidebarProps = {
   activeFilter: ActiveFilter;
   onFilterChange: (filter: ActiveFilter) => void;
 };
 
-export default function AutomationSuiteSidebar({
+export default function SolutionsSidebar({
   activeFilter,
   onFilterChange,
-}: AutomationSuiteSidebarProps) {
+}: SolutionsSidebarProps) {
   const t = useTranslations("home.automationSuite");
 
   return (

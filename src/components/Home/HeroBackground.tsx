@@ -315,7 +315,7 @@ export default function HeroBackground() {
     <div
       ref={containerRef}
       aria-hidden="true"
-      className="absolute inset-0 overflow-hidden"
+      className="absolute inset-0 overflow-hidden opacity-40 sm:opacity-100"
     >
       <div
         className="
