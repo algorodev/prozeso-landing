@@ -1,6 +1,6 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { defaultLocale, locales } from "@/i18n/config";
+import { defaultLocale, type Locale, locales } from "@/i18n/config";
 
 async function detectLocale() {
   const headersStore = await headers();
@@ -8,8 +8,8 @@ async function detectLocale() {
   if (!acceptLang) return defaultLocale;
 
   const preferred = acceptLang.split(",")[0]?.split("-")[0];
-  return locales.includes(preferred as any)
-    ? (preferred as any)
+  return locales.includes(preferred as Locale)
+    ? (preferred as Locale)
     : defaultLocale;
 }
 

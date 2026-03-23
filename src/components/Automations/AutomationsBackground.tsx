@@ -173,8 +173,14 @@ export default function AutomationsBackground() {
     };
 
     const applyEnter = (el: HTMLElement) => {
-      if ((el as any)._autoBgHoverApplied) return;
-      (el as any)._autoBgHoverApplied = true;
+      if (
+        (el as HTMLElement & { _autoBgHoverApplied?: boolean })
+          ._autoBgHoverApplied
+      )
+        return;
+      (
+        el as HTMLElement & { _autoBgHoverApplied?: boolean }
+      )._autoBgHoverApplied = true;
       el.style.zIndex = "5";
       if (!el.dataset.opacity) {
         el.dataset.opacity = getComputedStyle(el).opacity || "1";
@@ -187,8 +193,14 @@ export default function AutomationsBackground() {
     };
 
     const applyLeave = (el: HTMLElement) => {
-      if (!(el as any)._autoBgHoverApplied) return;
-      (el as any)._autoBgHoverApplied = false;
+      if (
+        !(el as HTMLElement & { _autoBgHoverApplied?: boolean })
+          ._autoBgHoverApplied
+      )
+        return;
+      (
+        el as HTMLElement & { _autoBgHoverApplied?: boolean }
+      )._autoBgHoverApplied = false;
       el.style.zIndex = "";
       el.style.boxShadow = "";
       if (el.dataset.opacity) {
@@ -254,9 +266,9 @@ export default function AutomationsBackground() {
 
     return () => {
       if (rafId != null) cancelAnimationFrame(rafId);
-      window.removeEventListener("mousemove", onMove as any);
-      window.removeEventListener("scroll", onScrollOrResize as any);
-      window.removeEventListener("resize", onScrollOrResize as any);
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("scroll", onScrollOrResize);
+      window.removeEventListener("resize", onScrollOrResize);
       hovered.forEach(applyLeave);
     };
   }, []);
@@ -308,8 +320,13 @@ export default function AutomationsBackground() {
             data-opacity={opacity}
             onPointerEnter={(e) => {
               const el = e.currentTarget as HTMLDivElement;
-              if (!(el as any)._autoBgHoverApplied) {
-                (el as any)._autoBgHoverApplied = true;
+              if (
+                !(el as HTMLElement & { _autoBgHoverApplied?: boolean })
+                  ._autoBgHoverApplied
+              ) {
+                (
+                  el as HTMLElement & { _autoBgHoverApplied?: boolean }
+                )._autoBgHoverApplied = true;
                 el.style.zIndex = "5";
                 if (!el.dataset.opacity) el.dataset.opacity = String(opacity);
                 const tint =
@@ -321,7 +338,9 @@ export default function AutomationsBackground() {
             }}
             onPointerLeave={(e) => {
               const el = e.currentTarget as HTMLDivElement;
-              (el as any)._autoBgHoverApplied = false;
+              (
+                el as HTMLElement & { _autoBgHoverApplied?: boolean }
+              )._autoBgHoverApplied = false;
               el.style.zIndex = "";
               el.style.boxShadow = "";
               el.style.opacity = String(el.dataset.opacity || opacity);

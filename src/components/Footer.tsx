@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer className="py-16 px-6 border-t border-border">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1280px]">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="space-y-4">
             <LocalizedLink
@@ -32,18 +32,18 @@ const Footer = () => {
               <ul className="space-y-3 text-sm">
                 <li>
                   <LocalizedLink
-                    href="/use-cases"
+                    href="/solutions"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {t("links.useCases")}
+                    {t("links.solutions")}
                   </LocalizedLink>
                 </li>
                 <li>
                   <LocalizedLink
-                    href="/automations"
+                    href="/use-cases"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {t("links.automations")}
+                    {t("links.useCases")}
                   </LocalizedLink>
                 </li>
                 <li>

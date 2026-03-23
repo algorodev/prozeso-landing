@@ -24,6 +24,7 @@
   },
   "header": {
     "nav": {
+      "solutions": "Solutions",
       "useCases": "Use Cases"
     },
     "cta": "Get started",
@@ -39,7 +40,7 @@
     },
     "links": {
       "useCases": "Use Cases",
-      "automations": "Automations",
+      "solutions": "Solutions",
       "assessment": "Get Started",
       "terms": "Terms & Conditions",
       "privacy": "Privacy Policy",
@@ -54,13 +55,13 @@
   },
   "solutions": {
     "hero": {
-      "title": "Solutions for your industry",
-      "subtitle": "We build automations tailored to how your business actually works."
+      "title": "Our <primary>Solutions</primary>",
+      "subtitle": "AI-powered workflows designed for service businesses. Mix and match to create your perfect automation stack."
     },
     "cta": "Start free assessment",
     "moreComing": {
       "title": "More industries coming...",
-      "desc": "We’re expanding into new sectors soon. Tell us about yours and we’ll tailor automations to fit."
+      "desc": "We're expanding into new sectors soon. Tell us about yours and we'll tailor automations to fit."
     },
     "verticals": {
       "restaurants": {
@@ -76,7 +77,7 @@
         "title": "Hair & Beauty",
         "desc": "Keep your chair booked out with smooth bookings, reschedules and confirmations that run in the background.",
         "highlights": [
-          "Clients book when it suits them, not when you’re free to answer",
+          "Clients book when it suits them, not when you're free to answer",
           "Fewer gaps in the agenda and last-minute surprises",
           "Less admin on WhatsApp and more time with clients"
         ]
@@ -92,7 +93,7 @@
       },
       "hotels": {
         "title": "Hotels",
-        "desc": "Turn enquiries into stays with fast answers and a smoother path from “Do you have rooms?” to “See you soon”.",
+        "desc": "Turn enquiries into stays with fast answers and a smoother path from \"Do you have rooms?\" to \"See you soon\".",
         "highlights": [
           "Guests get quick responses about availability and details",
           "Less back-and-forth for simple questions and changes",
@@ -2039,6 +2040,385 @@
     },
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
+    },
+    "automationSuite": {
+      "title": "<highlight>Every area</highlight> of your business, automated",
+      "subtitle": "No friction. No manual intervention. Measurable results.",
+      "close": "Close",
+      "problemLabel": "Problem",
+      "solutionLabel": "Solution",
+      "benefitsLabel": "Key benefits",
+      "impactLabel": "Expected impact",
+      "automationCount": "{count} automations",
+      "automationPickCta": "Choose the ones that best fit your needs",
+      "viewAll": "View all automations",
+      "mobileFilter": "Filter",
+      "mobileFilterTitle": "Filter automations",
+      "searchPlaceholder": "Search automation...",
+      "startAssessment": "Start assessment",
+      "learnMore": "Learn more",
+      "areas": {
+        "bookings": {
+          "name": "Bookings",
+          "tagline": "Fill your schedule. Effortlessly.",
+          "heroMetric": "↑ 40%",
+          "heroMetricLabel": "bookings captured",
+          "automations": {
+            "0": {
+              "name": "Receptionist AI",
+              "subtitle": "Voice & WhatsApp",
+              "problem": "Businesses lose between 30% and 40% of booking requests outside of business hours.",
+              "solution": "A 24/7 AI agent handles bookings via voice (phone call) and WhatsApp. It understands natural language, confirms the details, and logs the appointment directly in the business calendar — no human intervention needed.",
+              "benefits": "24/7 availability · Includes weekends and holidays · Response in seconds · Multilingual · Integrates with Google Calendar, Calendly, and CRM",
+              "impact": "↑ 40% bookings captured outside business hours"
+            },
+            "1": {
+              "name": "Appointment Reminder",
+              "subtitle": "SMS / Email / WhatsApp",
+              "problem": "Unjustified no-shows represent an average loss of 15-20% of revenue in appointment or booking-based businesses.",
+              "solution": "A multichannel reminder system that contacts the client 48 hours, 24 hours, and 1 hour before the appointment. The client confirms, cancels, or reschedules with a single click — no need to call.",
+              "benefits": "Automatic waitlist management · Up to 80% reduction in unjustified no-shows · No manual intervention from reception staff",
+              "impact": "↓ 80% unjustified no-shows"
+            },
+            "2": {
+              "name": "Review Booster",
+              "subtitle": "Online Reputation",
+              "problem": "Only 5% of satisfied clients leave a review spontaneously, while 60% of unsatisfied ones do.",
+              "solution": "After each appointment or service, the system automatically sends a personalized message to the client. If the rating is positive, it redirects them to Google or Trustpilot. If negative, it channels them to an internal feedback channel to act before it gets published.",
+              "benefits": "5× more positive reviews on Google · Early dissatisfaction detection · Improved local SEO ranking · Boost in organic referrals",
+              "impact": "× 5 positive reviews on Google in 90 days"
+            },
+            "3": {
+              "name": "Smart Reschedule",
+              "subtitle": "Smart Calendar",
+              "problem": "Every cancellation means idle time that generates no revenue. Filling those gaps manually is slow and depends on staff availability.",
+              "solution": "When a cancellation is detected, the system automatically notifies waitlisted clients in real time. If no one takes the slot, it fills it with prioritized internal tasks.",
+              "benefits": "70-80% recovery of cancelled slots · Priority experience for waitlisted clients · No manual intervention · Integration with any calendar system",
+              "impact": "↑ 75% cancelled slot recovery"
+            }
+          }
+        },
+        "sales": {
+          "name": "Sales",
+          "tagline": "Automations that empower your sales team, from prospecting to closing, eliminating repetitive tasks and accelerating the sales cycle.",
+          "heroMetric": "× 10",
+          "heroMetricLabel": "prospecting volume",
+          "automations": {
+            "0": {
+              "name": "Outreach AI",
+              "subtitle": "Prospecting",
+              "problem": "Manual prospecting on LinkedIn, email, and phone consumes 40% of sales time with inconsistent results.",
+              "solution": "An automatic prospecting system that identifies leads matching your ideal customer profile, generates AI-personalized messages, and launches multichannel sequences. Every reply automatically updates your CRM.",
+              "benefits": "Ability to contact 10x more prospects in the same time · Personalization at scale without sacrificing message quality · Automatic A/B testing on sequences and messages",
+              "impact": "× 10 prospecting volume without growing the team"
+            },
+            "1": {
+              "name": "Lead Scoring",
+              "subtitle": "CRM",
+              "problem": "Reps waste time on cold leads while hot leads don't receive immediate attention, reducing conversion rates.",
+              "solution": "An automatic scoring engine that analyzes lead behavior (pages visited, emails opened, downloads) and scores them in real time. Automatic alert to the rep when a lead crosses the closing threshold so they can reach out at peak receptivity.",
+              "benefits": "Sales team works only with ready-to-buy leads · Fully objective pipeline prioritization · Shorter sales cycle by acting at key moments",
+              "impact": "↑ 35% lead-to-close conversion rate"
+            },
+            "2": {
+              "name": "Follow-up Bot",
+              "subtitle": "Nurturing",
+              "problem": "80% of sales require between 5 and 12 follow-ups. Most reps give up after 1-2 attempts.",
+              "solution": "An intelligent follow-up system that detects silent leads in your CRM and launches personalized reactivation sequences via email, WhatsApp, or LinkedIn, adapting to the context of each lead's previous conversation.",
+              "benefits": "No lead is lost due to lack of follow-up · Contextual messages that pick up the conversation · Auto-disengagement after N unanswered attempts",
+              "impact": "↑ 25% inactive lead recovery"
+            },
+            "3": {
+              "name": "Auto Proposal",
+              "subtitle": "Closing",
+              "problem": "Personalized commercial proposals can take between 2 and 4 hours per client, delaying closing and the perception of agility.",
+              "solution": "With one click from your CRM, the system extracts client data, the service of interest, and conversation context to generate a professional PDF proposal, personalized with the client's business context.",
+              "benefits": "Proposal time reduced from hours to minutes · Visual and messaging consistency across all proposals · Automatic sending with open and read tracking",
+              "impact": "↓ 90% proposal preparation time"
+            }
+          }
+        },
+        "finance": {
+          "name": "Finance",
+          "tagline": "Automations that eliminate financial administrative burden, guarantee timely collection, and offer full visibility into the company's financial health.",
+          "heroMetric": "↓ 40%",
+          "heroMetricLabel": "late invoices",
+          "automations": {
+            "0": {
+              "name": "Auto Invoicing",
+              "subtitle": "Accounting",
+              "problem": "Manual invoicing is slow, error-prone, and creates collection delays with a direct impact on cash flow.",
+              "solution": "When a service is completed, a project milestone approved, or a delivery confirmed, the system generates the invoice, sends it to the client, logs it in accounting, and updates collection status in real time.",
+              "benefits": "Instant invoicing with no human intervention · Automatic sync with your accounting software (Holded, QuickBooks, Xero, etc.) · Total elimination of manual errors in tax data",
+              "impact": "↓ 10 days in average collection cycle"
+            },
+            "1": {
+              "name": "Collections & Reminders",
+              "subtitle": "Cash Flow",
+              "problem": "30% of invoices are paid late simply because the client forgot. Chasing payments manually is uncomfortable and consumes hours from the finance team.",
+              "solution": "An escalating sequence of automatic reminders that adapts to each invoice's status: friendly, formal, and urgent. If there's no response, it escalates to the finance manager with full context.",
+              "benefits": "40% reduction in DSO (Days Sales Outstanding) · No awkward conversations with clients · Real-time pending invoices dashboard with cash flow forecasting",
+              "impact": "↓ 40% late-paid invoices"
+            },
+            "2": {
+              "name": "Bank Reconciliation",
+              "subtitle": "Financial Control",
+              "problem": "Manual bank reconciliation can take days each month and is one of the highest error-risk tasks in the accounting cycle.",
+              "solution": "Real-time connection between your bank account and accounting software. The system automatically matches every transaction against issued and received invoices, identifies discrepancies, and alerts on unrecognized movements.",
+              "benefits": "Real-time reconciliation, not end-of-month · Automatic detection of discrepancies and suspicious movements · Books always up to date without manual intervention",
+              "impact": "↓ 70% monthly close time"
+            },
+            "3": {
+              "name": "Budget Alerts",
+              "subtitle": "Budgeting",
+              "problem": "Departments exceed their budgets without knowing until month-end close, when there's no room to react.",
+              "solution": "A real-time spend monitoring system that alerts at 70%, 85%, and 100% of budget to the department manager and CFO, with detailed breakdowns and end-of-month projections.",
+              "benefits": "Full real-time spend visibility · Ability to react before exceeding budget · Culture of financial accountability across the organization",
+              "impact": "↑ 95% of months within planned budget"
+            }
+          }
+        },
+        "marketing": {
+          "name": "Marketing",
+          "tagline": "Automations that multiply the reach and impact of your marketing team without increasing resources, from content creation to multichannel campaign management.",
+          "heroMetric": "× 10",
+          "heroMetricLabel": "content volume",
+          "automations": {
+            "0": {
+              "name": "Content Factory AI",
+              "subtitle": "Content",
+              "problem": "Creating quality content for blog, social media, and newsletters consumes between 15 and 25 hours per week from the marketing team.",
+              "solution": "An automated pipeline that, from a topic or keyword, generates SEO articles, adapts them to LinkedIn, Instagram, and Twitter, creates the newsletter subject and body, and schedules publication at peak engagement times.",
+              "benefits": "10x content production without growing the team · Consistent voice and tone across all channels · Automatic SEO optimization on every piece of content",
+              "impact": "× 10 published content volume"
+            },
+            "1": {
+              "name": "Email Marketing Automation",
+              "subtitle": "Email",
+              "problem": "Generic email campaigns have 15-20% open rates. Manual personalization at scale is impossible.",
+              "solution": "An email marketing system with dynamic segmentation and AI-powered personalization. Each subscriber receives content tailored to their behavior. Automated sequences triggered by user actions.",
+              "benefits": "Open rate increase from 15% to 35-40% · Automatic 24/7 nurturing without intervention · Continuous A/B testing on subjects, content, and timing",
+              "impact": "↑ 120% in email-attributed revenue"
+            },
+            "2": {
+              "name": "Social Listening & Response",
+              "subtitle": "Community",
+              "problem": "53% of clients expect a response on social media in under 1 hour. Monitoring and responding manually is unsustainable at scale.",
+              "solution": "Continuous automatic monitoring of mentions, comments, and direct messages across all networks. AI classifies by sentiment and priority, automatically answers FAQs, and escalates to the social & community manager only what requires human attention.",
+              "benefits": "Response time reduced from hours to minutes · Early reputation crisis detection · Real-time sentiment dashboard",
+              "impact": "↓ 85% community management time"
+            },
+            "3": {
+              "name": "Campaign ROI Tracker",
+              "subtitle": "Analytics",
+              "problem": "Measuring the real ROI of each campaign requires manually cross-referencing data from multiple platforms. Most teams don't know which campaigns are profitable.",
+              "solution": "A centralized dashboard that automatically aggregates data from Google Ads, Meta, LinkedIn, email, and organic in real time. Calculates cost per lead, CPA, and ROAS per channel. Generates alerts when a campaign falls below the profitability threshold.",
+              "benefits": "360 view of marketing performance in one place · Automatic alerts on performance drops · Weekly reports generated and sent without intervention",
+              "impact": "↑ 30% marketing budget efficiency"
+            }
+          }
+        },
+        "customerSuccess": {
+          "name": "Customer Success",
+          "tagline": "Automations that maximize retention, customer lifetime value, and satisfaction, turning clients into brand ambassadors.",
+          "heroMetric": "↓ 50%",
+          "heroMetricLabel": "early churn",
+          "automations": {
+            "0": {
+              "name": "Client Onboarding Flow",
+              "subtitle": "Activation",
+              "problem": "Poor onboarding is the leading cause of churn in the first 90 days. 60% of clients who leave do so because they never properly used the product or service.",
+              "solution": "An automated onboarding flow that guides new clients step by step from sign-up: personalized welcome, guided setup, training at key milestones, automatic check-ins, and Customer Success Manager assignment at the right moment.",
+              "benefits": "50% churn reduction in the first 90 days · Accelerated time-to-value for every new client · Consistent and scalable onboarding experience",
+              "impact": "↓ 50% churn in the first 90 days"
+            },
+            "1": {
+              "name": "Churn Prediction & Rescue",
+              "subtitle": "Retention",
+              "problem": "By the time a client says they're leaving, it's already too late to retain them. Warning signs exist weeks before, but go unnoticed.",
+              "solution": "A predictive model that analyzes early warning signals: drop in product usage, reduced interactions, unresolved tickets, and login pattern changes. When the risk threshold is exceeded, it automatically triggers a personalized rescue protocol.",
+              "benefits": "At-risk client detection 30-60 days before churn · CRM protocols alerting the retention team",
+              "impact": "↓ 40% annual churn rate"
+            },
+            "2": {
+              "name": "Auto Upsell & Cross-sell",
+              "subtitle": "Expansion",
+              "problem": "70% of expansion revenue is lost because the right moment to offer a higher plan or additional service is not identified.",
+              "solution": "A system that monitors each client's behavior and usage milestones. When they hit plan limits, accumulate success with a service, or have gone X months without expanding, it automatically launches the most relevant expansion offer for their profile.",
+              "benefits": "Expansion opportunities identified and triggered automatically · Personalized offer at the moment of greatest receptivity",
+              "impact": "↑ 30% Net Revenue Retention (NRR)"
+            },
+            "3": {
+              "name": "NPS & Feedback Loop",
+              "subtitle": "Satisfaction",
+              "problem": "Satisfaction surveys are done once a year, when problems have already become entrenched. There's no real visibility into how clients feel, nor the ability to respond in time.",
+              "solution": "Continuous NPS and satisfaction measurement at key points in the cycle: after onboarding, each support interaction, renewals, and usage milestones. Negative responses trigger an immediate CSM alert. Positive ones automatically request a testimonial or referral.",
+              "benefits": "Real-time satisfaction pulse, not annual · Loop closed with every dissatisfied client within 24 hours · Automatic testimonial generation from promoter clients · Correlation between NPS and retention metrics",
+              "impact": "↑ 25 NPS points in 6 months"
+            }
+          }
+        },
+        "operations": {
+          "name": "Operations",
+          "tagline": "Automations that optimize the operational chain, supplier management, and logistics, reducing costs and eliminating bottlenecks in day-to-day processes.",
+          "heroMetric": "↑ 98%",
+          "heroMetricLabel": "SLA compliance",
+          "automations": {
+            "0": {
+              "name": "Vendor Management",
+              "subtitle": "Procurement",
+              "problem": "Manual vendor management (RFQs, comparisons, orders, follow-ups) creates inconsistencies in terms and pricing.",
+              "solution": "An automated flow that handles the full procurement cycle: requests quotes from approved vendors, automatically compares offers, generates purchase orders with threshold-based approvals, and tracks deliveries and invoices.",
+              "benefits": "50% reduction in procurement cycle · Negotiated terms consistently applied · Full traceability of every order from request to delivery",
+              "impact": "↓ 50% vendor procurement cycle"
+            },
+            "1": {
+              "name": "Delivery Tracking",
+              "subtitle": "Logistics",
+              "problem": "30% of logistics incidents are detected after the client has already complained. Lack of proactive visibility generates claims, returns, and loss of trust.",
+              "solution": "A centralized tracking system that aggregates the real-time status of all shipments across all carriers in a single dashboard. Detects delays and lost shipments, proactively notifies the client, and triggers the incident protocol before they ask.",
+              "benefits": "360 visibility of all shipments in a single dashboard · Proactive client communication on any incident · Automatic carrier KPIs for future negotiations",
+              "impact": "↓ 60% claims from logistics incidents"
+            },
+            "2": {
+              "name": "Preventive Maintenance",
+              "subtitle": "Assets",
+              "problem": "Unexpected machinery or equipment breakdowns cost between 5 and 10 times more than preventive maintenance.",
+              "solution": "A maintenance management system that automatically schedules preventive reviews based on usage, operating hours, or calendar. Generates work orders, assigns the available technician, records the history, and alerts when an asset nears end of life.",
+              "benefits": "70% reduction in unexpected breakdowns · Automatic warranty and regulatory compliance · Complete per-asset history accessible in one click",
+              "impact": "↓ 70% unexpected breakdowns in critical assets"
+            },
+            "3": {
+              "name": "SLA & Auto Escalation",
+              "subtitle": "Service Quality",
+              "problem": "SLA breaches go unnoticed until the client complains, when the reputational and financial damage is already done.",
+              "solution": "A real-time SLA monitoring system that tracks every ticket or task with a defined time commitment. When a request approaches the deadline unresolved, it triggers escalating reminders and automatically escalates to the next level with full context.",
+              "benefits": "SLA compliance above 98% · Automatic escalation without relying on human initiative · Full traceability of every active commitment's status",
+              "impact": "↑ 98% SLA compliance"
+            }
+          }
+        },
+        "management": {
+          "name": "Management",
+          "tagline": "Automations that digitize and optimize internal processes for team management, operations, and data-driven decision making.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {
+            "0": {
+              "name": "Geolocated Check-in",
+              "subtitle": "HR / Compliance",
+              "problem": "Manual attendance tracking is prone to errors and fraud. Labor inspections require reliable digital time records.",
+              "solution": "An automatic check-in system with real-time GPS validation. Employees clock in from their phone and the system instantly verifies location and time. Generates alerts for absences or anomalies.",
+              "benefits": "100% compliance with time-tracking regulations · Attendance fraud and irregularity detection · Automatic reports by employee, site, and period · Direct integration with payroll and shift management",
+              "impact": "100% regulatory compliance + 0 attendance fraud"
+            },
+            "1": {
+              "name": "Task Dispatcher",
+              "subtitle": "Productivity",
+              "problem": "Manual task assignment consumes management time and often doesn't account for each employee's actual workload.",
+              "solution": "An intelligent dispatcher that distributes tasks based on real-time availability, skills, priority, and current workload. Detects bottlenecks, automatically redistributes, and notifies each assigned employee.",
+              "benefits": "60% reduction in time spent on manual assignment · Balanced workloads across the team · Automatic prioritization and reassignment on blockers",
+              "impact": "↓ 60% operational coordination time"
+            },
+            "2": {
+              "name": "Auto Report",
+              "subtitle": "Business Intelligence",
+              "problem": "Preparing weekly or monthly KPI reports takes between 2 and 8 hours per report, depending on business complexity.",
+              "solution": "An automatic generator that gathers data from all your connected sources (CRM, ERP, Google Analytics, spreadsheets, etc.), cross-references them, and produces a ready-to-send document automatically to configured recipients.",
+              "benefits": "Reports delivered without human intervention · Data always up to date and consistent · Customizable formats by department or executive",
+              "impact": "↓ 8 hours saved per report / week"
+            },
+            "3": {
+              "name": "Onboarding Flow",
+              "subtitle": "HR",
+              "problem": "Manual onboarding of new employees is inconsistent, slow, and creates a negative experience that impacts retention and initial productivity.",
+              "solution": "A fully automated onboarding flow that, from the moment a new hire is registered, sends documentation, assigns equipment, schedules training, and generates access credentials.",
+              "benefits": "Onboarding time reduced from weeks to days · Consistent experience for all new employees · Automatic progress tracking during the first 90 days",
+              "impact": "↓ 75% administrative onboarding time"
+            }
+          }
+        },
+        "hr": {
+          "name": "HR & Recruitment",
+          "tagline": "Automations that accelerate talent acquisition, improve the candidate experience, and free the HR team from repetitive administrative tasks.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {
+            "0": {
+              "name": "AI Resume Screening",
+              "subtitle": "Selection",
+              "problem": "An active hiring process generates between 50 and 200 resumes. Screening them manually takes 2-4 hours per position and is subject to bias.",
+              "solution": "An automatic screening system that analyzes each resume, compares it against the position profile, and generates a relevance-ranked list of candidates. Filters by experience, skills, education, and cultural fit.",
+              "benefits": "2-4 hours saved on screening per position · Objective evaluation free from unconscious bias · Top 10 candidates ranked in under 24 hours · Duplicate and previously-seen profile filtering",
+              "impact": "↓ 60% screening time per position"
+            },
+            "1": {
+              "name": "Candidate Nurturing",
+              "subtitle": "Candidate Experience",
+              "problem": "60% of candidates abandon a hiring process due to lack of communication. The employer brand deteriorates with every ignored candidate.",
+              "solution": "An automated flow that keeps candidates informed at every stage: application receipt confirmation, phase progression, post-interview feedback, and personalized final result communication.",
+              "benefits": "Process abandonment rate reduced by 50% · Employer brand strengthened with every process · Automatic personalized feedback to every candidate",
+              "impact": "↓ 50% process completion rate"
+            },
+            "2": {
+              "name": "AI Pre-screening Interview",
+              "subtitle": "Evaluation",
+              "problem": "Phone screening interviews consume 15-30 minutes per candidate. With 50 candidates per position, that's over 15 hours of team time.",
+              "solution": "An AI conversational agent that conducts pre-screening interviews via voice or chat, validating availability, salary expectations, motivation, and core competencies. Generates a structured report per candidate.",
+              "benefits": "Total elimination of manual screening interviews · Standardized and comparable reports across candidates",
+              "impact": "↓ 90% time spent on pre-screening"
+            },
+            "3": {
+              "name": "Automated Offboarding",
+              "subtitle": "Exit Management",
+              "problem": "Reactively managed employee departures create security risks, knowledge loss, and legal issues.",
+              "solution": "An offboarding protocol that activates automatically when a departure is registered: access revocation, equipment recovery, automated exit interview, knowledge transfer, and legal compliance checklist.",
+              "benefits": "Zero active accesses for former employees within 24 hours · Legally and documentarily backed process · Systematic knowledge capture before departure · Reduced post-departure security risk",
+              "impact": "100% compliance in exit processes"
+            }
+          }
+        },
+        "stock": {
+          "name": "Inventory",
+          "tagline": "Automations that ensure optimal product availability, eliminate dead stock, and turn inventory management into a predictive, frictionless process.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {
+            "0": {
+              "name": "Auto Replenishment",
+              "subtitle": "Inventory",
+              "problem": "Stockouts cost an average of 4-8% of annual sales. Detecting them manually is usually too late.",
+              "solution": "The system monitors each product's level in real time. When an item falls below the defined threshold, it automatically generates a replenishment order to the supplier with optimal quantities.",
+              "benefits": "Zero stockouts due to lack of monitoring · Purchase orders automatically generated with the right quantities",
+              "impact": "↓ 90% in avoidable stockouts"
+            },
+            "1": {
+              "name": "Stock Alerts & Anomalies",
+              "subtitle": "Inventory Control",
+              "problem": "Discrepancies between physical and recorded stock go unnoticed until an audit or a customer complaint, when the damage is already done.",
+              "solution": "A real-time alert system that automatically detects inventory anomalies: differences between physical and digital stock, unusual movements, shrinkage above normal thresholds, and upcoming expirations. Notifies the responsible person with full context for immediate action.",
+              "benefits": "Discrepancy detection in hours, not months · Loss reduction from theft or administrative errors · Data ready for audits and inventory closings",
+              "impact": ""
+            },
+            "2": {
+              "name": "Dead Stock Liquidation",
+              "subtitle": "Margin Optimization",
+              "problem": "Product sitting for over 90 days ties up capital and takes up space. Most companies detect it late and end up selling at a loss or simply discarding it.",
+              "solution": "Weekly identification of products with low turnover based on age and trend. Before they lose all value, it alerts the sales team to offer progressive discounts, bundles, or liquidation campaigns.",
+              "benefits": "Proactive identification of stock at risk of obsolescence · Partial value recovery before total loss",
+              "impact": "↑ 35% value recovery on stagnant stock"
+            },
+            "3": {
+              "name": "AI Demand Forecasting",
+              "subtitle": "Planning",
+              "problem": "Forecasts based on intuition or simple historical data generate overstock in some products and stockouts in others, penalizing margin and customer satisfaction.",
+              "solution": "A predictive engine that analyzes sales history, seasonality, market trends, planned marketing campaigns, and external factors to automatically generate an optimized purchasing plan.",
+              "benefits": "Lower costs and less tied-up product · Continuous model refinement with each sales cycle",
+              "impact": "↓ 30% capital tied up in inventory"
+            }
+          }
+        }
+      }
     },
     "coreAutomations": {
       "title": "Core <highlight>automations</highlight>",

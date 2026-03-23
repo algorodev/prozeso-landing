@@ -345,7 +345,7 @@ export default function AutomationHeroBackground() {
               className="h-full w-full will-change-transform"
               style={{
                 clipPath: clipPathFor(s.type),
-                transform: `rotate(${s.rotation ?? 0}deg)` as any,
+                transform: `rotate(${s.rotation ?? 0}deg)`,
                 borderRadius: s.type === "circle" ? "9999px" : undefined,
                 background:
                   s.type === "circle"
