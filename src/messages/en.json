@@ -2599,6 +2599,12 @@
           "suffix": " mins",
           "description": "Time saved daily in admin tasks",
           "quote": "Staff freed from phone tag focus on patient care instead of scheduling."
+        },
+        {
+          "stat": "45",
+          "suffix": "%",
+          "description": "Patient satisfaction increase",
+          "quote": "Seamless intake and follow-up makes patients feel heard and cared for."
         }
       ],
       "faqs": [

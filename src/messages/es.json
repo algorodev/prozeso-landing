@@ -2603,6 +2603,12 @@
           "suffix": " mins",
           "description": "Tiempo administrativo ahorrado al día",
           "quote": "El equipo, liberado del teléfono, se centra en la atención al paciente."
+        },
+        {
+          "stat": "45",
+          "suffix": "%",
+          "description": "Aumento en la satisfacción del paciente",
+          "quote": "Un proceso de ingreso fluido y seguimiento constante hace que los pacientes se sientan escuchados y bien atendidos."
         }
       ],
       "faqs": [
