@@ -3124,6 +3124,13 @@
       "subtitle": "Comienza tu evaluación gratuita y descubre cómo Prozeso puede transformar tus operaciones."
     }
   },
+  "notFound": {
+    "badge": "404 \u2022 Página no encontrada",
+    "title": "No pudimos encontrar esa página",
+    "description": "La página que buscas puede haber sido movida, eliminada o nunca existió. Revisa la URL o vuelve a la página de inicio.",
+    "cta": "Volver al inicio",
+    "hint": "Si crees que esto es un error, inténtalo de nuevo más tarde o contacta con soporte."
+  },
   "legal": {
     "lastUpdated": "Última actualización: {date}",
     "onThisPage": "En esta página",

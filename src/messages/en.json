@@ -3120,6 +3120,13 @@
       "subtitle": "Start your free assessment and discover how Prozeso can transform your operations."
     }
   },
+  "notFound": {
+    "badge": "404 \u2022 Page not found",
+    "title": "We couldn't find that page",
+    "description": "The page you're looking for may have been moved, deleted, or never existed. Check the URL or go back to the homepage.",
+    "cta": "Go back home",
+    "hint": "If you think this is a mistake, please try again later or contact support."
+  },
   "legal": {
     "lastUpdated": "Last updated: {date}",
     "onThisPage": "On this page",
