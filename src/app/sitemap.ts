@@ -12,8 +12,9 @@ const siteUrl = normalizeBaseUrl(rawBase);
 
 const paths = [
   "",
+  "/about",
   "/automations",
-  "/verticals",
+  "/use-cases",
   "/start",
   "/solutions",
   "/legal/cookies",

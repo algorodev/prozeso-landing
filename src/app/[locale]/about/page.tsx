@@ -14,8 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/about`;
 
-  const title =
-    locale === "es" ? "Sobre Nosotros — Prozeso" : "About Us — Prozeso";
+  const title = locale === "es" ? "Sobre Nosotros" : "About Us";
 
   const description =
     locale === "es"

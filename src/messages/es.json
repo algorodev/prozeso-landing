@@ -131,6 +131,11 @@
       },
       "card": {
         "learnMore": "Ver más"
+      },
+      "notFound": {
+        "title": "Automatización no encontrada",
+        "subtitle": "No pudimos encontrar una automatización con id \"{id}\".",
+        "back": "Volver al catálogo"
       }
     },
     "categories": {
@@ -2598,6 +2603,12 @@
           "suffix": " mins",
           "description": "Tiempo administrativo ahorrado al día",
           "quote": "El equipo, liberado del teléfono, se centra en la atención al paciente."
+        },
+        {
+          "stat": "45",
+          "suffix": "%",
+          "description": "Aumento en la satisfacción del paciente",
+          "quote": "Un proceso de ingreso fluido y seguimiento constante hace que los pacientes se sientan escuchados y bien atendidos."
         }
       ],
       "faqs": [
@@ -3122,6 +3133,157 @@
     "cta": {
       "title": "¿Listo para automatizar tu negocio?",
       "subtitle": "Comienza tu evaluación gratuita y descubre cómo Prozeso puede transformar tus operaciones."
+    }
+  },
+  "notFound": {
+    "badge": "404 \u2022 Página no encontrada",
+    "title": "No pudimos encontrar esa página",
+    "description": "La página que buscas puede haber sido movida, eliminada o nunca existió. Revisa la URL o vuelve a la página de inicio.",
+    "cta": "Volver al inicio",
+    "hint": "Si crees que esto es un error, inténtalo de nuevo más tarde o contacta con soporte."
+  },
+  "legal": {
+    "lastUpdated": "Última actualización: {date}",
+    "onThisPage": "En esta página",
+    "privacy": {
+      "title": "Política de Privacidad",
+      "updatedAt": "3 de noviembre de 2025",
+      "toc": {
+        "overview": "Descripción general",
+        "dataWeCollect": "Datos que recopilamos",
+        "howWeUseData": "Cómo usamos los datos",
+        "sharing": "Compartir tu información",
+        "dataRetention": "Retención de datos",
+        "yourRights": "Tus derechos",
+        "contact": "Contacto"
+      },
+      "overview": {
+        "title": "Descripción general",
+        "text": "Esta Política de Privacidad explica cómo Prozeso (\"nosotros\", \"nos\", \"nuestro\") recopila, usa y comparte información sobre ti cuando utilizas nuestro sitio web y servicios."
+      },
+      "dataWeCollect": {
+        "title": "Datos que recopilamos",
+        "items": [
+          "Información de contacto como nombre, dirección de correo electrónico y número de teléfono.",
+          "Información de uso como páginas visitadas, funciones utilizadas y acciones realizadas.",
+          "Información del dispositivo y registros como dirección IP, tipo de navegador y configuración."
+        ]
+      },
+      "howWeUseData": {
+        "title": "Cómo usamos los datos",
+        "items": [
+          "Para proporcionar, mantener y mejorar nuestros servicios.",
+          "Para comunicarnos contigo, incluyendo mensajes de marketing y transaccionales.",
+          "Para garantizar la seguridad, prevenir el fraude y hacer cumplir nuestras políticas."
+        ]
+      },
+      "sharing": {
+        "title": "Compartir tu información",
+        "text": "No vendemos tu información personal. Podemos compartir información con proveedores de servicios que realizan servicios en nuestro nombre, de acuerdo con contratos que protegen tus datos."
+      },
+      "dataRetention": {
+        "title": "Retención de datos",
+        "text": "Conservamos los datos personales solo durante el tiempo necesario para los fines descritos en esta política, a menos que la ley exija un período de retención más largo."
+      },
+      "yourRights": {
+        "title": "Tus derechos",
+        "text": "Dependiendo de tu ubicación, puedes tener derechos para acceder, corregir, eliminar o restringir el procesamiento de tus datos personales. Contáctanos para ejercer estos derechos."
+      },
+      "contact": {
+        "title": "Contacto",
+        "text": "Las preguntas o solicitudes relacionadas con esta política pueden enviarse a privacy@prozeso.com."
+      }
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "updatedAt": "3 de noviembre de 2025",
+      "toc": {
+        "whatAreCookies": "¿Qué son las cookies?",
+        "howWeUseCookies": "Cómo usamos las cookies",
+        "typesOfCookies": "Tipos de cookies que usamos",
+        "manageCookies": "Cómo gestionar las cookies",
+        "changes": "Cambios en esta política",
+        "contact": "Contacto"
+      },
+      "whatAreCookies": {
+        "title": "¿Qué son las cookies?",
+        "text": "Las cookies son pequeños archivos de texto que se colocan en tu dispositivo para almacenar datos que pueden ser recuperados por un servidor web en el dominio que colocó la cookie. Usamos cookies y tecnologías similares para proporcionar y mejorar nuestros servicios."
+      },
+      "howWeUseCookies": {
+        "title": "Cómo usamos las cookies",
+        "items": [
+          "Autenticación y gestión de sesiones.",
+          "Recordar tus preferencias y configuración.",
+          "Analítica para entender cómo se utilizan nuestros servicios.",
+          "Marketing para ofrecer contenido relevante."
+        ]
+      },
+      "typesOfCookies": {
+        "title": "Tipos de cookies que usamos",
+        "items": [
+          "Cookies esenciales — necesarias para el funcionamiento del sitio.",
+          "Cookies de rendimiento/analítica — nos ayudan a analizar el uso.",
+          "Cookies funcionales — recuerdan tus preferencias.",
+          "Cookies publicitarias — se utilizan para mostrar anuncios relevantes."
+        ]
+      },
+      "manageCookies": {
+        "title": "Cómo gestionar las cookies",
+        "text": "Puedes controlar y gestionar las cookies en la configuración de tu navegador. Ten en cuenta que eliminar o bloquear las cookies puede afectar tu experiencia y algunas funciones pueden dejar de estar disponibles."
+      },
+      "changes": {
+        "title": "Cambios en esta política",
+        "text": "Podemos actualizar esta Política de Cookies de vez en cuando. Te animamos a revisar esta página periódicamente para conocer cualquier cambio."
+      },
+      "contact": {
+        "title": "Contacto",
+        "text": "Para preguntas sobre esta Política de Cookies, contáctanos en privacy@prozeso.com."
+      }
+    },
+    "terms": {
+      "title": "Términos y Condiciones",
+      "updatedAt": "3 de noviembre de 2025",
+      "toc": {
+        "agreement": "Aceptación de los términos",
+        "intellectualProperty": "Derechos de propiedad intelectual",
+        "userRepresentations": "Declaraciones del usuario",
+        "prohibitedActivities": "Actividades prohibidas",
+        "limitationOfLiability": "Limitación de responsabilidad",
+        "governingLaw": "Ley aplicable",
+        "contactUs": "Contáctanos"
+      },
+      "agreement": {
+        "title": "Aceptación de los términos",
+        "text": "Estos Términos constituyen un acuerdo legalmente vinculante entre tú y Prozeso con respecto a tu acceso y uso de este sitio web y cualquier servicio relacionado. Al acceder al sitio, aceptas que has leído, comprendido y aceptado estar sujeto a todos estos Términos."
+      },
+      "intellectualProperty": {
+        "title": "Derechos de propiedad intelectual",
+        "text": "Salvo que se indique lo contrario, el Sitio y todo el código fuente, bases de datos, funcionalidades, software, diseños del sitio web, audio, vídeo, texto, fotografías y gráficos del Sitio son propiedad nuestra o están controlados por nosotros y están protegidos por las leyes de derechos de autor y marcas registradas."
+      },
+      "userRepresentations": {
+        "title": "Declaraciones del usuario",
+        "text": "Al usar el Sitio, declaras y garantizas que toda la información de registro que envíes será verdadera, precisa, actual y completa; mantendrás la exactitud de dicha información y la actualizarás oportunamente según sea necesario."
+      },
+      "prohibitedActivities": {
+        "title": "Actividades prohibidas",
+        "items": [
+          "Recuperar sistemáticamente datos o contenido para crear una colección o base de datos.",
+          "Engañar, defraudar o confundir a nosotros y a otros usuarios.",
+          "Eludir, deshabilitar o interferir con las funciones de seguridad."
+        ]
+      },
+      "limitationOfLiability": {
+        "title": "Limitación de responsabilidad",
+        "text": "En ningún caso nosotros ni nuestros proveedores seremos responsables de daños (incluyendo, sin limitación, daños por pérdida de datos o beneficios, o por interrupción del negocio) que surjan del uso o la imposibilidad de usar el Sitio."
+      },
+      "governingLaw": {
+        "title": "Ley aplicable",
+        "text": "Estos Términos se rigen e interpretan de acuerdo con las leyes de la jurisdicción donde Prozeso está establecido, sin tener en cuenta sus disposiciones sobre conflictos de leyes."
+      },
+      "contactUs": {
+        "title": "Contáctanos",
+        "text": "Si tienes preguntas o comentarios sobre estos Términos, contáctanos en support@prozeso.com."
+      }
     }
   }
 }

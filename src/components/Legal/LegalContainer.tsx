@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 import { Separator } from "@/components/ui/Separator";
 
@@ -16,42 +17,60 @@ export default function LegalContainer({
   children,
   toc,
 }: LegalContainerProps) {
+  const t = useTranslations("legal");
+
+  const tocBlock = toc && toc.length > 0 && (
+    <nav>
+      <p className="mb-2 caption-text font-medium uppercase tracking-wide text-muted-foreground">
+        {t("onThisPage")}
+      </p>
+      <ul className="grid gap-2">
+        {toc.map((item) => (
+          <li key={item.id}>
+            <a
+              href={`#${item.id}`}
+              className="caption-text text-primary hover:underline"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+
   return (
-    <div className="mx-auto w-full max-w-4xl px-4 py-10 lg:py-16">
-      <header className="mb-8">
+    <div className="mx-auto w-full max-w-6xl px-4 py-10 lg:py-16">
+      <header className="mb-8 max-w-3xl">
         <h1 className="page-title text-balance">{title}</h1>
         {updatedAt ? (
           <p className="mt-2 caption-text text-muted-foreground">
-            Last updated: {updatedAt}
+            {t("lastUpdated", { date: updatedAt })}
           </p>
         ) : null}
       </header>
 
-      {toc && toc.length > 0 ? (
-        <aside className="mb-8 rounded-lg border p-4 text-card-foreground">
-          <p className="mb-2 caption-text font-medium uppercase tracking-wide text-muted-foreground">
-            On this page
-          </p>
-          <ul className="grid gap-2 sm:grid-cols-2">
-            {toc.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={`#${item.id}`}
-                  className="caption-text text-primary hover:underline"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+      {tocBlock && (
+        <aside className="mb-8 rounded-lg border p-4 text-card-foreground lg:hidden">
+          {tocBlock}
         </aside>
-      ) : null}
+      )}
 
-      <Separator className="mb-8" />
+      <Separator className="mb-8 lg:hidden" />
 
-      <article className="prose prose-neutral dark:prose-invert max-w-none prose-headings:scroll-mt-24">
-        {children}
-      </article>
+      <div className="lg:grid lg:grid-cols-[1fr_220px] lg:gap-12">
+        <article className="prose prose-neutral dark:prose-invert max-w-none prose-headings:scroll-mt-24">
+          {children}
+        </article>
+
+        {tocBlock && (
+          <aside className="hidden lg:block">
+            <div className="sticky top-24 rounded-lg border p-4 text-card-foreground">
+              {tocBlock}
+            </div>
+          </aside>
+        )}
+      </div>
     </div>
   );
 }

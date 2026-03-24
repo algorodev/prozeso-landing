@@ -88,8 +88,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "es"
-      ? "Prozeso — Automatización de flujos de trabajo con IA para negocios de servicios"
-      : "Prozeso — AI-Powered Workflow Automation for Service Businesses";
+      ? "Automatización de flujos de trabajo con IA para negocios de servicios"
+      : "AI-Powered Workflow Automation for Service Businesses";
 
   const description =
     locale === "es"

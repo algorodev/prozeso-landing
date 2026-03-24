@@ -147,7 +147,11 @@ export function AssessmentForm() {
       </CardHeader>
       <CardContent className="pt-2">
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4">
+          <form
+            noValidate
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="grid gap-4"
+          >
             <div className="grid items-start gap-4 sm:grid-cols-2 min-w-0">
               <FormField
                 control={form.control}

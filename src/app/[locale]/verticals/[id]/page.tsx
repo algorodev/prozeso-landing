@@ -23,30 +23,30 @@ const ALLOWED_VERTICAL_IDS = [
 ] as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id, locale } = await params;
+  const { id, locale = "es" } = await params;
 
   const isAllowed =
     !!id && (ALLOWED_VERTICAL_IDS as readonly string[]).includes(id);
-  const vertical = isAllowed
-    ? (
-        VERTICALS as Record<
-          string,
-          {
-            headline?: string;
-            name?: string;
-            description?: string;
-            subheading?: string;
-          }
-        >
-      )[id]
-    : undefined;
 
-  const baseTitle = vertical?.headline || vertical?.name || "Verticals";
-  const title = `${baseTitle} | Prozeso`;
+  const t = await getTranslations({ locale, namespace: `verticals.${id}` });
+
+  const title =
+    isAllowed && t.has("name")
+      ? t("name")
+      : (VERTICALS as Record<string, { name?: string; headline?: string }>)[
+          id ?? ""
+        ]?.name || "Verticals";
+
   const description =
-    vertical?.description ||
-    vertical?.subheading ||
-    "Explore AI automations tailored for your industry.";
+    isAllowed && t.has("subheading")
+      ? t("subheading")
+      : (
+          VERTICALS as Record<
+            string,
+            { description?: string; subheading?: string }
+          >
+        )[id ?? ""]?.description ||
+        "Explore AI automations tailored for your industry.";
 
   const path = `/verticals/${id ?? ""}`;
   const localizedPath = locale ? `/${locale}${path}` : path;
