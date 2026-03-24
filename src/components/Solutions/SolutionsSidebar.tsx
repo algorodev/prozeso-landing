@@ -9,13 +9,32 @@ import type { ActiveFilter } from "./SolutionsGrid";
 type SolutionsSidebarProps = {
   activeFilter: ActiveFilter;
   onFilterChange: (filter: ActiveFilter) => void;
+  query: string;
 };
+
+function areaHasMatch(
+  t: ReturnType<typeof useTranslations>,
+  areaId: string,
+  queryLower: string,
+): boolean {
+  for (let i = 0; i < 10; i++) {
+    if (!t.has(`areas.${areaId}.automations.${i}.name`)) break;
+    const name = t(`areas.${areaId}.automations.${i}.name`).toLowerCase();
+    const subtitle = t.has(`areas.${areaId}.automations.${i}.subtitle`)
+      ? t(`areas.${areaId}.automations.${i}.subtitle`).toLowerCase()
+      : "";
+    if (name.includes(queryLower) || subtitle.includes(queryLower)) return true;
+  }
+  return false;
+}
 
 export default function SolutionsSidebar({
   activeFilter,
   onFilterChange,
+  query,
 }: SolutionsSidebarProps) {
   const t = useTranslations("home.automationSuite");
+  const queryLower = query.toLowerCase().trim();
 
   return (
     <nav className="space-y-3">
@@ -33,6 +52,14 @@ export default function SolutionsSidebar({
       {COLOR_GROUPS.map((group) => {
         const isGroupActive = activeFilter?.groupId === group.id;
         const isGroupSelected = isGroupActive && activeFilter?.areaId === null;
+
+        const visibleAreaIds = queryLower
+          ? group.areaIds.filter((areaId) =>
+              areaHasMatch(t, areaId, queryLower),
+            )
+          : group.areaIds;
+
+        if (queryLower && visibleAreaIds.length === 0) return null;
 
         return (
           <div
@@ -71,7 +98,7 @@ export default function SolutionsSidebar({
             </button>
 
             <div className="flex flex-wrap gap-1">
-              {group.areaIds.map((areaId) => {
+              {visibleAreaIds.map((areaId) => {
                 const isActive =
                   isGroupActive && activeFilter?.areaId === areaId;
                 const area = AREAS.find((a) => a.id === areaId);

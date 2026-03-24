@@ -104,6 +104,7 @@ export default function SolutionsGrid() {
             <SolutionsSidebar
               activeFilter={activeFilter}
               onFilterChange={handleFilterChange}
+              query={query}
             />
           </div>
         </aside>
@@ -139,6 +140,7 @@ export default function SolutionsGrid() {
                   <SolutionsSidebar
                     activeFilter={activeFilter}
                     onFilterChange={handleMobileFilter}
+                    query={query}
                   />
                 </div>
               </SheetContent>
