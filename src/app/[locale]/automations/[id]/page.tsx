@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const baseTitle = automation.name || automation.headline || "Automation";
-  const title = `${baseTitle} · Prozeso Automations`;
+  const title = baseTitle;
   const description =
     automation.description || automation.subheading || automation.problem || "";
 

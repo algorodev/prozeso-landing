@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : undefined;
 
   const baseTitle = vertical?.headline || vertical?.name || "Verticals";
-  const title = `${baseTitle} | Prozeso`;
+  const title = baseTitle;
   const description =
     vertical?.description ||
     vertical?.subheading ||
