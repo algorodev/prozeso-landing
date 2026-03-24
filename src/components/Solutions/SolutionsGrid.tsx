@@ -144,51 +144,58 @@ export default function SolutionsGrid() {
               </SheetContent>
             </Sheet>
           </div>
-          {COLOR_GROUPS.filter(
-            (group) => !activeFilter || activeFilter.groupId === group.id,
-          ).map((group) => {
-            const activeArea =
-              activeFilter?.groupId === group.id ? activeFilter.areaId : null;
+          {COLOR_GROUPS.filter((group) => {
+            if (activeFilter && activeFilter.groupId !== group.id) return false;
+            return true;
+          })
+            .map((group) => {
+              const activeArea =
+                activeFilter?.groupId === group.id ? activeFilter.areaId : null;
 
-            const queryLower = query.toLowerCase().trim();
-            const items: {
-              areaId: string;
-              index: number;
-              startIndex: number;
-            }[] = [];
-            for (const areaId of group.areaIds) {
-              if (activeArea && areaId !== activeArea) continue;
-              const area = AREAS.find((a) => a.id === areaId);
-              if (!area) continue;
-              for (let i = 0; i < 10; i++) {
-                if (t.has(`areas.${areaId}.automations.${i}.name`)) {
-                  if (queryLower) {
-                    const name = t(
-                      `areas.${areaId}.automations.${i}.name`,
-                    ).toLowerCase();
-                    const subtitle = t.has(
-                      `areas.${areaId}.automations.${i}.subtitle`,
-                    )
-                      ? t(
-                          `areas.${areaId}.automations.${i}.subtitle`,
-                        ).toLowerCase()
-                      : "";
-                    if (
-                      !name.includes(queryLower) &&
-                      !subtitle.includes(queryLower)
-                    )
-                      continue;
+              const queryLower = query.toLowerCase().trim();
+              const items: {
+                areaId: string;
+                index: number;
+                startIndex: number;
+              }[] = [];
+              for (const areaId of group.areaIds) {
+                if (activeArea && areaId !== activeArea) continue;
+                const area = AREAS.find((a) => a.id === areaId);
+                if (!area) continue;
+                for (let i = 0; i < 10; i++) {
+                  if (t.has(`areas.${areaId}.automations.${i}.name`)) {
+                    if (queryLower) {
+                      const name = t(
+                        `areas.${areaId}.automations.${i}.name`,
+                      ).toLowerCase();
+                      const subtitle = t.has(
+                        `areas.${areaId}.automations.${i}.subtitle`,
+                      )
+                        ? t(
+                            `areas.${areaId}.automations.${i}.subtitle`,
+                          ).toLowerCase()
+                        : "";
+                      if (
+                        !name.includes(queryLower) &&
+                        !subtitle.includes(queryLower)
+                      )
+                        continue;
+                    }
+                    items.push({
+                      areaId,
+                      index: i,
+                      startIndex: area.startIndex,
+                    });
+                  } else {
+                    break;
                   }
-                  items.push({ areaId, index: i, startIndex: area.startIndex });
-                } else {
-                  break;
                 }
               }
-            }
 
-            if (items.length === 0) return null;
-
-            return (
+              return { group, items };
+            })
+            .filter(({ items }) => items.length > 0)
+            .map(({ group, items }) => (
               <div key={group.id}>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="flex items-center gap-3">
@@ -317,8 +324,7 @@ export default function SolutionsGrid() {
                   })}
                 </div>
               </div>
-            );
-          })}
+            ))}
         </div>
       </div>
 
