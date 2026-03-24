@@ -46,10 +46,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const baseTitle = automation.name || automation.headline || "Automation";
-  const title = baseTitle;
-  const description =
-    automation.description || automation.subheading || automation.problem || "";
+  const t = await getTranslations({
+    locale,
+    namespace: `automations.page.details.${id}`,
+  });
+
+  const title = t.has("name")
+    ? t("name")
+    : automation.name || automation.headline || "Automation";
+  const description = t.has("description")
+    ? t("description")
+    : automation.description ||
+      automation.subheading ||
+      automation.problem ||
+      "";
 
   return {
     title,
@@ -58,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       type: "article",
-      url: `/automations/${id}`,
+      url: `/${locale}/automations/${id}`,
     },
     twitter: {
       card: "summary_large_image",
