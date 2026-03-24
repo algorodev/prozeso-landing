@@ -20,15 +20,29 @@ export function middleware(request: Request) {
     return NextResponse.next();
   }
 
-  const hasLocale = locales.some(
+  const segments = pathname.split("/").filter(Boolean);
+  const firstSegment = segments[0];
+
+  const hasValidLocale = locales.some(
     (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
   );
-  if (!hasLocale) {
-    const locale = getLocale(request);
-    return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
+
+  if (hasValidLocale) {
+    return NextResponse.next();
   }
 
-  return NextResponse.next();
+  const locale = getLocale(request);
+
+  // If first segment looks like a locale code (2-3 lowercase letters) but is
+  // not a supported locale, strip it and redirect to the valid locale with
+  // the remaining path (e.g. /fr/about → /es/about, /fr → /es).
+  if (firstSegment && /^[a-z]{2,3}$/.test(firstSegment)) {
+    const rest = segments.slice(1).join("/");
+    const target = rest ? `/${locale}/${rest}` : `/${locale}`;
+    return NextResponse.redirect(new URL(target, request.url));
+  }
+
+  return NextResponse.redirect(new URL(`/${locale}${pathname}`, request.url));
 }
 
 export const config = {
