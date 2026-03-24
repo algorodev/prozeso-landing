@@ -35,13 +35,14 @@ const ALLOWED_AUTOMATION_IDS = [
 ];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { id, locale } = await params;
   const automation = AUTOMATIONS_DETAILS.find((a) => a.slug === id);
 
   if (!automation) {
+    const t = await getTranslations({ locale, namespace: "automations.page" });
     return {
-      title: "Automation not found",
-      description: `We couldn't find an automation with id "${id}".`,
+      title: t("notFound.title"),
+      description: t("notFound.subtitle", { id }),
     };
   }
 

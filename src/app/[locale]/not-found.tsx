@@ -8,6 +8,7 @@ export default function LocaleNotFound() {
 
   return (
     <main className="relative isolate flex min-h-[70vh] items-center">
+      <title>{`${t("title")} | Prozeso`}</title>
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_bottom,theme(colors.border/15)_1px,transparent_1px),linear-gradient(to_right,theme(colors.border/15)_1px,transparent_1px)] [background-size:3rem_3rem] [mask-image:radial-gradient(40rem_40rem_at_50%_0%,black,transparent_70%)]"
