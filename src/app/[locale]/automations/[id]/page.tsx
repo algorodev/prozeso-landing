@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const t = await getTranslations({
     locale,
-    namespace: `automations.page.details.${id}`,
+    namespace: `automations.details.${id}`,
   });
 
   const title = t.has("name")
