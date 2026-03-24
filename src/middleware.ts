@@ -28,7 +28,13 @@ export function middleware(request: Request) {
   );
 
   if (hasValidLocale) {
-    return NextResponse.next();
+    const localeFromUrl =
+      locales.find(
+        (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
+      ) ?? defaultLocale;
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-locale", localeFromUrl);
+    return NextResponse.next({ request: { headers: requestHeaders } });
   }
 
   const locale = getLocale(request);

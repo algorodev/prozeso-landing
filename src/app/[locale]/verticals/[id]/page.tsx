@@ -8,6 +8,7 @@ import VerticalImpact from "@/components/Verticals/VerticalImpact";
 import VerticalJourney from "@/components/Verticals/VerticalJourney";
 import VerticalReality from "@/components/Verticals/VerticalReality";
 import { VERTICALS } from "@/data/verticals";
+import { locales } from "@/i18n/config";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type Props = {
@@ -59,6 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     alternates: {
       canonical: localizedPath,
+      languages: Object.fromEntries(locales.map((l) => [l, `/${l}${path}`])),
     },
     openGraph: {
       title,

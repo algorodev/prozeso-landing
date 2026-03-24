@@ -7,24 +7,11 @@ import { Suspense } from "react";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/Button";
-import { defaultLocale, type Locale, locales } from "@/i18n/config";
-
-function getLocaleFromHeaders(headersList: Headers): Locale {
-  const url =
-    headersList.get("x-next-url") ??
-    headersList.get("x-invoke-path") ??
-    headersList.get("referer") ??
-    "";
-  const match = url.match(/\/([a-z]{2})(\/|$)/);
-  if (match && locales.includes(match[1] as Locale)) {
-    return match[1] as Locale;
-  }
-  return defaultLocale;
-}
+import { defaultLocale, type Locale } from "@/i18n/config";
 
 export default async function NotFound() {
   const headersList = await headers();
-  const locale = getLocaleFromHeaders(headersList);
+  const locale = (headersList.get("x-locale") as Locale) ?? defaultLocale;
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const t = (key: string) => {
     const keys = key.split(".");
@@ -47,6 +34,7 @@ export default async function NotFound() {
           <Header />
         </Suspense>
         <main className="relative isolate flex min-h-[70vh] items-center">
+          <title>{`${t("notFound.title")} | Prozeso`}</title>
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_bottom,theme(colors.border/15)_1px,transparent_1px),linear-gradient(to_right,theme(colors.border/15)_1px,transparent_1px)] [background-size:3rem_3rem] [mask-image:radial-gradient(40rem_40rem_at_50%_0%,black,transparent_70%)]"

@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter_Tight, Sora } from "next/font/google";
+import { headers } from "next/headers";
 import Script from "next/script";
 import type { ReactNode } from "react";
-import { locales } from "@/i18n/config";
+import { defaultLocale, locales } from "@/i18n/config";
 import "./globals.css";
 
 const interTightFont = Inter_Tight({
@@ -103,11 +104,13 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
+  const headersList = await headers();
+  const lang = headersList.get("x-locale") ?? defaultLocale;
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter`}
       >
