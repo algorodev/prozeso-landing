@@ -1,72 +1,63 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import LegalContainer from "@/components/Legal/LegalContainer";
 
 export default function CookiesPolicy() {
-  const toc = [
-    { id: "what-are-cookies", label: "What are cookies?" },
-    { id: "how-we-use-cookies", label: "How we use cookies" },
-    { id: "types-of-cookies", label: "Types of cookies we use" },
-    { id: "manage-cookies", label: "How to manage cookies" },
-    { id: "changes", label: "Changes to this policy" },
-    { id: "contact", label: "Contact" },
-  ];
+  const t = useTranslations("legal.cookies");
+
+  const tocKeys = [
+    { id: "what-are-cookies", key: "whatAreCookies" },
+    { id: "how-we-use-cookies", key: "howWeUseCookies" },
+    { id: "types-of-cookies", key: "typesOfCookies" },
+    { id: "manage-cookies", key: "manageCookies" },
+    { id: "changes", key: "changes" },
+    { id: "contact", key: "contact" },
+  ] as const;
+
+  const toc = tocKeys.map(({ id, key }) => ({
+    id,
+    label: t(`toc.${key}`),
+  }));
 
   return (
-    <LegalContainer title="Cookies Policy" updatedAt="Nov 3, 2025" toc={toc}>
+    <LegalContainer title={t("title")} updatedAt={t("updatedAt")} toc={toc}>
       <section id="what-are-cookies">
-        <h2 className="font-semibold mb-2">What are cookies?</h2>
-        <p>
-          Cookies are small text files placed on your device to store data that
-          can be recalled by a web server in the domain that placed the cookie.
-          We use cookies and similar technologies to provide and improve our
-          services.
-        </p>
+        <h2 className="font-semibold mb-2">{t("whatAreCookies.title")}</h2>
+        <p>{t("whatAreCookies.text")}</p>
       </section>
 
       <section id="how-we-use-cookies" className="py-8">
-        <h2 className="font-semibold mb-2">How we use cookies</h2>
+        <h2 className="font-semibold mb-2">{t("howWeUseCookies.title")}</h2>
         <ul>
-          <li>Authentication and session management.</li>
-          <li>Remembering your preferences and settings.</li>
-          <li>Analytics to understand how our services are used.</li>
-          <li>Marketing to deliver relevant content.</li>
+          {[0, 1, 2, 3].map((i) => (
+            <li key={i}>{t(`howWeUseCookies.items.${i}`)}</li>
+          ))}
         </ul>
       </section>
 
       <section id="types-of-cookies">
-        <h2 className="font-semibold mb-2">Types of cookies we use</h2>
+        <h2 className="font-semibold mb-2">{t("typesOfCookies.title")}</h2>
         <ul>
-          <li>Essential cookies — required to operate the site.</li>
-          <li>Performance/analytics cookies — help us analyze usage.</li>
-          <li>Functional cookies — remember your preferences.</li>
-          <li>Advertising cookies — used to deliver relevant ads.</li>
+          {[0, 1, 2, 3].map((i) => (
+            <li key={i}>{t(`typesOfCookies.items.${i}`)}</li>
+          ))}
         </ul>
       </section>
 
       <section id="manage-cookies" className="py-8">
-        <h2 className="font-semibold mb-2">How to manage cookies</h2>
-        <p>
-          You can control and manage cookies in your browser settings. Please
-          note that removing or blocking cookies may impact your experience and
-          some features may no longer be available.
-        </p>
+        <h2 className="font-semibold mb-2">{t("manageCookies.title")}</h2>
+        <p>{t("manageCookies.text")}</p>
       </section>
 
       <section id="changes">
-        <h2 className="font-semibold mb-2">Changes to this policy</h2>
-        <p>
-          We may update this Cookies Policy from time to time. We encourage you
-          to review this page periodically for any changes.
-        </p>
+        <h2 className="font-semibold mb-2">{t("changes.title")}</h2>
+        <p>{t("changes.text")}</p>
       </section>
 
       <section id="contact" className="py-8">
-        <h2 className="font-semibold mb-2">Contact</h2>
-        <p>
-          For questions about this Cookies Policy, contact us at
-          privacy@prozeso.com.
-        </p>
+        <h2 className="font-semibold mb-2">{t("contact.title")}</h2>
+        <p>{t("contact.text")}</p>
       </section>
     </LegalContainer>
   );

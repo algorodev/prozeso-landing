@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import type { ReactNode } from "react";
 import { Separator } from "@/components/ui/Separator";
 
@@ -16,13 +17,15 @@ export default function LegalContainer({
   children,
   toc,
 }: LegalContainerProps) {
+  const t = useTranslations("legal");
+
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-10 lg:py-16">
       <header className="mb-8">
         <h1 className="page-title text-balance">{title}</h1>
         {updatedAt ? (
           <p className="mt-2 caption-text text-muted-foreground">
-            Last updated: {updatedAt}
+            {t("lastUpdated", { date: updatedAt })}
           </p>
         ) : null}
       </header>
@@ -30,7 +33,7 @@ export default function LegalContainer({
       {toc && toc.length > 0 ? (
         <aside className="mb-8 rounded-lg border p-4 text-card-foreground">
           <p className="mb-2 caption-text font-medium uppercase tracking-wide text-muted-foreground">
-            On this page
+            {t("onThisPage")}
           </p>
           <ul className="grid gap-2 sm:grid-cols-2">
             {toc.map((item) => (

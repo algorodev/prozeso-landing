@@ -3119,5 +3119,149 @@
       "title": "Ready to automate your business?",
       "subtitle": "Start your free assessment and discover how Prozeso can transform your operations."
     }
+  },
+  "legal": {
+    "lastUpdated": "Last updated: {date}",
+    "onThisPage": "On this page",
+    "privacy": {
+      "title": "Privacy Policy",
+      "updatedAt": "Nov 3, 2025",
+      "toc": {
+        "overview": "Overview",
+        "dataWeCollect": "Data we collect",
+        "howWeUseData": "How we use data",
+        "sharing": "Sharing your information",
+        "dataRetention": "Data retention",
+        "yourRights": "Your rights",
+        "contact": "Contact"
+      },
+      "overview": {
+        "title": "Overview",
+        "text": "This Privacy Policy explains how Prozeso (\"we\", \"us\", \"our\") collects, uses, and shares information about you when you use our website and services."
+      },
+      "dataWeCollect": {
+        "title": "Data we collect",
+        "items": [
+          "Contact information such as name, email address, and phone number.",
+          "Usage information such as pages visited, features used, and actions taken.",
+          "Device and log information such as IP address, browser type, and settings."
+        ]
+      },
+      "howWeUseData": {
+        "title": "How we use data",
+        "items": [
+          "To provide, maintain, and improve our services.",
+          "To communicate with you, including marketing and transactional messages.",
+          "To ensure security, prevent fraud, and enforce our policies."
+        ]
+      },
+      "sharing": {
+        "title": "Sharing your information",
+        "text": "We do not sell your personal information. We may share information with service providers who perform services on our behalf, in accordance with contracts that protect your data."
+      },
+      "dataRetention": {
+        "title": "Data retention",
+        "text": "We retain personal data only as long as necessary for the purposes described in this policy, unless a longer retention period is required by law."
+      },
+      "yourRights": {
+        "title": "Your rights",
+        "text": "Depending on your location, you may have rights to access, correct, delete, or restrict the processing of your personal data. Contact us to exercise these rights."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "Questions or requests regarding this policy can be sent to privacy@prozeso.com."
+      }
+    },
+    "cookies": {
+      "title": "Cookies Policy",
+      "updatedAt": "Nov 3, 2025",
+      "toc": {
+        "whatAreCookies": "What are cookies?",
+        "howWeUseCookies": "How we use cookies",
+        "typesOfCookies": "Types of cookies we use",
+        "manageCookies": "How to manage cookies",
+        "changes": "Changes to this policy",
+        "contact": "Contact"
+      },
+      "whatAreCookies": {
+        "title": "What are cookies?",
+        "text": "Cookies are small text files placed on your device to store data that can be recalled by a web server in the domain that placed the cookie. We use cookies and similar technologies to provide and improve our services."
+      },
+      "howWeUseCookies": {
+        "title": "How we use cookies",
+        "items": [
+          "Authentication and session management.",
+          "Remembering your preferences and settings.",
+          "Analytics to understand how our services are used.",
+          "Marketing to deliver relevant content."
+        ]
+      },
+      "typesOfCookies": {
+        "title": "Types of cookies we use",
+        "items": [
+          "Essential cookies — required to operate the site.",
+          "Performance/analytics cookies — help us analyze usage.",
+          "Functional cookies — remember your preferences.",
+          "Advertising cookies — used to deliver relevant ads."
+        ]
+      },
+      "manageCookies": {
+        "title": "How to manage cookies",
+        "text": "You can control and manage cookies in your browser settings. Please note that removing or blocking cookies may impact your experience and some features may no longer be available."
+      },
+      "changes": {
+        "title": "Changes to this policy",
+        "text": "We may update this Cookies Policy from time to time. We encourage you to review this page periodically for any changes."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "For questions about this Cookies Policy, contact us at privacy@prozeso.com."
+      }
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "updatedAt": "Nov 3, 2025",
+      "toc": {
+        "agreement": "Agreement to terms",
+        "intellectualProperty": "Intellectual property rights",
+        "userRepresentations": "User representations",
+        "prohibitedActivities": "Prohibited activities",
+        "limitationOfLiability": "Limitation of liability",
+        "governingLaw": "Governing law",
+        "contactUs": "Contact us"
+      },
+      "agreement": {
+        "title": "Agreement to terms",
+        "text": "These Terms constitute a legally binding agreement made between you and Prozeso regarding your access to and use of this website and any related services. By accessing the site, you agree that you have read, understood, and agreed to be bound by all of these Terms."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property rights",
+        "text": "Unless otherwise indicated, the Site and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site are owned or controlled by us and are protected by copyright and trademark laws."
+      },
+      "userRepresentations": {
+        "title": "User representations",
+        "text": "By using the Site, you represent and warrant that all registration information you submit will be true, accurate, current, and complete; you will maintain the accuracy of such information and promptly update such information as necessary."
+      },
+      "prohibitedActivities": {
+        "title": "Prohibited activities",
+        "items": [
+          "Systematically retrieve data or content to create a collection or database.",
+          "Trick, defraud, or mislead us and other users.",
+          "Circumvent, disable, or interfere with security-related features."
+        ]
+      },
+      "limitationOfLiability": {
+        "title": "Limitation of liability",
+        "text": "In no event shall we or our suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the Site."
+      },
+      "governingLaw": {
+        "title": "Governing law",
+        "text": "These Terms are governed by and construed in accordance with the laws of the jurisdiction where Prozeso is established, without regard to its conflict of law provisions."
+      },
+      "contactUs": {
+        "title": "Contact us",
+        "text": "If you have questions or comments about these Terms, please contact us at support@prozeso.com."
+      }
+    }
   }
 }
