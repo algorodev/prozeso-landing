@@ -131,6 +131,11 @@
       },
       "card": {
         "learnMore": "Ver más"
+      },
+      "notFound": {
+        "title": "Automatización no encontrada",
+        "subtitle": "No pudimos encontrar una automatización con id \"{id}\".",
+        "back": "Volver al catálogo"
       }
     },
     "categories": {

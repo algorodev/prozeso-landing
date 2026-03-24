@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { AutomationBestFor } from "@/components/Automations/Detail/AutomationBestFor";
 import { AutomationCTA } from "@/components/Automations/Detail/AutomationCTA";
 import { AutomationExamples } from "@/components/Automations/Detail/AutomationExamples";
@@ -68,19 +69,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AutomationDetailPage({ params }: Props) {
   const { id } = await params;
+  const t = await getTranslations("automations.page");
 
   if (!id || !(ALLOWED_AUTOMATION_IDS as readonly string[]).includes(id)) {
     return (
       <div className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="page-title text-balance">Automation not found</h1>
+        <h1 className="page-title text-balance">{t("notFound.title")}</h1>
         <p className="mt-2 body-text text-muted-foreground">
-          We couldn't find an automation with id "{id}".
+          {t("notFound.subtitle", { id })}
         </p>
         <LocalizedLink
           href="/automations"
           className="mt-6 inline-flex rounded-xl bg-accent px-4 py-2 text-accent-foreground button-primary-text"
         >
-          Back to catalog
+          {t("notFound.back")}
         </LocalizedLink>
       </div>
     );

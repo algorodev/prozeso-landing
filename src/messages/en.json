@@ -131,6 +131,11 @@
       },
       "card": {
         "learnMore": "Learn more"
+      },
+      "notFound": {
+        "title": "Automation not found",
+        "subtitle": "We couldn't find an automation with id \"{id}\".",
+        "back": "Back to catalog"
       }
     },
     "categories": {
