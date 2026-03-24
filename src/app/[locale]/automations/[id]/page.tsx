@@ -10,6 +10,7 @@ import { AutomationOutcomes } from "@/components/Automations/Detail/AutomationOu
 import { AutomationPoweredBy } from "@/components/Automations/Detail/AutomationPoweredBy";
 import { AutomationProblemSolution } from "@/components/Automations/Detail/AutomationProblemSolution";
 import { AUTOMATIONS_DETAILS } from "@/data/automations";
+import { locales } from "@/i18n/config";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type Props = {
@@ -61,14 +62,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       automation.problem ||
       "";
 
+  const path = `/automations/${id}`;
+
   return {
     title,
     description,
+    alternates: {
+      canonical: `/${locale}${path}`,
+      languages: Object.fromEntries(locales.map((l) => [l, `/${l}${path}`])),
+    },
     openGraph: {
       title,
       description,
       type: "article",
-      url: `/${locale}/automations/${id}`,
+      url: `/${locale}${path}`,
     },
     twitter: {
       card: "summary_large_image",
