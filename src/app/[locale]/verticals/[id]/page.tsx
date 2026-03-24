@@ -28,25 +28,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isAllowed =
     !!id && (ALLOWED_VERTICAL_IDS as readonly string[]).includes(id);
 
+  if (!isAllowed) {
+    const tPage = await getTranslations({
+      locale,
+      namespace: "verticals.page",
+    });
+    return {
+      title: tPage("notFound.title"),
+      description: tPage("notFound.subtitle", { id }),
+    };
+  }
+
   const t = await getTranslations({ locale, namespace: `verticals.${id}` });
 
-  const title =
-    isAllowed && t.has("name")
-      ? t("name")
-      : (VERTICALS as Record<string, { name?: string; headline?: string }>)[
-          id ?? ""
-        ]?.name || "Verticals";
+  const title = t.has("name")
+    ? t("name")
+    : (VERTICALS as Record<string, { name?: string }>)[id ?? ""]?.name ||
+      "Verticals";
 
-  const description =
-    isAllowed && t.has("subheading")
-      ? t("subheading")
-      : (
-          VERTICALS as Record<
-            string,
-            { description?: string; subheading?: string }
-          >
-        )[id ?? ""]?.description ||
-        "Explore AI automations tailored for your industry.";
+  const description = t.has("subheading")
+    ? t("subheading")
+    : (VERTICALS as Record<string, { description?: string }>)[id ?? ""]
+        ?.description || "Explore AI automations tailored for your industry.";
 
   const path = `/verticals/${id ?? ""}`;
   const localizedPath = locale ? `/${locale}${path}` : path;
@@ -72,8 +75,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function VerticalPage({ params }: Props) {
-  const { id } = await params;
-  const t = await getTranslations("verticals.page");
+  const { id, locale = "es" } = await params;
+  const t = await getTranslations({ locale, namespace: "verticals.page" });
 
   if (!id || !(ALLOWED_VERTICAL_IDS as readonly string[]).includes(id)) {
     return (

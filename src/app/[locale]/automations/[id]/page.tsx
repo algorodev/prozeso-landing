@@ -13,7 +13,7 @@ import { AUTOMATIONS_DETAILS } from "@/data/automations";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type Props = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: string; locale: string }>;
 };
 
 const ALLOWED_AUTOMATION_IDS = [
@@ -35,20 +35,31 @@ const ALLOWED_AUTOMATION_IDS = [
 ];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { id, locale } = await params;
   const automation = AUTOMATIONS_DETAILS.find((a) => a.slug === id);
 
   if (!automation) {
+    const t = await getTranslations({ locale, namespace: "automations.page" });
     return {
-      title: "Automation not found",
-      description: `We couldn't find an automation with id "${id}".`,
+      title: t("notFound.title"),
+      description: t("notFound.subtitle", { id }),
     };
   }
 
-  const baseTitle = automation.name || automation.headline || "Automation";
-  const title = baseTitle;
-  const description =
-    automation.description || automation.subheading || automation.problem || "";
+  const t = await getTranslations({
+    locale,
+    namespace: `automations.page.details.${id}`,
+  });
+
+  const title = t.has("name")
+    ? t("name")
+    : automation.name || automation.headline || "Automation";
+  const description = t.has("description")
+    ? t("description")
+    : automation.description ||
+      automation.subheading ||
+      automation.problem ||
+      "";
 
   return {
     title,
@@ -57,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       type: "article",
-      url: `/automations/${id}`,
+      url: `/${locale}/automations/${id}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -68,8 +79,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function AutomationDetailPage({ params }: Props) {
-  const { id } = await params;
-  const t = await getTranslations("automations.page");
+  const { id, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "automations.page" });
 
   if (!id || !(ALLOWED_AUTOMATION_IDS as readonly string[]).includes(id)) {
     return (
