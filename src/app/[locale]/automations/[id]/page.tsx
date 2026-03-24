@@ -13,7 +13,7 @@ import { AUTOMATIONS_DETAILS } from "@/data/automations";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type Props = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: string; locale: string }>;
 };
 
 const ALLOWED_AUTOMATION_IDS = [
@@ -68,8 +68,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function AutomationDetailPage({ params }: Props) {
-  const { id } = await params;
-  const t = await getTranslations("automations.page");
+  const { id, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "automations.page" });
 
   if (!id || !(ALLOWED_AUTOMATION_IDS as readonly string[]).includes(id)) {
     return (

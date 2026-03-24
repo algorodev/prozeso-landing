@@ -72,8 +72,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function VerticalPage({ params }: Props) {
-  const { id } = await params;
-  const t = await getTranslations("verticals.page");
+  const { id, locale = "es" } = await params;
+  const t = await getTranslations({ locale, namespace: "verticals.page" });
 
   if (!id || !(ALLOWED_VERTICAL_IDS as readonly string[]).includes(id)) {
     return (
