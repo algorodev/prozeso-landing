@@ -60,9 +60,9 @@ const Impact = () => {
               id: "resources",
               color: "primary",
             },
-          ].map((metric, idx) => (
+          ].map((metric) => (
             <motion.div
-              key={idx}
+              key={metric.id}
               variants={{
                 hidden: { opacity: 0, y: 24 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },

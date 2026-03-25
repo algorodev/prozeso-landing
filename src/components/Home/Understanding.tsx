@@ -61,11 +61,11 @@ const Understanding = () => {
               id: "security",
               icon: Shield,
             },
-          ].map((feature, idx) => {
+          ].map((feature) => {
             const Icon = feature.icon;
             return (
               <motion.div
-                key={idx}
+                key={feature.id}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },

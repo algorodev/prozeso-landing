@@ -43,7 +43,7 @@ const chip: CSSProperties = {
 export default function CustomerConfirmationEmail({
   name,
   workflow,
-  workflows,
+  workflows: _workflows,
   workflowTitles,
   verticalTitle,
   nextUrl = "https://prozeso.com",
@@ -125,14 +125,12 @@ export default function CustomerConfirmationEmail({
                 <strong style={{ color: emailColors.text }}>
                   {t.workflows}:
                 </strong>{" "}
-                {(workflowTitles || []).map((title, idx) => (
-                  <>
-                    <span key={idx} style={{ ...chip, marginRight: 6 }}>
-                      {title}
-                    </span>
+                {(workflowTitles || []).map((title) => (
+                  <span key={title} style={{ ...chip, marginRight: 6 }}>
+                    {title}
                     <br />
                     <br />
-                  </>
+                  </span>
                 ))}
               </Text>
             ) : workflow ? (

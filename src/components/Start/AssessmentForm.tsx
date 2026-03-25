@@ -47,7 +47,6 @@ export function AssessmentForm() {
   const searchParams = useSearchParams();
   const locale = useLocale();
   const t = useTranslations("start.assessment");
-  const tSolutions = useTranslations("solutions");
   const tAutomations = useTranslations("automations");
 
   const automation = searchParams.get("automation");
@@ -117,7 +116,7 @@ export function AssessmentForm() {
               : undefined,
           verticalTitle: (() => {
             const v = form.getValues("vertical");
-            return v ? tSolutions(`verticals.${v}.title`) : undefined;
+            return v ? t(`field.vertical.options.${v}`) : undefined;
           })(),
         }),
       });
@@ -125,7 +124,7 @@ export function AssessmentForm() {
       const data = await res.json().catch(() => null);
 
       if (!res.ok || !data?.ok) {
-        const apiError = (data as any)?.error;
+        const apiError = (data as { error?: string })?.error;
         setServerError(apiError || t("serverErrorDefault"));
         return;
       }
@@ -220,7 +219,7 @@ export function AssessmentForm() {
                             >
                               <span className="truncate flex-1 min-w-0 text-left">
                                 {field.value
-                                  ? tSolutions(`verticals.${field.value}.title`)
+                                  ? t(`field.vertical.options.${field.value}`)
                                   : t("field.vertical.placeholder")}
                               </span>
                               <ChevronDown
@@ -254,7 +253,7 @@ export function AssessmentForm() {
                                   className={`mr-2 size-4 ${field.value === key ? "opacity-100" : "opacity-0"}`}
                                   aria-hidden
                                 />
-                                {tSolutions(`verticals.${key}.title`)}
+                                {t(`field.vertical.options.${key}`)}
                               </DropdownMenuItem>
                             ))}
                           </DropdownMenuContent>

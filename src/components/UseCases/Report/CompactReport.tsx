@@ -200,9 +200,9 @@ export function CompactReport({ report }: CompactReportProps) {
                       {t("affectedAreas")}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {mainPainPoint.affectedAreas.map((area, idx) => (
+                      {mainPainPoint.affectedAreas.map((area) => (
                         <span
-                          key={idx}
+                          key={area}
                           className="inline-flex items-center rounded-full bg-destructive/10 px-3 py-1.5 text-sm font-medium text-destructive border border-destructive/20"
                         >
                           {area}
@@ -308,9 +308,9 @@ export function CompactReport({ report }: CompactReportProps) {
                       {t("expectedMetrics")}
                     </p>
                     <div className="grid md:grid-cols-2 gap-3">
-                      {mainSolution.expectedMetrics.map((metric, idx) => (
+                      {mainSolution.expectedMetrics.map((metric) => (
                         <div
-                          key={idx}
+                          key={metric.metric}
                           className="rounded-lg bg-primary/5 p-4 border border-primary/10"
                         >
                           <p className="text-sm font-medium text-muted-foreground mb-1">
