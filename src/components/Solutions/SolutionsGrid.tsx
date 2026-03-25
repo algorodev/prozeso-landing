@@ -206,7 +206,7 @@ export default function SolutionsGrid() {
                       style={{ background: group.color }}
                     />
                     <h2 className="font-sora text-3xl font-semibold tracking-tight">
-                      {group.label}
+                      {t(`groups.${group.id}`)}
                     </h2>
                   </div>
                   <span

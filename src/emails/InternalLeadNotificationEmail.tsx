@@ -57,7 +57,7 @@ export default function InternalLeadNotificationEmail({
   email,
   message,
   workflow,
-  workflows,
+  workflows: _workflows,
   workflowTitles,
   vertical,
   verticalTitle,
@@ -104,14 +104,12 @@ export default function InternalLeadNotificationEmail({
               <>
                 <Text style={label}>Workflows of interest</Text>
                 <Text style={{ margin: "6px 0 16px" }}>
-                  {(workflowTitles || []).map((title, idx) => (
-                    <>
-                      <span key={idx} style={{ ...chip, marginRight: 6 }}>
-                        {title}
-                      </span>
+                  {(workflowTitles || []).map((title) => (
+                    <span key={title} style={{ ...chip, marginRight: 6 }}>
+                      {title}
                       <br />
                       <br />
-                    </>
+                    </span>
                   ))}
                 </Text>
               </>

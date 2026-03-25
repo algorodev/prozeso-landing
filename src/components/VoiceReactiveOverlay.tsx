@@ -9,7 +9,7 @@ interface VoiceReactiveOverlayProps {
 
 export const VoiceReactiveOverlay = ({
   isActive,
-  onHangUp,
+  onHangUp: _onHangUp,
 }: VoiceReactiveOverlayProps) => {
   const [voiceIntensity, setVoiceIntensity] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -39,7 +39,9 @@ export const VoiceReactiveOverlay = ({
         animationFrameRef.current = null;
       }
       if (streamRef.current) {
-        streamRef.current.getTracks().forEach((track) => track.stop());
+        streamRef.current.getTracks().forEach((track) => {
+          track.stop();
+        });
         streamRef.current = null;
       }
       if (audioContextRef.current) {
@@ -65,14 +67,18 @@ export const VoiceReactiveOverlay = ({
         });
 
         if (!mounted) {
-          stream.getTracks().forEach((track) => track.stop());
+          stream.getTracks().forEach((track) => {
+            track.stop();
+          });
           return;
         }
 
         streamRef.current = stream;
 
         const audioContext = new (
-          window.AudioContext || (window as any).webkitAudioContext
+          window.AudioContext ||
+          (window as unknown as { webkitAudioContext: typeof AudioContext })
+            .webkitAudioContext
         )();
         audioContextRef.current = audioContext;
 
@@ -133,7 +139,9 @@ export const VoiceReactiveOverlay = ({
         animationFrameRef.current = null;
       }
       if (streamRef.current) {
-        streamRef.current.getTracks().forEach((track) => track.stop());
+        streamRef.current.getTracks().forEach((track) => {
+          track.stop();
+        });
         streamRef.current = null;
       }
       if (audioContextRef.current) {

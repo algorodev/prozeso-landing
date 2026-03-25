@@ -83,19 +83,10 @@ const INDUSTRY_KEYS: IndustryKey[] = [
   "other",
 ];
 
-const EXISTING_VERTICALS: IndustryKey[] = [
-  "restaurants",
-  "beauty",
-  "clinics",
-  "hotels",
-  "realEstate",
-];
-
 export function UseCasesForm() {
   const locale = useLocale();
   const router = useRouter();
   const t = useTranslations("useCases.form");
-  const tSolutions = useTranslations("solutions.verticals");
 
   const Schema = z.object({
     companySize: z.enum(
@@ -393,15 +384,9 @@ export function UseCasesForm() {
                                               INDUSTRY_KEYS.includes(
                                                 field.value as IndustryKey,
                                               )
-                                                ? EXISTING_VERTICALS.includes(
-                                                    field.value as IndustryKey,
+                                                ? t(
+                                                    `field.industry.options.${field.value}`,
                                                   )
-                                                  ? tSolutions(
-                                                      `${field.value}.title`,
-                                                    )
-                                                  : t(
-                                                      `field.industry.options.${field.value}`,
-                                                    )
                                                 : t(
                                                     "field.industry.placeholder",
                                                   )}
@@ -429,13 +414,9 @@ export function UseCasesForm() {
                                                 className={`mr-2 size-4 ${field.value === key ? "opacity-100" : "opacity-0"}`}
                                                 aria-hidden
                                               />
-                                              {EXISTING_VERTICALS.includes(
-                                                key as IndustryKey,
-                                              )
-                                                ? tSolutions(`${key}.title`)
-                                                : t(
-                                                    `field.industry.options.${key}`,
-                                                  )}
+                                              {t(
+                                                `field.industry.options.${key}`,
+                                              )}
                                             </DropdownMenuItem>
                                           ))}
                                         </DropdownMenuContent>

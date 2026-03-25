@@ -45,7 +45,7 @@ export default function SolutionsSidebar({
           className="cursor-pointer flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors ml-auto"
         >
           <X className="h-3.5 w-3.5" />
-          Limpiar filtro
+          {t("clearFilter")}
         </button>
       )}
 
@@ -93,7 +93,7 @@ export default function SolutionsSidebar({
                 style={{ background: group.color }}
               />
               <span className="text-sm font-semibold tracking-wider text-foreground">
-                {group.label}
+                {t(`groups.${group.id}`)}
               </span>
             </button>
 

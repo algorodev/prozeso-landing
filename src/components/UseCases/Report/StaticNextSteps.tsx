@@ -55,14 +55,14 @@ export function StaticNextSteps() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {nextSteps.map((step, index) => {
+            {nextSteps.map((step, i) => {
               const Icon = step.icon;
               return (
                 <motion.div
-                  key={index}
+                  key={step.title}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 + index * 0.1 }}
+                  transition={{ delay: 0.4 + i * 0.1 }}
                   className="flex flex-col items-center text-center p-6 rounded-xl border bg-background/50"
                 >
                   <div className="flex items-center justify-center size-12 rounded-xl bg-primary/10 mb-4">
