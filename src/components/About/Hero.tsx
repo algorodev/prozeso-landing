@@ -35,7 +35,7 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.2 }}
           transition={{ duration: 0.6 }}
-          className="rounded-2xl border border-border bg-card p-8 md:p-12"
+          className="rounded-2xl border border-border bg-background p-8 md:p-12"
         >
           <h2 className="font-sora text-2xl md:text-3xl font-semibold tracking-tight mb-4">
             {t("originTitle")}

@@ -48,7 +48,7 @@ const Team = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: 0.2 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="rounded-2xl border border-border bg-card p-8 text-center flex flex-col items-center"
+              className="rounded-2xl border border-border bg-background p-8 text-center flex flex-col items-center"
             >
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <span className="font-sora text-2xl font-semibold text-primary">
