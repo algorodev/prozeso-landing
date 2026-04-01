@@ -44,7 +44,7 @@ export const AgentFloatButton = () => {
             try {
               const allowedDomains = [
                 "prozeso.com",
-                "calendly.com",
+                "calendar.app.google",
                 "app.prozeso.com",
               ];
 
@@ -63,7 +63,7 @@ export const AgentFloatButton = () => {
               }
 
               if (
-                urlObj.hostname.includes("calendly.com") ||
+                urlObj.hostname.includes("calendar.app.google") ||
                 urlObj.hostname.includes("app.prozeso.com")
               ) {
                 window.open(url, "_blank", "noopener noreferrer");
