@@ -39,18 +39,18 @@ src/
 ├── app/                     # Next.js App Router
 │   ├── [locale]/            # Localized routes (es, en)
 │   │   ├── page.tsx         # Home
+│   │   ├── about/           # About / team page
 │   │   ├── start/           # Assessment wizard
 │   │   ├── use-cases/       # AI use-case analyzer + report
-│   │   ├── automations/     # Automation showcase + [id] detail
-│   │   ├── verticals/       # Industry solutions + [id] detail
+│   │   ├── solutions/       # Automations + industry solutions showcase
 │   │   └── legal/           # Privacy, terms, cookies
 │   └── api/start/           # Email submission endpoint (Resend)
 ├── components/              # React components
 │   ├── Home/                # Home page sections
+│   ├── About/               # About page (Hero, Team)
 │   ├── Start/               # Assessment wizard components
 │   ├── UseCases/            # Use-case analysis + Report/
-│   ├── Automations/         # Automation grid + Detail/
-│   ├── Verticals/           # Industry-specific components
+│   ├── Solutions/           # Solutions grid, sidebar, detail dialog
 │   ├── Legal/               # Legal page components
 │   ├── ui/                  # Reusable UI primitives (Button, Card, Form, Dialog, etc.)
 │   └── icons/               # Custom SVG icon components
@@ -62,7 +62,7 @@ src/
 ├── i18n/                    # i18n config + LocalizedLink
 ├── messages/                # Translation JSON files (en.json, es.json)
 ├── types/                   # TypeScript type definitions
-├── data/                    # Static data (automations, verticals)
+├── data/                    # Static data (automations)
 ├── emails/                  # React Email templates
 ├── __tests__/               # Unit tests (Vitest)
 └── assets/                  # Static images
@@ -93,7 +93,7 @@ src/
 - 2-space indentation
 - Follow existing patterns: named exports for components, default exports for pages
 - Use `LocalizedLink` from `@/i18n/LocalizedLink` instead of raw `next/link` for internal navigation
-- Use `BookCallButton` for any Calendly CTA links
+- Use `BookCallButton` for any "book a call" CTA links (Google Calendar booking)
 
 ## Environment variables
 
@@ -113,7 +113,7 @@ GOOGLE_API_KEY              # Google Generative AI
 - **AI pipeline**: `runUseCasePipeline()` in `src/lib/actions/use-case-pipeline.ts` orchestrates analysis and report generation via Google Gemini
 - **Voice agent**: ElevenLabs integration managed by `CallContext` + `CallManager` components with a floating button (`AgentFloatButton`)
 - **Form validation**: Zod schemas with react-hook-form via `@hookform/resolvers`
-- **Dynamic routes**: `automations/[id]` and `verticals/[id]` use static data from `src/data/`
+- **Solutions showcase**: `solutions/` page renders automation entries from `src/data/automations.ts` with a grid, sidebar filter, and detail dialog
 
 ## CI/CD
 

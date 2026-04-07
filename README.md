@@ -8,7 +8,8 @@ Built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**
 
 - **AI Use-Case Analyzer** — Users describe their business pain points and receive a personalized automation report powered by Google Gemini
 - **Voice AI Agent** — Floating conversational assistant via ElevenLabs with multilingual support
-- **Industry Solutions** — Tailored automation showcases for 5 verticals (restaurants, clinics, beauty, hotels, real estate)
+- **Solutions Showcase** — Tailored automation showcases across verticals (restaurants, clinics, beauty, hotels, real estate)
+- **About Page** — Team and company background
 - **Internationalization** — Full Spanish/English support with localized routing
 - **Assessment Wizard** — Multi-step form with email notifications via Resend
 - **SEO** — Dynamic sitemap, robots.txt, Open Graph metadata
@@ -83,18 +84,18 @@ Open [http://localhost:3000](http://localhost:3000).
 src/
 ├── app/                     # Next.js App Router
 │   ├── [locale]/            # Localized routes (es, en)
+│   │   ├── about/           # About / team page
 │   │   ├── start/           # Assessment wizard
 │   │   ├── use-cases/       # AI use-case analyzer + report
-│   │   ├── automations/     # Automation showcase
-│   │   ├── verticals/       # Industry-specific pages
+│   │   ├── solutions/       # Automations + industry solutions showcase
 │   │   └── legal/           # Privacy, terms, cookies
 │   └── api/                 # API routes
 ├── components/              # React components
 │   ├── Home/                # Home page sections
+│   ├── About/               # About page (Hero, Team)
 │   ├── Start/               # Assessment wizard
 │   ├── UseCases/            # Use-case analysis + reports
-│   ├── Automations/         # Automation showcase
-│   ├── Verticals/           # Industry-specific
+│   ├── Solutions/           # Solutions grid + detail dialog
 │   ├── Legal/               # Legal pages
 │   ├── ui/                  # Reusable primitives
 │   └── icons/               # Custom SVG icons
@@ -106,7 +107,7 @@ src/
 ├── i18n/                    # i18n configuration
 ├── messages/                # Translation files (en.json, es.json)
 ├── types/                   # TypeScript definitions
-├── data/                    # Static data (automations, verticals)
+├── data/                    # Static data (automations)
 ├── emails/                  # React Email templates
 └── __tests__/               # Unit tests (Vitest)
 ```
