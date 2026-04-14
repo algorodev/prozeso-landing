@@ -81,7 +81,11 @@ export default function UseCasesTestimonials() {
                 </p>
                 <div className="flex items-center gap-3 mt-auto">
                   <Avatar className="size-11 border border-border/60">
-                    <AvatarImage src={t(`items.${id}.avatar`)} alt={name} />
+                    <AvatarImage
+                      src={t(`items.${id}.avatar`)}
+                      alt={name}
+                      className="object-cover"
+                    />
                     <AvatarFallback className="text-sm font-medium">
                       {initials}
                     </AvatarFallback>
