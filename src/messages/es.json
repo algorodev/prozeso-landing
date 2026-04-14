@@ -10,6 +10,10 @@
       "label": "Iniciar llamada con IA"
     }
   },
+  "trustedBy": {
+    "title": "Con el respaldo de",
+    "testimonialsLink": "Lee lo que dicen nuestros clientes"
+  },
   "hero": {
     "title": "Haz que tu <primary>negocio</primary> trabaje para <secondary>ti</secondary>",
     "subtitle": "En Prozeso, desarrollamos automatizaciones, impulsadas por IA, que atienden llamadas y escalan cada interacción de tu negocio.",

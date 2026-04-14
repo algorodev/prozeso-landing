@@ -12,7 +12,10 @@ export default function UseCasesTestimonials() {
   const t = useTranslations("useCases.testimonials");
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
+    <div
+      id="testimonials"
+      className="w-full max-w-6xl mx-auto px-4 scroll-mt-24"
+    >
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -10,6 +10,10 @@
       "label": "Start AI call"
     }
   },
+  "trustedBy": {
+    "title": "Backed by",
+    "testimonialsLink": "Read what our clients say"
+  },
   "hero": {
     "title": "Make your <primary>business</primary> work for <secondary>you</secondary>",
     "subtitle": "At Prozeso, we build AI-powered automations that handle calls and scale every interaction in your business.",
