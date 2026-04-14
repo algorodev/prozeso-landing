@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Card, CardContent } from "@/components/ui/Card";
 
-const TESTIMONIAL_IDS = ["1", "2", "3", "4", "5", "6"] as const;
+const TESTIMONIAL_IDS = ["1", "2", "3", "4", "5", "6", "7"] as const;
 
 export default function UseCasesTestimonials() {
   const t = useTranslations("useCases.testimonials");
