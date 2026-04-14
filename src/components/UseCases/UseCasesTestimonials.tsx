@@ -14,7 +14,7 @@ export default function UseCasesTestimonials() {
   return (
     <div
       id="testimonials"
-      className="w-full max-w-6xl mx-auto px-4 scroll-mt-24"
+      className="w-full max-w-7xl mx-auto px-4 scroll-mt-24"
     >
       <motion.div
         initial={{ opacity: 0, y: 24 }}
