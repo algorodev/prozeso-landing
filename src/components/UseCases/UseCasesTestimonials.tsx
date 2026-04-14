@@ -124,6 +124,16 @@ export default function UseCasesTestimonials() {
           );
         })}
       </motion.div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 0.3 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="text-center text-sm text-muted-foreground mt-10"
+      >
+        {t("moreComing")}
+      </motion.p>
     </div>
   );
 }

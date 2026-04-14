@@ -273,7 +273,7 @@
   "useCases": {
     "hero": {
       "title": "Tu <primary>plan de automatización</primary>, en menos de <secondary>2 minutos</secondary>",
-      "subtitle": "Responde 4 preguntas rápidas y nuestra IA identificará tus puntos de dolor, recomendará automatizaciones y estimará el ROI — personalizado a tu negocio.",
+      "subtitle": "Responde 4 preguntas rápidas y nuestra IA identificará tus puntos de dolor, recomendará automatizaciones y estimará el ROI, personalizado a tu negocio.",
       "badge1": "Tarda ~2 minutos",
       "badge2": "Gratis · Sin registro",
       "badge3": "Adaptado a tus objetivos"
@@ -287,7 +287,7 @@
       "serverError": "Algo salió mal. Inténtalo de nuevo.",
       "step1": {
         "title": "¿A qué sector perteneces?",
-        "subtitle": "Elige el que mejor describa tu negocio — adaptaremos el análisis."
+        "subtitle": "Elige el que mejor describa tu negocio. Adaptaremos el análisis."
       },
       "step2": {
         "title": "Cuéntanos un poco sobre tu equipo",
@@ -522,6 +522,7 @@
     "testimonials": {
       "title": "Lo que dicen nuestros clientes",
       "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
+      "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
       "items": {
         "1": {
           "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
@@ -531,35 +532,35 @@
           "web": "https://www.albetclinicaveterinaria.com/"
         },
         "2": {
-          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "quote": "Testimonio de ejemplo. Sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
           "avatar": "",
           "web": ""
         },
         "3": {
-          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "quote": "Testimonio de ejemplo. Sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
           "avatar": "",
           "web": ""
         },
         "4": {
-          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "quote": "Testimonio de ejemplo. Sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
           "avatar": "",
           "web": ""
         },
         "5": {
-          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "quote": "Testimonio de ejemplo. Sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
           "avatar": "",
           "web": ""
         },
         "6": {
-          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "quote": "Testimonio de ejemplo. Sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
           "avatar": "",

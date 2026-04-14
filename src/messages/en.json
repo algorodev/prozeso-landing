@@ -269,7 +269,7 @@
   "useCases": {
     "hero": {
       "title": "Your <primary>automation plan</primary>, in under <secondary>2 minutes</secondary>",
-      "subtitle": "Answer 4 quick questions and our AI will map your pain points, recommend automations and estimate ROI — personalized to your business.",
+      "subtitle": "Answer 4 quick questions and our AI will map your pain points, recommend automations and estimate ROI, personalized to your business.",
       "badge1": "Takes ~2 minutes",
       "badge2": "Free · No signup",
       "badge3": "Tailored to your goals"
@@ -283,7 +283,7 @@
       "serverError": "Something went wrong. Please try again.",
       "step1": {
         "title": "What industry are you in?",
-        "subtitle": "Pick the one that best describes your business — we'll tailor the analysis."
+        "subtitle": "Pick the one that best describes your business. We'll tailor the analysis."
       },
       "step2": {
         "title": "Tell us a bit about your team",
@@ -518,6 +518,7 @@
     "testimonials": {
       "title": "What Our Clients Say",
       "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
+      "moreComing": "And many more stories on the way. These are just a few of the teams we're working with.",
       "items": {
         "1": {
           "quote": "Since implementing Prozeso at Albet, we've reduced no-shows by 40%, and thanks to automated appointment reminders, our clients arrive far more consistently and on time.",
@@ -527,35 +528,35 @@
           "web": "https://www.albetclinicaveterinaria.com/"
         },
         "2": {
-          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "quote": "Placeholder testimonial. Replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
           "avatar": "",
           "web": ""
         },
         "3": {
-          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "quote": "Placeholder testimonial. Replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
           "avatar": "",
           "web": ""
         },
         "4": {
-          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "quote": "Placeholder testimonial. Replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
           "avatar": "",
           "web": ""
         },
         "5": {
-          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "quote": "Placeholder testimonial. Replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
           "avatar": "",
           "web": ""
         },
         "6": {
-          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "quote": "Placeholder testimonial. Replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
           "avatar": "",
