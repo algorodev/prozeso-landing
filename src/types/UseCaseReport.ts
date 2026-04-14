@@ -1,3 +1,37 @@
+export type BusinessRole =
+  | "founder"
+  | "operations"
+  | "sales"
+  | "customerService"
+  | "marketing"
+  | "other";
+
+export type BusinessGoal =
+  | "saveTime"
+  | "reduceCosts"
+  | "scaleSales"
+  | "improveCx"
+  | "reduceErrors";
+
+export type PainPointChip =
+  | "missedCalls"
+  | "noShows"
+  | "manualAdmin"
+  | "slowResponse"
+  | "leadLeakage"
+  | "schedulingChaos"
+  | "dataScattered"
+  | "repetitiveQuestions";
+
+export interface UseCasePipelineInput {
+  companySize: string;
+  industry: string;
+  role: BusinessRole;
+  painPointChips: PainPointChip[];
+  painPointsDetail: string;
+  goal: BusinessGoal;
+}
+
 export type ImpactLevel = "high" | "medium" | "low";
 
 export type PainPointCategory =

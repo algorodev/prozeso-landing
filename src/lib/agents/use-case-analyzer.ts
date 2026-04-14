@@ -2,7 +2,10 @@ import { generateText, Output } from "ai";
 import { z } from "zod";
 import { getGoogleModel } from "@/lib/config/google-ai";
 import { USE_CASE_ANALYZER_PROMPT } from "@/lib/prompts";
-import type { UseCaseAnalysisResult } from "@/types/UseCaseReport";
+import type {
+  UseCaseAnalysisResult,
+  UseCasePipelineInput,
+} from "@/types/UseCaseReport";
 
 const impactLevelSchema = z.enum(["high", "medium", "low"]);
 
@@ -68,16 +71,17 @@ const analysisSchema = z.object({
 });
 
 export async function analyzeUseCase(
-  companySize: string,
-  industry: string,
-  painPoints: string,
+  input: UseCasePipelineInput,
   locale: "en" | "es" = "en",
 ): Promise<UseCaseAnalysisResult> {
   console.log("🔵 [USE CASE ANALYZER] Starting analysis...");
   console.log("📥 [USE CASE ANALYZER] Input:", {
-    companySize,
-    industry,
-    painPointsLength: painPoints.length,
+    companySize: input.companySize,
+    industry: input.industry,
+    role: input.role,
+    goal: input.goal,
+    painPointChipsCount: input.painPointChips.length,
+    painPointsDetailLength: input.painPointsDetail.length,
     locale,
   });
 
@@ -88,12 +92,7 @@ export async function analyzeUseCase(
       output: Output.object({
         schema: analysisSchema,
       }),
-      prompt: USE_CASE_ANALYZER_PROMPT(
-        companySize,
-        industry,
-        painPoints,
-        locale,
-      ),
+      prompt: USE_CASE_ANALYZER_PROMPT(input, locale),
     });
 
     console.log("✅ [USE CASE ANALYZER] Analysis completed:", {

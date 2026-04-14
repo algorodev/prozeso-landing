@@ -2,11 +2,19 @@
 
 import type { UseCasePipelineState } from "@/lib/agents/pipeline";
 import { runUseCasePipeline } from "@/lib/agents/pipeline";
+import type {
+  BusinessGoal,
+  BusinessRole,
+  PainPointChip,
+} from "@/types/UseCaseReport";
 
 export interface RunUseCasePipelineParams {
   companySize: string;
   industry: string;
-  painPoints: string;
+  role: BusinessRole;
+  painPointChips: PainPointChip[];
+  painPointsDetail: string;
+  goal: BusinessGoal;
   locale?: "en" | "es";
 }
 
@@ -25,29 +33,32 @@ export interface RunUseCasePipelineResult {
   error?: string;
 }
 
-/**
- * Server action to run the use case pipeline
- * This generates a complete analysis and report based on the provided inputs
- */
 export async function runUseCasePipelineAction(
   params: RunUseCasePipelineParams,
 ): Promise<RunUseCasePipelineResult> {
-  const { companySize, industry, painPoints, locale = "en" } = params;
+  const {
+    companySize,
+    industry,
+    role,
+    painPointChips,
+    painPointsDetail,
+    goal,
+    locale = "en",
+  } = params;
 
-  // Validate required fields
-  if (!companySize || !industry || !painPoints) {
+  if (!companySize || !industry || !role || !goal) {
     return {
       success: false,
       error:
-        "Missing required fields: companySize, industry, and painPoints are required",
+        "Missing required fields: companySize, industry, role and goal are required",
     };
   }
 
-  // Validate pain points length
-  if (painPoints.trim().length < 10) {
+  if (painPointChips.length === 0 && painPointsDetail.trim().length < 10) {
     return {
       success: false,
-      error: "Pain points description must be at least 10 characters long",
+      error:
+        "Select at least one pain point or describe your situation in more detail",
     };
   }
 
@@ -55,14 +66,22 @@ export async function runUseCasePipelineAction(
     console.log("🚀 [SERVER ACTION] Starting use case pipeline...", {
       companySize,
       industry,
-      painPointsLength: painPoints.length,
+      role,
+      goal,
+      painPointChipsCount: painPointChips.length,
+      painPointsDetailLength: painPointsDetail.length,
       locale,
     });
 
     const state = await runUseCasePipeline(
-      companySize,
-      industry,
-      painPoints,
+      {
+        companySize,
+        industry,
+        role,
+        painPointChips,
+        painPointsDetail,
+        goal,
+      },
       locale,
       {
         onStatusChange: (status) => {
@@ -102,7 +121,6 @@ export async function runUseCasePipelineAction(
 
     console.log("🎉 [SERVER ACTION] Pipeline completed successfully");
 
-    // Serialize dates to ISO strings for client-side consumption
     const serializedState: SerializedUseCasePipelineState = {
       status: state.status,
       analysis: state.analysis,

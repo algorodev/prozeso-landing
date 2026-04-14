@@ -17,7 +17,19 @@ vi.mock("@/lib/config/google-ai", () => ({
 }));
 
 import { generateReport } from "@/lib/agents/report-generator";
-import type { UseCaseAnalysisResult } from "@/types/UseCaseReport";
+import type {
+  UseCaseAnalysisResult,
+  UseCasePipelineInput,
+} from "@/types/UseCaseReport";
+
+const fakeInput: UseCasePipelineInput = {
+  companySize: "10-50",
+  industry: "restaurants",
+  role: "founder",
+  painPointChips: ["missedCalls"],
+  painPointsDetail: "slow service",
+  goal: "saveTime",
+};
 
 const mockAnalysis: UseCaseAnalysisResult = {
   painPoints: [
@@ -147,18 +159,13 @@ describe("generateReport", () => {
   });
 
   it("calls generateText with analysis JSON in prompt", async () => {
-    await generateReport(mockAnalysis, "10-50", "restaurants", "en");
+    await generateReport(mockAnalysis, fakeInput, "en");
     const call = mockGenerateText.mock.calls[0][0];
     expect(call.prompt).toContain(JSON.stringify(mockAnalysis, null, 2));
   });
 
   it("overrides metadata with correct values", async () => {
-    const result = await generateReport(
-      mockAnalysis,
-      "10-50",
-      "restaurants",
-      "es",
-    );
+    const result = await generateReport(mockAnalysis, fakeInput, "es");
     expect(result.metadata.companySize).toBe("10-50");
     expect(result.metadata.industry).toBe("restaurants");
     expect(result.metadata.locale).toBe("es");
@@ -166,15 +173,15 @@ describe("generateReport", () => {
   });
 
   it("passes locale to prompt", async () => {
-    await generateReport(mockAnalysis, "10-50", "restaurants", "es");
+    await generateReport(mockAnalysis, fakeInput, "es");
     const call = mockGenerateText.mock.calls[0][0];
     expect(call.prompt).toContain("Spanish");
   });
 
   it("throws when AI call fails", async () => {
     mockGenerateText.mockRejectedValue(new Error("AI failed"));
-    await expect(
-      generateReport(mockAnalysis, "10-50", "restaurants"),
-    ).rejects.toThrow("AI failed");
+    await expect(generateReport(mockAnalysis, fakeInput)).rejects.toThrow(
+      "AI failed",
+    );
   });
 });

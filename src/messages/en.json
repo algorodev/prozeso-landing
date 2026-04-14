@@ -268,8 +268,64 @@
   },
   "useCases": {
     "hero": {
-      "title": "Discover how <primary>workflow</primary> automation can transform your <secondary>business</secondary>",
-      "subtitle": "Tell us about your current situation and our AI will identify the specific pain points of your company and show you personalized use cases."
+      "title": "Your <primary>automation plan</primary>, in under <secondary>2 minutes</secondary>",
+      "subtitle": "Answer 4 quick questions and our AI will map your pain points, recommend automations and estimate ROI — personalized to your business.",
+      "badge1": "Takes ~2 minutes",
+      "badge2": "Free · No signup",
+      "badge3": "Tailored to your goals"
+    },
+    "wizard": {
+      "progress": "Step {current} of {total}",
+      "back": "Back",
+      "next": "Continue",
+      "submit": "Generate my report",
+      "generating": "Generating...",
+      "serverError": "Something went wrong. Please try again.",
+      "step1": {
+        "title": "What industry are you in?",
+        "subtitle": "Pick the one that best describes your business — we'll tailor the analysis."
+      },
+      "step2": {
+        "title": "Tell us a bit about your team",
+        "subtitle": "This helps us calibrate the recommendations to your scale and perspective.",
+        "sizeLabel": "Company size",
+        "roleLabel": "Your role",
+        "roles": {
+          "founder": "Founder / CEO",
+          "operations": "Operations",
+          "sales": "Sales",
+          "customerService": "Customer Service",
+          "marketing": "Marketing",
+          "other": "Other"
+        }
+      },
+      "step3": {
+        "title": "Where does it hurt the most?",
+        "subtitle": "Select all that apply. Add context below if you want sharper recommendations.",
+        "chips": {
+          "missedCalls": "We miss calls",
+          "noShows": "No-shows & cancellations",
+          "manualAdmin": "Too much manual admin",
+          "slowResponse": "Slow response to clients",
+          "leadLeakage": "Leads slipping away",
+          "schedulingChaos": "Scheduling is chaotic",
+          "dataScattered": "Data is scattered",
+          "repetitiveQuestions": "Repetitive customer questions"
+        },
+        "detailLabel": "Anything else we should know? (optional)",
+        "detailPlaceholder": "E.g.: we lose 2-3 bookings a week from missed calls after hours..."
+      },
+      "step4": {
+        "title": "What matters most to you right now?",
+        "subtitle": "We'll prioritize recommendations that move this needle first.",
+        "goals": {
+          "saveTime": "Save time",
+          "reduceCosts": "Reduce costs",
+          "scaleSales": "Scale sales",
+          "improveCx": "Improve customer experience",
+          "reduceErrors": "Reduce errors"
+        }
+      }
     },
     "form": {
       "title": "Generate Your Custom Report",

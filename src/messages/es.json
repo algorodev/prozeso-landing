@@ -272,8 +272,64 @@
   },
   "useCases": {
     "hero": {
-      "title": "Descubre cómo la <primary>automatización</primary> puede transformar tu <secondary>negocio</secondary>",
-      "subtitle": "Cuéntanos sobre tu situación actual y nuestra AI identificará los pain points específicos de tu empresa y te mostrará casos de uso personalizados."
+      "title": "Tu <primary>plan de automatización</primary>, en menos de <secondary>2 minutos</secondary>",
+      "subtitle": "Responde 4 preguntas rápidas y nuestra IA identificará tus puntos de dolor, recomendará automatizaciones y estimará el ROI — personalizado a tu negocio.",
+      "badge1": "Tarda ~2 minutos",
+      "badge2": "Gratis · Sin registro",
+      "badge3": "Adaptado a tus objetivos"
+    },
+    "wizard": {
+      "progress": "Paso {current} de {total}",
+      "back": "Atrás",
+      "next": "Continuar",
+      "submit": "Generar mi reporte",
+      "generating": "Generando...",
+      "serverError": "Algo salió mal. Inténtalo de nuevo.",
+      "step1": {
+        "title": "¿A qué sector perteneces?",
+        "subtitle": "Elige el que mejor describa tu negocio — adaptaremos el análisis."
+      },
+      "step2": {
+        "title": "Cuéntanos un poco sobre tu equipo",
+        "subtitle": "Nos ayuda a calibrar las recomendaciones a tu escala y perspectiva.",
+        "sizeLabel": "Tamaño de la empresa",
+        "roleLabel": "Tu rol",
+        "roles": {
+          "founder": "Founder / CEO",
+          "operations": "Operaciones",
+          "sales": "Ventas",
+          "customerService": "Atención al cliente",
+          "marketing": "Marketing",
+          "other": "Otro"
+        }
+      },
+      "step3": {
+        "title": "¿Dónde te duele más?",
+        "subtitle": "Marca todas las que apliquen. Añade contexto abajo para afinar las recomendaciones.",
+        "chips": {
+          "missedCalls": "Perdemos llamadas",
+          "noShows": "No-shows y cancelaciones",
+          "manualAdmin": "Demasiada admin manual",
+          "slowResponse": "Respuesta lenta a clientes",
+          "leadLeakage": "Se nos escapan leads",
+          "schedulingChaos": "Agenda caótica",
+          "dataScattered": "Datos dispersos",
+          "repetitiveQuestions": "Preguntas repetitivas de clientes"
+        },
+        "detailLabel": "¿Algo más que debamos saber? (opcional)",
+        "detailPlaceholder": "Ej.: perdemos 2-3 reservas a la semana por llamadas fuera de horario..."
+      },
+      "step4": {
+        "title": "¿Qué es lo más importante ahora mismo?",
+        "subtitle": "Priorizaremos las recomendaciones que más muevan esta aguja.",
+        "goals": {
+          "saveTime": "Ahorrar tiempo",
+          "reduceCosts": "Reducir costes",
+          "scaleSales": "Escalar ventas",
+          "improveCx": "Mejorar experiencia del cliente",
+          "reduceErrors": "Reducir errores"
+        }
+      }
     },
     "form": {
       "title": "Genera tu Reporte Personalizado",

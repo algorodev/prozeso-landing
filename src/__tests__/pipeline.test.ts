@@ -14,6 +14,16 @@ vi.mock("@/lib/agents/report-generator", () => ({
 }));
 
 import { runUseCasePipeline } from "@/lib/agents/pipeline";
+import type { UseCasePipelineInput } from "@/types/UseCaseReport";
+
+const fakeInput: UseCasePipelineInput = {
+  companySize: "10-50",
+  industry: "restaurants",
+  role: "founder",
+  painPointChips: ["missedCalls"],
+  painPointsDetail: "slow service",
+  goal: "saveTime",
+};
 
 const fakeAnalysis = {
   painPoints: [{ identified: "test" }],
@@ -39,7 +49,7 @@ describe("runUseCasePipeline", () => {
 
   it("transitions through analyzing → generating → completed", async () => {
     const statuses: string[] = [];
-    await runUseCasePipeline("10-50", "restaurants", "slow service", "en", {
+    await runUseCasePipeline(fakeInput, "en", {
       onStatusChange: (s) => statuses.push(s),
     });
     expect(statuses).toEqual(["analyzing", "generating", "completed"]);
@@ -48,7 +58,7 @@ describe("runUseCasePipeline", () => {
   it("calls onAnalysisComplete and onReportComplete callbacks", async () => {
     const onAnalysisComplete = vi.fn();
     const onReportComplete = vi.fn();
-    await runUseCasePipeline("10-50", "restaurants", "slow service", "en", {
+    await runUseCasePipeline(fakeInput, "en", {
       onAnalysisComplete,
       onReportComplete,
     });
@@ -57,11 +67,7 @@ describe("runUseCasePipeline", () => {
   });
 
   it("returns completed state with analysis and report", async () => {
-    const state = await runUseCasePipeline(
-      "10-50",
-      "restaurants",
-      "slow service",
-    );
+    const state = await runUseCasePipeline(fakeInput);
     expect(state.status).toBe("completed");
     expect(state.analysis).toEqual(fakeAnalysis);
     expect(state.report).toEqual(fakeReport);
@@ -71,13 +77,7 @@ describe("runUseCasePipeline", () => {
   it("handles analyzeUseCase error", async () => {
     mockAnalyzeUseCase.mockRejectedValue(new Error("Analysis failed"));
     const onError = vi.fn();
-    const state = await runUseCasePipeline(
-      "10-50",
-      "restaurants",
-      "slow service",
-      "en",
-      { onError },
-    );
+    const state = await runUseCasePipeline(fakeInput, "en", { onError });
     expect(state.status).toBe("error");
     expect(state.error).toBe("Analysis failed");
     expect(onError).toHaveBeenCalledWith("Analysis failed");
@@ -85,36 +85,22 @@ describe("runUseCasePipeline", () => {
 
   it("handles generateReport error", async () => {
     mockGenerateReport.mockRejectedValue(new Error("Report failed"));
-    const state = await runUseCasePipeline(
-      "10-50",
-      "restaurants",
-      "slow service",
-    );
+    const state = await runUseCasePipeline(fakeInput);
     expect(state.status).toBe("error");
     expect(state.error).toBe("Report failed");
   });
 
   it("works without callbacks", async () => {
-    const state = await runUseCasePipeline(
-      "10-50",
-      "restaurants",
-      "slow service",
-    );
+    const state = await runUseCasePipeline(fakeInput);
     expect(state.status).toBe("completed");
   });
 
   it("passes locale to both agents", async () => {
-    await runUseCasePipeline("10-50", "restaurants", "slow service", "es");
-    expect(mockAnalyzeUseCase).toHaveBeenCalledWith(
-      "10-50",
-      "restaurants",
-      "slow service",
-      "es",
-    );
+    await runUseCasePipeline(fakeInput, "es");
+    expect(mockAnalyzeUseCase).toHaveBeenCalledWith(fakeInput, "es");
     expect(mockGenerateReport).toHaveBeenCalledWith(
       fakeAnalysis,
-      "10-50",
-      "restaurants",
+      fakeInput,
       "es",
     );
   });

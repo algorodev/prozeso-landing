@@ -1,10 +1,25 @@
+import type { UseCasePipelineInput } from "@/types/UseCaseReport";
+
 export const USE_CASE_ANALYZER_PROMPT = (
-  companySize: string,
-  industry: string,
-  painPoints: string,
+  input: UseCasePipelineInput,
   locale: "en" | "es" = "en",
 ) => {
   const isSpanish = locale === "es";
+  const {
+    companySize,
+    industry,
+    role,
+    painPointChips,
+    painPointsDetail,
+    goal,
+  } = input;
+
+  const chipsList =
+    painPointChips.length > 0 ? painPointChips.join(", ") : "(none selected)";
+  const detailText =
+    painPointsDetail.trim().length > 0
+      ? painPointsDetail
+      : "(no additional details provided)";
 
   return `You are a business automation analyst specializing in workflow automation and AI-powered solutions for service businesses.
 
@@ -13,7 +28,10 @@ Your task is to analyze the following business information and provide a detaile
 **Company Information:**
 - Company Size: ${companySize}
 - Industry: ${industry}
-- Pain Points Described: ${painPoints}
+- Stakeholder Role: ${role} (the person requesting this analysis; tailor language and priorities to their perspective)
+- Primary Goal: ${goal} (the #1 outcome the stakeholder wants — weight recommendations toward this goal)
+- Selected Pain Points: ${chipsList}
+- Additional Context Provided: ${detailText}
 
 **Analysis Requirements:**
 
@@ -82,18 +100,40 @@ Be specific, actionable, and focus on automation solutions that Prozeso (an AI a
 
 export const REPORT_GENERATOR_PROMPT = (
   analysis: string,
-  companySize: string,
-  industry: string,
+  input: UseCasePipelineInput,
   locale: "en" | "es" = "en",
 ) => {
   const isSpanish = locale === "es";
+  const {
+    companySize,
+    industry,
+    role,
+    painPointChips,
+    painPointsDetail,
+    goal,
+  } = input;
+
+  const chipsList =
+    painPointChips.length > 0 ? painPointChips.join(", ") : "(none selected)";
+  const detailText =
+    painPointsDetail.trim().length > 0
+      ? painPointsDetail
+      : "(no additional details provided)";
 
   return `You are a professional business consultant creating a personalized automation report for a client.
 
 **Client Information:**
 - Company Size: ${companySize}
 - Industry: ${industry}
+- Stakeholder Role: ${role}
+- Primary Goal: ${goal}
+- Selected Pain Points: ${chipsList}
+- Additional Context: ${detailText}
 - Language: ${isSpanish ? "Spanish" : "English"}
+
+**Personalization Requirements:**
+- Frame the executive summary and next steps in language that resonates with a "${role}" stakeholder.
+- Prioritize recommendations and ROI metrics that most directly advance the stated goal: "${goal}".
 
 **Analysis Data:**
 ${analysis}

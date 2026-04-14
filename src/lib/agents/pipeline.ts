@@ -1,5 +1,6 @@
 import type {
   UseCaseAnalysisResult,
+  UseCasePipelineInput,
   UseCaseReport,
 } from "@/types/UseCaseReport";
 import { generateReport } from "./report-generator";
@@ -29,9 +30,7 @@ export interface UseCasePipelineCallbacks {
 }
 
 export async function runUseCasePipeline(
-  companySize: string,
-  industry: string,
-  painPoints: string,
+  input: UseCasePipelineInput,
   locale: "en" | "es" = "en",
   callbacks?: UseCasePipelineCallbacks,
 ): Promise<UseCasePipelineState> {
@@ -52,12 +51,7 @@ export async function runUseCasePipeline(
     state.updatedAt = new Date();
     callbacks?.onStatusChange?.("analyzing");
 
-    const analysis = await analyzeUseCase(
-      companySize,
-      industry,
-      painPoints,
-      locale,
-    );
+    const analysis = await analyzeUseCase(input, locale);
     console.log(
       "✅ [USE CASE PIPELINE] Step 1 completed - Analysis received:",
       {
@@ -77,12 +71,7 @@ export async function runUseCasePipeline(
     state.updatedAt = new Date();
     callbacks?.onStatusChange?.("generating");
 
-    const report = await generateReport(
-      analysis,
-      companySize,
-      industry,
-      locale,
-    );
+    const report = await generateReport(analysis, input, locale);
     console.log("✅ [USE CASE PIPELINE] Step 2 completed - Report received:", {
       hasExecutiveSummary: !!report.executiveSummary,
       painPointsCount: report.painPointsAnalysis.painPoints.length,

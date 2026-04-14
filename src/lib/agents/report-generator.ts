@@ -5,6 +5,7 @@ import { REPORT_GENERATOR_PROMPT } from "@/lib/prompts";
 import type {
   Priority,
   UseCaseAnalysisResult,
+  UseCasePipelineInput,
   UseCaseReport,
 } from "@/types/UseCaseReport";
 
@@ -223,8 +224,7 @@ const reportSchema = z.object({
 
 export async function generateReport(
   analysis: UseCaseAnalysisResult,
-  companySize: string,
-  industry: string,
+  input: UseCasePipelineInput,
   locale: "en" | "es" = "en",
 ): Promise<UseCaseReport> {
   console.log("🟢 [REPORT GENERATOR] Starting report generation...");
@@ -232,8 +232,10 @@ export async function generateReport(
     analysisSummary: analysis.summary,
     painPointsCount: analysis.painPoints.length,
     insightsCount: analysis.keyInsights.length,
-    companySize,
-    industry,
+    companySize: input.companySize,
+    industry: input.industry,
+    role: input.role,
+    goal: input.goal,
     locale,
   });
 
@@ -247,12 +249,7 @@ export async function generateReport(
       output: Output.object({
         schema: reportSchema,
       }),
-      prompt: REPORT_GENERATOR_PROMPT(
-        analysisJson,
-        companySize,
-        industry,
-        locale,
-      ),
+      prompt: REPORT_GENERATOR_PROMPT(analysisJson, input, locale),
     });
 
     // Ensure generatedAt is set to current ISO date
@@ -261,8 +258,8 @@ export async function generateReport(
       metadata: {
         ...output.metadata,
         generatedAt: new Date().toISOString(),
-        companySize,
-        industry,
+        companySize: input.companySize,
+        industry: input.industry,
         locale,
       },
     };

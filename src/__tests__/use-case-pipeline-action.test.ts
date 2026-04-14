@@ -9,6 +9,20 @@ vi.mock("@/lib/agents/pipeline", () => ({
 }));
 
 import { runUseCasePipelineAction } from "@/lib/actions/use-case-pipeline";
+import type {
+  BusinessGoal,
+  BusinessRole,
+  PainPointChip,
+} from "@/types/UseCaseReport";
+
+const validParams = {
+  companySize: "10-50",
+  industry: "restaurants",
+  role: "founder" as BusinessRole,
+  painPointChips: ["missedCalls"] as PainPointChip[],
+  painPointsDetail: "slow service all the time",
+  goal: "saveTime" as BusinessGoal,
+};
 
 describe("runUseCasePipelineAction", () => {
   beforeEach(() => {
@@ -17,9 +31,8 @@ describe("runUseCasePipelineAction", () => {
 
   it("returns error when companySize is missing", async () => {
     const result = await runUseCasePipelineAction({
+      ...validParams,
       companySize: "",
-      industry: "restaurants",
-      painPoints: "slow service all the time",
     });
     expect(result.success).toBe(false);
     expect(result.error).toContain("Missing required fields");
@@ -27,22 +40,21 @@ describe("runUseCasePipelineAction", () => {
 
   it("returns error when industry is missing", async () => {
     const result = await runUseCasePipelineAction({
-      companySize: "10-50",
+      ...validParams,
       industry: "",
-      painPoints: "slow service all the time",
     });
     expect(result.success).toBe(false);
     expect(result.error).toContain("Missing required fields");
   });
 
-  it("returns error when painPoints is too short", async () => {
+  it("returns error when no chips and painPointsDetail too short", async () => {
     const result = await runUseCasePipelineAction({
-      companySize: "10-50",
-      industry: "restaurants",
-      painPoints: "short",
+      ...validParams,
+      painPointChips: [],
+      painPointsDetail: "short",
     });
     expect(result.success).toBe(false);
-    expect(result.error).toContain("at least 10 characters");
+    expect(result.error).toContain("pain point");
   });
 
   it("returns success with serialized state on completion", async () => {
@@ -55,11 +67,7 @@ describe("runUseCasePipelineAction", () => {
       createdAt: now,
       updatedAt: now,
     });
-    const result = await runUseCasePipelineAction({
-      companySize: "10-50",
-      industry: "restaurants",
-      painPoints: "slow service all the time",
-    });
+    const result = await runUseCasePipelineAction(validParams);
     expect(result.success).toBe(true);
     expect(result.data?.status).toBe("completed");
     expect(result.data?.createdAt).toBe(now.toISOString());
@@ -75,11 +83,7 @@ describe("runUseCasePipelineAction", () => {
       createdAt: new Date(),
       updatedAt: new Date(),
     });
-    const result = await runUseCasePipelineAction({
-      companySize: "10-50",
-      industry: "restaurants",
-      painPoints: "slow service all the time",
-    });
+    const result = await runUseCasePipelineAction(validParams);
     expect(result.success).toBe(false);
     expect(result.error).toBe("Pipeline failed");
   });
@@ -93,22 +97,14 @@ describe("runUseCasePipelineAction", () => {
       createdAt: new Date(),
       updatedAt: new Date(),
     });
-    const result = await runUseCasePipelineAction({
-      companySize: "10-50",
-      industry: "restaurants",
-      painPoints: "slow service all the time",
-    });
+    const result = await runUseCasePipelineAction(validParams);
     expect(result.success).toBe(false);
     expect(result.error).toContain("did not complete");
   });
 
   it("handles unexpected thrown error", async () => {
     mockRunUseCasePipeline.mockRejectedValue(new Error("Unexpected"));
-    const result = await runUseCasePipelineAction({
-      companySize: "10-50",
-      industry: "restaurants",
-      painPoints: "slow service all the time",
-    });
+    const result = await runUseCasePipelineAction(validParams);
     expect(result.success).toBe(false);
     expect(result.error).toBe("Unexpected");
   });

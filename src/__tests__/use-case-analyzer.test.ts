@@ -17,6 +17,16 @@ vi.mock("@/lib/config/google-ai", () => ({
 }));
 
 import { analyzeUseCase } from "@/lib/agents/use-case-analyzer";
+import type { UseCasePipelineInput } from "@/types/UseCaseReport";
+
+const fakeInput: UseCasePipelineInput = {
+  companySize: "10-50",
+  industry: "restaurants",
+  role: "founder",
+  painPointChips: ["missedCalls"],
+  painPointsDetail: "slow service",
+  goal: "saveTime",
+};
 
 const mockAnalysisOutput = {
   painPoints: [
@@ -47,26 +57,24 @@ describe("analyzeUseCase", () => {
   });
 
   it("calls generateText with the correct model", async () => {
-    await analyzeUseCase("10-50", "restaurants", "slow service", "en");
+    await analyzeUseCase(fakeInput, "en");
     expect(mockGetGoogleModel).toHaveBeenCalledWith("gemini-2.5-flash");
     expect(mockGenerateText).toHaveBeenCalledTimes(1);
   });
 
   it("returns parsed output as UseCaseAnalysisResult", async () => {
-    const result = await analyzeUseCase("10-50", "restaurants", "slow service");
+    const result = await analyzeUseCase(fakeInput);
     expect(result).toEqual(mockAnalysisOutput);
   });
 
   it("passes locale to prompt", async () => {
-    await analyzeUseCase("10-50", "restaurants", "slow service", "es");
+    await analyzeUseCase(fakeInput, "es");
     const call = mockGenerateText.mock.calls[0][0];
     expect(call.prompt).toContain("Spanish");
   });
 
   it("throws when AI call fails", async () => {
     mockGenerateText.mockRejectedValue(new Error("AI failed"));
-    await expect(
-      analyzeUseCase("10-50", "restaurants", "slow service"),
-    ).rejects.toThrow("AI failed");
+    await expect(analyzeUseCase(fakeInput)).rejects.toThrow("AI failed");
   });
 });
