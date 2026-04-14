@@ -455,15 +455,46 @@
         }
       }
     },
-    "showcase": {
-      "title": "Use Cases by Business Area",
-      "subtitle": "Discover how automation can transform different areas of your business with targeted solutions.",
-      "areas": {
-        "operations": "Operations",
-        "sales": "Sales",
-        "hr": "Human Resources",
-        "finance": "Finance",
-        "customerService": "Customer Service"
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
+      "items": {
+        "1": {
+          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "name": "Client Name",
+          "role": "Role · Company",
+          "avatar": ""
+        },
+        "2": {
+          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "name": "Client Name",
+          "role": "Role · Company",
+          "avatar": ""
+        },
+        "3": {
+          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "name": "Client Name",
+          "role": "Role · Company",
+          "avatar": ""
+        },
+        "4": {
+          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "name": "Client Name",
+          "role": "Role · Company",
+          "avatar": ""
+        },
+        "5": {
+          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "name": "Client Name",
+          "role": "Role · Company",
+          "avatar": ""
+        },
+        "6": {
+          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
+          "name": "Client Name",
+          "role": "Role · Company",
+          "avatar": ""
+        }
       }
     },
     "workflowAutomation": {

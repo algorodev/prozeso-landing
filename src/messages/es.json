@@ -459,15 +459,46 @@
         }
       }
     },
-    "showcase": {
-      "title": "Casos de Uso por Área de Negocio",
-      "subtitle": "Descubre cómo la automatización puede transformar diferentes áreas de tu negocio con soluciones específicas.",
-      "areas": {
-        "operations": "Operaciones",
-        "sales": "Ventas",
-        "hr": "Recursos Humanos",
-        "finance": "Finanzas",
-        "customerService": "Atención al Cliente"
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
+      "items": {
+        "1": {
+          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "name": "Nombre del cliente",
+          "role": "Cargo · Empresa",
+          "avatar": ""
+        },
+        "2": {
+          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "name": "Nombre del cliente",
+          "role": "Cargo · Empresa",
+          "avatar": ""
+        },
+        "3": {
+          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "name": "Nombre del cliente",
+          "role": "Cargo · Empresa",
+          "avatar": ""
+        },
+        "4": {
+          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "name": "Nombre del cliente",
+          "role": "Cargo · Empresa",
+          "avatar": ""
+        },
+        "5": {
+          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "name": "Nombre del cliente",
+          "role": "Cargo · Empresa",
+          "avatar": ""
+        },
+        "6": {
+          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
+          "name": "Nombre del cliente",
+          "role": "Cargo · Empresa",
+          "avatar": ""
+        }
       }
     },
     "workflowAutomation": {
