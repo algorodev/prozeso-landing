@@ -55,12 +55,49 @@ export default function UseCasesTestimonials() {
       >
         {TESTIMONIAL_IDS.map((id) => {
           const name = t(`items.${id}.name`);
+          const web = t(`items.${id}.web`);
           const initials = name
             .split(" ")
             .map((n) => n[0])
             .slice(0, 2)
             .join("")
             .toUpperCase();
+
+          const cardInner = (
+            <Card
+              className={`h-full border-border/60 bg-transparent transition-colors ${
+                web
+                  ? "hover:border-primary/60 hover:bg-card/30 cursor-pointer"
+                  : "hover:border-border"
+              }`}
+            >
+              <CardContent className="pt-6 pb-6 flex flex-col h-full">
+                <Quote
+                  className="size-7 text-primary/60 mb-4"
+                  aria-hidden="true"
+                />
+                <p className="text-base leading-relaxed text-foreground mb-6 flex-1">
+                  “{t(`items.${id}.quote`)}”
+                </p>
+                <div className="flex items-center gap-3 mt-auto">
+                  <Avatar className="size-11 border border-border/60">
+                    <AvatarImage src={t(`items.${id}.avatar`)} alt={name} />
+                    <AvatarFallback className="text-sm font-medium">
+                      {initials}
+                    </AvatarFallback>
+                  </Avatar>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-semibold text-foreground">
+                      {name}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {t(`items.${id}.role`)}
+                    </span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          );
 
           return (
             <motion.div
@@ -70,33 +107,19 @@ export default function UseCasesTestimonials() {
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
             >
-              <Card className="h-full border-border/60 bg-transparent hover:border-border transition-colors">
-                <CardContent className="pt-6 pb-6 flex flex-col h-full">
-                  <Quote
-                    className="size-7 text-primary/60 mb-4"
-                    aria-hidden="true"
-                  />
-                  <p className="text-base leading-relaxed text-foreground mb-6 flex-1">
-                    “{t(`items.${id}.quote`)}”
-                  </p>
-                  <div className="flex items-center gap-3 mt-auto">
-                    <Avatar className="size-11 border border-border/60">
-                      <AvatarImage src={t(`items.${id}.avatar`)} alt={name} />
-                      <AvatarFallback className="text-sm font-medium">
-                        {initials}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="flex flex-col">
-                      <span className="text-sm font-semibold text-foreground">
-                        {name}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {t(`items.${id}.role`)}
-                      </span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              {web ? (
+                <a
+                  href={web}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${name} — ${t(`items.${id}.role`)}`}
+                  className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                >
+                  {cardInner}
+                </a>
+              ) : (
+                cardInner
+              )}
             </motion.div>
           );
         })}

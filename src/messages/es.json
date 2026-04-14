@@ -524,40 +524,46 @@
       "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
       "items": {
         "1": {
-          "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
-          "name": "Nombre del cliente",
-          "role": "Cargo · Empresa",
-          "avatar": ""
+          "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
+          "name": "Pere Coma",
+          "role": "Director General · Albet Clínica Veterinària",
+          "avatar": "",
+          "web": "https://www.albetclinicaveterinaria.com/"
         },
         "2": {
           "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "3": {
           "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "4": {
           "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "5": {
           "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "6": {
           "quote": "Testimonio de ejemplo — sustitúyelo por la cita real del cliente destacando el impacto de la automatización entregada.",
           "name": "Nombre del cliente",
           "role": "Cargo · Empresa",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         }
       }
     },

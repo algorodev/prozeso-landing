@@ -520,40 +520,46 @@
       "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
       "items": {
         "1": {
-          "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
-          "name": "Client Name",
-          "role": "Role · Company",
-          "avatar": ""
+          "quote": "Since implementing Prozeso at Albet, we've reduced no-shows by 40%, and thanks to automated appointment reminders, our clients arrive far more consistently and on time.",
+          "name": "Pere Coma",
+          "role": "General Manager · Albet Clínica Veterinària",
+          "avatar": "",
+          "web": "https://www.albetclinicaveterinaria.com/"
         },
         "2": {
           "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "3": {
           "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "4": {
           "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "5": {
           "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         },
         "6": {
           "quote": "Placeholder testimonial — replace with the real client quote highlighting the impact of the automation we delivered.",
           "name": "Client Name",
           "role": "Role · Company",
-          "avatar": ""
+          "avatar": "",
+          "web": ""
         }
       }
     },
