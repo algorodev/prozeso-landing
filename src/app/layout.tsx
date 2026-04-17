@@ -19,7 +19,8 @@ const soraFont = Sora({
 });
 
 const siteName = "Prozeso";
-const siteDescription = "Automate your workflows with ease";
+const siteDescription =
+  "AI-powered workflow automation for service businesses — voice receptionists, smart reminders, billing and reviews.";
 const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const GA_ID = process.env.GA_MEASUREMENT_ID ?? "";
