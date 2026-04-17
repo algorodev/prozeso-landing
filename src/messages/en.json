@@ -515,62 +515,6 @@
         }
       }
     },
-    "testimonials": {
-      "title": "What Our Clients Say",
-      "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
-      "moreComing": "And many more stories on the way. These are just a few of the teams we're working with.",
-      "items": {
-        "1": {
-          "quote": "Since implementing Prozeso at Albet, we've reduced no-shows by 40%, and thanks to automated appointment reminders, our clients arrive far more consistently and on time.",
-          "name": "Pere Coma",
-          "role": "General Manager · Albet Clínica Veterinària",
-          "avatar": "/assets/testimonials/albet_vet.png",
-          "web": "https://www.albetclinicaveterinaria.com/"
-        },
-        "2": {
-          "quote": "Ever since we started using Prozeso, we've stopped losing time to phone calls. It handles over 20 calls a day, even when we're closed, so we can focus on our real passion: giving every client our full attention. Plus, the automatic waiting list is a total game-changer.",
-          "name": "Eva Mayoral",
-          "role": "Owner · Mayoral Studio",
-          "avatar": "/assets/testimonials/mayoral.png",
-          "web": "https://evamayoral.com"
-        },
-        "3": {
-          "quote": "We've been building structures for over 35 years, but managing calls and follow-ups was eating into time we needed on-site. Since we implemented Prozeso, our office team focuses on what matters: coordinating projects, not chasing phone calls.",
-          "name": "José Antonio González",
-          "role": "Director · Estructuras Albuixech",
-          "avatar": "/assets/testimonials/proconsal.webp",
-          "web": "https://estructurasalbuixech.es/"
-        },
-        "4": {
-          "quote": "We handle hundreds of inquiries from distributors and hardware stores every week. With Prozeso, requests for catalogs, stock availability, and delivery timelines are resolved automatically. Our sales team now focuses on closing deals, not answering the same questions over and over.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · Altipesa",
-          "avatar": "/assets/testimonials/altipesa.png",
-          "web": "https://altipesa.com/"
-        },
-        "5": {
-          "quote": "Our distributor network needs fast answers on orders, lead times, and technical specs. Since we activated Prozeso, response time has dropped dramatically and distributor satisfaction has gone up. Less friction, more sales.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · KTL Escaleras",
-          "avatar": "/assets/testimonials/ktl.png",
-          "web": "https://ktl-escaleras.es/"
-        },
-        "6": {
-          "quote": "If you have a service business and feel stuck in the day-to-day operations, talk to Prozeso. They start with a free assessment, understand your business, and propose automations that pay for themselves in weeks. For us, it's been a game-changer. Now Novify is scaling up, but without losing what makes us unique: the human element.",
-          "name": "Angélica Ortega",
-          "role": "Founder & CEO · Novify",
-          "avatar": "/assets/testimonials/novify.png",
-          "web": "https://novify.xyz/"
-        },
-        "7": {
-          "quote": "With Prozeso, we've transformed Albet's logistics: we now resolve warehouse incidents in real time, reducing errors and optimizing every operation seamlessly.",
-          "name": "Carles Viladecans",
-          "role": "CEO · Albet",
-          "avatar": "/assets/testimonials/albet.png",
-          "web": "https://www.albet.es/"
-        }
-      }
-    },
     "workflowAutomation": {
       "title": "Workflow Automation",
       "description": "Automatically connect your tools to eliminate repetitive tasks and streamline processes",
@@ -736,6 +680,62 @@
     },
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
+      "moreComing": "And many more stories on the way. These are just a few of the teams we're working with.",
+      "items": {
+        "1": {
+          "quote": "Since implementing Prozeso at Albet, we've reduced no-shows by 40%, and thanks to automated appointment reminders, our clients arrive far more consistently and on time.",
+          "name": "Pere Coma",
+          "role": "General Manager · Albet Clínica Veterinària",
+          "avatar": "/assets/testimonials/albet_vet.png",
+          "web": "https://www.albetclinicaveterinaria.com/"
+        },
+        "2": {
+          "quote": "Ever since we started using Prozeso, we've stopped losing time to phone calls. It handles over 20 calls a day, even when we're closed, so we can focus on our real passion: giving every client our full attention. Plus, the automatic waiting list is a total game-changer.",
+          "name": "Eva Mayoral",
+          "role": "Owner · Mayoral Studio",
+          "avatar": "/assets/testimonials/mayoral.png",
+          "web": "https://evamayoral.com"
+        },
+        "3": {
+          "quote": "We've been building structures for over 35 years, but managing calls and follow-ups was eating into time we needed on-site. Since we implemented Prozeso, our office team focuses on what matters: coordinating projects, not chasing phone calls.",
+          "name": "José Antonio González",
+          "role": "Director · Estructuras Albuixech",
+          "avatar": "/assets/testimonials/proconsal.webp",
+          "web": "https://estructurasalbuixech.es/"
+        },
+        "4": {
+          "quote": "We handle hundreds of inquiries from distributors and hardware stores every week. With Prozeso, requests for catalogs, stock availability, and delivery timelines are resolved automatically. Our sales team now focuses on closing deals, not answering the same questions over and over.",
+          "name": "Andrés Peralta",
+          "role": "Co-Founder & Director · Altipesa",
+          "avatar": "/assets/testimonials/altipesa.png",
+          "web": "https://altipesa.com/"
+        },
+        "5": {
+          "quote": "Our distributor network needs fast answers on orders, lead times, and technical specs. Since we activated Prozeso, response time has dropped dramatically and distributor satisfaction has gone up. Less friction, more sales.",
+          "name": "Andrés Peralta",
+          "role": "Co-Founder & Director · KTL Escaleras",
+          "avatar": "/assets/testimonials/ktl.png",
+          "web": "https://ktl-escaleras.es/"
+        },
+        "6": {
+          "quote": "If you have a service business and feel stuck in the day-to-day operations, talk to Prozeso. They start with a free assessment, understand your business, and propose automations that pay for themselves in weeks. For us, it's been a game-changer. Now Novify is scaling up, but without losing what makes us unique: the human element.",
+          "name": "Angélica Ortega",
+          "role": "Founder & CEO · Novify",
+          "avatar": "/assets/testimonials/novify.png",
+          "web": "https://novify.xyz/"
+        },
+        "7": {
+          "quote": "With Prozeso, we've transformed Albet's logistics: we now resolve warehouse incidents in real time, reducing errors and optimizing every operation seamlessly.",
+          "name": "Carles Viladecans",
+          "role": "CEO · Albet",
+          "avatar": "/assets/testimonials/albet.png",
+          "web": "https://www.albet.es/"
+        }
+      }
     },
     "automationSuite": {
       "title": "<highlight>Every area</highlight> of your business, automated",

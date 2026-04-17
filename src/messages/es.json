@@ -519,62 +519,6 @@
         }
       }
     },
-    "testimonials": {
-      "title": "Lo que dicen nuestros clientes",
-      "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
-      "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
-      "items": {
-        "1": {
-          "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
-          "name": "Pere Coma",
-          "role": "Director General · Albet Clínica Veterinària",
-          "avatar": "/assets/testimonials/albet_vet.png",
-          "web": "https://www.albetclinicaveterinaria.com/"
-        },
-        "2": {
-          "quote": "Desde que implementamos Prozeso en nuestro salón, hemos dejado de perder tiempo al teléfono. Ahora se gestionan más de 20 llamadas al día, incluso fuera del horario, lo que nos ha permitido centrarnos en lo que más nos gusta: atender a cada cliente con todo el tiempo que se merece. Y lo mejor, la lista de espera automática.",
-          "name": "Eva Mayoral",
-          "role": "Owner · Mayoral Studio",
-          "avatar": "/assets/testimonials/mayoral.png",
-          "web": "https://evamayoral.com"
-        },
-        "3": {
-          "quote": "Llevamos más de 35 años levantando estructuras, pero la gestión de llamadas y seguimientos nos robaba un tiempo que necesitábamos en obra. Desde que implantamos Prozeso, el equipo de oficina dedica su tiempo a lo que importa: coordinar proyectos, no perseguir llamadas.",
-          "name": "José Antonio González",
-          "role": "Director · Estructuras Albuixech",
-          "avatar": "/assets/testimonials/proconsal.webp",
-          "web": "https://estructurasalbuixech.es/"
-        },
-        "4": {
-          "quote": "Gestionamos cientos de consultas de distribuidores y ferreterías cada semana. Con Prozeso, las peticiones de catálogo, disponibilidad de stock y plazos de entrega se resuelven automáticamente. Nuestro equipo comercial ahora se centra en cerrar ventas, no en responder las mismas preguntas.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · Altipesa",
-          "avatar": "/assets/testimonials/altipesa.png",
-          "web": "https://altipesa.com/"
-        },
-        "5": {
-          "quote": "Nuestra red de distribuidores necesita respuestas rápidas sobre pedidos, plazos y especificaciones técnicas. Desde que activamos Prozeso, el tiempo de respuesta ha bajado drásticamente y la satisfacción de nuestros distribuidores ha subido. Menos fricciones, más ventas.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · KTL Escaleras",
-          "avatar": "/assets/testimonials/ktl.png",
-          "web": "https://ktl-escaleras.es/"
-        },
-        "6": {
-          "quote": "Si tienes un negocio de servicios y sientes que estás atrapada en lo operativo, habla con Prozeso. Empiezan con una evaluación gratuita, entienden tu negocio y te proponen automatizaciones que se pagan solas en semanas. Para nosotros ha sido un antes y un después. Ahora Novify escala, pero sin perder lo que nos hace únicos: el factor humano.",
-          "name": "Angélica Ortega",
-          "role": "Founder & CEO · Novify",
-          "avatar": "/assets/testimonials/novify.png",
-          "web": "https://novify.xyz/"
-        },
-        "7": {
-          "quote": "Con Prozeso hemos transformado la logística de Albet: ahora resolvemos incidencias en almacén en tiempo real, reduciendo errores y optimizando cada operación sin fricción.",
-          "name": "Carles Viladecans",
-          "role": "CEO · Albet",
-          "avatar": "/assets/testimonials/albet.png",
-          "web": "https://www.albet.es/"
-        }
-      }
-    },
     "workflowAutomation": {
       "title": "Automatización de Workflows",
       "description": "Conecta automáticamente tus herramientas para eliminar tareas repetitivas y optimizar procesos",
@@ -740,6 +684,62 @@
     },
     "partnerships": {
       "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
+      "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
+      "items": {
+        "1": {
+          "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
+          "name": "Pere Coma",
+          "role": "Director General · Albet Clínica Veterinària",
+          "avatar": "/assets/testimonials/albet_vet.png",
+          "web": "https://www.albetclinicaveterinaria.com/"
+        },
+        "2": {
+          "quote": "Desde que implementamos Prozeso en nuestro salón, hemos dejado de perder tiempo al teléfono. Ahora se gestionan más de 20 llamadas al día, incluso fuera del horario, lo que nos ha permitido centrarnos en lo que más nos gusta: atender a cada cliente con todo el tiempo que se merece. Y lo mejor, la lista de espera automática.",
+          "name": "Eva Mayoral",
+          "role": "Owner · Mayoral Studio",
+          "avatar": "/assets/testimonials/mayoral.png",
+          "web": "https://evamayoral.com"
+        },
+        "3": {
+          "quote": "Llevamos más de 35 años levantando estructuras, pero la gestión de llamadas y seguimientos nos robaba un tiempo que necesitábamos en obra. Desde que implantamos Prozeso, el equipo de oficina dedica su tiempo a lo que importa: coordinar proyectos, no perseguir llamadas.",
+          "name": "José Antonio González",
+          "role": "Director · Estructuras Albuixech",
+          "avatar": "/assets/testimonials/proconsal.webp",
+          "web": "https://estructurasalbuixech.es/"
+        },
+        "4": {
+          "quote": "Gestionamos cientos de consultas de distribuidores y ferreterías cada semana. Con Prozeso, las peticiones de catálogo, disponibilidad de stock y plazos de entrega se resuelven automáticamente. Nuestro equipo comercial ahora se centra en cerrar ventas, no en responder las mismas preguntas.",
+          "name": "Andrés Peralta",
+          "role": "Co-Founder & Director · Altipesa",
+          "avatar": "/assets/testimonials/altipesa.png",
+          "web": "https://altipesa.com/"
+        },
+        "5": {
+          "quote": "Nuestra red de distribuidores necesita respuestas rápidas sobre pedidos, plazos y especificaciones técnicas. Desde que activamos Prozeso, el tiempo de respuesta ha bajado drásticamente y la satisfacción de nuestros distribuidores ha subido. Menos fricciones, más ventas.",
+          "name": "Andrés Peralta",
+          "role": "Co-Founder & Director · KTL Escaleras",
+          "avatar": "/assets/testimonials/ktl.png",
+          "web": "https://ktl-escaleras.es/"
+        },
+        "6": {
+          "quote": "Si tienes un negocio de servicios y sientes que estás atrapada en lo operativo, habla con Prozeso. Empiezan con una evaluación gratuita, entienden tu negocio y te proponen automatizaciones que se pagan solas en semanas. Para nosotros ha sido un antes y un después. Ahora Novify escala, pero sin perder lo que nos hace únicos: el factor humano.",
+          "name": "Angélica Ortega",
+          "role": "Founder & CEO · Novify",
+          "avatar": "/assets/testimonials/novify.png",
+          "web": "https://novify.xyz/"
+        },
+        "7": {
+          "quote": "Con Prozeso hemos transformado la logística de Albet: ahora resolvemos incidencias en almacén en tiempo real, reduciendo errores y optimizando cada operación sin fricción.",
+          "name": "Carles Viladecans",
+          "role": "CEO · Albet",
+          "avatar": "/assets/testimonials/albet.png",
+          "web": "https://www.albet.es/"
+        }
+      }
     },
     "automationSuite": {
       "title": "<highlight>Cada área</highlight> de tu negocio, automatizada",
