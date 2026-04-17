@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import BubbleDiagram from "@/components/Home/BubbleDiagram";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
@@ -8,6 +9,8 @@ import Testimonials from "@/components/Home/Testimonials";
 import TrustedBy from "@/components/Home/TrustedBy";
 import Understanding from "@/components/Home/Understanding";
 import { locales } from "@/i18n/config";
+
+const TESTIMONIAL_IDS = ["1", "2", "3", "4", "5", "6", "7"] as const;
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -132,8 +135,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function JsonLd() {
+async function JsonLd({ locale }: { locale: string }) {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "https://prozeso.com";
+  const t = await getTranslations({ locale, namespace: "home.testimonials" });
+
+  const reviews = TESTIMONIAL_IDS.map((id) => ({
+    "@type": "Review",
+    reviewBody: t(`items.${id}.quote`),
+    reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
+    author: {
+      "@type": "Person",
+      name: t(`items.${id}.name`),
+      jobTitle: t(`items.${id}.role`),
+    },
+  }));
 
   const organization = {
     "@context": "https://schema.org",
@@ -147,6 +162,13 @@ function JsonLd() {
     ],
     description:
       "AI-powered workflow automation platform for service businesses.",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 5,
+      bestRating: 5,
+      reviewCount: reviews.length,
+    },
+    review: reviews,
   };
 
   const webSite = {
@@ -163,10 +185,11 @@ function JsonLd() {
   );
 }
 
-export default function Home() {
+export default async function Home({ params }: Props) {
+  const { locale } = await params;
   return (
     <div>
-      <JsonLd />
+      <JsonLd locale={locale} />
       <Hero />
       <Understanding />
       <BubbleDiagram />
