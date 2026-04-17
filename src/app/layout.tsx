@@ -79,7 +79,8 @@ export const metadata: Metadata = {
         alt: `${siteName} — ${siteDescription}`,
       },
     ],
-    locale: "en_US",
+    locale: "es_ES",
+    alternateLocale: ["en_US"],
   },
   twitter: {
     card: "summary_large_image",
