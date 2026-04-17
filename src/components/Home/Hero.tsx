@@ -19,9 +19,8 @@ const Hero = () => {
         <div className="flex">
           <div className="text-center lg:text-left lg:w-2/3">
             <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ amount: 0.2 }}
+              initial={{ y: 8 }}
+              animate={{ y: 0 }}
               transition={{ delay: 0.05, duration: 0.6 }}
               className="hero-title"
             >
