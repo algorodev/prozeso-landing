@@ -3,6 +3,7 @@ import Hero from "@/components/About/Hero";
 import Team from "@/components/About/Team";
 import FinalCTA from "@/components/Home/FinalCTA";
 import { locales } from "@/i18n/config";
+import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -40,9 +41,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params;
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const breadcrumb = buildBreadcrumbJsonLd([
+    {
+      name: locale === "es" ? "Inicio" : "Home",
+      url: `${base}/${locale}/`,
+    },
+    {
+      name: locale === "es" ? "Sobre Nosotros" : "About Us",
+      url: `${base}/${locale}/about`,
+    },
+  ]);
+
   return (
     <div>
+      <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <Hero />
       <Team />
       <FinalCTA />

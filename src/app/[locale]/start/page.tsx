@@ -3,6 +3,7 @@ import { AssessmentForm } from "@/components/Start/AssessmentForm";
 import { Hero } from "@/components/Start/Hero";
 import { Steps } from "@/components/Start/Steps";
 import { locales } from "@/i18n/config";
+import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -74,9 +75,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function StartPage() {
+export default async function StartPage({ params }: Props) {
+  const { locale } = await params;
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const breadcrumb = buildBreadcrumbJsonLd([
+    {
+      name: locale === "es" ? "Inicio" : "Home",
+      url: `${base}/${locale}/`,
+    },
+    {
+      name: locale === "es" ? "Empieza" : "Start",
+      url: `${base}/${locale}/start`,
+    },
+  ]);
+
   return (
     <main className="mx-auto min-h-dvh max-w-7xl">
+      <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <Hero />
       <Steps />
       <section id="assessment" className="py-10">

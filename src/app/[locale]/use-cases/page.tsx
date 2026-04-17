@@ -3,6 +3,7 @@ import FinalCTA from "@/components/Home/FinalCTA";
 import { UseCasesForm } from "@/components/UseCases/UseCasesForm";
 import { UseCasesHero } from "@/components/UseCases/UseCasesHero";
 import { locales } from "@/i18n/config";
+import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -77,9 +78,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function UseCasesPage() {
+export default async function UseCasesPage({ params }: Props) {
+  const { locale } = await params;
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const breadcrumb = buildBreadcrumbJsonLd([
+    {
+      name: locale === "es" ? "Inicio" : "Home",
+      url: `${base}/${locale}/`,
+    },
+    {
+      name: locale === "es" ? "Casos de uso" : "Use Cases",
+      url: `${base}/${locale}/use-cases`,
+    },
+  ]);
+
   return (
     <main className="">
+      <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <section className="relative isolate min-h-dvh-minus-header overflow-hidden flex items-center">
         <div className="relative w-full container mx-auto py-12 sm:py-16 lg:py-20">
           <UseCasesHero />
