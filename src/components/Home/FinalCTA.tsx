@@ -12,7 +12,7 @@ const FinalCTA = () => {
   const tc = useTranslations("common.cta");
 
   return (
-    <section className="relative py-32 px-6 border-t border-border overflow-hidden bg-background text-foreground">
+    <section className="relative py-32 px-6 border-y border-border overflow-hidden bg-background text-foreground">
       <div className="container mx-auto text-center max-w-[1280px] relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

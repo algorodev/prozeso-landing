@@ -168,13 +168,13 @@ export default function Home() {
     <div>
       <JsonLd />
       <Hero />
-      <TrustedBy />
       <Understanding />
       <BubbleDiagram />
       <Impact />
       <Partnerships />
       <Testimonials />
       <FinalCTA />
+      <TrustedBy />
     </div>
   );
 }
