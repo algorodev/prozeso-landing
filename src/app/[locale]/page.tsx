@@ -4,6 +4,7 @@ import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import Partnerships from "@/components/Home/Partnerships";
+import Testimonials from "@/components/Home/Testimonials";
 import TrustedBy from "@/components/Home/TrustedBy";
 import Understanding from "@/components/Home/Understanding";
 import { locales } from "@/i18n/config";
@@ -172,6 +173,7 @@ export default function Home() {
       <BubbleDiagram />
       <Impact />
       <Partnerships />
+      <Testimonials />
       <FinalCTA />
     </div>
   );

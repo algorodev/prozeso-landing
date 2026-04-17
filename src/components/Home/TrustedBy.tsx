@@ -79,7 +79,7 @@ const TrustedBy = () => {
           className="flex justify-center mt-10"
         >
           <LocalizedLink
-            href="/use-cases#testimonials"
+            href="/#testimonials"
             className="group inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             {t("testimonialsLink")}
