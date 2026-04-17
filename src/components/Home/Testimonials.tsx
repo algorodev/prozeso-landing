@@ -88,33 +88,35 @@ const Testimonials = () => {
                 }`}
               >
                 <CardContent className="pt-6 pb-6 flex flex-col h-full">
-                  <Quote
-                    className="size-7 text-primary/60 mb-4 shrink-0"
-                    aria-hidden="true"
-                  />
-                  <p className="text-sm leading-relaxed text-foreground mb-6 flex-1">
-                    {`“${item.quote}”`}
-                  </p>
-                  <div className="flex items-center gap-3 mt-auto">
-                    <Avatar className="size-11 border border-border/60">
-                      <AvatarImage
-                        src={item.avatar}
-                        alt={item.name}
-                        className="object-cover"
-                      />
-                      <AvatarFallback className="text-sm font-medium">
-                        {initials}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="flex flex-col">
-                      <span className="text-sm font-semibold text-foreground">
-                        {item.name}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {item.role}
-                      </span>
-                    </div>
-                  </div>
+                  <figure className="flex flex-col h-full m-0">
+                    <Quote
+                      className="size-7 text-primary/60 mb-4 shrink-0"
+                      aria-hidden="true"
+                    />
+                    <blockquote className="text-sm leading-relaxed text-foreground mb-6 flex-1 m-0">
+                      <p className="m-0">{`“${item.quote}”`}</p>
+                    </blockquote>
+                    <figcaption className="flex items-center gap-3 mt-auto">
+                      <Avatar className="size-11 border border-border/60">
+                        <AvatarImage
+                          src={item.avatar}
+                          alt={item.name}
+                          className="object-cover"
+                        />
+                        <AvatarFallback className="text-sm font-medium">
+                          {initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div className="flex flex-col">
+                        <cite className="text-sm font-semibold text-foreground not-italic">
+                          {item.name}
+                        </cite>
+                        <span className="text-xs text-muted-foreground">
+                          {item.role}
+                        </span>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </CardContent>
               </Card>
             );
