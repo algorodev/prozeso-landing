@@ -1,10 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const LOGOS = [
   {
@@ -71,24 +69,6 @@ const TrustedBy = () => {
             </motion.li>
           ))}
         </motion.ul>
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.3 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="flex justify-center mt-10"
-        >
-          <LocalizedLink
-            href="/#testimonials"
-            className="group inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            {t("testimonialsLink")}
-            <ArrowRight
-              className="size-4 transition-transform group-hover:translate-x-0.5"
-              aria-hidden="true"
-            />
-          </LocalizedLink>
-        </motion.div>
       </div>
     </section>
   );
