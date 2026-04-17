@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import FinalCTA from "@/components/Home/FinalCTA";
 import { UseCasesForm } from "@/components/UseCases/UseCasesForm";
 import { UseCasesHero } from "@/components/UseCases/UseCasesHero";
-import UseCasesTestimonials from "@/components/UseCases/UseCasesTestimonials";
-import { Separator } from "@/components/ui/Separator";
 import { locales } from "@/i18n/config";
 
 type Props = {
@@ -88,10 +86,6 @@ export default function UseCasesPage() {
           <UseCasesForm />
         </div>
       </section>
-      <Separator className="my-20" />
-      <div className="mb-20">
-        <UseCasesTestimonials />
-      </div>
       <FinalCTA />
     </main>
   );
