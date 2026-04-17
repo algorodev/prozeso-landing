@@ -20,8 +20,6 @@ const paths = [
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
   const items: MetadataRoute.Sitemap = [];
 
   for (const path of paths) {
@@ -33,7 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const url = `${siteUrl}/${l}${path}`;
       items.push({
         url,
-        lastModified: now,
         changeFrequency: path === "" ? "weekly" : "monthly",
         priority: path === "" ? 1.0 : 0.6,
         alternates: {
