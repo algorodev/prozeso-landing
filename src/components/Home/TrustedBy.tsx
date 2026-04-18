@@ -15,6 +15,11 @@ const LOGOS = [
     alt: "Pimec",
     href: "https://pimec.org/es",
   },
+  {
+    src: "/assets/LaRoc_Lab.png",
+    alt: "LaRoc Lab",
+    href: "https://datologia.es/",
+  },
 ] as const;
 
 const TrustedBy = () => {
