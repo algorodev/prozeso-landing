@@ -733,6 +733,13 @@
           "role": "CEO · Albet",
           "avatar": "/assets/testimonials/albet.png",
           "web": "https://www.albet.es/"
+        },
+        "8": {
+          "quote": "At Can Cuinat, we've been able to process new leads and qualify them using Prozeso, even when we're away from the office. This ensures we don't miss opportunities, we can respond promptly, and we maintain a consistent flow of interested contacts. It is, without question, vital for our business expansion.",
+          "name": "Ezequiel Garcia",
+          "role": "CEO · Can Cuinat",
+          "avatar": "/assets/testimonials/can-cuinat.svg",
+          "web": "https://www.cancuinat.com/"
         }
       }
     },
