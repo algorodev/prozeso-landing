@@ -740,6 +740,13 @@
           "role": "CEO · Can Cuinat",
           "avatar": "/assets/testimonials/can-cuinat.svg",
           "web": "https://www.cancuinat.com/"
+        },
+        "9": {
+          "quote": "Since working with Prozeso, we've streamlined all communication around our events. We now handle messages and requests automatically across all channels, even outside business hours, without overwhelming the team. This allows us to focus on the experience and scale events with a much more efficient operation, improving attendee management and overall occupancy.",
+          "name": "Eric Alvarez",
+          "role": "Owner · Unlocked",
+          "avatar": "/assets/testimonials/unlocked.png",
+          "web": ""
         }
       }
     },
