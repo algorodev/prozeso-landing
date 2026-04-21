@@ -751,6 +751,13 @@
           "role": "Owner · Unlocked",
           "avatar": "/assets/testimonials/unlocked.png",
           "web": ""
+        },
+        "10": {
+          "quote": "Con Prozeso, HoHomes ha escalado la captación de leads y automatizado el check-in y check-out de huéspedes, reduciendo fricción operativa y elevando la experiencia del cliente.",
+          "name": "Miquel Sesplugues",
+          "role": "CEO & Founder · HoHomes",
+          "avatar": "/assets/testimonials/hohomes.png",
+          "web": "https://www.hohomes.es/"
         }
       }
     },

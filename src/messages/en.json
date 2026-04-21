@@ -747,6 +747,13 @@
           "role": "Owner · Unlocked",
           "avatar": "/assets/testimonials/unlocked.png",
           "web": ""
+        },
+        "10": {
+          "quote": "With Prozeso, HoHomes has scaled lead generation and automated guest check-ins and check-outs, reducing operational friction and elevating the customer experience in Barcelona.",
+          "name": "Miquel Sesplugues",
+          "role": "CEO & Founder · HoHomes",
+          "avatar": "/assets/testimonials/hohomes.png",
+          "web": "https://www.hohomes.es/"
         }
       }
     },

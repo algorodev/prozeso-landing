@@ -7,7 +7,18 @@ import { useRef, useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Card, CardContent } from "@/components/ui/Card";
 
-const TESTIMONIAL_IDS = ["1", "2", "3", "7", "4", "8", "9", "5", "6"] as const;
+const TESTIMONIAL_IDS = [
+  "1",
+  "2",
+  "3",
+  "7",
+  "4",
+  "8",
+  "10",
+  "9",
+  "5",
+  "6",
+] as const;
 const SPEED_PX_PER_SEC = 40;
 
 const Testimonials = () => {
