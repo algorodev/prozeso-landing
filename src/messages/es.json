@@ -65,7 +65,11 @@
       "title": "Nuestro <primary>Blog</primary>",
       "subtitle": "Ideas, guías y casos reales sobre automatización con IA para negocios de servicios."
     },
-    "empty": "Aún no hay artículos publicados. Vuelve pronto.",
+    "empty": {
+      "badge": "Próximamente",
+      "title": "Estamos preparando algo bueno",
+      "description": "Los primeros artículos están en camino. Vuelve pronto para descubrir ideas, guías y casos reales sobre automatización con IA."
+    },
     "readMore": "Leer más",
     "backToList": "Volver al blog"
   },
