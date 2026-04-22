@@ -15,6 +15,7 @@ const paths = [
   "/start",
   "/solutions",
   "/legal/cookies",
+  "/legal/notice",
   "/legal/privacy",
   "/legal/terms",
 ] as const;

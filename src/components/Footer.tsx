@@ -79,6 +79,14 @@ const Footer = () => {
                 </li>
                 <li>
                   <LocalizedLink
+                    href="/legal/notice"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.notice")}
+                  </LocalizedLink>
+                </li>
+                <li>
+                  <LocalizedLink
                     href="/legal/terms"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >

@@ -49,6 +49,7 @@
       "assessment": "Get Started",
       "blog": "Blog",
       "about": "About Us",
+      "notice": "Legal Notice",
       "terms": "Terms & Conditions",
       "privacy": "Privacy Policy",
       "cookies": "Cookie Policy",
@@ -1243,6 +1244,61 @@
   "legal": {
     "lastUpdated": "Last updated: {date}",
     "onThisPage": "On this page",
+    "notice": {
+      "title": "Legal Notice",
+      "updatedAt": "Apr 22, 2026",
+      "toc": {
+        "ownerIdentification": "Owner identification",
+        "purpose": "Purpose",
+        "useConditions": "Use conditions",
+        "intellectualProperty": "Intellectual property",
+        "liability": "Liability disclaimer",
+        "externalLinks": "Third-party links",
+        "governingLaw": "Governing law and jurisdiction",
+        "contact": "Contact"
+      },
+      "ownerIdentification": {
+        "title": "Owner identification",
+        "text": "In compliance with Spanish Law 34/2002 of July 11 on Information Society Services and Electronic Commerce (LSSI-CE), the following details identify the owner of this website:",
+        "items": [
+          "Company name: Prozeso AI SL",
+          "Tax ID (NIF): B26818880",
+          "Registered address: Paseo Terraple, No. 68, Esc. B, Door 02, 08750 Molins de Rei, Barcelona, Spain",
+          "AEAT tax office: 08210 Sant Feliu",
+          "NIF assignment date: 2026-03-26",
+          "Email: hello@prozeso.com",
+          "Website: prozeso.com"
+        ]
+      },
+      "purpose": {
+        "title": "Purpose",
+        "text": "This Legal Notice governs the use of the website prozeso.com, whose purpose is to provide information about Prozeso's AI automation services for service businesses, and to allow contact and contracting of such services."
+      },
+      "useConditions": {
+        "title": "Use conditions",
+        "text": "Access to and browsing of this website grants user status and implies full acceptance of the conditions set out in this Legal Notice, as well as in the Privacy Policy and Cookies Policy. The user agrees to make diligent use of the site and services in accordance with the law, morality, and public order."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual property",
+        "text": "All website contents, including texts, images, logos, designs, source code, and any other materials, are owned by Prozeso or by third parties who have authorized their use. Reproduction, distribution, public communication, or transformation of such content without the express authorization of the owner is prohibited."
+      },
+      "liability": {
+        "title": "Liability disclaimer",
+        "text": "Prozeso makes its best efforts to keep the site operational and up to date, but does not guarantee the absence of errors or continuous availability. Prozeso will not be liable for damages arising from the use of or inability to use the site, nor for third-party content accessible through it."
+      },
+      "externalLinks": {
+        "title": "Third-party links",
+        "text": "This site may contain links to third-party websites. Prozeso is not responsible for the content, privacy policies, or practices of those sites, and includes such links for informational purposes only."
+      },
+      "governingLaw": {
+        "title": "Governing law and jurisdiction",
+        "text": "These conditions are governed by Spanish law. For any dispute arising from the use of the site, the parties submit to the courts of the owner's domicile, unless applicable regulations provide otherwise."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "For any inquiry regarding this Legal Notice, you can write to us at hello@prozeso.com."
+      }
+    },
     "privacy": {
       "title": "Privacy Policy",
       "updatedAt": "Nov 3, 2025",

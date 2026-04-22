@@ -49,6 +49,7 @@
       "assessment": "Comenzar",
       "blog": "Blog",
       "about": "Sobre Nosotros",
+      "notice": "Aviso Legal",
       "terms": "Términos y Condiciones",
       "privacy": "Política de Privacidad",
       "cookies": "Política de Cookies",
@@ -1247,6 +1248,61 @@
   "legal": {
     "lastUpdated": "Última actualización: {date}",
     "onThisPage": "En esta página",
+    "notice": {
+      "title": "Aviso Legal",
+      "updatedAt": "22 de abril de 2026",
+      "toc": {
+        "ownerIdentification": "Identificación del titular",
+        "purpose": "Objeto",
+        "useConditions": "Condiciones de uso",
+        "intellectualProperty": "Propiedad intelectual",
+        "liability": "Exclusión de responsabilidad",
+        "externalLinks": "Enlaces a sitios de terceros",
+        "governingLaw": "Legislación y jurisdicción",
+        "contact": "Contacto"
+      },
+      "ownerIdentification": {
+        "title": "Identificación del titular",
+        "text": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se facilitan a continuación los datos identificativos del titular de este sitio web:",
+        "items": [
+          "Denominación social: Prozeso AI SL",
+          "NIF: B26818880",
+          "Domicilio fiscal: Paseo Terraple, Núm. 68, Esc. B, Puerta 02, 08750 Molins de Rei, Barcelona",
+          "Administración de la AEAT: 08210 Sant Feliu",
+          "Fecha de NIF: 26/03/2026",
+          "Correo electrónico: hello@prozeso.com",
+          "Sitio web: prozeso.com"
+        ]
+      },
+      "purpose": {
+        "title": "Objeto",
+        "text": "El presente Aviso Legal regula el uso del sitio web prozeso.com, cuya finalidad es ofrecer información sobre los servicios de automatización con IA de Prozeso para negocios de servicios, así como permitir el contacto y la contratación de dichos servicios."
+      },
+      "useConditions": {
+        "title": "Condiciones de uso",
+        "text": "El acceso y navegación por este sitio web atribuye la condición de usuario, e implica la aceptación plena de las condiciones recogidas en este Aviso Legal, así como en la Política de Privacidad y la Política de Cookies. El usuario se compromete a hacer un uso diligente del sitio y de los servicios ofrecidos, conforme a la ley, la moral y el orden público."
+      },
+      "intellectualProperty": {
+        "title": "Propiedad intelectual",
+        "text": "Todos los contenidos del sitio web, incluyendo textos, imágenes, logotipos, diseños, código fuente y cualquier otro material, son propiedad de Prozeso o de terceros que han autorizado su uso. Queda prohibida la reproducción, distribución, comunicación pública o transformación de dichos contenidos sin la autorización expresa del titular."
+      },
+      "liability": {
+        "title": "Exclusión de responsabilidad",
+        "text": "Prozeso realiza sus mejores esfuerzos para mantener el sitio operativo y actualizado, pero no garantiza la ausencia de errores ni la disponibilidad continua. Prozeso no será responsable de los daños derivados del uso o imposibilidad de uso del sitio, ni de los contenidos de terceros accesibles a través del mismo."
+      },
+      "externalLinks": {
+        "title": "Enlaces a sitios de terceros",
+        "text": "Este sitio puede contener enlaces a páginas web de terceros. Prozeso no se hace responsable del contenido, las políticas de privacidad ni las prácticas de esos sitios, e incluye dichos enlaces únicamente a efectos informativos."
+      },
+      "governingLaw": {
+        "title": "Legislación y jurisdicción",
+        "text": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia derivada del uso del sitio, las partes se someten a los juzgados y tribunales del domicilio del titular, salvo que la normativa aplicable disponga otra cosa."
+      },
+      "contact": {
+        "title": "Contacto",
+        "text": "Para cualquier consulta relacionada con este Aviso Legal, puedes escribirnos a hello@prozeso.com."
+      }
+    },
     "privacy": {
       "title": "Política de Privacidad",
       "updatedAt": "3 de noviembre de 2025",
