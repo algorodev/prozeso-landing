@@ -54,6 +54,14 @@ const Footer = () => {
                     {t("links.assessment")}
                   </LocalizedLink>
                 </li>
+                <li>
+                  <LocalizedLink
+                    href="/blog"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t("links.blog")}
+                  </LocalizedLink>
+                </li>
               </ul>
             </div>
             <div>

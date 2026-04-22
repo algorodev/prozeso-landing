@@ -29,6 +29,7 @@
     "nav": {
       "solutions": "Soluciones",
       "useCases": "Casos de Uso",
+      "blog": "Blog",
       "about": "Sobre Nosotros"
     },
     "cta": "Empezar",
@@ -46,6 +47,7 @@
       "useCases": "Casos de Uso",
       "solutions": "Soluciones",
       "assessment": "Comenzar",
+      "blog": "Blog",
       "about": "Sobre Nosotros",
       "terms": "Términos y Condiciones",
       "privacy": "Política de Privacidad",
@@ -57,6 +59,15 @@
       "instagram": "Síguenos en Instagram",
       "linkedin": "Síguenos en LinkedIn"
     }
+  },
+  "blog": {
+    "hero": {
+      "title": "Nuestro <primary>Blog</primary>",
+      "subtitle": "Ideas, guías y casos reales sobre automatización con IA para negocios de servicios."
+    },
+    "empty": "Aún no hay artículos publicados. Vuelve pronto.",
+    "readMore": "Leer más",
+    "backToList": "Volver al blog"
   },
   "solutions": {
     "hero": {

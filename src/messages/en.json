@@ -29,6 +29,7 @@
     "nav": {
       "solutions": "Solutions",
       "useCases": "Use Cases",
+      "blog": "Blog",
       "about": "About Us"
     },
     "cta": "Get started",
@@ -46,6 +47,7 @@
       "useCases": "Use Cases",
       "solutions": "Solutions",
       "assessment": "Get Started",
+      "blog": "Blog",
       "about": "About Us",
       "terms": "Terms & Conditions",
       "privacy": "Privacy Policy",
@@ -57,6 +59,15 @@
       "instagram": "Follow us on Instagram",
       "linkedin": "Follow us on LinkedIn"
     }
+  },
+  "blog": {
+    "hero": {
+      "title": "Our <primary>Blog</primary>",
+      "subtitle": "Ideas, guides, and real-world stories about AI automation for service businesses."
+    },
+    "empty": "No articles published yet. Check back soon.",
+    "readMore": "Read more",
+    "backToList": "Back to blog"
   },
   "solutions": {
     "hero": {
