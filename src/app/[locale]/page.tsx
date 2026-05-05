@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import BubbleDiagram from "@/components/Home/BubbleDiagram";
+import Backbone from "@/components/Home/Backbone";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import Partnerships from "@/components/Home/Partnerships";
@@ -191,7 +191,7 @@ export default async function Home({ params }: Props) {
       <JsonLd locale={locale} />
       <Hero />
       <Understanding />
-      <BubbleDiagram />
+      <Backbone />
       <Partnerships />
       <Testimonials />
       <FinalCTA />

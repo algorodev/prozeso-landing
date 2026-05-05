@@ -2,8 +2,7 @@
 
 import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { AREAS } from "@/components/Home/BubbleDiagram/constants";
-import { COLOR_GROUPS } from "./constants";
+import { AREAS, COLOR_GROUPS } from "./constants";
 import type { ActiveFilter } from "./SolutionsGrid";
 
 type SolutionsSidebarProps = {

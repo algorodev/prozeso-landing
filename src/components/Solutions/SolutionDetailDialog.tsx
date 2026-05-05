@@ -2,7 +2,7 @@
 
 import { ArrowDown, ArrowUp } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { AREAS } from "@/components/Home/BubbleDiagram/constants";
+import { AREAS } from "@/components/Solutions/constants";
 import { Button } from "@/components/ui/Button";
 import {
   Dialog,

@@ -376,8 +376,8 @@
       }
     },
     "automationSuite": {
-      "title": "<highlight>Every area</highlight> of your business, automated",
-      "subtitle": "No friction. No manual intervention. Measurable results.",
+      "title": "We start with one piece. We end up as the <highlight>backbone</highlight>.",
+      "subtitle": "We come in where the pain is sharp and the ROI is immediate. By month 18, your company runs on Prozeso.",
       "close": "Close",
       "problemLabel": "Problem",
       "solutionLabel": "Solution",
@@ -385,7 +385,7 @@
       "impactLabel": "Expected impact",
       "automationCount": "{count} automations",
       "automationPickCta": "Choose the ones that best fit your needs",
-      "viewAll": "View all automations",
+      "viewAll": "See the modular catalog",
       "mobileFilter": "Filter",
       "mobileFilterTitle": "Filter automations",
       "searchPlaceholder": "Search automation...",
@@ -394,6 +394,7 @@
       "areas": {
         "bookings": {
           "name": "Bookings",
+          "shortDescription": "Bookings, reminders and reschedules on autopilot. Fill the calendar without anyone on the phone.",
           "tagline": "Fill your schedule. Effortlessly.",
           "heroMetric": "↑ 40%",
           "heroMetricLabel": "bookings captured",
@@ -434,6 +435,7 @@
         },
         "sales": {
           "name": "Sales",
+          "shortDescription": "Prospecting, scoring and follow-up. The team spends time closing, not chasing.",
           "tagline": "Automations that empower your sales team, from prospecting to closing, eliminating repetitive tasks and accelerating the sales cycle.",
           "heroMetric": "× 10",
           "heroMetricLabel": "prospecting volume",
@@ -474,6 +476,7 @@
         },
         "finance": {
           "name": "Finance",
+          "shortDescription": "Invoicing, collections, reconciliation and budget alerts. Month-end close without surprises.",
           "tagline": "Automations that eliminate financial administrative burden, guarantee timely collection, and offer full visibility into the company's financial health.",
           "heroMetric": "↓ 40%",
           "heroMetricLabel": "late invoices",
@@ -514,6 +517,7 @@
         },
         "marketing": {
           "name": "Marketing",
+          "shortDescription": "Content, email and social that scale without growing the team.",
           "tagline": "Automations that multiply the reach and impact of your marketing team without increasing resources, from content creation to multichannel campaign management.",
           "heroMetric": "× 10",
           "heroMetricLabel": "content volume",
@@ -554,6 +558,7 @@
         },
         "customerSuccess": {
           "name": "Customer Success",
+          "shortDescription": "Onboarding, churn prediction and upsell. Keep and grow accounts without chasing them.",
           "tagline": "Automations that maximize retention, customer lifetime value, and satisfaction, turning clients into brand ambassadors.",
           "heroMetric": "↓ 50%",
           "heroMetricLabel": "early churn",
@@ -594,6 +599,7 @@
         },
         "operations": {
           "name": "Operations",
+          "shortDescription": "Vendors, deliveries, maintenance and SLAs. Coordinated operations without Excel or WhatsApp.",
           "tagline": "Automations that optimize the operational chain, supplier management, and logistics, reducing costs and eliminating bottlenecks in day-to-day processes.",
           "heroMetric": "↑ 98%",
           "heroMetricLabel": "SLA compliance",
@@ -634,6 +640,7 @@
         },
         "management": {
           "name": "Management",
+          "shortDescription": "Reports, OKRs and actionable alerts. Decisions backed by data, not gut feel.",
           "tagline": "Automations that digitize and optimize internal processes for team management, operations, and data-driven decision making.",
           "heroMetric": "",
           "heroMetricLabel": "",
@@ -674,6 +681,7 @@
         },
         "hr": {
           "name": "HR & Recruitment",
+          "shortDescription": "Hiring, onboarding, time tracking and offboarding. HR scales without growing headcount in lockstep.",
           "tagline": "Automations that accelerate talent acquisition, improve the candidate experience, and free the HR team from repetitive administrative tasks.",
           "heroMetric": "",
           "heroMetricLabel": "",
@@ -714,6 +722,7 @@
         },
         "stock": {
           "name": "Inventory",
+          "shortDescription": "Reordering, alerts, liquidation and demand forecasting. Inventory that runs itself.",
           "tagline": "Automations that ensure optimal product availability, eliminate dead stock, and turn inventory management into a predictive, frictionless process.",
           "heroMetric": "",
           "heroMetricLabel": "",
@@ -751,13 +760,45 @@
               "impact": "↓ 30% capital tied up in inventory"
             }
           }
+        },
+        "customerService": {
+          "name": "Customer Service",
+          "shortDescription": "Handle customer questions with human quality 24/7. Bots resolve routine queries and escalate when it matters.",
+          "tagline": "Customer service without growing the support team.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
+        },
+        "product": {
+          "name": "Product",
+          "shortDescription": "Usage, feedback and prioritization with data. Build what evidence supports, not gut feel.",
+          "tagline": "Product guided by evidence, not by the loudest voice in the room.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
+        },
+        "it": {
+          "name": "IT",
+          "shortDescription": "Access, devices and internal support. Fewer repetitive tickets, more time for what matters.",
+          "tagline": "The back-office that keeps IT from becoming the bottleneck.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
+        },
+        "legal": {
+          "name": "Legal",
+          "shortDescription": "Templates, reviews and compliance. Legal stops being the bottleneck on every deal.",
+          "tagline": "Legal that supports the operation, not the one that slows it down.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
         }
       },
       "groups": {
-        "clientFacing": "Customer Service",
+        "clientFacing": "Customer-facing",
         "revenueGrowth": "Growth",
-        "backendOps": "Operations / Logistics",
-        "corporateSupport": "Corporate / Support"
+        "backendOps": "Operations",
+        "corporateSupport": "Corporate support"
       },
       "clearFilter": "Clear filter"
     },

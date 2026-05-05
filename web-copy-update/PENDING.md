@@ -51,6 +51,29 @@ Todos pasaron lint, format, tests y build local antes de commit.
 
 12. **About: `about.cta` borrado.** Las claves `about.cta.title/subtitle` no se leían en ningún sitio. Las he eliminado de las dos traducciones. La página termina con `<FinalCTA />` (componente de home), que tiene su propio namespace.
 
+13. **Home 1.4: 4 áreas nuevas creadas (sin automatizaciones).** El brief añade Customer Service, Product, IT y Legal a las 9 que existían. Esas 4 áreas tienen entrada en `home.automationSuite.areas.*` con `name` + `shortDescription` + `tagline` + `automations: {}` vacío. En `/solutions`, el sidebar las muestra pero el grid las filtra (porque no hay automatizaciones). Esto se resolverá cuando hagamos sprint 2 de `02-solutions.md`. Mientras tanto, clicar en alguna de esas 4 áreas desde la home te lleva a `/solutions?group=...&area=...` y el grid sale vacío (no rota).
+
+14. **Home 1.4: descripciones cortas inventadas por mí (13 áreas).** El brief no las daba. Estas son las que escribí (revisa y dime si alguna no te encaja):
+    - **Customer Service**: "Atiende al cliente con calidad humana 24/7. Bots que resuelven consultas básicas y escalan al equipo cuando importa."
+    - **Bookings**: "Reservas, recordatorios y reprogramaciones en automático. Llena la agenda sin que nadie pase tiempo al teléfono."
+    - **Customer Success**: "Onboarding, predicción de bajas y upsell. Mantén y haz crecer la cuenta sin perseguirla."
+    - **Sales**: "Prospección, scoring y seguimiento. El equipo dedica el tiempo a cerrar, no a perseguir."
+    - **Marketing**: "Contenido, email y social que escalan sin que el equipo se multiplique."
+    - **Product**: "Feedback, uso y priorización con datos. Decide qué construir con evidencia, no con intuición."
+    - **Operations**: "Proveedores, entregas, mantenimiento y SLAs. Operación coordinada sin Excel ni WhatsApp."
+    - **Inventory** (id `stock`): "Reposición, alertas, liquidación y previsión de demanda. Inventario que se gestiona casi solo."
+    - **IT**: "Accesos, dispositivos y soporte interno. Menos tickets repetitivos, más tiempo para lo importante."
+    - **Finance**: "Facturación, cobros, conciliación y alertas de presupuesto. Cierre mensual sin sobresaltos."
+    - **HR & Recruitment**: "Selección, onboarding, fichaje y offboarding. RR.HH. escala sin crecer al ritmo del headcount."
+    - **Legal**: "Plantillas, revisiones y cumplimiento. Lo legal deja de ser cuello de botella en cada operación."
+    - **Management**: "Reportes, OKRs y alertas accionables. Decisiones con datos en lugar de intuición."
+
+15. **Home 1.4: corregí mismatch en `customerSuccess` (ES).** En la versión anterior, `customerSuccess.name` en español decía "Servicio al Cliente" — pero las automatizaciones bajo ese id eran de Customer Success (onboarding de cliente, predicción de bajas, upsell, NPS). Ahora `customerSuccess` es "Customer Success" en ES (igual que en EN). El módulo "Atención al Cliente" pasa a ser el nuevo `customerService`. Esto reordena ligeramente la sidebar de `/solutions`.
+
+16. **Home 1.4: `stock.name` cambia de "Stock" a "Inventario" en ES.** En EN ya era "Inventory". La id sigue siendo `stock` para no romper las claves de las 4 automatizaciones existentes (sprint 3 puede renombrar id si quieres).
+
+17. **Grupos renombrados**: `backendOps` ES "Operaciones / Logística" → "Operaciones". EN "Operations / Logistics" → "Operations". `corporateSupport` ES "Corporativo / Soporte" → "Soporte corporativo". EN "Corporate / Support" → "Corporate support". `clientFacing` EN "Customer Service" → "Customer-facing" (ahora Customer Service es un módulo concreto, no la macroárea). En ES `clientFacing` se queda como "Atención al cliente" (la macroárea) y el módulo nuevo se llama "Atención al Cliente" — son distintos en mayúscula del primer término, pero homófonos. **Si te genera confusión, dime y le pongo otro nombre al módulo (p.ej. "Soporte al Cliente").**
+
 ---
 
 ## Bloqueos del propio brief (siguen abiertos, no son cosa mía)

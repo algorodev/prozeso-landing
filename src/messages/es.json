@@ -380,8 +380,8 @@
       }
     },
     "automationSuite": {
-      "title": "<highlight>Cada área</highlight> de tu negocio, automatizada",
-      "subtitle": "Sin fricciones. Sin intervención manual. Con resultados medibles.",
+      "title": "Empezamos con una pieza. Acabamos siendo la <highlight>columna vertebral</highlight>.",
+      "subtitle": "Entramos por donde el dolor es agudo y el ROI es inmediato. A los 18 meses, tu empresa opera sobre Prozeso.",
       "close": "Cerrar",
       "problemLabel": "Problema",
       "solutionLabel": "Solución",
@@ -389,7 +389,7 @@
       "impactLabel": "Impacto esperado",
       "automationCount": "{count} automatizaciones",
       "automationPickCta": "Elige las que mejor se adapten a tus necesidades",
-      "viewAll": "Ver todas las automatizaciones",
+      "viewAll": "Ver el catálogo modular",
       "mobileFilter": "Filtrar",
       "mobileFilterTitle": "Filtrar automatizaciones",
       "searchPlaceholder": "Buscar automatización...",
@@ -398,6 +398,7 @@
       "areas": {
         "bookings": {
           "name": "Reservas",
+          "shortDescription": "Reservas, recordatorios y reprogramaciones en automático. Llena la agenda sin que nadie pase tiempo al teléfono.",
           "tagline": "Llena tu agenda. Sin esfuerzo.",
           "heroMetric": "↑ 40%",
           "heroMetricLabel": "reservas capturadas",
@@ -438,6 +439,7 @@
         },
         "sales": {
           "name": "Ventas",
+          "shortDescription": "Prospección, scoring y seguimiento. El equipo dedica el tiempo a cerrar, no a perseguir.",
           "tagline": "Automatizaciones que potencian el equipo comercial, desde la prospección hasta el cierre, eliminando tareas repetitivas y acelerando el ciclo de venta.",
           "heroMetric": "× 10",
           "heroMetricLabel": "volumen de prospección",
@@ -478,6 +480,7 @@
         },
         "finance": {
           "name": "Finanzas",
+          "shortDescription": "Facturación, cobros, conciliación y alertas de presupuesto. Cierre mensual sin sobresaltos.",
           "tagline": "Automatizaciones que eliminan la carga administrativa financiera, garantizan el cobro puntual y ofrecen visibilidad total sobre la salud económica de la empresa.",
           "heroMetric": "↓ 40%",
           "heroMetricLabel": "facturas con retraso",
@@ -518,6 +521,7 @@
         },
         "marketing": {
           "name": "Marketing",
+          "shortDescription": "Contenido, email y social que escalan sin que el equipo se multiplique.",
           "tagline": "Automatizaciones que multiplican el alcance y el impacto del equipo de marketing sin aumentar los recursos, desde la creación de contenido hasta la gestión de campañas multicanal.",
           "heroMetric": "× 10",
           "heroMetricLabel": "volumen de contenido",
@@ -557,7 +561,8 @@
           }
         },
         "customerSuccess": {
-          "name": "Servicio al Cliente",
+          "name": "Customer Success",
+          "shortDescription": "Onboarding, predicción de bajas y upsell. Mantén y haz crecer la cuenta sin perseguirla.",
           "tagline": "Automatizaciones que maximizan la retención, el valor del cliente a lo largo del tiempo y la satisfacción, convirtiendo a los clientes en embajadores de la marca.",
           "heroMetric": "↓ 50%",
           "heroMetricLabel": "churn temprano",
@@ -598,6 +603,7 @@
         },
         "operations": {
           "name": "Operaciones",
+          "shortDescription": "Proveedores, entregas, mantenimiento y SLAs. Operación coordinada sin Excel ni WhatsApp.",
           "tagline": "Automatizaciones que optimizan la cadena operativa, la gestión de proveedores y la logística, reduciendo costes y eliminando cuellos de botella en los procesos del día a día.",
           "heroMetric": "↑ 98%",
           "heroMetricLabel": "cumplimiento de SLA",
@@ -638,6 +644,7 @@
         },
         "management": {
           "name": "Management",
+          "shortDescription": "Reportes, OKRs y alertas accionables. Decisiones con datos en lugar de intuición.",
           "tagline": "Automatizaciones que digitalizan y optimizan los procesos internos de gestión de equipos, operaciones y toma de decisiones basada en datos.",
           "heroMetric": "",
           "heroMetricLabel": "",
@@ -678,6 +685,7 @@
         },
         "hr": {
           "name": "RR.HH. y Recruitment",
+          "shortDescription": "Selección, onboarding, fichaje y offboarding. RR.HH. escala sin crecer al ritmo del headcount.",
           "tagline": "Automatizaciones que aceleran la captación de talento, mejoran la experiencia del candidato y liberan al equipo de RR.HH. de las tareas administrativas repetitivas.",
           "heroMetric": "",
           "heroMetricLabel": "",
@@ -717,7 +725,8 @@
           }
         },
         "stock": {
-          "name": "Stock",
+          "name": "Inventario",
+          "shortDescription": "Reposición, alertas, liquidación y previsión de demanda. Inventario que se gestiona casi solo.",
           "tagline": "Automatizaciones que garantizan la disponibilidad óptima de producto, eliminan el stock muerto y convierten la gestión de inventario en un proceso predictivo y sin fricciones.",
           "heroMetric": "",
           "heroMetricLabel": "",
@@ -755,13 +764,45 @@
               "impact": "↓ 30% capital inmovilizado en inventario"
             }
           }
+        },
+        "customerService": {
+          "name": "Atención al Cliente",
+          "shortDescription": "Atiende al cliente con calidad humana 24/7. Bots que resuelven consultas básicas y escalan al equipo cuando importa.",
+          "tagline": "Atención al cliente sin que crezca el equipo de soporte.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
+        },
+        "product": {
+          "name": "Producto",
+          "shortDescription": "Feedback, uso y priorización con datos. Decide qué construir con evidencia, no con intuición.",
+          "tagline": "Producto guiado por evidencia, no por la opinión más fuerte de la sala.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
+        },
+        "it": {
+          "name": "IT",
+          "shortDescription": "Accesos, dispositivos y soporte interno. Menos tickets repetitivos, más tiempo para lo importante.",
+          "tagline": "El back-office que evita que IT sea cuello de botella.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
+        },
+        "legal": {
+          "name": "Legal",
+          "shortDescription": "Plantillas, revisiones y cumplimiento. Lo legal deja de ser cuello de botella en cada operación.",
+          "tagline": "Legal que acompaña la operación, no la frena.",
+          "heroMetric": "",
+          "heroMetricLabel": "",
+          "automations": {}
         }
       },
       "groups": {
         "clientFacing": "Atención al cliente",
         "revenueGrowth": "Crecimiento",
-        "backendOps": "Operaciones / Logística",
-        "corporateSupport": "Corporativo / Soporte"
+        "backendOps": "Operaciones",
+        "corporateSupport": "Soporte corporativo"
       },
       "clearFilter": "Limpiar filtro"
     },

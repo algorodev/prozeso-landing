@@ -4,7 +4,7 @@ import { Filter, Search } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
-import { AREAS } from "@/components/Home/BubbleDiagram/constants";
+import { AREAS } from "@/components/Solutions/constants";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import {
