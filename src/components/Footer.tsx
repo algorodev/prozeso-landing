@@ -40,14 +40,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <LocalizedLink
-                    href="/use-cases"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t("links.useCases")}
-                  </LocalizedLink>
-                </li>
-                <li>
-                  <LocalizedLink
                     href="/start"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >

@@ -16,7 +16,7 @@
     "title": "The <primary>operating system</primary> for companies that don't want to be <secondary>Enterprise</secondary>.",
     "subtitle": "The backbone where the processes, data and operations live for companies that have outgrown Excel but don't want, or need, to move into SAP.",
     "ctaPrimary": "Talk to us",
-    "ctaSecondary": "See how it applies to your case",
+    "ctaSecondary": "See the modular catalog",
     "trialBadges": {
       "freeTrial": "No commitment",
       "noCreditCard": "30-minute conversation",
@@ -27,7 +27,6 @@
   "header": {
     "nav": {
       "solutions": "Solutions",
-      "useCases": "Use Cases",
       "about": "About Us"
     },
     "cta": "Get started",
@@ -42,7 +41,6 @@
       "company": "Company"
     },
     "links": {
-      "useCases": "Use Cases",
       "solutions": "Solutions",
       "assessment": "Get Started",
       "about": "About Us",
@@ -129,14 +127,6 @@
         "body": "Our team will contact you shortly to schedule your free call."
       },
       "serverErrorDefault": "Something went wrong. Please try again."
-    }
-  },
-  "useCases": {
-    "hero": {
-      "title": "Real cases. <primary>Companies that look like yours</primary>.",
-      "subtitle": "Instead of a form that spits out a PDF, we show you how companies like yours are already working with us. If you want to dig deeper, let's talk.",
-      "ctaPrimary": "Talk to us",
-      "ctaSecondary": "See the modular catalog"
     }
   },
   "home": {

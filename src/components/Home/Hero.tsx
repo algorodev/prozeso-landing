@@ -59,7 +59,7 @@ const Hero = () => {
                 variant="outline"
                 className="w-full sm:w-auto"
               >
-                <LocalizedLink href="/use-cases">
+                <LocalizedLink href="/solutions">
                   {t("ctaSecondary")}
                   <ArrowRight className="ml-1 size-5" />
                 </LocalizedLink>

@@ -29,7 +29,6 @@ export const Header = () => {
 
   const navItems: NavItem[] = [
     { label: t("nav.solutions"), href: "/solutions" },
-    { label: t("nav.useCases"), href: "/use-cases" },
     { label: t("nav.about"), href: "/about" },
   ];
 

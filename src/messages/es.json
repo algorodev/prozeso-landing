@@ -16,7 +16,7 @@
     "title": "El <primary>sistema operativo</primary> de las empresas que no quieren ser <secondary>Enterprise</secondary>.",
     "subtitle": "La columna vertebral donde viven los procesos, los datos y la operación de empresas que han superado Excel pero no quieren, ni necesitan, meterse en SAP.",
     "ctaPrimary": "Hablar con nosotros",
-    "ctaSecondary": "Ver cómo aplica a tu caso",
+    "ctaSecondary": "Ver el catálogo modular",
     "trialBadges": {
       "freeTrial": "Sin compromiso",
       "noCreditCard": "Conversación de 30 minutos",
@@ -27,7 +27,6 @@
   "header": {
     "nav": {
       "solutions": "Soluciones",
-      "useCases": "Casos de Uso",
       "about": "Sobre Nosotros"
     },
     "cta": "Empezar",
@@ -42,7 +41,6 @@
       "company": "Empresa"
     },
     "links": {
-      "useCases": "Casos de Uso",
       "solutions": "Soluciones",
       "assessment": "Empezar",
       "about": "Sobre Nosotros",
@@ -129,14 +127,6 @@
         "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
       },
       "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
-    }
-  },
-  "useCases": {
-    "hero": {
-      "title": "Casos reales. <primary>Empresas que se parecen a la tuya</primary>.",
-      "subtitle": "En lugar de un formulario que te genera un PDF, te enseñamos cómo trabajan ya empresas como la tuya. Si quieres profundizar, hablamos.",
-      "ctaPrimary": "Hablar con nosotros",
-      "ctaSecondary": "Ver el catálogo modular"
     }
   },
   "home": {
