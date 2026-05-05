@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { AssessmentForm } from "@/components/Start/AssessmentForm";
 import { Hero } from "@/components/Start/Hero";
-import { Steps } from "@/components/Start/Steps";
+import { ProcessAndForm } from "@/components/Start/ProcessAndForm";
 import { locales } from "@/i18n/config";
 import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
 
@@ -93,14 +92,7 @@ export default async function StartPage({ params }: Props) {
     <main className="min-h-dvh">
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <Hero />
-      <Steps />
-      <section id="assessment" className="py-12 sm:py-16 px-6">
-        <div className="container mx-auto max-w-[1280px]">
-          <div className="max-w-3xl">
-            <AssessmentForm />
-          </div>
-        </div>
-      </section>
+      <ProcessAndForm />
     </main>
   );
 }

@@ -77,143 +77,6 @@
       "subtitle": "13 áreas funcionales. Cientos de automatizaciones documentadas. Empezamos por la pieza donde más sangra tu empresa, ampliamos cuando lo demuestra."
     }
   },
-  "automations": {
-    "receptionist-ai": {
-      "title": "Recepcionista IA",
-      "description": "Una recepcionista con IA siempre activa que responde llamadas y mensajes, da información y gestiona reservas y citas (alta, cambios y cancelaciones).",
-      "metrics": [
-        "+45% reservas recuperadas",
-        "Cobertura 24/7",
-        "60% más rápida la primera respuesta"
-      ]
-    },
-    "missed-call-auto-callback": {
-      "title": "Devolución automática de llamadas perdidas",
-      "description": "Devuelve automáticamente la llamada o escribe a quienes no pudiste atender para recuperar reservas y leads en lugar de perderlos.",
-      "metrics": [
-        "+30% recuperación de leads",
-        "Devolución < 60s",
-        "+18% conversión tras seguimiento"
-      ]
-    },
-    "appointment-reminder": {
-      "title": "Recordatorio de citas",
-      "description": "Recordatorios automáticos por SMS, WhatsApp, email o llamada antes de la cita, con confirmación y reprogramación/cancelación con un clic.",
-      "metrics": [
-        "-32% ausencias",
-        "95% tasa de entrega",
-        "Reprogramación en 1 clic"
-      ]
-    },
-    "smart-pre-check-in": {
-      "title": "Pre‑check‑in inteligente",
-      "description": "Flujo previo a la visita para recopilar datos, formularios y preferencias, y enviar instrucciones personalizadas antes de la llegada.",
-      "metrics": [
-        "70% formularios completados antes de la visita",
-        "-25% tiempo en recepción",
-        "Instrucciones personalizadas"
-      ]
-    },
-    "no-show-recovery-fee-capture": {
-      "title": "Recuperación de ausencias y cobro de tasas",
-      "description": "Si un cliente no se presenta, hacemos seguimiento para reprogramar, cobrar una tasa o depósito cuando aplique y registrar el evento.",
-      "metrics": [
-        "-18% fuga de ingresos",
-        "40% reprograman tras el contacto",
-        "Cobro de tasas automatizado"
-      ]
-    },
-    "smart-waitlist-cancellation-filler": {
-      "title": "Lista de espera y relleno por cancelaciones",
-      "description": "Aprovecha cancelaciones o huecos libres para contactar automáticamente a la lista de espera o clientes recientes y llenar esos espacios.",
-      "metrics": [
-        "82% huecos rellenados",
-        "+12% ingresos por asiento/hora",
-        "Alcance inmediato a lista de espera"
-      ]
-    },
-    "abandoned-booking-follow-up": {
-      "title": "Seguimiento de reservas abandonadas",
-      "description": "Si alguien inicia pero no termina una reserva o solicitud, este flujo contacta para ayudarle a completarla.",
-      "metrics": [
-        "+22% finalización de checkout",
-        "< 5 min para el seguimiento",
-        "Recordatorios multicanal"
-      ]
-    },
-    "reactivation-recalls": {
-      "title": "Reactivación y recalls",
-      "description": "Recupera clientes inactivos y programa recalls periódicos según tiempo desde la última visita o plan de tratamiento.",
-      "metrics": [
-        "16% tasa de reactivación",
-        "+9% LTV del cliente",
-        "Calendarios de recall automáticos"
-      ]
-    },
-    "review-booster": {
-      "title": "Impulsor de reseñas",
-      "description": "Tras una experiencia positiva, pide una reseña y dirige a los clientes satisfechos a Google/portales mientras gestiona en privado el feedback negativo.",
-      "metrics": [
-        "3x reseñas al mes",
-        "+0.4 en valoración media",
-        "Enrutado inteligente de reseñas"
-      ]
-    },
-    "billing-and-invoice": {
-      "title": "Facturación y cobros",
-      "description": "Automatiza el envío de enlaces de pago, la captura de depósitos y el envío de facturas, integrado con tu sistema de facturación.",
-      "metrics": [
-        "2x pagos más rápidos",
-        "-35% facturas vencidas",
-        "Enlaces de pago seguros"
-      ]
-    },
-    "in-stay-concierge-upsell": {
-      "title": "Conserje en estancia y venta adicional",
-      "description": "Conserje virtual para huéspedes alojados: responde preguntas, gestiona solicitudes y propone ventas adicionales.",
-      "metrics": [
-        "+14% ingresos auxiliares",
-        "30% respuesta más rápida",
-        "Conserje virtual 24/7"
-      ]
-    },
-    "group-event-inquiry-handler": {
-      "title": "Gestor de consultas para grupos y eventos",
-      "description": "Flujo especializado para consultas de grupos y eventos (bodas, conferencias, estancias corporativas), cualificándolas y estructurándolas para ventas.",
-      "metrics": [
-        "2x RFPs cualificados",
-        "-40% tiempo hasta la primera respuesta",
-        "Briefs estructurados para ventas"
-      ]
-    },
-    "portal-lead-qualification-routing": {
-      "title": "Cualificación y enrutado de leads de portales",
-      "description": "Gestiona leads de portales inmobiliarios, los cualifica y los enruta al agente/propiedad adecuados, con visitas agendadas cuando sea posible.",
-      "metrics": [
-        "50% SLA más rápido",
-        "+17% visitas agendadas",
-        "Enrutamiento automático a agentes"
-      ]
-    },
-    "viewing-follow-up-offer-collector": {
-      "title": "Seguimiento de visitas y recogida de ofertas",
-      "description": "Tras una visita a la propiedad, realiza seguimiento para recoger feedback, medir interés y recopilar ofertas o solicitudes.",
-      "metrics": [
-        "28% más ofertas recopiladas",
-        "< 24h para feedback",
-        "Nutre el interés cálido"
-      ]
-    },
-    "tenant-onboarding-docs-collection": {
-      "title": "Onboarding de inquilinos y recogida de documentos",
-      "description": "Orquesta el camino de ‘inquilino aceptado’ a ‘instalado’: documentos, contrato, pagos e instrucciones para la entrega de llaves.",
-      "metrics": [
-        "-50% tiempo administrativo",
-        "95% documentos completados",
-        "Enlaces de pago y firma electrónica"
-      ]
-    }
-  },
   "start": {
     "hero": {
       "title": "Vamos a <primary>entender tu empresa</primary> antes de proponerte nada.",
@@ -239,21 +102,6 @@
       "cardTitle": "Agenda 30 minutos.",
       "cardSubtitle": "Sin presentación corporativa, sin demos genéricas. Cuéntanos qué te trae aquí y te hacemos las preguntas que importan.",
       "field": {
-        "vertical": {
-          "label": "Industria del negocio",
-          "placeholder": "Selecciona tu sector (opcional)",
-          "options": {
-            "restaurants": "Restaurantes",
-            "beauty": "Peluquería y Belleza",
-            "clinics": "Clínicas y Salud",
-            "hotels": "Hoteles",
-            "realEstate": "Inmobiliarias"
-          }
-        },
-        "automation": {
-          "label": "Automatizaciones",
-          "placeholder": "Selecciona automatizaciones (múltiples, opcional)"
-        },
         "name": {
           "label": "Tu nombre",
           "placeholder": "Alex Johnson",
@@ -265,15 +113,16 @@
           "error": "Por favor, introduce un email válido"
         },
         "goals": {
-          "label": "¿Qué estás buscando?",
-          "placeholder": "Cuéntanos brevemente qué te gustaría conseguir...",
-          "error": "Por favor, cuéntanos tus objetivos"
+          "label": "¿Qué te trae aquí?",
+          "placeholder": "Cuéntanos en una o dos frases qué te gustaría resolver.",
+          "error": "Por favor, cuéntanos qué te gustaría resolver"
         }
       },
       "submit": {
         "idle": "Agendar conversación",
         "loading": "Enviando…"
       },
+      "calendarAlternative": "¿Prefieres ir al grano? Reserva directamente en el calendario.",
       "disclaimer": "Trabajamos con empresas de 10 a 200 empleados con facturación entre 1 y 50 M€. Si tu empresa está fuera de ese rango, te lo decimos honestamente y te apuntamos hacia opciones que encajen mejor.",
       "success": {
         "title": "¡Gracias! Hemos recibido tu solicitud.",

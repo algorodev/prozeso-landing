@@ -8,21 +8,17 @@ export function Hero() {
   return (
     <section className="pt-20 pb-10 px-6">
       <div className="container mx-auto max-w-[1280px]">
-        <div className="max-w-3xl">
-          <h1 className="hero-title text-balance">
-            {t.rich("title", {
-              primary: (chunks) => (
-                <span className="text-primary">{chunks}</span>
-              ),
-              secondary: (chunks) => (
-                <span className="text-secondary">{chunks}</span>
-              ),
-            })}
-          </h1>
-          <p className="mt-4 hero-subtitle text-balance text-muted-foreground sm:text-lg">
-            {t("subtitle")}
-          </p>
-        </div>
+        <h1 className="hero-title text-balance">
+          {t.rich("title", {
+            primary: (chunks) => <span className="text-primary">{chunks}</span>,
+            secondary: (chunks) => (
+              <span className="text-secondary">{chunks}</span>
+            ),
+          })}
+        </h1>
+        <p className="mt-4 hero-subtitle text-balance text-muted-foreground sm:text-lg max-w-3xl">
+          {t("subtitle")}
+        </p>
       </div>
     </section>
   );

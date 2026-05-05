@@ -77,139 +77,6 @@
       "subtitle": "13 functional areas. Hundreds of documented automations. We start with the piece where your company bleeds the most, and expand when results back it up."
     }
   },
-  "automations": {
-    "receptionist-ai": {
-      "title": "Receptionist AI",
-      "description": "An always-on AI receptionist that answers calls and messages, gives information, and books, modifies or cancels reservations and appointments.",
-      "metrics": [
-        "+45% bookings recovered",
-        "24/7 coverage",
-        "60% faster first response"
-      ]
-    },
-    "missed-call-auto-callback": {
-      "title": "Missed Call Auto Callback",
-      "description": "Automatically calls back or messages missed callers so you recover bookings and leads instead of losing them.",
-      "metrics": [
-        "+30% lead recovery",
-        "Callback < 60s",
-        "+18% conversion after follow-up"
-      ]
-    },
-    "appointment-reminder": {
-      "title": "Appointment Reminder",
-      "description": "Automatic reminders via SMS, WhatsApp, email or calls before an appointment, with confirmation and one-click reschedule or cancel.",
-      "metrics": ["-32% no-shows", "95% delivery rate", "1-click reschedule"]
-    },
-    "smart-pre-check-in": {
-      "title": "Smart Pre-Check-In",
-      "description": "Pre-visit workflow to collect data, forms and preferences and send tailored instructions before the client arrives.",
-      "metrics": [
-        "70% forms completed pre-visit",
-        "-25% front-desk time",
-        "Personalized instructions"
-      ]
-    },
-    "no-show-recovery-fee-capture": {
-      "title": "No-Show Recovery & Fee Capture",
-      "description": "When a client doesn’t show up, automatically follows up to reschedule, charge a fee or deposit when applicable, and log the event.",
-      "metrics": [
-        "-18% revenue leakage",
-        "40% rescheduled after outreach",
-        "Automated fee collection"
-      ]
-    },
-    "smart-waitlist-cancellation-filler": {
-      "title": "Smart Waitlist & Cancellation Filler",
-      "description": "Uses cancellations or empty slots to automatically reach out to a waitlist or recent customers and fill those gaps.",
-      "metrics": [
-        "82% empty slots refilled",
-        "+12% revenue per seat/hour",
-        "Instant outreach to waitlist"
-      ]
-    },
-    "abandoned-booking-follow-up": {
-      "title": "Abandoned Booking Follow-Up",
-      "description": "If someone starts but doesn’t finish a booking or request, this workflow reaches out to help them complete it.",
-      "metrics": [
-        "+22% checkout completion",
-        "< 5 min follow-up",
-        "Multi-channel nudges"
-      ]
-    },
-    "reactivation-recalls": {
-      "title": "Reactivation & Recalls",
-      "description": "Brings back inactive customers and triggers periodic recalls based on time since last visit or treatment schedule.",
-      "metrics": [
-        "16% reactivation rate",
-        "+9% customer LTV",
-        "Automated recall schedules"
-      ]
-    },
-    "review-booster": {
-      "title": "Review Booster",
-      "description": "After a positive experience, asks for a review and routes happy clients to Google/portals while handling negative feedback privately.",
-      "metrics": [
-        "3x reviews per month",
-        "+0.4 average rating",
-        "Smart review routing"
-      ]
-    },
-    "billing-and-invoice": {
-      "title": "Billing & Invoice",
-      "description": "Automates sending payment links, capturing deposits, and delivering invoices, integrated with your billing system.",
-      "metrics": [
-        "2x faster payments",
-        "-35% overdue invoices",
-        "Secure payment links"
-      ]
-    },
-    "in-stay-concierge-upsell": {
-      "title": "In-Stay Concierge & Upsell",
-      "description": "A virtual concierge for guests currently staying at the property: answers questions, handles requests and proposes upsells.",
-      "metrics": [
-        "+14% ancillary revenue",
-        "30% faster response time",
-        "24/7 virtual concierge"
-      ]
-    },
-    "group-event-inquiry-handler": {
-      "title": "Group & Event Inquiry Handler",
-      "description": "Specialised workflow for handling group and event requests (weddings, conferences, corporate stays), qualifying and structuring them for sales.",
-      "metrics": [
-        "2x qualified RFPs",
-        "-40% time-to-first-response",
-        "Structured briefs for sales"
-      ]
-    },
-    "portal-lead-qualification-routing": {
-      "title": "Portal Lead Qualification & Routing",
-      "description": "Handles leads from property portals, qualifies them and routes them to the right agent/property with booked viewings when possible.",
-      "metrics": [
-        "50% faster SLA",
-        "+17% viewings booked",
-        "Automatic agent routing"
-      ]
-    },
-    "viewing-follow-up-offer-collector": {
-      "title": "Viewing Follow-Up & Offer Collector",
-      "description": "After a property viewing, follows up to gather feedback, check interest level, and collect offers or applications.",
-      "metrics": [
-        "28% more offers collected",
-        "< 24h feedback turnaround",
-        "Nurtures warm interest"
-      ]
-    },
-    "tenant-onboarding-docs-collection": {
-      "title": "Tenant Onboarding & Docs Collection",
-      "description": "Orchestrates the journey from ‘accepted tenant’ to ‘moved in’: documents, contract, payments and key handover instructions.",
-      "metrics": [
-        "-50% admin time",
-        "95% document completion",
-        "Payment links & e-sign ready"
-      ]
-    }
-  },
   "start": {
     "hero": {
       "title": "Let's <primary>understand your company</primary> before pitching anything.",
@@ -235,21 +102,6 @@
       "cardTitle": "Book 30 minutes.",
       "cardSubtitle": "No corporate pitch, no generic demos. Tell us what brought you here and we'll ask the questions that matter.",
       "field": {
-        "vertical": {
-          "label": "Business industry",
-          "placeholder": "Select your industry (optional)",
-          "options": {
-            "restaurants": "Restaurants",
-            "beauty": "Hair & Beauty",
-            "clinics": "Clinics & Health",
-            "hotels": "Hotels",
-            "realEstate": "Real Estate"
-          }
-        },
-        "automation": {
-          "label": "Automations",
-          "placeholder": "Select automations (multiple, optional)"
-        },
         "name": {
           "label": "Your name",
           "placeholder": "Alex Johnson",
@@ -261,15 +113,16 @@
           "error": "Please enter a valid email"
         },
         "goals": {
-          "label": "What are you looking for?",
-          "placeholder": "Briefly tell us what you’d like to achieve...",
-          "error": "Please tell us your goals"
+          "label": "What brings you here?",
+          "placeholder": "Tell us in one or two sentences what you'd like to solve.",
+          "error": "Please tell us what you'd like to solve"
         }
       },
       "submit": {
         "idle": "Book a conversation",
         "loading": "Sending…"
       },
+      "calendarAlternative": "Prefer to skip the form? Book directly on the calendar.",
       "disclaimer": "We work with companies of 10 to 200 employees and revenue between 1M€ and 50M€. If your company is outside that range, we'll tell you honestly and point you toward options that fit better.",
       "success": {
         "title": "Thanks! We’ve received your request.",
