@@ -56,17 +56,6 @@
       "linkedin": "Follow us on LinkedIn"
     }
   },
-  "blog": {
-    "hero": {
-      "title": "Our <primary>Blog</primary>",
-      "subtitle": "Ideas, guides, and real-world stories about AI automation for service businesses."
-    },
-    "empty": {
-      "badge": "Coming soon",
-      "title": "We're cooking up something good",
-      "description": "Our first articles are on the way. Check back soon for ideas, guides, and real-world stories about AI automation."
-    }
-  },
   "solutions": {
     "hero": {
       "title": "The <primary>modular catalog</primary>.",

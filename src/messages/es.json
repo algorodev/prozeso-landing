@@ -56,17 +56,6 @@
       "linkedin": "Síguenos en LinkedIn"
     }
   },
-  "blog": {
-    "hero": {
-      "title": "Nuestro <primary>Blog</primary>",
-      "subtitle": "Ideas, guías y casos reales sobre automatización con IA para negocios de servicios."
-    },
-    "empty": {
-      "badge": "Próximamente",
-      "title": "Estamos preparando algo bueno",
-      "description": "Los primeros artículos están en camino. Vuelve pronto para descubrir ideas, guías y casos reales sobre automatización con IA."
-    }
-  },
   "solutions": {
     "hero": {
       "title": "El <primary>catálogo modular</primary>.",
