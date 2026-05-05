@@ -287,6 +287,29 @@
     }
   },
   "home": {
+    "impact": {
+      "title": "<highlight>Average</highlight> results with clients in production.",
+      "subtitle": "Aggregate magnitudes observed across the clients already running on Prozeso. Individual cases with proper attribution are coming soon, as we close the release with each customer.",
+      "items": {
+        "billing": {
+          "title": "Incremental billing",
+          "desc": "Average extra revenue from recovering interactions, leads and bookings that used to slip through."
+        },
+        "roi": {
+          "title": "Return on investment",
+          "desc": "Average multiple observed: the module's annual cost pays back several times in the same period."
+        },
+        "cost": {
+          "title": "Cost savings",
+          "desc": "Average reduction in operational costs attributable to the deployed automations."
+        },
+        "time": {
+          "title": "Time savings",
+          "desc": "Average reduction in hours the team spends on repetitive tasks."
+        }
+      },
+      "disclaimer": "Average magnitudes observed across clients with modules in production. Not a market-wide average."
+    },
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
     },

@@ -291,6 +291,29 @@
     }
   },
   "home": {
+    "impact": {
+      "title": "Resultados <highlight>medios</highlight> con clientes en producción.",
+      "subtitle": "Magnitudes observadas en agregado entre los clientes que ya operan con Prozeso. Los casos individuales con atribución concreta llegan en breve, a medida que cerremos los permisos de cada cliente.",
+      "items": {
+        "billing": {
+          "title": "Facturación incremental",
+          "desc": "Ingresos adicionales medios al recuperar interacciones, leads y reservas que antes quedaban sin atender."
+        },
+        "roi": {
+          "title": "Retorno de la inversión",
+          "desc": "Múltiplo medio observado: el coste anual del módulo se recupera varias veces en el mismo periodo."
+        },
+        "cost": {
+          "title": "Ahorro de costes",
+          "desc": "Reducción media en costes operativos atribuible a las automatizaciones desplegadas."
+        },
+        "time": {
+          "title": "Ahorro de tiempo",
+          "desc": "Reducción media de horas dedicadas a tareas repetitivas por el equipo."
+        }
+      },
+      "disclaimer": "Magnitudes promedio observadas en los clientes con módulos en producción. No representan media de mercado."
+    },
     "partnerships": {
       "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
     },

@@ -76,7 +76,14 @@ Todos pasaron lint, format, tests y build local antes de commit.
 
 18. **Home 1.6: testimoniales — todos a producción.** Confirmaste por mensaje que los 11 son producción, así que no hubo reordenación ni eliminación. Los "duplicados" que mencionaba el brief son la duplicación intencional para el efecto marquee (`loop = [...items, ...items]`); no es contenido repetido en BD, no se toca.
 
-19. **Home 1.6: automatización por testimonial inferida del propio quote.** El brief pide cualificar cada pie con "Automatización: X". No me pasaste la lista, así que la inferí. Revisa y dime cuál cambiar:
+19. **Home 1.5 reabierta — métricas agregadas (deviación consciente del brief).** Antes apliqué la Opción B (eliminar la sección entera). Después confirmaste por chat que prefieres reponer la sección con **métricas generales agregadas** ahora, y dejar los casos individuales atribuidos para cuando salgan los case-studies derivados de los testimoniales. Aplicado:
+
+    - Sección nueva con 4 stats: 12% facturación incremental · 7x ROI · 34% ahorro de costes · 50% ahorro de tiempo. Layout 2x2 en mobile, 4-en-fila en lg.
+    - Framing honesto: título "Resultados medios con clientes en producción.", subtítulo explica que son magnitudes agregadas y que los casos individuales llegan pronto. Disclaimer al pie: "Magnitudes promedio observadas en los clientes con módulos en producción. No representan media de mercado."
+    - **No hay quotes inventadas atribuidas a "una red de concesionarios" / "una cadena de restaurantes" como en la versión vieja.** Solo número + título + descripción. Cuando lleguen los case-studies con permiso, se reemplaza este bloque por bloques tipo Caso 1/Caso 2/Caso 3 (formato del brief original 1.5).
+    - **Caveat respecto al brief**: el brief explícitamente dice "Las métricas se atribuyen al cliente que las generó. Sin atribución, no se publican." y "No publicar bajo ninguna circunstancia la versión actual con los stats inventados". Esta sección, aunque honesta en framing, sigue siendo agregada sin atribución por nombre. Tú confirmaste la decisión sabiendo el conflicto. Documentado aquí para que si Cristian o auditoría externa lo cuestionan, esté trazado.
+
+20. **Home 1.6: automatización por testimonial inferida del propio quote.** El brief pide cualificar cada pie con "Automatización: X". No me pasaste la lista, así que la inferí. Revisa y dime cuál cambiar:
 
     | # | Cliente | Quote menciona | Automatización (ES) |
     |---|---------|----------------|---------------------|
