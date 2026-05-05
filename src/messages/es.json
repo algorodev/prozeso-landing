@@ -800,37 +800,35 @@
   "about": {
     "metadata": {
       "title": "Sobre Nosotros — Prozeso",
-      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin y construimos automatización de flujos de trabajo con IA para negocios de servicios."
+      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin para resolver el hueco entre Excel y SAP en empresas de 10 a 200 empleados."
     },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
-      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión compartida: hacer que la automatización con IA sea accesible para cada negocio de servicios. El 7 de octubre de 2025, nació Prozeso.",
+      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: las empresas que han superado Excel pero no quieren meterse en SAP están desatendidas. El 7 de octubre de 2025, nació Prozeso para resolverlo.",
       "originTitle": "Donde todo empezó",
-      "originText": "Todo comenzó con una conversación en las oficinas de Google en Dublin. Tres profesionales de distintos campos — marketing, ingeniería y ventas — se dieron cuenta de que los negocios de servicios se estaban quedando atrás en la revolución de la automatización. Mientras las grandes corporaciones tenían acceso a herramientas sofisticadas, las pequeñas y medianas empresas seguían atrapadas en procesos manuales. Ese día decidimos cambiarlo. El 7 de octubre de 2025, lanzamos oficialmente Prozeso con una misión clara: llevar la automatización inteligente a los negocios que más la necesitan."
+      "originParagraph1": "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin. Coincidíamos en algo: hay un hueco entre Excel y SAP que ningún ERP del mercado resuelve bien.",
+      "originParagraph2": "Empresas españolas de 10 a 200 empleados con procesos viviendo en cabezas, hojas de cálculo y mensajes de WhatsApp. Productos como Holded, Odoo o Zoho cubren parte, pero rígidos y generalistas. Y meterse en NetSuite no es opción ni por coste, ni por tiempo de implementación, ni por equipo de IT que sostenga el proyecto.",
+      "originParagraph3": "Ese día decidimos construir el sistema operativo que esa empresa nunca tuvo. El 7 de octubre de 2025 lanzamos oficialmente Prozeso."
     },
     "team": {
       "title": "El equipo",
-      "subtitle": "Tres cofundadores, una misión: empoderar a los negocios de servicios con IA.",
+      "subtitle": "Tres cofundadores, una misión: construir el sistema operativo que las pymes nunca tuvieron.",
       "ceo": {
-        "name": "Cristian Guzman",
+        "name": "Cristian Guzmán",
         "role": "CEO",
-        "description": "Lidera la visión y la estrategia de crecimiento, conectando Prozeso con los negocios que más lo necesitan."
+        "description": "Lidera la conversación con los clientes y la dirección comercial. Antes en marketing, ahora vendiendo lo que él mismo decidió que era el problema."
       },
       "cto": {
-        "name": "Alejandro Gonzalez",
+        "name": "Alejandro González",
         "role": "CTO",
-        "description": "Diseña la tecnología detrás de Prozeso, convirtiendo IA compleja en herramientas simples y poderosas."
+        "description": "Diseña y mantiene la plataforma. Antes ingeniero en banca y consumo, ahora construyendo el sistema operativo que las pymes nunca tuvieron."
       },
       "sales": {
         "name": "Carles Vineta",
         "role": "Strategic Advisor",
-        "description": "Diseña la estrategia comercial, asegurando que Prozeso llegue a los clientes adecuados en el momento justo."
+        "description": "Acompaña la estrategia comercial. 30+ años en operaciones de empresas como las que servimos. Asegura que las decisiones tienen sentido en la realidad, no solo en el slide."
       },
       "linkedin": "Ver perfil de LinkedIn"
-    },
-    "cta": {
-      "title": "¿Listo para automatizar tu negocio?",
-      "subtitle": "Comienza tu evaluación gratuita y descubre cómo Prozeso puede transformar tus operaciones."
     }
   },
   "notFound": {

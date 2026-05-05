@@ -40,9 +40,11 @@ const Hero = () => {
           <h2 className="font-sora text-2xl md:text-3xl font-semibold tracking-tight mb-4">
             {t("originTitle")}
           </h2>
-          <p className="text-foreground/70 leading-relaxed text-base md:text-lg">
-            {t("originText")}
-          </p>
+          <div className="space-y-4 text-foreground/70 leading-relaxed text-base md:text-lg">
+            <p>{t("originParagraph1")}</p>
+            <p>{t("originParagraph2")}</p>
+            <p>{t("originParagraph3")}</p>
+          </div>
         </motion.div>
       </div>
     </section>
