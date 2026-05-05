@@ -14,13 +14,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/solutions`;
 
-  const title =
-    locale === "es" ? "Soluciones por Sector" : "Industry Solutions";
+  const title = locale === "es" ? "El catálogo modular" : "The modular catalog";
 
   const description =
     locale === "es"
-      ? "Automatizaciones con IA diseñadas para negocios de servicios. Restaurantes, clínicas, hoteles, inmobiliarias y más."
-      : "AI-powered automations designed for service businesses. Restaurants, clinics, hotels, real estate, and more.";
+      ? "13 áreas funcionales y cientos de automatizaciones documentadas. Empezamos por la pieza donde más sangra tu empresa, ampliamos cuando lo demuestra."
+      : "13 functional areas and hundreds of documented automations. We start with the piece where your company bleeds the most, and expand when results back it up.";
 
   return {
     title,
@@ -54,7 +53,7 @@ export default async function AutomationsSuitePage({ params }: Props) {
       url: `${base}/${locale}/`,
     },
     {
-      name: locale === "es" ? "Soluciones por Sector" : "Industry Solutions",
+      name: locale === "es" ? "Soluciones" : "Solutions",
       url: `${base}/${locale}/solutions`,
     },
   ]);
