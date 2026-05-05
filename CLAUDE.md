@@ -55,7 +55,6 @@ src/
 │   ├── ui/                  # Reusable UI primitives (Button, Card, Form, Dialog, etc.)
 │   └── icons/               # Custom SVG icon components
 ├── lib/
-│   ├── notion/              # Notion blog client
 │   ├── seo/                 # SEO helpers (breadcrumb JSON-LD)
 │   └── utils.ts             # Misc helpers
 ├── i18n/                    # i18n config + LocalizedLink
