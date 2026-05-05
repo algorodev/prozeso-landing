@@ -222,15 +222,15 @@
     "steps": {
       "items": {
         "intro": {
-          "title": "01. Cualificamos",
+          "title": "Cualificamos",
           "desc": "Una conversación de 30 minutos para entender tu operación: cómo entran los pedidos o las consultas, dónde se atascan, qué cambiarías mañana si pudieras. Si no encajamos, te lo decimos en esta llamada."
         },
         "call": {
-          "title": "02. Diseñamos",
+          "title": "Diseñamos",
           "desc": "Te enviamos una propuesta concreta: qué módulo entra primero, plazos, coste de setup y de operación recurrente. Sin sorpresas, sin asteriscos. Si quieres, lo revisas con tu socio o tu equipo."
         },
         "launch": {
-          "title": "03. Implementamos",
+          "title": "Implementamos",
           "desc": "Implementación en 2-4 semanas para el módulo de entrada. Te acompañamos hasta que el resultado encaja en tu operación. Si en 60 días no aporta valor real, no hay motivo para seguir. Y nosotros tampoco para venderte más."
         }
       }

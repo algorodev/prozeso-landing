@@ -218,15 +218,15 @@
     "steps": {
       "items": {
         "intro": {
-          "title": "01. We qualify",
+          "title": "We qualify",
           "desc": "A 30-minute conversation to understand your operation: how orders or inquiries come in, where they get stuck, what you'd change tomorrow if you could. If we're not a fit, we'll tell you in this call."
         },
         "call": {
-          "title": "02. We design",
+          "title": "We design",
           "desc": "We send you a concrete proposal: which module goes first, timelines, setup and recurring operating cost. No surprises, no asterisks. If you want, you review it with your partner or your team."
         },
         "launch": {
-          "title": "03. We implement",
+          "title": "We implement",
           "desc": "Implementation in 2-4 weeks for the entry module. We stay with you until the result fits your operation. If after 60 days it doesn't deliver real value, there's no reason to keep going. And no reason for us to sell you more."
         }
       }
