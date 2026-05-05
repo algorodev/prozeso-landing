@@ -13,8 +13,8 @@ export function Steps() {
   const t = useTranslations("start.steps.items");
 
   return (
-    <section className="py-12 sm:py-16">
-      <div className="container mx-auto px-6 max-w-3xl">
+    <section className="py-12 sm:py-16 px-6">
+      <div className="container mx-auto max-w-[1280px]">
         <motion.ol
           initial="hidden"
           whileInView="show"
@@ -32,7 +32,7 @@ export function Steps() {
                 hidden: { opacity: 0, y: 16 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="grid grid-cols-[auto_1fr] gap-x-6 sm:gap-x-10 items-start"
+              className="grid grid-cols-[auto_1fr] gap-x-6 sm:gap-x-10 items-start max-w-3xl"
             >
               <span
                 aria-hidden

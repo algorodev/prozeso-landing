@@ -90,13 +90,15 @@ export default async function StartPage({ params }: Props) {
   ]);
 
   return (
-    <main className="mx-auto min-h-dvh max-w-7xl">
+    <main className="min-h-dvh">
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <Hero />
       <Steps />
-      <section id="assessment" className="py-10">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <AssessmentForm />
+      <section id="assessment" className="py-12 sm:py-16 px-6">
+        <div className="container mx-auto max-w-[1280px]">
+          <div className="max-w-3xl">
+            <AssessmentForm />
+          </div>
         </div>
       </section>
     </main>
