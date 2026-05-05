@@ -1,7 +1,6 @@
 {
   "common": {
     "cta": {
-      "startAssessment": "Comenzar evaluación gratis",
       "bookCall": "Reservar una llamada"
     },
     "agentButton": {
@@ -819,9 +818,10 @@
       "clearFilter": "Limpiar filtro"
     },
     "finalCta": {
-      "title": "¿Listo para <highlight>automatizar</highlight>?",
-      "subtitle": "Empieza tu evaluación gratuita hoy. Descubre exactamente qué automatizaciones transformarán tu negocio.",
-      "cta": "Empezar ahora"
+      "title": "¿<highlight>Encaja</highlight> con tu empresa?",
+      "subtitle": "Una conversación de 30 minutos es suficiente para saber si Prozeso te aporta más de lo que cuesta. Si no encajamos, te lo decimos.",
+      "ctaPrimary": "Hablar con nosotros",
+      "ctaSecondary": "Ver el catálogo modular"
     },
     "understanding": {
       "title": "Tres capas. <highlight>Una columna vertebral</highlight>.",

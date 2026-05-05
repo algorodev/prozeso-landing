@@ -1,7 +1,6 @@
 {
   "common": {
     "cta": {
-      "startAssessment": "Start free assessment",
       "bookCall": "Book a Call"
     },
     "agentButton": {
@@ -815,9 +814,10 @@
       "clearFilter": "Clear filter"
     },
     "finalCta": {
-      "title": "Ready to <highlight>automate</highlight>?",
-      "subtitle": "Start your free assessment today. See exactly which automations will transform your business.",
-      "cta": "Start now"
+      "title": "Does Prozeso <highlight>fit</highlight> your company?",
+      "subtitle": "A 30-minute conversation is enough to know whether Prozeso brings you more than it costs. If we're not a fit, we'll tell you.",
+      "ctaPrimary": "Talk to us",
+      "ctaSecondary": "See the modular catalog"
     },
     "understanding": {
       "title": "Three layers. <highlight>One backbone</highlight>.",
