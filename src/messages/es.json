@@ -13,8 +13,8 @@
     "title": "Con el respaldo de"
   },
   "hero": {
-    "title": "El <primary>sistema operativo</primary> de las empresas que no quieren ser <secondary>Enterprise</secondary>.",
-    "subtitle": "La columna vertebral donde viven los procesos, los datos y la operación de empresas que han superado Excel pero no quieren, ni necesitan, meterse en SAP.",
+    "title": "Donde tus <primary>procesos, datos y operaciones</primary> por fin <secondary>viven juntos</secondary>.",
+    "subtitle": "La columna vertebral modular que conecta tus herramientas, automatiza tus flujos y te devuelve el control.",
     "ctaPrimary": "Hablar con nosotros",
     "ctaSecondary": "Ver el catálogo modular",
     "trialBadges": {
@@ -35,7 +35,7 @@
     "mobileMenuDescription": "Menú de navegación principal"
   },
   "footer": {
-    "tagline": "El sistema operativo de las empresas que no quieren ser Enterprise.",
+    "tagline": "Donde tus procesos, datos y operaciones por fin viven juntos.",
     "sections": {
       "product": "Producto",
       "company": "Empresa"
@@ -614,10 +614,10 @@
     },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
-      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: las empresas que han superado Excel pero no quieren meterse en SAP están desatendidas. El 7 de octubre de 2025, nació Prozeso para resolverlo.",
+      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad. El 7 de octubre de 2025, nació Prozeso para resolverlo.",
       "originTitle": "Donde todo empezó",
-      "originParagraph1": "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin. Coincidíamos en algo: hay un hueco entre Excel y SAP que ningún ERP del mercado resuelve bien.",
-      "originParagraph2": "Empresas españolas de 10 a 200 empleados con procesos viviendo en cabezas, hojas de cálculo y mensajes de WhatsApp. Productos como Holded, Odoo o Zoho cubren parte, pero rígidos y generalistas. Y meterse en NetSuite no es opción ni por coste, ni por tiempo de implementación, ni por equipo de IT que sostenga el proyecto.",
+      "originParagraph1": "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin. Coincidíamos en una cosa: las empresas que crecen están atascadas con herramientas que no crecen con ellas, y las alternativas están fuera de su alcance.",
+      "originParagraph2": "Empresas españolas de 10 a 200 empleados con procesos viviendo en cabezas, hojas de cálculo y mensajes de WhatsApp. Las herramientas que se pueden permitir son demasiado rígidas para encajar de verdad. Las herramientas que sí encajan son demasiado pesadas, demasiado lentas y demasiado caras para llegar a adoptarlas.",
       "originParagraph3": "Ese día decidimos construir el sistema operativo que esa empresa nunca tuvo. El 7 de octubre de 2025 lanzamos oficialmente Prozeso."
     },
     "team": {

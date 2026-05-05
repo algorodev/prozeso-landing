@@ -13,8 +13,8 @@
     "title": "Backed by"
   },
   "hero": {
-    "title": "The <primary>operating system</primary> for companies that don't want to be <secondary>Enterprise</secondary>.",
-    "subtitle": "The backbone where the processes, data and operations live for companies that have outgrown Excel but don't want, or need, to move into SAP.",
+    "title": "Where your <primary>processes, data and operations</primary> finally <secondary>live together</secondary>.",
+    "subtitle": "The modular backbone that connects your tools, automates your workflows and gives you back control.",
     "ctaPrimary": "Talk to us",
     "ctaSecondary": "See the modular catalog",
     "trialBadges": {
@@ -35,7 +35,7 @@
     "mobileMenuDescription": "Main navigation menu"
   },
   "footer": {
-    "tagline": "The operating system for companies that don't want to be Enterprise.",
+    "tagline": "Where your processes, data and operations finally live together.",
     "sections": {
       "product": "Product",
       "company": "Company"
@@ -614,10 +614,10 @@
     },
     "hero": {
       "title": "The story behind <highlight>Prozeso</highlight>",
-      "subtitle": "We met at Google's offices in Dublin with a clear vision: companies that have outgrown Excel but don't want to move into SAP are underserved. On October 7, 2025, Prozeso was born to fix that.",
+      "subtitle": "We met at Google's offices in Dublin with a clear vision: there's a whole segment of companies stuck between manual chaos and corporate software, and nobody is really serving them. On October 7, 2025, Prozeso was born to fix that.",
       "originTitle": "Where it all began",
-      "originParagraph1": "Three professionals: marketing, engineering, and strategy. Comparing notes in Dublin. We agreed on something: there's a gap between Excel and SAP that no ERP on the market solves well.",
-      "originParagraph2": "Spanish companies of 10 to 200 employees, with processes living in people's heads, spreadsheets, and WhatsApp messages. Products like Holded, Odoo or Zoho cover part of the ground, but they're rigid and generic. And moving into NetSuite isn't an option, not on cost, not on implementation time, not on the IT team you'd need to sustain the project.",
+      "originParagraph1": "Three professionals: marketing, engineering, and strategy. Comparing notes in Dublin. We agreed on one thing: growing companies are stuck with tools that don't grow with them, and the alternatives are out of reach.",
+      "originParagraph2": "Spanish companies of 10 to 200 employees, with processes living in people's heads, spreadsheets, and WhatsApp messages. The tools they can afford are too rigid to truly fit. The tools that fit are too heavy, too slow and too expensive to ever adopt.",
       "originParagraph3": "That day we decided to build the operating system that company never had. On October 7, 2025 we officially launched Prozeso."
     },
     "team": {
