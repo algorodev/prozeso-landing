@@ -3,7 +3,7 @@
 **De:** Claude Code
 **Para:** Alejandro
 **Fecha de implementación:** 2026-05-05
-**Sprint aplicado:** 1 (CRÍTICO) — `00-global-changes`, `01-home` (1.1 + 1.5), `04-use-cases` (4.1)
+**Sprint aplicado:** 1 (CRÍTICO) — `00-global-changes`, `01-home` (1.1 + 1.5), `04-use-cases` (4.1), `06-blog` (6.1) más `05-about` completo (sprint 2 anticipado)
 
 ---
 
@@ -19,6 +19,7 @@ Commits creados (orden cronológico, todos en `main`):
 6. `update: home hero with new positioning copy` — sección 1.1.
 7. `remove: invented stats section from home (Option B)` — sección 1.5.
 8. `remove: AI report form from /use-cases, replace with real-cases hero` — sección 4.1.
+9. `update: about page copy with new positioning` — secciones 5.1, 5.2, 5.3.
 
 Todos pasaron lint, format, tests y build local antes de commit.
 
@@ -41,6 +42,14 @@ Todos pasaron lint, format, tests y build local antes de commit.
 7. **Idioma EN del hero.** El brief solo daba copy ES. Traduje al EN siguiendo el mismo tono ("The operating system for companies that don't want to be Enterprise."). Si el copy EN tiene que diferir, marca y lo ajusto.
 
 8. **Iconos del hero.** El brief no especifica. Cambié `NotebookPen` por `MessagesSquare` para "Hablar con nosotros" y añadí `ArrowRight` al CTA secundario por consistencia visual con el patrón habitual de la web. Si quieres otros, los cambio.
+
+9. **About 5.2 — em-dashes a dos puntos.** El brief usaba "Tres profesionales — marketing, ingeniería y estrategia — comparando notas". Por la regla anti-em-dash, lo dejé como "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin." Si la cadencia te chirría, reescribo.
+
+10. **About: subtítulo `team.subtitle` reescrito sin permiso.** El brief solo especifica los textos de los 3 cofundadores, pero el subtítulo del equipo ("empoderar a los negocios de servicios con IA") seguía con el posicionamiento viejo. Lo cambié a "construir el sistema operativo que las pymes nunca tuvieron" para alinear. Si prefieres otra frase, dímelo.
+
+11. **About: nombres con acento.** El componente actual mostraba "Cristian Guzman" y "Alejandro Gonzalez" sin acento. El brief 5.3 los lista con acento ("Cristian Guzmán", "Alejandro González"). Apliqué los acentos. Las iniciales calculadas en `Team.tsx` no se ven afectadas (siguen siendo CG/AG). Avisa si por alguna razón los queréis sin acento.
+
+12. **About: `about.cta` borrado.** Las claves `about.cta.title/subtitle` no se leían en ningún sitio. Las he eliminado de las dos traducciones. La página termina con `<FinalCTA />` (componente de home), que tiene su propio namespace.
 
 ---
 
@@ -66,6 +75,8 @@ Estos los lista PLACEHOLDERS.md y los respeté:
 4. **Logo del footer no se cambia.** El brief 0.2 habla solo del subtítulo, así que no toqué el componente `Logo`.
 
 5. **Sección 1.2 (CTAs del hero), 1.3, 1.4, 1.6, 1.7 todavía no se hicieron.** Son sprint 2. La home ya no tiene sección de stats pero el resto (Understanding, BubbleDiagram, Partnerships, Testimonials, FinalCTA, TrustedBy) sigue intacta con el copy antiguo.
+
+6. **About: sección 5.4 (valores/misión) no añadida.** El brief 5.4 dice explícitamente que requiere conversación contigo y Cristian sobre qué valores explicitar y cómo, así que no inventé nada. La página About hoy tiene solo Hero (con narrativa "Donde todo empezó" en 3 párrafos) + Team + FinalCTA, que es la estructura recomendada por el brief.
 
 ---
 
