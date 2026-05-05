@@ -299,11 +299,13 @@
       "title": "Lo que dicen nuestros clientes",
       "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
       "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
+      "automationLabel": "Automatización",
       "items": {
         "1": {
           "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
           "name": "Pere Coma",
           "role": "Director General · Albet Clínica Veterinària",
+          "automation": "Recordatorios de citas",
           "avatar": "/assets/testimonials/albet_vet.png",
           "web": "https://www.albetclinicaveterinaria.com/"
         },
@@ -311,6 +313,7 @@
           "quote": "Desde que implementamos Prozeso en nuestro salón, hemos dejado de perder tiempo al teléfono. Ahora se gestionan más de 20 llamadas al día, incluso fuera del horario, lo que nos ha permitido centrarnos en lo que más nos gusta: atender a cada cliente con todo el tiempo que se merece. Y lo mejor, la lista de espera automática.",
           "name": "Eva Mayoral",
           "role": "Owner · Mayoral Studio",
+          "automation": "Recepcionista IA",
           "avatar": "/assets/testimonials/mayoral.png",
           "web": "https://evamayoral.com"
         },
@@ -318,6 +321,7 @@
           "quote": "Llevamos más de 35 años levantando estructuras, pero la gestión de llamadas y seguimientos nos robaba un tiempo que necesitábamos en obra. Desde que implantamos Prozeso, el equipo de oficina dedica su tiempo a lo que importa: coordinar proyectos, no perseguir llamadas.",
           "name": "José Antonio González",
           "role": "Director · Estructuras Albuixech",
+          "automation": "Recepcionista IA",
           "avatar": "/assets/testimonials/proconsal.webp",
           "web": "https://estructurasalbuixech.es/"
         },
@@ -325,6 +329,7 @@
           "quote": "Gestionamos cientos de consultas de distribuidores y ferreterías cada semana. Con Prozeso, las peticiones de catálogo, disponibilidad de stock y plazos de entrega se resuelven automáticamente. Nuestro equipo comercial ahora se centra en cerrar ventas, no en responder las mismas preguntas.",
           "name": "Andrés Peralta",
           "role": "Co-Founder & Director · Altipesa",
+          "automation": "Recepcionista IA B2B",
           "avatar": "/assets/testimonials/altipesa.png",
           "web": "https://altipesa.com/"
         },
@@ -332,6 +337,7 @@
           "quote": "Nuestra red de distribuidores necesita respuestas rápidas sobre pedidos, plazos y especificaciones técnicas. Desde que activamos Prozeso, el tiempo de respuesta ha bajado drásticamente y la satisfacción de nuestros distribuidores ha subido. Menos fricciones, más ventas.",
           "name": "Andrés Peralta",
           "role": "Co-Founder & Director · KTL Escaleras",
+          "automation": "Recepcionista IA B2B",
           "avatar": "/assets/testimonials/ktl.png",
           "web": "https://ktl-escaleras.es/"
         },
@@ -339,6 +345,7 @@
           "quote": "Si tienes un negocio de servicios y sientes que estás atrapada en lo operativo, habla con Prozeso. Empiezan con una evaluación gratuita, entienden tu negocio y te proponen automatizaciones que se pagan solas en semanas. Para nosotros ha sido un antes y un después. Ahora Novify escala, pero sin perder lo que nos hace únicos: el factor humano.",
           "name": "Angélica Ortega",
           "role": "Founder & CEO · Novify",
+          "automation": "Implementación a medida",
           "avatar": "/assets/testimonials/novify.png",
           "web": "https://novify.xyz/"
         },
@@ -346,6 +353,7 @@
           "quote": "Con Prozeso hemos transformado la logística de Albet: ahora resolvemos incidencias en almacén en tiempo real, reduciendo errores y optimizando cada operación sin fricción.",
           "name": "Carles Viladecans",
           "role": "CEO · Albet",
+          "automation": "Gestión de incidencias en almacén",
           "avatar": "/assets/testimonials/albet.png",
           "web": "https://www.albet.es/"
         },
@@ -353,6 +361,7 @@
           "quote": "En Can Cuinat, gracias a Prozeso hemos conseguido atender nuevos leads y cualificarlos incluso cuando no estamos en la oficina. Esto nos ha permitido no perder oportunidades, responder con rapidez y mantener un flujo constante de contactos interesados en nuestros servicios. Sin duda, una herramienta clave para nuestro crecimiento comercial.",
           "name": "Ezequiel Garcia",
           "role": "CEO · Can Cuinat",
+          "automation": "Recepcionista IA + cualificación de leads",
           "avatar": "/assets/testimonials/can-cuinat.svg",
           "web": "https://www.cancuinat.com/"
         },
@@ -360,6 +369,7 @@
           "quote": "Desde que trabajamos con Prozeso, hemos ordenado toda la gestión de comunicación alrededor de nuestros eventos. Ahora atendemos automáticamente mensajes y solicitudes en todos los canales, incluso fuera de horario, sin saturar al equipo. Esto nos permite centrarnos en la experiencia y escalar eventos con una operativa mucho más eficiente, asegurando mejor gestión de asistentes y mayor ocupación.",
           "name": "Eric Alvarez",
           "role": "Owner · Unlocked",
+          "automation": "Recepcionista IA omnicanal",
           "avatar": "/assets/testimonials/unlocked.png",
           "web": ""
         },
@@ -367,6 +377,7 @@
           "quote": "Con Prozeso, HoHomes ha escalado la captación de leads y automatizado el check-in y check-out de huéspedes, reduciendo fricción operativa y elevando la experiencia del cliente.",
           "name": "Miquel Sesplugues",
           "role": "CEO & Founder · HoHomes",
+          "automation": "Reservas + check-in automatizado",
           "avatar": "/assets/testimonials/hohomes.png",
           "web": "https://www.hohomes.es/"
         },
@@ -374,6 +385,7 @@
           "quote": "Gracias a nuestra colaboración con Prozeso, automatizamos la generación de leads cualificados con seguridad empresarial, velocidad y total trazabilidad.",
           "name": "Samuel Pablos",
           "role": "CEO & Founder · iZuuk",
+          "automation": "Prospección IA",
           "avatar": "/assets/testimonials/izuuk.png",
           "web": "https://www.linkedin.com/company/izuuk/"
         }

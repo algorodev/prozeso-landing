@@ -295,11 +295,13 @@
       "title": "What Our Clients Say",
       "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
       "moreComing": "And many more stories on the way. These are just a few of the teams we're working with.",
+      "automationLabel": "Automation",
       "items": {
         "1": {
           "quote": "Since implementing Prozeso at Albet, we've reduced no-shows by 40%, and thanks to automated appointment reminders, our clients arrive far more consistently and on time.",
           "name": "Pere Coma",
           "role": "General Manager · Albet Clínica Veterinària",
+          "automation": "Appointment reminders",
           "avatar": "/assets/testimonials/albet_vet.png",
           "web": "https://www.albetclinicaveterinaria.com/"
         },
@@ -307,6 +309,7 @@
           "quote": "Ever since we started using Prozeso, we've stopped losing time to phone calls. It handles over 20 calls a day, even when we're closed, so we can focus on our real passion: giving every client our full attention. Plus, the automatic waiting list is a total game-changer.",
           "name": "Eva Mayoral",
           "role": "Owner · Mayoral Studio",
+          "automation": "AI Receptionist",
           "avatar": "/assets/testimonials/mayoral.png",
           "web": "https://evamayoral.com"
         },
@@ -314,6 +317,7 @@
           "quote": "We've been building structures for over 35 years, but managing calls and follow-ups was eating into time we needed on-site. Since we implemented Prozeso, our office team focuses on what matters: coordinating projects, not chasing phone calls.",
           "name": "José Antonio González",
           "role": "Director · Estructuras Albuixech",
+          "automation": "AI Receptionist",
           "avatar": "/assets/testimonials/proconsal.webp",
           "web": "https://estructurasalbuixech.es/"
         },
@@ -321,6 +325,7 @@
           "quote": "We handle hundreds of inquiries from distributors and hardware stores every week. With Prozeso, requests for catalogs, stock availability, and delivery timelines are resolved automatically. Our sales team now focuses on closing deals, not answering the same questions over and over.",
           "name": "Andrés Peralta",
           "role": "Co-Founder & Director · Altipesa",
+          "automation": "AI Receptionist for B2B",
           "avatar": "/assets/testimonials/altipesa.png",
           "web": "https://altipesa.com/"
         },
@@ -328,6 +333,7 @@
           "quote": "Our distributor network needs fast answers on orders, lead times, and technical specs. Since we activated Prozeso, response time has dropped dramatically and distributor satisfaction has gone up. Less friction, more sales.",
           "name": "Andrés Peralta",
           "role": "Co-Founder & Director · KTL Escaleras",
+          "automation": "AI Receptionist for B2B",
           "avatar": "/assets/testimonials/ktl.png",
           "web": "https://ktl-escaleras.es/"
         },
@@ -335,6 +341,7 @@
           "quote": "If you have a service business and feel stuck in the day-to-day operations, talk to Prozeso. They start with a free assessment, understand your business, and propose automations that pay for themselves in weeks. For us, it's been a game-changer. Now Novify is scaling up, but without losing what makes us unique: the human element.",
           "name": "Angélica Ortega",
           "role": "Founder & CEO · Novify",
+          "automation": "Custom implementation",
           "avatar": "/assets/testimonials/novify.png",
           "web": "https://novify.xyz/"
         },
@@ -342,6 +349,7 @@
           "quote": "With Prozeso, we've transformed Albet's logistics: we now resolve warehouse incidents in real time, reducing errors and optimizing every operation seamlessly.",
           "name": "Carles Viladecans",
           "role": "CEO · Albet",
+          "automation": "Warehouse incident management",
           "avatar": "/assets/testimonials/albet.png",
           "web": "https://www.albet.es/"
         },
@@ -349,6 +357,7 @@
           "quote": "At Can Cuinat, we've been able to process new leads and qualify them using Prozeso, even when we're away from the office. This ensures we don't miss opportunities, we can respond promptly, and we maintain a consistent flow of interested contacts. It is, without question, vital for our business expansion.",
           "name": "Ezequiel Garcia",
           "role": "CEO · Can Cuinat",
+          "automation": "AI Receptionist + lead qualification",
           "avatar": "/assets/testimonials/can-cuinat.svg",
           "web": "https://www.cancuinat.com/"
         },
@@ -356,6 +365,7 @@
           "quote": "Since working with Prozeso, we've streamlined all communication around our events. We now handle messages and requests automatically across all channels, even outside business hours, without overwhelming the team. This allows us to focus on the experience and scale events with a much more efficient operation, improving attendee management and overall occupancy.",
           "name": "Eric Alvarez",
           "role": "Owner · Unlocked",
+          "automation": "Omnichannel AI Receptionist",
           "avatar": "/assets/testimonials/unlocked.png",
           "web": ""
         },
@@ -363,6 +373,7 @@
           "quote": "With Prozeso, HoHomes has scaled lead generation and automated guest check-ins and check-outs, reducing operational friction and elevating the customer experience in Barcelona.",
           "name": "Miquel Sesplugues",
           "role": "CEO & Founder · HoHomes",
+          "automation": "Bookings + automated check-in",
           "avatar": "/assets/testimonials/hohomes.png",
           "web": "https://www.hohomes.es/"
         },
@@ -370,6 +381,7 @@
           "quote": "Through our partnership with Prozeso.com, we automate qualified lead generation with enterprise-grade security, speed, and full traceability.",
           "name": "Samuel Pablos",
           "role": "CEO & Founder · iZuuk",
+          "automation": "AI Prospecting",
           "avatar": "/assets/testimonials/izuuk.png",
           "web": "https://www.linkedin.com/company/izuuk/"
         }

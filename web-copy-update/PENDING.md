@@ -74,6 +74,26 @@ Todos pasaron lint, format, tests y build local antes de commit.
 
 17. **Grupos renombrados**: `backendOps` ES "Operaciones / Logística" → "Operaciones". EN "Operations / Logistics" → "Operations". `corporateSupport` ES "Corporativo / Soporte" → "Soporte corporativo". EN "Corporate / Support" → "Corporate support". `clientFacing` EN "Customer Service" → "Customer-facing" (ahora Customer Service es un módulo concreto, no la macroárea). En ES `clientFacing` se queda como "Atención al cliente" (la macroárea) y el módulo nuevo se llama "Atención al Cliente" — son distintos en mayúscula del primer término, pero homófonos. **Si te genera confusión, dime y le pongo otro nombre al módulo (p.ej. "Soporte al Cliente").**
 
+18. **Home 1.6: testimoniales — todos a producción.** Confirmaste por mensaje que los 11 son producción, así que no hubo reordenación ni eliminación. Los "duplicados" que mencionaba el brief son la duplicación intencional para el efecto marquee (`loop = [...items, ...items]`); no es contenido repetido en BD, no se toca.
+
+19. **Home 1.6: automatización por testimonial inferida del propio quote.** El brief pide cualificar cada pie con "Automatización: X". No me pasaste la lista, así que la inferí. Revisa y dime cuál cambiar:
+
+    | # | Cliente | Quote menciona | Automatización (ES) |
+    |---|---------|----------------|---------------------|
+    | 1 | Albet Clínica Veterinària (Pere Coma) | "no shows reducidos 40%, recordatorios un día antes" | Recordatorios de citas |
+    | 2 | Mayoral Studio (Eva Mayoral) | "20 llamadas/día fuera de horario, lista de espera automática" | Recepcionista IA |
+    | 3 | Estructuras Albuixech (José A. González) | "gestión de llamadas y seguimientos" | Recepcionista IA |
+    | 4 | Altipesa (Andrés Peralta) | "consultas de distribuidores, catálogo, stock, plazos" | Recepcionista IA B2B |
+    | 5 | KTL Escaleras (Andrés Peralta) | "respuestas rápidas sobre pedidos, plazos, especificaciones" | Recepcionista IA B2B |
+    | 6 | Novify (Angélica Ortega) | quote genérica de la experiencia con Prozeso | **Implementación a medida** *(no menciona automatización concreta — si quieres cambiarlo a una específica, dime cuál)* |
+    | 7 | Albet (Carles Viladecans) | "logística, incidencias en almacén en tiempo real" | Gestión de incidencias en almacén |
+    | 8 | Can Cuinat (Ezequiel Garcia) | "atender nuevos leads y cualificarlos cuando no estamos" | Recepcionista IA + cualificación de leads |
+    | 9 | Unlocked (Eric Alvarez) | "comunicación de eventos, mensajes en todos los canales" | Recepcionista IA omnicanal |
+    | 10 | HoHomes (Miquel Sesplugues) | "captación de leads + check-in/out de huéspedes" | Reservas + check-in automatizado |
+    | 11 | iZuuk (Samuel Pablos) | "generación de leads cualificados con seguridad empresarial" | Prospección IA |
+
+    El componente `Testimonials.tsx` ahora pinta una tercera línea pequeña debajo del rol con formato "Automatización: X" (en EN: "Automation: X"). Usa una nueva clave `home.testimonials.automationLabel`.
+
 ---
 
 ## Bloqueos del propio brief (siguen abiertos, no son cosa mía)

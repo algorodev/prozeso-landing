@@ -42,6 +42,9 @@ const Testimonials = () => {
     quote: t(`items.${id}.quote`),
     name: t(`items.${id}.name`),
     role: t(`items.${id}.role`),
+    automation: t.has(`items.${id}.automation`)
+      ? t(`items.${id}.automation`)
+      : "",
     avatar: t(`items.${id}.avatar`),
     web: t(`items.${id}.web`),
   }));
@@ -126,6 +129,11 @@ const Testimonials = () => {
                         <span className="text-xs text-muted-foreground">
                           {item.role}
                         </span>
+                        {item.automation && (
+                          <span className="text-[11px] text-muted-foreground/70 mt-0.5">
+                            {t("automationLabel")}: {item.automation}
+                          </span>
+                        )}
                       </div>
                     </figcaption>
                   </figure>
