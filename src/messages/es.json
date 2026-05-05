@@ -14,14 +14,14 @@
     "title": "Con el respaldo de"
   },
   "hero": {
-    "title": "Haz que tu <primary>negocio</primary> trabaje para <secondary>ti</secondary>",
-    "subtitle": "En Prozeso, desarrollamos automatizaciones, impulsadas por IA, que atienden llamadas y escalan cada interacción de tu negocio.",
-    "ctaPrimary": "Empezar ahora",
-    "ctaSecondary": "Probar demo gratis",
+    "title": "El <primary>sistema operativo</primary> de las empresas que no quieren ser <secondary>Enterprise</secondary>.",
+    "subtitle": "La columna vertebral donde viven los procesos, los datos y la operación de empresas que han superado Excel pero no quieren, ni necesitan, meterse en SAP.",
+    "ctaPrimary": "Hablar con nosotros",
+    "ctaSecondary": "Ver cómo aplica a tu caso",
     "trialBadges": {
-      "freeTrial": "Prueba gratis",
-      "noCreditCard": "Sin tarjeta de crédito",
-      "cancelAnytime": "Cancela cuando quieras"
+      "freeTrial": "Sin compromiso",
+      "noCreditCard": "Conversación de 30 minutos",
+      "cancelAnytime": "Te decimos si encajamos"
     },
     "imageAlt": "Vista previa del panel de automatización"
   },

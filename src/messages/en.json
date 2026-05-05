@@ -14,14 +14,14 @@
     "title": "Backed by"
   },
   "hero": {
-    "title": "Make your <primary>business</primary> work for <secondary>you</secondary>",
-    "subtitle": "At Prozeso, we build AI-powered automations that handle calls and scale every interaction in your business.",
-    "ctaPrimary": "Start now",
-    "ctaSecondary": "Try free demo",
+    "title": "The <primary>operating system</primary> for companies that don't want to be <secondary>Enterprise</secondary>.",
+    "subtitle": "The backbone where the processes, data and operations live for companies that have outgrown Excel but don't want, or need, to move into SAP.",
+    "ctaPrimary": "Talk to us",
+    "ctaSecondary": "See how it applies to your case",
     "trialBadges": {
-      "freeTrial": "Free trial",
-      "noCreditCard": "No credit card",
-      "cancelAnytime": "Cancel anytime"
+      "freeTrial": "No commitment",
+      "noCreditCard": "30-minute conversation",
+      "cancelAnytime": "We'll tell you if we're a fit"
     },
     "imageAlt": "Automation dashboard preview"
   },

@@ -1,16 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { NotebookPen } from "lucide-react";
+import { ArrowRight, MessagesSquare } from "lucide-react";
 import { useTranslations } from "next-intl";
 import HeroBackground from "@/components/Home/HeroBackground";
-import { BookCallButton } from "@/components/ui/BookCallButton";
 import { Button } from "@/components/ui/Button";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const Hero = () => {
   const t = useTranslations("hero");
-  const tc = useTranslations("common.cta");
 
   return (
     <section className="relative isolate min-h-dvh-minus-header overflow-hidden flex items-center">
@@ -51,11 +49,21 @@ const Hero = () => {
             >
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <LocalizedLink href="/start">
-                  <NotebookPen className="mr-1 size-5" />
-                  {tc("startAssessment")}
+                  <MessagesSquare className="mr-1 size-5" />
+                  {t("ctaPrimary")}
                 </LocalizedLink>
               </Button>
-              <BookCallButton className="w-full sm:w-auto" />
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto"
+              >
+                <LocalizedLink href="/use-cases">
+                  {t("ctaSecondary")}
+                  <ArrowRight className="ml-1 size-5" />
+                </LocalizedLink>
+              </Button>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
