@@ -36,14 +36,14 @@ export const AREAS: AreaNode[] = [
     label: "Bookings",
     icon: CalendarCheck,
     color: "var(--color-primary)",
-    startIndex: 1,
+    startIndex: 2,
   },
   {
     id: "customerSuccess",
     label: "Customer Success",
     icon: HeadsetIcon,
     color: "var(--color-primary)",
-    startIndex: 25,
+    startIndex: 5,
   },
   {
     id: "sales",
@@ -57,7 +57,7 @@ export const AREAS: AreaNode[] = [
     label: "Marketing",
     icon: Megaphone,
     color: "var(--color-secondary)",
-    startIndex: 21,
+    startIndex: 13,
   },
   {
     id: "product",
@@ -71,14 +71,14 @@ export const AREAS: AreaNode[] = [
     label: "Operations",
     icon: Settings,
     color: "var(--color-chart-2)",
-    startIndex: 33,
+    startIndex: 17,
   },
   {
     id: "stock",
     label: "Inventory",
     icon: Boxes,
     color: "var(--color-chart-2)",
-    startIndex: 17,
+    startIndex: 21,
   },
   {
     id: "it",
@@ -92,7 +92,7 @@ export const AREAS: AreaNode[] = [
     label: "Finance",
     icon: Landmark,
     color: "var(--color-accent)",
-    startIndex: 13,
+    startIndex: 25,
   },
   {
     id: "hr",
@@ -113,7 +113,7 @@ export const AREAS: AreaNode[] = [
     label: "Management",
     icon: BriefcaseBusiness,
     color: "var(--color-accent)",
-    startIndex: 5,
+    startIndex: 1,
   },
 ];
 
