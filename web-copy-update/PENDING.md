@@ -3,7 +3,7 @@
 **De:** Claude Code
 **Para:** Alejandro
 **Fecha de implementación:** 2026-05-05
-**Sprint aplicado:** 1 (CRÍTICO) — `00-global-changes`, `01-home` (1.1 + 1.5), `04-use-cases` (4.1), `06-blog` (6.1) más `05-about` completo (sprint 2 anticipado)
+**Sprint aplicado:** 1 (CRÍTICO) + 2 (ALTO) + parte de 3 (`02-solutions` completo aplicado)
 
 ---
 
@@ -20,6 +20,13 @@ Commits creados (orden cronológico, todos en `main`):
 7. `remove: invented stats section from home (Option B)` — sección 1.5.
 8. `remove: AI report form from /use-cases, replace with real-cases hero` — sección 4.1.
 9. `update: about page copy with new positioning` — secciones 5.1, 5.2, 5.3.
+10. `update: home — reinstate aggregated stats (Impact section)` — sección 1.5 reabierta con métricas agregadas (decisión de Alejandro).
+11. `update: qualify each testimonial with the automation in use` — sección 1.6.
+12. `update: home final CTA to "does Prozeso fit your company?"` — sección 1.7.
+13. `update: home architecture section to three layers + trust block` — sección 1.3.
+14. `update: home areas section to 13 modules in 4 macro-groups` — sección 1.4.
+15. `update: solutions hero and per-module structure` — secciones 2.1 + 2.2.
+16. `update: rewrite /solutions catalog with new ficha pattern` — secciones 2.4 + 2.5 + redistribución de fichas + layout 1280px.
 
 Todos pasaron lint, format, tests y build local antes de commit.
 
@@ -83,7 +90,15 @@ Todos pasaron lint, format, tests y build local antes de commit.
     - **No hay quotes inventadas atribuidas a "una red de concesionarios" / "una cadena de restaurantes" como en la versión vieja.** Solo número + título + descripción. Cuando lleguen los case-studies con permiso, se reemplaza este bloque por bloques tipo Caso 1/Caso 2/Caso 3 (formato del brief original 1.5).
     - **Caveat respecto al brief**: el brief explícitamente dice "Las métricas se atribuyen al cliente que las generó. Sin atribución, no se publican." y "No publicar bajo ninguna circunstancia la versión actual con los stats inventados". Esta sección, aunque honesta en framing, sigue siendo agregada sin atribución por nombre. Tú confirmaste la decisión sabiendo el conflicto. Documentado aquí para que si Cristian o auditoría externa lo cuestionan, esté trazado.
 
-20. **Home 1.6: automatización por testimonial inferida del propio quote.** El brief pide cualificar cada pie con "Automatización: X". No me pasaste la lista, así que la inferí. Revisa y dime cuál cambiar:
+20. **/solutions sprint 3 — todo "en producción", sin casos atribuidos.** Confirmaste que las 36 fichas son "en producción", sin desglose de casos por ficha (la línea "Casos en producción: cliente X, cliente Y" del brief queda diferida a la superficie futura de case-studies). Ningún roadmap; los 4 módulos sin automatizaciones (product, it, legal, management) muestran "Disponible Q4 2026" + un placeholder discreto explicando que el módulo está en desarrollo.
+
+21. **/solutions: redistribución de fichas para que coincidan con el módulo correcto.** Tu mensaje del 5 de mayo: las 4 fichas que estaban en `customerService` se han partido — Recepcionista IA se queda en Customer Service (1 ficha), y Recordatorios de citas, Impulsor de reseñas y Reprogramación inteligente pasan a Bookings (3 fichas). Bookings deja de estar en "Disponible Q4 2026". Los 4 módulos vacíos siguen siendo product, it, legal y management.
+
+22. **/solutions: descripciones por ficha tomadas tal cual del brief 2.4.** No las inventé — son las del bundle. Pero las **traducciones EN sí las escribí yo** (el brief solo daba ES). Si quieres revisar alguna línea EN, está en `src/messages/en.json` bajo `home.automationSuite.areas.{id}.automations.{i}.description`.
+
+23. **/solutions: subtitle por ficha mantenido aunque el brief no lo pedía explícitamente.** Cada ficha conserva un `subtitle` corto (ej. "Voice & WhatsApp", "Lifecycle", "Cash flow") porque añade contexto sin alargar la card. Si te parece ruido visual, dímelo y lo quito de las 36.
+
+24. **Home 1.6: automatización por testimonial inferida del propio quote.** El brief pide cualificar cada pie con "Automatización: X". No me pasaste la lista, así que la inferí. Revisa y dime cuál cambiar:
 
     | # | Cliente | Quote menciona | Automatización (ES) |
     |---|---------|----------------|---------------------|
