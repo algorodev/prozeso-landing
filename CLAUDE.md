@@ -11,7 +11,7 @@ Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an A
 - **Styling**: Tailwind CSS v4, CSS custom properties, Framer Motion, Anime.js
 - **UI**: Radix UI primitives, shadcn/ui pattern, CVA for variants
 - **Forms**: react-hook-form + Zod validation
-- **AI**: Vercel AI SDK + Google Generative AI (Gemini 2.0 Flash), ElevenLabs voice agent
+- **Voice agent**: ElevenLabs (floating call widget)
 - **Email**: Resend + React Email
 - **i18n**: next-intl (locales: `es` default, `en`)
 - **Testing**: Vitest, React Testing Library, @vitest/coverage-v8
@@ -41,7 +41,7 @@ src/
 │   │   ├── page.tsx         # Home
 │   │   ├── about/           # About / team page
 │   │   ├── start/           # Assessment wizard
-│   │   ├── use-cases/       # AI use-case analyzer + report
+│   │   ├── use-cases/       # Real-cases hero with CTAs to /start and /solutions
 │   │   ├── solutions/       # Automations + industry solutions showcase
 │   │   └── legal/           # Privacy, terms, cookies
 │   └── api/start/           # Email submission endpoint (Resend)
@@ -49,19 +49,17 @@ src/
 │   ├── Home/                # Home page sections
 │   ├── About/               # About page (Hero, Team)
 │   ├── Start/               # Assessment wizard components
-│   ├── UseCases/            # Use-case analysis + Report/
+│   ├── UseCases/            # Use-cases hero
 │   ├── Solutions/           # Solutions grid, sidebar, detail dialog
 │   ├── Legal/               # Legal page components
 │   ├── ui/                  # Reusable UI primitives (Button, Card, Form, Dialog, etc.)
 │   └── icons/               # Custom SVG icon components
 ├── lib/
-│   ├── agents/              # AI pipeline (analyzer + report generator)
-│   ├── actions/             # Server actions
-│   ├── config/              # Google AI config
-│   └── prompts/             # AI system prompts
+│   ├── notion/              # Notion blog client
+│   ├── seo/                 # SEO helpers (breadcrumb JSON-LD)
+│   └── utils.ts             # Misc helpers
 ├── i18n/                    # i18n config + LocalizedLink
 ├── messages/                # Translation JSON files (en.json, es.json)
-├── types/                   # TypeScript type definitions
 ├── data/                    # Static data (automations)
 ├── emails/                  # React Email templates
 ├── __tests__/               # Unit tests (Vitest)
@@ -74,7 +72,6 @@ src/
 - **Routing**: All user-facing routes are under `src/app/[locale]/`
 - **Components**: Page-specific components live in named folders (`Home/`, `Start/`, etc.); reusable primitives go in `ui/`
 - **Translations**: All user-facing strings come from `src/messages/{locale}.json` via `useTranslations()`. Never hardcode display text
-- **Server actions**: AI pipeline runs server-side in `src/lib/actions/`
 - **Styling**: Use Tailwind utility classes. Brand colors are defined as CSS variables in `globals.css` (lavender, blue, cyan, mint, orange). Dark theme is the default (forced)
 - **Fonts**: Inter Tight (body) and Sora (headings), loaded via `next/font`
 
@@ -103,14 +100,12 @@ NEXT_PUBLIC_BASE_URL        # App base URL
 NEXT_PUBLIC_CLIENT_URL      # Client app URL
 RESEND_API_KEY              # Resend email API key
 GA_MEASUREMENT_ID           # Google Analytics 4
-GOOGLE_API_KEY              # Google Generative AI
 ```
 
 `NEXT_PUBLIC_*` vars are browser-exposed. Keep API keys server-only.
 
 ## Key patterns
 
-- **AI pipeline**: `runUseCasePipeline()` in `src/lib/actions/use-case-pipeline.ts` orchestrates analysis and report generation via Google Gemini
 - **Voice agent**: ElevenLabs integration managed by `CallContext` + `CallManager` components with a floating button (`AgentFloatButton`)
 - **Form validation**: Zod schemas with react-hook-form via `@hookform/resolvers`
 - **Solutions showcase**: `solutions/` page renders automation entries from `src/data/automations.ts` with a grid, sidebar filter, and detail dialog

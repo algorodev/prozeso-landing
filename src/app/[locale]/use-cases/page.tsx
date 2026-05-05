@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import FinalCTA from "@/components/Home/FinalCTA";
-import { UseCasesForm } from "@/components/UseCases/UseCasesForm";
 import { UseCasesHero } from "@/components/UseCases/UseCasesHero";
 import { locales } from "@/i18n/config";
 import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
@@ -17,32 +16,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "es"
-      ? "Casos de uso — Soluciones con IA para tu negocio"
-      : "Use Cases — AI-Powered Solutions for Your Business";
+      ? "Casos reales — empresas que se parecen a la tuya"
+      : "Real cases — companies that look like yours";
   const description =
     locale === "es"
-      ? "Descubre cómo nuestras automatizaciones con IA pueden transformar tu negocio. Genera un informe personalizado sobre cómo automatizar y escalar tus operaciones."
-      : "Discover how our AI-powered automations can help transform your business. Generate a personalized report on how we can help you automate and scale your operations.";
+      ? "Cómo trabajan ya empresas como la tuya con Prozeso. En lugar de un formulario que te genera un PDF, te enseñamos casos concretos."
+      : "How companies like yours are already working with Prozeso. Instead of a form that spits out a PDF, we show you concrete cases.";
 
   const keywords =
     locale === "es"
       ? [
           "casos de uso",
+          "casos reales",
           "automatización empresarial",
-          "soluciones con IA",
-          "ejemplos de automatización",
-          "transformación digital",
           "automatización de flujos",
-          "automatización para servicios",
+          "transformación digital",
         ]
       : [
           "use cases",
+          "real cases",
           "business automation",
-          "AI solutions",
-          "automation examples",
-          "business transformation",
           "workflow automation",
-          "service business automation",
+          "business transformation",
         ];
 
   return {
@@ -98,7 +93,6 @@ export default async function UseCasesPage({ params }: Props) {
       <section className="relative isolate min-h-dvh-minus-header overflow-hidden flex items-center">
         <div className="relative w-full container mx-auto py-12 sm:py-16 lg:py-20">
           <UseCasesHero />
-          <UseCasesForm />
         </div>
       </section>
       <FinalCTA />
