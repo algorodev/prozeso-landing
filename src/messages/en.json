@@ -670,27 +670,6 @@
     }
   },
   "home": {
-    "impact": {
-      "title": "Conversations that generate <highlight>real impact</highlight>",
-      "subtitle": "We optimize every call and every interaction with natural voice AI.",
-      "items": {
-        "billing": {
-          "title": "Incremental billing",
-          "desc": "Direct revenue recovery by answering calls and messages that used to go unanswered, without hiring more staff.",
-          "quote": "In a dealership network, the system recovers unattended customers generating additional billing increase."
-        },
-        "roi": {
-          "title": "Return on investment",
-          "desc": "The project pays for itself in weeks thanks to operational savings, process automation, and recovered billing.",
-          "quote": "In a restaurant chain, the system cost is offset just with bookings managed outside business hours."
-        },
-        "resources": {
-          "title": "Resource savings",
-          "desc": "Significant reduction in operational load thanks to complete automation of calls, messages, and bookings.",
-          "quote": "In a group of 15 salons, an AI agent handled over 5000 calls in a month, freeing up team time."
-        }
-      }
-    },
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
     },

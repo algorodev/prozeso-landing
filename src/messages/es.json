@@ -674,27 +674,6 @@
     }
   },
   "home": {
-    "impact": {
-      "title": "Conversaciones que generan <highlight>impacto real</highlight>",
-      "subtitle": "Optimizamos cada llamada y cada interacción con IA de voz natural.",
-      "items": {
-        "billing": {
-          "title": "Facturación incremental",
-          "desc": "Recuperación directa de ingresos al atender llamadas y mensajes que antes quedaban sin respuesta, sin contratar más personal.",
-          "quote": "En una red de concesionarios, el sistema recupera clientes desatendidos generando un aumento adicional de facturación."
-        },
-        "roi": {
-          "title": "Retorno de la inversión",
-          "desc": "El proyecto se paga solo en semanas gracias a ahorros operativos, automatización de procesos y facturación recuperada.",
-          "quote": "En una cadena de restaurantes, el coste del sistema se compensa solo con las reservas gestionadas fuera del horario comercial."
-        },
-        "resources": {
-          "title": "Ahorro de recursos",
-          "desc": "Reducción significativa de la carga operativa gracias a la automatización completa de llamadas, mensajes y reservas.",
-          "quote": "En un grupo de 15 salones, un agente de IA atendió más de 5000 llamadas en un mes, liberando tiempo del equipo."
-        }
-      }
-    },
     "partnerships": {
       "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
     },
