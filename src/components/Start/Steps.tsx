@@ -1,6 +1,6 @@
 "use client";
 
-import { NotebookPen, Wind, Workflow } from "lucide-react";
+import { MessagesSquare, PenTool, Rocket } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 
@@ -9,17 +9,17 @@ export function Steps() {
 
   const items = [
     {
-      icon: NotebookPen,
+      icon: MessagesSquare,
       title: t("intro.title"),
       desc: t("intro.desc"),
     },
     {
-      icon: Workflow,
+      icon: PenTool,
       title: t("call.title"),
       desc: t("call.desc"),
     },
     {
-      icon: Wind,
+      icon: Rocket,
       title: t("launch.title"),
       desc: t("launch.desc"),
     },

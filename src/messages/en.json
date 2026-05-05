@@ -212,28 +212,28 @@
   },
   "start": {
     "hero": {
-      "title": "Take the first step toward a <primary>business</primary> that <secondary>never stops</secondary>",
-      "subtitle": "We listen, understand your day to day and create a system that works for you, even when you can’t."
+      "title": "Let's <primary>understand your company</primary> before pitching anything.",
+      "subtitle": "A 30-minute conversation with you. If we're a fit, we'll tell you exactly where to start and what it costs. If we're not, we'll tell you why."
     },
     "steps": {
       "items": {
         "intro": {
-          "title": "Tell us your story",
-          "desc": "Every business has its rhythm. We want to understand yours: how you work, what holds you back and what you’d like to change."
+          "title": "01. We qualify",
+          "desc": "A 30-minute conversation to understand your operation: how orders or inquiries come in, where they get stuck, what you'd change tomorrow if you could. If we're not a fit, we'll tell you in this call."
         },
         "call": {
-          "title": "We design your system",
-          "desc": "We automate the tasks that waste your time—calls, appointments, messages—so your day revolves around what truly matters again."
+          "title": "02. We design",
+          "desc": "We send you a concrete proposal: which module goes first, timelines, setup and recurring operating cost. No surprises, no asterisks. If you want, you review it with your partner or your team."
         },
         "launch": {
-          "title": "Start to breathe",
-          "desc": "While you keep serving your customers, the system takes care of the rest. No stress, no interruptions, no lost revenue."
+          "title": "03. We implement",
+          "desc": "Implementation in 2-4 weeks for the entry module. We stay with you until the result fits your operation. If after 60 days it doesn't deliver real value, there's no reason to keep going. And no reason for us to sell you more."
         }
       }
     },
     "assessment": {
-      "cardTitle": "Schedule your first session",
-      "cardSubtitle": "No commitment. Just a conversation to discover how your business can gain time, order and peace of mind.",
+      "cardTitle": "Book 30 minutes.",
+      "cardSubtitle": "No corporate pitch, no generic demos. Tell us what brought you here and we'll ask the questions that matter.",
       "field": {
         "vertical": {
           "label": "Business industry",
@@ -267,10 +267,10 @@
         }
       },
       "submit": {
-        "idle": "Book your free assessment",
+        "idle": "Book a conversation",
         "loading": "Sending…"
       },
-      "disclaimer": "We work with real businesses that need time to enjoy what they do again, without stopping growth.",
+      "disclaimer": "We work with companies of 10 to 200 employees and revenue between 1M€ and 50M€. If your company is outside that range, we'll tell you honestly and point you toward options that fit better.",
       "success": {
         "title": "Thanks! We’ve received your request.",
         "body": "Our team will contact you shortly to schedule your free call."

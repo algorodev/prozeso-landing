@@ -17,29 +17,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "es"
-      ? "Empieza — Evaluación gratuita"
-      : "Start — Free Assessment";
+      ? "Empieza — 30 minutos de conversación"
+      : "Start — A 30-minute conversation";
   const description =
     locale === "es"
-      ? "Comienza tu camino hacia la automatización con una llamada de descubrimiento. Evaluaremos tus necesidades y diseñaremos un plan perfecto para tu equipo."
-      : "Kick off your automation journey with a quick discovery call. We'll assess your needs and tailor a perfect plan for your team.";
+      ? "30 minutos de conversación contigo. Si encajamos, te decimos exactamente por dónde empezar y cuánto cuesta. Si no, te decimos por qué."
+      : "A 30-minute conversation with you. If we're a fit, we'll tell you exactly where to start and what it costs. If we're not, we'll tell you why.";
   const keywords =
     locale === "es"
       ? [
-          "evaluación gratuita",
-          "evaluación de automatización",
-          "auditoría de flujos",
-          "automatización de ventas",
-          "automatización de marketing",
-          "optimización de procesos",
+          "automatización empresarial",
+          "automatización de procesos",
+          "automatización de operaciones",
+          "automatización para pymes",
+          "alternativa a SAP",
+          "alternativa a Holded",
         ]
       : [
-          "free assessment",
-          "automation assessment",
-          "workflow audit",
-          "sales automation",
-          "marketing automation",
-          "process optimization",
+          "business automation",
+          "process automation",
+          "operations automation",
+          "automation for SMBs",
+          "alternative to SAP",
+          "alternative to Holded",
         ];
 
   return {

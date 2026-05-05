@@ -216,28 +216,28 @@
   },
   "start": {
     "hero": {
-      "title": "Da el primer paso hacia un <primary>negocio</primary> que <secondary>no se detiene</secondary>",
-      "subtitle": "Te escuchamos, entendemos tu día a día y creamos un sistema que trabaja por ti, incluso cuando tú no puedes hacerlo."
+      "title": "Vamos a <primary>entender tu empresa</primary> antes de proponerte nada.",
+      "subtitle": "30 minutos de conversación contigo. Si encajamos, te decimos exactamente por dónde empezar y cuánto cuesta. Si no, te decimos por qué."
     },
     "steps": {
       "items": {
         "intro": {
-          "title": "Cuéntanos tu historia",
-          "desc": "Cada negocio tiene su ritmo. Queremos entender el tuyo: cómo trabajas, qué te frena y qué te gustaría cambiar."
+          "title": "01. Cualificamos",
+          "desc": "Una conversación de 30 minutos para entender tu operación: cómo entran los pedidos o las consultas, dónde se atascan, qué cambiarías mañana si pudieras. Si no encajamos, te lo decimos en esta llamada."
         },
         "call": {
-          "title": "Diseñamos tu sistema",
-          "desc": "Automatizamos esas tareas que te hacen perder tiempo—llamadas, citas, mensajes—para que tu día vuelva a girar en torno a lo que realmente importa."
+          "title": "02. Diseñamos",
+          "desc": "Te enviamos una propuesta concreta: qué módulo entra primero, plazos, coste de setup y de operación recurrente. Sin sorpresas, sin asteriscos. Si quieres, lo revisas con tu socio o tu equipo."
         },
         "launch": {
-          "title": "Empieza a respirar",
-          "desc": "Mientras tú sigues atendiendo a tus clientes, el sistema se encarga del resto. Sin estrés, sin interrupciones, sin dejar de facturar."
+          "title": "03. Implementamos",
+          "desc": "Implementación en 2-4 semanas para el módulo de entrada. Te acompañamos hasta que el resultado encaja en tu operación. Si en 60 días no aporta valor real, no hay motivo para seguir. Y nosotros tampoco para venderte más."
         }
       }
     },
     "assessment": {
-      "cardTitle": "Agenda tu sesión inicial",
-      "cardSubtitle": "Sin compromiso. Solo una conversación para descubrir cómo tu negocio puede ganar tiempo, orden y tranquilidad.",
+      "cardTitle": "Agenda 30 minutos.",
+      "cardSubtitle": "Sin presentación corporativa, sin demos genéricas. Cuéntanos qué te trae aquí y te hacemos las preguntas que importan.",
       "field": {
         "vertical": {
           "label": "Industria del negocio",
@@ -271,10 +271,10 @@
         }
       },
       "submit": {
-        "idle": "Reserva tu evaluación gratuita",
+        "idle": "Agendar conversación",
         "loading": "Enviando…"
       },
-      "disclaimer": "Trabajamos con negocios reales que necesitan tiempo para volver a disfrutar de lo que hacen, sin dejar de crecer.",
+      "disclaimer": "Trabajamos con empresas de 10 a 200 empleados con facturación entre 1 y 50 M€. Si tu empresa está fuera de ese rango, te lo decimos honestamente y te apuntamos hacia opciones que encajen mejor.",
       "success": {
         "title": "¡Gracias! Hemos recibido tu solicitud.",
         "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
