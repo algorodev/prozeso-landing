@@ -111,7 +111,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="mailto:hello@prozeso.com"
+                    href="mailto:admin@prozeso.com"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("links.contact")}
