@@ -1,11 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, MessageSquare, Shield, TrendingUp } from "lucide-react";
+import { Brain, Mic, Network, ShieldCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const Understanding = () => {
   const t = useTranslations("home.understanding");
+
+  const layers = [
+    { id: "input", icon: Mic },
+    { id: "orchestration", icon: Network },
+    { id: "intelligence", icon: Brain },
+  ] as const;
 
   return (
     <section className="py-24 px-6">
@@ -42,55 +48,62 @@ const Understanding = () => {
               transition: { staggerChildren: 0.08 },
             },
           }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid md:grid-cols-3 gap-6"
         >
-          {[
-            {
-              id: "conversations",
-              icon: MessageSquare,
-            },
-            {
-              id: "decisions",
-              icon: TrendingUp,
-            },
-            {
-              id: "automation",
-              icon: Calendar,
-            },
-            {
-              id: "security",
-              icon: Shield,
-            },
-          ].map((feature) => {
-            const Icon = feature.icon;
+          {layers.map((layer) => {
+            const Icon = layer.icon;
             return (
               <motion.div
-                key={feature.id}
+                key={layer.id}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
                 }}
                 className="group flex flex-col h-full"
               >
-                <div
-                  className={`transition-all duration-300 border border-transparent hover:border-accent rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden`}
-                >
+                <div className="transition-all duration-300 border border-transparent hover:border-accent rounded-2xl aspect-[4/3] flex items-center justify-center mb-6 relative overflow-hidden">
                   <div className="w-20 h-20 rounded-2xl bg-accent/20 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-125">
                     <Icon className="w-10 h-10 text-white" strokeWidth={1.5} />
                   </div>
                 </div>
-                <h3 className="font-sora font-semibold text-lg tracking-tight mb-2 leading-snug">
-                  {t(`items.${feature.id}.title`)}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed font-normal">
-                  {t(`items.${feature.id}.desc`)}
-                </p>
-                <span className="inline-block w-fit mt-auto px-3 py-1 rounded-full text-xs font-medium border bg-accent/10 text-accent border-accent/20">
-                  {t(`items.${feature.id}.tag`)}
+                <span className="inline-block w-fit px-3 py-1 mb-3 rounded-full text-xs font-medium border bg-accent/10 text-accent border-accent/20">
+                  {t(`items.${layer.id}.tag`)}
                 </span>
+                <h3 className="font-sora font-semibold text-xl tracking-tight mb-2 leading-snug">
+                  {t(`items.${layer.id}.title`)}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed font-normal">
+                  {t(`items.${layer.id}.desc`)}
+                </p>
               </motion.div>
             );
           })}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+          className="mt-12 rounded-2xl border border-border/60 bg-muted/20 p-6 flex flex-col sm:flex-row items-start gap-5"
+        >
+          <div className="w-12 h-12 rounded-xl bg-muted/40 flex items-center justify-center shrink-0">
+            <ShieldCheck
+              className="w-6 h-6 text-muted-foreground"
+              strokeWidth={1.5}
+            />
+          </div>
+          <div className="flex-1">
+            <span className="inline-block px-2.5 py-0.5 mb-2 rounded-full text-xs font-medium border border-border/60 bg-background/40 text-muted-foreground">
+              {t("trust.tag")}
+            </span>
+            <h3 className="font-sora font-semibold text-base tracking-tight mb-1">
+              {t("trust.title")}
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed font-normal">
+              {t("trust.desc")}
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -767,29 +767,29 @@
       "cta": "Start now"
     },
     "understanding": {
-      "title": "From understanding to <highlight>intelligent automation</highlight>",
-      "subtitle": "How we transform data into real impact.",
+      "title": "Three layers. <highlight>One backbone</highlight>.",
+      "subtitle": "Not a tool. The way your company operates.",
       "items": {
-        "conversations": {
-          "title": "Turn conversations into real knowledge",
-          "desc": "Analyze calls and messages to detect patterns. Understand what happens and where value is lost.",
-          "tag": "Analysis"
+        "input": {
+          "tag": "How information comes in",
+          "title": "Input layer",
+          "desc": "Voice, chat, WhatsApp, email, forms, integrations. Any event your company cares about enters where the customer or the team already is. Without asking anyone to change how they work."
         },
-        "decisions": {
-          "title": "Transform data into actionable decisions",
-          "desc": "Visualize key metrics and detect time, quality, and money leaks. Drive efficiency and profitability.",
-          "tag": "Reporting"
+        "orchestration": {
+          "tag": "How processes get processed",
+          "title": "Orchestration layer",
+          "desc": "Multi-tenant workflows, business logic, rules, integrations. The core that connects your ERP, your CRM, your channels and your team. What turns scattered events into coordinated operations."
         },
-        "automation": {
-          "title": "Scale efficiency with conversational AI",
-          "desc": "Automate calls, information, and bookings to free up time and increase sales 24/7.",
-          "tag": "Automation"
-        },
-        "security": {
-          "title": "GDPR compliant with enterprise security",
-          "desc": "End-to-end encrypted infrastructure to keep your business and your customers' data private.",
-          "tag": "Security"
+        "intelligence": {
+          "tag": "What the system decides",
+          "title": "Intelligence layer",
+          "desc": "Reports, alerts, predictions, optimizations. Decisions, not just tasks executed. What justifies you still paying us at month 12, not just month 2."
         }
+      },
+      "trust": {
+        "tag": "Operational trust",
+        "title": "Your data, on your side.",
+        "desc": "European infrastructure, encryption in transit and at rest, full export at any moment with no penalty. GDPR compliant by design."
       }
     }
   },

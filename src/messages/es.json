@@ -771,29 +771,29 @@
       "cta": "Empezar ahora"
     },
     "understanding": {
-      "title": "De entender a <highlight>automatización inteligente</highlight>",
-      "subtitle": "Cómo convertimos datos en impacto real.",
+      "title": "Tres capas. <highlight>Una columna vertebral</highlight>.",
+      "subtitle": "No es una herramienta. Es la forma en que tu empresa opera.",
       "items": {
-        "conversations": {
-          "title": "Convierte conversaciones en conocimiento real",
-          "desc": "Analiza llamadas y mensajes para detectar patrones. Entiende qué ocurre y dónde se pierde valor.",
-          "tag": "Análisis"
+        "input": {
+          "tag": "Cómo entra la información",
+          "title": "Capa de entrada",
+          "desc": "Voz, chat, WhatsApp, email, formularios, integraciones. Cualquier evento útil para tu empresa entra por donde el cliente o el equipo ya está. Sin pedirle a nadie que cambie cómo trabaja."
         },
-        "decisions": {
-          "title": "Transforma datos en decisiones accionables",
-          "desc": "Visualiza métricas clave y detecta fugas de tiempo, calidad y dinero. Impulsa eficiencia y rentabilidad.",
-          "tag": "Reportes"
+        "orchestration": {
+          "tag": "Cómo se procesan los procesos",
+          "title": "Capa de orquestación",
+          "desc": "Workflows multi-tenant, lógica de negocio, reglas, integraciones. El núcleo que conecta tu ERP, tu CRM, tus canales y tu equipo. Lo que convierte eventos sueltos en operación coordinada."
         },
-        "automation": {
-          "title": "Escala la eficiencia con IA conversacional",
-          "desc": "Automatiza llamadas, información y reservas para liberar tiempo y aumentar ventas 24/7.",
-          "tag": "Automatización"
-        },
-        "security": {
-          "title": "Cumplimiento RGPD con seguridad empresarial",
-          "desc": "Infraestructura cifrada de extremo a extremo para mantener privada la información de tu negocio y de tus clientes.",
-          "tag": "Seguridad"
+        "intelligence": {
+          "tag": "Qué decide el sistema",
+          "title": "Capa de inteligencia",
+          "desc": "Reportes, alertas, predicciones, optimizaciones. Decisiones, no solo tareas ejecutadas. Lo que justifica que sigas pagándonos al mes 12, no solo al mes 2."
         }
+      },
+      "trust": {
+        "tag": "Confianza operativa",
+        "title": "Tus datos, en tu lado.",
+        "desc": "Infraestructura europea, cifrado en tránsito y en reposo, exportación completa en cualquier momento sin penalización. Cumplimiento RGPD por diseño."
       }
     }
   },
