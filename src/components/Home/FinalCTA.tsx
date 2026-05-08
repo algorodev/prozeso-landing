@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MessagesSquare } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const FinalCTA = () => {

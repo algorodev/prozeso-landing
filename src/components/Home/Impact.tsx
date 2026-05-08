@@ -18,15 +18,15 @@ const colorClass = (color: string, kind: "text" | "border") => {
         : "border-primary/40 hover:border-primary/60"
       : color === "secondary"
         ? kind === "text"
-          ? "text-secondary/40"
-          : "border-secondary/40 hover:border-secondary/60"
+          ? "text-accent-01/40"
+          : "border-accent-01/40 hover:border-accent-01/60"
         : color === "accent"
           ? kind === "text"
-            ? "text-accent/40"
-            : "border-accent/40 hover:border-accent/60"
+            ? "text-secondary/40"
+            : "border-secondary/40 hover:border-secondary/60"
           : kind === "text"
-            ? "text-chart-2/40"
-            : "border-chart-2/40 hover:border-chart-2/60";
+            ? "text-accent-02/40"
+            : "border-accent-02/40 hover:border-accent-02/60";
   return palette;
 };
 
@@ -45,7 +45,7 @@ const Impact = () => {
         >
           {t.rich("title", {
             highlight: (chunks) => (
-              <span className="text-accent">{chunks}</span>
+              <span className="text-secondary">{chunks}</span>
             ),
           })}
         </motion.h2>
@@ -54,7 +54,7 @@ const Impact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.2 }}
           transition={{ delay: 0.05, duration: 0.6 }}
-          className="text-lg text-muted-foreground mb-12 max-w-2xl font-normal"
+          className="text-lg text-foreground-muted mb-12 max-w-2xl font-normal"
         >
           {t("subtitle")}
         </motion.p>
@@ -75,7 +75,7 @@ const Impact = () => {
                 hidden: { opacity: 0, y: 24 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className={`rounded-2xl p-6 md:p-8 flex flex-col justify-between min-h-[260px] border bg-muted/10 transition-colors ${colorClass(metric.color, "border")}`}
+              className={`rounded-2xl p-6 md:p-8 flex flex-col justify-between min-h-[260px] border bg-background-lighter/10 transition-colors ${colorClass(metric.color, "border")}`}
             >
               <div className="flex items-baseline mb-6">
                 <span
@@ -93,7 +93,7 @@ const Impact = () => {
                 <h3 className="font-sora font-semibold text-base tracking-tight">
                   {t(`items.${metric.id}.title`)}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed font-normal">
+                <p className="text-sm text-foreground-muted leading-relaxed font-normal">
                   {t(`items.${metric.id}.desc`)}
                 </p>
               </div>
@@ -105,7 +105,7 @@ const Impact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.3 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-xs text-muted-foreground/80 mt-8 max-w-2xl"
+          className="text-xs text-foreground-muted/80 mt-8 max-w-2xl"
         >
           {t("disclaimer")}
         </motion.p>

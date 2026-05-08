@@ -2,13 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import { AREAS } from "@/components/Solutions/constants";
-import { Button } from "@/components/ui/Button";
 import {
+  Button,
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/Dialog";
+} from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type AutomationDetailDialogProps = {
@@ -38,7 +38,7 @@ const AutomationDetailDialog = ({
         if (!open) onClose();
       }}
     >
-      <DialogContent className="sm:max-w-2xl gap-6" closeButtonOutside>
+      <DialogContent className="sm:max-w-2xl gap-6">
         <DialogHeader>
           <div className="flex items-start gap-3">
             <area.icon
@@ -59,7 +59,7 @@ const AutomationDetailDialog = ({
                 </DialogTitle>
               </div>
               {t.has(`${prefix}.subtitle`) && (
-                <p className="text-sm text-muted-foreground mt-1">
+                <p className="text-sm text-foreground-muted mt-1">
                   {t(`${prefix}.subtitle`)}
                 </p>
               )}
@@ -69,7 +69,7 @@ const AutomationDetailDialog = ({
 
         {t.has(`${prefix}.state`) && (
           <div className="flex items-center gap-2">
-            <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            <span className="text-xs font-semibold uppercase tracking-wider text-foreground-muted">
               {t("stateLabel")}:
             </span>
             <span
@@ -91,7 +91,7 @@ const AutomationDetailDialog = ({
         )}
 
         {t.has(`${prefix}.description`) && (
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-sm text-foreground-muted leading-relaxed">
             {t(`${prefix}.description`)}
           </p>
         )}

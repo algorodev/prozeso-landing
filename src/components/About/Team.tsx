@@ -71,7 +71,7 @@ const Team = () => {
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mt-auto"
+                className="inline-flex items-center gap-2 text-sm text-foreground-muted hover:text-foreground transition-colors mt-auto"
               >
                 <Linkedin className="w-4 h-4" />
                 {t("linkedin")}

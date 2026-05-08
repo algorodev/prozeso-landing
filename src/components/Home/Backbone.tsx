@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { AREAS, COLOR_GROUPS } from "@/components/Solutions/constants";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const Backbone = () => {
@@ -28,7 +28,7 @@ const Backbone = () => {
             })}
           </motion.h2>
           <motion.p
-            className="text-lg text-muted-foreground font-normal"
+            className="text-lg text-foreground-muted font-normal"
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.2 }}
@@ -55,7 +55,7 @@ const Backbone = () => {
                 hidden: { opacity: 0, y: 20 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="rounded-2xl border border-border/60 bg-muted/10 p-6 md:p-8 flex flex-col"
+              className="rounded-2xl border border-border/60 bg-background-lighter/10 p-6 md:p-8 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-5">
                 <div
@@ -101,7 +101,7 @@ const Backbone = () => {
                             {t(`areas.${areaId}.name`)}
                           </span>
                         </div>
-                        <p className="text-xs text-muted-foreground leading-relaxed mt-0.5">
+                        <p className="text-xs text-foreground-muted leading-relaxed mt-0.5">
                           {t(`areas.${areaId}.shortDescription`)}
                         </p>
                       </div>

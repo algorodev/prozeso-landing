@@ -4,8 +4,13 @@ import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
 import { Quote } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
-import { Card, CardContent } from "@/components/ui/Card";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Card,
+  CardContent,
+} from "@/components/ui";
 
 const TESTIMONIAL_IDS = [
   "1",
@@ -65,10 +70,10 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 id="testimonials-title" className="section-title mb-4">
+          <h2 id="testimonials-title" className="display-lg mb-4">
             {t("title")}
           </h2>
-          <p className="hero-subtitle text-muted-foreground max-w-3xl mx-auto">
+          <p className="body-lg font-medium tracking-tight text-foreground-muted max-w-3xl mx-auto">
             {t("subtitle")}
           </p>
         </motion.div>
@@ -126,11 +131,11 @@ const Testimonials = () => {
                         <cite className="text-sm font-semibold text-foreground not-italic">
                           {item.name}
                         </cite>
-                        <span className="text-xs text-muted-foreground">
+                        <span className="text-xs text-foreground-muted">
                           {item.role}
                         </span>
                         {item.automation && (
-                          <span className="text-[11px] text-muted-foreground/70 mt-0.5">
+                          <span className="text-[11px] text-foreground-muted/70 mt-0.5">
                             {t("automationLabel")}: {item.automation}
                           </span>
                         )}
@@ -172,7 +177,7 @@ const Testimonials = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: 0.3 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="text-center text-sm text-muted-foreground mt-10 px-6"
+        className="text-center text-sm text-foreground-muted mt-10 px-6"
       >
         {t("moreComing")}
       </motion.p>

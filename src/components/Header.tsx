@@ -6,7 +6,7 @@ import { DesktopNav } from "@/components/DesktopNav";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import Logo from "@/components/Logo";
 import { MobileNav } from "@/components/MobileNav";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 

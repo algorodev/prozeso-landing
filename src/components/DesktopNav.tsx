@@ -1,13 +1,13 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/Button";
 import {
+  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/DropdownMenu";
+} from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type NavChild = {
@@ -35,7 +35,7 @@ export const DesktopNav = ({ item, activePath }: Props) => {
     return (
       <Button
         asChild
-        variant={isActive ? "secondary" : "ghost"}
+        variant={isActive ? "default" : "ghost"}
         className="rounded-xl"
       >
         <LocalizedLink href={item.href ?? "#"} className="px-3">
@@ -49,7 +49,7 @@ export const DesktopNav = ({ item, activePath }: Props) => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant={isActive ? "secondary" : "ghost"}
+          variant={isActive ? "default" : "ghost"}
           className="rounded-xl min-w-0"
         >
           {item.label}
@@ -63,7 +63,7 @@ export const DesktopNav = ({ item, activePath }: Props) => {
         {item.children.map((child) => (
           <DropdownMenuItem key={child.href} asChild>
             <LocalizedLink href={child.href}>
-              <span className="body-text leading-tight">{child.label}</span>
+              <span className="body-md leading-tight">{child.label}</span>
             </LocalizedLink>
           </DropdownMenuItem>
         ))}

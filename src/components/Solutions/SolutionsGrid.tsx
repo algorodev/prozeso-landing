@@ -5,15 +5,15 @@ import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
 import { AREAS } from "@/components/Solutions/constants";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
 import {
+  Button,
+  Input,
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/Sheet";
+} from "@/components/ui";
 import { COLOR_GROUPS } from "./constants";
 import SolutionDetailDialog from "./SolutionDetailDialog";
 import SolutionsSidebar from "./SolutionsSidebar";
@@ -92,7 +92,7 @@ export default function SolutionsGrid() {
         <aside className="hidden lg:block">
           <div className="sticky top-24 space-y-6">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-foreground-muted" />
               <Input
                 type="text"
                 value={query}
@@ -128,7 +128,7 @@ export default function SolutionsGrid() {
                 </SheetHeader>
                 <div className="space-y-6">
                   <div className="relative">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-foreground-muted" />
                     <Input
                       type="text"
                       value={query}
@@ -272,14 +272,14 @@ export default function SolutionsGrid() {
                             )}
                           </div>
                           {t.has(`areas.${areaId}.shortDescription`) && (
-                            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
+                            <p className="text-sm text-foreground-muted leading-relaxed max-w-2xl">
                               {t(`areas.${areaId}.shortDescription`)}
                             </p>
                           )}
                         </div>
                         {items.length === 0 && comingSoon ? (
                           <div
-                            className="rounded-2xl border border-dashed p-6 text-sm text-muted-foreground leading-relaxed max-w-2xl"
+                            className="rounded-2xl border border-dashed p-6 text-sm text-foreground-muted leading-relaxed max-w-2xl"
                             style={{
                               borderColor: `color-mix(in srgb, ${color} 30%, transparent)`,
                               backgroundColor: `color-mix(in srgb, ${color} 4%, transparent)`,
@@ -337,7 +337,7 @@ export default function SolutionsGrid() {
                                         {t.has(
                                           `areas.${areaId}.automations.${index}.subtitle`,
                                         ) && (
-                                          <p className="text-xs text-muted-foreground mt-0.5">
+                                          <p className="text-xs text-foreground-muted mt-0.5">
                                             {t(
                                               `areas.${areaId}.automations.${index}.subtitle`,
                                             )}
@@ -349,7 +349,7 @@ export default function SolutionsGrid() {
                                     {t.has(
                                       `areas.${areaId}.automations.${index}.description`,
                                     ) && (
-                                      <p className="relative text-sm text-muted-foreground leading-relaxed">
+                                      <p className="relative text-sm text-foreground-muted leading-relaxed">
                                         {t(
                                           `areas.${areaId}.automations.${index}.description`,
                                         )}
