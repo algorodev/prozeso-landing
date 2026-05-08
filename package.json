@@ -16,6 +16,7 @@
   "dependencies": {
     "@elevenlabs/react": "0.12.1",
     "@hookform/resolvers": "5.2.2",
+    "@prospector-automations/components": "^0.1.0",
     "@radix-ui/react-accordion": "1.2.12",
     "@radix-ui/react-avatar": "1.1.11",
     "@radix-ui/react-dialog": "1.1.15",
@@ -36,7 +37,7 @@
     "next-themes": "0.4.6",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "react-hook-form": "7.68.0",
+    "react-hook-form": "7.75.0",
     "resend": "6.5.2",
     "tailwind-merge": "3.4.0",
     "zod": "4.1.13"
