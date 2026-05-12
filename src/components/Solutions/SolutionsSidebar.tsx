@@ -41,7 +41,7 @@ export default function SolutionsSidebar({
         <button
           type="button"
           onClick={() => onFilterChange(null)}
-          className="cursor-pointer flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors ml-auto"
+          className="cursor-pointer flex items-center gap-1.5 text-sm text-foreground-muted hover:text-foreground transition-colors ml-auto"
         >
           <X className="h-3.5 w-3.5" />
           {t("clearFilter")}

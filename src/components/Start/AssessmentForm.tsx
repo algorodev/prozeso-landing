@@ -7,18 +7,18 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import EmailSentDialog from "@/components/Start/EmailSentDialog";
-import { BookCallButton } from "@/components/ui/BookCallButton";
-import { Button } from "@/components/ui/Button";
 import {
+  BookCallButton,
+  Button,
   Form,
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/Form";
-import { Input } from "@/components/ui/Input";
-import { Textarea } from "@/components/ui/Textarea";
+  Input,
+  Textarea,
+} from "@/components/ui";
 
 export function AssessmentForm() {
   const locale = useLocale();
@@ -82,7 +82,7 @@ export function AssessmentForm() {
         <h2 className="font-sora text-2xl font-semibold tracking-tight">
           {t("cardTitle")}
         </h2>
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <p className="text-sm text-foreground-subtle leading-relaxed">
           {t("cardSubtitle")}
         </p>
       </div>
@@ -164,7 +164,7 @@ export function AssessmentForm() {
             )}
           />
           {serverError && (
-            <div className="rounded-md border border-destructive/30 bg-destructive/5 p-3 body-text">
+            <div className="rounded-md border border-destructive/30 bg-destructive/5 p-3 body-md">
               {serverError}
             </div>
           )}
@@ -187,15 +187,13 @@ export function AssessmentForm() {
       <EmailSentDialog open={success} onOpenChange={setSuccess} />
 
       <div className="mt-8 pt-6 border-t border-border/60 space-y-3">
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-foreground-subtle">
           {t("calendarAlternative")}
         </p>
-        <BookCallButton size="md" />
+        <BookCallButton size="default" />
       </div>
 
-      <p className="caption-text text-muted-foreground mt-6">
-        {t("disclaimer")}
-      </p>
+      <p className="body-sm text-foreground-muted mt-6">{t("disclaimer")}</p>
     </>
   );
 }

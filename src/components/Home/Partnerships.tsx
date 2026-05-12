@@ -108,7 +108,7 @@ const Partnerships = () => {
   const t = useTranslations("home.partnerships");
 
   return (
-    <section className="pt-10 pb-3 bg-muted/30">
+    <section className="pt-10 pb-3 bg-background-lighter/30">
       <div className="container mx-auto max-w-[1280px] px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -117,12 +117,14 @@ const Partnerships = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-3"
         >
-          <p className="text-base text-muted-foreground max-w-2xl mx-auto font-normal">
+          <p className="text-base text-foreground-subtle max-w-2xl mx-auto font-normal">
             {t.rich("subtitle", {
               primary: (chunks) => (
                 <span className="text-primary">{chunks}</span>
               ),
-              accent: (chunks) => <span className="text-accent">{chunks}</span>,
+              accent: (chunks) => (
+                <span className="text-secondary">{chunks}</span>
+              ),
             })}
           </p>
         </motion.div>

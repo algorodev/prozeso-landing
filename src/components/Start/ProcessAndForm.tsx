@@ -46,7 +46,7 @@ export function ProcessAndForm() {
                   <h3 className="font-sora text-xl sm:text-2xl font-semibold tracking-tight mb-2">
                     {t(`${id}.title`)}
                   </h3>
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-base text-foreground-subtle leading-relaxed">
                     {t(`${id}.desc`)}
                   </p>
                   {i < STEPS.length - 1 && (

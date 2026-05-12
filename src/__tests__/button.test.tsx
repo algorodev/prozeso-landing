@@ -1,6 +1,6 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import Button from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui";
 
 afterEach(cleanup);
 

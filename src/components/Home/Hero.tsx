@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessagesSquare } from "lucide-react";
 import { useTranslations } from "next-intl";
 import HeroBackground from "@/components/Home/HeroBackground";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const Hero = () => {
@@ -20,14 +20,14 @@ const Hero = () => {
               initial={{ y: 8 }}
               animate={{ y: 0 }}
               transition={{ delay: 0.05, duration: 0.6 }}
-              className="hero-title"
+              className="display-hero"
             >
               {t.rich("title", {
                 primary: (chunks) => (
                   <span className="text-primary">{chunks}</span>
                 ),
                 secondary: (chunks) => (
-                  <span className="text-secondary">{chunks}</span>
+                  <span className="text-accent-01">{chunks}</span>
                 ),
               })}
             </motion.h1>
@@ -36,7 +36,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: 0.2 }}
               transition={{ delay: 0.12, duration: 0.6 }}
-              className="mt-6 text-balance hero-subtitle text-muted-foreground"
+              className="mt-6 text-balance body-lg font-medium tracking-tight text-foreground-subtle"
             >
               {t("subtitle")}
             </motion.p>
@@ -47,9 +47,13 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3 lg:justify-start"
             >
-              <Button asChild size="lg" className="w-full sm:w-auto">
+              <Button
+                asChild
+                size="lg"
+                className="w-full sm:w-auto btn-gradient-hover"
+              >
                 <LocalizedLink href="/start">
-                  <MessagesSquare className="mr-1 size-5" />
+                  <MessagesSquare className="size-5" />
                   {t("ctaPrimary")}
                 </LocalizedLink>
               </Button>
@@ -70,7 +74,7 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: 0.2 }}
               transition={{ delay: 0.28, duration: 0.6 }}
-              className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 caption-text text-muted-foreground lg:justify-start"
+              className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 body-sm text-foreground-muted lg:justify-start"
             >
               <span>{t("trialBadges.freeTrial")}</span>
               <span className="h-1 w-1 rounded-full bg-border" />

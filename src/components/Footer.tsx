@@ -2,7 +2,7 @@
 
 import { Instagram, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Logo from "@/components/Logo";
+import { Logo } from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const Footer = () => {
@@ -18,9 +18,9 @@ const Footer = () => {
               href="/"
               className="flex items-center gap-2 font-bold text-lg tracking-tight"
             >
-              <Logo />
+              <Logo className="w-fit" />
             </LocalizedLink>
-            <p className="text-sm text-muted-foreground max-w-xs">
+            <p className="text-sm text-foreground-subtle max-w-xs">
               {t("tagline")}
             </p>
           </div>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/solutions"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.solutions")}
                   </LocalizedLink>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/start"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.assessment")}
                   </LocalizedLink>
@@ -56,7 +56,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/about"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.about")}
                   </LocalizedLink>
@@ -64,7 +64,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/legal/notice"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.notice")}
                   </LocalizedLink>
@@ -72,7 +72,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/legal/terms"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.terms")}
                   </LocalizedLink>
@@ -80,7 +80,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/legal/privacy"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.privacy")}
                   </LocalizedLink>
@@ -88,7 +88,7 @@ const Footer = () => {
                 <li>
                   <LocalizedLink
                     href="/legal/cookies"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.cookies")}
                   </LocalizedLink>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="mailto:admin@prozeso.com"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground-subtle hover:text-foreground transition-colors"
                   >
                     {t("links.contact")}
                   </a>
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-foreground-muted">
           <p>{t("rights", { year })}</p>
           <div className="flex gap-6">
             <a

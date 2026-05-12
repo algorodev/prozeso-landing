@@ -47,7 +47,7 @@ export default function SolutionsHero() {
               ),
             })}
           </h1>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-foreground-subtle max-w-xl mx-auto leading-relaxed">
             {t("subtitle")}
           </p>
         </div>

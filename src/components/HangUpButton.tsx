@@ -2,7 +2,7 @@
 
 import { PhoneOff } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui";
 
 interface HangUpButtonProps {
   onHangUp: () => void;
@@ -44,7 +44,7 @@ export const HangUpButton = ({
         onClick={onHangUp}
         variant="destructive"
         className="rounded-full w-12 h-12 shadow-lg"
-        size="md"
+        size="icon"
         aria-label="End call"
       >
         <PhoneOff className="size-5" />

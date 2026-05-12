@@ -33,7 +33,7 @@ const TrustedBy = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.3 }}
           transition={{ duration: 0.5 }}
-          className="text-center text-sm uppercase tracking-widest text-muted-foreground mb-8"
+          className="text-center text-sm uppercase tracking-widest text-foreground-muted mb-8"
         >
           {t("title")}
         </motion.p>
