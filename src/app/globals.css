@@ -13,32 +13,92 @@
 :root {
   /* Naranja de marca, usado por el efecto `spinning-shadow`. */
   --brand-orange: oklch(0.78 0.17 60);
+
+  --button-default-hover-gradient: linear-gradient(
+    45deg,
+    color-mix(in oklch, var(--foreground), oklch(0.55 0.05 264.29) 100%),
+    color-mix(in oklch, var(--foreground), oklch(0.55 0.05 264.29) 30%),
+    color-mix(in oklch, var(--foreground), oklch(0.55 0.05 264.29) 70%)
+  );
+}
+
+/* ==========================================================================
+   LANDING-SPECIFIC KEYFRAMES
+   ========================================================================== */
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
 }
 
 /* ==========================================================================
    LANDING-SPECIFIC UTILITIES
+   (Tailwind v4 `@utility` — top-level, soporta variantes y nesting)
    ========================================================================== */
 
-@layer utilities {
-  .min-h-dvh-minus-header {
-    min-height: calc(100dvh - 64px);
+@utility display-hero {
+  @apply font-sora text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tighter text-balance wrap-break-word;
+}
+
+@utility scrollbar-subtle {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+
+  &:hover {
+    scrollbar-color: color-mix(in srgb, var(--foreground-muted) 35%, transparent)
+      transparent;
   }
 
-  @keyframes glow-pulse {
-    0%,
-    100% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
+  /* WebKit fallback (Safari y Chromium < 121) */
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 9999px;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--foreground-muted) 35%, transparent);
+  }
+}
+
+@utility min-h-dvh-minus-header {
+  min-height: calc(100dvh - 64px);
+}
+
+@utility btn-gradient-hover {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-image: var(--button-default-hover-gradient);
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: -1;
   }
 
-  .spinning-shadow {
-    position: relative;
+  &:hover::before {
+    opacity: 1;
   }
+}
 
-  .spinning-shadow::before {
+@utility spinning-shadow {
+  position: relative;
+
+  &::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -65,34 +125,32 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .spinning-shadow::before {
+    &::before {
       animation-duration: 0.01ms;
       animation-iteration-count: 1;
     }
   }
+}
 
-  .voice-reactive-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 40;
-    box-shadow:
-      inset 0 0 calc(50px * var(--voice-intensity, 0))
-      calc(20px * var(--voice-intensity, 0))
-      rgba(34, 255, 232, calc(0.3 * var(--voice-intensity, 0))),
-      inset 0 0 calc(80px * var(--voice-intensity, 0))
-      calc(30px * var(--voice-intensity, 0))
-      rgba(163, 148, 255, calc(0.2 * var(--voice-intensity, 0))),
-      inset 0 0 calc(120px * var(--voice-intensity, 0))
-      calc(40px * var(--voice-intensity, 0))
-      rgba(74, 124, 255, calc(0.15 * var(--voice-intensity, 0)));
-    transition: box-shadow 0.1s ease-out;
-    will-change: box-shadow;
-  }
+@utility voice-reactive-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  box-shadow:
+    inset 0 0 calc(50px * var(--voice-intensity, 0))
+    calc(20px * var(--voice-intensity, 0))
+    rgba(34, 255, 232, calc(0.3 * var(--voice-intensity, 0))),
+    inset 0 0 calc(80px * var(--voice-intensity, 0))
+    calc(30px * var(--voice-intensity, 0))
+    rgba(163, 148, 255, calc(0.2 * var(--voice-intensity, 0))),
+    inset 0 0 calc(120px * var(--voice-intensity, 0))
+    calc(40px * var(--voice-intensity, 0))
+    rgba(74, 124, 255, calc(0.15 * var(--voice-intensity, 0)));
+  transition: box-shadow 0.1s ease-out;
+  will-change: box-shadow;
 
   @media (prefers-reduced-motion: reduce) {
-    .voice-reactive-overlay {
-      transition: none;
-    }
+    transition: none;
   }
 }

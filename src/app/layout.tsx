@@ -114,7 +114,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} suppressHydrationWarning>
       <body
-        className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter`}
+        className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter overflow-x-clip`}
       >
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
