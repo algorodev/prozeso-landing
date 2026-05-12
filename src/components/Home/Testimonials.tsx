@@ -10,6 +10,7 @@ import {
   AvatarImage,
   Card,
   CardContent,
+  SectionHeader,
 } from "@/components/ui";
 
 const TESTIMONIAL_IDS = [
@@ -63,20 +64,15 @@ const Testimonials = () => {
       aria-labelledby="testimonials-title"
     >
       <div className="container mx-auto max-w-[1280px] px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 id="testimonials-title" className="display-lg mb-4">
-            {t("title")}
-          </h2>
-          <p className="body-lg font-medium tracking-tight text-foreground-muted max-w-3xl mx-auto">
-            {t("subtitle")}
-          </p>
-        </motion.div>
+        <SectionHeader
+          titleId="testimonials-title"
+          title={t.rich("title", {
+            highlight: (chunks) => (
+              <span className="text-primary">{chunks}</span>
+            ),
+          })}
+          subtitle={t("subtitle")}
+        />
       </div>
 
       <div
