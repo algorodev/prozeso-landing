@@ -50,7 +50,11 @@
   scrollbar-color: var(--border) transparent;
 
   &:hover {
-    scrollbar-color: color-mix(in srgb, var(--foreground-muted) 35%, transparent)
+    scrollbar-color: color-mix(
+        in srgb,
+        var(--foreground-muted) 35%,
+        transparent
+      )
       transparent;
   }
 
@@ -80,7 +84,7 @@
   isolation: isolate;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;

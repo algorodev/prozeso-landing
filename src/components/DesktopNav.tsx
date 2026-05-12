@@ -44,10 +44,7 @@ export const DesktopNav = ({ item, activePath }: Props) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          variant={isActive ? "default" : "ghost"}
-          className="min-w-0"
-        >
+        <Button variant={isActive ? "default" : "ghost"} className="min-w-0">
           {item.label}
           <ChevronDown className="ml-1 size-4 opacity-70" />
         </Button>

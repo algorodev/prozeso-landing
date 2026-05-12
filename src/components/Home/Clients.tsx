@@ -7,19 +7,24 @@ import { useTranslations } from "next-intl";
 const clients = [
   { id: "albet", name: "Albet", src: "/assets/clients/albet.png" },
   { id: "altipesa", name: "Altipesa", src: "/assets/clients/altipesa.png" },
-  { id: "can-cuinat", name: "Can Cuinat", src: "/assets/clients/can-cuinat.png" },
+  {
+    id: "can-cuinat",
+    name: "Can Cuinat",
+    src: "/assets/clients/can-cuinat.png",
+  },
   { id: "hohomes", name: "Ho Homes", src: "/assets/clients/hohomes.png" },
   { id: "izuuk", name: "Izuuk", src: "/assets/clients/izuuk.png" },
-  { id: "ktl-ladders", name: "KTL Ladders", src: "/assets/clients/ktl-ladders.png" },
+  {
+    id: "ktl-ladders",
+    name: "KTL Ladders",
+    src: "/assets/clients/ktl-ladders.png",
+  },
   { id: "mayoral", name: "Mayoral", src: "/assets/clients/mayoral.png" },
   { id: "novify", name: "Novify", src: "/assets/clients/novify.png" },
 ];
 
 const ClientLogo = ({ client }: { client: (typeof clients)[number] }) => (
-  <div
-    className="flex items-center justify-center shrink-0 px-4 sm:px-8 md:px-12"
-    aria-label={client.name}
-  >
+  <div className="flex items-center justify-center shrink-0 px-4 sm:px-8 md:px-12">
     <div className="relative h-[52px] w-[80px] sm:h-[70px] sm:w-[110px] md:h-[80px] md:w-[120px] opacity-70 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300">
       <Image
         src={client.src}

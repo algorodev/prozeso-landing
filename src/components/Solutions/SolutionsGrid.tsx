@@ -300,66 +300,66 @@ export default function SolutionsGrid() {
                                   />
 
                                   <div className="relative flex items-start gap-3">
-                                      <span
-                                        className="text-3xl font-sora font-bold leading-none opacity-20"
-                                        style={{ color }}
-                                      >
-                                        {String(startIndex + index).padStart(
-                                          2,
-                                          "0",
+                                    <span
+                                      className="text-3xl font-sora font-bold leading-none opacity-20"
+                                      style={{ color }}
+                                    >
+                                      {String(startIndex + index).padStart(
+                                        2,
+                                        "0",
+                                      )}
+                                    </span>
+                                    <div className="min-w-0 flex-1">
+                                      <h3 className="font-sora text-base font-semibold leading-tight">
+                                        {t(
+                                          `areas.${areaId}.automations.${index}.name`,
                                         )}
-                                      </span>
-                                      <div className="min-w-0 flex-1">
-                                        <h3 className="font-sora text-base font-semibold leading-tight">
+                                      </h3>
+                                      {t.has(
+                                        `areas.${areaId}.automations.${index}.subtitle`,
+                                      ) && (
+                                        <p className="text-xs text-foreground-muted mt-0.5">
                                           {t(
-                                            `areas.${areaId}.automations.${index}.name`,
+                                            `areas.${areaId}.automations.${index}.subtitle`,
                                           )}
-                                        </h3>
-                                        {t.has(
-                                          `areas.${areaId}.automations.${index}.subtitle`,
-                                        ) && (
-                                          <p className="text-xs text-foreground-muted mt-0.5">
-                                            {t(
-                                              `areas.${areaId}.automations.${index}.subtitle`,
-                                            )}
-                                          </p>
-                                        )}
-                                      </div>
+                                        </p>
+                                      )}
                                     </div>
+                                  </div>
 
-                                    {t.has(
-                                      `areas.${areaId}.automations.${index}.description`,
-                                    ) && (
-                                      <p className="relative text-sm text-foreground-subtle leading-relaxed">
-                                        {t(
-                                          `areas.${areaId}.automations.${index}.description`,
-                                        )}
-                                      </p>
-                                    )}
+                                  {t.has(
+                                    `areas.${areaId}.automations.${index}.description`,
+                                  ) && (
+                                    <p className="relative text-sm text-foreground-subtle leading-relaxed">
+                                      {t(
+                                        `areas.${areaId}.automations.${index}.description`,
+                                      )}
+                                    </p>
+                                  )}
 
-                                    {t.has(
-                                      `areas.${areaId}.automations.${index}.state`,
-                                    ) && (
+                                  {t.has(
+                                    `areas.${areaId}.automations.${index}.state`,
+                                  ) && (
+                                    <span
+                                      className="relative inline-flex items-center gap-1.5 w-fit rounded-full px-2.5 py-0.5 text-[11px] font-medium border mt-auto"
+                                      style={{
+                                        color,
+                                        borderColor: `color-mix(in srgb, ${color} 40%, transparent)`,
+                                        backgroundColor: `color-mix(in srgb, ${color} 10%, transparent)`,
+                                      }}
+                                    >
                                       <span
-                                        className="relative inline-flex items-center gap-1.5 w-fit rounded-full px-2.5 py-0.5 text-[11px] font-medium border mt-auto"
-                                        style={{
-                                          color,
-                                          borderColor: `color-mix(in srgb, ${color} 40%, transparent)`,
-                                          backgroundColor: `color-mix(in srgb, ${color} 10%, transparent)`,
-                                        }}
-                                      >
-                                        <span
-                                          className="size-1.5 rounded-full"
-                                          style={{ background: color }}
-                                          aria-hidden="true"
-                                        />
-                                        {t(
-                                          `stateValues.${t(
-                                            `areas.${areaId}.automations.${index}.state`,
-                                          )}`,
-                                        )}
-                                      </span>
-                                    )}
+                                        className="size-1.5 rounded-full"
+                                        style={{ background: color }}
+                                        aria-hidden="true"
+                                      />
+                                      {t(
+                                        `stateValues.${t(
+                                          `areas.${areaId}.automations.${index}.state`,
+                                        )}`,
+                                      )}
+                                    </span>
+                                  )}
                                 </button>
                               );
                             })}

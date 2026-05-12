@@ -46,10 +46,10 @@ export const LayerCard = ({
         hidden: { opacity: 0, y: 20 },
         show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
       }}
+      onMouseMove={handleMouseMove}
       className="h-full"
     >
       <div
-        onMouseMove={handleMouseMove}
         className="group relative rounded-2xl p-px overflow-hidden h-full"
         style={{ background: "var(--color-border-subtle)" }}
       >

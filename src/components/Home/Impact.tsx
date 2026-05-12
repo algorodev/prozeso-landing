@@ -34,9 +34,7 @@ const Impact = () => {
   const t = useTranslations("home.impact");
 
   const disclaimer = (
-    <p className="text-xs text-foreground-muted max-w-2xl">
-      {t("disclaimer")}
-    </p>
+    <p className="text-xs text-foreground-muted max-w-2xl">{t("disclaimer")}</p>
   );
 
   return (
