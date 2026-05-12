@@ -31,7 +31,7 @@ export function EmailSentDialog({ open, onOpenChange }: Props) {
             <DialogTitle className="body-md font-medium">
               {t("success.title")}
             </DialogTitle>
-            <DialogDescription className="body-md text-foreground-muted mt-1">
+            <DialogDescription className="body-md text-foreground-subtle mt-1">
               {t("success.body")}
             </DialogDescription>
           </div>

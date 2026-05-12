@@ -117,7 +117,7 @@ const Partnerships = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-3"
         >
-          <p className="text-base text-foreground-muted max-w-2xl mx-auto font-normal">
+          <p className="text-base text-foreground-subtle max-w-2xl mx-auto font-normal">
             {t.rich("subtitle", {
               primary: (chunks) => (
                 <span className="text-primary">{chunks}</span>

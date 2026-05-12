@@ -82,7 +82,7 @@ export function AssessmentForm() {
         <h2 className="font-sora text-2xl font-semibold tracking-tight">
           {t("cardTitle")}
         </h2>
-        <p className="text-sm text-foreground-muted leading-relaxed">
+        <p className="text-sm text-foreground-subtle leading-relaxed">
           {t("cardSubtitle")}
         </p>
       </div>
@@ -187,7 +187,7 @@ export function AssessmentForm() {
       <EmailSentDialog open={success} onOpenChange={setSuccess} />
 
       <div className="mt-8 pt-6 border-t border-border/60 space-y-3">
-        <p className="text-sm text-foreground-muted">
+        <p className="text-sm text-foreground-subtle">
           {t("calendarAlternative")}
         </p>
         <BookCallButton size="default" />

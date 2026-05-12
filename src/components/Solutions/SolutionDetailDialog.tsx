@@ -59,7 +59,7 @@ const AutomationDetailDialog = ({
                 </DialogTitle>
               </div>
               {t.has(`${prefix}.subtitle`) && (
-                <p className="text-sm text-foreground-muted mt-1">
+                <p className="text-sm text-foreground-subtle mt-1">
                   {t(`${prefix}.subtitle`)}
                 </p>
               )}
@@ -91,7 +91,7 @@ const AutomationDetailDialog = ({
         )}
 
         {t.has(`${prefix}.description`) && (
-          <p className="text-sm text-foreground-muted leading-relaxed">
+          <p className="text-sm text-foreground-subtle leading-relaxed">
             {t(`${prefix}.description`)}
           </p>
         )}

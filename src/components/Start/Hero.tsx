@@ -16,7 +16,7 @@ export function Hero() {
             ),
           })}
         </h1>
-        <p className="mt-4 body-lg font-medium tracking-tight text-balance text-foreground-muted sm:text-lg max-w-3xl">
+        <p className="mt-4 body-lg font-medium tracking-tight text-balance text-foreground-subtle sm:text-lg max-w-3xl">
           {t("subtitle")}
         </p>
       </div>

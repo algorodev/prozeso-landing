@@ -90,7 +90,7 @@ export const MobileNav = ({ nav = [] }: Props) => {
                           >
                             <div className="body-md">{child.label}</div>
                             {child.description ? (
-                              <div className="body-sm text-foreground-muted">
+                              <div className="body-sm text-foreground-subtle">
                                 {child.description}
                               </div>
                             ) : null}

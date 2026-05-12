@@ -54,7 +54,7 @@ export default async function NotFound() {
                 <span>{t("notFound.badge")}</span>
               </div>
               <h1 className="text-balance display-xl">{t("notFound.title")}</h1>
-              <p className="mt-4 text-pretty body-md leading-7 text-foreground-muted sm:text-lg">
+              <p className="mt-4 text-pretty body-md leading-7 text-foreground-subtle sm:text-lg">
                 {t("notFound.description")}
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -67,7 +67,7 @@ export default async function NotFound() {
               </div>
               <div className="mt-10 w-full">
                 <div className="mx-auto w-full max-w-xl rounded-xl border border-border/60 bg-gradient-to-b from-background/60 to-background/30 p-5 shadow-sm">
-                  <div className="flex justify-center items-center gap-3 body-md text-foreground-muted">
+                  <div className="flex justify-center items-center gap-3 body-md text-foreground-subtle">
                     <span className="inline-flex size-6 items-center justify-center bg-background/70 body-sm font-semibold text-foreground/80">
                       404
                     </span>
