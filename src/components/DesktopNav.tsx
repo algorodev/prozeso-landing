@@ -33,11 +33,7 @@ export const DesktopNav = ({ item, activePath }: Props) => {
 
   if (!item.children?.length) {
     return (
-      <Button
-        asChild
-        variant={isActive ? "default" : "ghost"}
-        className="rounded-xl"
-      >
+      <Button asChild variant={isActive ? "default" : "ghost"}>
         <LocalizedLink href={item.href ?? "#"} className="px-3">
           {item.label}
         </LocalizedLink>
@@ -50,7 +46,7 @@ export const DesktopNav = ({ item, activePath }: Props) => {
       <DropdownMenuTrigger asChild>
         <Button
           variant={isActive ? "default" : "ghost"}
-          className="rounded-xl min-w-0"
+          className="min-w-0"
         >
           {item.label}
           <ChevronDown className="ml-1 size-4 opacity-70" />
