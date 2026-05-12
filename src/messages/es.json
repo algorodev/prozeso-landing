@@ -623,11 +623,11 @@
     },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
-      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad. El 7 de octubre de 2025, nació Prozeso para resolverlo.",
+      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad.",
       "originTitle": "Donde todo empezó",
       "originParagraph1": "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin. Coincidíamos en una cosa: las empresas que crecen están atascadas con herramientas que no crecen con ellas, y las alternativas están fuera de su alcance.",
       "originParagraph2": "Empresas españolas de 10 a 200 empleados con procesos viviendo en cabezas, hojas de cálculo y mensajes de WhatsApp. Las herramientas que se pueden permitir son demasiado rígidas para encajar de verdad. Las herramientas que sí encajan son demasiado pesadas, demasiado lentas y demasiado caras para llegar a adoptarlas.",
-      "originParagraph3": "Ese día decidimos construir el sistema operativo que esa empresa nunca tuvo. El 7 de octubre de 2025 lanzamos oficialmente Prozeso."
+      "originParagraph3": "Ese día decidimos construir el sistema operativo que esa empresa nunca tuvo."
     },
     "team": {
       "title": "El equipo",
@@ -645,7 +645,7 @@
       "sales": {
         "name": "Carles Vineta",
         "role": "Strategic Advisor",
-        "description": "Acompaña la estrategia comercial. 30+ años en operaciones de empresas como las que servimos. Asegura que las decisiones tienen sentido en la realidad, no solo en el slide."
+        "description": "Acompaña la estrategia comercial. 6+ años en operaciones de empresas como las que servimos. Asegura que las decisiones tienen sentido en la realidad, no solo en el slide."
       },
       "linkedin": "Ver perfil de LinkedIn"
     }

@@ -623,11 +623,11 @@
     },
     "hero": {
       "title": "The story behind <highlight>Prozeso</highlight>",
-      "subtitle": "We met at Google's offices in Dublin with a clear vision: there's a whole segment of companies stuck between manual chaos and corporate software, and nobody is really serving them. On October 7, 2025, Prozeso was born to fix that.",
+      "subtitle": "We met at Google's offices in Dublin with a clear vision: there's a whole segment of companies stuck between manual chaos and corporate software, and nobody is really serving them.",
       "originTitle": "Where it all began",
       "originParagraph1": "Three professionals: marketing, engineering, and strategy. Comparing notes in Dublin. We agreed on one thing: growing companies are stuck with tools that don't grow with them, and the alternatives are out of reach.",
       "originParagraph2": "Spanish companies of 10 to 200 employees, with processes living in people's heads, spreadsheets, and WhatsApp messages. The tools they can afford are too rigid to truly fit. The tools that fit are too heavy, too slow and too expensive to ever adopt.",
-      "originParagraph3": "That day we decided to build the operating system that company never had. On October 7, 2025 we officially launched Prozeso."
+      "originParagraph3": "That day we decided to build the operating system that company never had."
     },
     "team": {
       "title": "The team",
@@ -645,7 +645,7 @@
       "sales": {
         "name": "Carles Vineta",
         "role": "Strategic Advisor",
-        "description": "Backs the commercial strategy. 30+ years in operations at companies like the ones we serve. Makes sure the decisions hold up in reality, not just on the slide."
+        "description": "Backs the commercial strategy. 6+ years in operations at companies like the ones we serve. Makes sure the decisions hold up in reality, not just on the slide."
       },
       "linkedin": "View LinkedIn profile"
     }
