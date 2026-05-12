@@ -3,7 +3,7 @@
 import { Filter, Search } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AREAS } from "@/components/Solutions/constants";
 import {
   Button,
@@ -74,15 +74,6 @@ export default function SolutionsGrid() {
     setMobileOpen(false);
   };
 
-  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    e.currentTarget.style.setProperty(
-      "--mouse-x",
-      `${e.clientX - rect.left}px`,
-    );
-    e.currentTarget.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
-  }, []);
-
   return (
     <section
       id="grid"
@@ -90,7 +81,7 @@ export default function SolutionsGrid() {
     >
       <div className="lg:grid lg:grid-cols-[240px_1fr] xl:grid-cols-[280px_1fr] lg:gap-10">
         <aside className="hidden lg:block">
-          <div className="sticky top-24 space-y-6">
+          <div className="sticky top-24 max-h-[calc(100dvh-7rem)] overflow-y-auto pr-2 pb-6 space-y-6 scrollbar-subtle">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-foreground-muted" />
               <Input
@@ -272,14 +263,14 @@ export default function SolutionsGrid() {
                             )}
                           </div>
                           {t.has(`areas.${areaId}.shortDescription`) && (
-                            <p className="text-sm text-foreground-muted leading-relaxed max-w-2xl">
+                            <p className="text-sm text-foreground-subtle leading-relaxed max-w-2xl">
                               {t(`areas.${areaId}.shortDescription`)}
                             </p>
                           )}
                         </div>
                         {items.length === 0 && comingSoon ? (
                           <div
-                            className="rounded-2xl border border-dashed p-6 text-sm text-foreground-muted leading-relaxed max-w-2xl"
+                            className="rounded-2xl border border-dashed p-6 text-sm text-foreground-subtle leading-relaxed max-w-2xl"
                             style={{
                               borderColor: `color-mix(in srgb, ${color} 30%, transparent)`,
                               backgroundColor: `color-mix(in srgb, ${color} 4%, transparent)`,
@@ -297,28 +288,18 @@ export default function SolutionsGrid() {
                                 <button
                                   key={`${areaId}-${index}`}
                                   type="button"
-                                  onMouseMove={handleMouseMove}
                                   onClick={() =>
                                     setSelectedAutomation({ areaId, index })
                                   }
-                                  className="group relative rounded-2xl p-px overflow-hidden text-left cursor-pointer h-full"
-                                  style={{ background: "var(--color-border)" }}
+                                  className="group relative rounded-2xl border border-border p-5 overflow-hidden text-left cursor-pointer h-full space-y-3 flex flex-col"
                                 >
-                                  <div
-                                    className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"
-                                    style={{
-                                      background: `radial-gradient(circle 150px at var(--mouse-x, -9999px) var(--mouse-y, -9999px), ${color}, transparent)`,
-                                    }}
+                                  <span
+                                    className={`pointer-events-none absolute ${glowPos} h-64 w-64 rounded-full blur-[100px] opacity-0 transition-opacity duration-500 group-hover:opacity-20`}
+                                    style={{ background: color }}
+                                    aria-hidden="true"
                                   />
 
-                                  <div className="relative z-10 w-full h-full rounded-[15px] bg-background p-5 overflow-hidden space-y-3 flex flex-col">
-                                    <span
-                                      className={`pointer-events-none absolute ${glowPos} h-64 w-64 rounded-full blur-[100px] opacity-0 transition-opacity duration-500 group-hover:opacity-20`}
-                                      style={{ background: color }}
-                                      aria-hidden="true"
-                                    />
-
-                                    <div className="relative flex items-start gap-3">
+                                  <div className="relative flex items-start gap-3">
                                       <span
                                         className="text-3xl font-sora font-bold leading-none opacity-20"
                                         style={{ color }}
@@ -349,7 +330,7 @@ export default function SolutionsGrid() {
                                     {t.has(
                                       `areas.${areaId}.automations.${index}.description`,
                                     ) && (
-                                      <p className="relative text-sm text-foreground-muted leading-relaxed">
+                                      <p className="relative text-sm text-foreground-subtle leading-relaxed">
                                         {t(
                                           `areas.${areaId}.automations.${index}.description`,
                                         )}
@@ -379,7 +360,6 @@ export default function SolutionsGrid() {
                                         )}
                                       </span>
                                     )}
-                                  </div>
                                 </button>
                               );
                             })}
