@@ -143,8 +143,11 @@
     "partnerships": {
       "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
     },
+    "clients": {
+      "subtitle": "Equipos que ya <primary>confían en Prozeso</primary> para automatizar sus operaciones"
+    },
     "testimonials": {
-      "title": "Lo que dicen nuestros clientes",
+      "title": "Lo que dicen <highlight>nuestros clientes</highlight>",
       "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
       "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
       "automationLabel": "Automatización",
@@ -240,7 +243,7 @@
       }
     },
     "automationSuite": {
-      "title": "Empezamos con una pieza. Acabamos siendo la <highlight>columna vertebral</highlight>.",
+      "title": "Empezamos con una pieza.<br></br>Acabamos siendo la <highlight>columna vertebral</highlight>.",
       "subtitle": "Entramos por donde el dolor es agudo y el ROI es inmediato. A los 18 meses, tu empresa opera sobre Prozeso.",
       "close": "Cerrar",
       "automationCount": "{count} automatizaciones",
@@ -572,16 +575,22 @@
         "backendOps": "Operaciones",
         "corporateSupport": "Soporte corporativo"
       },
+      "groupDescriptions": {
+        "clientFacing": "Atención, reservas y post-venta. Cada interacción con tu cliente, gestionada sin que se caiga ninguna.",
+        "revenueGrowth": "Ventas, marketing y producto. El motor que abre oportunidades y las convierte en ingreso.",
+        "backendOps": "Operaciones, inventario y sistemas. La capa interna que sostiene el día a día sin pedir atención.",
+        "corporateSupport": "Finanzas, personas, legal y dirección. Las funciones transversales que mantienen la empresa en orden."
+      },
       "clearFilter": "Limpiar filtro"
     },
     "finalCta": {
-      "title": "¿<highlight>Encaja</highlight> con tu empresa?",
+      "title": "¿Encaja con <highlight>tu empresa</highlight>?",
       "subtitle": "Una conversación de 30 minutos es suficiente para saber si Prozeso te aporta más de lo que cuesta. Si no encajamos, te lo decimos.",
       "ctaPrimary": "Hablar con nosotros",
       "ctaSecondary": "Ver el catálogo modular"
     },
     "understanding": {
-      "title": "Tres capas. <highlight>Una columna vertebral</highlight>.",
+      "title": "Tres capas.<br></br><highlight>Una columna vertebral</highlight>.",
       "subtitle": "No es una herramienta. Es la forma en que tu empresa opera.",
       "items": {
         "input": {

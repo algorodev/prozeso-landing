@@ -143,8 +143,11 @@
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
     },
+    "clients": {
+      "subtitle": "Teams that already <primary>trust Prozeso</primary> to automate their operations"
+    },
     "testimonials": {
-      "title": "What Our Clients Say",
+      "title": "What <highlight>our clients</highlight> say",
       "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
       "moreComing": "And many more stories on the way. These are just a few of the teams we're working with.",
       "automationLabel": "Automation",
@@ -240,7 +243,7 @@
       }
     },
     "automationSuite": {
-      "title": "We start with one piece. We end up as the <highlight>backbone</highlight>.",
+      "title": "We start with one piece.<br></br>We end up as the <highlight>backbone</highlight>.",
       "subtitle": "We come in where the pain is sharp and the ROI is immediate. By month 18, your company runs on Prozeso.",
       "close": "Close",
       "automationCount": "{count} automations",
@@ -572,16 +575,22 @@
         "backendOps": "Operations",
         "corporateSupport": "Corporate support"
       },
+      "groupDescriptions": {
+        "clientFacing": "Customer service, bookings, and post-sale. Every customer interaction handled — nothing slips.",
+        "revenueGrowth": "Sales, marketing, and product. The engine that opens opportunities and turns them into revenue.",
+        "backendOps": "Operations, inventory, and internal systems. The backbone that runs the day-to-day without your attention.",
+        "corporateSupport": "Finance, people, legal, and management. The cross-functional layer that keeps the company in order."
+      },
       "clearFilter": "Clear filter"
     },
     "finalCta": {
-      "title": "Does Prozeso <highlight>fit</highlight> your company?",
+      "title": "Does Prozeso fit <highlight>your company</highlight>?",
       "subtitle": "A 30-minute conversation is enough to know whether Prozeso brings you more than it costs. If we're not a fit, we'll tell you.",
       "ctaPrimary": "Talk to us",
       "ctaSecondary": "See the modular catalog"
     },
     "understanding": {
-      "title": "Three layers. <highlight>One backbone</highlight>.",
+      "title": "Three layers.<br></br><highlight>One backbone</highlight>.",
       "subtitle": "Not a tool. The way your company operates.",
       "items": {
         "input": {
