@@ -38,7 +38,7 @@ export default function SolutionsHero() {
         />
       </div>
 
-      <div className="container mx-auto px-6 sm:px-8 relative z-10">
+      <div className="container mx-auto max-w-[1280px] px-6 sm:px-8 relative z-10">
         <div className="mx-auto text-center max-w-3xl">
           <h1 className="font-sora text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-4 text-balance">
             {t.rich("title", {
@@ -47,7 +47,7 @@ export default function SolutionsHero() {
               ),
             })}
           </h1>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-foreground-subtle max-w-xl mx-auto leading-relaxed">
             {t("subtitle")}
           </p>
         </div>

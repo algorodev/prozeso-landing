@@ -3,16 +3,16 @@
 import { Close } from "@radix-ui/react-dialog";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/Button";
-import { Separator } from "@/components/ui/Separator";
 import {
+  Button,
+  Separator,
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/Sheet";
+} from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type NavChild = {
@@ -43,7 +43,9 @@ export const MobileNav = ({ nav = [] }: Props) => {
       </SheetTrigger>
       <SheetContent side="left" className="w-[84vw] p-0">
         <SheetHeader className="px-4 py-3">
-          <SheetTitle className="text-left body-strong-text">Menu</SheetTitle>
+          <SheetTitle className="text-left body-md font-medium">
+            Menu
+          </SheetTitle>
           <SheetDescription className="sr-only">
             {t("mobileMenuDescription")}
           </SheetDescription>
@@ -61,13 +63,15 @@ export const MobileNav = ({ nav = [] }: Props) => {
             {nav.map((item) => (
               <div key={item.label} className="">
                 {item.children?.length ? (
-                  <div className="px-3 py-2 body-strong-text">{item.label}</div>
+                  <div className="px-3 py-2 body-md font-medium">
+                    {item.label}
+                  </div>
                 ) : (
                   <div className="px-1 py-2">
                     <Close asChild>
                       <LocalizedLink
                         href={item.href ?? "#"}
-                        className="block rounded-xl px-2 py-2 hover:bg-accent hover:text-accent-foreground body-text"
+                        className="block rounded-xl px-2 py-2 hover:bg-secondary hover:text-background body-md"
                       >
                         {item.label}
                       </LocalizedLink>
@@ -82,11 +86,11 @@ export const MobileNav = ({ nav = [] }: Props) => {
                         <Close asChild>
                           <LocalizedLink
                             href={child.href}
-                            className="block rounded-xl px-3 py-2 hover:bg-accent hover:text-accent-foreground body-text"
+                            className="block rounded-xl px-3 py-2 hover:bg-secondary hover:text-background body-md"
                           >
-                            <div className="body-text">{child.label}</div>
+                            <div className="body-md">{child.label}</div>
                             {child.description ? (
-                              <div className="caption-text text-muted-foreground">
+                              <div className="body-sm text-foreground-subtle">
                                 {child.description}
                               </div>
                             ) : null}

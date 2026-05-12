@@ -1,7 +1,6 @@
 {
   "common": {
     "cta": {
-      "startAssessment": "Comenzar evaluación gratis",
       "bookCall": "Reservar una llamada"
     },
     "agentButton": {
@@ -10,22 +9,24 @@
       "label": "Iniciar llamada con IA"
     }
   },
+  "trustedBy": {
+    "title": "Con el respaldo de"
+  },
   "hero": {
-    "title": "Haz que tu <primary>negocio</primary> trabaje para <secondary>ti</secondary>",
-    "subtitle": "En Prozeso, desarrollamos automatizaciones, impulsadas por IA, que atienden llamadas y escalan cada interacción de tu negocio.",
-    "ctaPrimary": "Empezar ahora",
-    "ctaSecondary": "Probar demo gratis",
+    "title": "Donde tus <primary>procesos, datos y operaciones</primary> por fin <secondary>viven juntos</secondary>.",
+    "subtitle": "La columna vertebral modular que conecta tus herramientas, automatiza tus flujos y te devuelve el control.",
+    "ctaPrimary": "Hablar con nosotros",
+    "ctaSecondary": "Ver el catálogo modular",
     "trialBadges": {
-      "freeTrial": "Prueba gratis",
-      "noCreditCard": "Sin tarjeta de crédito",
-      "cancelAnytime": "Cancela cuando quieras"
+      "freeTrial": "Sin compromiso",
+      "noCreditCard": "Conversación de 30 minutos",
+      "cancelAnytime": "Te decimos si encajamos"
     },
     "imageAlt": "Vista previa del panel de automatización"
   },
   "header": {
     "nav": {
       "solutions": "Soluciones",
-      "useCases": "Casos de Uso",
       "about": "Sobre Nosotros"
     },
     "cta": "Empezar",
@@ -34,16 +35,16 @@
     "mobileMenuDescription": "Menú de navegación principal"
   },
   "footer": {
-    "tagline": "IA que escucha, entiende y actúa por tu negocio.",
+    "tagline": "Donde tus procesos, datos y operaciones por fin viven juntos.",
     "sections": {
       "product": "Producto",
       "company": "Empresa"
     },
     "links": {
-      "useCases": "Casos de Uso",
       "solutions": "Soluciones",
-      "assessment": "Comenzar",
+      "assessment": "Empezar",
       "about": "Sobre Nosotros",
+      "notice": "Aviso Legal",
       "terms": "Términos y Condiciones",
       "privacy": "Política de Privacidad",
       "cookies": "Política de Cookies",
@@ -57,1604 +58,35 @@
   },
   "solutions": {
     "hero": {
-      "title": "Nuestras <primary>Soluciones</primary>",
-      "subtitle": "Flujos de trabajo impulsados por IA, diseñados para negocios de servicios. Combínalos para crear tu stack de automatización perfecto."
-    },
-    "cta": "Comenzar evaluación gratis",
-    "moreComing": {
-      "title": "Más sectores pronto...",
-      "desc": "Estamos expandiéndonos a nuevos sectores. Cuéntanos el tuyo y adaptamos las automatizaciones a tu negocio."
-    },
-    "verticals": {
-      "restaurants": {
-        "title": "Restaurantes",
-        "desc": "Convierte cada llamada, DM y visita web en una mesa ocupada—sin tener a alguien al teléfono todo el día.",
-        "highlights": [
-          "Menos reservas perdidas en horas punta",
-          "Menos tiempo gestionando reservas, más tiempo atendiendo a los clientes",
-          "Confirmaciones claras para que la gente realmente se presente"
-        ]
-      },
-      "beauty": {
-        "title": "Peluquería y Belleza",
-        "desc": "Mantén tu silla siempre ocupada con reservas, reprogramaciones y confirmaciones que funcionan en segundo plano.",
-        "highlights": [
-          "Los clientes reservan cuando les conviene, no solo cuando puedes responder",
-          "Menos huecos en la agenda y menos sorpresas de última hora",
-          "Menos gestión por WhatsApp y más tiempo con los clientes"
-        ]
-      },
-      "clinics": {
-        "title": "Clínicas y Salud",
-        "desc": "Facilita que los pacientes reserven, confirmen y recuerden sus visitas—con menos presión telefónica para tu equipo.",
-        "highlights": [
-          "Experiencia de reserva clara y sencilla para pacientes nuevos y existentes",
-          "Menos citas olvidadas y cancelaciones tardías",
-          "Más tiempo para la atención, menos tiempo en tareas administrativas repetitivas"
-        ]
-      },
-      "hotels": {
-        "title": "Hoteles",
-        "desc": "Convierte consultas en estancias con respuestas rápidas y un recorrido más fluido de «¿Tienen habitaciones?» a «Nos vemos pronto».",
-        "highlights": [
-          "Los huéspedes reciben respuestas rápidas sobre disponibilidad y detalles",
-          "Menos ida y vuelta para preguntas y cambios sencillos",
-          "Más reservas directas, menos oportunidades perdidas"
-        ]
-      },
-      "realEstate": {
-        "title": "Inmobiliarias",
-        "desc": "Garantiza que cada comprador e inquilino sea contactado, cualificado y agendado — incluso cuando tus agentes estén en visitas.",
-        "highlights": [
-          "No más leads prometedores perdidos por llamadas no atendidas",
-          "Más fácil programar y reprogramar visitas a propiedades",
-          "Los agentes dedican más tiempo a cerrar operaciones, no a perseguir a la gente"
-        ]
-      }
-    }
-  },
-  "automations": {
-    "page": {
-      "hero": {
-        "title": "Biblioteca de <primary>Automatizaciones</primary>",
-        "subtitle": "Flujos con IA diseñados para negocios de servicios. Combina y adapta para crear tu stack perfecto de automatización."
-      },
-      "filter": {
-        "categoryLabel": "Categoría",
-        "searchPlaceholder": "Buscar automatizaciones...",
-        "searchAria": "Buscar automatizaciones"
-      },
-      "cta": {
-        "title": "¿Necesitas <primary>orientación</primary>?",
-        "subtitle": "Nuestra evaluación con IA te recomendará las automatizaciones que más impacto generan en tu negocio.",
-        "button": "Comenzar evaluación gratis"
-      },
-      "card": {
-        "learnMore": "Ver más"
-      },
-      "notFound": {
-        "title": "Automatización no encontrada",
-        "subtitle": "No pudimos encontrar una automatización con id \"{id}\".",
-        "back": "Volver al catálogo"
-      }
-    },
-    "categories": {
-      "all": "Categoría",
-      "ai-agent": "Agente de IA",
-      "phone-msg": "Teléfono y Mensajería",
-      "lead-recovery": "Recuperación de leads",
-      "retention": "Retención",
-      "no-show-reduction": "Reducción de ausencias",
-      "pre-visit": "Pre‑visita",
-      "data-collection": "Recogida de datos",
-      "experience-personalization": "Personalización de la experiencia",
-      "no-show-management": "Gestión de ausencias",
-      "revenue-protection": "Protección de ingresos",
-      "revenue-optimization": "Optimización de ingresos",
-      "capacity-management": "Gestión de capacidad",
-      "conversion": "Conversión",
-      "lifecycle-management": "Gestión del ciclo de vida",
-      "reputation": "Reputación",
-      "reviews": "Reseñas",
-      "billing": "Facturación",
-      "payments": "Pagos",
-      "guest-experience": "Experiencia del huésped",
-      "concierge": "Conserjería",
-      "upsell": "Venta adicional",
-      "sales-enablement": "Habilitación de ventas",
-      "lead-qualification": "Cualificación de leads",
-      "events-groups": "Eventos y grupos",
-      "lead-management": "Gestión de leads",
-      "qualification": "Cualificación",
-      "routing": "Enrutamiento",
-      "feedback": "Feedback",
-      "post-viewing": "Post‑visita",
-      "operations": "Operaciones",
-      "onboarding": "Onboarding"
-    },
-    "receptionist-ai": {
-      "title": "Recepcionista IA",
-      "description": "Una recepcionista con IA siempre activa que responde llamadas y mensajes, da información y gestiona reservas y citas (alta, cambios y cancelaciones).",
-      "metrics": [
-        "+45% reservas recuperadas",
-        "Cobertura 24/7",
-        "60% más rápida la primera respuesta"
-      ]
-    },
-    "missed-call-auto-callback": {
-      "title": "Devolución automática de llamadas perdidas",
-      "description": "Devuelve automáticamente la llamada o escribe a quienes no pudiste atender para recuperar reservas y leads en lugar de perderlos.",
-      "metrics": [
-        "+30% recuperación de leads",
-        "Devolución < 60s",
-        "+18% conversión tras seguimiento"
-      ]
-    },
-    "appointment-reminder": {
-      "title": "Recordatorio de citas",
-      "description": "Recordatorios automáticos por SMS, WhatsApp, email o llamada antes de la cita, con confirmación y reprogramación/cancelación con un clic.",
-      "metrics": [
-        "-32% ausencias",
-        "95% tasa de entrega",
-        "Reprogramación en 1 clic"
-      ]
-    },
-    "smart-pre-check-in": {
-      "title": "Pre‑check‑in inteligente",
-      "description": "Flujo previo a la visita para recopilar datos, formularios y preferencias, y enviar instrucciones personalizadas antes de la llegada.",
-      "metrics": [
-        "70% formularios completados antes de la visita",
-        "-25% tiempo en recepción",
-        "Instrucciones personalizadas"
-      ]
-    },
-    "no-show-recovery-fee-capture": {
-      "title": "Recuperación de ausencias y cobro de tasas",
-      "description": "Si un cliente no se presenta, hacemos seguimiento para reprogramar, cobrar una tasa o depósito cuando aplique y registrar el evento.",
-      "metrics": [
-        "-18% fuga de ingresos",
-        "40% reprograman tras el contacto",
-        "Cobro de tasas automatizado"
-      ]
-    },
-    "smart-waitlist-cancellation-filler": {
-      "title": "Lista de espera y relleno por cancelaciones",
-      "description": "Aprovecha cancelaciones o huecos libres para contactar automáticamente a la lista de espera o clientes recientes y llenar esos espacios.",
-      "metrics": [
-        "82% huecos rellenados",
-        "+12% ingresos por asiento/hora",
-        "Alcance inmediato a lista de espera"
-      ]
-    },
-    "abandoned-booking-follow-up": {
-      "title": "Seguimiento de reservas abandonadas",
-      "description": "Si alguien inicia pero no termina una reserva o solicitud, este flujo contacta para ayudarle a completarla.",
-      "metrics": [
-        "+22% finalización de checkout",
-        "< 5 min para el seguimiento",
-        "Recordatorios multicanal"
-      ]
-    },
-    "reactivation-recalls": {
-      "title": "Reactivación y recalls",
-      "description": "Recupera clientes inactivos y programa recalls periódicos según tiempo desde la última visita o plan de tratamiento.",
-      "metrics": [
-        "16% tasa de reactivación",
-        "+9% LTV del cliente",
-        "Calendarios de recall automáticos"
-      ]
-    },
-    "review-booster": {
-      "title": "Impulsor de reseñas",
-      "description": "Tras una experiencia positiva, pide una reseña y dirige a los clientes satisfechos a Google/portales mientras gestiona en privado el feedback negativo.",
-      "metrics": [
-        "3x reseñas al mes",
-        "+0.4 en valoración media",
-        "Enrutado inteligente de reseñas"
-      ]
-    },
-    "billing-and-invoice": {
-      "title": "Facturación y cobros",
-      "description": "Automatiza el envío de enlaces de pago, la captura de depósitos y el envío de facturas, integrado con tu sistema de facturación.",
-      "metrics": [
-        "2x pagos más rápidos",
-        "-35% facturas vencidas",
-        "Enlaces de pago seguros"
-      ]
-    },
-    "in-stay-concierge-upsell": {
-      "title": "Conserje en estancia y venta adicional",
-      "description": "Conserje virtual para huéspedes alojados: responde preguntas, gestiona solicitudes y propone ventas adicionales.",
-      "metrics": [
-        "+14% ingresos auxiliares",
-        "30% respuesta más rápida",
-        "Conserje virtual 24/7"
-      ]
-    },
-    "group-event-inquiry-handler": {
-      "title": "Gestor de consultas para grupos y eventos",
-      "description": "Flujo especializado para consultas de grupos y eventos (bodas, conferencias, estancias corporativas), cualificándolas y estructurándolas para ventas.",
-      "metrics": [
-        "2x RFPs cualificados",
-        "-40% tiempo hasta la primera respuesta",
-        "Briefs estructurados para ventas"
-      ]
-    },
-    "portal-lead-qualification-routing": {
-      "title": "Cualificación y enrutado de leads de portales",
-      "description": "Gestiona leads de portales inmobiliarios, los cualifica y los enruta al agente/propiedad adecuados, con visitas agendadas cuando sea posible.",
-      "metrics": [
-        "50% SLA más rápido",
-        "+17% visitas agendadas",
-        "Enrutamiento automático a agentes"
-      ]
-    },
-    "viewing-follow-up-offer-collector": {
-      "title": "Seguimiento de visitas y recogida de ofertas",
-      "description": "Tras una visita a la propiedad, realiza seguimiento para recoger feedback, medir interés y recopilar ofertas o solicitudes.",
-      "metrics": [
-        "28% más ofertas recopiladas",
-        "< 24h para feedback",
-        "Nutre el interés cálido"
-      ]
-    },
-    "tenant-onboarding-docs-collection": {
-      "title": "Onboarding de inquilinos y recogida de documentos",
-      "description": "Orquesta el camino de ‘inquilino aceptado’ a ‘instalado’: documentos, contrato, pagos e instrucciones para la entrega de llaves.",
-      "metrics": [
-        "-50% tiempo administrativo",
-        "95% documentos completados",
-        "Enlaces de pago y firma electrónica"
-      ]
-    },
-    "details": {
-      "common": {
-        "talkToUs": "Habla con nosotros",
-        "readyToGetStarted": "¿Listo para <primary>empezar</primary>?",
-        "whatYouGet": "Lo que <primary>obtienes</primary>",
-        "theProblem": "El problema",
-        "theSolution": "La solución",
-        "coreFeatures": "Funciones clave",
-        "realWorldExamples": "Ejemplos del <accent>mundo real</accent>",
-        "poweredBy": "Impulsado por",
-        "bestFor": "Ideal <primary>para</primary>"
-      },
-      "receptionist-ai": {
-        "name": "Recepcionista IA",
-        "description": "Tu servicio de atención 24/7 con IA",
-        "headline": "No vuelvas a perder una llamada",
-        "subheading": "Tu Recepcionista con IA atiende cada llamada, reserva citas, responde preguntas frecuentes y cualifica leads — 24/7 y en cualquier idioma.",
-        "problem": "El teléfono suena mientras atiendes a clientes. Se acumulan los buzones de voz. Las llamadas acaban en la competencia. Pierdes 40–50% de los leads entrantes simplemente porque nadie atendió.",
-        "solution": "Tu recepcionista con IA atiende cada llamada al instante. Saluda por su nombre, entiende la necesidad, responde FAQs y reserva citas directamente en tu calendario.",
-        "outcomes": {
-          "0": "Captura el 100% de las llamadas entrantes, 24/7",
-          "1": "Reserva citas directamente — sin seguimiento manual",
-          "2": "Responde FAQs en 100+ idiomas",
-          "3": "Cualifica leads antes de que lleguen a tu equipo",
-          "4": "Registra cada conversación para cumplimiento y mejora"
-        },
-        "tools": {
-          "0": "ElevenLabs",
-          "1": "Twilio",
-          "2": "APIs de calendario",
-          "3": "Integración CRM"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Escenario en Peluquería",
-            "scenario": "Cliente llama a un salón a las 15:00. Todo el equipo está ocupado. En vez de buzón, la IA responde: \"¡Hola, Sara! Bienvenida a Bella's Salon. ¿En qué puedo ayudarte hoy?\"",
-            "result": "La clienta reserva para el sábado. La IA confirma y envía recordatorio por SMS. Ingreso recuperado que se habría perdido."
-          },
-          "1": {
-            "title": "Escenario en Restaurante",
-            "scenario": "Grupo de 6 llama en pleno servicio de cena. La IA atiende, comprueba disponibilidad, ofrece mesas y reserva.",
-            "result": "Mesa ocupada. Alta satisfacción. El restaurante nunca deja de atender llamadas."
-          },
-          "2": {
-            "title": "Escenario Inmobiliario",
-            "scenario": "Un lead caliente llama mientras el agente enseña una propiedad. En lugar de ir al buzón, la IA cualifica, responde dudas y agenda la visita.",
-            "result": "La operación avanza de inmediato. Sin demoras. Sin lead perdido. +50% más rápido."
-          },
-          "3": {
-            "title": "Escenario en Clínica",
-            "scenario": "Paciente llama para una cita esa misma semana y sobre cobertura del seguro. La IA responde FAQs y reserva un hueco.",
-            "result": "Paciente agendado al instante, menos interrupciones en recepción."
-          },
-          "4": {
-            "title": "Escenario en Hotel",
-            "scenario": "Huésped llama fuera de horario preguntando por late check‑in y parking. La IA da detalles y añade la nota a la reserva.",
-            "result": "Huésped tranquilo, el equipo descansa, expectativas alineadas."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Reservas de llamadas capturadas"
-          },
-          "1": {
-            "description": "Siempre disponible, nunca se cansa"
-          },
-          "2": {
-            "description": "Idiomas soportados"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Conversación natural",
-            "description": "Suena como una persona real. Entiende el contexto, hace repreguntas y no se siente robótica."
-          },
-          "1": {
-            "title": "Soporte multilingüe",
-            "description": "Detecta o usa el idioma elegido por el cliente. Catalán, valenciano, español, inglés, árabe, mandarín…"
-          },
-          "2": {
-            "title": "Integración directa con calendario",
-            "description": "Consulta disponibilidad en tiempo real y reserva directamente. Compatible con Google, Outlook o tu software."
-          },
-          "3": {
-            "title": "Cualificación inteligente",
-            "description": "Hace las preguntas adecuadas para cualificar. Transfiere al momento los prospectos calientes."
-          },
-          "4": {
-            "title": "Base de conocimientos de FAQs",
-            "description": "Responde preguntas sobre horarios, precios, servicios y políticas sin intervención humana."
-          },
-          "5": {
-            "title": "Gestión fuera de horario",
-            "description": "Puede atender emergencias, guardar mensajes o escalar al personal de guardia según urgencia."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Los clientes sabrán que hablan con una IA?",
-            "answer": "La experiencia es fluida. No hace falta que lo sepan: quedan atendidos, reservados y contentos. La transparencia es opcional."
-          },
-          "1": {
-            "question": "¿Y si el cliente quiere hablar con una persona?",
-            "answer": "Transferencia cálida al instante. La IA comparte todo el contexto con tu equipo. La persona no empieza desde cero."
-          },
-          "2": {
-            "question": "¿Cómo aprende sobre mi negocio?",
-            "answer": "Entrenamos la IA con tu información: horarios, servicios, precios, políticas, equipo, FAQs. La configuración tarda 30 minutos."
-          },
-          "3": {
-            "question": "¿Funciona con mi sistema de telefonía actual?",
-            "answer": "Sí. Integramos con Twilio, VoIP y líneas tradicionales. Las llamadas pasan por la IA y luego hacia ti."
-          },
-          "4": {
-            "question": "¿Qué hay del cumplimiento GDPR o HIPAA?",
-            "answer": "Cumplimiento total. Llamadas cifradas, almacenamiento seguro y acceso solo autorizado. Auditorías periódicas."
-          },
-          "5": {
-            "question": "¿Puedo personalizar lo que dice la IA?",
-            "answer": "Control total. Escribes guiones, defines respuestas y el tono. Entrenamos la IA para sonar como tu negocio."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo la Recepcionista IA puede transformar tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "missed-call-auto-callback": {
-        "name": "Devolución automática de llamadas perdidas",
-        "description": "Recupera llamadas perdidas con devoluciones instantáneas y mensajería inteligente.",
-        "headline": "Convierte llamadas perdidas en reservas",
-        "subheading": "Cuando pierdes una llamada, el flujo devuelve la llamada o envía un mensaje al instante, ayuda al cliente y reserva si procede.",
-        "problem": "Las llamadas perdidas son ingresos perdidos. La mayoría no deja buzón y no vuelve a llamar.",
-        "solution": "Lanza una devolución al instante o un SMS/WhatsApp, identifica la intención, responde dudas y completa la reserva.",
-        "outcomes": {
-          "0": "+30% recuperación de leads",
-          "1": "Seguimiento automático en menos de 60s",
-          "2": "Menos devoluciones manuales",
-          "3": "Protege tu reputación con respuestas rápidas"
-        },
-        "tools": {
-          "0": "Twilio",
-          "1": "API de WhatsApp Business",
-          "2": "APIs de calendario",
-          "3": "CRM"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Llamada perdida en clínica",
-            "scenario": "Clínica pierde una llamada a mediodía. El sistema envía un texto en 20s y ofrece reservar. El paciente confirma un hueco.",
-            "result": "+1 reserva recuperada, sin esfuerzo del personal."
-          },
-          "1": {
-            "title": "Devolución en salón",
-            "scenario": "Peluquería pierde una llamada durante un color; SMS automático ofrece reprogramar con su estilista.",
-            "result": "Cita salvada en 2 minutos."
-          },
-          "2": {
-            "title": "Devolución en restaurante",
-            "scenario": "Llamada perdida en hora de cena; el sistema devuelve la llamada y reserva para 4 a las 21:30.",
-            "result": "Cubre una cancelación y mantiene la mesa ocupada."
-          },
-          "3": {
-            "title": "Recuperación en hotel",
-            "scenario": "Recepción pierde una llamada internacional; respuesta automática en WhatsApp asegura dos noches.",
-            "result": "Reserva directa sin comisiones OTA."
-          },
-          "4": {
-            "title": "Lead inmobiliario recuperado",
-            "scenario": "Agente pierde la llamada de un comprador; el flujo escribe, cualifica presupuesto/plazos y agenda visita.",
-            "result": "Lead caliente retenido y programado."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Incremento de recuperación de leads"
-          },
-          "1": {
-            "description": "Tiempo típico de seguimiento"
-          },
-          "2": {
-            "description": "Mejora de conversión tras el seguimiento"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Disparo instantáneo",
-            "description": "Detecta llamadas perdidas y reacciona al instante."
-          },
-          "1": {
-            "title": "Canal inteligente",
-            "description": "Decide si llamar o escribir según el contexto y preferencias."
-          },
-          "2": {
-            "title": "Auto‑reserva",
-            "description": "Reserva, reprograma o cancela directamente en tu calendario."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Evita devoluciones duplicadas?",
-            "answer": "Sí, desduplica y limita por llamante."
-          },
-          "1": {
-            "question": "¿Y si hay buzón de voz?",
-            "answer": "Puede interpretar el buzón y responder en consecuencia."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo la Devolución automática de llamadas perdidas transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "appointment-reminder": {
-        "name": "Recordatorio de citas",
-        "description": "Recordatorios multicanal con confirmación y reprogramación sencilla.",
-        "headline": "Reduce los no‑shows",
-        "subheading": "Envía recordatorios a tiempo por SMS, WhatsApp, email o voz con confirmación/reprogramación en 1 toque.",
-        "problem": "Los no‑shows cuestan tiempo e ingresos. Los recordatorios manuales son inconsistentes y propensos a errores.",
-        "solution": "Automatiza recordatorios con timing inteligente, confirmación y reprogramación sin fricción en todos los canales.",
-        "outcomes": {
-          "0": "Reduce no‑shows en 30%+",
-          "1": "Mejor uso de la agenda",
-          "2": "Menos llamadas y mensajes manuales"
-        },
-        "tools": {
-          "0": "Twilio",
-          "1": "API de WhatsApp Business",
-          "2": "Email (Sendgrid)"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Recordatorio en salón",
-            "scenario": "SMS 24h y 3h antes de la cita con confirmación en 1 toque.",
-            "result": "32% menos no‑shows."
-          },
-          "1": {
-            "title": "Recordatorio en restaurante",
-            "scenario": "WhatsApp 6h antes de la cena con enlace para modificar/cancelar.",
-            "result": "Menos mesas vacías, turnos más fluidos."
-          },
-          "2": {
-            "title": "Recordatorio en clínica",
-            "scenario": "SMS 48h + 24h con instrucciones previas a la visita.",
-            "result": "Menos no‑shows y pacientes más preparados."
-          },
-          "3": {
-            "title": "Recordatorio de spa en hotel",
-            "scenario": "Recordatorio de reserva de spa 2h antes con añadir al calendario.",
-            "result": "Mayor ocupación de terapeutas de spa."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Reducción de no‑shows"
-          },
-          "1": {
-            "description": "Tasa de entrega"
-          },
-          "2": {
-            "description": "Facilidad de reprogramación"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Timing inteligente",
-            "description": "Envía en el mejor momento según el tipo de cita y el comportamiento."
-          },
-          "1": {
-            "title": "Multicanal",
-            "description": "SMS, WhatsApp, email o voz — lo que mejor funcione para tu cliente."
-          },
-          "2": {
-            "title": "Acciones en 1 toque",
-            "description": "Confirmar o reprogramar en un toque — sin fricción."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Puede escribir con mi tono de marca?",
-            "answer": "Sí, las plantillas son totalmente personalizables y pueden reflejar tu tono."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo el Recordatorio de citas transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "smart-pre-check-in": {
-        "name": "Pre‑check‑in inteligente",
-        "description": "Recoge formularios, preferencias y consentimientos antes de la visita y envía instrucciones personalizadas.",
-        "headline": "Llega preparado",
-        "subheading": "Reduce tiempo en recepción y mejora la experiencia con flujos previos a la visita.",
-        "problem": "Los formularios en papel y la recogida de datos a última hora frenan todo.",
-        "solution": "Envía enlaces seguros para completar formularios, subir documentos y definir preferencias con antelación.",
-        "outcomes": {
-          "0": "70%+ de formularios completados antes de la visita",
-          "1": "Filas de check‑in más cortas",
-          "2": "Mayor satisfacción por llegadas fluidas"
-        },
-        "tools": {
-          "0": "Typeform",
-          "1": "DocuSign",
-          "2": "Subida segura",
-          "3": "CRM"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Admisión en clínica",
-            "scenario": "Admisión médica y consentimientos 24h antes.",
-            "result": "-25% de tiempo en recepción."
-          },
-          "1": {
-            "title": "Pre‑consulta en salón",
-            "scenario": "Formulario recoge historial y fotos de inspiración.",
-            "result": "El estilista llega preparado; mejores resultados."
-          },
-          "2": {
-            "title": "Pre‑pedido en restaurante",
-            "scenario": "Grupo pre‑selecciona menú y restricciones.",
-            "result": "Servicio más ágil y con menos errores."
-          },
-          "3": {
-            "title": "Pre‑llegada en hotel",
-            "scenario": "Huésped sube su ID, elige hora de llegada y preferencias.",
-            "result": "Check‑in más rápido y bienvenida personalizada."
-          },
-          "4": {
-            "title": "Pre‑visita comprador",
-            "scenario": "Recoge prueba de fondos y preferencias antes de visitas.",
-            "result": "La ruta se adapta; mejor encaje."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Formularios completados"
-          },
-          "1": {
-            "description": "Tiempo de recepción reducido"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Lógica condicional",
-            "description": "Muestra las preguntas adecuadas por servicio/huésped."
-          },
-          "1": {
-            "title": "Almacenamiento seguro",
-            "description": "Cifrado en reposo y en tránsito."
-          },
-          "2": {
-            "title": "Generador de instrucciones",
-            "description": "Indica qué llevar/vestir/esperar automáticamente."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿HIPAA/GDPR?",
-            "answer": "Tratamiento conforme con trazabilidad y controles de acceso."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo el Pre‑check‑in inteligente transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "no-show-recovery-fee-capture": {
-        "name": "Recuperación de no‑shows y cobro de tasas",
-        "description": "Recupera ingresos tras no‑shows con seguimientos, reprogramación y cargos según política.",
-        "headline": "Protege tu agenda",
-        "subheading": "Contacto automático tras un no‑show para reprogramar o cobrar cuando aplique.",
-        "problem": "Los huecos vacíos cuestan dinero y son injustos para quien llega a tiempo.",
-        "solution": "Detecta no‑shows, envía seguimientos empáticos, ofrece nuevas horas y aplica tasas/depósitos según política.",
-        "outcomes": {
-          "0": "40% reprograma",
-          "1": "Menos fuga de ingresos",
-          "2": "Políticas aplicadas con consistencia"
-        },
-        "tools": {
-          "0": "Webhooks de calendario",
-          "1": "Pagos",
-          "2": "Email/SMS"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Política de spa",
-            "scenario": "El no‑show activa cobro y opciones de reprogramación.",
-            "result": "-18% fuga de ingresos."
-          },
-          "1": {
-            "title": "Política en restaurante",
-            "scenario": "Cena no presentada activa el depósito por política y enlace para reprogramar.",
-            "result": "Mesas rellenadas; aplicación justa."
-          },
-          "2": {
-            "title": "Política en clínica",
-            "scenario": "Cita perdida pregunta motivo, ofrece reprogramar y aplica tasa cuando corresponda.",
-            "result": "Menos repeticiones; ingresos recuperados."
-          },
-          "3": {
-            "title": "Amenidad de hotel",
-            "scenario": "No‑show en spa/golf cobra tasa y ofrece nuevo horario.",
-            "result": "Ingresos de amenidades protegidos."
-          },
-          "4": {
-            "title": "Visita inmobiliaria",
-            "scenario": "Comprador falta; asistente propone alternativas y reconfirma interés.",
-            "result": "El embudo sigue avanzando."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Fuga de ingresos reducida"
-          },
-          "1": {
-            "description": "Clientes reprogramados"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Motor de políticas",
-            "description": "Tasas porcentuales/fijas con reglas de cortesía."
-          },
-          "1": {
-            "title": "Copys empáticos",
-            "description": "Control de tono y captura de motivo."
-          },
-          "2": {
-            "title": "Enlaces seguros",
-            "description": "Cobro compatible con PCI."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Reclamaciones?",
-            "answer": "Evidencia y aceptación de políticas reducen disputas."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Recuperación de no‑shows y cobro de tasas transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "smart-waitlist-cancellation-filler": {
-        "name": "Lista de espera inteligente y relleno de cancelaciones",
-        "description": "Rellena cancelaciones de última hora contactando a la lista de espera y a clientes recientes.",
-        "headline": "Mantén llena tu agenda",
-        "subheading": "Detecta huecos y los casa con quien más probabilidad tiene de aceptarlos.",
-        "problem": "Aparecen huecos por cancelaciones y el equipo no tiene tiempo de rellenarlos.",
-        "solution": "La IA prioriza la lista, envía ofertas, confirma y actualiza el calendario en tiempo real.",
-        "outcomes": {
-          "0": "82% de huecos rellenados",
-          "1": "+12% ingresos por asiento/hora",
-          "2": "Clientes encantados con fechas antes"
-        },
-        "tools": {
-          "0": "APIs de calendario",
-          "1": "SMS/WhatsApp",
-          "2": "Motor de scoring"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Huecos en dentista",
-            "scenario": "Cancelación por la mañana activa ofertas al top‑10 de la lista.",
-            "result": "Tiempo de sillón protegido."
-          },
-          "1": {
-            "title": "Cancelación en salón",
-            "scenario": "Baja de un estilista se rellena con VIPs primero.",
-            "result": "El día sigue completo."
-          },
-          "2": {
-            "title": "Mesa en restaurante",
-            "scenario": "Cancelación tardía envía ofertas a comensales a 2 km.",
-            "result": "Mesa revendida en minutos."
-          },
-          "3": {
-            "title": "Hueco de spa en hotel",
-            "scenario": "Masaje liberado ofrecido a huéspedes por WhatsApp.",
-            "result": "Sube la ocupación de horas de spa."
-          },
-          "4": {
-            "title": "Turno de open house",
-            "scenario": "Se abre franja de visita; ofertas automáticas a interesados.",
-            "result": "Agenda eficiente y apretada."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Huecos rellenados"
-          },
-          "1": {
-            "description": "Incremento de ingresos/hora"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Scoring por prioridad",
-            "description": "Consultas recientes y VIP primero."
-          },
-          "1": {
-            "title": "Confirmación instantánea",
-            "description": "Aceptar en 1 toque con depósito si hace falta."
-          },
-          "2": {
-            "title": "Controles de equidad",
-            "description": "Limitación para evitar spam."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Cómo se prioriza?",
-            "answer": "Configura reglas por recencia, valor o membresía."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo la Lista de espera inteligente rellena tus cancelaciones. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "abandoned-booking-follow-up": {
-        "name": "Seguimiento de reservas abandonadas",
-        "description": "Recupera reservas iniciadas pero no finalizadas con recordatorios y ayuda a tiempo.",
-        "headline": "Que terminen lo que empezaron",
-        "subheading": "Detecta abandonos y ayuda a terminar en un clic o con una breve conversación.",
-        "problem": "La gente se distrae o se lía y no vuelve a completar la reserva.",
-        "solution": "Contacta en minutos con un enlace a la etapa exacta o con un asistente que lo complete por ellos.",
-        "outcomes": {
-          "0": "+22% de finalización",
-          "1": "Mayor conversión sin descuentos",
-          "2": "Mejoras de UX gracias a motivos capturados"
-        },
-        "tools": {
-          "0": "Email",
-          "1": "SMS",
-          "2": "WhatsApp",
-          "3": "Seguimiento de sesión"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Reserva de mesa",
-            "scenario": "Carrito abandonado en pago; enlace por WhatsApp completa en 2 toques.",
-            "result": "+1 mesa reservada."
-          },
-          "1": {
-            "title": "Abandono en salón",
-            "scenario": "Corte abandonado en selección de fecha; SMS con deep‑link retoma.",
-            "result": "Se elimina fricción; reserva completada."
-          },
-          "2": {
-            "title": "Abandono en clínica",
-            "scenario": "Paciente se detiene en seguro; asistente aclara coberturas.",
-            "result": "Paciente completa con confianza."
-          },
-          "3": {
-            "title": "Abandono en hotel",
-            "scenario": "Huésped deja el checkout; email con presupuesto guardado y perks lo recupera.",
-            "result": "Reserva directa recuperada."
-          },
-          "4": {
-            "title": "Abandono de visita",
-            "scenario": "Comprador se detiene al elegir hora; asistente propone 3 opciones.",
-            "result": "Visita agendada en menos de una hora."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Incremento de finalización"
-          },
-          "1": {
-            "description": "Ventana típica de seguimiento"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Detección de intención",
-            "description": "Entiende dónde y por qué abandonó."
-          },
-          "1": {
-            "title": "Reanudar en 1 clic",
-            "description": "Deep‑links a la etapa exacta."
-          },
-          "2": {
-            "title": "Opción asistente",
-            "description": "Ayuda por chat o voz para finalizar."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Privacidad?",
-            "answer": "Cumplimiento GDPR con consentimiento explícito y opt‑out."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo el Seguimiento de reservas abandonadas transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "reactivation-recalls": {
-        "name": "Reactivación y recalls",
-        "description": "Recupera clientes inactivos y programa recalls automáticos.",
-        "headline": "Recupera clientes perdidos",
-        "subheading": "Segmenta por última visita y cadencia del servicio con mensajes personalizados.",
-        "problem": "Reactivar inactivos es caro, pero vuelven con el empujón adecuado.",
-        "solution": "Automatiza calendarios de recall y campañas personalizadas por el canal preferido.",
-        "outcomes": {
-          "0": "16% de reactivación",
-          "1": "+9% de LTV",
-          "2": "Base estable y ocupación sostenida"
-        },
-        "tools": {
-          "0": "Segmentos del CRM",
-          "1": "Email",
-          "2": "SMS",
-          "3": "WhatsApp"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Recall de higiene",
-            "scenario": "Recall dental a 6 meses activado automáticamente.",
-            "result": "Agenda llena con antelación."
-          },
-          "1": {
-            "title": "Reactivación en salón",
-            "scenario": "Quien no viene hace 12 semanas recibe oferta de actualización de estilo.",
-            "result": "Vuelven clientes inactivos."
-          },
-          "2": {
-            "title": "Reactivación en restaurante",
-            "scenario": "Clientes de la última temporada reciben invitación del chef.",
-            "result": "Se llenan noches valle."
-          },
-          "3": {
-            "title": "Reactivación en hotel",
-            "scenario": "Ex‑huéspedes reciben oferta de upgrade entre semana.",
-            "result": "Mejoran noches shoulder."
-          },
-          "4": {
-            "title": "Reactivación de compradores",
-            "scenario": "Prospectos sin actividad reciben nuevas propiedades afines.",
-            "result": "Se reactivan consultas."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Tasa de reactivación"
-          },
-          "1": {
-            "description": "Incremento de valor de vida"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Auto‑planificación",
-            "description": "Cadencias por servicio y tipo de cliente."
-          },
-          "1": {
-            "title": "Personalización",
-            "description": "Texto y ofertas ajustadas al historial."
-          },
-          "2": {
-            "title": "Mix de canales",
-            "description": "Email/SMS/WhatsApp según preferencia."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Podemos excluir clientes?",
-            "answer": "Sí, filtra por etiquetas, gasto, historial o consentimiento."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Reactivación y recalls transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "review-booster": {
-        "name": "Impulsor de reseñas",
-        "description": "Aumenta reseñas solicitando en el momento justo y dirigiendo a clientes satisfechos a portales públicos.",
-        "headline": "Haz crecer tu reputación",
-        "subheading": "Anima a promotores, gestiona detractores en privado y monitoriza el impacto.",
-        "problem": "Los satisfechos rara vez dejan reseña sin un recordatorio; los insatisfechos siempre lo hacen.",
-        "solution": "Pide reseña tras la visita, filtra por sentimiento/NPS y guía a Google o portales.",
-        "outcomes": {
-          "0": "3x reseñas al mes",
-          "1": "+0,4 de media",
-          "2": "Gestión privada de negativas"
-        },
-        "tools": {
-          "0": "NPS",
-          "1": "Enlace a Google",
-          "2": "Email/SMS"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Tras la cena",
-            "scenario": "CSAT > 4 dispara aviso para Google.",
-            "result": "Las reseñas se triplican en 60 días."
-          },
-          "1": {
-            "title": "Salón",
-            "scenario": "Cliente satisfecho recibe enlace 2h después.",
-            "result": "+0,4★ de media en 8 semanas."
-          },
-          "2": {
-            "title": "Clínica",
-            "scenario": "NPS positivo dirige a portal sanitario adecuado.",
-            "result": "Feedback público más creíble."
-          },
-          "3": {
-            "title": "Hotel",
-            "scenario": "Encuesta al checkout dirige a Google/TripAdvisor.",
-            "result": "Mejor ranking y visibilidad."
-          },
-          "4": {
-            "title": "Visita",
-            "scenario": "Tras la visita, comprador puntúa en privado; satisfechos reciben petición pública para la agencia.",
-            "result": "Mejora reputación de la agencia."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Reseñas por mes"
-          },
-          "1": {
-            "description": "Mejora de valoración media"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Filtro por sentimiento",
-            "description": "Solo pide cuando la experiencia es positiva."
-          },
-          "1": {
-            "title": "Enrutado a portales",
-            "description": "Envía a Google/TripAdvisor/portales del sector."
-          },
-          "2": {
-            "title": "Plantillas de respuesta",
-            "description": "Gestiona negativas en privado con empatía."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Contra las normas?",
-            "answer": "Nunca bloqueamos: pedimos y redirigimos de forma ética."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo el Impulsor de reseñas transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "billing-and-invoice": {
-        "name": "Facturación y cobros",
-        "description": "Automatiza enlaces de pago, depósitos y envío de facturas, integrado con tu facturación.",
-        "headline": "Cobra más rápido",
-        "subheading": "Reduce morosidad y fricción con enlaces seguros y recordatorios.",
-        "problem": "Perseguir pagos consume tiempo y daña la caja.",
-        "solution": "Envía enlaces de pago con tu marca, concilia automáticamente y programa recordatorios amables.",
-        "outcomes": {
-          "0": "2x pagos más rápidos",
-          "1": "-35% morosidad",
-          "2": "Menos conciliación manual"
-        },
-        "tools": {
-          "0": "Stripe",
-          "1": "GoCardless",
-          "2": "Xero/QuickBooks"
-        },
-        "verticals": {
-          "0": {
-            "name": "Peluquería y Belleza"
-          },
-          "1": {
-            "name": "Restaurantes"
-          },
-          "2": {
-            "name": "Clínicas y Salud"
-          },
-          "3": {
-            "name": "Hoteles"
-          },
-          "4": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Depósito",
-            "scenario": "Cobra el depósito al reservar mediante enlace.",
-            "result": "Menos riesgo de no‑show."
-          },
-          "1": {
-            "title": "Factura de salón",
-            "scenario": "Corrección de color requiere depósito al reservar.",
-            "result": "Más compromiso; menos cancelaciones."
-          },
-          "2": {
-            "title": "Grupo en restaurante",
-            "scenario": "Factura previa al evento con pagos parciales.",
-            "result": "Mejor caja antes del servicio."
-          },
-          "3": {
-            "title": "Copago en clínica",
-            "scenario": "Enlace de copago automático la mañana de la cita.",
-            "result": "Salida más rápida; menos cuentas por cobrar."
-          },
-          "4": {
-            "title": "Pre‑autorización hotel",
-            "scenario": "Enlace previo a llegada cobra depósito y T&C.",
-            "result": "Menos disputas; check‑in fluido."
-          },
-          "5": {
-            "title": "Depósito de reserva (Inmobiliaria)",
-            "scenario": "Depósito para solicitud de alquiler.",
-            "result": "Se priorizan candidatos serios."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Velocidad de cobro"
-          },
-          "1": {
-            "description": "Reducción de morosidad"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Conciliación automática",
-            "description": "Sincroniza con contabilidad."
-          },
-          "1": {
-            "title": "Pagos parciales",
-            "description": "Depósitos y cuotas."
-          },
-          "2": {
-            "title": "Recordatorios",
-            "description": "Cadencia inteligente hasta el pago."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Comisiones?",
-            "answer": "Trasladadas o absorbidas; configurable."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Facturación y cobros transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "in-stay-concierge-upsell": {
-        "name": "Conserje en estancia y upsell",
-        "description": "Conserje virtual para huéspedes en estancia: pedidos, dudas y upsells personalizados.",
-        "headline": "Sorprende a cada huésped",
-        "subheading": "Responde al instante y aumenta ingresos auxiliares con ofertas oportunas.",
-        "problem": "Recepción saturada y esperas para peticiones sencillas.",
-        "solution": "Asistente 24/7 gestiona solicitudes, reserva servicios y propone complementos relevantes.",
-        "outcomes": {
-          "0": "+14% ingresos auxiliares",
-          "1": "30% respuestas más rápidas",
-          "2": "Mejores reseñas"
-        },
-        "tools": {
-          "0": "WhatsApp",
-          "1": "Integración PMS",
-          "2": "Motor de reservas",
-          "3": "ElevenLabs"
-        },
-        "verticals": {
-          "0": {
-            "name": "Hoteles"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Late check‑out",
-            "scenario": "Huésped lo pide a la 1am; asistente confirma con tasa.",
-            "result": "Más ingreso por estancia."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Ingresos auxiliares"
-          },
-          "1": {
-            "description": "Respuestas más rápidas"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Enrutado de servicios",
-            "description": "Envía tareas a housekeeping/mantenimiento."
-          },
-          "1": {
-            "title": "Catálogo de upsells",
-            "description": "Spa, restaurantes, upgrades en el momento ideal."
-          },
-          "2": {
-            "title": "Multidioma",
-            "description": "Atiende naturalmente a huéspedes internacionales."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Compatibilidad PMS?",
-            "answer": "Integramos con los principales PMS y vía iCal."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Conserje en estancia y upsell transforma tu hotel. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "group-event-inquiry-handler": {
-        "name": "Gestor de solicitudes de grupos y eventos",
-        "description": "Cualifica y estructura solicitudes de grupo/evento y entrégalas a ventas con todo lo necesario.",
-        "headline": "De la consulta al RFP cualificado",
-        "subheading": "Recoge requisitos, presupuesto y fechas, y enruta rápido al comercial adecuado.",
-        "problem": "Consultas grandes se quedan en la bandeja y pierden ritmo.",
-        "solution": "Q&A guiado recoge detalles, comprueba disponibilidad y agenda llamada o visita.",
-        "outcomes": {
-          "0": "2x RFPs cualificados",
-          "1": "-40% tiempo a primera respuesta",
-          "2": "Entrega sin ida y vuelta"
-        },
-        "tools": {
-          "0": "Formularios web",
-          "1": "Email",
-          "2": "Calendario",
-          "3": "CRM"
-        },
-        "verticals": {
-          "0": {
-            "name": "Restaurantes"
-          },
-          "1": {
-            "name": "Hoteles"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Boda",
-            "scenario": "Recoge asistentes, gasto y fecha; agenda cata.",
-            "result": "Ventas trabaja solo leads cualificados."
-          },
-          "1": {
-            "title": "Grupo corporativo",
-            "scenario": "Solicitud por formulario; asistente confirma opciones y reserva visita al sitio.",
-            "result": "Ventas recibe un briefing completo y cualificado."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "RFPs cualificados"
-          },
-          "1": {
-            "description": "Primera respuesta más rápida"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Chequeo de disponibilidad",
-            "description": "Bloquea tentativas cuando proceda."
-          },
-          "1": {
-            "title": "Kit de propuesta",
-            "description": "Redacta automáticamente un primer borrador."
-          },
-          "2": {
-            "title": "Enrutado",
-            "description": "Asigna al comercial correcto."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Campos a medida?",
-            "answer": "Añade requisitos y adjuntos específicos del lugar."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo el Gestor de solicitudes de grupos y eventos transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "portal-lead-qualification-routing": {
-        "name": "Cualificación y enrutado de leads de portales",
-        "description": "Cualifica leads de portales inmobiliarios, responde FAQs y agenda visitas, asignando al mejor agente.",
-        "headline": "Convierte leads de portales en visitas",
-        "subheading": "Cualificación rápida y enrutado inteligente mejoran SLA y conversión.",
-        "problem": "Agentes ocupados responden tarde; los leads se enfrían o se van a la competencia.",
-        "solution": "Contacto instantáneo verifica presupuesto, timing y necesidades; agenda visitas o nutre hasta que estén listos.",
-        "outcomes": {
-          "0": "50% SLA más rápido",
-          "1": "+17% visitas agendadas",
-          "2": "El agente adecuado siempre"
-        },
-        "tools": {
-          "0": "Email",
-          "1": "SMS",
-          "2": "WhatsApp",
-          "3": "CRM"
-        },
-        "verticals": {
-          "0": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Ping del portal",
-            "scenario": "Lead llega de Idealista; asistente cualifica y reserva sábado 11:00.",
-            "result": "El agente atiende a un comprador informado y caliente."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "SLA más rápido"
-          },
-          "1": {
-            "description": "Más visitas agendadas"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Árbol de cualificación",
-            "description": "Presupuesto, zona, financiación, plazo."
-          },
-          "1": {
-            "title": "Asignación de agente",
-            "description": "Enruta por territorio y carga."
-          },
-          "2": {
-            "title": "Auto‑agenda",
-            "description": "Reserva el primer hueco que encaja para todos."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Varias propiedades?",
-            "answer": "Agrupa opciones y sugiere similares."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Cualificación y enrutado de leads de portales transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "viewing-follow-up-offer-collector": {
-        "name": "Seguimiento tras visita y captación de ofertas",
-        "description": "Tras las visitas, recoge feedback, puntúa interés y capta ofertas o próximos pasos.",
-        "headline": "Aprovecha el momento tras la visita",
-        "subheading": "Seguimientos estructurados mantienen a compradores calientes comprometidos y visibles.",
-        "problem": "Los seguimientos manuales son irregulares y fáciles de olvidar.",
-        "solution": "Envía seguimientos inteligentes con preguntas adecuadas y oferta sencilla.",
-        "outcomes": {
-          "0": "28% más ofertas",
-          "1": "<24h para recibir feedback",
-          "2": "Puntuación de interés clara"
-        },
-        "tools": {
-          "0": "Email",
-          "1": "SMS",
-          "2": "Formularios de oferta",
-          "3": "CRM"
-        },
-        "verticals": {
-          "0": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Interés del comprador",
-            "scenario": "Pregunta 5 claves e invita a ofertar.",
-            "result": "Más claridad en el embudo."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Más ofertas"
-          },
-          "1": {
-            "description": "Tiempo de feedback"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Scorecards",
-            "description": "Puntúa seriedad y encaje automáticamente."
-          },
-          "1": {
-            "title": "Captura de oferta",
-            "description": "Formularios con subida de prueba de fondos."
-          },
-          "2": {
-            "title": "Alertas al agente",
-            "description": "Interés caliente notificado al instante."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Varios asistentes?",
-            "answer": "Seguimientos personalizados a cada participante."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Seguimiento tras visita y captación de ofertas transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      },
-      "tenant-onboarding-docs-collection": {
-        "name": "Onboarding de inquilino y recogida de documentos",
-        "description": "Del inquilino aceptado a la mudanza: documentos, contratos, pagos y entrega de llaves.",
-        "headline": "Entradas sin fricción",
-        "subheading": "Automatiza pasos de onboarding para que nada falte y todos estén informados.",
-        "problem": "El onboarding manual causa demoras, emails repetidos y pérdida de documentos.",
-        "solution": "Un recorrido guiado recoge IDs, firmas, pagos y agenda la entrega de llaves.",
-        "outcomes": {
-          "0": "-50% tiempo administrativo",
-          "1": "95% de documentos completados",
-          "2": "Inquilinos y propietarios más felices"
-        },
-        "tools": {
-          "0": "DocuSign",
-          "1": "Pagos",
-          "2": "Subida de ficheros",
-          "3": "Calendario"
-        },
-        "verticals": {
-          "0": {
-            "name": "Inmobiliarias"
-          }
-        },
-        "examples": {
-          "0": {
-            "title": "Paquete de arrendamiento",
-            "scenario": "Automatiza contrato, depósito y alta de suministros.",
-            "result": "Entrega de llaves a tiempo."
-          }
-        },
-        "metrics": {
-          "0": {
-            "description": "Tiempo administrativo ahorrado"
-          },
-          "1": {
-            "description": "Documentación completada"
-          }
-        },
-        "features": {
-          "0": {
-            "title": "Checklist",
-            "description": "Progreso visible para inquilino y gestor."
-          },
-          "1": {
-            "title": "Firma electrónica",
-            "description": "Firmas legales y almacenamiento."
-          },
-          "2": {
-            "title": "Enlaces de pago",
-            "description": "Cobra depósitos y primera renta."
-          }
-        },
-        "faqs": {
-          "0": {
-            "question": "¿Diferencias por país?",
-            "answer": "Plantillas que se adaptan a requisitos locales."
-          }
-        },
-        "cta": {
-          "subtitle": "Descubre cómo Onboarding de inquilino y documentos transforma tu negocio. Evaluación gratis, sin tarjeta."
-        }
-      }
+      "title": "El <primary>catálogo modular</primary>.",
+      "subtitle": "13 áreas funcionales. Cientos de automatizaciones documentadas. Empezamos por la pieza donde más sangra tu empresa, ampliamos cuando lo demuestra."
     }
   },
   "start": {
     "hero": {
-      "title": "Da el primer paso hacia un <primary>negocio</primary> que <secondary>no se detiene</secondary>",
-      "subtitle": "Te escuchamos, entendemos tu día a día y creamos un sistema que trabaja por ti, incluso cuando tú no puedes hacerlo."
+      "title": "Vamos a <primary>entender tu empresa</primary> antes de proponerte nada.",
+      "subtitle": "30 minutos de conversación contigo. Si encajamos, te decimos exactamente por dónde empezar y cuánto cuesta. Si no, te decimos por qué."
     },
     "steps": {
       "items": {
         "intro": {
-          "title": "Cuéntanos tu historia",
-          "desc": "Cada negocio tiene su ritmo. Queremos entender el tuyo: cómo trabajas, qué te frena y qué te gustaría cambiar."
+          "title": "Cualificamos",
+          "desc": "Una conversación de 30 minutos para entender tu operación: cómo entran los pedidos o las consultas, dónde se atascan, qué cambiarías mañana si pudieras. Si no encajamos, te lo decimos en esta llamada."
         },
         "call": {
-          "title": "Diseñamos tu sistema",
-          "desc": "Automatizamos esas tareas que te hacen perder tiempo—llamadas, citas, mensajes—para que tu día vuelva a girar en torno a lo que realmente importa."
+          "title": "Diseñamos",
+          "desc": "Te enviamos una propuesta concreta: qué módulo entra primero, plazos, coste de setup y de operación recurrente. Sin sorpresas, sin asteriscos. Si quieres, lo revisas con tu socio o tu equipo."
         },
         "launch": {
-          "title": "Empieza a respirar",
-          "desc": "Mientras tú sigues atendiendo a tus clientes, el sistema se encarga del resto. Sin estrés, sin interrupciones, sin dejar de facturar."
+          "title": "Implementamos",
+          "desc": "Implementación en 2-4 semanas para el módulo de entrada. Te acompañamos hasta que el resultado encaja en tu operación. Si en 60 días no aporta valor real, no hay motivo para seguir. Y nosotros tampoco para venderte más."
         }
       }
     },
     "assessment": {
-      "cardTitle": "Agenda tu sesión inicial",
-      "cardSubtitle": "Sin compromiso. Solo una conversación para descubrir cómo tu negocio puede ganar tiempo, orden y tranquilidad.",
+      "cardTitle": "Agenda 30 minutos.",
+      "cardSubtitle": "Sin presentación corporativa, sin demos genéricas. Cuéntanos qué te trae aquí y te hacemos las preguntas que importan.",
       "field": {
-        "vertical": {
-          "label": "Industria del negocio",
-          "placeholder": "Selecciona tu sector (opcional)"
-        },
-        "automation": {
-          "label": "Automatizaciones",
-          "placeholder": "Selecciona automatizaciones (múltiples, opcional)"
-        },
         "name": {
           "label": "Tu nombre",
           "placeholder": "Alex Johnson",
@@ -1666,16 +98,17 @@
           "error": "Por favor, introduce un email válido"
         },
         "goals": {
-          "label": "¿Qué estás buscando?",
-          "placeholder": "Cuéntanos brevemente qué te gustaría conseguir...",
-          "error": "Por favor, cuéntanos tus objetivos"
+          "label": "¿Qué te trae aquí?",
+          "placeholder": "Cuéntanos en una o dos frases qué te gustaría resolver.",
+          "error": "Por favor, cuéntanos qué te gustaría resolver"
         }
       },
       "submit": {
-        "idle": "Reserva tu evaluación gratuita",
+        "idle": "Agendar conversación",
         "loading": "Enviando…"
       },
-      "disclaimer": "Trabajamos con negocios reales que necesitan tiempo para volver a disfrutar de lo que hacen, sin dejar de crecer.",
+      "calendarAlternative": "¿Prefieres ir al grano? Reserva directamente en el calendario.",
+      "disclaimer": "Trabajamos con empresas de 10 a 200 empleados con facturación entre 1 y 50 M€. Si tu empresa está fuera de ese rango, te lo decimos honestamente y te apuntamos hacia opciones que encajen mejor.",
       "success": {
         "title": "¡Gracias! Hemos recibido tu solicitud.",
         "body": "Nuestro equipo se pondrá en contacto contigo en breve para agendar tu llamada gratuita."
@@ -1683,1460 +116,542 @@
       "serverErrorDefault": "Algo salió mal. Inténtalo de nuevo."
     }
   },
-  "useCases": {
-    "hero": {
-      "title": "Descubre cómo la <primary>automatización</primary> puede transformar tu <secondary>negocio</secondary>",
-      "subtitle": "Cuéntanos sobre tu situación actual y nuestra AI identificará los pain points específicos de tu empresa y te mostrará casos de uso personalizados."
-    },
-    "form": {
-      "title": "Genera tu Reporte Personalizado",
-      "subtitle": "Completa el formulario a continuación y nuestra IA analizará tus puntos críticos y generará un reporte personalizado sobre cómo podemos ayudar a tu negocio.",
-      "field": {
-        "companySize": {
-          "label": "Tamaño de la empresa",
-          "placeholder": "Selecciona el tamaño de la empresa",
-          "error": "Por favor, selecciona el tamaño de tu empresa",
-          "options": {
-            "1-10": "1-10 empleados",
-            "11-50": "11-50 empleados",
-            "51-200": "51-200 empleados",
-            "201-500": "201-500 empleados",
-            "500+": "500+ empleados"
-          }
-        },
-        "industry": {
-          "label": "Industria",
-          "placeholder": "Selecciona tu industria",
-          "error": "Por favor, selecciona tu industria",
-          "options": {
-            "retail": "Retail",
-            "education": "Educación",
-            "professionalServices": "Servicios Profesionales",
-            "ecommerce": "E-commerce",
-            "manufacturing": "Manufactura",
-            "technology": "Tecnología",
-            "finance": "Finanzas",
-            "legal": "Legal",
-            "construction": "Construcción",
-            "transportation": "Transporte y Logística",
-            "fitness": "Fitness y Bienestar",
-            "entertainment": "Entretenimiento",
-            "nonProfit": "Sin Fines de Lucro",
-            "other": "Otro"
-          }
-        },
-        "painPoints": {
-          "label": "Cuéntanos sobre tus puntos críticos",
-          "placeholder": "Describe los desafíos que enfrenta tu negocio. Por ejemplo: 'Perdemos muchas llamadas en horas pico', 'Las ausencias están afectando nuestros ingresos', 'Nuestro equipo pasa demasiado tiempo en tareas manuales'...",
-          "error": "Por favor, describe al menos algunos puntos críticos (mínimo 10 caracteres)"
-        }
-      },
-      "submit": {
-        "idle": "Generar Reporte",
-        "generating": "Generando reporte..."
-      },
-      "progress": {
-        "title": "Generando tu Reporte",
-        "description": "Nuestra IA está analizando tu negocio y creando un reporte personalizado de automatización...",
-        "analyzing": {
-          "title": "Analizando tu Negocio",
-          "description": "Identificando pain points y oportunidades de automatización"
-        },
-        "generating": {
-          "title": "Generando Reporte",
-          "description": "Creando tus recomendaciones personalizadas y roadmap"
-        },
-        "completed": {
-          "title": "¡Reporte Listo!",
-          "description": "Tu reporte personalizado ha sido generado exitosamente"
-        },
-        "error": {
-          "title": "Error en la Generación",
-          "description": "Encontramos un problema al generar tu reporte",
-          "message": "Por favor, intenta de nuevo. Si el problema persiste, contacta a nuestro equipo de soporte."
-        }
-      },
-      "serverError": "Algo salió mal. Inténtalo de nuevo."
-    },
-    "report": {
-      "title": "Tu Reporte Personalizado",
-      "subtitle": "Generado para empresas de {industry} con {companySize} empleados el {date}",
-      "loading": "Cargando tu reporte...",
-      "generateAnother": "Generar Otro Reporte",
-      "download": "Descargar Reporte",
-      "compact": {
-        "impact": "Impacto",
-        "problem": "Problema",
-        "solution": "Solución",
-        "revenue": "Ingresos",
-        "cost": "Costo",
-        "customer": "Cliente",
-        "productivity": "Productividad",
-        "affectedAreas": "Áreas Afectadas",
-        "timeSaved": "Tiempo Ahorrado",
-        "revenueIncrease": "Aumento de Ingresos",
-        "costReduction": "Reducción de Costos",
-        "customerSatisfaction": "Satisfacción del Cliente",
-        "expectedMetrics": "Métricas Esperadas",
-        "impactLevels": {
-          "high": "Alto",
-          "medium": "Medio",
-          "low": "Bajo"
-        }
-      },
-      "sections": {
-        "executiveSummary": {
-          "title": "Resumen Ejecutivo",
-          "mainChallenges": "Principales Desafíos",
-          "keyOpportunities": "Oportunidades Clave"
-        },
-        "businessContext": {
-          "title": "Contexto del Negocio",
-          "industry": "Industria",
-          "companySize": "Tamaño de la Empresa"
-        },
-        "painPointsAnalysis": {
-          "title": "Análisis de Puntos Críticos",
-          "priority": "Prioridad",
-          "impactAssessment": "Evaluación de Impacto",
-          "revenue": "Ingresos",
-          "cost": "Costos",
-          "customerSatisfaction": "Satisfacción del Cliente",
-          "productivity": "Productividad",
-          "affectedAreas": "Áreas Afectadas",
-          "priorityInsights": "Insights de Prioridad",
-          "impactLevels": {
-            "high": "Alto",
-            "medium": "Medio",
-            "low": "Bajo"
-          }
-        },
-        "automationRecommendations": {
-          "title": "Recomendaciones de Automatización",
-          "addresses": "Aborda",
-          "expectedBenefits": "Beneficios Esperados",
-          "timeSaved": "Tiempo Ahorrado",
-          "revenueIncrease": "Aumento de Ingresos",
-          "costReduction": "Reducción de Costos",
-          "customerSatisfaction": "Satisfacción del Cliente",
-          "productivity": "Productividad",
-          "implementationDetails": "Detalles de Implementación",
-          "complexity": "Complejidad",
-          "timeline": "Cronograma",
-          "prerequisites": "Prerrequisitos",
-          "expectedMetrics": "Métricas Esperadas",
-          "examples": "Ejemplos",
-          "overallImpact": "Impacto General",
-          "complexityLevels": {
-            "low": "Baja",
-            "medium": "Media",
-            "high": "Alta"
-          }
-        },
-        "expectedImpact": {
-          "title": "Impacto Esperado",
-          "impactProjections": "Proyecciones de Impacto",
-          "threeMonths": "3 Meses",
-          "sixMonths": "6 Meses",
-          "twelveMonths": "12 Meses",
-          "roiAnalysis": "Análisis de ROI"
-        },
-        "implementationRoadmap": {
-          "title": "Hoja de Ruta de Implementación",
-          "recommendations": "Recomendaciones",
-          "expectedOutcomes": "Resultados Esperados",
-          "totalTimeline": "Cronograma Total"
-        },
-        "nextSteps": {
-          "title": "Próximos Pasos",
-          "immediateActions": "Acciones Inmediatas",
-          "gettingStarted": "Comenzar",
-          "step1": {
-            "title": "Programa una Consulta",
-            "description": "Reserva una llamada de consulta gratuita con nuestros expertos en automatización para discutir tus necesidades específicas."
-          },
-          "step2": {
-            "title": "Obtén un Plan Personalizado",
-            "description": "Recibe una hoja de ruta de automatización diseñada específicamente para tu negocio."
-          },
-          "step3": {
-            "title": "Comienza la Implementación",
-            "description": "Inicia tu viaje de automatización con nuestro proceso de implementación guiado."
-          },
-          "cta": {
-            "title": "¿Listo para Transformar tu Negocio?",
-            "description": "Hablemos sobre cómo la automatización puede ayudarte a alcanzar tus objetivos.",
-            "button": "Comenzar"
-          }
-        }
-      }
-    },
-    "showcase": {
-      "title": "Casos de Uso por Área de Negocio",
-      "subtitle": "Descubre cómo la automatización puede transformar diferentes áreas de tu negocio con soluciones específicas.",
-      "areas": {
-        "operations": "Operaciones",
-        "sales": "Ventas",
-        "hr": "Recursos Humanos",
-        "finance": "Finanzas",
-        "customerService": "Atención al Cliente"
-      }
-    },
-    "workflowAutomation": {
-      "title": "Automatización de Workflows",
-      "description": "Conecta automáticamente tus herramientas para eliminar tareas repetitivas y optimizar procesos",
-      "benefit": "Transforma el trabajo manual en flujos automatizados",
-      "metric1": "85% reducción en tareas manuales",
-      "metric2": "40 hrs/semana ahorradas por equipo"
-    },
-    "inventoryManagement": {
-      "title": "Gestión de Inventario",
-      "description": "Seguimiento de stock en tiempo real y pedidos automáticos para prevenir desabastecimientos y exceso de inventario",
-      "benefit": "Siempre con los niveles de inventario correctos",
-      "metric1": "60% reducción en desabastecimientos",
-      "metric2": "35% disminución en costos de almacenamiento"
-    },
-    "shippingLogistics": {
-      "title": "Envíos y Logística",
-      "description": "Seguimiento automatizado, notificaciones y actualizaciones de entrega mantienen a los clientes informados automáticamente",
-      "benefit": "Comunicación proactiva con clientes",
-      "metric1": "70% menos consultas de clientes",
-      "metric2": "50% confirmación de entrega más rápida"
-    },
-    "processOptimization": {
-      "title": "Optimización de Procesos",
-      "description": "Análisis impulsado por IA identifica cuellos de botella y sugiere mejoras de procesos en tiempo real",
-      "benefit": "Mejora operativa continua",
-      "metric1": "45% aumento en rendimiento",
-      "metric2": "30% reducción en tiempo de proceso"
-    },
-    "leadQualification": {
-      "title": "Calificación y Seguimiento de Leads",
-      "description": "Califica, puntúa y nutre leads automáticamente con secuencias de seguimiento personalizadas",
-      "benefit": "Nunca pierdas una oportunidad de venta",
-      "metric1": "3x aumento en leads calificados",
-      "metric2": "60% tiempo de respuesta más rápido"
-    },
-    "salesForecasting": {
-      "title": "Predicción de Ventas",
-      "description": "La IA predice tendencias de ventas y recomienda acciones para cerrar más tratos más rápido",
-      "benefit": "Decisiones de ventas basadas en datos",
-      "metric1": "25% aumento en tasa de cierre",
-      "metric2": "40% mejora en precisión del pronóstico"
-    },
-    "proposalGeneration": {
-      "title": "Generación de Propuestas",
-      "description": "Genera cotizaciones y propuestas personalizadas automáticamente basadas en datos y requisitos del cliente",
-      "benefit": "Propuestas profesionales en minutos",
-      "metric1": "75% reducción en tiempo de propuesta",
-      "metric2": "90% aumento en calidad de propuesta"
-    },
-    "customerRetention": {
-      "title": "Retención de Clientes",
-      "description": "Nutrición post-venta automatizada y detección de abandono para mantener y hacer crecer relaciones con clientes",
-      "benefit": "Maximiza el valor de vida del cliente",
-      "metric1": "42% reducción en tasa de abandono",
-      "metric2": "35% aumento en ingresos por ventas adicionales"
-    },
-    "intelligentRecruitment": {
-      "title": "Reclutamiento Inteligente",
-      "description": "Screening automatizado de candidatos, matching y programación de entrevistas para encontrar el mejor talento más rápido",
-      "benefit": "Contrata talento de primer nivel eficientemente",
-      "metric1": "50% tiempo de contratación más rápido",
-      "metric2": "65% mejora en ajuste del candidato"
-    },
-    "automatedOnboarding": {
-      "title": "Onboarding Automatizado",
-      "description": "Proceso de incorporación digital optimizado con flujos automatizados, recolección de documentos y capacitación",
-      "benefit": "Haz que los nuevos empleados sean productivos más rápido",
-      "metric1": "80% reducción en tiempo de onboarding",
-      "metric2": "92% puntuación de satisfacción de nuevos empleados"
-    },
-    "leaveAttendanceManagement": {
-      "title": "Gestión de Ausencias y Asistencia",
-      "description": "Seguimiento automatizado de vacaciones, días de enfermedad y asistencia con aplicación de políticas y notificaciones",
-      "benefit": "Gestión precisa y conforme de ausencias",
-      "metric1": "85% reducción en errores administrativos",
-      "metric2": "50% aprobaciones de ausencias más rápidas"
-    },
-    "performanceReviews": {
-      "title": "Evaluaciones de Desempeño",
-      "description": "Seguimiento continuo del desempeño con recolección automatizada de feedback y programación de revisiones",
-      "benefit": "Gestión del desempeño basada en datos",
-      "metric1": "55% aumento en engagement de empleados",
-      "metric2": "40% ciclos de feedback más frecuentes"
-    },
-    "automatedInvoicing": {
-      "title": "Facturación Automatizada",
-      "description": "Genera y envía facturas automáticamente, rastrea pagos y envía recordatorios sin intervención manual",
-      "benefit": "Cobra más rápido con menos esfuerzo",
-      "metric1": "95% reducción en facturas tardías",
-      "metric2": "15 días cobro más rápido"
-    },
-    "expenseManagement": {
-      "title": "Gestión de Gastos",
-      "description": "Seguimiento automatizado de gastos, flujos de aprobación y análisis de presupuesto para controlar costos inteligentemente",
-      "benefit": "Visibilidad completa del gasto",
-      "metric1": "32% reducción en gastos innecesarios",
-      "metric2": "70% aprobaciones de gastos más rápidas"
-    },
-    "bankReconciliation": {
-      "title": "Reconciliación Bancaria",
-      "description": "Conciliación automática de transacciones y reconciliación con tu sistema contable en tiempo real",
-      "benefit": "Libros precisos con mínimo esfuerzo",
-      "metric1": "90% reducción en tiempo de reconciliación",
-      "metric2": "99.8% precisión de coincidencia"
-    },
-    "financialReporting": {
-      "title": "Reportes Financieros",
-      "description": "Dashboards en tiempo real y reportes financieros automatizados con insights accionables y alertas",
-      "benefit": "Toma decisiones informadas más rápido",
-      "metric1": "Tiempo real vs. reportes mensuales",
-      "metric2": "75% reducción en tiempo de reportes"
-    },
-    "aiPoweredChatbot": {
-      "title": "Chatbot con IA",
-      "description": "Chatbot inteligente 24/7 que resuelve problemas comunes instantáneamente en múltiples canales",
-      "benefit": "Soporte instantáneo a escala",
-      "metric1": "82% resolución sin intervención humana",
-      "metric2": "Menos de 30 segundos respuesta promedio"
-    },
-    "smartTicketRouting": {
-      "title": "Enrutamiento Inteligente de Tickets",
-      "description": "Priorización y enrutamiento inteligente de tickets asegura que los problemas lleguen al agente correcto inmediatamente",
-      "benefit": "Resolución más rápida para clientes",
-      "metric1": "65% reducción en tiempo de respuesta",
-      "metric2": "40% mejora en resolución en primer contacto"
-    },
-    "sentimentAnalysis": {
-      "title": "Análisis de Sentimiento",
-      "description": "Detecta proactivamente problemas de satisfacción del cliente y activa intervenciones antes de que los problemas escalen",
-      "benefit": "Previene el abandono de clientes",
-      "metric1": "48% aumento en puntuación NPS",
-      "metric2": "60% reducción en escalaciones"
-    },
-    "knowledgeBaseIntegration": {
-      "title": "Integración de Base de Conocimiento",
-      "description": "Respuestas automatizadas usando tu base de conocimiento aseguran entrega consistente y precisa de información",
-      "benefit": "Soporte consistente y útil",
-      "metric1": "75% reducción en escalaciones",
-      "metric2": "85% tasa de autoservicio del cliente"
-    }
-  },
   "home": {
-    "industryDirectAccess": {
-      "title": "Hecho para tu <highlight>sector</highlight>",
-      "subtitle": "Soluciones a medida para negocios de servicios."
-    },
     "impact": {
-      "title": "Conversaciones que generan <highlight>impacto real</highlight>",
-      "subtitle": "Optimizamos cada llamada y cada interacción con IA de voz natural.",
+      "title": "Resultados <highlight>medios</highlight> con clientes en producción.",
+      "subtitle": "Magnitudes observadas en agregado entre los clientes que ya operan con Prozeso. Los casos individuales con atribución concreta llegan en breve, a medida que cerremos los permisos de cada cliente.",
       "items": {
         "billing": {
           "title": "Facturación incremental",
-          "desc": "Recuperación directa de ingresos al atender llamadas y mensajes que antes quedaban sin respuesta, sin contratar más personal.",
-          "quote": "En una red de concesionarios, el sistema recupera clientes desatendidos generando un aumento adicional de facturación."
+          "desc": "Ingresos adicionales medios al recuperar interacciones, leads y reservas que antes quedaban sin atender."
         },
         "roi": {
           "title": "Retorno de la inversión",
-          "desc": "El proyecto se paga solo en semanas gracias a ahorros operativos, automatización de procesos y facturación recuperada.",
-          "quote": "En una cadena de restaurantes, el coste del sistema se compensa solo con las reservas gestionadas fuera del horario comercial."
+          "desc": "Múltiplo medio observado: el coste anual del módulo se recupera varias veces en el mismo periodo."
         },
-        "resources": {
-          "title": "Ahorro de recursos",
-          "desc": "Reducción significativa de la carga operativa gracias a la automatización completa de llamadas, mensajes y reservas.",
-          "quote": "En un grupo de 15 salones, un agente de IA atendió más de 5000 llamadas en un mes, liberando tiempo del equipo."
+        "cost": {
+          "title": "Ahorro de costes",
+          "desc": "Reducción media en costes operativos atribuible a las automatizaciones desplegadas."
+        },
+        "time": {
+          "title": "Ahorro de tiempo",
+          "desc": "Reducción media de horas dedicadas a tareas repetitivas por el equipo."
         }
-      }
+      },
+      "disclaimer": "Magnitudes promedio observadas en los clientes con módulos en producción. No representan media de mercado."
     },
     "partnerships": {
       "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
     },
+    "clients": {
+      "subtitle": "Equipos que ya <primary>confían en Prozeso</primary> para automatizar sus operaciones"
+    },
+    "testimonials": {
+      "title": "Lo que dicen <highlight>nuestros clientes</highlight>",
+      "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
+      "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
+      "automationLabel": "Automatización",
+      "items": {
+        "1": {
+          "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
+          "name": "Pere Coma",
+          "role": "Director General · Albet Clínica Veterinària",
+          "automation": "Recordatorios de citas",
+          "avatar": "/assets/testimonials/albet_vet.png",
+          "web": "https://www.albetclinicaveterinaria.com/"
+        },
+        "2": {
+          "quote": "Desde que implementamos Prozeso en nuestro salón, hemos dejado de perder tiempo al teléfono. Ahora se gestionan más de 20 llamadas al día, incluso fuera del horario, lo que nos ha permitido centrarnos en lo que más nos gusta: atender a cada cliente con todo el tiempo que se merece. Y lo mejor, la lista de espera automática.",
+          "name": "Eva Mayoral",
+          "role": "Owner · Mayoral Studio",
+          "automation": "Recepcionista IA",
+          "avatar": "/assets/testimonials/mayoral.png",
+          "web": "https://evamayoral.com"
+        },
+        "3": {
+          "quote": "Llevamos más de 35 años levantando estructuras, pero la gestión de llamadas y seguimientos nos robaba un tiempo que necesitábamos en obra. Desde que implantamos Prozeso, el equipo de oficina dedica su tiempo a lo que importa: coordinar proyectos, no perseguir llamadas.",
+          "name": "José Antonio González",
+          "role": "Director · Estructuras Albuixech",
+          "automation": "Recepcionista IA",
+          "avatar": "/assets/testimonials/proconsal.webp",
+          "web": "https://estructurasalbuixech.es/"
+        },
+        "4": {
+          "quote": "Gestionamos cientos de consultas de distribuidores y ferreterías cada semana. Con Prozeso, las peticiones de catálogo, disponibilidad de stock y plazos de entrega se resuelven automáticamente. Nuestro equipo comercial ahora se centra en cerrar ventas, no en responder las mismas preguntas.",
+          "name": "Andrés Peralta",
+          "role": "Co-Founder & Director · Altipesa",
+          "automation": "Recepcionista IA B2B",
+          "avatar": "/assets/testimonials/altipesa.png",
+          "web": "https://altipesa.com/"
+        },
+        "5": {
+          "quote": "Nuestra red de distribuidores necesita respuestas rápidas sobre pedidos, plazos y especificaciones técnicas. Desde que activamos Prozeso, el tiempo de respuesta ha bajado drásticamente y la satisfacción de nuestros distribuidores ha subido. Menos fricciones, más ventas.",
+          "name": "Andrés Peralta",
+          "role": "Co-Founder & Director · KTL Escaleras",
+          "automation": "Recepcionista IA B2B",
+          "avatar": "/assets/testimonials/ktl.png",
+          "web": "https://ktl-escaleras.es/"
+        },
+        "6": {
+          "quote": "Si tienes un negocio de servicios y sientes que estás atrapada en lo operativo, habla con Prozeso. Empiezan con una evaluación gratuita, entienden tu negocio y te proponen automatizaciones que se pagan solas en semanas. Para nosotros ha sido un antes y un después. Ahora Novify escala, pero sin perder lo que nos hace únicos: el factor humano.",
+          "name": "Angélica Ortega",
+          "role": "Founder & CEO · Novify",
+          "automation": "Implementación a medida",
+          "avatar": "/assets/testimonials/novify.png",
+          "web": "https://novify.xyz/"
+        },
+        "7": {
+          "quote": "Con Prozeso hemos transformado la logística de Albet: ahora resolvemos incidencias en almacén en tiempo real, reduciendo errores y optimizando cada operación sin fricción.",
+          "name": "Carles Viladecans",
+          "role": "CEO · Albet",
+          "automation": "Gestión de incidencias en almacén",
+          "avatar": "/assets/testimonials/albet.png",
+          "web": "https://www.albet.es/"
+        },
+        "8": {
+          "quote": "En Can Cuinat, gracias a Prozeso hemos conseguido atender nuevos leads y cualificarlos incluso cuando no estamos en la oficina. Esto nos ha permitido no perder oportunidades, responder con rapidez y mantener un flujo constante de contactos interesados en nuestros servicios. Sin duda, una herramienta clave para nuestro crecimiento comercial.",
+          "name": "Ezequiel Garcia",
+          "role": "CEO · Can Cuinat",
+          "automation": "Recepcionista IA + cualificación de leads",
+          "avatar": "/assets/testimonials/can-cuinat.svg",
+          "web": "https://www.cancuinat.com/"
+        },
+        "9": {
+          "quote": "Desde que trabajamos con Prozeso, hemos ordenado toda la gestión de comunicación alrededor de nuestros eventos. Ahora atendemos automáticamente mensajes y solicitudes en todos los canales, incluso fuera de horario, sin saturar al equipo. Esto nos permite centrarnos en la experiencia y escalar eventos con una operativa mucho más eficiente, asegurando mejor gestión de asistentes y mayor ocupación.",
+          "name": "Eric Alvarez",
+          "role": "Owner · Unlocked",
+          "automation": "Recepcionista IA omnicanal",
+          "avatar": "/assets/testimonials/unlocked.png",
+          "web": ""
+        },
+        "10": {
+          "quote": "Con Prozeso, HoHomes ha escalado la captación de leads y automatizado el check-in y check-out de huéspedes, reduciendo fricción operativa y elevando la experiencia del cliente.",
+          "name": "Miquel Sesplugues",
+          "role": "CEO & Founder · HoHomes",
+          "automation": "Reservas + check-in automatizado",
+          "avatar": "/assets/testimonials/hohomes.png",
+          "web": "https://www.hohomes.es/"
+        },
+        "11": {
+          "quote": "Gracias a nuestra colaboración con Prozeso, automatizamos la generación de leads cualificados con seguridad empresarial, velocidad y total trazabilidad.",
+          "name": "Samuel Pablos",
+          "role": "CEO & Founder · iZuuk",
+          "automation": "Prospección IA",
+          "avatar": "/assets/testimonials/izuuk.png",
+          "web": "https://www.linkedin.com/company/izuuk/"
+        }
+      }
+    },
     "automationSuite": {
-      "title": "<highlight>Cada área</highlight> de tu negocio, automatizada",
-      "subtitle": "Sin fricciones. Sin intervención manual. Con resultados medibles.",
+      "title": "Empezamos con una pieza.<br></br>Acabamos siendo la <highlight>columna vertebral</highlight>.",
+      "subtitle": "Entramos por donde el dolor es agudo y el ROI es inmediato. A los 18 meses, tu empresa opera sobre Prozeso.",
       "close": "Cerrar",
-      "problemLabel": "Problema",
-      "solutionLabel": "Solución",
-      "benefitsLabel": "Beneficios clave",
-      "impactLabel": "Impacto esperado",
       "automationCount": "{count} automatizaciones",
       "automationPickCta": "Elige las que mejor se adapten a tus necesidades",
-      "viewAll": "Ver todas las automatizaciones",
+      "viewAll": "Ver el catálogo modular",
       "mobileFilter": "Filtrar",
       "mobileFilterTitle": "Filtrar automatizaciones",
       "searchPlaceholder": "Buscar automatización...",
       "startAssessment": "Comenzar evaluación",
       "learnMore": "Saber más",
+      "stateLabel": "Estado",
+      "stateValues": {
+        "production": "En producción"
+      },
+      "comingSoonLabel": "Disponible",
+      "comingSoonHelper": "Módulo en desarrollo. Las primeras automatizaciones de este módulo se publicarán a partir de la fecha indicada.",
       "areas": {
-        "bookings": {
-          "name": "Reservas",
-          "tagline": "Llena tu agenda. Sin esfuerzo.",
-          "heroMetric": "↑ 40%",
-          "heroMetricLabel": "reservas capturadas",
+        "customerService": {
+          "name": "Atención al Cliente",
+          "shortDescription": "Atiende al cliente con calidad humana 24/7. Bots que resuelven consultas básicas y escalan al equipo cuando importa.",
+          "tagline": "Atención al cliente sin que crezca el equipo de soporte.",
           "automations": {
             "0": {
               "name": "Recepcionista IA",
               "subtitle": "Voice & WhatsApp",
-              "problem": "Las empresas pierden entre un 30% y un 40% de las solicitudes de reserva fuera del horario laboral.",
-              "solution": "Un agente de inteligencia artificial disponible 24/7 gestiona reservas por voz (llamada telefónica) y por WhatsApp. Entiende lenguaje natural, confirma los detalles y registra directamente en el calendario del negocio, sin intervención humana.",
-              "benefits": "Disponibilidad 24/7 · Incorpora fines de semana y festivos · Respuesta en segundos · Multilingüe · Integración con Google Calendar, Calendly y CRM",
-              "impact": "↑ 40% en reservas capturadas fuera de horario"
+              "description": "Atiende llamadas y mensajes 24/7. Cualifica al cliente, agenda, confirma y deriva al equipo cuando hace falta. Funciona en voz y WhatsApp.",
+              "state": "production"
+            }
+          }
+        },
+        "bookings": {
+          "name": "Reservas",
+          "shortDescription": "Reservas, recordatorios y reprogramaciones en automático. Llena la agenda sin que nadie pase tiempo al teléfono.",
+          "tagline": "Llena tu agenda. Sin esfuerzo.",
+          "automations": {
+            "0": {
+              "name": "Recordatorios de citas",
+              "subtitle": "SMS · Email · WhatsApp",
+              "description": "Recordatorios automáticos a través del canal preferido del cliente. Confirmación, reprogramación o cancelación con un click.",
+              "state": "production"
             },
             "1": {
-              "name": "Recordatorio de Citas",
-              "subtitle": "SMS / Email / WhatsApp",
-              "problem": "Las ausencias no justificadas (no-shows) representan una pérdida media del 15-20% de los ingresos en negocios con modelo de citas o reservas.",
-              "solution": "Un sistema de recordatorios multicanal que contacta al cliente 48 horas antes, 24 horas antes y 1 hora antes de la cita. El cliente confirma, cancela o reprograma con un solo clic, sin necesidad de llamar.",
-              "benefits": "Gestión automática de lista de espera · Reducción de hasta el 80% en ausencias no justificadas · Sin intervención manual del equipo de recepción",
-              "impact": "↓ 80% en ausencias no justificadas"
+              "name": "Impulsor de reseñas",
+              "subtitle": "Reputación",
+              "description": "Identifica el momento óptimo de cada cliente y le pide una reseña por el canal donde es más probable que responda. Reduce fricción y multiplica reseñas positivas en Google y similares.",
+              "state": "production"
             },
             "2": {
-              "name": "Impulsor de Reseñas",
-              "subtitle": "Reputación Online",
-              "problem": "Solo el 5% de los clientes satisfechos deja una reseña espontáneamente, mientras que el 60% de los insatisfechos sí lo hace.",
-              "solution": "Tras cada cita o servicio, el sistema envía automáticamente un mensaje personalizado al cliente. Si la valoración es positiva, lo redirige a Google o Trustpilot. Si es negativa, lo canaliza a un canal interno de feedback para actuar antes de que se publique.",
-              "benefits": "Multiplicación ×5 de reseñas positivas en Google · Detección temprana de insatisfacción · Mejora del posicionamiento SEO local · Impulso de recomendaciones orgánicas",
-              "impact": "× 5 reseñas positivas en Google en 90 días"
+              "name": "Reprogramación inteligente",
+              "subtitle": "Recuperación de huecos",
+              "description": "Cuando un cliente cancela, el sistema rellena el hueco proactivamente: ofrece la cita a clientes en lista de espera o a quien tenga una cita lejana que pueda adelantar. Recupera huecos sin gestión manual.",
+              "state": "production"
+            }
+          }
+        },
+        "customerSuccess": {
+          "name": "Customer Success",
+          "shortDescription": "Onboarding, predicción de bajas y upsell. Mantén y haz crecer la cuenta sin perseguirla.",
+          "tagline": "Automatizaciones que maximizan la retención, el valor del cliente a lo largo del tiempo y la satisfacción, convirtiendo a los clientes en embajadores de la marca.",
+          "automations": {
+            "0": {
+              "name": "Flujo de onboarding de cliente",
+              "subtitle": "Time-to-value",
+              "description": "Guía al cliente nuevo paso a paso desde la firma hasta que está activo y produciendo valor. Reduce el time-to-value y elimina el vacío post-venta que mata la activación.",
+              "state": "production"
+            },
+            "1": {
+              "name": "Predicción y rescate de bajas",
+              "subtitle": "Anti-churn",
+              "description": "Detecta señales de churn antes de que el cliente se vaya y dispara acciones de rescate: intervención CSM, oferta personalizada, reactivación. Anticipa la baja en lugar de reaccionar.",
+              "state": "production"
+            },
+            "2": {
+              "name": "Upsell & cross-sell automático",
+              "subtitle": "Expansión",
+              "description": "Identifica el momento adecuado para ofrecer un módulo o servicio adicional al cliente, y se lo presenta por el canal donde es más receptivo. Convierte expansión en proceso, no en suerte.",
+              "state": "production"
             },
             "3": {
-              "name": "Reprogramación Inteligente",
-              "subtitle": "Calendario Inteligente",
-              "problem": "Cada cancelación supone un hueco de tiempo muerto que no genera ingresos. Rellenarlos a mano es lento y depende de la disponibilidad del equipo.",
-              "solution": "Cuando se detecta una cancelación, el sistema notifica automáticamente a los clientes en lista de espera en tiempo real. Si nadie lo ocupa, lo rellena con tareas internas priorizadas.",
-              "benefits": "Recuperación del 70-80% de los huecos cancelados · Experiencia prioritaria para clientes en lista de espera · Sin intervención manual · Integración con cualquier sistema de calendario",
-              "impact": "↑ 75% de recuperación de huecos cancelados"
+              "name": "NPS y ciclo de feedback",
+              "subtitle": "Voz del cliente",
+              "description": "Encuesta NPS automatizada en los momentos clave del ciclo de cliente, con clasificación de respuestas y disparador de acciones: rescate, upsell, caso de éxito.",
+              "state": "production"
             }
           }
         },
         "sales": {
           "name": "Ventas",
+          "shortDescription": "Prospección, scoring y seguimiento. El equipo dedica el tiempo a cerrar, no a perseguir.",
           "tagline": "Automatizaciones que potencian el equipo comercial, desde la prospección hasta el cierre, eliminando tareas repetitivas y acelerando el ciclo de venta.",
-          "heroMetric": "× 10",
-          "heroMetricLabel": "volumen de prospección",
           "automations": {
             "0": {
               "name": "Prospección IA",
-              "subtitle": "Prospección",
-              "problem": "La prospección manual en LinkedIn, email y teléfono consume el 40% del tiempo comercial con resultados inconsistentes.",
-              "solution": "Sistema de prospección automática que identifica leads según tu perfil de cliente ideal, genera mensajes personalizados con IA y lanza secuencias multicanal. Cada respuesta activa el CRM automáticamente.",
-              "benefits": "Capacidad de contactar 10x más prospectos en el mismo tiempo · Personalización a escala sin sacrificar calidad del mensaje · A/B testing automático en secuencias y mensajes",
-              "impact": "× 10 volumen de prospección sin aumentar equipo"
+              "subtitle": "Outbound",
+              "description": "Identifica empresas que coinciden con tu ICP, encuentra al decisor correcto y lanza el primer contacto por el canal adecuado. Multiplica el volumen de prospección sin escalar el equipo comercial.",
+              "state": "production"
             },
             "1": {
-              "name": "Puntuación de Leads",
-              "subtitle": "CRM",
-              "problem": "Los comerciales pierden tiempo con leads fríos mientras los leads calientes no reciben atención inmediata, reduciendo la tasa de conversión.",
-              "solution": "Motor de puntuación automática que analiza el comportamiento del lead (páginas visitadas, emails abiertos, descargas) y lo puntúa en tiempo real. Alerta automática al comercial cuando un lead supera el umbral de cierre para que contacte en el momento de mayor receptividad.",
-              "benefits": "El equipo comercial trabaja solo con leads listos para comprar · Priorización completamente objetiva del pipeline · Reducción del ciclo de venta al actuar en los momentos clave",
-              "impact": "↑ 35% tasa de conversión de leads a cierre"
+              "name": "Puntuación de leads",
+              "subtitle": "Lead scoring",
+              "description": "Puntúa cada lead entrante según probabilidad real de cierre, basándose en señales de comportamiento, perfil y contexto. Tu equipo comercial trabaja primero los leads que más convierten.",
+              "state": "production"
             },
             "2": {
-              "name": "Bot de Seguimiento",
-              "subtitle": "Seguimiento",
-              "problem": "El 80% de las ventas requieren entre 5 y 12 seguimientos. La mayoría de los comerciales abandonan tras 1-2 intentos.",
-              "solution": "Sistema de seguimiento inteligente que detecta leads silenciosos en el CRM y lanza secuencias de reactivación personalizadas por email, WhatsApp o LinkedIn, adaptándose al contexto de la conversación anterior de cada lead.",
-              "benefits": "Ningún lead se pierde por falta de seguimiento · Mensajes contextuales que retoman la conversación · Desenganche automático tras N intentos sin respuesta",
-              "impact": "↑ 25% recuperación de leads inactivos"
+              "name": "Bot de seguimiento",
+              "subtitle": "Follow-up automático",
+              "description": "Automatiza el follow-up con leads inactivos hasta que responden o piden parar. Recupera oportunidades que se enfriaron por falta de tiempo del comercial, no por falta de interés.",
+              "state": "production"
             },
             "3": {
-              "name": "Propuesta Automática",
-              "subtitle": "Cierre",
-              "problem": "La elaboración comercial personalizada puede llevar entre 2 y 4 horas por cliente, retrasando el cierre y la percepción de agilidad.",
-              "solution": "Con un clic desde el CRM, el sistema extrae los datos del cliente, el servicio de interés, y el contexto de la conversación para generar una propuesta en PDF profesional, personalizada con el contexto del negocio del cliente.",
-              "benefits": "Reducción del tiempo de propuesta de horas a minutos · Consistencia visual y de mensaje en todas las propuestas · Envío automático con tracking de apertura y lectura",
-              "impact": "↓ 90% tiempo de elaboración de propuestas"
-            }
-          }
-        },
-        "finance": {
-          "name": "Finanzas",
-          "tagline": "Automatizaciones que eliminan la carga administrativa financiera, garantizan el cobro puntual y ofrecen visibilidad total sobre la salud económica de la empresa.",
-          "heroMetric": "↓ 40%",
-          "heroMetricLabel": "facturas con retraso",
-          "automations": {
-            "0": {
-              "name": "Facturación Automática",
-              "subtitle": "Contabilidad",
-              "problem": "La facturación manual es lenta, propensa a errores y genera retrasos en el cobro con impacto directo en el cash flow.",
-              "solution": "Al completarse un servicio, aprobarse un hito de proyecto o confirmarse una entrega, el sistema genera la factura, la envía al cliente, la registra en contabilidad y actualiza el estado del cobro en tiempo real.",
-              "benefits": "Facturación instantánea sin intervención humana · Sincronización automática con tu software contable (Holded, QuickBooks, Xero, etc.) · Eliminación total de errores manuales en datos fiscales",
-              "impact": "↓ 10 días en el ciclo medio de cobro"
-            },
-            "1": {
-              "name": "Cobros & Recordatorios",
-              "subtitle": "Cash Flow",
-              "problem": "El 30% de las facturas se pagan tarde por simple olvido del cliente. Perseguir cobros manualmente es incómodo y consume horas del equipo financiero.",
-              "solution": "Secuencia escalonada de recordatorios automáticos que se adapta al estado de cada factura: amigable, formal y urgente. Si no hay respuesta, escala al responsable financiero con todo el contexto.",
-              "benefits": "Eliminación del DSO (Days Sales Outstanding) en un 40% · Sin conversaciones incómodas con clientes · Dashboard de facturas pendientes en tiempo real con previsión de tesorería",
-              "impact": "↓ 40% en facturas pagadas con retraso"
-            },
-            "2": {
-              "name": "Conciliación Bancaria",
-              "subtitle": "Control Financiero",
-              "problem": "La conciliación bancaria manual puede llevar días al mes y es una de las tareas con mayor riesgo de error en el ciclo contable.",
-              "solution": "Conexión en tiempo real entre tu cuenta bancaria y tu software contable. El sistema cruza automáticamente cada movimiento con facturas emitidas y recibidas, identifica discrepancias y alerta ante movimientos no reconocidos.",
-              "benefits": "Conciliación en tiempo real, no a final de mes · Detección automática de discrepancias y movimientos sospechosos · Libros contables siempre actualizados sin intervención manual",
-              "impact": "↓ 70% tiempo de cierre contable mensual"
-            },
-            "3": {
-              "name": "Alertas de Presupuesto",
-              "subtitle": "Presupuesto",
-              "problem": "Los departamentos superan sus presupuestos sin saberlo hasta el cierre mensual, cuando ya no hay margen de reacción.",
-              "solution": "Sistema de monitorización del gasto en tiempo real que alerta al 70%, 85% y 100% de su presupuesto al responsable del departamento y al CFO, con desglose detallado y proyección de fin de mes.",
-              "benefits": "Visibilidad total del gasto en tiempo real · Capacidad de reacción antes de superar el presupuesto · Cultura de responsabilidad financiera en toda la organización",
-              "impact": "↑ 95% de meses dentro del presupuesto planificado"
+              "name": "Propuesta automática",
+              "subtitle": "Quote builder",
+              "description": "Genera propuestas comerciales personalizadas a partir de los datos del prospect y el catálogo de servicios. El comercial revisa y envía. Reduce drásticamente el tiempo de elaboración.",
+              "state": "production"
             }
           }
         },
         "marketing": {
           "name": "Marketing",
+          "shortDescription": "Contenido, email y social que escalan sin que el equipo se multiplique.",
           "tagline": "Automatizaciones que multiplican el alcance y el impacto del equipo de marketing sin aumentar los recursos, desde la creación de contenido hasta la gestión de campañas multicanal.",
-          "heroMetric": "× 10",
-          "heroMetricLabel": "volumen de contenido",
           "automations": {
             "0": {
-              "name": "Fábrica de Contenido IA",
-              "subtitle": "Contenido",
-              "problem": "Crear contenido de calidad para blog, redes sociales y newsletters consume entre 15 y 25 horas semanales del equipo de marketing.",
-              "solution": "Pipeline automatizado que, a partir de un tema o keyword, genera artículos SEO, los adapta a LinkedIn, Instagram y Twitter, crea el asunto y cuerpo de la newsletter y programa la publicación en los horarios de mayor engagement.",
-              "benefits": "Producción de contenido 10x sin aumentar el equipo · Consistencia de voz y tono en todos los canales · Optimización SEO automática en cada pieza de contenido",
-              "impact": "× 10 volumen de contenido publicado"
+              "name": "Fábrica de contenido IA",
+              "subtitle": "Multi-canal",
+              "description": "Genera, programa y publica contenido en los canales relevantes a partir de un brief o un calendario editorial. Multiplica volumen sin perder consistencia de marca.",
+              "state": "production"
             },
             "1": {
-              "name": "Email Marketing Automático",
-              "subtitle": "Email",
-              "problem": "Las campañas de email genéricas tienen tasas de apertura del 15-20%. La personalización manual a escala es imposible.",
-              "solution": "Sistema de email marketing con segmentación dinámica y personalización por IA. Cada suscriptor recibe contenido adaptado a su comportamiento. Secuencias automatizadas activadas por acciones del usuario.",
-              "benefits": "Aumento de la tasa de apertura del 15% al 35-40% · Nurturing automático 24/7 sin intervención · A/B testing continuo en asuntos, contenido y horarios",
-              "impact": "↑ 120% en ingresos atribuidos a email"
+              "name": "Email marketing automático",
+              "subtitle": "Lifecycle",
+              "description": "Secuencias de email triggered por comportamiento del usuario (visita, compra, abandono, etc.). Segmentación, personalización y A/B testing automatizados.",
+              "state": "production"
             },
             "2": {
-              "name": "Escucha Social y Respuesta",
-              "subtitle": "Comunidad",
-              "problem": "El 53% de los clientes espera respuesta en redes sociales en menos de 1 hora. Monitorizar y responder manualmente es insostenible a escala.",
-              "solution": "Monitorización automática continua de menciones, comentarios y mensajes directos en todas las redes. La IA clasifica por sentimiento y prioridad, responde preguntas frecuentes automáticamente y escala al social & community manager solo lo que requiere atención humana.",
-              "benefits": "Tiempo de respuesta reducido de horas a minutos · Detección temprana de crisis de reputación · Dashboard de sentimiento en tiempo real",
-              "impact": "↓ 85% tiempo de gestión de comunidad"
+              "name": "Escucha social y respuesta",
+              "subtitle": "Community",
+              "description": "Monitoriza menciones de tu marca y conversaciones relevantes en redes sociales, y responde o escala según reglas. Gestiona comunidad sin tener un community manager dedicado.",
+              "state": "production"
             },
             "3": {
-              "name": "Medidor de ROI de Campañas",
-              "subtitle": "Analytics",
-              "problem": "Medir el ROI real de cada campaña requiere cruzar datos de múltiples plataformas manualmente. La mayoría de equipos no sabe qué campañas son rentables.",
-              "solution": "Dashboard centralizado que agrega automáticamente datos de Google Ads, Meta, LinkedIn, email y orgánico en tiempo real. Calcula coste por lead, CPA y ROAS por canal. Genera alertas cuando una campaña cae por debajo del umbral de rentabilidad.",
-              "benefits": "Visión 360 del rendimiento de marketing en un solo lugar · Alertas automáticas ante caídas de rendimiento · Reportes semanales generados y enviados sin intervención",
-              "impact": "↑ 30% eficiencia del presupuesto de marketing"
+              "name": "Medidor de ROI de campañas",
+              "subtitle": "Atribución",
+              "description": "Atribuye conversiones a las campañas que las generaron en cada canal y cada paso del funnel. Optimiza presupuesto sobre datos reales, no sobre intuición.",
+              "state": "production"
             }
           }
         },
-        "customerSuccess": {
-          "name": "Servicio al Cliente",
-          "tagline": "Automatizaciones que maximizan la retención, el valor del cliente a lo largo del tiempo y la satisfacción, convirtiendo a los clientes en embajadores de la marca.",
-          "heroMetric": "↓ 50%",
-          "heroMetricLabel": "churn temprano",
-          "automations": {
-            "0": {
-              "name": "Flujo de Onboarding de Cliente",
-              "subtitle": "Activación",
-              "problem": "Un onboarding deficiente es la principal causa de churn en los primeros 90 días. El 60% de los clientes que abandonan lo hacen porque no llegaron a utilizar el producto o servicio correctamente.",
-              "solution": "Flujo de onboarding automatizado que guía al nuevo cliente paso a paso desde la contratación: bienvenida personalizada, configuración asistida, formación en hitos clave, check-ins automáticos y asignación de un Customer Success Manager en el momento adecuado.",
-              "benefits": "Reducción del churn en los primeros 90 días en un 50% · Time-to-value acelerado para cada nuevo cliente · Experiencia de onboarding consistente y escalable",
-              "impact": "↓ 50% churn en los primeros 90 días"
-            },
-            "1": {
-              "name": "Predicción y Rescate de Bajas",
-              "subtitle": "Retención",
-              "problem": "Cuando el cliente comunica que se va, ya es demasiado tarde para retenerlo. Las señales de abandono existen semanas antes, pero pasan desapercibidas.",
-              "solution": "Modelo predictivo que analiza señales de alerta temprana: caída en el uso del producto, reducción de interacciones, tickets sin resolver y cambios en el patrón de login. Al superar el umbral de riesgo, activa automáticamente un protocolo de rescate personalizado.",
-              "benefits": "Detección de clientes en riesgo 30-60 días antes del churn · Protocolos del CRM como alerta al equipo de retención",
-              "impact": "↓ 40% tasa de churn anual"
-            },
-            "2": {
-              "name": "Upsell & Cross-sell Automático",
-              "subtitle": "Expansión",
-              "problem": "El 70% del revenue de expansión se pierde porque no se identifica el momento adecuado para ofrecer un plan superior o servicio adicional al cliente.",
-              "solution": "Sistema que monitoriza el comportamiento y los hitos de uso de cada cliente. Cuando alcanza límites de plan, acumula éxito con un servicio o lleva X meses sin ampliar, lanza automáticamente la oferta de expansión más relevante para su perfil.",
-              "benefits": "Oportunidades de expansión identificadas y activadas automáticamente · Oferta personalizada en el momento de mayor receptividad",
-              "impact": "↑ 30% Net Revenue Retention (NRR)"
-            },
-            "3": {
-              "name": "NPS y Ciclo de Feedback",
-              "subtitle": "Satisfacción",
-              "problem": "Las encuestas de satisfacción se hacen una vez al año, cuando los problemas ya se han enquistado. No hay visibilidad real sobre cómo se sienten los clientes ni capacidad de respuesta a tiempo.",
-              "solution": "Medición continua del NPS y satisfacción del cliente en puntos clave del ciclo: tras el onboarding, cada interacción de soporte, renovaciones e hitos de uso. Las respuestas negativas activan una alerta inmediata al CSM. Las positivas solicitan automáticamente un testimonial o referido.",
-              "benefits": "Pulso de satisfacción en tiempo real, no anual · Cierre del loop con cada cliente insatisfecho en 24 horas · Generación automática de testimoniales de clientes promotores · Correlación entre NPS y métricas de retención",
-              "impact": "↑ 25 puntos de NPS en 6 meses"
-            }
-          }
+        "product": {
+          "name": "Producto",
+          "shortDescription": "Feedback, uso y priorización con datos. Decide qué construir con evidencia, no con intuición.",
+          "tagline": "Producto guiado por evidencia, no por la opinión más fuerte de la sala.",
+          "comingSoon": "Q4 2026",
+          "automations": {}
         },
         "operations": {
           "name": "Operaciones",
+          "shortDescription": "Proveedores, entregas, mantenimiento y SLAs. Operación coordinada sin Excel ni WhatsApp.",
           "tagline": "Automatizaciones que optimizan la cadena operativa, la gestión de proveedores y la logística, reduciendo costes y eliminando cuellos de botella en los procesos del día a día.",
-          "heroMetric": "↑ 98%",
-          "heroMetricLabel": "cumplimiento de SLA",
           "automations": {
             "0": {
-              "name": "Gestión de Proveedores",
-              "subtitle": "Compras",
-              "problem": "La gestión manual de proveedores (solicitudes de oferta, comparación, pedidos, seguimiento) genera inconsistencias en condiciones y precios.",
-              "solution": "Flujo automatizado que automatiza el ciclo completo de compras: solicita cotizaciones a proveedores aprobados, compara ofertas automáticamente, genera órdenes de compra con aprobaciones según umbrales definidos y hace seguimiento de entregas y facturas.",
-              "benefits": "Reducción del ciclo de compra en un 50% · Condiciones negociadas aplicadas siempre de forma consistente · Trazabilidad total de cada pedido desde la solicitud hasta la entrega",
-              "impact": "↓ 50% ciclo de compra a proveedor"
+              "name": "Gestión de proveedores",
+              "subtitle": "Ciclo de compra",
+              "description": "Centraliza el ciclo completo con proveedores: solicitud, comparativa, aprobación, orden de compra, recepción. Reduce el ciclo de compra y mejora la trazabilidad.",
+              "state": "production"
             },
             "1": {
-              "name": "Seguimiento de Entregas",
+              "name": "Seguimiento de entregas",
               "subtitle": "Logística",
-              "problem": "El 30% de las incidencias logísticas se detectan cuando el cliente ya se ha quejado. La falta de visibilidad proactiva genera reclamaciones, devoluciones y pérdida de confianza.",
-              "solution": "Sistema de tracking centralizado que agrega en tiempo real el estado de todos los envíos de todos los transportistas en un único dashboard. Detecta retrasos y envíos perdidos, notifica al cliente de forma proactiva y activa el protocolo de incidencia antes de que pregunte.",
-              "benefits": "Visibilidad 360 de todos los envíos en un único dashboard · Comunicación proactiva al cliente ante cualquier incidencia · KPIs automáticos por transportista para negociaciones futuras",
-              "impact": "↓ 60% reclamaciones por incidencias logísticas"
+              "description": "Notificaciones proactivas al cliente sobre el estado de su pedido (preparación, en ruta, entregado, incidencia) sin que tenga que preguntar. Reduce reclamaciones y carga de soporte.",
+              "state": "production"
             },
             "2": {
-              "name": "Mantenimiento Preventivo",
-              "subtitle": "Activos",
-              "problem": "Las averías imprevistas de maquinaria o equipamiento cuestan entre 5 y 10 veces más que el mantenimiento preventivo.",
-              "solution": "Sistema de gestión de mantenimiento que programa automáticamente revisiones preventivas según uso, horas de operación o calendario. Genera órdenes de trabajo, asigna al técnico disponible, registra el historial y alerta cuando un activo se acerca al fin de su vida útil.",
-              "benefits": "Reducción de averías imprevistas en un 70% · Cumplimiento automático de garantías y normativas · Historial completo por activo accesible en un clic",
-              "impact": "↓ 70% averías imprevistas en activos críticos"
+              "name": "Mantenimiento preventivo",
+              "subtitle": "Activos críticos",
+              "description": "Programa intervenciones de mantenimiento sobre activos críticos antes de que fallen, basándose en uso, sensores o calendario. Reduce averías imprevistas y paradas no planificadas.",
+              "state": "production"
             },
             "3": {
-              "name": "SLA y Escalado Automático",
-              "subtitle": "Calidad de Servicio",
-              "problem": "Los incumplimientos de SLA pasan desapercibidos hasta que el cliente reclama, cuando el daño reputacional y económico ya es causado.",
-              "solution": "Sistema de monitorización de SLAs en tiempo real que controla cada ticket o tarea con compromiso de tiempo definido. Cuando una solicitud se acerca al límite sin resolverse, activa recordatorios escalonados y escala automáticamente al nivel superior con todo el contexto.",
-              "benefits": "Cumplimiento de SLA superior al 98% · Escalado automático sin depender de iniciativa humana · Trazabilidad total del estado de cada compromiso activo",
-              "impact": "↑ 98% cumplimiento de SLA"
+              "name": "SLA y escalado automático",
+              "subtitle": "Calidad de servicio",
+              "description": "Monitoriza el cumplimiento de SLAs en tiempo real y escala automáticamente las incidencias que están en riesgo de incumplimiento. Garantiza calidad de servicio sin gestión manual.",
+              "state": "production"
             }
           }
         },
-        "management": {
-          "name": "Management",
-          "tagline": "Automatizaciones que digitalizan y optimizan los procesos internos de gestión de equipos, operaciones y toma de decisiones basada en datos.",
-          "heroMetric": "",
-          "heroMetricLabel": "",
+        "stock": {
+          "name": "Inventario",
+          "shortDescription": "Reposición, alertas, liquidación y previsión de demanda. Inventario que se gestiona casi solo.",
+          "tagline": "Automatizaciones que garantizan la disponibilidad óptima de producto, eliminan el stock muerto y convierten la gestión de inventario en un proceso predictivo y sin fricciones.",
           "automations": {
             "0": {
-              "name": "Fichaje Geolocalizado",
-              "subtitle": "RR.HH. / Compliance",
-              "problem": "El control de presencia manual es susceptible de errores y fraude. Las inspecciones de trabajo exigen registros horarios digitales fiables desde 2019.",
-              "solution": "Un sistema de fichaje automático con validación GPS en tiempo real. El empleado ficha desde su móvil y el sistema verifica ubicación y hora al instante. Genera alertas ante ausencias o anomalías.",
-              "benefits": "Cumplimiento legal 100% de la normativa de registro horario · Detección de fraude en asistencia e irregularidades · Informes automáticos por empleado, sede y periodo · Integración directa con nómina y gestión de turnos",
-              "impact": "100% cumplimiento normativo + 0 fraude de presencia"
+              "name": "Reposición automática",
+              "subtitle": "Inventario",
+              "description": "Calcula el momento óptimo de reposición de cada referencia basándose en consumo, lead time y stock de seguridad. Genera la orden de compra automáticamente cuando se cruza el umbral.",
+              "state": "production"
             },
             "1": {
-              "name": "Asignador de Tareas",
-              "subtitle": "Productividad",
-              "problem": "La asignación manual de tareas consume tiempo de gestión y a menudo no tiene en cuenta la carga real de cada empleado.",
-              "solution": "Un dispatcher inteligente que distribuye tareas al equipo según disponibilidad real, competencias, prioridad y carga de trabajo actual. Detecta cuellos de botella, redistribuye automáticamente y notifica a cada empleado asignado.",
-              "benefits": "Reducción del 60% del tiempo dedicado a la asignación manual · Equilibrio de cargas entre el equipo · Priorización automática y reasignación en caso de bloqueo",
-              "impact": "↓ 60% tiempo de coordinación operativa"
+              "name": "Alertas de stock y anomalías",
+              "subtitle": "Control de inventario",
+              "description": "Detecta variaciones inusuales de stock (consumo anómalo, mermas, errores de conteo) y alerta al responsable antes de que se conviertan en rotura o exceso.",
+              "state": "production"
             },
             "2": {
-              "name": "Informe Automático",
-              "subtitle": "Inteligencia de Negocio",
-              "problem": "Preparar informes de KPIs semanales o mensuales consume entre 2 y 8 horas por informe, según la complejidad del negocio.",
-              "solution": "Un generador automático que reúne datos de todas tus fuentes conectadas (CRM, ERP, Google Analytics, hojas de cálculo, etc.), los cruza y genera un documento final listo para envío automáticamente a los destinatarios configurados.",
-              "benefits": "Informes entregados sin intervención humana · Datos siempre actualizados y consistentes · Formatos personalizables por departamento o directivo",
-              "impact": "↓ 8 horas ahorradas por informe / semana"
+              "name": "Liquidación de stock muerto",
+              "subtitle": "Optimización de margen",
+              "description": "Identifica referencias con baja rotación y dispara acciones de liquidación: descuentos automáticos, ofertas a clientes específicos, transferencia entre almacenes.",
+              "state": "production"
             },
             "3": {
-              "name": "Flujo de Onboarding",
-              "subtitle": "RR.HH.",
-              "problem": "El proceso de incorporación manual de nuevas empleados es inconsistente, lento y genera una experiencia negativa que impacta en la retención y productividad inicial.",
-              "solution": "Flujo de onboarding completamente automatizado que, desde el momento en que se registra la nueva incorporación, envía documentación, asigna equipos, programa formaciones y genera credenciales de acceso.",
-              "benefits": "Reducción del tiempo de onboarding de semanas a días · Experiencia consistente para todos los nuevos empleados · Seguimiento automático de la progresión durante los primeros 90 días",
-              "impact": "↓ 75% tiempo administrativo de incorporación"
+              "name": "Previsión de demanda",
+              "subtitle": "Planificación",
+              "description": "Predice la demanda futura por referencia, canal y periodo, integrando estacionalidad, tendencias y eventos. Permite ajustar compras y reducir capital inmovilizado.",
+              "state": "production"
+            }
+          }
+        },
+        "it": {
+          "name": "IT",
+          "shortDescription": "Accesos, dispositivos y soporte interno. Menos tickets repetitivos, más tiempo para lo importante.",
+          "tagline": "El back-office que evita que IT sea cuello de botella.",
+          "comingSoon": "Q4 2026",
+          "automations": {}
+        },
+        "finance": {
+          "name": "Finanzas",
+          "shortDescription": "Facturación, cobros, conciliación y alertas de presupuesto. Cierre mensual sin sobresaltos.",
+          "tagline": "Automatizaciones que eliminan la carga administrativa financiera, garantizan el cobro puntual y ofrecen visibilidad total sobre la salud económica de la empresa.",
+          "automations": {
+            "0": {
+              "name": "Facturación automática",
+              "subtitle": "Ciclo de cobro",
+              "description": "Generación, envío y seguimiento de facturas integrado con tu ERP, tu CRM y tu banca. Acorta el ciclo medio de cobro al eliminar los pasos manuales entre prestación y factura.",
+              "state": "production"
+            },
+            "1": {
+              "name": "Cobros y recordatorios",
+              "subtitle": "Cash flow",
+              "description": "Secuencia de recordatorios de pago automáticos por email, SMS o WhatsApp, escalando intensidad según días de retraso y perfil del cliente. Mejora cash flow sin tensar la relación.",
+              "state": "production"
+            },
+            "2": {
+              "name": "Conciliación bancaria",
+              "subtitle": "Cierre contable",
+              "description": "Cruza automáticamente los movimientos bancarios con facturas emitidas y recibidas. Lo que coincide se concilia solo; las excepciones quedan listas para que las revise el equipo financiero.",
+              "state": "production"
+            },
+            "3": {
+              "name": "Alertas de presupuesto",
+              "subtitle": "Control financiero",
+              "description": "Monitoriza desviaciones presupuestarias por línea, departamento o proyecto, y alerta cuando se aproxima un umbral. Permite reaccionar antes del cierre del periodo.",
+              "state": "production"
             }
           }
         },
         "hr": {
           "name": "RR.HH. y Recruitment",
+          "shortDescription": "Selección, onboarding, fichaje y offboarding. RR.HH. escala sin crecer al ritmo del headcount.",
           "tagline": "Automatizaciones que aceleran la captación de talento, mejoran la experiencia del candidato y liberan al equipo de RR.HH. de las tareas administrativas repetitivas.",
-          "heroMetric": "",
-          "heroMetricLabel": "",
           "automations": {
             "0": {
-              "name": "Criba Curricular con IA",
+              "name": "Fichaje geolocalizado",
+              "subtitle": "Registro horario",
+              "description": "Registro horario con verificación de ubicación, integrado con la nómina y el cumplimiento normativo. Elimina fraude de presencia y simplifica el cierre de horas mensual.",
+              "state": "production"
+            },
+            "1": {
+              "name": "Asignador de tareas",
+              "subtitle": "Coordinación de equipo",
+              "description": "Distribuye tareas entre el equipo según carga, capacidad y prioridad, y reasigna automáticamente cuando hay cambios. Reduce el tiempo de coordinación operativa diaria.",
+              "state": "production"
+            },
+            "2": {
+              "name": "Informe automático",
+              "subtitle": "Gestión",
+              "description": "Genera y distribuye los informes de gestión recurrentes (semanales, mensuales) sin intervención manual. Cada responsable recibe lo que necesita, en su formato, en su canal.",
+              "state": "production"
+            },
+            "3": {
+              "name": "Flujo de onboarding (empleados)",
+              "subtitle": "Incorporación",
+              "description": "Automatiza la incorporación de nuevos empleados: documentación, accesos, formación inicial, plan de los primeros 90 días. Reduce el tiempo administrativo y mejora la experiencia del empleado.",
+              "state": "production"
+            },
+            "4": {
+              "name": "Criba curricular asistida",
               "subtitle": "Selección",
-              "problem": "Un proceso de selección activo genera entre 50 y 200 CVs. Cribarlos manualmente consume entre 2 y 4 horas por posición y está sujeto a sesgos.",
-              "solution": "Sistema de criba automática que analiza cada CV, lo compara con el perfil de la posición y genera un ranking de candidatos ordenado por relevancia. Filtra por experiencia, habilidades, formación y compatibilidad cultural.",
-              "benefits": "Ahorro de entre 2 y 4 horas de criba por posición · Evaluación objetiva y libre de sesgos inconscientes · Ranking de los mejores 10 candidatos en menos de 24 horas · Filtro de duplicados y perfiles ya vistos en procesos anteriores",
-              "impact": "↓ 60% tiempo de criba por posición"
+              "description": "Clasifica candidatos según criterios definidos por el cliente (experiencia, formación, fit cultural). Acelera la primera fase del proceso de selección sin sustituir el criterio humano final.",
+              "state": "production"
             },
-            "1": {
-              "name": "Candidate Nurturing",
-              "subtitle": "Experiencia del Candidato",
-              "problem": "El 60% de los candidatos abandonan un proceso de selección por falta de comunicación. La marca empleadora se deteriora con cada candidato ignorado.",
-              "solution": "Flujo automatizado que mantiene informado al candidato en cada etapa del proceso: confirmación de recepción, avance entre fases, feedback tras entrevistas y comunicación personalizada de resultado final.",
-              "benefits": "Tasa de abandono del proceso reducida en un 50% · Marca empleadora reforzada con cada proceso · Feedback automático personalizado a cada candidato",
-              "impact": "↓ 50% tasa de finalización del proceso"
+            "5": {
+              "name": "Candidate nurturing",
+              "subtitle": "Experiencia del candidato",
+              "description": "Mantiene a los candidatos en proceso comprometidos entre etapas con comunicaciones automáticas relevantes. Reduce abandono y mejora la experiencia del candidato.",
+              "state": "production"
             },
-            "2": {
-              "name": "Entrevista Pre-screening IA",
+            "6": {
+              "name": "Pre-screening de entrevistas",
               "subtitle": "Evaluación",
-              "problem": "Las entrevistas telefónicas de criba consumen entre 15 y 30 minutos por candidato. Con 50 candidatos por posición, son más de 15 horas de trabajo del equipo.",
-              "solution": "Agente conversacional de IA que realiza la entrevista de pre-screening por voz o chat, valida la disponibilidad, expectativas salariales, motivación y competencias básicas. Genera un informe estructurado por candidato.",
-              "benefits": "Eliminación total de las entrevistas de criba manuales · Informes estandarizados y comparables entre candidatos",
-              "impact": "↓ 90% tiempo dedicado a pre-screening"
+              "description": "Entrevista inicial automatizada por chat o voz con preguntas cualificadoras. El equipo de selección recibe un resumen estructurado de cada candidato antes de invertir tiempo en entrevista presencial.",
+              "state": "production"
             },
-            "3": {
-              "name": "Offboarding Automatizado",
-              "subtitle": "Gestión de Salidas",
-              "problem": "Las salidas de empleados gestionadas de forma reactiva generan riesgos de seguridad, pérdida de conocimiento y problemas legales.",
-              "solution": "Protocolo de offboarding que se activa automáticamente al registrar la baja de un empleado: revocación de accesos, recuperación de equipos, entrevista de salida automatizada, transferencia de conocimiento y checklist de cumplimiento legal.",
-              "benefits": "Cero accesos activos de ex empleados a las 24 horas · Proceso legal y documentalmente respaldado · Captura sistemática de conocimiento antes de la salida · Reducción del riesgo de seguridad post-salida",
-              "impact": "100% compliance en procesos de salida"
+            "7": {
+              "name": "Offboarding automatizado",
+              "subtitle": "Gestión de salidas",
+              "description": "Gestiona el ciclo completo de salida: revocación de accesos, devolución de activos, finiquito, encuesta de salida. Asegura compliance sin que se escape ningún paso.",
+              "state": "production"
             }
           }
         },
-        "stock": {
-          "name": "Stock",
-          "tagline": "Automatizaciones que garantizan la disponibilidad óptima de producto, eliminan el stock muerto y convierten la gestión de inventario en un proceso predictivo y sin fricciones.",
-          "heroMetric": "",
-          "heroMetricLabel": "",
-          "automations": {
-            "0": {
-              "name": "Reposición Automática",
-              "subtitle": "Inventario",
-              "problem": "Las roturas de stock cuestan de media un 4-8% de las ventas anuales. Detectarlas manualmente suele llegar tarde.",
-              "solution": "El sistema monitoriza el nivel de cada producto en tiempo real. Cuando un artículo cae por debajo del umbral definido, genera automáticamente una orden de reposición al proveedor con las cantidades óptimas.",
-              "benefits": "Cero roturas de stock por falta de seguimiento · Pedidos de compra generados automáticamente con las cantidades correctas",
-              "impact": "↓ 90% en roturas de stock evitables"
-            },
-            "1": {
-              "name": "Alertas de Stock y Anomalías",
-              "subtitle": "Control de Inventario",
-              "problem": "Las discrepancias entre el stock físico y el registrado pasan desapercibidas hasta una auditoría o una reclamación de cliente, cuando el daño ya está hecho.",
-              "solution": "Sistema de alertas en tiempo real que detecta automáticamente anomalías en el inventario: diferencias entre stock físico y digital, movimientos inusuales, mermas por encima del umbral normal y caducidades próximas. Notifica al responsable con el contexto completo para actuar de inmediato.",
-              "benefits": "Detección de discrepancias en horas, no en meses · Reducción de pérdidas por robo o errores administrativos · Datos preparados para auditorías y cierres de inventario",
-              "impact": ""
-            },
-            "2": {
-              "name": "Liquidación de Stock Muerto",
-              "subtitle": "Optimización de Margen",
-              "problem": "El producto parado más de 90 días inmoviliza capital y ocupa espacio. La mayoría de las empresas lo detectan tarde y acaban vendiendo a pérdida o directamente desechando.",
-              "solution": "Identificación semanal que identifica productos con baja rotación según antigüedad y tendencia. Antes de que pierdan todo su valor, alerta al equipo comercial para ofrecer descuentos progresivos, bundles o campañas de liquidación.",
-              "benefits": "Identificación proactiva de stock con riesgo de obsolescencia · Recuperación parcial del valor antes de pérdida total",
-              "impact": "↑ 35% recuperación de valor en stock parado"
-            },
-            "3": {
-              "name": "Previsión de Demanda con IA",
-              "subtitle": "Planificación",
-              "problem": "Las previsiones basadas en intuición o en el histórico simple generan sobrestock en unos productos y roturas en otros, penalizando el margen y la satisfacción del cliente.",
-              "solution": "Motor predictivo que analiza el histórico de ventas, la estacionalidad, tendencias de mercado, campañas de marketing planificadas y factores externos para generar automáticamente un plan de compras optimizado.",
-              "benefits": "Menor cuota y menos producto inmovilizado · Plan continuo del modelo con cada ciclo de ventas",
-              "impact": "↓ 30% capital inmovilizado en inventario"
-            }
-          }
-        }
-      }
-    },
-    "coreAutomations": {
-      "title": "Automatizaciones <highlight>clave</highlight>",
-      "subtitle": "Flujos impulsados por IA que trabajan mientras duermes.",
-      "items": {
-        "receptionist": {
-          "title": "Recepcionista con IA",
-          "desc": "Responde llamadas 24/7, agenda citas y atiende preguntas frecuentes en cualquier idioma."
+        "legal": {
+          "name": "Legal",
+          "shortDescription": "Plantillas, revisiones y cumplimiento. Lo legal deja de ser cuello de botella en cada operación.",
+          "tagline": "Legal que acompaña la operación, no la frena.",
+          "comingSoon": "Q4 2026",
+          "automations": {}
         },
-        "reminders": {
-          "title": "Recordatorios inteligentes",
-          "desc": "Recordatorios por SMS/WhatsApp que reprograman automáticamente cuando el cliente necesita flexibilidad."
-        },
-        "callback": {
-          "title": "Devolución de llamada por llamadas perdidas",
-          "desc": "No pierdas otra llamada. La IA devuelve la llamada automáticamente para agendar la cita."
+        "management": {
+          "name": "Management",
+          "shortDescription": "Reportes, OKRs y alertas accionables. Decisiones con datos en lugar de intuición.",
+          "tagline": "Automatizaciones que digitalizan y optimizan los procesos internos de gestión de equipos, operaciones y toma de decisiones basada en datos.",
+          "comingSoon": "Q4 2026",
+          "automations": {}
         }
       },
-      "learnMore": "Más información",
-      "viewAll": "Ver todas las automatizaciones"
+      "groups": {
+        "clientFacing": "Atención al cliente",
+        "revenueGrowth": "Crecimiento",
+        "backendOps": "Operaciones",
+        "corporateSupport": "Soporte corporativo"
+      },
+      "groupDescriptions": {
+        "clientFacing": "Atención, reservas y post-venta. Cada interacción con tu cliente, gestionada sin que se caiga ninguna.",
+        "revenueGrowth": "Ventas, marketing y producto. El motor que abre oportunidades y las convierte en ingreso.",
+        "backendOps": "Operaciones, inventario y sistemas. La capa interna que sostiene el día a día sin pedir atención.",
+        "corporateSupport": "Finanzas, personas, legal y dirección. Las funciones transversales que mantienen la empresa en orden."
+      },
+      "clearFilter": "Limpiar filtro"
     },
     "finalCta": {
-      "title": "¿Listo para <highlight>automatizar</highlight>?",
-      "subtitle": "Empieza tu evaluación gratuita hoy. Descubre exactamente qué automatizaciones transformarán tu negocio.",
-      "cta": "Empezar ahora"
+      "title": "¿Encaja con <highlight>tu empresa</highlight>?",
+      "subtitle": "Una conversación de 30 minutos es suficiente para saber si Prozeso te aporta más de lo que cuesta. Si no encajamos, te lo decimos.",
+      "ctaPrimary": "Hablar con nosotros",
+      "ctaSecondary": "Ver el catálogo modular"
     },
     "understanding": {
-      "title": "De entender a <highlight>automatización inteligente</highlight>",
-      "subtitle": "Cómo convertimos datos en impacto real.",
+      "title": "Tres capas.<br></br><highlight>Una columna vertebral</highlight>.",
+      "subtitle": "No es una herramienta. Es la forma en que tu empresa opera.",
       "items": {
-        "conversations": {
-          "title": "Convierte conversaciones en conocimiento real",
-          "desc": "Analiza llamadas y mensajes para detectar patrones. Entiende qué ocurre y dónde se pierde valor.",
-          "tag": "Análisis"
+        "input": {
+          "tag": "Cómo entra la información",
+          "title": "Capa de entrada",
+          "desc": "Voz, chat, WhatsApp, email, formularios, integraciones. Cualquier evento útil para tu empresa entra por donde el cliente o el equipo ya está. Sin pedirle a nadie que cambie cómo trabaja."
         },
-        "decisions": {
-          "title": "Transforma datos en decisiones accionables",
-          "desc": "Visualiza métricas clave y detecta fugas de tiempo, calidad y dinero. Impulsa eficiencia y rentabilidad.",
-          "tag": "Reportes"
+        "orchestration": {
+          "tag": "Cómo se procesan los procesos",
+          "title": "Capa de orquestación",
+          "desc": "Workflows multi-tenant, lógica de negocio, reglas, integraciones. El núcleo que conecta tu ERP, tu CRM, tus canales y tu equipo. Lo que convierte eventos sueltos en operación coordinada."
         },
-        "automation": {
-          "title": "Escala la eficiencia con IA conversacional",
-          "desc": "Automatiza llamadas, información y reservas para liberar tiempo y aumentar ventas 24/7.",
-          "tag": "Automatización"
-        },
-        "security": {
-          "title": "Cumplimiento RGPD con seguridad empresarial",
-          "desc": "Infraestructura cifrada de extremo a extremo para mantener privada la información de tu negocio y de tus clientes.",
-          "tag": "Seguridad"
+        "intelligence": {
+          "tag": "Qué decide el sistema",
+          "title": "Capa de inteligencia",
+          "desc": "Reportes, alertas, predicciones, optimizaciones. Decisiones, no solo tareas ejecutadas. Lo que justifica que sigas pagándonos al mes 12, no solo al mes 2."
         }
+      },
+      "trust": {
+        "tag": "Confianza operativa",
+        "title": "Tus datos, en tu lado.",
+        "desc": "Infraestructura europea, cifrado en tránsito y en reposo, exportación completa en cualquier momento sin penalización. Cumplimiento RGPD por diseño."
       }
-    }
-  },
-  "verticals": {
-    "page": {
-      "hero": {
-        "button": "Comenzar evaluación"
-      },
-      "automations": {
-        "title": "Automatizaciones para <name></name>",
-        "subtitle": "Los flujos que más impacto generan."
-      },
-      "journey": {
-        "title": "Conoce a <customer></customer>",
-        "subtitle": "Un día en la vida con Prozeso:"
-      },
-      "faqs": {
-        "title": "Preguntas <secondary>frecuentes</secondary>"
-      },
-      "impact": {
-        "title": "Impacto para <name></name>",
-        "subtitle": "Resultados reales de negocios como el tuyo."
-      },
-      "reality": {
-        "leftTitle": "Tu realidad <muted>actual</muted>",
-        "rightTitle": "Con <brand>Prozeso</brand>"
-      },
-      "cta": {
-        "title": "¿Listo para <primary>transformar</primary> tu negocio de <secondary></secondary>?",
-        "subtitle": "Empieza con una evaluación gratuita adaptada a tu sector.",
-        "button": "Comienza tu evaluación gratuita"
-      },
-      "notFound": {
-        "title": "Vertical no encontrada",
-        "subtitle": "No pudimos encontrar una vertical con id \"{id}\".",
-        "back": "Volver a inicio"
-      }
-    },
-    "clinics-and-health": {
-      "name": "Clínicas y Salud",
-      "headline": "<primary>Automatizaciones</primary> para <secondary>Clínicas y Centros de Salud</secondary>",
-      "subheading": "Reduce ausencias, gestiona el ingreso del paciente y coordina la atención con excelencia.",
-      "problems": [
-        {
-          "title": "Llamadas de cita perdidas",
-          "items": [
-            "Los pacientes llaman pero no logran contactar en horario de atención",
-            "Casos urgentes quedan sin respuesta o se derivan a otro lugar",
-            "Sin historial de llamadas = frustración repetida del paciente"
-          ]
-        },
-        {
-          "title": "Altas tasas de no‑show",
-          "items": [
-            "25–40% de no‑show es habitual en salud",
-            "Tiempo clínico y capacidad del personal desperdiciados",
-            "Impacta en facturación y continuidad asistencial"
-          ]
-        },
-        {
-          "title": "Complejidad de cumplimiento",
-          "items": [
-            "La verificación manual del seguro consume tiempo del equipo",
-            "Falta de documentación genera problemas de compliance",
-            "Preguntas repetitivas de pacientes consumen recursos"
-          ]
-        }
-      ],
-      "solution": [
-        {
-          "title": "Recepcionista IA 24/7 con cumplimiento HIPAA",
-          "description": "Tu recepcionista IA atiende llamadas de pacientes con seguridad, verifica seguros y agenda citas manteniendo estricta privacidad."
-        },
-        {
-          "title": "Ingreso previo a la cita automatizado",
-          "description": "Recoge historial médico, seguro y encuestas pre‑visita antes de que el paciente llegue. Reduce el check‑in de 15 a 2 minutos."
-        },
-        {
-          "title": "Prevención inteligente del no‑show",
-          "description": "Recordatorios multicanal con confirmación reducen no‑shows en 35%. La reprogramación automática rellena huecos al instante."
-        }
-      ],
-      "journey": {
-        "customer": "Dr. López",
-        "steps": [
-          {
-            "stage": "3 PM - Llama un paciente",
-            "description": "Paciente nuevo llama para agendar. La IA responde, verifica el seguro en tiempo real y recoge el historial médico."
-          },
-          {
-            "stage": "3:10 PM - Ingreso completo",
-            "description": "Cita agendada para la próxima semana. El paciente recibe un enlace seguro para completar formularios en casa."
-          },
-          {
-            "stage": "Día anterior - Recordatorio",
-            "description": "La IA envía recordatorio. El paciente preconfirma y completa una breve encuesta de salud de forma digital."
-          },
-          {
-            "stage": "Día de la cita - Sin espera",
-            "description": "El paciente llega. Check-in en 90 segundos (ingreso ya hecho). El Dr. López tiene todo el contexto antes de entrar."
-          },
-          {
-            "stage": "Después de la visita - Seguimiento",
-            "description": "La IA envía resumen de la visita, instrucciones de medicación y enlace para la próxima cita."
-          },
-          {
-            "stage": "Una semana después - Feedback",
-            "description": "La IA recoge encuesta de satisfacción. Sube el NPS y aumentan las referencias."
-          }
-        ]
-      },
-      "metrics": [
-        {
-          "stat": "35",
-          "suffix": "%",
-          "description": "Reducción de ausencias (no-show)",
-          "quote": "Recordatorios automáticos con confirmación redujeron drásticamente las citas perdidas."
-        },
-        {
-          "stat": "90",
-          "suffix": " mins",
-          "description": "Tiempo administrativo ahorrado al día",
-          "quote": "El equipo, liberado del teléfono, se centra en la atención al paciente."
-        },
-        {
-          "stat": "45",
-          "suffix": "%",
-          "description": "Aumento en la satisfacción del paciente",
-          "quote": "Un proceso de ingreso fluido y seguimiento constante hace que los pacientes se sientan escuchados y bien atendidos."
-        }
-      ],
-      "faqs": [
-        {
-          "question": "¿Cumple con HIPAA y es seguro?",
-          "answer": "Sí. Todos los datos están cifrados end‑to‑end. Usamos hosting compatible con HIPAA, registros de auditoría y controles de acceso. Los datos de tu clínica nunca salen de servidores seguros."
-        },
-        {
-          "question": "¿Se integra con nuestro EHR?",
-          "answer": "Sí. Integramos con Epic, Cerner, NextGen, SimplePractice y las principales plataformas EHR. La sincronización en tiempo real mantiene todo actualizado."
-        },
-        {
-          "question": "¿Cómo gestiona llamadas urgentes?",
-          "answer": "La IA deriva de inmediato a la guardia según reglas y palabras clave de urgencia que defines."
-        },
-        {
-          "question": "¿Pueden los pacientes reprogramar por texto o voz?",
-          "answer": "Claro. Pueden escribir \"reprogramar\" y la IA ofrece horarios disponibles. Por voz también funciona."
-        },
-        {
-          "question": "¿Soporta varios idiomas?",
-          "answer": "Sí. Más de 100 idiomas con autodetección o preferencia del paciente. Clave para comunidades diversas."
-        }
-      ]
-    },
-    "hair-and-beauty": {
-      "name": "Peluquería y Belleza",
-      "headline": "<primary>Automatizaciones</primary> para <secondary>Peluquería y Belleza</secondary>",
-      "subheading": "Atiende llamadas, reprograma ausencias, recupera reservas perdidas y mantén las sillas llenas 24/7",
-      "problems": [
-        {
-          "title": "El teléfono no para de sonar",
-          "items": [
-            "Llamadas perdidas en horas punta con estilistas ocupadas",
-            "Clientes cuelgan sin hablar con nadie",
-            "Sin sistema para capturar esos leads: se van a la competencia"
-          ]
-        },
-        {
-          "title": "Los no‑show hunden tus ingresos",
-          "items": [
-            "15–25% de reservas no se presentan",
-            "Huecos vacíos desperdician tiempo y dinero",
-            "Las estilistas quedan paradas mientras se pierde facturación"
-          ]
-        },
-        {
-          "title": "Seguimientos manuales interminables",
-          "items": [
-            "WhatsApp, SMS y emails desperdigados",
-            "Sin recordatorios → los clientes olvidan su cita",
-            "Cancelaciones tardías demasiado cerca del servicio"
-          ]
-        }
-      ],
-      "solution": [
-        {
-          "title": "Recepcionista IA 24/7 que atiende cada llamada",
-          "description": "Recoge llamadas perdidas, responde FAQs y agenda en el idioma del cliente. Se sienten bien atendidos. No pierdes más leads."
-        },
-        {
-          "title": "Recordatorios inteligentes que reducen no‑show",
-          "description": "Envíos por SMS/WhatsApp 24 horas antes. Si llegarán tarde, la IA reprograma automáticamente. Silla llena, cliente contento."
-        },
-        {
-          "title": "Recuperación instantánea de llamadas perdidas",
-          "description": "La IA devuelve las llamadas que no atendiste. Resultado: 45% de esas llamadas acaban en reservas confirmadas."
-        }
-      ],
-      "journey": {
-        "customer": "María",
-        "steps": [
-          {
-            "stage": "9:00 AM - Entra una llamada",
-            "description": "En hora punta todas las estilistas están ocupadas. La recepcionista IA responde, saluda por nombre y comprueba disponibilidad."
-          },
-          {
-            "stage": "9:05 AM - Reserva confirmada",
-            "description": "La IA ofrece 3 horarios. El cliente reserva para mañana a las 14:00. Confirmación por SMS al instante."
-          },
-          {
-            "stage": "Mañana 13:00 - Recordatorio enviado",
-            "description": "SMS: \"Tu cita es mañana a las 14:00. Responde SÍ para confirmar o llama para reprogramar.\""
-          },
-          {
-            "stage": "Mañana 13:30 - Llega tarde",
-            "description": "El cliente escribe. La IA ofrece reprogramar a las 14:20. El cliente confirma. Se avisa a la estilista."
-          },
-          {
-            "stage": "Mañana 14:20 - Llega el cliente",
-            "description": "Se realiza el servicio. La estilista vende un tratamiento adicional. Se reserva la próxima visita."
-          },
-          {
-            "stage": "Mañana 15:30 - Seguimiento",
-            "description": "La IA solicita reseña. El cliente deja 5 estrellas y menciona a la estilista."
-          }
-        ]
-      },
-      "metrics": [
-        {
-          "stat": "45",
-          "suffix": "%",
-          "description": "Reservas recuperadas de llamadas perdidas",
-          "quote": "En una cadena de 15 salones, la IA gestionó más de 5000 llamadas en un mes, liberando al equipo."
-        },
-        {
-          "stat": "32",
-          "suffix": "%",
-          "description": "Caída del no-show en 30 días",
-          "quote": "Los clientes confirman por WhatsApp. Las llegadas tarde se reprograman automáticamente."
-        },
-        {
-          "stat": "18",
-          "suffix": "%",
-          "description": "Incremento medio de ingresos por visita",
-          "quote": "La IA sugiere tratamientos complementarios y agenda seguimientos antes de que el cliente se vaya."
-        }
-      ],
-      "faqs": [
-        {
-          "question": "¿La IA habla catalán o valenciano?",
-          "answer": "¡Sí! Soporta 100+ idiomas incluyendo catalán, valenciano, español, inglés y más. El cliente elige o autodetectamos."
-        },
-        {
-          "question": "¿Funciona con mi software de reservas?",
-          "answer": "Integramos con los principales sistemas: Acuity, Mindbody, Simplybook y más. Si no está, hacemos integración a medida."
-        },
-        {
-          "question": "¿Cómo es el precio para salones?",
-          "answer": "Precio transparente: cuota fija mensual + coste por llamada. Sin letra pequeña. La mayoría paga €150–300/mes según volumen."
-        },
-        {
-          "question": "¿Puedo personalizar lo que dice la IA?",
-          "answer": "Por supuesto. Controlas saludo, preguntas, ofertas y tono. Entrenamos la IA con tu lógica de negocio y políticas."
-        },
-        {
-          "question": "¿Y si hay una petición compleja?",
-          "answer": "Transfiere a humano sin fricción. Tú decides cuándo y cómo. La IA comparte el contexto completo de la conversación."
-        }
-      ]
-    },
-    "hotels": {
-      "name": "Hoteles",
-      "headline": "<primary>Automatizaciones</primary> para <secondary>Hoteles</secondary>",
-      "subheading": "Atención al huésped 24/7, gestión de reservas y upsell, todo automatizado.",
-      "problems": [
-        {
-          "title": "Llamadas de reserva perdidas",
-          "items": [
-            "Llamadas en horas pico de check‑in",
-            "Si no contactan, llaman a la competencia",
-            "Llamadas nocturnas quedan sin atender"
-          ]
-        },
-        {
-          "title": "Alta tasa de no‑show",
-          "items": [
-            "Los no‑show desperdician habitaciones e ingresos",
-            "Cancelaciones tardías difíciles de revender",
-            "Sobreventa genera huéspedes insatisfechos"
-          ]
-        },
-        {
-          "title": "Brechas en el servicio",
-          "items": [
-            "FAQs respondidas manualmente",
-            "Peticiones de room service y concierge se acumulan",
-            "Sin seguimiento = oportunidades de upsell perdidas"
-          ]
-        }
-      ],
-      "solution": [
-        {
-          "title": "Concierge IA 24/7",
-          "description": "Gestiona peticiones de habitación, reservas de restaurantes, recomendaciones y upsells. Servicio premium en cada contacto."
-        },
-        {
-          "title": "Gestión de reservas",
-          "description": "Recordatorios inteligentes reducen no‑show. La IA ofrece late check‑in o cambio de fecha automáticamente."
-        },
-        {
-          "title": "Upselling inteligente",
-          "description": "Recomienda upgrades, experiencias y servicios según perfil e historial del huésped."
-        }
-      ],
-      "journey": {
-        "customer": "Emma",
-        "steps": [
-          {
-            "stage": "10 AM - Llamada de reserva",
-            "description": "Emma llama para reservar una suite. La IA contesta, ofrece tipos de habitación y upgrades. Reserva 3 noches."
-          },
-          {
-            "stage": "Día anterior - Recordatorio",
-            "description": "La IA envía recordatorio de check-in con info de parking, recomendaciones y opción de early check-in."
-          },
-          {
-            "stage": "Llegada - Check-in sin fricciones",
-            "description": "Emma llega. Check-in móvil ya hecho por conversación con la IA. Llave lista. La IA sugiere spa."
-          },
-          {
-            "stage": "Durante la estancia - Concierge",
-            "description": "Emma pide por chat una reserva de restaurante. La IA la realiza al instante y gestiona el transporte."
-          },
-          {
-            "stage": "Check-out - Oferta de upgrade",
-            "description": "La IA ofrece 20% de descuento si reserva regreso este mes. Emma confirma para el próximo mes."
-          },
-          {
-            "stage": "Post-estancia - Fidelización",
-            "description": "La IA envía encuesta y recoge reseña 5 estrellas. Emma obtiene puntos y acceso anticipado a ofertas."
-          }
-        ]
-      },
-      "metrics": [
-        {
-          "stat": "35",
-          "suffix": "%",
-          "description": "Reservas por ofertas de upsell",
-          "quote": "La IA recomienda upgrades según historial y preferencias del huésped."
-        },
-        {
-          "stat": "28",
-          "suffix": "%",
-          "description": "Reducción de no-show",
-          "quote": "Recordatorios inteligentes y reprogramación flexible mantienen las habitaciones ocupadas."
-        },
-        {
-          "stat": "40",
-          "suffix": "%",
-          "description": "Aumento de satisfacción del huésped",
-          "quote": "Un concierge 24/7 hace que cada huésped se sienta VIP."
-        }
-      ],
-      "faqs": [
-        {
-          "question": "¿La IA gestiona peticiones complejas de concierge?",
-          "answer": "Sí. Integra con OpenTable, TheFork y similares. Reserva restaurantes, entradas, y organiza transporte."
-        },
-        {
-          "question": "¿Funciona con nuestro PMS?",
-          "answer": "Integramos con Opera, Marriott Bonvoy, IDeaS y otros. La sincronización en tiempo real evita sobreventas."
-        },
-        {
-          "question": "¿Cuántos idiomas maneja?",
-          "answer": "Más de 100. Los huéspedes eligen o autodetectamos. Ideal para hoteles internacionales."
-        },
-        {
-          "question": "¿Puede hacer upsell según historial?",
-          "answer": "Claro. Aprende preferencias a lo largo de estancias. Si siempre reservan spa, lo ofrece proactivamente."
-        },
-        {
-          "question": "¿Y emergencias fuera de horario?",
-          "answer": "Escala de inmediato a personal de guardia. En no emergencias, registra y avisa al inicio de turno."
-        }
-      ]
-    },
-    "restaurants": {
-      "name": "Restaurantes",
-      "headline": "<primary>Automatizaciones</primary> para <secondary>Restaurantes</secondary>",
-      "subheading": "No pierdas ninguna reserva. Mesas llenas 24/7 y sin caos manual.",
-      "problems": [
-        {
-          "title": "Llamadas de reserva perdidas",
-          "items": [
-            "El teléfono suena en servicio y no se puede atender",
-            "Los buzones no se responden: el cliente reserva en otro lugar",
-            "Horas punta de cena = pico de llamadas = reservas perdidas"
-          ]
-        },
-        {
-          "title": "No‑shows vacían mesas",
-          "items": [
-            "No‑shows del 20–30% arruinan la rentabilidad",
-            "Mesas reservadas que nunca se ocupan",
-            "Preparación desperdiciada y equipo parado"
-          ]
-        },
-        {
-          "title": "Caos en las reservas",
-          "items": [
-            "Varios sistemas = dobles reservas y huecos",
-            "Errores por entrada manual y mala comunicación",
-            "Clientes descontentos rechazados pese a mesas libres"
-          ]
-        }
-      ],
-      "solution": [
-        {
-          "title": "Anfitrión IA 24/7 que atiende cada llamada",
-          "description": "Ofrece mesas disponibles y reserva directo en tu sistema. Sin llamadas perdidas. Sin entrada manual."
-        },
-        {
-          "title": "Recordatorios reducen no‑shows un 30%",
-          "description": "Recordatorios por SMS/WhatsApp 24 y 2 horas antes. Confirmación o reprogramación. Mesas llenas en cada servicio."
-        },
-        {
-          "title": "Prevención de sobre‑reservas",
-          "description": "Disponibilidad en tiempo real evita dobles reservas. La IA sugiere horarios alternativos con inteligencia."
-        }
-      ],
-      "journey": {
-        "customer": "Carlos",
-        "steps": [
-          {
-            "stage": "18:30 - Llamada entrante",
-            "description": "Cliente llama para el viernes a las 20:00. La línea está ocupada: la IA contesta de inmediato."
-          },
-          {
-            "stage": "18:32 - Reserva confirmada",
-            "description": "La IA confirma grupo (6 personas), preferencia (ventana) y cumpleaños. SMS de confirmación enviado."
-          },
-          {
-            "stage": "Viernes 19:00 - Recordatorio enviado",
-            "description": "WhatsApp: \"Tu mesa para 6 a las 20:00 está lista. Especial: ¡Tarta de cumpleaños!\""
-          },
-          {
-            "stage": "Viernes 19:55 - Confirmación",
-            "description": "La IA envía recordatorio final. El cliente confirma. Cocina recibe aviso 5 minutos antes para el postre especial."
-          },
-          {
-            "stage": "Viernes 20:00 - Llegada",
-            "description": "Mesa preparada. El equipo sabe que es cumpleaños. Trato especial = cliente fiel."
-          },
-          {
-            "stage": "Después de cenar - Seguimiento",
-            "description": "La IA pide reseña y envía 15% de descuento para la próxima visita. El cliente vuelve a reservar."
-          }
-        ]
-      },
-      "metrics": [
-        {
-          "stat": "40",
-          "suffix": "%",
-          "description": "Reservas recuperadas de llamadas perdidas",
-          "quote": "Durante el servicio, la IA gestionó 200+ llamadas que habrían ido al buzón."
-        },
-        {
-          "stat": "30",
-          "suffix": "%",
-          "description": "Reducción de no-show",
-          "quote": "Recordatorios y cobro de depósito eliminaron la mayoría de cancelaciones de última hora."
-        },
-        {
-          "stat": "22",
-          "suffix": "%",
-          "description": "Mejora en rotación de mesas",
-          "quote": "Disponibilidad en tiempo real y asientos optimizados llenaron más mesas cada noche."
-        }
-      ],
-      "faqs": [
-        {
-          "question": "¿Puede la IA hacer upsell de vino o asientos premium?",
-          "answer": "Sí. Entrenamos con tu carta, estrategia de upsell y precios. Sugiere mesas según tamaño del grupo y hora."
-        },
-        {
-          "question": "¿Se integra con OpenTable o Resy?",
-          "answer": "Sí. Sincronizamos con OpenTable, Resy, Toast y otras plataformas. Todo fluye a un calendario unificado."
-        },
-        {
-          "question": "¿Idiomas específicos del restaurante?",
-          "answer": "Más de 100 idiomas soportados, incluidos dialectos. Autodetección o elección del cliente."
-        },
-        {
-          "question": "¿Gestiona alergias o peticiones especiales?",
-          "answer": "Sí. Pregunta por alergias, las registra de forma segura y avisa a cocina. Cliente seguro y atendido."
-        },
-        {
-          "question": "¿Cómo manejan las horas pico?",
-          "answer": "Atiende llamadas concurrentes ilimitadas. En picos, hace cola y devuelve llamadas con prioridad."
-        }
-      ]
-    },
-    "real-estate": {
-      "name": "Inmobiliarias",
-      "headline": "<primary>Automatizaciones</primary> para <secondary>Inmobiliarias</secondary>",
-      "subheading": "No pierdas leads. Automatiza consultas, visitas y seguimiento en todo tu porfolio.",
-      "problems": [
-        {
-          "title": "Llamadas perdidas = operaciones perdidas",
-          "items": [
-            "Los leads llaman cuando estás en otra visita",
-            "Cuando devuelves la llamada ya contactaron a 3 competidores",
-            "Los buzones se acumulan: leads críticos enterrados"
-          ]
-        },
-        {
-          "title": "Gestión manual de consultas",
-          "items": [
-            "Emails, SMS y llamadas repartidas por dispositivos",
-            "Sin sistema unificado de seguimiento = leads que se escapan",
-            "Olvidar detalles de inmuebles hace perder tiempo en cada llamada"
-          ]
-        },
-        {
-          "title": "Caos al coordinar visitas",
-          "items": [
-            "Idas y vueltas para cuadrar horarios",
-            "No‑shows que te hacen perder horas",
-            "Sincronización manual con calendarios = errores"
-          ]
-        }
-      ],
-      "solution": [
-        {
-          "title": "IA atiende leads entrantes 24/7",
-          "description": "Responde cada llamada, cualifica, contesta preguntas y agenda visitas directamente en tu calendario."
-        },
-        {
-          "title": "Coordinación de visitas automatizada",
-          "description": "Los compradores reservan al instante por web o voz. La IA confirma y envía indicaciones automáticamente."
-        },
-        {
-          "title": "Seguimiento automatizado",
-          "description": "Tras la visita, envía fichas, info de financiación y recordatorios. Ningún trato se cae por el camino."
-        }
-      ],
-      "journey": {
-        "customer": "Juan",
-        "steps": [
-          {
-            "stage": "11 AM - Llama un lead",
-            "description": "Juan está en una visita. La IA atiende a un nuevo comprador, cualifica presupuesto y necesidades y propone 3 inmuebles."
-          },
-          {
-            "stage": "11:05 AM - Visita agendada",
-            "description": "El lead elige 2 inmuebles. La IA agenda visitas seguidas y envía invitaciones con indicaciones."
-          },
-          {
-            "stage": "Después de la visita - Seguimiento",
-            "description": "La IA envía fichas, calculadora hipotecaria y recoge el interés por inmueble."
-          },
-          {
-            "stage": "Día siguiente - Nutrición",
-            "description": "La IA hace seguimiento, ofrece inmuebles similares y precalifica financiación."
-          },
-          {
-            "stage": "Oferta",
-            "description": "La IA coordina documentos y plazos y deriva dudas complejas a Juan al momento."
-          },
-          {
-            "stage": "Cierre - Onboarding",
-            "description": "El comprador recibe checklist de mudanza y guía para dar de alta suministros automáticamente."
-          }
-        ]
-      },
-      "metrics": [
-        {
-          "stat": "50",
-          "suffix": "%",
-          "description": "SLA más rápido en leads de portales",
-          "quote": "Los leads se atienden al instante con cualificación y propuestas de visita."
-        },
-        {
-          "stat": "17",
-          "suffix": "%",
-          "description": "Aumento de visitas agendadas",
-          "quote": "El ruteo y la agenda automática mantienen los calendarios llenos sin idas y vueltas."
-        },
-        {
-          "stat": "2x",
-          "suffix": "",
-          "description": "RFPs cualificados para grupos/eventos",
-          "quote": "La toma de requisitos estructurada genera briefs accionables para ventas."
-        }
-      ],
-      "faqs": [
-        {
-          "question": "¿La IA responde preguntas detalladas del inmueble?",
-          "answer": "Sí. Cargamos m2, gastos, historial fiscal, etc. Responde con precisión y agenda visitas."
-        },
-        {
-          "question": "¿Se integra con MLS y CRM?",
-          "answer": "Integramos con Zillow, Trulia, Redfin y CRMs como Salesforce o Follow Up Boss. Los listings quedan sincronizados."
-        },
-        {
-          "question": "¿Coordina visitas entre agentes?",
-          "answer": "Gestiona solicitudes de todos los agentes, evita dobles reservas y sincroniza calendarios en tiempo real."
-        },
-        {
-          "question": "¿Gestiona firmas de documentos?",
-          "answer": "Sí. Recoge documentos, los envía para firma electrónica y los almacena de forma segura. Ideal para onboarding de inquilinos."
-        },
-        {
-          "question": "¿Y con compradores internacionales?",
-          "answer": "Más de 100 idiomas soportados. Autodetección o elección. Facilita cierres con clientes internacionales."
-        }
-      ]
     }
   },
   "about": {
     "metadata": {
       "title": "Sobre Nosotros — Prozeso",
-      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin y construimos automatización de flujos de trabajo con IA para negocios de servicios."
+      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin para resolver el hueco entre Excel y SAP en empresas de 10 a 200 empleados."
     },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
-      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión compartida: hacer que la automatización con IA sea accesible para cada negocio de servicios. El 7 de octubre de 2025, nació Prozeso.",
+      "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad.",
       "originTitle": "Donde todo empezó",
-      "originText": "Todo comenzó con una conversación en las oficinas de Google en Dublin. Tres profesionales de distintos campos — marketing, ingeniería y ventas — se dieron cuenta de que los negocios de servicios se estaban quedando atrás en la revolución de la automatización. Mientras las grandes corporaciones tenían acceso a herramientas sofisticadas, las pequeñas y medianas empresas seguían atrapadas en procesos manuales. Ese día decidimos cambiarlo. El 7 de octubre de 2025, lanzamos oficialmente Prozeso con una misión clara: llevar la automatización inteligente a los negocios que más la necesitan."
+      "originParagraph1": "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin. Coincidíamos en una cosa: las empresas que crecen están atascadas con herramientas que no crecen con ellas, y las alternativas están fuera de su alcance.",
+      "originParagraph2": "Empresas españolas de 10 a 200 empleados con procesos viviendo en cabezas, hojas de cálculo y mensajes de WhatsApp. Las herramientas que se pueden permitir son demasiado rígidas para encajar de verdad. Las herramientas que sí encajan son demasiado pesadas, demasiado lentas y demasiado caras para llegar a adoptarlas.",
+      "originParagraph3": "Ese día decidimos construir el sistema operativo que esa empresa nunca tuvo."
     },
     "team": {
       "title": "El equipo",
-      "subtitle": "Tres cofundadores, una misión: empoderar a los negocios de servicios con IA.",
+      "subtitle": "Tres cofundadores, una misión: construir el sistema operativo que las pymes nunca tuvieron.",
       "ceo": {
-        "name": "Cristian Guzman",
+        "name": "Cristian Guzmán",
         "role": "CEO",
-        "description": "Lidera la visión y la estrategia de crecimiento, conectando Prozeso con los negocios que más lo necesitan."
+        "description": "Lidera la conversación con los clientes y la dirección comercial. Antes en marketing, ahora vendiendo lo que él mismo decidió que era el problema."
       },
       "cto": {
-        "name": "Alejandro Gonzalez",
+        "name": "Alejandro González",
         "role": "CTO",
-        "description": "Diseña la tecnología detrás de Prozeso, convirtiendo IA compleja en herramientas simples y poderosas."
+        "description": "Diseña y mantiene la plataforma. Antes ingeniero en banca y consumo, ahora construyendo el sistema operativo que las pymes nunca tuvieron."
       },
       "sales": {
         "name": "Carles Vineta",
-        "role": "Sales Strategist",
-        "description": "Diseña la estrategia comercial, asegurando que Prozeso llegue a los clientes adecuados en el momento justo."
+        "role": "Strategic Advisor",
+        "description": "Acompaña la estrategia comercial. 6+ años en operaciones de empresas como las que servimos. Asegura que las decisiones tienen sentido en la realidad, no solo en el slide."
       },
       "linkedin": "Ver perfil de LinkedIn"
-    },
-    "cta": {
-      "title": "¿Listo para automatizar tu negocio?",
-      "subtitle": "Comienza tu evaluación gratuita y descubre cómo Prozeso puede transformar tus operaciones."
     }
   },
   "notFound": {
-    "badge": "404 \u2022 Página no encontrada",
+    "badge": "404 • Página no encontrada",
     "title": "No pudimos encontrar esa página",
     "description": "La página que buscas puede haber sido movida, eliminada o nunca existió. Revisa la URL o vuelve a la página de inicio.",
     "cta": "Volver al inicio",
@@ -3145,6 +660,61 @@
   "legal": {
     "lastUpdated": "Última actualización: {date}",
     "onThisPage": "En esta página",
+    "notice": {
+      "title": "Aviso Legal",
+      "updatedAt": "22 de abril de 2026",
+      "toc": {
+        "ownerIdentification": "Identificación del titular",
+        "purpose": "Objeto",
+        "useConditions": "Condiciones de uso",
+        "intellectualProperty": "Propiedad intelectual",
+        "liability": "Exclusión de responsabilidad",
+        "externalLinks": "Enlaces a sitios de terceros",
+        "governingLaw": "Legislación y jurisdicción",
+        "contact": "Contacto"
+      },
+      "ownerIdentification": {
+        "title": "Identificación del titular",
+        "text": "En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se facilitan a continuación los datos identificativos del titular de este sitio web:",
+        "items": [
+          "Denominación social: Prozeso AI SL",
+          "NIF: B26818880",
+          "Domicilio fiscal: Paseo Terraple, Núm. 68, Esc. B, Puerta 02, 08750 Molins de Rei, Barcelona",
+          "Administración de la AEAT: 08210 Sant Feliu",
+          "Fecha de NIF: 26/03/2026",
+          "Correo electrónico: admin@prozeso.com",
+          "Sitio web: prozeso.com"
+        ]
+      },
+      "purpose": {
+        "title": "Objeto",
+        "text": "El presente Aviso Legal regula el uso del sitio web prozeso.com, cuya finalidad es ofrecer información sobre los servicios de automatización con IA de Prozeso para negocios de servicios, así como permitir el contacto y la contratación de dichos servicios."
+      },
+      "useConditions": {
+        "title": "Condiciones de uso",
+        "text": "El acceso y navegación por este sitio web atribuye la condición de usuario, e implica la aceptación plena de las condiciones recogidas en este Aviso Legal, así como en la Política de Privacidad y la Política de Cookies. El usuario se compromete a hacer un uso diligente del sitio y de los servicios ofrecidos, conforme a la ley, la moral y el orden público."
+      },
+      "intellectualProperty": {
+        "title": "Propiedad intelectual",
+        "text": "Todos los contenidos del sitio web, incluyendo textos, imágenes, logotipos, diseños, código fuente y cualquier otro material, son propiedad de Prozeso o de terceros que han autorizado su uso. Queda prohibida la reproducción, distribución, comunicación pública o transformación de dichos contenidos sin la autorización expresa del titular."
+      },
+      "liability": {
+        "title": "Exclusión de responsabilidad",
+        "text": "Prozeso realiza sus mejores esfuerzos para mantener el sitio operativo y actualizado, pero no garantiza la ausencia de errores ni la disponibilidad continua. Prozeso no será responsable de los daños derivados del uso o imposibilidad de uso del sitio, ni de los contenidos de terceros accesibles a través del mismo."
+      },
+      "externalLinks": {
+        "title": "Enlaces a sitios de terceros",
+        "text": "Este sitio puede contener enlaces a páginas web de terceros. Prozeso no se hace responsable del contenido, las políticas de privacidad ni las prácticas de esos sitios, e incluye dichos enlaces únicamente a efectos informativos."
+      },
+      "governingLaw": {
+        "title": "Legislación y jurisdicción",
+        "text": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia derivada del uso del sitio, las partes se someten a los juzgados y tribunales del domicilio del titular, salvo que la normativa aplicable disponga otra cosa."
+      },
+      "contact": {
+        "title": "Contacto",
+        "text": "Para cualquier consulta relacionada con este Aviso Legal, puedes escribirnos a admin@prozeso.com."
+      }
+    },
     "privacy": {
       "title": "Política de Privacidad",
       "updatedAt": "3 de noviembre de 2025",

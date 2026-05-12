@@ -19,7 +19,8 @@ const soraFont = Sora({
 });
 
 const siteName = "Prozeso";
-const siteDescription = "Automate your workflows with ease";
+const siteDescription =
+  "AI-powered workflow automation for service businesses — voice receptionists, smart reminders, billing and reviews.";
 const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const GA_ID = process.env.GA_MEASUREMENT_ID ?? "";
@@ -78,7 +79,8 @@ export const metadata: Metadata = {
         alt: `${siteName} — ${siteDescription}`,
       },
     ],
-    locale: "en_US",
+    locale: "es_ES",
+    alternateLocale: ["en_US"],
   },
   twitter: {
     card: "summary_large_image",
@@ -112,7 +114,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} suppressHydrationWarning>
       <body
-        className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter`}
+        className={`${interTightFont.variable} ${soraFont.variable} antialiased font-inter overflow-x-clip`}
       >
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}

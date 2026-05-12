@@ -2,14 +2,14 @@
 
 import { CheckCircle2 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/Button";
 import {
+  Button,
   Dialog,
   DialogClose,
   DialogContent,
   DialogDescription,
   DialogTitle,
-} from "@/components/ui/Dialog";
+} from "@/components/ui";
 
 type Props = {
   open: boolean;
@@ -28,10 +28,10 @@ export function EmailSentDialog({ open, onOpenChange }: Props) {
             aria-hidden
           />
           <div>
-            <DialogTitle className="body-strong-text">
+            <DialogTitle className="body-md font-medium">
               {t("success.title")}
             </DialogTitle>
-            <DialogDescription className="body-text text-muted-foreground mt-1">
+            <DialogDescription className="body-md text-foreground-subtle mt-1">
               {t("success.body")}
             </DialogDescription>
           </div>

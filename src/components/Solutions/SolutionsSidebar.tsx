@@ -2,8 +2,7 @@
 
 import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { AREAS } from "@/components/Home/BubbleDiagram/constants";
-import { COLOR_GROUPS } from "./constants";
+import { AREAS, COLOR_GROUPS } from "./constants";
 import type { ActiveFilter } from "./SolutionsGrid";
 
 type SolutionsSidebarProps = {
@@ -42,10 +41,10 @@ export default function SolutionsSidebar({
         <button
           type="button"
           onClick={() => onFilterChange(null)}
-          className="cursor-pointer flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors ml-auto"
+          className="cursor-pointer flex items-center gap-1.5 text-sm text-foreground-muted hover:text-foreground transition-colors ml-auto"
         >
           <X className="h-3.5 w-3.5" />
-          Limpiar filtro
+          {t("clearFilter")}
         </button>
       )}
 
@@ -93,7 +92,7 @@ export default function SolutionsSidebar({
                 style={{ background: group.color }}
               />
               <span className="text-sm font-semibold tracking-wider text-foreground">
-                {group.label}
+                {t(`groups.${group.id}`)}
               </span>
             </button>
 

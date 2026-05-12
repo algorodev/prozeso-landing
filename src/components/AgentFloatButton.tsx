@@ -44,7 +44,7 @@ export const AgentFloatButton = () => {
             try {
               const allowedDomains = [
                 "prozeso.com",
-                "calendly.com",
+                "calendar.app.google",
                 "app.prozeso.com",
               ];
 
@@ -63,7 +63,7 @@ export const AgentFloatButton = () => {
               }
 
               if (
-                urlObj.hostname.includes("calendly.com") ||
+                urlObj.hostname.includes("calendar.app.google") ||
                 urlObj.hostname.includes("app.prozeso.com")
               ) {
                 window.open(url, "_blank", "noopener noreferrer");
@@ -120,9 +120,9 @@ export const AgentFloatButton = () => {
       className="flex items-center bg-[#004D45]/20 backdrop-blur-sm p-1.5 rounded-full border border-(--brand-cyan)/40 shadow-lg hover:bg-[#004D45]/30 transition-colors cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
       aria-label={t("label")}
     >
-      <div className="rounded-full w-9 h-9 bg-accent text-accent-foreground flex items-center justify-center flex-shrink-0">
+      <div className="rounded-full w-9 h-9 bg-secondary text-background flex items-center justify-center flex-shrink-0">
         {isCalling ? (
-          <div className="w-4 h-4 border-2 border-accent-foreground border-t-transparent rounded-full animate-spin" />
+          <div className="w-4 h-4 border-2 border-secondary-foreground border-t-transparent rounded-full animate-spin" />
         ) : (
           <PhoneCall className="size-4" />
         )}

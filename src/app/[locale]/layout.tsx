@@ -9,8 +9,6 @@ import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { type Locale, locales } from "@/i18n/config";
 
-export const dynamic = "force-dynamic";
-
 export type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;

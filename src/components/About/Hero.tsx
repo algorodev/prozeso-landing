@@ -35,14 +35,16 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.2 }}
           transition={{ duration: 0.6 }}
-          className="rounded-2xl border border-border bg-card p-8 md:p-12"
+          className="rounded-2xl border border-border bg-background p-8 md:p-12"
         >
           <h2 className="font-sora text-2xl md:text-3xl font-semibold tracking-tight mb-4">
             {t("originTitle")}
           </h2>
-          <p className="text-foreground/70 leading-relaxed text-base md:text-lg">
-            {t("originText")}
-          </p>
+          <div className="space-y-4 text-foreground/70 leading-relaxed text-base md:text-lg">
+            <p>{t("originParagraph1")}</p>
+            <p>{t("originParagraph2")}</p>
+            <p>{t("originParagraph3")}</p>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -3,13 +3,13 @@
 import { ChevronDown, Globe } from "lucide-react";
 import type { Route } from "next";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { Button } from "@/components/ui/Button";
 import {
+  Button,
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/DropdownMenu";
+} from "@/components/ui";
 import { type Locale, locales } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { AssessmentForm } from "@/components/Start/AssessmentForm";
 import { Hero } from "@/components/Start/Hero";
-import { Steps } from "@/components/Start/Steps";
+import { ProcessAndForm } from "@/components/Start/ProcessAndForm";
 import { locales } from "@/i18n/config";
+import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,29 +16,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "es"
-      ? "Empieza — Evaluación gratuita"
-      : "Start — Free Assessment";
+      ? "Empieza — 30 minutos de conversación"
+      : "Start — A 30-minute conversation";
   const description =
     locale === "es"
-      ? "Comienza tu camino hacia la automatización con una llamada de descubrimiento. Evaluaremos tus necesidades y diseñaremos un plan perfecto para tu equipo."
-      : "Kick off your automation journey with a quick discovery call. We'll assess your needs and tailor a perfect plan for your team.";
+      ? "30 minutos de conversación contigo. Si encajamos, te decimos exactamente por dónde empezar y cuánto cuesta. Si no, te decimos por qué."
+      : "A 30-minute conversation with you. If we're a fit, we'll tell you exactly where to start and what it costs. If we're not, we'll tell you why.";
   const keywords =
     locale === "es"
       ? [
-          "evaluación gratuita",
-          "evaluación de automatización",
-          "auditoría de flujos",
-          "automatización de ventas",
-          "automatización de marketing",
-          "optimización de procesos",
+          "automatización empresarial",
+          "automatización de procesos",
+          "automatización de operaciones",
+          "automatización para pymes",
+          "alternativa a SAP",
+          "alternativa a Holded",
         ]
       : [
-          "free assessment",
-          "automation assessment",
-          "workflow audit",
-          "sales automation",
-          "marketing automation",
-          "process optimization",
+          "business automation",
+          "process automation",
+          "operations automation",
+          "automation for SMBs",
+          "alternative to SAP",
+          "alternative to Holded",
         ];
 
   return {
@@ -74,16 +74,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function StartPage() {
+export default async function StartPage({ params }: Props) {
+  const { locale } = await params;
+  const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const breadcrumb = buildBreadcrumbJsonLd([
+    {
+      name: locale === "es" ? "Inicio" : "Home",
+      url: `${base}/${locale}/`,
+    },
+    {
+      name: locale === "es" ? "Empieza" : "Start",
+      url: `${base}/${locale}/start`,
+    },
+  ]);
+
   return (
-    <main className="mx-auto min-h-dvh max-w-7xl">
+    <main className="min-h-dvh">
+      <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <Hero />
-      <Steps />
-      <section id="assessment" className="py-10">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <AssessmentForm />
-        </div>
-      </section>
+      <ProcessAndForm />
     </main>
   );
 }

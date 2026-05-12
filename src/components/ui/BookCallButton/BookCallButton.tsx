@@ -1,13 +1,11 @@
 "use client";
 
-import type { VariantProps } from "class-variance-authority";
+import { Button, type ButtonProps } from "@prospector-automations/components";
 import { Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/Button";
-import type { buttonVariants } from "@/components/ui/Button/constants";
 import { CALENDAR_URL } from "./constants";
 
-type BookCallButtonProps = VariantProps<typeof buttonVariants> & {
+type BookCallButtonProps = Pick<ButtonProps, "size" | "variant"> & {
   showIcon?: boolean;
   className?: string;
 };

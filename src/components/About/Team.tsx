@@ -48,7 +48,7 @@ const Team = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: 0.2 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="rounded-2xl border border-border bg-card p-8 text-center flex flex-col items-center"
+              className="rounded-2xl border border-border bg-background p-8 text-center flex flex-col items-center"
             >
               <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <span className="font-sora text-2xl font-semibold text-primary">
@@ -71,7 +71,7 @@ const Team = () => {
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mt-auto"
+                className="inline-flex items-center gap-2 text-sm text-foreground-subtle hover:text-foreground transition-colors mt-auto"
               >
                 <Linkedin className="w-4 h-4" />
                 {t("linkedin")}

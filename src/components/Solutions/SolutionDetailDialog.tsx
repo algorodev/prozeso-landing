@@ -1,15 +1,14 @@
 "use client";
 
-import { ArrowDown, ArrowUp } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { AREAS } from "@/components/Home/BubbleDiagram/constants";
-import { Button } from "@/components/ui/Button";
+import { AREAS } from "@/components/Solutions/constants";
 import {
+  Button,
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/Dialog";
+} from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 type AutomationDetailDialogProps = {
@@ -39,7 +38,7 @@ const AutomationDetailDialog = ({
         if (!open) onClose();
       }}
     >
-      <DialogContent className="sm:max-w-2xl gap-6" closeButtonOutside>
+      <DialogContent className="sm:max-w-2xl gap-6">
         <DialogHeader>
           <div className="flex items-start gap-3">
             <area.icon
@@ -60,7 +59,7 @@ const AutomationDetailDialog = ({
                 </DialogTitle>
               </div>
               {t.has(`${prefix}.subtitle`) && (
-                <p className="text-sm text-muted-foreground mt-1">
+                <p className="text-sm text-foreground-subtle mt-1">
                   {t(`${prefix}.subtitle`)}
                 </p>
               )}
@@ -68,98 +67,33 @@ const AutomationDetailDialog = ({
           </div>
         </DialogHeader>
 
-        {(t.has(`${prefix}.problem`) || t.has(`${prefix}.solution`)) && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {t.has(`${prefix}.problem`) && (
-              <div className="space-y-2">
-                <span className="text-xs font-semibold uppercase tracking-wider text-red-300">
-                  {t("problemLabel")}
-                </span>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t(`${prefix}.problem`)}
-                </p>
-              </div>
-            )}
-            {t.has(`${prefix}.solution`) && (
-              <div className="space-y-2">
-                <span className="text-xs font-semibold uppercase tracking-wider text-green-300">
-                  {t("solutionLabel")}
-                </span>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t(`${prefix}.solution`)}
-                </p>
-              </div>
-            )}
-          </div>
-        )}
-
-        {t.has(`${prefix}.benefits`) && (
-          <div className="space-y-3">
+        {t.has(`${prefix}.state`) && (
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold uppercase tracking-wider text-foreground-muted">
+              {t("stateLabel")}:
+            </span>
             <span
-              className="block text-xs font-semibold uppercase tracking-wider mb-2"
-              style={{ color }}
+              className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium border"
+              style={{
+                color,
+                borderColor: `color-mix(in srgb, ${color} 40%, transparent)`,
+                backgroundColor: `color-mix(in srgb, ${color} 10%, transparent)`,
+              }}
             >
-              {t("benefitsLabel")}
+              <span
+                className="size-1.5 rounded-full"
+                style={{ background: color }}
+                aria-hidden="true"
+              />
+              {t(`stateValues.${t(`${prefix}.state`)}`)}
             </span>
-            <ul className="space-y-1.5">
-              {t(`${prefix}.benefits`)
-                .split("·")
-                .map((item) => item.trim())
-                .filter(Boolean)
-                .map((benefit) => (
-                  <li
-                    key={benefit}
-                    className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0 bg-muted-foreground" />
-                    {benefit}
-                  </li>
-                ))}
-            </ul>
           </div>
         )}
 
-        {t.has(`${prefix}.impact`) && t(`${prefix}.impact`) && (
-          <div
-            className="space-y-3 rounded-lg px-4 py-3"
-            style={{
-              backgroundColor: `color-mix(in srgb, ${color} 12%, transparent)`,
-            }}
-          >
-            <span className="block text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
-              {t("impactLabel")}
-            </span>
-            <div className="flex items-center gap-3">
-              {(() => {
-                const impact = t(`${prefix}.impact`);
-                const match = impact.match(
-                  /^([↑↓×+-]?\s*[\d,.]+%?\s*[↑↓×]?\s*[\d,.]*%?)\s*(.*)/,
-                );
-                const rawMetric = match?.[1]?.trim() ?? impact;
-                const desc = match?.[2]?.trim() ?? "";
-                const hasUp = rawMetric.includes("↑");
-                const hasDown = rawMetric.includes("↓");
-                const metric = rawMetric.replace(/[↑↓]/g, "").trim();
-                return (
-                  <>
-                    <span
-                      className="flex items-center gap-1 text-2xl font-sora font-bold"
-                      style={{ color }}
-                    >
-                      {hasUp && <ArrowUp className="h-5 w-5" />}
-                      {hasDown && <ArrowDown className="h-5 w-5" />}
-                      {metric}
-                    </span>
-                    {desc && (
-                      <span className="text-sm text-muted-foreground">
-                        {desc}
-                      </span>
-                    )}
-                  </>
-                );
-              })()}
-            </div>
-          </div>
+        {t.has(`${prefix}.description`) && (
+          <p className="text-sm text-foreground-subtle leading-relaxed">
+            {t(`${prefix}.description`)}
+          </p>
         )}
 
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
