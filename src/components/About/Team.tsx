@@ -2,20 +2,24 @@
 
 import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const members = [
   {
     key: "ceo",
     linkedin: "https://www.linkedin.com/in/cristian-guzman-marketing/",
+    photo: "/assets/team/cristian.jpg",
   },
   {
     key: "cto",
     linkedin: "https://www.linkedin.com/in/algorodev/",
+    photo: "/assets/team/alex.jpg",
   },
   {
     key: "sales",
     linkedin: "https://www.linkedin.com/in/carlesvineta/",
+    photo: "/assets/team/carles.jpg",
   },
 ] as const;
 
@@ -50,13 +54,14 @@ const Team = () => {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="rounded-2xl border border-border bg-background p-8 text-center flex flex-col items-center"
             >
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <span className="font-sora text-2xl font-semibold text-primary">
-                  {t(`${member.key}.name`)
-                    .split(" ")
-                    .map((n: string) => n[0])
-                    .join("")}
-                </span>
+              <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4 ring-1 ring-border">
+                <Image
+                  src={member.photo}
+                  alt={t(`${member.key}.name`)}
+                  fill
+                  sizes="96px"
+                  className="object-cover"
+                />
               </div>
               <h3 className="font-sora text-xl font-semibold mb-1">
                 {t(`${member.key}.name`)}
