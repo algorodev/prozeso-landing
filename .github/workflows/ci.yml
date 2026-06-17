@@ -23,6 +23,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+        env:
+          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm lint
 
   format:
@@ -41,6 +43,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+        env:
+          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm format:check
 
   build:
@@ -63,6 +67,8 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+        env:
+          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm build
 
   test:
@@ -82,4 +88,6 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
+        env:
+          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm test
