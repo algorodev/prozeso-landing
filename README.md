@@ -4,14 +4,14 @@ Marketing site for [Prozeso](https://prozeso.com) — an AI-powered workflow aut
 
 Built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**.
 
+> **Note**: Prozeso has shut down. The landing page stays up as a static informational site — email sending, the ElevenLabs voice agent, and the calendar booking CTA have been intentionally removed to eliminate ongoing costs.
+
 ## Features
 
-- **AI Use-Case Analyzer** — Users describe their business pain points and receive a personalized automation report powered by Google Gemini
-- **Voice AI Agent** — Floating conversational assistant via ElevenLabs with multilingual support
 - **Solutions Showcase** — Tailored automation showcases across verticals (restaurants, clinics, beauty, hotels, real estate)
 - **About Page** — Team and company background
 - **Internationalization** — Full Spanish/English support with localized routing
-- **Assessment Wizard** — Multi-step form with email notifications via Resend
+- **Assessment Wizard** — Multi-step form (email notifications disabled)
 - **SEO** — Dynamic sitemap, robots.txt, Open Graph metadata
 
 ## Tech Stack
@@ -23,8 +23,7 @@ Built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript**
 | Styling | Tailwind CSS v4, Framer Motion, Anime.js |
 | UI | Radix UI, shadcn/ui pattern, CVA |
 | Forms | react-hook-form + Zod |
-| AI | Vercel AI SDK, Google Generative AI, ElevenLabs |
-| Email | Resend + React Email |
+| Email | React Email templates (sending disabled) |
 | i18n | next-intl |
 | Testing | Vitest, React Testing Library, @vitest/coverage-v8 |
 | Linting | Biome |
@@ -50,10 +49,7 @@ Create a `.env` file in the project root:
 
 ```env
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
-NEXT_PUBLIC_CLIENT_URL=http://localhost:3001
-RESEND_API_KEY=re_your_key
 GA_MEASUREMENT_ID=G-XXXXXXXXXX
-GOOGLE_API_KEY=your_google_api_key
 ```
 
 > `NEXT_PUBLIC_*` variables are exposed to the browser. Keep API keys server-only.
@@ -86,27 +82,20 @@ src/
 │   ├── [locale]/            # Localized routes (es, en)
 │   │   ├── about/           # About / team page
 │   │   ├── start/           # Assessment wizard
-│   │   ├── use-cases/       # AI use-case analyzer + report
 │   │   ├── solutions/       # Automations + industry solutions showcase
 │   │   └── legal/           # Privacy, terms, cookies
-│   └── api/                 # API routes
+│   └── api/start/           # No-op endpoint (email sending disabled)
 ├── components/              # React components
 │   ├── Home/                # Home page sections
 │   ├── About/               # About page (Hero, Team)
 │   ├── Start/               # Assessment wizard
-│   ├── UseCases/            # Use-case analysis + reports
 │   ├── Solutions/           # Solutions grid + detail dialog
 │   ├── Legal/               # Legal pages
 │   ├── ui/                  # Reusable primitives
 │   └── icons/               # Custom SVG icons
-├── lib/                     # Business logic
-│   ├── agents/              # AI pipeline (analyzer + report)
-│   ├── actions/             # Server actions
-│   ├── config/              # AI provider config
-│   └── prompts/             # System prompts
+├── lib/                     # Misc helpers + SEO
 ├── i18n/                    # i18n configuration
 ├── messages/                # Translation files (en.json, es.json)
-├── types/                   # TypeScript definitions
 ├── data/                    # Static data (automations)
 ├── emails/                  # React Email templates
 └── __tests__/               # Unit tests (Vitest)
@@ -139,10 +128,7 @@ The app is deployed on **Vercel**.
 | Variable | Description |
 |----------|-------------|
 | `NEXT_PUBLIC_BASE_URL` | Production URL (`https://prozeso.com`) |
-| `NEXT_PUBLIC_CLIENT_URL` | Client app URL (optional) |
-| `RESEND_API_KEY` | Resend email API key |
 | `GA_MEASUREMENT_ID` | Google Analytics 4 ID |
-| `GOOGLE_API_KEY` | Google Generative AI key |
 
 ## License
 

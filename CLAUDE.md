@@ -4,6 +4,8 @@
 
 Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an AI-powered workflow automation platform for service businesses. Built with Next.js 16 (App Router), React 19, Tailwind CSS v4, and TypeScript.
 
+> **Note**: Prozeso has shut down. The landing page stays up as a static informational site — email sending, the ElevenLabs voice agent, and the calendar booking CTA have been intentionally removed to eliminate ongoing costs.
+
 ## Tech stack
 
 - **Framework**: Next.js 16 (App Router, Turbopack)
@@ -11,8 +13,7 @@ Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an A
 - **Styling**: Tailwind CSS v4, CSS custom properties, Framer Motion, Anime.js
 - **UI**: Radix UI primitives, shadcn/ui pattern, CVA for variants
 - **Forms**: react-hook-form + Zod validation
-- **Voice agent**: ElevenLabs (floating call widget)
-- **Email**: Resend + React Email
+- **Email**: React Email templates (sending is disabled — Prozeso has shut down)
 - **i18n**: next-intl (locales: `es` default, `en`)
 - **Testing**: Vitest, React Testing Library, @vitest/coverage-v8
 - **Linting/Formatting**: Biome
@@ -41,15 +42,13 @@ src/
 │   │   ├── page.tsx         # Home
 │   │   ├── about/           # About / team page
 │   │   ├── start/           # Assessment wizard
-│   │   ├── use-cases/       # Real-cases hero with CTAs to /start and /solutions
 │   │   ├── solutions/       # Automations + industry solutions showcase
 │   │   └── legal/           # Privacy, terms, cookies
-│   └── api/start/           # Email submission endpoint (Resend)
+│   └── api/start/           # No-op endpoint (email sending disabled)
 ├── components/              # React components
 │   ├── Home/                # Home page sections
 │   ├── About/               # About page (Hero, Team)
 │   ├── Start/               # Assessment wizard components
-│   ├── UseCases/            # Use-cases hero
 │   ├── Solutions/           # Solutions grid, sidebar, detail dialog
 │   ├── Legal/               # Legal page components
 │   ├── ui/                  # Reusable UI primitives (Button, Card, Form, Dialog, etc.)
@@ -89,15 +88,12 @@ src/
 - 2-space indentation
 - Follow existing patterns: named exports for components, default exports for pages
 - Use `LocalizedLink` from `@/i18n/LocalizedLink` instead of raw `next/link` for internal navigation
-- Use `BookCallButton` for any "book a call" CTA links (Google Calendar booking)
 
 ## Environment variables
 
 Required in `.env`:
 ```
 NEXT_PUBLIC_BASE_URL        # App base URL
-NEXT_PUBLIC_CLIENT_URL      # Client app URL
-RESEND_API_KEY              # Resend email API key
 GA_MEASUREMENT_ID           # Google Analytics 4
 ```
 
@@ -105,7 +101,6 @@ GA_MEASUREMENT_ID           # Google Analytics 4
 
 ## Key patterns
 
-- **Voice agent**: ElevenLabs integration managed by `CallContext` + `CallManager` components with a floating button (`AgentFloatButton`)
 - **Form validation**: Zod schemas with react-hook-form via `@hookform/resolvers`
 - **Solutions showcase**: `solutions/` page renders automation entries from `src/data/automations.ts` with a grid, sidebar filter, and detail dialog
 
