@@ -1,14 +1,4 @@
 {
-  "common": {
-    "cta": {
-      "bookCall": "Book a Call"
-    },
-    "agentButton": {
-      "text": "Talk to an agent",
-      "calling": "Calling...",
-      "label": "Start AI call"
-    }
-  },
   "trustedBy": {
     "title": "Backed by"
   },
@@ -107,7 +97,6 @@
         "idle": "Book a conversation",
         "loading": "Sending…"
       },
-      "calendarAlternative": "Prefer to skip the form? Book directly on the calendar.",
       "disclaimer": "We work with companies of 10 to 200 employees and revenue between 1M€ and 50M€. If your company is outside that range, we'll tell you honestly and point you toward options that fit better.",
       "success": {
         "title": "Thanks! We’ve received your request.",

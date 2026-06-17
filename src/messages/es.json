@@ -1,14 +1,4 @@
 {
-  "common": {
-    "cta": {
-      "bookCall": "Reservar una llamada"
-    },
-    "agentButton": {
-      "text": "Hablar con un agente",
-      "calling": "Llamando...",
-      "label": "Iniciar llamada con IA"
-    }
-  },
   "trustedBy": {
     "title": "Con el respaldo de"
   },
@@ -107,7 +97,6 @@
         "idle": "Agendar conversación",
         "loading": "Enviando…"
       },
-      "calendarAlternative": "¿Prefieres ir al grano? Reserva directamente en el calendario.",
       "disclaimer": "Trabajamos con empresas de 10 a 200 empleados con facturación entre 1 y 50 M€. Si tu empresa está fuera de ese rango, te lo decimos honestamente y te apuntamos hacia opciones que encajen mejor.",
       "success": {
         "title": "¡Gracias! Hemos recibido tu solicitud.",

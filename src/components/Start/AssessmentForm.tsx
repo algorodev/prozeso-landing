@@ -8,7 +8,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import EmailSentDialog from "@/components/Start/EmailSentDialog";
 import {
-  BookCallButton,
   Button,
   Form,
   FormControl,
@@ -185,13 +184,6 @@ export function AssessmentForm() {
         </form>
       </Form>
       <EmailSentDialog open={success} onOpenChange={setSuccess} />
-
-      <div className="mt-8 pt-6 border-t border-border/60 space-y-3">
-        <p className="text-sm text-foreground-subtle">
-          {t("calendarAlternative")}
-        </p>
-        <BookCallButton size="default" />
-      </div>
 
       <p className="body-sm text-foreground-muted mt-6">{t("disclaimer")}</p>
     </>

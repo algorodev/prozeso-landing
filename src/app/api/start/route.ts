@@ -1,56 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-import CustomerConfirmationEmail from "@/emails/CustomerConfirmationEmail";
-import InternalLeadNotificationEmail from "@/emails/InternalLeadNotificationEmail";
 
-export async function POST(req: Request) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
-
-  const {
-    name,
-    email,
-    message,
-    workflow,
-    workflows,
-    workflowTitles,
-    locale,
-    vertical,
-    verticalTitle,
-  } = await req.json();
-
-  await resend.emails.send({
-    from: "Prozeso <admin@send.prozeso.com>",
-    to: ["admin@prozeso.com"],
-    subject: `New consultation request from ${name}`,
-    react: InternalLeadNotificationEmail({
-      name,
-      email,
-      message,
-      workflow,
-      workflows,
-      workflowTitles,
-      vertical,
-      verticalTitle,
-    }),
-  });
-
-  await resend.emails.send({
-    from: "Prozeso <admin@send.prozeso.com>",
-    to: [email],
-    subject:
-      locale === "es"
-        ? "Hemos recibido tu solicitud — nos pondremos en contacto enseguida"
-        : "We received your request — we’ll be in touch shortly",
-    react: CustomerConfirmationEmail({
-      name,
-      workflow,
-      workflows,
-      workflowTitles,
-      verticalTitle,
-      locale: (locale as "en" | "es") ?? "en",
-      nextUrl: "https://prozeso.com",
-    }),
-  });
-
+export async function POST(_req: Request) {
   return NextResponse.json({ ok: true });
 }
