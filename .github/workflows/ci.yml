@@ -22,9 +22,8 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      - run: pnpm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.PACKAGES_READ_TOKEN }}"
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm lint
 
   format:
@@ -42,9 +41,8 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      - run: pnpm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.PACKAGES_READ_TOKEN }}"
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm format:check
 
   build:
@@ -66,9 +64,8 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      - run: pnpm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.PACKAGES_READ_TOKEN }}"
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm build
 
   test:
@@ -87,7 +84,6 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      - run: pnpm config set "//npm.pkg.github.com/:_authToken" "${{ secrets.PACKAGES_READ_TOKEN }}"
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
       - run: pnpm test
