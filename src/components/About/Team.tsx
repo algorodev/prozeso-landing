@@ -8,11 +8,6 @@ import { useTranslations } from "next-intl";
 const members = [
   {
     key: "ceo",
-    linkedin: "https://www.linkedin.com/in/cristian-guzman-marketing/",
-    photo: "/assets/team/cristian.jpg",
-  },
-  {
-    key: "cto",
     linkedin: "https://www.linkedin.com/in/algorodev/",
     photo: "/assets/team/alex.jpg",
   },
@@ -44,7 +39,7 @@ const Team = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {members.map((member, i) => (
             <motion.div
               key={member.key}

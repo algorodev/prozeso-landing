@@ -357,22 +357,17 @@
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
       "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad.",
       "originTitle": "Donde todo empezó",
-      "originParagraph1": "Tres profesionales: marketing, ingeniería y estrategia. Comparábamos notas en Dublin. Coincidíamos en una cosa: las empresas que crecen están atascadas con herramientas que no crecen con ellas, y las alternativas están fuera de su alcance.",
+      "originParagraph1": "Comparábamos notas en Dublin, entre ingeniería y estrategia de negocio. Coincidíamos en una cosa: las empresas que crecen están atascadas con herramientas que no crecen con ellas, y las alternativas están fuera de su alcance.",
       "originParagraph2": "Empresas españolas de 10 a 200 empleados con procesos viviendo en cabezas, hojas de cálculo y mensajes de WhatsApp. Las herramientas que se pueden permitir son demasiado rígidas para encajar de verdad. Las herramientas que sí encajan son demasiado pesadas, demasiado lentas y demasiado caras para llegar a adoptarlas.",
       "originParagraph3": "Ese día decidimos montar el equipo que esa empresa nunca tuvo: quien entendiera su negocio de verdad y le construyera, a medida, la automatización que necesitaba."
     },
     "team": {
       "title": "El equipo",
-      "subtitle": "Tres cofundadores, una misión: ser el equipo técnico que las pymes nunca tuvieron, diseñando y construyendo su automatización de principio a fin.",
+      "subtitle": "Un equipo, una misión: ser el equipo técnico que las pymes nunca tuvieron, diseñando y construyendo su automatización de principio a fin.",
       "ceo": {
-        "name": "Cristian Guzmán",
-        "role": "CEO",
-        "description": "Lidera la conversación con los clientes y la dirección comercial. Antes en marketing, ahora vendiendo lo que él mismo decidió que era el problema."
-      },
-      "cto": {
         "name": "Alejandro González",
-        "role": "CTO",
-        "description": "Diseña y desarrolla cada automatización a medida. Antes ingeniero en banca y consumo, ahora construyendo con código lo que antes las pymes resolvían con Excel y WhatsApp."
+        "role": "CEO & Founder",
+        "description": "Lidera Prozeso y diseña cada automatización a medida. Antes ingeniero en banca y consumo, ahora al frente del equipo que construye con código lo que las pymes antes resolvían con Excel y WhatsApp."
       },
       "sales": {
         "name": "Carles Vineta",
