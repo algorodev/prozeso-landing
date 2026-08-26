@@ -377,6 +377,100 @@
       "linkedin": "Ver perfil de LinkedIn"
     }
   },
+  "caseStudies": {
+    "theFitzgerald": {
+      "meta": {
+        "title": "Caso de estudio: The Fitzgerald",
+        "description": "Cómo construimos, a medida, el panel operativo que un grupo de restauración necesitaba: automatizaciones, informes validados al céntimo y gestión de incidencias en tiempo real."
+      },
+      "hero": {
+        "eyebrow": "Caso de estudio",
+        "title": "De Excels hechos a mano a un panel operativo en <highlight>tiempo real</highlight>",
+        "subtitle": "The Fitzgerald es un grupo de restauración con varios locales en la zona de Valencia. Construimos el sistema interno que su operación nunca tuvo.",
+        "facts": {
+          "client": { "label": "Cliente", "value": "The Fitzgerald" },
+          "industry": { "label": "Sector", "value": "Restauración" },
+          "location": { "label": "Ubicación", "value": "Valencia" },
+          "locations": {
+            "label": "Locales",
+            "value": "Varios, propios y franquiciados"
+          }
+        }
+      },
+      "stats": {
+        "timeReduction": {
+          "value": "+55%",
+          "label": "reducción de tiempo",
+          "desc": "Menos horas dedicadas a construir informes a mano cada semana."
+        },
+        "reports": {
+          "value": "5",
+          "label": "informes en producción",
+          "desc": "Cada uno validado al céntimo contra los Excels reales del cliente."
+        },
+        "documentation": {
+          "value": "15",
+          "label": "documentos técnicos",
+          "desc": "Antes no había ninguna documentación del sistema. Ahora todo está documentado y se mantiene al día."
+        },
+        "errorReduction": {
+          "value": "+85%",
+          "label": "reducción de errores humanos",
+          "desc": "Menos copiar y pegar cifras a mano entre el punto de venta y el Excel."
+        }
+      },
+      "problem": {
+        "title": "El problema",
+        "body1": "Cada restaurante de The Fitzgerald opera con AgoraTPV, un sistema de punto de venta de terceros, como única fuente de datos operativos y de venta. Pero entender qué estaba pasando en el negocio (ventas, food cost, consumo, devoluciones) dependía de Excels construidos a mano cada semana: alguien tenía que entrar a un informe nativo del punto de venta, copiar cifras y montar la hoja.",
+        "body2": "No había un panel operativo central, ni automatización de esos informes, ni una forma estructurada de gestionar incidencias entre restaurantes, ni de recoger información de los equipos en tienda. Cada pieza de gestión vivía en la cabeza de alguien, o en una hoja de cálculo distinta."
+      },
+      "solution": {
+        "title": "Lo que construimos",
+        "intro": "Un panel interno de automatización a medida, construido y ampliado junto al cliente durante meses. No un producto genérico adaptado a la fuerza.",
+        "items": {
+          "0": {
+            "title": "Automatizaciones e informes en tiempo real",
+            "description": "Panel de automatizaciones con ejecuciones visibles en directo, y control de acceso por rol (qué puedes hacer) y por local (qué puedes ver)."
+          },
+          "1": {
+            "title": "Chat con IA sobre los datos reales",
+            "description": "Un asistente que responde preguntas sobre el negocio con acceso real a las métricas del panel, respetando el mismo control de acceso que el resto de la aplicación."
+          },
+          "2": {
+            "title": "5 informes automáticos respaldados por el punto de venta",
+            "description": "Ventas por canal, consumo mensual, food cost teórico, ventas PDA y devoluciones, generados directamente desde los datos del sistema de punto de venta."
+          },
+          "3": {
+            "title": "Gestión de incidencias y mantenimiento",
+            "description": "Un tablero operativo por restaurante (abierta, en curso, resuelta, cerrada) con comentarios, adjuntos y aviso automático por email en cada alta."
+          },
+          "4": {
+            "title": "Formularios con resúmenes por IA",
+            "description": "Formularios internos que generan un resumen ejecutivo automático de cada respuesta, y que pueden abrir una incidencia de mantenimiento sin intervención manual."
+          }
+        }
+      },
+      "technical": {
+        "title": "El reto técnico: integrar con un sistema que nadie había documentado",
+        "body1": "AgoraTPV publica una guía de integración con una API oficial como vía recomendada. Construimos el primer cliente contra esa API, y solo al probarlo contra el sistema real de este cliente descubrimos que esa instalación concreta no tenía ese módulo activado: el único acceso real era una conexión directa a la base de datos del punto de venta.",
+        "body2": "Ese esquema no está documentado en ningún sitio: más de 240 tablas, sin ninguna referencia pública. Construimos herramientas propias de exploración (listar tablas, relaciones, valores, muestras) para entender, campo a campo, qué significaba cada dato antes de construir un solo informe encima.",
+        "body3": "Ninguna cifra se dio por buena porque \"pareciera razonable\". Cada uno de los 5 informes se reconcilió a mano contra un Excel de referencia real hasta cuadrar al céntimo. Ese proceso sacó a la luz detalles que nadie podía adivinar desde fuera: el canal de venta escondido como texto libre sin ninguna convención, importes con IVA y sin IVA mezclados entre informes distintos, o campos de una factura de devolución que significaban justo lo contrario de lo que sugería su nombre.",
+        "honestyTitle": "Cuando la cifra no cuadra, se dice",
+        "honesty": "Un sexto informe, el de invitaciones que regala el negocio, se probó contra cinco hipótesis distintas y ninguna reprodujo las cifras reales. En vez de forzar una aproximación poco fiable, lo dejamos aparcado y documentado: preferimos decir \"todavía no lo sabemos\" a entregar un número que no cuadra."
+      },
+      "evolution": {
+        "title": "Un producto que evoluciona con el cliente, no una lista cerrada de requisitos",
+        "body1": "El informe de novedades que resume cada formulario para el CEO nació como un texto simple para copiar y pegar. Tras tres rondas reales de feedback, se convirtió en un sistema completo: cuentas de correo configurables, plantillas de tono reutilizables entrenadas con correos reales del propio CEO, y un envío verificado con un solo clic.",
+        "body2": "También supimos cuándo parar: una funcionalidad completa de tablas de datos importables desde Excel se construyó, se amplió, y se retiró por completo cuando dejó de tener uso real. No se quedó como código muerto esperando a que alguien la necesitara."
+      },
+      "cta": {
+        "title": "¿Tu negocio también depende de Excels y WhatsApp?",
+        "subtitle": "Así es como trabajamos: entendemos tu operación real y construimos, a medida, la automatización que necesitas.",
+        "ctaPrimary": "Empezar",
+        "ctaSecondary": "Ver cómo trabajamos"
+      }
+    }
+  },
   "notFound": {
     "badge": "404 • Página no encontrada",
     "title": "No pudimos encontrar esa página",

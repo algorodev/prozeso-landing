@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { LocalizedLink } from "@/i18n/LocalizedLink";
 
 const clients = [
   { id: "albet", name: "Albet", src: "/assets/clients/albet.png" },
@@ -11,6 +12,12 @@ const clients = [
     id: "can-cuinat",
     name: "Can Cuinat",
     src: "/assets/clients/can-cuinat.png",
+  },
+  {
+    id: "the-fitzgerald",
+    name: "The Fitzgerald",
+    src: "/assets/clients/thefitzgerald.svg",
+    href: "/case-studies/the-fitzgerald",
   },
   { id: "hohomes", name: "Ho Homes", src: "/assets/clients/hohomes.png" },
   { id: "izuuk", name: "Izuuk", src: "/assets/clients/izuuk.png" },
@@ -23,8 +30,8 @@ const clients = [
   { id: "novify", name: "Novify", src: "/assets/clients/novify.png" },
 ];
 
-const ClientLogo = ({ client }: { client: (typeof clients)[number] }) => (
-  <div className="flex items-center justify-center shrink-0 px-4 sm:px-8 md:px-12">
+const ClientLogo = ({ client }: { client: (typeof clients)[number] }) => {
+  const logo = (
     <div className="relative h-[52px] w-[80px] sm:h-[70px] sm:w-[110px] md:h-[80px] md:w-[120px] opacity-70 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-300">
       <Image
         src={client.src}
@@ -34,8 +41,20 @@ const ClientLogo = ({ client }: { client: (typeof clients)[number] }) => (
         className="object-contain"
       />
     </div>
-  </div>
-);
+  );
+
+  return (
+    <div className="flex items-center justify-center shrink-0 px-4 sm:px-8 md:px-12">
+      {"href" in client && client.href ? (
+        <LocalizedLink href={client.href} aria-label={client.name}>
+          {logo}
+        </LocalizedLink>
+      ) : (
+        logo
+      )}
+    </div>
+  );
+};
 
 const Clients = () => {
   const t = useTranslations("home.clients");

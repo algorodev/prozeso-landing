@@ -377,6 +377,100 @@
       "linkedin": "View LinkedIn profile"
     }
   },
+  "caseStudies": {
+    "theFitzgerald": {
+      "meta": {
+        "title": "Case study: The Fitzgerald",
+        "description": "How we built, from scratch, the operating panel a restaurant group needed: automations, penny-accurate reports, and real-time incident management."
+      },
+      "hero": {
+        "eyebrow": "Case study",
+        "title": "From hand-built spreadsheets to a <highlight>real-time</highlight> operating panel",
+        "subtitle": "The Fitzgerald is a restaurant group with several locations around Valencia, Spain. We built the internal system their operation never had.",
+        "facts": {
+          "client": { "label": "Client", "value": "The Fitzgerald" },
+          "industry": { "label": "Industry", "value": "Restaurants" },
+          "location": { "label": "Location", "value": "Valencia, Spain" },
+          "locations": {
+            "label": "Locations",
+            "value": "Multiple, owned and franchised"
+          }
+        }
+      },
+      "stats": {
+        "timeReduction": {
+          "value": "+55%",
+          "label": "time saved",
+          "desc": "Fewer hours spent building reports by hand every week."
+        },
+        "reports": {
+          "value": "5",
+          "label": "reports in production",
+          "desc": "Each one validated to the cent against the client's real spreadsheets."
+        },
+        "documentation": {
+          "value": "15",
+          "label": "technical documents",
+          "desc": "There used to be no documentation of the system at all. Now everything is documented and kept up to date."
+        },
+        "errorReduction": {
+          "value": "+85%",
+          "label": "fewer human errors",
+          "desc": "Less manual copy-pasting of numbers between the point of sale and the spreadsheet."
+        }
+      },
+      "problem": {
+        "title": "The problem",
+        "body1": "Every The Fitzgerald restaurant runs on AgoraTPV, a third-party point-of-sale system, as the only source of operational and sales data. But understanding what was actually happening in the business (sales, food cost, consumption, refunds) depended on spreadsheets built by hand every week: someone had to open a native point-of-sale report, copy the numbers, and rebuild the sheet.",
+        "body2": "There was no central operating panel, no automation of those reports, no structured way to manage incidents across restaurants, and no structured way to collect information from the teams on site. Every piece of management lived in someone's head, or in a different spreadsheet."
+      },
+      "solution": {
+        "title": "What we built",
+        "intro": "An internal automation panel built to fit this business, and expanded alongside the client over months. Not a generic product forced to fit.",
+        "items": {
+          "0": {
+            "title": "Real-time automations and reports",
+            "description": "An automations panel with live execution status, and access control split by role (what you can do) and by location (what you can see)."
+          },
+          "1": {
+            "title": "An AI chat over the real data",
+            "description": "An assistant that answers questions about the business with real access to the panel's metrics, respecting the same access control as the rest of the app."
+          },
+          "2": {
+            "title": "5 automated reports backed by the point of sale",
+            "description": "Sales by channel, monthly consumption, theoretical food cost, POS sales, and refunds, generated directly from the point-of-sale system's data."
+          },
+          "3": {
+            "title": "Incident and maintenance management",
+            "description": "An operational board per restaurant (open, in progress, resolved, closed) with comments, attachments, and an automatic email alert on every new incident."
+          },
+          "4": {
+            "title": "Forms with AI-generated summaries",
+            "description": "Internal forms that generate an automatic executive summary of every response, and can open a maintenance incident with no manual step."
+          }
+        }
+      },
+      "technical": {
+        "title": "The technical challenge: integrating with a system nobody had documented",
+        "body1": "AgoraTPV publishes an integration guide built around an official API as the recommended path. We built our first client against that API, and only when testing it against this client's real system did we discover that this particular installation didn't have that module enabled: the only real access was a direct connection to the point-of-sale system's database.",
+        "body2": "That schema is not documented anywhere: over 240 tables, with no public reference. We built our own exploration tooling (listing tables, relationships, values, samples) to understand, field by field, what each piece of data actually meant before building a single report on top of it.",
+        "body3": "No figure was accepted because it \"looked reasonable\". Each of the 5 reports was manually reconciled against a real reference spreadsheet until it matched to the cent. That process surfaced details nobody could have guessed from the outside: the sales channel hidden as inconsistent free text, amounts with and without tax mixed across different reports, or fields on a refund invoice that meant the exact opposite of what their names suggested.",
+        "honestyTitle": "When a figure doesn't add up, we say so",
+        "honesty": "A sixth report, for the giveaways the business hands out, was tested against five different hypotheses, and none of them reproduced the real numbers. Instead of forcing an unreliable approximation, we parked it and documented why: we'd rather say \"we don't know yet\" than ship a number that doesn't add up."
+      },
+      "evolution": {
+        "title": "A product that evolves with the client, not a fixed list of requirements",
+        "body1": "The AI-generated update report that summarizes each form for the CEO started as a simple copy-paste text. After three real rounds of feedback, it became a full system: configurable email accounts, reusable tone templates trained on the CEO's own real emails, and a one-click verified send.",
+        "body2": "We also knew when to stop: a complete feature for importing data tables from Excel was built, expanded, and fully removed once it stopped delivering real value. It didn't stick around as dead code waiting for someone to need it."
+      },
+      "cta": {
+        "title": "Does your business still run on spreadsheets and WhatsApp?",
+        "subtitle": "This is how we work: we understand your real operation and build, from scratch, the automation you need.",
+        "ctaPrimary": "Get started",
+        "ctaSecondary": "See how we work"
+      }
+    }
+  },
   "notFound": {
     "badge": "404 • Page not found",
     "title": "We couldn't find that page",

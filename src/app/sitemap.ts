@@ -13,6 +13,7 @@ const paths = [
   "/about",
   "/start",
   "/solutions",
+  "/case-studies/the-fitzgerald",
   "/legal/cookies",
   "/legal/notice",
   "/legal/privacy",
