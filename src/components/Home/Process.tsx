@@ -4,13 +4,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { AREAS, COLOR_GROUPS } from "@/components/Solutions/constants";
+import { STAGES } from "@/components/Process/constants";
 import { Button, SectionHeader } from "@/components/ui";
 import { LocalizedLink } from "@/i18n/LocalizedLink";
 import { cn } from "@/lib/utils";
 
-const Backbone = () => {
-  const t = useTranslations("home.automationSuite");
+const Process = () => {
+  const t = useTranslations("home.process");
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
 
   const toggle = (id: string) => {
@@ -45,13 +45,23 @@ const Backbone = () => {
           }}
           className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start"
         >
-          {COLOR_GROUPS.map((group) => {
-            const isOpen = openIds.has(group.id);
-            const panelId = `backbone-${group.id}`;
+          {STAGES.map((stage) => {
+            const isOpen = openIds.has(stage.id);
+            const panelId = `process-${stage.id}`;
+            const Icon = stage.icon;
+
+            const activities: number[] = [];
+            for (let i = 0; i < 10; i++) {
+              if (t.has(`stages.${stage.id}.activities.${i}.name`)) {
+                activities.push(i);
+              } else {
+                break;
+              }
+            }
 
             return (
               <motion.div
-                key={group.id}
+                key={stage.id}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -60,30 +70,35 @@ const Backbone = () => {
                 tabIndex={0}
                 aria-expanded={isOpen}
                 aria-controls={panelId}
-                onClick={() => toggle(group.id)}
+                onClick={() => toggle(stage.id)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();
-                    toggle(group.id);
+                    toggle(stage.id);
                   }
                 }}
                 className="group relative overflow-hidden rounded-2xl border border-border p-6 md:p-8 flex flex-col cursor-pointer transition-colors duration-300 hover:border-border/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
               >
                 <span
                   className="pointer-events-none absolute -top-20 -right-16 h-44 w-44 rounded-full blur-[80px] opacity-0 transition-opacity duration-500 group-hover:opacity-20"
-                  style={{ background: group.color }}
+                  style={{ background: stage.color }}
                   aria-hidden="true"
                 />
                 <div className="flex items-center gap-3 mb-3">
                   <div
                     className="w-1 h-6 rounded-full shrink-0"
-                    style={{ background: group.color }}
+                    style={{ background: stage.color }}
+                  />
+                  <Icon
+                    className="size-5 shrink-0"
+                    style={{ color: stage.color }}
+                    strokeWidth={1.75}
                   />
                   <h3
                     className="font-sora text-xl font-semibold tracking-tight transition-colors duration-300"
-                    style={{ color: isOpen ? group.color : undefined }}
+                    style={{ color: isOpen ? stage.color : undefined }}
                   >
-                    {t(`groups.${group.id}`)}
+                    {t(`stages.${stage.id}.name`)}
                   </h3>
                   <ChevronDown
                     className={cn(
@@ -94,7 +109,7 @@ const Backbone = () => {
                   />
                 </div>
                 <p className="text-foreground-subtle leading-relaxed">
-                  {t(`groupDescriptions.${group.id}`)}
+                  {t(`stages.${stage.id}.shortDescription`)}
                 </p>
 
                 <AnimatePresence initial={false}>
@@ -108,44 +123,39 @@ const Backbone = () => {
                       className="overflow-hidden"
                     >
                       <div className="space-y-2 mt-6 pt-6 border-t border-border/60">
-                        {group.areaIds.map((areaId) => {
-                          const area = AREAS.find((a) => a.id === areaId);
-                          if (!area) return null;
-                          const Icon = area.icon;
-
-                          return (
-                            <LocalizedLink
-                              key={areaId}
-                              href={`/solutions?group=${group.id}&area=${areaId}#grid`}
-                              onClick={(e) => e.stopPropagation()}
-                              className="group flex items-start gap-3 rounded-xl p-3 transition-colors duration-300 ease-out hover:bg-surface-elevated/70"
+                        {activities.map((index) => (
+                          <LocalizedLink
+                            key={index}
+                            href={`/solutions#${stage.id}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="group flex items-start gap-3 rounded-xl p-3 transition-colors duration-300 ease-out hover:bg-surface-elevated/70"
+                          >
+                            <div
+                              className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors font-sora text-sm font-semibold"
+                              style={{
+                                backgroundColor: `color-mix(in srgb, ${stage.color} 12%, transparent)`,
+                                border: `1px solid color-mix(in srgb, ${stage.color} 25%, transparent)`,
+                                color: stage.color,
+                              }}
                             >
-                              <div
-                                className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors"
-                                style={{
-                                  backgroundColor: `color-mix(in srgb, ${group.color} 12%, transparent)`,
-                                  border: `1px solid color-mix(in srgb, ${group.color} 25%, transparent)`,
-                                }}
-                              >
-                                <Icon
-                                  className="w-4 h-4"
-                                  style={{ color: group.color }}
-                                  strokeWidth={1.75}
-                                />
+                              {index + 1}
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="flex items-baseline gap-2">
+                                <span className="font-sora font-medium tracking-tight text-foreground">
+                                  {t(
+                                    `stages.${stage.id}.activities.${index}.name`,
+                                  )}
+                                </span>
                               </div>
-                              <div className="flex-1 min-w-0">
-                                <div className="flex items-baseline gap-2">
-                                  <span className="font-sora font-medium tracking-tight text-foreground">
-                                    {t(`areas.${areaId}.name`)}
-                                  </span>
-                                </div>
-                                <p className="text-sm text-foreground-subtle leading-relaxed mt-0.5">
-                                  {t(`areas.${areaId}.shortDescription`)}
-                                </p>
-                              </div>
-                            </LocalizedLink>
-                          );
-                        })}
+                              <p className="text-sm text-foreground-subtle leading-relaxed mt-0.5">
+                                {t(
+                                  `stages.${stage.id}.activities.${index}.description`,
+                                )}
+                              </p>
+                            </div>
+                          </LocalizedLink>
+                        ))}
                       </div>
                     </motion.div>
                   )}
@@ -158,7 +168,7 @@ const Backbone = () => {
         <div className="mt-12 flex justify-center">
           <Button asChild variant="outline" size="lg">
             <LocalizedLink href="/solutions">
-              {t("viewAll")}
+              {t("viewAllCta")}
               <ArrowRight className="ml-1 size-4" />
             </LocalizedLink>
           </Button>
@@ -168,4 +178,4 @@ const Backbone = () => {
   );
 };
 
-export default Backbone;
+export default Process;

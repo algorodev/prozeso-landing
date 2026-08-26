@@ -6,7 +6,7 @@
     "title": "Where your <primary>processes, data and operations</primary> finally <secondary>live together</secondary>.",
     "subtitle": "The modular backbone that connects your tools, automates your workflows and gives you back control.",
     "ctaPrimary": "Talk to us",
-    "ctaSecondary": "See the modular catalog",
+    "ctaSecondary": "See how we work",
     "trialBadges": {
       "freeTrial": "No commitment",
       "noCreditCard": "30-minute conversation",
@@ -16,7 +16,7 @@
   },
   "header": {
     "nav": {
-      "solutions": "Solutions",
+      "solutions": "How we work",
       "about": "About Us"
     },
     "cta": "Get started",
@@ -27,11 +27,11 @@
   "footer": {
     "tagline": "Where your processes, data and operations finally live together.",
     "sections": {
-      "product": "Product",
+      "product": "Services",
       "company": "Company"
     },
     "links": {
-      "solutions": "Solutions",
+      "solutions": "How we work",
       "assessment": "Get Started",
       "about": "About Us",
       "notice": "Legal Notice",
@@ -48,8 +48,8 @@
   },
   "solutions": {
     "hero": {
-      "title": "The <primary>modular catalog</primary>.",
-      "subtitle": "13 functional areas. Hundreds of documented automations. We start with the piece where your company bleeds the most, and expand when results back it up."
+      "title": "This is how we <primary>build it</primary>.",
+      "subtitle": "From the first conversation to code in production. No templates, no catalog: automation designed for your business."
     }
   },
   "start": {
@@ -65,11 +65,11 @@
         },
         "call": {
           "title": "We design",
-          "desc": "We send you a concrete proposal: which module goes first, timelines, setup and recurring operating cost. No surprises, no asterisks. If you want, you review it with your partner or your team."
+          "desc": "We send you a concrete proposal: which automation goes first, timelines, setup and recurring operating cost. No surprises, no asterisks. If you want, you review it with your partner or your team."
         },
         "launch": {
           "title": "We implement",
-          "desc": "Implementation in 2-4 weeks for the entry module. We stay with you until the result fits your operation. If after 60 days it doesn't deliver real value, there's no reason to keep going. And no reason for us to sell you more."
+          "desc": "Implementation in 2-4 weeks for the first automation. We stay with you until the result fits your operation. If after 60 days it doesn't deliver real value, there's no reason to keep going. And no reason for us to sell you more."
         }
       }
     },
@@ -116,7 +116,7 @@
         },
         "roi": {
           "title": "Return on investment",
-          "desc": "Average multiple observed: the module's annual cost pays back several times in the same period."
+          "desc": "Average multiple observed: the automation's annual cost pays back several times in the same period."
         },
         "cost": {
           "title": "Cost savings",
@@ -127,7 +127,7 @@
           "desc": "Average reduction in hours the team spends on repetitive tasks."
         }
       },
-      "disclaimer": "Average magnitudes observed across clients with modules in production. Not a market-wide average."
+      "disclaimer": "Average magnitudes observed across clients with automations in production. Not a market-wide average."
     },
     "partnerships": {
       "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
@@ -231,346 +231,89 @@
         }
       }
     },
-    "automationSuite": {
-      "title": "We start with one piece.<br></br>We end up as the <highlight>backbone</highlight>.",
-      "subtitle": "We come in where the pain is sharp and the ROI is immediate. By month 18, your company runs on Prozeso.",
-      "close": "Close",
-      "automationCount": "{count} automations",
-      "automationPickCta": "Choose the ones that best fit your needs",
-      "viewAll": "See the modular catalog",
-      "mobileFilter": "Filter",
-      "mobileFilterTitle": "Filter automations",
-      "searchPlaceholder": "Search automation...",
-      "startAssessment": "Start assessment",
-      "learnMore": "Learn more",
-      "stateLabel": "Status",
-      "stateValues": {
-        "production": "In production"
-      },
-      "comingSoonLabel": "Available",
-      "comingSoonHelper": "Module in development. The first automations in this module will ship from the date shown.",
-      "areas": {
-        "customerService": {
-          "name": "Customer Service",
-          "shortDescription": "Handle customer questions with human quality 24/7. Bots resolve routine queries and escalate when it matters.",
-          "tagline": "Customer service without growing the support team.",
-          "automations": {
+    "process": {
+      "title": "From the first call<br></br>to code in <highlight>production</highlight>.",
+      "subtitle": "We do not sell a catalog. We design and build the automation your business actually needs, start to finish.",
+      "viewAllCta": "See the full process",
+      "startCta": "Get started",
+      "stages": {
+        "discovery": {
+          "name": "Discovery",
+          "shortDescription": "We get to know your business for real: what you do, what tools you use, and where time and money leak out.",
+          "description": "Before we propose anything, we listen. A no-pressure conversation to understand your operation, your goals, and where it hurts most.",
+          "activities": {
             "0": {
-              "name": "AI Receptionist",
-              "subtitle": "Voice & WhatsApp",
-              "description": "Handles calls and messages 24/7. Qualifies the customer, books, confirms and hands off to the team when needed. Works on voice and WhatsApp.",
-              "state": "production"
-            }
-          }
-        },
-        "bookings": {
-          "name": "Bookings",
-          "shortDescription": "Bookings, reminders and reschedules on autopilot. Fill the calendar without anyone on the phone.",
-          "tagline": "Fill your schedule. Effortlessly.",
-          "automations": {
-            "0": {
-              "name": "Appointment reminders",
-              "subtitle": "SMS · Email · WhatsApp",
-              "description": "Automatic reminders on the customer's preferred channel. Confirmation, reschedule or cancellation in one click.",
-              "state": "production"
+              "name": "Initial conversation",
+              "description": "A no-commitment call to understand your operation and your goals."
             },
             "1": {
-              "name": "Review booster",
-              "subtitle": "Reputation",
-              "description": "Identifies each customer's optimal moment and asks for a review on the channel they're most likely to respond on. Reduces friction and multiplies positive reviews on Google and similar.",
-              "state": "production"
+              "name": "Process mapping",
+              "description": "We look at how your team actually works today, not how the manual says it works."
             },
             "2": {
-              "name": "Smart rescheduling",
-              "subtitle": "Slot recovery",
-              "description": "When a customer cancels, the system fills the slot proactively: offers it to clients on the waitlist or to someone with a far-off appointment they could move up. Recovers slots without manual work.",
-              "state": "production"
+              "name": "Prioritization",
+              "description": "We identify where to automate first: the point of greatest pain and the fastest return."
             }
           }
         },
-        "customerSuccess": {
-          "name": "Customer Success",
-          "shortDescription": "Onboarding, churn prediction and upsell. Keep and grow accounts without chasing them.",
-          "tagline": "Automations that maximize retention, customer lifetime value, and satisfaction, turning clients into brand ambassadors.",
-          "automations": {
+        "design": {
+          "name": "Solution design",
+          "shortDescription": "We design the automation to fit your business: what connects to what, what the AI decides, and what a person reviews.",
+          "description": "No generic templates. We design the full flow around your systems, your data, and your team.",
+          "activities": {
             "0": {
-              "name": "Customer onboarding flow",
-              "subtitle": "Time-to-value",
-              "description": "Walks the new customer step by step from signature to active, value-producing usage. Cuts time-to-value and removes the post-sales gap that kills activation.",
-              "state": "production"
+              "name": "Automation architecture",
+              "description": "We define the full flow: inputs, logic, integrations, and outputs."
             },
             "1": {
-              "name": "Churn prediction & rescue",
-              "subtitle": "Anti-churn",
-              "description": "Detects churn signals before the customer leaves and triggers rescue actions: CSM intervention, personalized offer, reactivation. Anticipates churn instead of reacting to it.",
-              "state": "production"
+              "name": "Edge cases",
+              "description": "We account for exceptions before writing a single line of code."
             },
             "2": {
-              "name": "Automatic upsell & cross-sell",
-              "subtitle": "Expansion",
-              "description": "Identifies the right moment to offer the customer an additional module or service, and presents it on the most receptive channel. Turns expansion into a process, not luck.",
-              "state": "production"
-            },
-            "3": {
-              "name": "NPS & feedback loop",
-              "subtitle": "Voice of customer",
-              "description": "Automated NPS survey at key moments of the customer lifecycle, with response classification and trigger actions: rescue, upsell, success story.",
-              "state": "production"
+              "name": "Sign-off with you",
+              "description": "We review the design together before moving to development."
             }
           }
         },
-        "sales": {
-          "name": "Sales",
-          "shortDescription": "Prospecting, scoring and follow-up. The team spends time closing, not chasing.",
-          "tagline": "Automations that empower your sales team, from prospecting to closing, eliminating repetitive tasks and accelerating the sales cycle.",
-          "automations": {
+        "development": {
+          "name": "Development & integration",
+          "shortDescription": "We write the automation's code and integrate it with your real tools: CRM, calendar, WhatsApp, billing.",
+          "description": "Our team writes the code, connects it to your systems, and tests it with real data before a single task depends on it.",
+          "activities": {
             "0": {
-              "name": "AI prospecting",
-              "subtitle": "Outbound",
-              "description": "Identifies companies matching your ICP, finds the right decision-maker, and launches the first touch on the right channel. Multiplies prospecting volume without scaling the sales team.",
-              "state": "production"
+              "name": "Custom development",
+              "description": "Bespoke code, no generic templates or third-party licenses that do not fit."
             },
             "1": {
-              "name": "Lead scoring",
-              "subtitle": "Lead scoring",
-              "description": "Scores every inbound lead by real probability of close, using behavior signals, profile and context. Your sales team works the leads that convert first.",
-              "state": "production"
+              "name": "Integration with your systems",
+              "description": "We connect to the tools you already use, no forced migrations."
             },
             "2": {
-              "name": "Follow-up bot",
-              "subtitle": "Automatic follow-up",
-              "description": "Automates follow-up with inactive leads until they reply or ask to stop. Recovers opportunities that went cold for lack of time, not lack of interest.",
-              "state": "production"
-            },
-            "3": {
-              "name": "Automatic proposal",
-              "subtitle": "Quote builder",
-              "description": "Generates personalized commercial proposals from prospect data and the service catalog. Sales reviews and sends. Cuts proposal time drastically.",
-              "state": "production"
+              "name": "Testing in your environment",
+              "description": "We test with real data and real cases before anything goes live."
             }
           }
         },
-        "marketing": {
-          "name": "Marketing",
-          "shortDescription": "Content, email and social that scale without growing the team.",
-          "tagline": "Automations that multiply the reach and impact of your marketing team without increasing resources, from content creation to multichannel campaign management.",
-          "automations": {
+        "support": {
+          "name": "Launch & support",
+          "shortDescription": "We launch alongside your team, measure results, and resolve whatever comes up.",
+          "description": "Integrated code is not the finish line. We support the launch, resolve issues, and keep tuning the automation using real usage data.",
+          "activities": {
             "0": {
-              "name": "AI content factory",
-              "subtitle": "Multi-channel",
-              "description": "Generates, schedules and publishes content on the relevant channels from a brief or editorial calendar. Multiplies volume without losing brand consistency.",
-              "state": "production"
+              "name": "Guided launch",
+              "description": "Your team is not left alone on day one."
             },
             "1": {
-              "name": "Automatic email marketing",
-              "subtitle": "Lifecycle",
-              "description": "Email sequences triggered by user behavior (visit, purchase, abandonment, etc.). Segmentation, personalization and A/B testing automated.",
-              "state": "production"
+              "name": "Issue resolution",
+              "description": "If something breaks, we fix it, not your team."
             },
             "2": {
-              "name": "Social listening & response",
-              "subtitle": "Community",
-              "description": "Monitors brand mentions and relevant conversations on social media, and replies or escalates per rules. Manage community without a dedicated community manager.",
-              "state": "production"
-            },
-            "3": {
-              "name": "Campaign ROI meter",
-              "subtitle": "Attribution",
-              "description": "Attributes conversions to the campaigns that generated them on every channel and step of the funnel. Optimizes budget with real data, not gut feel.",
-              "state": "production"
+              "name": "Measurement & continuous improvement",
+              "description": "We review results and refine the automation over time."
             }
           }
-        },
-        "product": {
-          "name": "Product",
-          "shortDescription": "Usage, feedback and prioritization with data. Build what evidence supports, not gut feel.",
-          "tagline": "Product guided by evidence, not by the loudest voice in the room.",
-          "comingSoon": "Q4 2026",
-          "automations": {}
-        },
-        "operations": {
-          "name": "Operations",
-          "shortDescription": "Vendors, deliveries, maintenance and SLAs. Coordinated operations without Excel or WhatsApp.",
-          "tagline": "Automations that optimize the operational chain, supplier management, and logistics, reducing costs and eliminating bottlenecks in day-to-day processes.",
-          "automations": {
-            "0": {
-              "name": "Vendor management",
-              "subtitle": "Procurement cycle",
-              "description": "Centralizes the full cycle with vendors: request, comparison, approval, purchase order, receipt. Cuts the procurement cycle and improves traceability.",
-              "state": "production"
-            },
-            "1": {
-              "name": "Delivery tracking",
-              "subtitle": "Logistics",
-              "description": "Proactive notifications to the customer about order status (preparation, in transit, delivered, incident) without them asking. Reduces complaints and support load.",
-              "state": "production"
-            },
-            "2": {
-              "name": "Preventive maintenance",
-              "subtitle": "Critical assets",
-              "description": "Schedules maintenance interventions on critical assets before they fail, based on usage, sensors or calendar. Reduces unexpected breakdowns and unplanned downtime.",
-              "state": "production"
-            },
-            "3": {
-              "name": "SLA & automatic escalation",
-              "subtitle": "Service quality",
-              "description": "Monitors SLA compliance in real time and automatically escalates incidents at risk of breach. Guarantees service quality without manual oversight.",
-              "state": "production"
-            }
-          }
-        },
-        "stock": {
-          "name": "Inventory",
-          "shortDescription": "Reordering, alerts, liquidation and demand forecasting. Inventory that runs itself.",
-          "tagline": "Automations that ensure optimal product availability, eliminate dead stock, and turn inventory management into a predictive, frictionless process.",
-          "automations": {
-            "0": {
-              "name": "Automatic reordering",
-              "subtitle": "Inventory",
-              "description": "Calculates the optimal reorder moment for each SKU based on consumption, lead time and safety stock. Generates the purchase order automatically when the threshold is crossed.",
-              "state": "production"
-            },
-            "1": {
-              "name": "Stock alerts & anomalies",
-              "subtitle": "Inventory control",
-              "description": "Detects unusual stock variations (anomalous consumption, shrinkage, count errors) and alerts the responsible owner before they become stockouts or excess.",
-              "state": "production"
-            },
-            "2": {
-              "name": "Dead-stock liquidation",
-              "subtitle": "Margin optimization",
-              "description": "Identifies low-rotation SKUs and triggers liquidation actions: automatic discounts, offers to specific customers, warehouse transfers.",
-              "state": "production"
-            },
-            "3": {
-              "name": "Demand forecasting",
-              "subtitle": "Planning",
-              "description": "Predicts future demand by SKU, channel and period, integrating seasonality, trends and events. Lets you adjust purchasing and reduce tied-up capital.",
-              "state": "production"
-            }
-          }
-        },
-        "it": {
-          "name": "IT",
-          "shortDescription": "Access, devices and internal support. Fewer repetitive tickets, more time for what matters.",
-          "tagline": "The back-office that keeps IT from becoming the bottleneck.",
-          "comingSoon": "Q4 2026",
-          "automations": {}
-        },
-        "finance": {
-          "name": "Finance",
-          "shortDescription": "Invoicing, collections, reconciliation and budget alerts. Month-end close without surprises.",
-          "tagline": "Automations that eliminate financial administrative burden, guarantee timely collection, and offer full visibility into the company's financial health.",
-          "automations": {
-            "0": {
-              "name": "Automatic invoicing",
-              "subtitle": "Collection cycle",
-              "description": "Invoice generation, dispatch and tracking integrated with your ERP, CRM and bank. Shortens the average collection cycle by removing manual steps between service and invoice.",
-              "state": "production"
-            },
-            "1": {
-              "name": "Collections & reminders",
-              "subtitle": "Cash flow",
-              "description": "Automatic payment reminder sequence by email, SMS or WhatsApp, escalating intensity by days late and customer profile. Improves cash flow without straining the relationship.",
-              "state": "production"
-            },
-            "2": {
-              "name": "Bank reconciliation",
-              "subtitle": "Accounting close",
-              "description": "Automatically matches bank movements with issued and received invoices. Matches reconcile themselves; exceptions are queued for the finance team to review.",
-              "state": "production"
-            },
-            "3": {
-              "name": "Budget alerts",
-              "subtitle": "Financial control",
-              "description": "Monitors budget deviations by line, department or project, and alerts as a threshold approaches. Lets you react before period close.",
-              "state": "production"
-            }
-          }
-        },
-        "hr": {
-          "name": "HR & Recruitment",
-          "shortDescription": "Hiring, onboarding, time tracking and offboarding. HR scales without growing headcount in lockstep.",
-          "tagline": "Automations that accelerate talent acquisition, improve the candidate experience, and free the HR team from repetitive administrative tasks.",
-          "automations": {
-            "0": {
-              "name": "Geolocated time tracking",
-              "subtitle": "Time records",
-              "description": "Time tracking with location verification, integrated with payroll and regulatory compliance. Removes presence fraud and simplifies monthly hours close.",
-              "state": "production"
-            },
-            "1": {
-              "name": "Task allocator",
-              "subtitle": "Team coordination",
-              "description": "Distributes tasks across the team by load, capacity and priority, and reassigns automatically as things change. Cuts daily operational coordination time.",
-              "state": "production"
-            },
-            "2": {
-              "name": "Automatic reports",
-              "subtitle": "Management",
-              "description": "Generates and distributes recurring management reports (weekly, monthly) without manual intervention. Each owner gets what they need, in their format, on their channel.",
-              "state": "production"
-            },
-            "3": {
-              "name": "Employee onboarding flow",
-              "subtitle": "Onboarding",
-              "description": "Automates new-employee onboarding: documents, access, initial training, first 90 days plan. Reduces administrative time and improves employee experience.",
-              "state": "production"
-            },
-            "4": {
-              "name": "Assisted CV screening",
-              "subtitle": "Hiring",
-              "description": "Classifies candidates by client-defined criteria (experience, education, cultural fit). Speeds up the first phase of selection without replacing final human judgment.",
-              "state": "production"
-            },
-            "5": {
-              "name": "Candidate nurturing",
-              "subtitle": "Candidate experience",
-              "description": "Keeps candidates engaged between stages with relevant automatic communication. Reduces dropout and improves candidate experience.",
-              "state": "production"
-            },
-            "6": {
-              "name": "Interview pre-screening",
-              "subtitle": "Evaluation",
-              "description": "Automated initial interview by chat or voice with qualifying questions. The hiring team gets a structured summary of each candidate before investing time in a live interview.",
-              "state": "production"
-            },
-            "7": {
-              "name": "Automated offboarding",
-              "subtitle": "Exit management",
-              "description": "Manages the full exit cycle: access revocation, asset return, settlement, exit survey. Ensures compliance without missing a step.",
-              "state": "production"
-            }
-          }
-        },
-        "legal": {
-          "name": "Legal",
-          "shortDescription": "Templates, reviews and compliance. Legal stops being the bottleneck on every deal.",
-          "tagline": "Legal that supports the operation, not the one that slows it down.",
-          "comingSoon": "Q4 2026",
-          "automations": {}
-        },
-        "management": {
-          "name": "Management",
-          "shortDescription": "Reports, OKRs and actionable alerts. Decisions backed by data, not gut feel.",
-          "tagline": "Automations that digitize and optimize internal processes for team management, operations, and data-driven decision making.",
-          "comingSoon": "Q4 2026",
-          "automations": {}
         }
-      },
-      "groups": {
-        "clientFacing": "Customer-facing",
-        "revenueGrowth": "Growth",
-        "backendOps": "Operations",
-        "corporateSupport": "Corporate support"
-      },
-      "groupDescriptions": {
-        "clientFacing": "Customer service, bookings, and post-sale. Every customer interaction handled — nothing slips.",
-        "revenueGrowth": "Sales, marketing, and product. The engine that opens opportunities and turns them into revenue.",
-        "backendOps": "Operations, inventory, and internal systems. The backbone that runs the day-to-day without your attention.",
-        "corporateSupport": "Finance, people, legal, and management. The cross-functional layer that keeps the company in order."
-      },
-      "clearFilter": "Clear filter"
+      }
     },
     "finalCta": {
       "title": "Does Prozeso fit <highlight>your company</highlight>?",
@@ -616,11 +359,11 @@
       "originTitle": "Where it all began",
       "originParagraph1": "Three professionals: marketing, engineering, and strategy. Comparing notes in Dublin. We agreed on one thing: growing companies are stuck with tools that don't grow with them, and the alternatives are out of reach.",
       "originParagraph2": "Spanish companies of 10 to 200 employees, with processes living in people's heads, spreadsheets, and WhatsApp messages. The tools they can afford are too rigid to truly fit. The tools that fit are too heavy, too slow and too expensive to ever adopt.",
-      "originParagraph3": "That day we decided to build the operating system that company never had."
+      "originParagraph3": "That day we decided to build the team that company never had: people who would truly understand its business and build, from scratch, the automation it needed."
     },
     "team": {
       "title": "The team",
-      "subtitle": "Three co-founders, one mission: build the operating system small and mid-sized businesses never had.",
+      "subtitle": "Three co-founders, one mission: be the technical team small and mid-sized businesses never had, designing and building their automation from start to finish.",
       "ceo": {
         "name": "Cristian Guzmán",
         "role": "CEO",
@@ -629,7 +372,7 @@
       "cto": {
         "name": "Alejandro González",
         "role": "CTO",
-        "description": "Designs and maintains the platform. Previously an engineer in banking and consumer products, now building the operating system small and mid-sized businesses never had."
+        "description": "Designs and builds every automation from scratch. Previously an engineer in banking and consumer products, now writing the code that used to run on spreadsheets and WhatsApp."
       },
       "sales": {
         "name": "Carles Vineta",

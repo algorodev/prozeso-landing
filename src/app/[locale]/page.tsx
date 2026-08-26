@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Backbone from "@/components/Home/Backbone";
 import Clients from "@/components/Home/Clients";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import Impact from "@/components/Home/Impact";
 import Partnerships from "@/components/Home/Partnerships";
+import Process from "@/components/Home/Process";
 import Testimonials from "@/components/Home/Testimonials";
 import Understanding from "@/components/Home/Understanding";
 import { locales } from "@/i18n/config";
@@ -193,7 +193,7 @@ export default async function Home({ params }: Props) {
       <Hero />
       <Clients />
       <Understanding />
-      <Backbone />
+      <Process />
       <Impact />
       <Partnerships />
       <Testimonials />

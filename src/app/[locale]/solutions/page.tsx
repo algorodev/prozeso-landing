@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import SolutionsGrid from "@/components/Solutions/SolutionsGrid";
-import SolutionsHero from "@/components/Solutions/SolutionsHero";
+import ProcessHero from "@/components/Process/ProcessHero";
+import ProcessTimeline from "@/components/Process/ProcessTimeline";
 import { locales } from "@/i18n/config";
 import { buildBreadcrumbJsonLd } from "@/lib/seo/breadcrumb";
 
@@ -14,12 +14,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const url = `${base}/${locale}/solutions`;
 
-  const title = locale === "es" ? "El catálogo modular" : "The modular catalog";
+  const title = locale === "es" ? "Cómo trabajamos" : "How We Work";
 
   const description =
     locale === "es"
-      ? "13 áreas funcionales y cientos de automatizaciones documentadas. Empezamos por la pieza donde más sangra tu empresa, ampliamos cuando lo demuestra."
-      : "13 functional areas and hundreds of documented automations. We start with the piece where your company bleeds the most, and expand when results back it up.";
+      ? "Así ayudamos a negocios de servicios a automatizar sus operaciones: desde que te conocemos hasta que el código está integrado y el problema resuelto."
+      : "This is how we help service businesses automate their operations, from the moment we meet you to fully integrated code and the problem solved.";
 
   return {
     title,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function AutomationsSuitePage({ params }: Props) {
+export default async function ProcessPage({ params }: Props) {
   const { locale } = await params;
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const breadcrumb = buildBreadcrumbJsonLd([
@@ -53,7 +53,7 @@ export default async function AutomationsSuitePage({ params }: Props) {
       url: `${base}/${locale}/`,
     },
     {
-      name: locale === "es" ? "Soluciones" : "Solutions",
+      name: locale === "es" ? "Cómo trabajamos" : "How We Work",
       url: `${base}/${locale}/solutions`,
     },
   ]);
@@ -61,8 +61,8 @@ export default async function AutomationsSuitePage({ params }: Props) {
   return (
     <main>
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
-      <SolutionsHero />
-      <SolutionsGrid />
+      <ProcessHero />
+      <ProcessTimeline />
     </main>
   );
 }

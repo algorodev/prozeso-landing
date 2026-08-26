@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-export default function SolutionsHero() {
+export default function ProcessHero() {
   const t = useTranslations("solutions.hero");
 
   return (
