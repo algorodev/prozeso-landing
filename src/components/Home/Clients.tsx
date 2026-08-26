@@ -16,7 +16,7 @@ const clients = [
   {
     id: "the-fitzgerald",
     name: "The Fitzgerald",
-    src: "/assets/clients/thefitzgerald.svg",
+    src: "/assets/clients/thefitzgerald-white.svg",
     href: "/case-studies/the-fitzgerald",
   },
   { id: "hohomes", name: "Ho Homes", src: "/assets/clients/hohomes.png" },
