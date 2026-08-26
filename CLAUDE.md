@@ -4,7 +4,7 @@
 
 Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an AI-powered workflow automation platform for service businesses. Built with Next.js 16 (App Router), React 19, Tailwind CSS v4, and TypeScript.
 
-> **Note**: Prozeso has shut down. The landing page stays up as a static informational site — email sending, the ElevenLabs voice agent, and the calendar booking CTA have been intentionally removed to eliminate ongoing costs.
+> **Note**: Prozeso operates as a small automation agency rather than a self-serve product. The landing page positions the team as an agency (see the "Cómo trabajamos" / "How we work" process pages and client case studies) — the ElevenLabs voice agent and the calendar booking CTA remain removed to keep the site lean; the `/start` assessment form sends a real lead notification to the team via Telegram.
 
 ## Tech stack
 
@@ -13,7 +13,7 @@ Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an A
 - **Styling**: Tailwind CSS v4, CSS custom properties, Framer Motion, Anime.js
 - **UI**: Radix UI primitives, shadcn/ui pattern, CVA for variants
 - **Forms**: react-hook-form + Zod validation
-- **Email**: React Email templates (sending is disabled — Prozeso has shut down)
+- **Lead notifications**: `/start` form submissions are sent to the team via the Telegram Bot API (`src/app/api/start/route.ts`). React Email templates in `src/emails/` still exist but are unused.
 - **i18n**: next-intl (locales: `es` default, `en`)
 - **Testing**: Vitest, React Testing Library, @vitest/coverage-v8
 - **Linting/Formatting**: Biome
@@ -44,7 +44,7 @@ src/
 │   │   ├── start/           # Assessment wizard
 │   │   ├── solutions/       # Automations + industry solutions showcase
 │   │   └── legal/           # Privacy, terms, cookies
-│   └── api/start/           # No-op endpoint (email sending disabled)
+│   └── api/start/           # Sends lead notifications to Telegram
 ├── components/              # React components
 │   ├── Home/                # Home page sections
 │   ├── About/               # About page (Hero, Team)
@@ -95,6 +95,8 @@ Required in `.env`:
 ```
 NEXT_PUBLIC_BASE_URL        # App base URL
 GA_MEASUREMENT_ID           # Google Analytics 4
+TELEGRAM_BOT_TOKEN          # Bot token from @BotFather, used to send lead notifications
+TELEGRAM_CHAT_ID            # Chat/user ID the bot sends /start form leads to
 ```
 
 `NEXT_PUBLIC_*` vars are browser-exposed. Keep API keys server-only.
