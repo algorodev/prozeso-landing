@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "es"
-      ? "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin y construimos automatización de flujos de trabajo con IA para negocios de servicios."
-      : "Meet the team behind Prozeso. Born at Google Dublin, we're building AI-powered workflow automation for service businesses.";
+      ? "Conoce al equipo detrás de Prozeso. Construimos el panel interno y las automatizaciones que las empresas de 10 a 200 empleados nunca tuvieron."
+      : "Meet the team behind Prozeso. We build the internal panel and the automations that companies of 10 to 200 employees never had.";
 
   return {
     title,
@@ -37,6 +37,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       locale: locale === "es" ? "es_ES" : "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }

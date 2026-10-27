@@ -16,85 +16,49 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  const baseKeywords = [
-    "workflow automation",
-    "sales automations",
-    "marketing automations",
-    "productivity",
-    "Prospector",
+  const keywordsEn = [
+    "process automation",
+    "business automation",
+    "automation for SMEs",
+    "operations panel",
+    "dashboard",
+    "automatic reports",
+    "POS integration",
+    "ERP integration",
+    "AI for business",
+    "custom development",
+    "restaurant automation",
+    "Valencia",
     "Prozeso",
   ];
 
-  const keywordsEn = [
-    "conversational AI",
-    "voice AI",
-    "AI receptionist",
-    "appointment reminders",
-    "smart reschedule",
-    "missed call auto callback",
-    "bookings automation",
-    "scheduling automation",
-    "reduce no-shows",
-    "customer experience",
-    "analytics and reporting",
-    "GDPR compliance",
-    "security",
-    "restaurants automation",
-    "hair and beauty automation",
-    "clinics and health automation",
-    "hotels automation",
-    "real estate automation",
-    "SMS reminders",
-    "WhatsApp reminders",
-    "calendar integration",
-    "CRM integration",
-    "increase ROI",
-    "recover revenue",
-    "reduce operational load",
-  ];
-
   const keywordsEs = [
-    "IA conversacional",
-    "IA de voz",
-    "recepcionista con IA",
-    "recordatorios de citas",
-    "reprogramación inteligente",
-    "devolución automática de llamadas perdidas",
-    "automatización de reservas",
-    "automatización de agenda",
-    "reducir ausencias",
-    "experiencia del cliente",
-    "analítica y reportes",
-    "cumplimiento RGPD",
-    "seguridad",
-    "automatización para restaurantes",
-    "automatización para peluquería y belleza",
-    "automatización para clínicas y salud",
-    "automatización para hoteles",
-    "automatización para inmobiliarias",
-    "recordatorios por SMS",
-    "recordatorios por WhatsApp",
-    "integración con calendario",
-    "integración con CRM",
-    "aumentar ROI",
-    "recuperar ingresos",
-    "reducir carga operativa",
+    "automatización de procesos",
+    "automatización para empresas",
+    "automatización para pymes",
+    "panel operativo",
+    "cuadro de mando",
+    "informes automáticos",
+    "integración con TPV",
+    "integración con ERP",
+    "IA para empresas",
+    "desarrollo a medida",
+    "automatización para restauración",
+    "Valencia",
+    "Prozeso",
   ];
 
-  const pageKeywords = [
-    ...baseKeywords,
-    ...(locale === "es" ? keywordsEs : keywordsEn),
-  ];
+  const keywords = locale === "es" ? keywordsEs : keywordsEn;
 
   const title =
     locale === "es"
-      ? "Automatización de flujos de trabajo con IA para negocios de servicios"
-      : "AI-Powered Workflow Automation for Service Businesses";
+      ? "Panel operativo y automatización a medida para empresas"
+      : "Custom Operations Panel and Automation for Companies";
 
   const description =
     locale === "es"
-      ? "Prozeso ayuda a negocios de servicios a automatizar sus operaciones con IA — recepcionistas virtuales, recordatorios inteligentes, facturación y reseñas."
-      : "Prozeso helps service businesses automate operations with AI — voice receptionists, smart reminders, billing, and reviews. Start your free assessment today.";
+      ? "Prozeso construye el panel interno de tu empresa: conectado a tu TPV, ERP y contabilidad, con módulos de informes, incidencias y formularios, y una IA que trabaja sobre tus datos reales."
+      : "Prozeso builds your company's internal panel: connected to your POS, ERP and accounting, with modules for reports, incidents and forms, and an AI that works on your real data.";
 
   const url = `${base}/${locale}/`;
 
@@ -105,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: url,
       languages: Object.fromEntries(locales.map((l) => [l, `${base}/${l}/`])),
     },
-    keywords: pageKeywords,
+    keywords,
     openGraph: {
       type: "website",
       url,

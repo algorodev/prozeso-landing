@@ -20,7 +20,7 @@ const soraFont = Sora({
 
 const siteName = "Prozeso";
 const siteDescription =
-  "AI-powered workflow automation for service businesses — voice receptionists, smart reminders, billing and reviews.";
+  "Custom operations panels and AI automation for companies of 10 to 200 employees: connected to the tools you already use, with the modules you need.";
 const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const GA_ID = process.env.GA_MEASUREMENT_ID ?? "";
@@ -38,11 +38,10 @@ export const metadata: Metadata = {
   description: siteDescription,
   applicationName: siteName,
   keywords: [
-    "workflow automation",
-    "sales automations",
-    "marketing automations",
-    "productivity",
-    "Prospector",
+    "process automation",
+    "business automation",
+    "operations panel",
+    "AI for business",
     "Prozeso",
   ],
   authors: [{ name: siteName }],
