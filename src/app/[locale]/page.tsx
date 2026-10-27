@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
 import Clients from "@/components/Home/Clients";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
@@ -9,8 +8,6 @@ import Process from "@/components/Home/Process";
 import Testimonials from "@/components/Home/Testimonials";
 import Understanding from "@/components/Home/Understanding";
 import { locales } from "@/i18n/config";
-
-const TESTIMONIAL_IDS = ["1", "2", "3", "4", "5", "6", "7"] as const;
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -135,21 +132,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-async function JsonLd({ locale }: { locale: string }) {
+function JsonLd() {
   const base = process.env.NEXT_PUBLIC_BASE_URL || "https://prozeso.com";
-  const t = await getTranslations({ locale, namespace: "home.testimonials" });
-
-  const reviews = TESTIMONIAL_IDS.map((id) => ({
-    "@type": "Review",
-    reviewBody: t(`items.${id}.quote`),
-    reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
-    author: {
-      "@type": "Person",
-      name: t(`items.${id}.name`),
-      jobTitle: t(`items.${id}.role`),
-    },
-  }));
-
   const organization = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -161,14 +145,7 @@ async function JsonLd({ locale }: { locale: string }) {
       "https://www.linkedin.com/company/prozeso",
     ],
     description:
-      "AI-powered workflow automation platform for service businesses.",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: 5,
-      bestRating: 5,
-      reviewCount: reviews.length,
-    },
-    review: reviews,
+      "Custom operations panels and AI automation for companies of 10 to 200 employees.",
   };
 
   const webSite = {
@@ -185,11 +162,10 @@ async function JsonLd({ locale }: { locale: string }) {
   );
 }
 
-export default async function Home({ params }: Props) {
-  const { locale } = await params;
+export default function Home() {
   return (
     <div>
-      <JsonLd locale={locale} />
+      <JsonLd />
       <Hero />
       <Clients />
       <Understanding />
