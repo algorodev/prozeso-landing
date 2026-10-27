@@ -87,6 +87,21 @@
           "placeholder": "tu@ejemplo.com",
           "error": "Por favor, introduce un email válido"
         },
+        "company": {
+          "label": "Empresa",
+          "placeholder": "Nombre de tu empresa",
+          "error": "Por favor, introduce el nombre de tu empresa"
+        },
+        "teamSize": {
+          "label": "Tamaño del equipo",
+          "placeholder": "Selecciona una opción",
+          "options": {
+            "1-9": "1-9 personas",
+            "10-50": "10-50 personas",
+            "51-200": "51-200 personas",
+            "200+": "Más de 200 personas"
+          }
+        },
         "goals": {
           "label": "¿Qué te trae aquí?",
           "placeholder": "Cuéntanos en una o dos frases qué te gustaría resolver.",

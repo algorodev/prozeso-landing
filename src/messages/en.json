@@ -87,6 +87,21 @@
           "placeholder": "you@example.com",
           "error": "Please enter a valid email"
         },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company name",
+          "error": "Please enter your company name"
+        },
+        "teamSize": {
+          "label": "Team size",
+          "placeholder": "Select an option",
+          "options": {
+            "1-9": "1-9 people",
+            "10-50": "10-50 people",
+            "51-200": "51-200 people",
+            "200+": "More than 200 people"
+          }
+        },
         "goals": {
           "label": "What brings you here?",
           "placeholder": "Tell us in one or two sentences what you'd like to solve.",

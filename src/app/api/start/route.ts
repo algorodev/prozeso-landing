@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 type StartRequestBody = {
   name?: unknown;
   email?: unknown;
+  company?: unknown;
+  teamSize?: unknown;
   message?: unknown;
   locale?: unknown;
 };
@@ -18,6 +20,7 @@ export async function POST(req: Request) {
     !body ||
     !isNonEmptyString(body.name) ||
     !isNonEmptyString(body.email) ||
+    !isNonEmptyString(body.company) ||
     !isNonEmptyString(body.message)
   ) {
     return NextResponse.json(
@@ -26,9 +29,11 @@ export async function POST(req: Request) {
     );
   }
 
-  const { name, email, message, locale } = body as {
+  const { name, email, company, teamSize, message, locale } = body as {
     name: string;
     email: string;
+    company: string;
+    teamSize?: unknown;
     message: string;
     locale?: unknown;
   };
@@ -49,6 +54,8 @@ export async function POST(req: Request) {
     "",
     `Name: ${name}`,
     `Email: ${email}`,
+    `Company: ${company}`,
+    `Team size: ${isNonEmptyString(teamSize) ? teamSize : "-"}`,
     `Locale: ${isNonEmptyString(locale) ? locale : "-"}`,
     "",
     "Message:",
