@@ -224,6 +224,74 @@
         "title": "Your data, on your side.",
         "desc": "European infrastructure, encryption in transit and at rest, full export at any moment with no penalty. GDPR compliant by design."
       }
+    },
+    "featuredCase": {
+      "title": "One real client. <highlight>In production.</highlight>",
+      "subtitle": "We'd rather show you a case you can verify than ten logos. This is what we've built for The Fitzgerald.",
+      "eyebrow": "Hospitality · Valencia · Multiple venues",
+      "headline": "From hand-built Excels to a real-time operations panel",
+      "body": "Every report depended on copying figures out of the POS by hand each week. We built their internal panel, connected directly to the point of sale, and we keep extending it with them.",
+      "stats": {
+        "reports": {
+          "value": "5",
+          "label": "automatic reports in production"
+        },
+        "tables": {
+          "value": "+240",
+          "label": "POS tables mapped with no documentation"
+        },
+        "docs": {
+          "value": "15",
+          "label": "technical documents on the system"
+        },
+        "accuracy": {
+          "value": "To the cent",
+          "label": "every report reconciled against their real Excels"
+        }
+      },
+      "cta": "Read the full case",
+      "production": {
+        "badge": "In production",
+        "items": {
+          "reports": {
+            "title": "Automatic reports from the POS",
+            "desc": "Sales by channel, consumption, food cost and refunds, without touching an Excel."
+          },
+          "assistant": {
+            "title": "AI assistant on your data",
+            "desc": "Ask about the business and get answers with the real metrics, respecting each user's permissions."
+          },
+          "incidents": {
+            "title": "Incidents and maintenance",
+            "desc": "A board per venue with statuses, comments, attachments and an automatic alert on every new ticket."
+          },
+          "forms": {
+            "title": "Forms with AI summaries",
+            "desc": "Every response generates an executive summary and can open an incident on its own."
+          },
+          "news": {
+            "title": "News report for management",
+            "desc": "Summarizes the week in emails written in the CEO's tone, ready to send in one click."
+          }
+        }
+      },
+      "development": {
+        "badge": "In development",
+        "items": {
+          "shifts": {
+            "title": "Staff shifts and schedules",
+            "desc": "Team planning per venue, built into the same panel."
+          },
+          "profitability": {
+            "title": "Staff profitability",
+            "desc": "Sales against staff cost, combining POS, payroll and shifts."
+          },
+          "delivery": {
+            "title": "Delivery integration",
+            "desc": "Data from delivery platforms inside the same reports."
+          }
+        }
+      }
     }
   },
   "about": {

@@ -224,6 +224,74 @@
         "title": "Tus datos, en tu lado.",
         "desc": "Infraestructura europea, cifrado en tránsito y en reposo, exportación completa en cualquier momento sin penalización. Cumplimiento RGPD por diseño."
       }
+    },
+    "featuredCase": {
+      "title": "Un cliente real. <highlight>En producción.</highlight>",
+      "subtitle": "Preferimos enseñarte un caso que puedes comprobar a diez logos. Esto es lo que hemos construido para The Fitzgerald.",
+      "eyebrow": "Restauración · Valencia · Varios locales",
+      "headline": "De Excels hechos a mano a un panel operativo en tiempo real",
+      "body": "Cada informe dependía de copiar cifras del TPV a mano cada semana. Construimos su panel interno, conectado directamente al punto de venta, y lo seguimos ampliando con ellos.",
+      "stats": {
+        "reports": {
+          "value": "5",
+          "label": "informes automáticos en producción"
+        },
+        "tables": {
+          "value": "+240",
+          "label": "tablas del TPV mapeadas sin documentación"
+        },
+        "docs": {
+          "value": "15",
+          "label": "documentos técnicos del sistema"
+        },
+        "accuracy": {
+          "value": "Al céntimo",
+          "label": "cada informe cuadrado contra sus Excels reales"
+        }
+      },
+      "cta": "Leer el caso completo",
+      "production": {
+        "badge": "En producción",
+        "items": {
+          "reports": {
+            "title": "Informes automáticos desde el TPV",
+            "desc": "Ventas por canal, consumo, food cost y devoluciones, sin tocar un Excel."
+          },
+          "assistant": {
+            "title": "Asistente IA sobre tus datos",
+            "desc": "Pregunta por el negocio y responde con las métricas reales, respetando los permisos de cada usuario."
+          },
+          "incidents": {
+            "title": "Incidencias y mantenimiento",
+            "desc": "Tablero por local con estados, comentarios, adjuntos y aviso automático en cada alta."
+          },
+          "forms": {
+            "title": "Formularios con resumen IA",
+            "desc": "Cada respuesta genera un resumen ejecutivo y puede abrir una incidencia sola."
+          },
+          "news": {
+            "title": "Informe de novedades para dirección",
+            "desc": "Resume la semana en correos con el tono del CEO, listos para enviar en un clic."
+          }
+        }
+      },
+      "development": {
+        "badge": "En desarrollo",
+        "items": {
+          "shifts": {
+            "title": "Turnos y horarios del personal",
+            "desc": "Planificación de equipos por local, integrada en el mismo panel."
+          },
+          "profitability": {
+            "title": "Rentabilidad del personal",
+            "desc": "Ventas frente a coste de personal, cruzando TPV, nóminas y turnos."
+          },
+          "delivery": {
+            "title": "Integración con delivery",
+            "desc": "Datos de plataformas de reparto dentro de los mismos informes."
+          }
+        }
+      }
     }
   },
   "about": {

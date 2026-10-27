@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import FeaturedCase from "@/components/Home/FeaturedCase";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
 import Partnerships from "@/components/Home/Partnerships";
@@ -165,6 +166,7 @@ export default function Home() {
       <JsonLd />
       <Hero />
       <Understanding />
+      <FeaturedCase />
       <Process />
       <Partnerships />
       <FinalCTA />
