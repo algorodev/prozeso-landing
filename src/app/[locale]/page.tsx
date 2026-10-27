@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import Clients from "@/components/Home/Clients";
 import FinalCTA from "@/components/Home/FinalCTA";
 import Hero from "@/components/Home/Hero";
-import Impact from "@/components/Home/Impact";
 import Partnerships from "@/components/Home/Partnerships";
 import Process from "@/components/Home/Process";
-import Testimonials from "@/components/Home/Testimonials";
 import Understanding from "@/components/Home/Understanding";
 import { locales } from "@/i18n/config";
 
@@ -167,12 +164,9 @@ export default function Home() {
     <div>
       <JsonLd />
       <Hero />
-      <Clients />
       <Understanding />
       <Process />
-      <Impact />
       <Partnerships />
-      <Testimonials />
       <FinalCTA />
     </div>
   );
