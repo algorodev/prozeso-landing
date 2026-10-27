@@ -2,9 +2,9 @@
 
 ## Project overview
 
-Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an AI-powered workflow automation platform for service businesses. Built with Next.js 16 (App Router), React 19, Tailwind CSS v4, and TypeScript.
+Prozeso Landing is a multi-language (es/en) marketing site for **Prozeso**, an automation consultancy that builds the internal operations panel of companies with 10-200 employees (an in-house base plus modules tailored to each client, connected to the tools they already use, with AI working on their real data). Built with Next.js 16 (App Router), React 19, Tailwind CSS v4, and TypeScript.
 
-> **Note**: Prozeso operates as a small automation agency rather than a self-serve product. The landing page positions the team as an agency (see the "Cómo trabajamos" / "How we work" process pages and client case studies) — the ElevenLabs voice agent and the calendar booking CTA remain removed to keep the site lean; the `/start` assessment form sends a real lead notification to the team via Telegram.
+> **Note**: Prozeso operates as a small automation agency rather than a self-serve product. The landing page positions the team as an agency (see the "Cómo trabajamos" / "How we work" process page and the client case study). The only real client is The Fitzgerald: do not add other client logos, testimonials, metrics or review markup (JSON-LD included) that are not real. The ElevenLabs voice agent and the calendar booking CTA remain removed to keep the site lean; the `/start` assessment form sends a real lead notification to the team via Telegram.
 
 ## Tech stack
 
@@ -42,14 +42,16 @@ src/
 │   │   ├── page.tsx         # Home
 │   │   ├── about/           # About / team page
 │   │   ├── start/           # Assessment wizard
-│   │   ├── solutions/       # Automations + industry solutions showcase
+│   │   ├── solutions/       # "How we work" process page
+│   │   ├── case-studies/    # Client case studies (The Fitzgerald)
 │   │   └── legal/           # Privacy, terms, cookies
 │   └── api/start/           # Sends lead notifications to Telegram
 ├── components/              # React components
-│   ├── Home/                # Home page sections
+│   ├── Home/                # Home page sections (Hero, Understanding, FeaturedCase, Process, ...)
 │   ├── About/               # About page (Hero, Team)
 │   ├── Start/               # Assessment wizard components
-│   ├── Solutions/           # Solutions grid, sidebar, detail dialog
+│   ├── Process/             # Process page (hero, timeline, detail dialog)
+│   ├── CaseStudy/           # Case study page sections
 │   ├── Legal/               # Legal page components
 │   ├── ui/                  # Reusable UI primitives (Button, Card, Form, Dialog, etc.)
 │   └── icons/               # Custom SVG icon components
@@ -58,7 +60,6 @@ src/
 │   └── utils.ts             # Misc helpers
 ├── i18n/                    # i18n config + LocalizedLink
 ├── messages/                # Translation JSON files (en.json, es.json)
-├── data/                    # Static data (automations)
 ├── emails/                  # React Email templates
 ├── __tests__/               # Unit tests (Vitest)
 └── assets/                  # Static images
@@ -104,7 +105,8 @@ TELEGRAM_CHAT_ID            # Chat/user ID the bot sends /start form leads to
 ## Key patterns
 
 - **Form validation**: Zod schemas with react-hook-form via `@hookform/resolvers`
-- **Solutions showcase**: `solutions/` page renders automation entries from `src/data/automations.ts` with a grid, sidebar filter, and detail dialog
+- **Process page**: `solutions/` renders the "How we work" timeline from `src/components/Process/` (stages come from `home.process` translations)
+- **Featured case**: `Home/FeaturedCase.tsx` shows The Fitzgerald on the home (copy in `home.featuredCase`); keep its figures and modules in sync with the case study
 
 ## CI/CD
 

@@ -16,8 +16,15 @@ import {
   FormLabel,
   FormMessage,
   Input,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
   Textarea,
 } from "@/components/ui";
+
+const TEAM_SIZES = ["1-9", "10-50", "51-200", "200+"] as const;
 
 export function AssessmentForm() {
   const locale = useLocale();
@@ -26,6 +33,8 @@ export function AssessmentForm() {
   const Schema = z.object({
     name: z.string().min(2, t("field.name.error")),
     email: z.string().email(t("field.email.error")),
+    company: z.string().trim().min(2, t("field.company.error")),
+    teamSize: z.string().optional(),
     goals: z.string().min(1, t("field.goals.error")).max(2000),
   });
 
@@ -39,6 +48,8 @@ export function AssessmentForm() {
     defaultValues: {
       name: "",
       email: "",
+      company: "",
+      teamSize: "",
       goals: "",
     },
     mode: "onTouched",
@@ -55,6 +66,8 @@ export function AssessmentForm() {
         body: JSON.stringify({
           name: values.name,
           email: values.email,
+          company: values.company,
+          teamSize: values.teamSize || undefined,
           message: values.goals,
           locale,
         }),
@@ -134,6 +147,55 @@ export function AssessmentForm() {
                     {...field}
                   />
                 </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="company"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  {t("field.company.label")}
+                  <span aria-hidden className="text-destructive ml-1">
+                    *
+                  </span>
+                </FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder={t("field.company.placeholder")}
+                    required
+                    aria-required="true"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="teamSize"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("field.teamSize.label")}</FormLabel>
+                <Select value={field.value} onValueChange={field.onChange}>
+                  <FormControl>
+                    <SelectTrigger className="w-full">
+                      <SelectValue
+                        placeholder={t("field.teamSize.placeholder")}
+                      />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    {TEAM_SIZES.map((size) => (
+                      <SelectItem key={size} value={size}>
+                        {t(`field.teamSize.options.${size}`)}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
                 <FormMessage />
               </FormItem>
             )}

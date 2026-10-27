@@ -1,18 +1,14 @@
 {
-  "trustedBy": {
-    "title": "Backed by"
-  },
   "hero": {
     "title": "Where your <primary>processes, data and operations</primary> finally <secondary>live together</secondary>.",
-    "subtitle": "The modular backbone that connects your tools, automates your workflows and gives you back control.",
+    "subtitle": "We build your company's internal panel: connected to the tools you already use, with the modules you need and an AI that works on your real data.",
     "ctaPrimary": "Talk to us",
     "ctaSecondary": "See how we work",
     "trialBadges": {
       "freeTrial": "No commitment",
       "noCreditCard": "30-minute conversation",
       "cancelAnytime": "We'll tell you if we're a fit"
-    },
-    "imageAlt": "Automation dashboard preview"
+    }
   },
   "header": {
     "nav": {
@@ -21,7 +17,6 @@
     },
     "cta": "Get started",
     "logoAlt": "Prozeso logo",
-    "signIn": "Sign in",
     "mobileMenuDescription": "Main navigation menu"
   },
   "footer": {
@@ -87,6 +82,21 @@
           "placeholder": "you@example.com",
           "error": "Please enter a valid email"
         },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company name",
+          "error": "Please enter your company name"
+        },
+        "teamSize": {
+          "label": "Team size",
+          "placeholder": "Select an option",
+          "options": {
+            "1-9": "1-9 people",
+            "10-50": "10-50 people",
+            "51-200": "51-200 people",
+            "200+": "More than 200 people"
+          }
+        },
         "goals": {
           "label": "What brings you here?",
           "placeholder": "Tell us in one or two sentences what you'd like to solve.",
@@ -106,134 +116,12 @@
     }
   },
   "home": {
-    "impact": {
-      "title": "<highlight>Average</highlight> results with clients in production.",
-      "subtitle": "Aggregate magnitudes observed across the clients already running on Prozeso. Individual cases with proper attribution are coming soon, as we close the release with each customer.",
-      "items": {
-        "billing": {
-          "title": "Incremental billing",
-          "desc": "Average extra revenue from recovering interactions, leads and bookings that used to slip through."
-        },
-        "roi": {
-          "title": "Return on investment",
-          "desc": "Average multiple observed: the automation's annual cost pays back several times in the same period."
-        },
-        "cost": {
-          "title": "Cost savings",
-          "desc": "Average reduction in operational costs attributable to the deployed automations."
-        },
-        "time": {
-          "title": "Time savings",
-          "desc": "Average reduction in hours the team spends on repetitive tasks."
-        }
-      },
-      "disclaimer": "Average magnitudes observed across clients with automations in production. Not a market-wide average."
-    },
     "partnerships": {
-      "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
-    },
-    "clients": {
-      "subtitle": "Teams that already <primary>trust Prozeso</primary> to automate their operations"
-    },
-    "testimonials": {
-      "title": "What <highlight>our clients</highlight> say",
-      "subtitle": "Real stories from teams that transformed their operations with Prozeso.",
-      "moreComing": "And many more stories on the way. These are just a few of the teams we're working with.",
-      "automationLabel": "Automation",
-      "items": {
-        "1": {
-          "quote": "Since implementing Prozeso at Albet, we've reduced no-shows by 40%, and thanks to automated appointment reminders, our clients arrive far more consistently and on time.",
-          "name": "Pere Coma",
-          "role": "General Manager · Albet Clínica Veterinària",
-          "automation": "Appointment reminders",
-          "avatar": "/assets/testimonials/albet_vet.png",
-          "web": "https://www.albetclinicaveterinaria.com/"
-        },
-        "2": {
-          "quote": "Ever since we started using Prozeso, we've stopped losing time to phone calls. It handles over 20 calls a day, even when we're closed, so we can focus on our real passion: giving every client our full attention. Plus, the automatic waiting list is a total game-changer.",
-          "name": "Eva Mayoral",
-          "role": "Owner · Mayoral Studio",
-          "automation": "AI Receptionist",
-          "avatar": "/assets/testimonials/mayoral.png",
-          "web": "https://evamayoral.com"
-        },
-        "3": {
-          "quote": "We've been building structures for over 35 years, but managing calls and follow-ups was eating into time we needed on-site. Since we implemented Prozeso, our office team focuses on what matters: coordinating projects, not chasing phone calls.",
-          "name": "José Antonio González",
-          "role": "Director · Estructuras Albuixech",
-          "automation": "AI Receptionist",
-          "avatar": "/assets/testimonials/proconsal.webp",
-          "web": "https://estructurasalbuixech.es/"
-        },
-        "4": {
-          "quote": "We handle hundreds of inquiries from distributors and hardware stores every week. With Prozeso, requests for catalogs, stock availability, and delivery timelines are resolved automatically. Our sales team now focuses on closing deals, not answering the same questions over and over.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · Altipesa",
-          "automation": "AI Receptionist for B2B",
-          "avatar": "/assets/testimonials/altipesa.png",
-          "web": "https://altipesa.com/"
-        },
-        "5": {
-          "quote": "Our distributor network needs fast answers on orders, lead times, and technical specs. Since we activated Prozeso, response time has dropped dramatically and distributor satisfaction has gone up. Less friction, more sales.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · KTL Escaleras",
-          "automation": "AI Receptionist for B2B",
-          "avatar": "/assets/testimonials/ktl.png",
-          "web": "https://ktl-escaleras.es/"
-        },
-        "6": {
-          "quote": "If you have a service business and feel stuck in the day-to-day operations, talk to Prozeso. They start with a free assessment, understand your business, and propose automations that pay for themselves in weeks. For us, it's been a game-changer. Now Novify is scaling up, but without losing what makes us unique: the human element.",
-          "name": "Angélica Ortega",
-          "role": "Founder & CEO · Novify",
-          "automation": "Custom implementation",
-          "avatar": "/assets/testimonials/novify.png",
-          "web": "https://novify.xyz/"
-        },
-        "7": {
-          "quote": "With Prozeso, we've transformed Albet's logistics: we now resolve warehouse incidents in real time, reducing errors and optimizing every operation seamlessly.",
-          "name": "Carles Viladecans",
-          "role": "CEO · Albet",
-          "automation": "Warehouse incident management",
-          "avatar": "/assets/testimonials/albet.png",
-          "web": "https://www.albet.es/"
-        },
-        "8": {
-          "quote": "At Can Cuinat, we've been able to process new leads and qualify them using Prozeso, even when we're away from the office. This ensures we don't miss opportunities, we can respond promptly, and we maintain a consistent flow of interested contacts. It is, without question, vital for our business expansion.",
-          "name": "Ezequiel Garcia",
-          "role": "CEO · Can Cuinat",
-          "automation": "AI Receptionist + lead qualification",
-          "avatar": "/assets/testimonials/can-cuinat.svg",
-          "web": "https://www.cancuinat.com/"
-        },
-        "9": {
-          "quote": "Since working with Prozeso, we've streamlined all communication around our events. We now handle messages and requests automatically across all channels, even outside business hours, without overwhelming the team. This allows us to focus on the experience and scale events with a much more efficient operation, improving attendee management and overall occupancy.",
-          "name": "Eric Alvarez",
-          "role": "Owner · Unlocked",
-          "automation": "Omnichannel AI Receptionist",
-          "avatar": "/assets/testimonials/unlocked.png",
-          "web": ""
-        },
-        "10": {
-          "quote": "With Prozeso, HoHomes has scaled lead generation and automated guest check-ins and check-outs, reducing operational friction and elevating the customer experience in Barcelona.",
-          "name": "Miquel Sesplugues",
-          "role": "CEO & Founder · HoHomes",
-          "automation": "Bookings + automated check-in",
-          "avatar": "/assets/testimonials/hohomes.png",
-          "web": "https://www.hohomes.es/"
-        },
-        "11": {
-          "quote": "Through our partnership with Prozeso.com, we automate qualified lead generation with enterprise-grade security, speed, and full traceability.",
-          "name": "Samuel Pablos",
-          "role": "CEO & Founder · iZuuk",
-          "automation": "AI Prospecting",
-          "avatar": "/assets/testimonials/izuuk.png",
-          "web": "https://www.linkedin.com/company/izuuk/"
-        }
-      }
+      "subtitle": "We connect with the <primary>tools you already use</primary>, with no <accent>forced migrations</accent>"
     },
     "process": {
       "title": "From the first call<br></br>to code in <highlight>production</highlight>.",
-      "subtitle": "We do not sell a catalog. We design and build the automation your business actually needs, start to finish.",
+      "subtitle": "We don't sell closed software. We start from proven modules and build what your business needs, start to finish.",
       "viewAllCta": "See the full process",
       "startCta": "Get started",
       "stages": {
@@ -319,40 +207,104 @@
       "title": "Does Prozeso fit <highlight>your company</highlight>?",
       "subtitle": "A 30-minute conversation is enough to know whether Prozeso brings you more than it costs. If we're not a fit, we'll tell you.",
       "ctaPrimary": "Talk to us",
-      "ctaSecondary": "See the modular catalog"
+      "ctaSecondary": "See how we work"
     },
     "understanding": {
-      "title": "Three layers.<br></br><highlight>One backbone</highlight>.",
-      "subtitle": "Not a tool. The way your company operates.",
+      "title": "A panel of your own.<br></br><highlight>The modules you need</highlight>.",
+      "subtitle": "We're not selling you one more tool. We build your company's internal system on a proven base and extend it as you need it.",
       "items": {
-        "input": {
-          "tag": "How information comes in",
-          "title": "Input layer",
-          "desc": "Voice, chat, WhatsApp, email, forms, integrations. Any event your company cares about enters where the customer or the team already is. Without asking anyone to change how they work."
+        "panel": {
+          "tag": "The base",
+          "title": "Your panel",
+          "desc": "A panel of your own for your company, with access by role and by venue, notifications and your whole day to day in one place. Not a generic tool forced to fit."
         },
-        "orchestration": {
-          "tag": "How processes get processed",
-          "title": "Orchestration layer",
-          "desc": "Multi-tenant workflows, business logic, rules, integrations. The core that connects your ERP, your CRM, your channels and your team. What turns scattered events into coordinated operations."
+        "modules": {
+          "tag": "What we add",
+          "title": "Tailor-made modules",
+          "desc": "Reports, incidents, forms, HR. We start from modules already running in production and adapt them to how your business works."
         },
-        "intelligence": {
-          "tag": "What the system decides",
-          "title": "Intelligence layer",
-          "desc": "Reports, alerts, predictions, optimizations. Decisions, not just tasks executed. What justifies you still paying us at month 12, not just month 2."
+        "integrations": {
+          "tag": "What we connect",
+          "title": "Your tools, connected",
+          "desc": "POS, ERP, accounting, email, delivery. We connect what you already use so data flows on its own and the AI works on real figures."
         }
       },
       "trust": {
         "tag": "Operational trust",
         "title": "Your data, on your side.",
-        "desc": "European infrastructure, encryption in transit and at rest, full export at any moment with no penalty. GDPR compliant by design."
+        "desc": "Infrastructure in Europe, encrypted connections and role-based access control. If you ever leave, you take your data with you. GDPR compliant by design."
+      }
+    },
+    "featuredCase": {
+      "title": "One real client. <highlight>In production.</highlight>",
+      "subtitle": "We'd rather show you a case you can verify than ten logos. This is what we've built for The Fitzgerald.",
+      "eyebrow": "Hospitality · Valencia · Multiple venues",
+      "headline": "From hand-built Excels to a real-time operations panel",
+      "body": "Every report depended on copying figures out of the POS by hand each week. We built their internal panel, connected directly to the point of sale, and we keep extending it with them.",
+      "stats": {
+        "reports": {
+          "value": "5",
+          "label": "automatic reports in production"
+        },
+        "tables": {
+          "value": "+240",
+          "label": "POS tables mapped with no documentation"
+        },
+        "docs": {
+          "value": "15",
+          "label": "technical documents on the system"
+        },
+        "accuracy": {
+          "value": "To the cent",
+          "label": "every report reconciled against their real Excels"
+        }
+      },
+      "cta": "Read the full case",
+      "production": {
+        "badge": "In production",
+        "items": {
+          "reports": {
+            "title": "Automatic reports from the POS",
+            "desc": "Sales by channel, consumption, food cost and refunds, without touching an Excel."
+          },
+          "assistant": {
+            "title": "AI assistant on your data",
+            "desc": "Ask about the business and get answers with the real metrics, respecting each user's permissions."
+          },
+          "incidents": {
+            "title": "Incidents and maintenance",
+            "desc": "A board per venue with statuses, comments, attachments and an automatic alert on every new ticket."
+          },
+          "forms": {
+            "title": "Forms with AI summaries",
+            "desc": "Every response generates an executive summary and can open an incident on its own."
+          },
+          "news": {
+            "title": "News report for management",
+            "desc": "Summarizes the week in emails written in the CEO's tone, ready to send in one click."
+          }
+        }
+      },
+      "development": {
+        "badge": "In development",
+        "items": {
+          "shifts": {
+            "title": "Staff shifts and schedules",
+            "desc": "Team planning per venue, built into the same panel."
+          },
+          "profitability": {
+            "title": "Staff profitability",
+            "desc": "Sales against staff cost, combining POS, payroll and shifts."
+          },
+          "delivery": {
+            "title": "Delivery integration",
+            "desc": "Data from delivery platforms inside the same reports."
+          }
+        }
       }
     }
   },
   "about": {
-    "metadata": {
-      "title": "About Us — Prozeso",
-      "description": "Meet the team behind Prozeso. Born at Google Dublin to close the gap between Excel and SAP for companies of 10 to 200 employees."
-    },
     "hero": {
       "title": "The story behind <highlight>Prozeso</highlight>",
       "subtitle": "We met at Google's offices in Dublin with a clear vision: there's a whole segment of companies stuck between manual chaos and corporate software, and nobody is really serving them.",
@@ -388,9 +340,18 @@
         "title": "From hand-built spreadsheets to a <highlight>real-time</highlight> operating panel",
         "subtitle": "The Fitzgerald is a restaurant group with several locations around Valencia, Spain. We built the internal system their operation never had.",
         "facts": {
-          "client": { "label": "Client", "value": "The Fitzgerald" },
-          "industry": { "label": "Industry", "value": "Restaurants" },
-          "location": { "label": "Location", "value": "Valencia, Spain" },
+          "client": {
+            "label": "Client",
+            "value": "The Fitzgerald"
+          },
+          "industry": {
+            "label": "Industry",
+            "value": "Restaurants"
+          },
+          "location": {
+            "label": "Location",
+            "value": "Valencia, Spain"
+          },
           "locations": {
             "label": "Locations",
             "value": "Multiple, owned and franchised"
@@ -509,7 +470,7 @@
       },
       "purpose": {
         "title": "Purpose",
-        "text": "This Legal Notice governs the use of the website prozeso.com, whose purpose is to provide information about Prozeso's AI automation services for service businesses, and to allow contact and contracting of such services."
+        "text": "This Legal Notice governs the use of the website prozeso.com, whose purpose is to provide information about Prozeso's AI automation services for companies, and to allow contact and contracting of such services."
       },
       "useConditions": {
         "title": "Use conditions",

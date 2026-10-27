@@ -12,6 +12,8 @@ function makeRequest(body: Record<string, unknown>): Request {
 const validBody = {
   name: "John",
   email: "john@example.com",
+  company: "Acme",
+  teamSize: "10-50",
   message: "Hello",
   locale: "en",
 };
@@ -51,6 +53,24 @@ describe("POST /api/start", () => {
     expect(payload.text).toContain("John");
     expect(payload.text).toContain("john@example.com");
     expect(payload.text).toContain("Hello");
+    expect(payload.text).toContain("Company: Acme");
+    expect(payload.text).toContain("Team size: 10-50");
+  });
+
+  it("uses a dash when team size is not provided", async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValue(
+        new Response(JSON.stringify({ ok: true }), { status: 200 }),
+      );
+    vi.stubGlobal("fetch", fetchMock);
+
+    const { teamSize: _teamSize, ...withoutTeamSize } = validBody;
+    const response = await POST(makeRequest(withoutTeamSize));
+
+    expect(response.status).toBe(200);
+    const payload = JSON.parse(fetchMock.mock.calls[0][1].body);
+    expect(payload.text).toContain("Team size: -");
   });
 
   it("returns 400 when required fields are missing", async () => {
@@ -58,6 +78,19 @@ describe("POST /api/start", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     const response = await POST(makeRequest({ name: "John" }));
+    const json = await response.json();
+
+    expect(response.status).toBe(400);
+    expect(json.ok).toBe(false);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  it("returns 400 when company is missing", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
+
+    const { company: _company, ...withoutCompany } = validBody;
+    const response = await POST(makeRequest(withoutCompany));
     const json = await response.json();
 
     expect(response.status).toBe(400);

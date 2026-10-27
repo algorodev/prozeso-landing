@@ -1,18 +1,14 @@
 {
-  "trustedBy": {
-    "title": "Con el respaldo de"
-  },
   "hero": {
     "title": "Donde tus <primary>procesos, datos y operaciones</primary> por fin <secondary>viven juntos</secondary>.",
-    "subtitle": "La columna vertebral modular que conecta tus herramientas, automatiza tus flujos y te devuelve el control.",
+    "subtitle": "Construimos el panel interno de tu empresa: conectado a las herramientas que ya usas, con los módulos que necesitas y una IA que trabaja sobre tus datos reales.",
     "ctaPrimary": "Hablar con nosotros",
     "ctaSecondary": "Ver cómo trabajamos",
     "trialBadges": {
       "freeTrial": "Sin compromiso",
       "noCreditCard": "Conversación de 30 minutos",
       "cancelAnytime": "Te decimos si encajamos"
-    },
-    "imageAlt": "Vista previa del panel de automatización"
+    }
   },
   "header": {
     "nav": {
@@ -21,7 +17,6 @@
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
-    "signIn": "Entrar",
     "mobileMenuDescription": "Menú de navegación principal"
   },
   "footer": {
@@ -87,6 +82,21 @@
           "placeholder": "tu@ejemplo.com",
           "error": "Por favor, introduce un email válido"
         },
+        "company": {
+          "label": "Empresa",
+          "placeholder": "Nombre de tu empresa",
+          "error": "Por favor, introduce el nombre de tu empresa"
+        },
+        "teamSize": {
+          "label": "Tamaño del equipo",
+          "placeholder": "Selecciona una opción",
+          "options": {
+            "1-9": "1-9 personas",
+            "10-50": "10-50 personas",
+            "51-200": "51-200 personas",
+            "200+": "Más de 200 personas"
+          }
+        },
         "goals": {
           "label": "¿Qué te trae aquí?",
           "placeholder": "Cuéntanos en una o dos frases qué te gustaría resolver.",
@@ -106,134 +116,12 @@
     }
   },
   "home": {
-    "impact": {
-      "title": "Resultados <highlight>medios</highlight> con clientes en producción.",
-      "subtitle": "Magnitudes observadas en agregado entre los clientes que ya operan con Prozeso. Los casos individuales con atribución concreta llegan en breve, a medida que cerremos los permisos de cada cliente.",
-      "items": {
-        "billing": {
-          "title": "Facturación incremental",
-          "desc": "Ingresos adicionales medios al recuperar interacciones, leads y reservas que antes quedaban sin atender."
-        },
-        "roi": {
-          "title": "Retorno de la inversión",
-          "desc": "Múltiplo medio observado: el coste anual de la automatización se recupera varias veces en el mismo periodo."
-        },
-        "cost": {
-          "title": "Ahorro de costes",
-          "desc": "Reducción media en costes operativos atribuible a las automatizaciones desplegadas."
-        },
-        "time": {
-          "title": "Ahorro de tiempo",
-          "desc": "Reducción media de horas dedicadas a tareas repetitivas por el equipo."
-        }
-      },
-      "disclaimer": "Magnitudes promedio observadas en los clientes con automatizaciones en producción. No representan media de mercado."
-    },
     "partnerships": {
-      "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
-    },
-    "clients": {
-      "subtitle": "Equipos que ya <primary>confían en Prozeso</primary> para automatizar sus operaciones"
-    },
-    "testimonials": {
-      "title": "Lo que dicen <highlight>nuestros clientes</highlight>",
-      "subtitle": "Historias reales de equipos que transformaron sus operaciones con Prozeso.",
-      "moreComing": "Y muchas más historias en camino. Estos son solo algunos de los equipos con los que estamos trabajando.",
-      "automationLabel": "Automatización",
-      "items": {
-        "1": {
-          "quote": "Desde que implementamos Prozeso en Albet, hemos reducido los no shows en un 40%, y gracias a los recordatorios automáticos un día antes, nuestros clientes llegan mucho más preparados y puntuales.",
-          "name": "Pere Coma",
-          "role": "Director General · Albet Clínica Veterinària",
-          "automation": "Recordatorios de citas",
-          "avatar": "/assets/testimonials/albet_vet.png",
-          "web": "https://www.albetclinicaveterinaria.com/"
-        },
-        "2": {
-          "quote": "Desde que implementamos Prozeso en nuestro salón, hemos dejado de perder tiempo al teléfono. Ahora se gestionan más de 20 llamadas al día, incluso fuera del horario, lo que nos ha permitido centrarnos en lo que más nos gusta: atender a cada cliente con todo el tiempo que se merece. Y lo mejor, la lista de espera automática.",
-          "name": "Eva Mayoral",
-          "role": "Owner · Mayoral Studio",
-          "automation": "Recepcionista IA",
-          "avatar": "/assets/testimonials/mayoral.png",
-          "web": "https://evamayoral.com"
-        },
-        "3": {
-          "quote": "Llevamos más de 35 años levantando estructuras, pero la gestión de llamadas y seguimientos nos robaba un tiempo que necesitábamos en obra. Desde que implantamos Prozeso, el equipo de oficina dedica su tiempo a lo que importa: coordinar proyectos, no perseguir llamadas.",
-          "name": "José Antonio González",
-          "role": "Director · Estructuras Albuixech",
-          "automation": "Recepcionista IA",
-          "avatar": "/assets/testimonials/proconsal.webp",
-          "web": "https://estructurasalbuixech.es/"
-        },
-        "4": {
-          "quote": "Gestionamos cientos de consultas de distribuidores y ferreterías cada semana. Con Prozeso, las peticiones de catálogo, disponibilidad de stock y plazos de entrega se resuelven automáticamente. Nuestro equipo comercial ahora se centra en cerrar ventas, no en responder las mismas preguntas.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · Altipesa",
-          "automation": "Recepcionista IA B2B",
-          "avatar": "/assets/testimonials/altipesa.png",
-          "web": "https://altipesa.com/"
-        },
-        "5": {
-          "quote": "Nuestra red de distribuidores necesita respuestas rápidas sobre pedidos, plazos y especificaciones técnicas. Desde que activamos Prozeso, el tiempo de respuesta ha bajado drásticamente y la satisfacción de nuestros distribuidores ha subido. Menos fricciones, más ventas.",
-          "name": "Andrés Peralta",
-          "role": "Co-Founder & Director · KTL Escaleras",
-          "automation": "Recepcionista IA B2B",
-          "avatar": "/assets/testimonials/ktl.png",
-          "web": "https://ktl-escaleras.es/"
-        },
-        "6": {
-          "quote": "Si tienes un negocio de servicios y sientes que estás atrapada en lo operativo, habla con Prozeso. Empiezan con una evaluación gratuita, entienden tu negocio y te proponen automatizaciones que se pagan solas en semanas. Para nosotros ha sido un antes y un después. Ahora Novify escala, pero sin perder lo que nos hace únicos: el factor humano.",
-          "name": "Angélica Ortega",
-          "role": "Founder & CEO · Novify",
-          "automation": "Implementación a medida",
-          "avatar": "/assets/testimonials/novify.png",
-          "web": "https://novify.xyz/"
-        },
-        "7": {
-          "quote": "Con Prozeso hemos transformado la logística de Albet: ahora resolvemos incidencias en almacén en tiempo real, reduciendo errores y optimizando cada operación sin fricción.",
-          "name": "Carles Viladecans",
-          "role": "CEO · Albet",
-          "automation": "Gestión de incidencias en almacén",
-          "avatar": "/assets/testimonials/albet.png",
-          "web": "https://www.albet.es/"
-        },
-        "8": {
-          "quote": "En Can Cuinat, gracias a Prozeso hemos conseguido atender nuevos leads y cualificarlos incluso cuando no estamos en la oficina. Esto nos ha permitido no perder oportunidades, responder con rapidez y mantener un flujo constante de contactos interesados en nuestros servicios. Sin duda, una herramienta clave para nuestro crecimiento comercial.",
-          "name": "Ezequiel Garcia",
-          "role": "CEO · Can Cuinat",
-          "automation": "Recepcionista IA + cualificación de leads",
-          "avatar": "/assets/testimonials/can-cuinat.svg",
-          "web": "https://www.cancuinat.com/"
-        },
-        "9": {
-          "quote": "Desde que trabajamos con Prozeso, hemos ordenado toda la gestión de comunicación alrededor de nuestros eventos. Ahora atendemos automáticamente mensajes y solicitudes en todos los canales, incluso fuera de horario, sin saturar al equipo. Esto nos permite centrarnos en la experiencia y escalar eventos con una operativa mucho más eficiente, asegurando mejor gestión de asistentes y mayor ocupación.",
-          "name": "Eric Alvarez",
-          "role": "Owner · Unlocked",
-          "automation": "Recepcionista IA omnicanal",
-          "avatar": "/assets/testimonials/unlocked.png",
-          "web": ""
-        },
-        "10": {
-          "quote": "Con Prozeso, HoHomes ha escalado la captación de leads y automatizado el check-in y check-out de huéspedes, reduciendo fricción operativa y elevando la experiencia del cliente.",
-          "name": "Miquel Sesplugues",
-          "role": "CEO & Founder · HoHomes",
-          "automation": "Reservas + check-in automatizado",
-          "avatar": "/assets/testimonials/hohomes.png",
-          "web": "https://www.hohomes.es/"
-        },
-        "11": {
-          "quote": "Gracias a nuestra colaboración con Prozeso, automatizamos la generación de leads cualificados con seguridad empresarial, velocidad y total trazabilidad.",
-          "name": "Samuel Pablos",
-          "role": "CEO & Founder · iZuuk",
-          "automation": "Prospección IA",
-          "avatar": "/assets/testimonials/izuuk.png",
-          "web": "https://www.linkedin.com/company/izuuk/"
-        }
-      }
+      "subtitle": "Conectamos con las <primary>herramientas que ya usas</primary>, sin <accent>migraciones forzadas</accent>"
     },
     "process": {
       "title": "De tu primera llamada<br></br>al código en <highlight>producción</highlight>.",
-      "subtitle": "No vendemos un catálogo. Diseñamos y construimos la automatización que tu negocio necesita, de principio a fin.",
+      "subtitle": "No vendemos software cerrado. Partimos de módulos probados y construimos lo que tu negocio necesita, de principio a fin.",
       "viewAllCta": "Ver el proceso completo",
       "startCta": "Empezar",
       "stages": {
@@ -319,40 +207,104 @@
       "title": "¿Encaja con <highlight>tu empresa</highlight>?",
       "subtitle": "Una conversación de 30 minutos es suficiente para saber si Prozeso te aporta más de lo que cuesta. Si no encajamos, te lo decimos.",
       "ctaPrimary": "Hablar con nosotros",
-      "ctaSecondary": "Ver el catálogo modular"
+      "ctaSecondary": "Ver cómo trabajamos"
     },
     "understanding": {
-      "title": "Tres capas.<br></br><highlight>Una columna vertebral</highlight>.",
-      "subtitle": "No es una herramienta. Es la forma en que tu empresa opera.",
+      "title": "Un panel propio.<br></br><highlight>Los módulos que necesitas</highlight>.",
+      "subtitle": "No te vendemos otra herramienta más. Construimos el sistema interno de tu empresa sobre una base probada y lo ampliamos a medida que lo necesitas.",
       "items": {
-        "input": {
-          "tag": "Cómo entra la información",
-          "title": "Capa de entrada",
-          "desc": "Voz, chat, WhatsApp, email, formularios, integraciones. Cualquier evento útil para tu empresa entra por donde el cliente o el equipo ya está. Sin pedirle a nadie que cambie cómo trabaja."
+        "panel": {
+          "tag": "La base",
+          "title": "Tu panel",
+          "desc": "Un panel propio para tu empresa, con acceso por rol y por local, notificaciones y todo tu día a día en un único sitio. No una herramienta genérica adaptada a la fuerza."
         },
-        "orchestration": {
-          "tag": "Cómo se procesan los procesos",
-          "title": "Capa de orquestación",
-          "desc": "Workflows multi-tenant, lógica de negocio, reglas, integraciones. El núcleo que conecta tu ERP, tu CRM, tus canales y tu equipo. Lo que convierte eventos sueltos en operación coordinada."
+        "modules": {
+          "tag": "Lo que añadimos",
+          "title": "Módulos a medida",
+          "desc": "Informes, incidencias, formularios, RR.HH. Partimos de módulos que ya funcionan en producción y los adaptamos a cómo trabaja tu negocio."
         },
-        "intelligence": {
-          "tag": "Qué decide el sistema",
-          "title": "Capa de inteligencia",
-          "desc": "Reportes, alertas, predicciones, optimizaciones. Decisiones, no solo tareas ejecutadas. Lo que justifica que sigas pagándonos al mes 12, no solo al mes 2."
+        "integrations": {
+          "tag": "Lo que conectamos",
+          "title": "Tus herramientas, conectadas",
+          "desc": "TPV, ERP, contabilidad, email, delivery. Conectamos lo que ya usas para que los datos fluyan solos y la IA trabaje sobre cifras reales."
         }
       },
       "trust": {
         "tag": "Confianza operativa",
         "title": "Tus datos, en tu lado.",
-        "desc": "Infraestructura europea, cifrado en tránsito y en reposo, exportación completa en cualquier momento sin penalización. Cumplimiento RGPD por diseño."
+        "desc": "Infraestructura en Europa, conexiones cifradas y control de acceso por rol. Si un día te vas, te llevas tus datos. Cumplimiento RGPD por diseño."
+      }
+    },
+    "featuredCase": {
+      "title": "Un cliente real. <highlight>En producción.</highlight>",
+      "subtitle": "Preferimos enseñarte un caso que puedes comprobar a diez logos. Esto es lo que hemos construido para The Fitzgerald.",
+      "eyebrow": "Restauración · Valencia · Varios locales",
+      "headline": "De Excels hechos a mano a un panel operativo en tiempo real",
+      "body": "Cada informe dependía de copiar cifras del TPV a mano cada semana. Construimos su panel interno, conectado directamente al punto de venta, y lo seguimos ampliando con ellos.",
+      "stats": {
+        "reports": {
+          "value": "5",
+          "label": "informes automáticos en producción"
+        },
+        "tables": {
+          "value": "+240",
+          "label": "tablas del TPV mapeadas sin documentación"
+        },
+        "docs": {
+          "value": "15",
+          "label": "documentos técnicos del sistema"
+        },
+        "accuracy": {
+          "value": "Al céntimo",
+          "label": "cada informe cuadrado contra sus Excels reales"
+        }
+      },
+      "cta": "Leer el caso completo",
+      "production": {
+        "badge": "En producción",
+        "items": {
+          "reports": {
+            "title": "Informes automáticos desde el TPV",
+            "desc": "Ventas por canal, consumo, food cost y devoluciones, sin tocar un Excel."
+          },
+          "assistant": {
+            "title": "Asistente IA sobre tus datos",
+            "desc": "Pregunta por el negocio y responde con las métricas reales, respetando los permisos de cada usuario."
+          },
+          "incidents": {
+            "title": "Incidencias y mantenimiento",
+            "desc": "Tablero por local con estados, comentarios, adjuntos y aviso automático en cada alta."
+          },
+          "forms": {
+            "title": "Formularios con resumen IA",
+            "desc": "Cada respuesta genera un resumen ejecutivo y puede abrir una incidencia sola."
+          },
+          "news": {
+            "title": "Informe de novedades para dirección",
+            "desc": "Resume la semana en correos con el tono del CEO, listos para enviar en un clic."
+          }
+        }
+      },
+      "development": {
+        "badge": "En desarrollo",
+        "items": {
+          "shifts": {
+            "title": "Turnos y horarios del personal",
+            "desc": "Planificación de equipos por local, integrada en el mismo panel."
+          },
+          "profitability": {
+            "title": "Rentabilidad del personal",
+            "desc": "Ventas frente a coste de personal, cruzando TPV, nóminas y turnos."
+          },
+          "delivery": {
+            "title": "Integración con delivery",
+            "desc": "Datos de plataformas de reparto dentro de los mismos informes."
+          }
+        }
       }
     }
   },
   "about": {
-    "metadata": {
-      "title": "Sobre Nosotros — Prozeso",
-      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin para resolver el hueco entre Excel y SAP en empresas de 10 a 200 empleados."
-    },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
       "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad.",
@@ -388,9 +340,18 @@
         "title": "De Excels hechos a mano a un panel operativo en <highlight>tiempo real</highlight>",
         "subtitle": "The Fitzgerald es un grupo de restauración con varios locales en la zona de Valencia. Construimos el sistema interno que su operación nunca tuvo.",
         "facts": {
-          "client": { "label": "Cliente", "value": "The Fitzgerald" },
-          "industry": { "label": "Sector", "value": "Restauración" },
-          "location": { "label": "Ubicación", "value": "Valencia" },
+          "client": {
+            "label": "Cliente",
+            "value": "The Fitzgerald"
+          },
+          "industry": {
+            "label": "Sector",
+            "value": "Restauración"
+          },
+          "location": {
+            "label": "Ubicación",
+            "value": "Valencia"
+          },
           "locations": {
             "label": "Locales",
             "value": "Varios, propios y franquiciados"
@@ -509,7 +470,7 @@
       },
       "purpose": {
         "title": "Objeto",
-        "text": "El presente Aviso Legal regula el uso del sitio web prozeso.com, cuya finalidad es ofrecer información sobre los servicios de automatización con IA de Prozeso para negocios de servicios, así como permitir el contacto y la contratación de dichos servicios."
+        "text": "El presente Aviso Legal regula el uso del sitio web prozeso.com, cuya finalidad es ofrecer información sobre los servicios de automatización con IA de Prozeso para empresas, así como permitir el contacto y la contratación de dichos servicios."
       },
       "useConditions": {
         "title": "Condiciones de uso",

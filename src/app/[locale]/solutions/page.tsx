@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "es"
-      ? "Así ayudamos a negocios de servicios a automatizar sus operaciones: desde que te conocemos hasta que el código está integrado y el problema resuelto."
-      : "This is how we help service businesses automate their operations, from the moment we meet you to fully integrated code and the problem solved.";
+      ? "Así ayudamos a empresas a automatizar sus operaciones: desde que te conocemos hasta que el código está integrado y el problema resuelto."
+      : "This is how we help companies automate their operations, from the moment we meet you to fully integrated code and the problem solved.";
 
   return {
     title,
