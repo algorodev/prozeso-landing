@@ -4,7 +4,7 @@
   },
   "hero": {
     "title": "Donde tus <primary>procesos, datos y operaciones</primary> por fin <secondary>viven juntos</secondary>.",
-    "subtitle": "La columna vertebral modular que conecta tus herramientas, automatiza tus flujos y te devuelve el control.",
+    "subtitle": "Construimos el panel interno de tu empresa: conectado a las herramientas que ya usas, con los módulos que necesitas y una IA que trabaja sobre tus datos reales.",
     "ctaPrimary": "Hablar con nosotros",
     "ctaSecondary": "Ver cómo trabajamos",
     "trialBadges": {
@@ -107,11 +107,11 @@
   },
   "home": {
     "partnerships": {
-      "subtitle": "Nos asociamos con <primary>empresas innovadoras</primary> para ofrecer <accent>soluciones excepcionales</accent>"
+      "subtitle": "Conectamos con las <primary>herramientas que ya usas</primary>, sin <accent>migraciones forzadas</accent>"
     },
     "process": {
       "title": "De tu primera llamada<br></br>al código en <highlight>producción</highlight>.",
-      "subtitle": "No vendemos un catálogo. Diseñamos y construimos la automatización que tu negocio necesita, de principio a fin.",
+      "subtitle": "No vendemos software cerrado. Partimos de módulos probados y construimos lo que tu negocio necesita, de principio a fin.",
       "viewAllCta": "Ver el proceso completo",
       "startCta": "Empezar",
       "stages": {
@@ -197,32 +197,32 @@
       "title": "¿Encaja con <highlight>tu empresa</highlight>?",
       "subtitle": "Una conversación de 30 minutos es suficiente para saber si Prozeso te aporta más de lo que cuesta. Si no encajamos, te lo decimos.",
       "ctaPrimary": "Hablar con nosotros",
-      "ctaSecondary": "Ver el catálogo modular"
+      "ctaSecondary": "Ver cómo trabajamos"
     },
     "understanding": {
-      "title": "Tres capas.<br></br><highlight>Una columna vertebral</highlight>.",
-      "subtitle": "No es una herramienta. Es la forma en que tu empresa opera.",
+      "title": "Un panel propio.<br></br><highlight>Los módulos que necesitas</highlight>.",
+      "subtitle": "No te vendemos otra herramienta más. Construimos el sistema interno de tu empresa sobre una base probada y lo ampliamos a medida que lo necesitas.",
       "items": {
-        "input": {
-          "tag": "Cómo entra la información",
-          "title": "Capa de entrada",
-          "desc": "Voz, chat, WhatsApp, email, formularios, integraciones. Cualquier evento útil para tu empresa entra por donde el cliente o el equipo ya está. Sin pedirle a nadie que cambie cómo trabaja."
+        "panel": {
+          "tag": "La base",
+          "title": "Tu panel",
+          "desc": "Un panel propio para tu empresa, con acceso por rol y por local, notificaciones y todo tu día a día en un único sitio. No una herramienta genérica adaptada a la fuerza."
         },
-        "orchestration": {
-          "tag": "Cómo se procesan los procesos",
-          "title": "Capa de orquestación",
-          "desc": "Workflows multi-tenant, lógica de negocio, reglas, integraciones. El núcleo que conecta tu ERP, tu CRM, tus canales y tu equipo. Lo que convierte eventos sueltos en operación coordinada."
+        "modules": {
+          "tag": "Lo que añadimos",
+          "title": "Módulos a medida",
+          "desc": "Informes, incidencias, formularios, RR.HH. Partimos de módulos que ya funcionan en producción y los adaptamos a cómo trabaja tu negocio."
         },
-        "intelligence": {
-          "tag": "Qué decide el sistema",
-          "title": "Capa de inteligencia",
-          "desc": "Reportes, alertas, predicciones, optimizaciones. Decisiones, no solo tareas ejecutadas. Lo que justifica que sigas pagándonos al mes 12, no solo al mes 2."
+        "integrations": {
+          "tag": "Lo que conectamos",
+          "title": "Tus herramientas, conectadas",
+          "desc": "TPV, ERP, contabilidad, email, delivery. Conectamos lo que ya usas para que los datos fluyan solos y la IA trabaje sobre cifras reales."
         }
       },
       "trust": {
         "tag": "Confianza operativa",
         "title": "Tus datos, en tu lado.",
-        "desc": "Infraestructura europea, cifrado en tránsito y en reposo, exportación completa en cualquier momento sin penalización. Cumplimiento RGPD por diseño."
+        "desc": "Infraestructura en Europa, conexiones cifradas y control de acceso por rol. Si un día te vas, te llevas tus datos. Cumplimiento RGPD por diseño."
       }
     },
     "featuredCase": {
@@ -297,7 +297,7 @@
   "about": {
     "metadata": {
       "title": "Sobre Nosotros — Prozeso",
-      "description": "Conoce al equipo detrás de Prozeso. Nacimos en Google Dublin para resolver el hueco entre Excel y SAP en empresas de 10 a 200 empleados."
+      "description": "Conoce al equipo detrás de Prozeso. Construimos el panel interno y las automatizaciones que las empresas de 10 a 200 empleados nunca tuvieron."
     },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
@@ -464,7 +464,7 @@
       },
       "purpose": {
         "title": "Objeto",
-        "text": "El presente Aviso Legal regula el uso del sitio web prozeso.com, cuya finalidad es ofrecer información sobre los servicios de automatización con IA de Prozeso para negocios de servicios, así como permitir el contacto y la contratación de dichos servicios."
+        "text": "El presente Aviso Legal regula el uso del sitio web prozeso.com, cuya finalidad es ofrecer información sobre los servicios de automatización con IA de Prozeso para empresas, así como permitir el contacto y la contratación de dichos servicios."
       },
       "useConditions": {
         "title": "Condiciones de uso",

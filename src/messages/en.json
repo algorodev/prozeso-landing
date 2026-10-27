@@ -4,7 +4,7 @@
   },
   "hero": {
     "title": "Where your <primary>processes, data and operations</primary> finally <secondary>live together</secondary>.",
-    "subtitle": "The modular backbone that connects your tools, automates your workflows and gives you back control.",
+    "subtitle": "We build your company's internal panel: connected to the tools you already use, with the modules you need and an AI that works on your real data.",
     "ctaPrimary": "Talk to us",
     "ctaSecondary": "See how we work",
     "trialBadges": {
@@ -107,11 +107,11 @@
   },
   "home": {
     "partnerships": {
-      "subtitle": "We partner with <primary>innovative companies</primary> to deliver <accent>exceptional solutions</accent>"
+      "subtitle": "We connect with the <primary>tools you already use</primary>, with no <accent>forced migrations</accent>"
     },
     "process": {
       "title": "From the first call<br></br>to code in <highlight>production</highlight>.",
-      "subtitle": "We do not sell a catalog. We design and build the automation your business actually needs, start to finish.",
+      "subtitle": "We don't sell closed software. We start from proven modules and build what your business needs, start to finish.",
       "viewAllCta": "See the full process",
       "startCta": "Get started",
       "stages": {
@@ -197,32 +197,32 @@
       "title": "Does Prozeso fit <highlight>your company</highlight>?",
       "subtitle": "A 30-minute conversation is enough to know whether Prozeso brings you more than it costs. If we're not a fit, we'll tell you.",
       "ctaPrimary": "Talk to us",
-      "ctaSecondary": "See the modular catalog"
+      "ctaSecondary": "See how we work"
     },
     "understanding": {
-      "title": "Three layers.<br></br><highlight>One backbone</highlight>.",
-      "subtitle": "Not a tool. The way your company operates.",
+      "title": "A panel of your own.<br></br><highlight>The modules you need</highlight>.",
+      "subtitle": "We're not selling you one more tool. We build your company's internal system on a proven base and extend it as you need it.",
       "items": {
-        "input": {
-          "tag": "How information comes in",
-          "title": "Input layer",
-          "desc": "Voice, chat, WhatsApp, email, forms, integrations. Any event your company cares about enters where the customer or the team already is. Without asking anyone to change how they work."
+        "panel": {
+          "tag": "The base",
+          "title": "Your panel",
+          "desc": "A panel of your own for your company, with access by role and by venue, notifications and your whole day to day in one place. Not a generic tool forced to fit."
         },
-        "orchestration": {
-          "tag": "How processes get processed",
-          "title": "Orchestration layer",
-          "desc": "Multi-tenant workflows, business logic, rules, integrations. The core that connects your ERP, your CRM, your channels and your team. What turns scattered events into coordinated operations."
+        "modules": {
+          "tag": "What we add",
+          "title": "Tailor-made modules",
+          "desc": "Reports, incidents, forms, HR. We start from modules already running in production and adapt them to how your business works."
         },
-        "intelligence": {
-          "tag": "What the system decides",
-          "title": "Intelligence layer",
-          "desc": "Reports, alerts, predictions, optimizations. Decisions, not just tasks executed. What justifies you still paying us at month 12, not just month 2."
+        "integrations": {
+          "tag": "What we connect",
+          "title": "Your tools, connected",
+          "desc": "POS, ERP, accounting, email, delivery. We connect what you already use so data flows on its own and the AI works on real figures."
         }
       },
       "trust": {
         "tag": "Operational trust",
         "title": "Your data, on your side.",
-        "desc": "European infrastructure, encryption in transit and at rest, full export at any moment with no penalty. GDPR compliant by design."
+        "desc": "Infrastructure in Europe, encrypted connections and role-based access control. If you ever leave, you take your data with you. GDPR compliant by design."
       }
     },
     "featuredCase": {
@@ -297,7 +297,7 @@
   "about": {
     "metadata": {
       "title": "About Us — Prozeso",
-      "description": "Meet the team behind Prozeso. Born at Google Dublin to close the gap between Excel and SAP for companies of 10 to 200 employees."
+      "description": "Meet the team behind Prozeso. We build the internal panel and the automations that companies of 10 to 200 employees never had."
     },
     "hero": {
       "title": "The story behind <highlight>Prozeso</highlight>",
@@ -464,7 +464,7 @@
       },
       "purpose": {
         "title": "Purpose",
-        "text": "This Legal Notice governs the use of the website prozeso.com, whose purpose is to provide information about Prozeso's AI automation services for service businesses, and to allow contact and contracting of such services."
+        "text": "This Legal Notice governs the use of the website prozeso.com, whose purpose is to provide information about Prozeso's AI automation services for companies, and to allow contact and contracting of such services."
       },
       "useConditions": {
         "title": "Use conditions",

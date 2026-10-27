@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Mic, Network } from "lucide-react";
+import { Blocks, LayoutDashboard, Plug } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui";
 import { LayerCard, type Palette } from "./LayerCard";
 import { TrustCallout } from "./TrustCallout";
 
 const LAYERS = [
-  { id: "input", icon: Mic },
-  { id: "orchestration", icon: Network },
-  { id: "intelligence", icon: Brain },
+  { id: "panel", icon: LayoutDashboard },
+  { id: "modules", icon: Blocks },
+  { id: "integrations", icon: Plug },
 ] as const;
 
 const PALETTE: readonly Palette[] = [
