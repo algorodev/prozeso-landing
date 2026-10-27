@@ -1,7 +1,4 @@
 {
-  "trustedBy": {
-    "title": "Con el respaldo de"
-  },
   "hero": {
     "title": "Donde tus <primary>procesos, datos y operaciones</primary> por fin <secondary>viven juntos</secondary>.",
     "subtitle": "Construimos el panel interno de tu empresa: conectado a las herramientas que ya usas, con los módulos que necesitas y una IA que trabaja sobre tus datos reales.",
@@ -11,8 +8,7 @@
       "freeTrial": "Sin compromiso",
       "noCreditCard": "Conversación de 30 minutos",
       "cancelAnytime": "Te decimos si encajamos"
-    },
-    "imageAlt": "Vista previa del panel de automatización"
+    }
   },
   "header": {
     "nav": {
@@ -21,7 +17,6 @@
     },
     "cta": "Empezar",
     "logoAlt": "Logo de Prozeso",
-    "signIn": "Entrar",
     "mobileMenuDescription": "Menú de navegación principal"
   },
   "footer": {
@@ -310,10 +305,6 @@
     }
   },
   "about": {
-    "metadata": {
-      "title": "Sobre Nosotros — Prozeso",
-      "description": "Conoce al equipo detrás de Prozeso. Construimos el panel interno y las automatizaciones que las empresas de 10 a 200 empleados nunca tuvieron."
-    },
     "hero": {
       "title": "La historia detrás de <highlight>Prozeso</highlight>",
       "subtitle": "Nos conocimos en las oficinas de Google en Dublin con una visión clara: hay todo un segmento de empresas atrapadas entre el caos manual y el software corporativo, y nadie las está atendiendo de verdad.",
